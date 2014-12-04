@@ -1,14 +1,14 @@
 | --------- | master | develop | feature |
 | --------- | ------ | ------- | ------- |
 | Build     | [![Build Status](https://travis-ci.org/TransformCore/CSR-Fast-Stream-frontend.svg?branch=master)](https://travis-ci.org/TransformCore/CSR-Fast-Stream-frontend) | [![Build Status](https://travis-ci.org/TransformCore/CSR-Fast-Stream-frontend.svg?branch=develop)](https://travis-ci.org/TransformCore/CSR-Fast-Stream-frontend) | --- |
-| Coverage  | [![Code Coverage](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/?branch=master) | [![Code Coverage](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/?branch=develop) | --- |
-| Analysis  | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/?branch=master) | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/TransformCore/dial-tone-frontend/?branch=develop) | --- |
-| json deps | [![Dependency Status](https://www.versioneye.com/user/projects/546b164d9508250a0c00014f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/546b164d9508250a0c00014f) | --- | --- |
-| lock deps | [![Dependency Status](https://www.versioneye.com/user/projects/546b16539508250a0c000166/badge.svg?style=flat)](https://www.versioneye.com/user/projects/546b16539508250a0c000166) | --- | --- |
+| Coverage  | [![Code Coverage](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/?branch=master) | [![Code Coverage](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/badges/coverage.png?b=develop)](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/?branch=develop) | --- |
+| Analysis  | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/?branch=master) | [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/TransformCore/CSR-Fast-Stream-frontend/?branch=develop) | --- |
+| json deps | --- | [![Dependency Status](https://www.versioneye.com/user/projects/548074486c47671a210004a1/badge.svg?style=flat)](https://www.versioneye.com/user/projects/548074486c47671a210004a1) | --- |
+| lock deps | --- | [![Dependency Status](https://www.versioneye.com/user/projects/548074516c476712ab000379/badge.svg?style=flat)](https://www.versioneye.com/user/projects/548074516c476712ab000379) | --- |
 
 # CSR-Fast-Stream-frontend
 
-Latest deploy (inc. branches) https://dial-tone-frontend.herokuapp.com/en/  
+Latest deploy (inc. branches) https://csr-fast-stream-frontend-ci.herokuapp.com/en/  
 
 **Note: if you get an error, wait a minute & try again (refresh the page), the Application is probably deploying out or has gone to sleep.**
 
