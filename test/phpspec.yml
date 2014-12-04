@@ -1,0 +1,19 @@
+suites:
+    default:
+        namespace: TransformCore\Bundle\AppBundle
+        spec_prefix: Spec
+        spec_path: src/TransformCore/Bundle/AppBundle/Tests
+
+extensions:
+  - PhpSpec\Extension\CodeCoverageExtension
+
+code_coverage:
+  whitelist:
+    - src/TransformCore/Bundle/AppBundle/Entity
+    - src/TransformCore/Bundle/AppBundle/Menu
+  format:
+    #- html
+    - clover
+  output:
+    #html: test/build/coverage
+    clover: test/build/coverage.xml
