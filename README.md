@@ -89,4 +89,4 @@ No steps
 
 ## Contributions
 
-Please read on [Contribution Guildlines](/doc/ContributionGuildlines.md)
+Please read on [Contribution Guildlines](/CONTRIBUTING.md)
