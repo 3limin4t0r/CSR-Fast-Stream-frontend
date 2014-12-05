@@ -1,0 +1,186 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Account
+{% endblock %}
+
+{% block breadcrumb %}
+    <div class="row ">
+        <ol class="breadcrumb">
+            <li><a href="#">Account</a></li>
+            <li class="active">Overview</li>
+        </ol>
+    </div>
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <h1>Fast Stream Candidate Portal</h1>
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-8">
+
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                Note that you have 6 days left to complete the online assessments. Your next task is the Practice test
+
+            </div>
+
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                This info box is customised for the user - first welcome message, shows alerts, flagging next steps etc
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true" tabindex="0" data-placement="top"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Unread messages"
+                      data-animation="true"></span>
+                Your messages
+                <span class="badge">2</span>
+            </div>
+
+            <ul class="list-unstyled">
+                <li><a href="#">About the Fast Stream</a></li>
+                <li><a href="#">Our schemes</a></li>
+                <li><a href="#">Eligibility checker</a></li>
+                <li><a href="#">Process and timelines</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <h3>Your progress</h3>
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 45%;">
+                    45%
+                </div>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>1. My details</strong> Your address and background
+                <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true" tabindex="0"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Completed"
+                      data-animation="true"></span>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>2. Add a scheme</strong> Select the scheme you want to apply for
+                <span class="glyphicon glyphicon-ok pull-right" aria-hidden="true" tabindex="0"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Completed"
+                      data-animation="true"></span>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">3. Online assessment
+                    <span class="glyphicon glyphicon-info-sign pull-right" aria-hidden="true" tabindex="0"
+                          class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                          data-content="Pending"
+                          data-animation="true"></span>
+                </div>
+                <div class="panel-footer">
+                    <p><strong>Select the scheme you want to apply for</strong></p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum lorem vitae urna pretium
+                        cursus. Sed interdum neque nec ullamcorper faucibus. Curabitur at metus eu velit convallis
+                        porttitor eu ut enim. Vivamus quis nibh iaculis elit auctor convallis ut convallis nisi. Nunc
+                        mattis accumsan dui eu porttitor. Sed et magna at urna faucibus egestas ac vitae felis. Duis
+                        neque felis, mollis et facilisis ut, laoreet condimentum lectus. Cras porta, leo sit amet
+                        pharetra ultricies, mi ex tristique ligula, in rhoncus tortor libero nec metus. Integer
+                        tincidunt velit quis pulvinar scelerisque. Sed nec mauris quis quam viverra vestibulum. Sed ante
+                        elit, tincidunt vitae semper vitae, bibendum quis ipsum. Fusce iaculis tincidunt arcu, at
+                        aliquet arcu tristique eu.</p>
+                    <a href="#" class="btn btn-success pull-right">Start</a>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>4. Application</strong> Application form
+                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true" tabindex="0"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Unavailable"
+                      data-animation="true"></span>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>5. E-tray</strong> Online selection task
+                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true" tabindex="0"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Unavailable"
+                      data-animation="true"></span>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>6. FSAC</strong> Fast Stream Assessment Centre
+                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true" tabindex="0"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Unavailable"
+                      data-animation="true"></span>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>7.Final selection</strong> Final Selection Board assessment
+                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true" tabindex="0"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Unavailable"
+                      data-animation="true"></span>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>8. Pre-employment checks</strong>
+                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true" tabindex="0"
+                      class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content="Unavailable"
+                      data-animation="true"></span>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+            <p>FAQs</p>
+            <ul class="list-unstyled">
+                <li><a href="#">About the Fast Stream</a></li>
+                <li><a href="#">Our schemes</a></li>
+                <li><a href="#">Eligibility checker</a></li>
+                <li><a href="#">Process and timelines</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+{% endblock %}

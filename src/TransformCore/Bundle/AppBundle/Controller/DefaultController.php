@@ -31,4 +31,12 @@ class DefaultController extends Controller
             )
         );
     }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function accountAction()
+    {
+        return $this->render('TransformCoreAppBundle:Default:account.html.twig');
+    }
 }
