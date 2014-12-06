@@ -32,6 +32,7 @@ deploy:
   provider: heroku
   api_key:
     secure: ioz9Hi/hAbvd+1VuiH3aQwRpyjMP0OvkhafMyMcksK8tQjd5j8r8MeRILza3BO2XvVKGHjUJuCLoYnGt84+m7npNP7OeiSavJQL40CN/VMTmDyEpRVoyMNqkPxjuFQCuHsx1d/uN1ADkx61HaP6LCglrA1mSmcHWwGiVwg8OnQc=
-  app: csr-frontend-ci
-  on:
-    all_branches: true
+  app:
+    master: csr-frontend
+    develop: csr-frontend-develop
+    feature-1: csr-frontend-feature
