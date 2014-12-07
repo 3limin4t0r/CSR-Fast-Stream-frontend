@@ -1,9 +1,18 @@
+# Developer Pipeline
 
+### Development (inc. automated testing)
+
+**Key**
+- Github: Code repository
+- Slack: Team chat & Services integration (eg. builds, deployment etc)
+- Travis CI: Continuous Integration / Build Server
+- Hosting: Currently Heroku (PaaS)
+- Static Code Analysis: Scrutinizer (inc. Cpd, Md, Cs, Coverage etc)
 
 ![Alt text](http://g.gravizo.com/g?
 @startuml;
 actor Developer;
-participant "Feature/Bug" as DEVELOPER;
+participant "Feature/Bug/Tests" as DEVELOPER;
 participant "Local Dev ENV" as LOCAL;
 participant "Slack" as SLACK;
 participant "Github" as GITHUB;
@@ -41,3 +50,5 @@ DEVELOPER --> Developer: Done;
 deactivate DEVELOPER;
 @enduml
 )
+
+### Peer Review / Pull Request
