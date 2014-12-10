@@ -35,23 +35,13 @@ This will run the following:
 
 Documentation at http://docs.behat.org/en/latest/quick_intro_pt1.html
 
-`bin/behat --config test/behat.yml`
-
-For example, initialise Behat for `Transform\AppBundle`
-
 ```
-bin/behat --config test/behat.yml --init --suite=transformcore_app
-```
-
-Run features from bundle
-
-```
-bin/behat --config test/behat.yml --suite=transformcore_app
+make test.bdd
 ```
 
 ## PHPSpec
 
-To run PHPSpec suite `bin/phpspec run  --config test/phpspec.yml`
+To run PHPSpec suite `make test.spec`
 
 Results:
 ```
@@ -61,10 +51,14 @@ Results:
 21ms
 ```
 
+## PHPUnit
+
+To run PHPSpec suite `make test.unit`
+
 ## Run full test suite in parallel
 
 ```
-bin/robo parallel:run
+make test.run
 ```
 
 ```
