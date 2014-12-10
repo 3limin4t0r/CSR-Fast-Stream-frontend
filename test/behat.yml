@@ -28,7 +28,6 @@ phantomjs:
         contexts:
           - FeatureContext:
             session:   '@session'
-          - SharedContext
       transformcore_app:
         type: symfony_bundle
         bundle: TransformCoreAppBundle
