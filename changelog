@@ -1,0 +1,14 @@
+77636c6	Travis CI	Wed Dec 10 14:41:01 2014 +0000	Set build VERSION number build-develop-23
+06cdc58	jaffamonkey	Wed Dec 10 14:37:41 2014 +0000	corrected report output directory struture
+16f2121	jaffamonkey	Wed Dec 10 14:35:31 2014 +0000	cleaned up test gherkin and report location
+8bbffa9	jaffamonkey	Wed Dec 10 14:26:03 2014 +0000	added behat code and updated behat.yml to use more test clients and composer.json with required extensions
+8b353dd	Paul Littlebury	Wed Dec 10 12:53:08 2014 +0000	Merge pull request #2 from TransformCore/feature/git-pull-tags
+551ab62	Eddie Jaoude	Wed Dec 10 12:31:51 2014 +0000	Updated dev commands to use Makefile
+0302f30	Eddie Jaoude	Fri Dec 5 10:54:03 2014 +0000	Fixed path issue for Contributing documentation
+fe27b7c	Eddie Jaoude	Fri Dec 5 10:32:42 2014 +0000	Updated Slack Token & Github Token for TravisCI
+5e9df71	Eddie Jaoude	Fri Dec 5 09:57:38 2014 +0000	Renamed Deployment App on Heroku
+c5b7560	Eddie Jaoude	Thu Dec 4 14:55:18 2014 +0000	Ignoring web fonts files (web/fonts)
+93d9eb4	Eddie Jaoude	Thu Dec 4 14:53:27 2014 +0000	Updated badges & urls
+dcdebbb	Eddie Jaoude	Thu Dec 4 14:40:59 2014 +0000	Initial commit from Dial-Tone-Frontend repo
+4ba39e6	Rory Woodward	Tue Sep 30 12:03:58 2014 +0100	Update LICENSE
+fca9aa9	Rory Woodward	Tue Sep 30 12:02:33 2014 +0100	Initial commit
