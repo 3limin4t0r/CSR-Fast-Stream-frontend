@@ -10,7 +10,8 @@ use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 
 /**
- * Features context.
+ * Class FeatureContext
+ * @package TransformCore\Bundle\AppBundle\Features\Context
  */
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 
