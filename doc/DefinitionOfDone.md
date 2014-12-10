@@ -1,6 +1,6 @@
 # Definition of Done
 
-* Peer reivew & Build status
+1. Peer reivew & Build status
     * [ ] Peer review
     * [ ] Passing tests
         * [ ] Unit
@@ -9,5 +9,5 @@
     * [ ] Static Code Analysis
     * [ ] Code Coverage
     * [ ] Documentation
-    * [ ] Team verified on `develop` deployment
-* [ ] Scrum master verified on `develop` deployment
+2. [ ] Team verified on `develop` deployment
+3. [ ] Scrum master verified on `develop` deployment
