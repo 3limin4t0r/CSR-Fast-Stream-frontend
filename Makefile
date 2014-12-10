@@ -17,6 +17,15 @@ composer.update:
 test.run:
 	bin/robo parallel:run
 
+test.bdd:
+	bin/behat --config test/behat.yml --suite=transformcore_app
+
+test.spec:
+	bin/phpspec run  --config test/phpspec.yml
+
+test.unit:
+	bin/phpunit --configuration app
+
 # BUILD --------------------------------------------------------------------------------------
 
 scrutinizer.coverage:
@@ -54,7 +63,7 @@ dev.run: dev.branch composer.install dev.server
 dev.update: dev.branch composer.update dev.server
 
 dev.branch:
-	git pull --tags
+	git fetch --tags
 	git checkout ${branch}
 
 dev.server:
