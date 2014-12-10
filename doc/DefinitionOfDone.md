@@ -10,4 +10,4 @@
     * [ ] Code Coverage
     * [ ] Documentation
     * [ ] Team verified on `develop` deployment
-    * [ ] Scrum master verified on `develop` deployment
+* [ ] Scrum master verified on `develop` deployment
