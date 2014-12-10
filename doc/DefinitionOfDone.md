@@ -9,5 +9,7 @@
     * [ ] Static Code Analysis
     * [ ] Code Coverage
     * [ ] Documentation
-2. [ ] Team verified on `develop` deployment
-3. [ ] Scrum master verified on `develop` deployment
+2. Team verified 
+    * [ ] on `develop` environment
+3. Scrum master verified 
+    * [ ] on `develop` environment
