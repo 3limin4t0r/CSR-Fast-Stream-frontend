@@ -4,6 +4,7 @@ default:
         contexts:
           - FeatureContext:
             session:   '@session'
+          - SharedContext
       transformcore_app:
         type: symfony_bundle
         bundle: TransformCoreAppBundle
@@ -13,3 +14,38 @@ default:
         sessions:
           my_session:
             symfony2: ~
+          selenium_session:
+            selenium2: ~
+          goutte_session:
+            goutte: ~
+      chartinger\Behat\TwigReportExtension\Extension:
+         output:
+          file: ./report.html
+         templates:
+          file: default.twig
+phantomjs:
+    suites:
+      default:
+        contexts:
+          - FeatureContext:
+            session:   '@session'
+          - SharedContext
+      transformcore_app:
+        type: symfony_bundle
+        bundle: TransformCoreAppBundle
+    extensions:
+      Behat\Symfony2Extension: ~
+      Behat\MinkExtension:
+        sessions:
+          my_session:
+            symfony2: ~
+          phantomjs_session:
+            selenium2:
+              browser: phantomjs
+          goutte_session:
+            goutte: ~
+      chartinger\Behat\TwigReportExtension\Extension:
+         output:
+          file: ./report.html
+         templates:
+          file: default.twig
