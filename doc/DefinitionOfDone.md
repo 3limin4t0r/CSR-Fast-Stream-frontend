@@ -1,6 +1,6 @@
 # Definition of Done
 
-1. Peer reivew & Build status
+1. Peer review & Build status
     * [ ] Peer review
     * [ ] Passing tests
         * [ ] Unit
