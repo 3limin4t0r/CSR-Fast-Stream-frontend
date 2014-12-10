@@ -1,0 +1,15 @@
+default:
+    suites:
+      default:
+        contexts:
+          - FeatureContext:
+            session:   '@session'
+      transformcore_app:
+        type: symfony_bundle
+        bundle: TransformCoreAppBundle
+    extensions:
+      Behat\Symfony2Extension: ~
+      Behat\MinkExtension:
+        sessions:
+          my_session:
+            symfony2: ~

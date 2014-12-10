@@ -1,0 +1,37 @@
+language: php
+
+php:
+  - 5.5
+
+before_script:
+  - make composer.install
+
+script:
+  - make test.run
+  - make scrutinizer.coverage
+
+after_success:
+  - make build.package
+
+after_failure:
+  - make logs
+
+branches:
+  except:
+    - /^build-[0-9a-z\-\/]*/
+
+notifications:
+  slack:
+    secure: vYPx6okG78QdCRsV+9cCPPC+URz7vtBjm0ID/7t0L0Ef9wJ5Wl/eln97rPRNiRUWRGGu8mwdQFh7JQCEqZQftYAkTx8PlV7VlLToai4rEHEupE0/KVdors70DXvlovznUQYVhVmQBgWKXrkWNgGFLqzH1Z8qXykrL/pNvVqTZyM=
+
+env:
+  global:
+    - secure: U1TFca6LeHYWKiBJznqjO7c8F8sK63OnH37O/v+9N/wvp9YBusDzJ0NyerFbxce4c28ZL1JFUQUgAqeHOzDFjHdqY7sHD8YHSUEZS9ZCjXsfnKnEIPY/HOCOOED7dYZrLp6NZFF1B3BoosguFTenEMT2XEc1DsmwfHk3aqLYNes=
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: ioz9Hi/hAbvd+1VuiH3aQwRpyjMP0OvkhafMyMcksK8tQjd5j8r8MeRILza3BO2XvVKGHjUJuCLoYnGt84+m7npNP7OeiSavJQL40CN/VMTmDyEpRVoyMNqkPxjuFQCuHsx1d/uN1ADkx61HaP6LCglrA1mSmcHWwGiVwg8OnQc=
+  app: csr-frontend-ci
+  on:
+    all_branches: true

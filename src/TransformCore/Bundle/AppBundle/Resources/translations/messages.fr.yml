@@ -1,0 +1,6 @@
+nav:
+  home: Accueil
+  login: S'identifier
+
+home:
+  title: Bonjour
