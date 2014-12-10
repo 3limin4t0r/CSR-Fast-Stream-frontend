@@ -32,9 +32,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
     public function __construct()
     {
-        $this->baseUrl = 'http://jaffamonkey.com';
-        $client = new Http\Client(['base_url' => 'http://jaffamonkey.com']);
-        $this->_client = $client;
+
     }
 
     public function getParameter($name)
