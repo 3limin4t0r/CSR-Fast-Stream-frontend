@@ -1,62 +1,58 @@
 <?php
-/**
- */
+
 namespace TransformCore\Bundle\AppBundle\Entity;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * THIS IS NOT A DATABASE TABLE.
+ * Pseudo entity (not persisited)
  *
- * It is only used for some data-holding during the form processing
  */
-class PassportHolder
+class PseudoUser
 {
-    const ME    = 'me';
-    const CHILD = 'child';
-    const OTHER = 'other';
+    /**
+     * @Assert\Length(
+     *      min = 2,
+     *      max = 50,
+     *      minMessage = "Your first name must be at least {{ limit }} characters long",
+     *      maxMessage = "Your first name cannot be longer than {{ limit }} characters long"
+     * )
+     */
+    protected $firstName;
+
 
     /**
-     * @Assert\Choice(choices = {"me", "child", "other"}, message="holder.choice")
-     * @Assert\NotBlank(message="holder.choice")
+     * @Assert\Length(
+     *      min = 2,
+     *      max = 50,
+     *      minMessage = "Your last name must be at least {{ limit }} characters long",
+     *      maxMessage = "Your last name cannot be longer than {{ limit }} characters long"
+     * )
      */
-    public $holder;
-
-     /**
-     * Set holder
-     *
-     * @param  integer        $holder
-     * @return PassportHolder
-     */
-    public function setHolder($holder)
-    {
-        $this->holder = $holder;
-
-        return $this;
-    }
+    protected $lastName;
 
     /**
-     * Get holder
-     *
-     * @return integer
+     * @Assert\Email(
+     *     message = "The email '{{ value }}' is not a valid email.",
+     *     checkMX = true
+     * )
      */
-    public function getHolder()
-    {
-        return $this->holder;
-    }
+    protected $email;
 
-    public function isHolderOther()
-    {
-        return ($this->getHolder() == self::OTHER);
-    }
 
-    public function isHolderMine()
-    {
-        return ($this->getHolder() == self::ME);
-    }
+    /**
+     * @Assert\True(message = "Terms accepted can only be set to true")
+     */
+    protected $termsAccepted;
 
-    public function isHolderChild()
-    {
-        return ($this->getHolder() == self::CHILD);
-    }
+
+
+    /**
+     * @Assert\Choice(choices = {"Social media", "TV", "Career adive", "Other"}, message="Please choose valid reason")
+     * @Assert\NotBlank(message="Choose valid reason")
+     */
+    protected $reasonForInterest;
+
+
+
 }

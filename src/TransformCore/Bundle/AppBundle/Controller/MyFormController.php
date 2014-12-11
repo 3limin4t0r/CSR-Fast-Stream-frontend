@@ -3,7 +3,8 @@
 namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use TransformCore\Bundle\AppBundle\Entity\PassportHolder;
+use TransformCore\Bundle\AppBundle\Entity\PseudoUser;
+
 
 /**
  * Class DefaultController
@@ -14,7 +15,7 @@ class MyFormController extends Controller
 
     public function indexAction() {
 
-        $formData = new PassportHolder();
+        $formData = new PseudoUser();
 
         $flow = $this->get('myForm.form.flow.myForm'); 
 
@@ -28,15 +29,18 @@ class MyFormController extends Controller
 
         // form of the current step
         $form = $flow->createForm();
-        if (1 || $flow->isValid($form)) {
+        if ($flow->isValid($form)) {
 
-
-            //$flow->saveCurrentStepData($form);
+            $flow->saveCurrentStepData($form);
 
             if ($flow->nextStep()) {
                 // form for the next step
                 $form = $flow->createForm();
             } else {
+
+
+                echo 'Form finished.. w00t!';
+                exit();
                 // flow finished
 
                 // echo header("Content-type: application/json");
