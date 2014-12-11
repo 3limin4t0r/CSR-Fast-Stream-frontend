@@ -1,4 +1,7 @@
+{% extends "::base.html.twig" %}
 
+
+{% block body %}
 
 <div>
     Steps:
@@ -6,6 +9,35 @@
 </div>
 <form method="post" {{ form_enctype(form) }}>
     {{ form_errors(form) }}
+
+    {% set flowStepNumber = flow.getCurrentStepNumber() %}
+
+
+    {% if flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_FIRSTNAME') %}
+
+        {% include 'TransformCoreAppBundle:MyForm:_firstName.html.twig' %}
+
+    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_LASTNAME') %}
+
+         {% include 'TransformCoreAppBundle:MyForm:_lastName.html.twig' %}
+
+    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_EMAIL') %}
+
+         {% include 'TransformCoreAppBundle:MyForm:_email.html.twig' %}
+
+    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_TERMS') %}
+
+         {% include 'TransformCoreAppBundle:MyForm:_terms.html.twig' %}
+
+    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_REASONS') %}
+
+         {% include 'TransformCoreAppBundle:MyForm:_reasons.html.twig' %}
+
+    {% endif %}
+
+
+
+
 
     {% if flow.getCurrentStepNumber() == 1 %}
 
@@ -24,3 +56,4 @@
     {% include 'CraueFormFlowBundle:FormFlow:buttons.html.twig' %}
 </form>
 
+{% endblock %}

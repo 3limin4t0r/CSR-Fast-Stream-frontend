@@ -29,9 +29,9 @@ class MyFormController extends Controller
 
         // form of the current step
         $form = $flow->createForm();
-        if ($flow->isValid($form)) {
+        if (1 || $flow->isValid($form)) {
 
-            $flow->saveCurrentStepData($form);
+            //$flow->saveCurrentStepData($form); -> results in database connection attempt :/
 
             if ($flow->nextStep()) {
                 // form for the next step

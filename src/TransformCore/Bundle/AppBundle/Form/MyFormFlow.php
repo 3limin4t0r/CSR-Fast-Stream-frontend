@@ -8,6 +8,12 @@ use Symfony\Component\Form\FormTypeInterface;
 
 class MyFormFlow extends FormFlow {
 
+    const FLOW_USER_FIRSTNAME   = 1;
+    const FLOW_USER_LASTNAME    = 2;
+    const FLOW_USER_EMAIL       = 3;
+    const FLOW_USER_TERMS       = 4;
+    const FLOW_USER_REASONS     = 5;
+
     /**
      * @var FormTypeInterface
      */
