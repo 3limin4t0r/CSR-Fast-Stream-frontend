@@ -20,12 +20,13 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new TransformCore\Bundle\AppBundle\TransformCoreAppBundle(),
+            new Craue\FormFlowBundle\CraueFormFlowBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-            $bundles[] = new Lsw\VersionInformationBundle\LswVersionInformationBundle();
+            //$bundles[] = new Lsw\VersionInformationBundle\LswVersionInformationBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 

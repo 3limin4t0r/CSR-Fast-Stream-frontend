@@ -94,3 +94,21 @@ jms_i18n_routing:
     default_locale: en
     locales: [en, fr]
     strategy: prefix
+
+
+services:
+    myForm.form.myForm:
+        class: TransformCore\Bundle\AppBundle\Form\MyForm
+        tags:
+            - { name: form.type, alias: createFoo }
+
+    myForm.form.flow.myForm:
+        class: TransformCore\Bundle\AppBundle\Form\MyFormFlow
+        parent: craue.form.flow
+        scope: request
+        calls:
+            - [ setFormType, [ "@myForm.form.myForm" ] ]
+
+
+
+
