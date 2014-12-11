@@ -98,15 +98,17 @@ jms_i18n_routing:
 
 services:
     myForm.form.myForm:
-        class: TransformCore\AppBundle\Form\MyForm
+        class: TransformCore\Bundle\AppBundle\Form\MyForm
         tags:
             - { name: form.type, alias: createFoo }
 
     myForm.form.flow.myForm:
-        class: TransformCore\AppBundle\Form\MyFormFlow
+        class: TransformCore\Bundle\AppBundle\Form\MyFormFlow
         parent: craue.form.flow
         scope: request
         calls:
             - [ setFormType, [ "@myForm.form.myForm" ] ]
+
+
 
 

@@ -1,6 +1,7 @@
 <?php
 
-// src/MyCompany/MyBundle/Form/CreateVehicleFlow.php
+namespace TransformCore\Bundle\AppBundle\Form;
+
 use Craue\FormFlowBundle\Form\FormFlow;
 use Craue\FormFlowBundle\Form\FormFlowInterface;
 use Symfony\Component\Form\FormTypeInterface;
@@ -28,10 +29,10 @@ class MyFormFlow extends FormFlow {
             ),
             array(
                 'label' => 'engine',
-                'type' => $this->formType,
-                'skip' => function($estimatedCurrentStepNumber, FormFlowInterface $flow) {
-                    return $estimatedCurrentStepNumber > 1 && !$flow->getFormData()->canHaveEngine();
-                },
+                'type' => $this->formType
+                // 'skip' => function($estimatedCurrentStepNumber, FormFlowInterface $flow) {
+                //     return $estimatedCurrentStepNumber > 1 && !$flow->getFormData()->canHaveEngine();
+                // },
             ),
             array(
                 'label' => 'confirmation',
