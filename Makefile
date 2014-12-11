@@ -66,6 +66,7 @@ dev.branch:
 	git fetch --tags
 	git checkout ${branch}
 
+
 dev.server:
 	php app/console server:run -vvv
 

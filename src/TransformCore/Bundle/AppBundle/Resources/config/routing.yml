@@ -5,3 +5,8 @@ transform_core_app_changelog:
 transform_core_app_homepage:
     path:     /
     defaults: { _controller: TransformCoreAppBundle:Default:index }
+
+transform_core_app_myform:
+    path:    /myform
+    defaults: { _controller: TransformCoreAppBundle:MyForm:index }
+
