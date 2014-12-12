@@ -15,27 +15,31 @@
 
     {% if flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_FIRSTNAME') %}
 
-        {% include 'TransformCoreAppBundle:MyForm:_firstName.html.twig' %}
+
+        <h2>First Name</h2>
+
 
     {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_LASTNAME') %}
 
-         {% include 'TransformCoreAppBundle:MyForm:_lastName.html.twig' %}
+        <h2>Last Name</h2>        
 
     {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_EMAIL') %}
 
-         {% include 'TransformCoreAppBundle:MyForm:_email.html.twig' %}
+        <h2>Email</h2>
 
     {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_TERMS') %}
 
-         {% include 'TransformCoreAppBundle:MyForm:_terms.html.twig' %}
+        <h2>User Terms</h2>
 
     {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_REASONS') %}
 
-         {% include 'TransformCoreAppBundle:MyForm:_reasons.html.twig' %}
+        <h2>User Reasons</h2>
+
+    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_CONFIRMATION') %}
+
+        <h2>Confirmation</h2>
 
     {% endif %}
-
-
 
 
 

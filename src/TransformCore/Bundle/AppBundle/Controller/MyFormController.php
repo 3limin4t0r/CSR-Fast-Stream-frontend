@@ -13,7 +13,8 @@ use TransformCore\Bundle\AppBundle\Entity\PseudoUser;
 class MyFormController extends Controller
 {
 
-    public function indexAction() {
+    public function indexAction()
+    {
 
         $formData = new PseudoUser();
 
@@ -29,9 +30,9 @@ class MyFormController extends Controller
 
         // form of the current step
         $form = $flow->createForm();
-        if (1 || $flow->isValid($form)) {
+        if ($flow->isValid($form)) {
 
-            //$flow->saveCurrentStepData($form); -> results in database connection attempt :/
+            $flow->saveCurrentStepData($form); //-> results in database connection attempt :/
 
             if ($flow->nextStep()) {
                 // form for the next step
