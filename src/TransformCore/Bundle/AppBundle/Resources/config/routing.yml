@@ -6,7 +6,28 @@ transform_core_app_homepage:
     path:     /
     defaults: { _controller: TransformCoreAppBundle:Default:index }
 
+
 transform_core_app_myform:
     path:    /myform
     defaults: { _controller: TransformCoreAppBundle:MyForm:index }
+
+transform_core_app_myform_step2:
+    path:    /myform/last-name
+    defaults: { _controller: TransformCoreAppBundle:MyForm:index, step:2 }
+
+transform_core_app_myform_step3:
+    path:    /myform/email
+    defaults: { _controller: TransformCoreAppBundle:MyForm:index, step:3 }
+
+transform_core_app_myform_step4:
+    path:    /myform/terms
+    defaults: { _controller: TransformCoreAppBundle:MyForm:index, step:4 }
+
+transform_core_app_myform_step5:
+    path:    /myform/reasons
+    defaults: { _controller: TransformCoreAppBundle:MyForm:index, step:5 }
+
+transform_core_app_myform_step6:
+    path:    /myform/confirmation
+    defaults: { _controller: TransformCoreAppBundle:MyForm:index, step:6 }
 

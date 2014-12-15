@@ -17,15 +17,25 @@ class MyFormFlow extends FormFlow {
     const FLOW_USER_CONFIRMATION    = 6;
 
 
+    protected $allowRedirectAfterSubmit = true;
+
+    private $stepCount = 0;
+
+
     public function getName()
     {
         return 'MyFormFlow';
     }
 
+    public function getStepCount()
+    {
+        return $this->stepCount;
+    }
+
 
     protected function loadStepsConfig()
     {
-        return array(
+        $steps = array(
             array(
                 'label' => 'firstName',
                 'type' => new MyFormFirstName(),
@@ -54,5 +64,8 @@ class MyFormFlow extends FormFlow {
                 'type' => new MyFormConfirmation()
             ),
         );
+
+        $this->stepCount = sizeof($steps);
+        return $steps;
     }
 }
