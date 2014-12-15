@@ -13,7 +13,7 @@ class MyFormFirstName extends AbstractType
 
     public function getName()
     {
-        return 'myform_firstName';
+        return 'MyFormFirstName';
     }
 
 
@@ -25,7 +25,4 @@ class MyFormFirstName extends AbstractType
                 'required' => true
         ));    
     }
-
-   
-
 }

@@ -17,12 +17,6 @@ class MyFormFlow extends FormFlow {
     const FLOW_USER_CONFIRMATION    = 6;
 
 
-    /**
-     * @var FormTypeInterface
-     */
-    protected $formType;
-
-
     public function getName()
     {
         return 'MyFormFlow';
@@ -31,36 +25,33 @@ class MyFormFlow extends FormFlow {
 
     protected function loadStepsConfig()
     {
-        //echo 'loading steps...';
-        //echo get_class($this->formType);
-        $this->formType = new MyFormType();
-
         return array(
             array(
                 'label' => 'firstName',
-                'type' => $this->formType,
+                'type' => new MyFormFirstName(),
             ),
             array(
                 'label' => 'lastName',
-                'type' => $this->formType
+                'type' => new MyFormLastName()
                 // 'skip' => function($estimatedCurrentStepNumber, FormFlowInterface $flow) {
                 //     return $estimatedCurrentStepNumber > 1 && !$flow->getFormData()->canHaveEngine();
                 // },
             ),
             array(
                 'label' => 'email',
-                'type' => $this->formType,
+                'type' => new MyFormEmail(),
             ),
             array(
                 'label' => 'terms',
-                'type' => $this->formType,
+                'type' => new MyFormTerms(),
             ),
             array(
                 'label' => 'reasons',
-                'type' => $this->formType,
+                'type' => new MyFormReasons(),
             ),
             array(
                 'label' => 'confirmation',
+                'type' => new MyFormConfirmation()
             ),
         );
     }

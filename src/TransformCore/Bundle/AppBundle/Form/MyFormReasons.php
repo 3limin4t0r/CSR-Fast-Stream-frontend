@@ -13,7 +13,7 @@ class MyFormReasons extends AbstractType
 
     public function getName()
     {
-        return 'myform_reasons';
+        return 'MyFormReasons';
     }
 
 

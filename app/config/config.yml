@@ -102,40 +102,6 @@ services:
         class: TransformCore\Bundle\AppBundle\Form\MyFormFlow
         parent: craue.form.flow
         scope: request
-#        calls:
-#            - [ setFormType, [ "@myForm.form.myForm.firstName" ] ]
-
-    myForm.form.myForm.firstName:
-        class: TransformCore\Bundle\AppBundle\Form\MyFormFirstName
-        tags:
-            - { name: form.type, alias: myform_firstName }
-
-    myForm.form.myForm.LastName:
-        class: TransformCore\Bundle\AppBundle\Form\MyFormLastName
-        tags:
-            - { name: form.type, alias: myform_lastName }
-
-    myForm.form.myForm.Email:
-        class: TransformCore\Bundle\AppBundle\Form\MyFormEmail
-        tags:
-            - { name: form.type, alias: myform_email }
-
-    myForm.form.myForm.Terms:
-        class: TransformCore\Bundle\AppBundle\Form\MyFormTerms
-        tags:
-            - { name: form.type, alias: myform_terms }
-
-    myForm.form.myForm.Reasons:
-        class: TransformCore\Bundle\AppBundle\Form\MyFormReasons
-        tags:
-            - { name: form.type, alias: myform_reasons }
-
-    myForm.form.myForm.Terms:
-        class: TransformCore\Bundle\AppBundle\Form\MyFormConfirmation
-        tags:
-            - { name: form.type, alias: myform_confirmation }
-
-
 
 
 

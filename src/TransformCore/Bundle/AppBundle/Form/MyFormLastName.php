@@ -13,7 +13,7 @@ class MyFormLastName extends AbstractType
 
     public function getName()
     {
-        return 'myform_lastName';
+        return 'MyFormLastName';
     }
 
 
@@ -28,8 +28,4 @@ class MyFormLastName extends AbstractType
         ));   
 
     }
-
-
-  
-
 }

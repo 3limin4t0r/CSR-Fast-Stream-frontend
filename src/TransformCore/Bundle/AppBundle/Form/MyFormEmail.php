@@ -11,6 +11,10 @@ use TransformCore\Bundle\AppBundle\Entity\PseudoUser;
 class MyFormEmail extends AbstractType
 {
  
+    public function getName()
+    {
+        return 'MyFormEmail';
+    }
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -20,11 +24,4 @@ class MyFormEmail extends AbstractType
             'required' => true
         ));   
     }
-
-
-    public function getName()
-    {
-        return 'myform_email';
-    }
-
 }
