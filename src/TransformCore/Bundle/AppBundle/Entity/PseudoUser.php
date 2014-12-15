@@ -2,6 +2,7 @@
 
 namespace TransformCore\Bundle\AppBundle\Entity;
 
+
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -10,6 +11,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class PseudoUser
 {
+    const MAX_NAME_LENGTH = 30;
+
+
     /**
      * @Assert\Length(
      *      min = 2,
@@ -51,7 +55,62 @@ class PseudoUser
      * @Assert\Choice(choices = {"Social media", "TV", "Career adive", "Other"}, message="Please choose valid reason")
      * @Assert\NotBlank(message="Choose valid reason")
      */
-    protected $reasonForInterest;
+    protected $reasonsForInterest;
+
+
+    // setters/getters
+
+    public function setFirstName($name)
+    {
+        $this->firstName = $name;
+    }
+
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    public function setLastName($name)
+    {
+        $this->lastName = $name;
+    }
+
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setTermsAccepted($termsAccepted)
+    {
+        $this->termsAccepted = $termsAccepted;
+    }
+
+    public function getTermsAccepted()
+    {
+        return $this->termsAccepted;
+    }
+
+    public function setReasonsForInterest($reasons)
+    {
+        $this->reasonsForInterest = $reasons;
+    }
+
+    public function getReasonsForInterest()
+    {
+        return $this->reasonsForInterest;
+    }
+
 
 
 

@@ -23,29 +23,25 @@ class MyFormFlow extends FormFlow {
     protected $formType;
 
 
-    public function setFormType(FormTypeInterface $formType)
-    {
-        $this->formType = $formType;
-    }
-
-
     public function getName()
     {
-        return 'createVehicle';
+        return 'MyFormFlow';
     }
-
 
 
     protected function loadStepsConfig()
     {
-    
+        //echo 'loading steps...';
+        //echo get_class($this->formType);
+        $this->formType = new MyFormType();
+
         return array(
             array(
-                'label' => 'firstname',
+                'label' => 'firstName',
                 'type' => $this->formType,
             ),
             array(
-                'label' => 'lastname',
+                'label' => 'lastName',
                 'type' => $this->formType
                 // 'skip' => function($estimatedCurrentStepNumber, FormFlowInterface $flow) {
                 //     return $estimatedCurrentStepNumber > 1 && !$flow->getFormData()->canHaveEngine();

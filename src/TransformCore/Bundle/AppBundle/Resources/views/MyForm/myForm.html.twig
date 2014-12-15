@@ -15,9 +15,7 @@
 
     {% if flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_FIRSTNAME') %}
 
-
         <h2>First Name</h2>
-
 
     {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_LASTNAME') %}
 
@@ -41,19 +39,6 @@
 
     {% endif %}
 
-
-
-    {% if flow.getCurrentStepNumber() == 1 %}
-
-
-        {#
-        <div>
-            When selecting four wheels you have to choose the engine in the next step.<br />
-            {{ form_row(form.numberOfWheels) }}
-        </div>
-        #}
-
-    {% endif %}
 
     {{ form_rest(form) }}
 

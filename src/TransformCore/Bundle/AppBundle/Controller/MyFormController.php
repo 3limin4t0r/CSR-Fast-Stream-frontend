@@ -15,43 +15,27 @@ class MyFormController extends Controller
 
     public function indexAction()
     {
-
         $formData = new PseudoUser();
-
         $flow = $this->get('myForm.form.flow.myForm'); 
-
-
         $flow->bind($formData);
-
-        //$flow->setGenericFormOptions(array('action' => 'www.google.com'));
-        //print_r($flow->getGenericFormOptions());
-        //exit();
 
 
         // form of the current step
         $form = $flow->createForm();
         if ($flow->isValid($form)) {
 
-            $flow->saveCurrentStepData($form); //-> results in database connection attempt :/
+            $flow->saveCurrentStepData($form); 
 
             if ($flow->nextStep()) {
                 // form for the next step
                 $form = $flow->createForm();
             } else {
 
+                print_r($formData);            
+                $flow->reset(); // remove step data from the session
 
                 echo 'Form finished.. w00t!';
                 exit();
-                // flow finished
-
-                // echo header("Content-type: application/json");
-                // echo json_encode($formData);
-
-                // $em = $this->getDoctrine()->getManager();
-                // $em->persist($formData);
-                // $em->flush();
-
-                $flow->reset(); // remove step data from the session
 
                 return $this->redirect($this->generateUrl('home')); // redirect when done
             }
