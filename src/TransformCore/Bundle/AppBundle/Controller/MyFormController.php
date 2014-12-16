@@ -4,7 +4,7 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use TransformCore\Bundle\AppBundle\Entity\PseudoUser;
-
+use Craue\FormFlowBundle\Form\FormFlow as CraueFlow;
 
 /**
  * Class DefaultController
@@ -14,7 +14,7 @@ class MyFormController extends Controller
 {
 
 
-    private function allTheRoutes($targetStep, $base, $locale)
+    private function findRoute($targetStep, $base, $locale)
     {
         $found = null;
         $router = $this->container->get('router');
@@ -22,7 +22,11 @@ class MyFormController extends Controller
         $allRoutes = $collection->all();
         $prefix = $locale.'__RG__';
         foreach ($allRoutes as $index => $route) {
-            $route_path = 'transform_core_app_'.$base.'_step'.$targetStep;
+
+            $route_path = 'transform_core_app_'.$base;
+            if ($targetStep > 1) {
+                $route_path .='_step'.$targetStep;
+            }
             $pattern = $prefix.$route_path;
             
             if (strpos($index, $pattern) === 0) {
@@ -37,56 +41,81 @@ class MyFormController extends Controller
     }
 
 
+    private function getParams($flow)
+    {        
+        $request = $this->getRequest();
+        return $this->get('craue_formflow_util')->addRouteParameters(
+            array_merge(
+                $request->query->all(),
+                $request->attributes->get('_route_params')
+            ),
+        $flow);
+    }
+
+
+    private function conditionalRedirect($base, $locale, $flow, $transition=null)
+    {        
+        $totalSteps = $flow->getStepCount();
+        $params = $this->getParams($flow);
+
+        switch ($transition) {
+            case CraueFlow::TRANSITION_BACK:
+                // no need to decrement
+            break;
+            case CraueFlow::TRANSITION_RESET:
+                $params['step'] = 1;
+            break;
+            default;
+                $params['step']++;  // increment step manually (no need if going "back")
+            break;
+        }
+
+        if ($params['step'] < $totalSteps) {
+
+            $new_target_route = $this->findRoute($params['step'], $base, $locale);
+            // attempted to remove 'instance' param
+            // to create cleaner URLs but this breaks 
+            // position in multistep form and current stored data in session appears lost
+            //unset($params['instance']); 
+
+            return $this->generateUrl($new_target_route, $params);
+            
+        } else {
+            die('Invalid step to redirect to.');
+        }
+    }
+
 
     public function indexAction()
     {
         $base = 'myform';
         $locale = 'en';
-
         $formData = new PseudoUser();
-        $flow = $this->get('myForm.form.flow.myForm'); 
+        $flow = $this->get('myForm.form.flow.myForm');
+        $transition = $flow->getRequestedTransition();
         $flow->bind($formData);
-
 
         // form of the current step
         $form = $flow->createForm();
-        $totalSteps = $flow->getStepCount();  // custom call
-
+       
+        if ($transition != '') {
+            return $this->redirect($this->conditionalRedirect($base, $locale, $flow, $transition));
+        }
 
         if ($flow->isValid($form)) {
 
             $flow->saveCurrentStepData($form);
 
-            // conditionally do redirect to GET 
-            if ($flow->redirectAfterSubmit($form)) {
-                $request = $this->getRequest();
-                
-                $params = $this->get('craue_formflow_util')->addRouteParameters(array_merge($request->query->all(),
-                    $request->attributes->get('_route_params')), $flow);
-
-               $params['step']++;  // increment step manually :/
-
-
-               if ($params['step'] < $totalSteps) {
-                    $new_target_route = $this->allTheRoutes($params['step'], $base, $locale);                    
-                    //return $this->redirect($this->generateUrl($request->attributes->get('_route'), $params));
-
-                    // attempted to remove 'instance' param
-                    // to create cleaner URLs but this breaks 
-                    // position in multistep form and current stored data in session appears lost
-                    //unset($params['instance']); 
-
-                    return $this->redirect($this->generateUrl($new_target_route, $params));
-                }
+            if ($flow->redirectAfterSubmit($form)) {    
+                return $this->redirect($this->conditionalRedirect($base, $locale, $flow));
             }
-
 
             if ($flow->nextStep()) {
                 // form for the next step
                 $form = $flow->createForm();
             } else {
 
-                print_r($formData);            
+                print_r($formData);
                 $flow->reset(); // remove step data from the session
 
                 echo 'Form finished.. w00t!';
