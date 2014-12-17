@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "609b47bdd08826319498f5f339382965",
+    "hash": "b3ed0b2a9e93a033b057be4909aae6b1",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -701,16 +701,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.6",
+            "version": "v2.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9"
+                "reference": "2bc4ff3cab2ae297bcd05f2e619d42e6a7ca9e68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9",
-                "reference": "bebacf79d8d4dae9168f0f9bc6811e6c2cb6a4d9",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2bc4ff3cab2ae297bcd05f2e619d42e6a7ca9e68",
+                "reference": "2bc4ff3cab2ae297bcd05f2e619d42e6a7ca9e68",
                 "shasum": ""
             },
             "require": {
@@ -770,7 +770,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-10-06 13:22:50"
+            "time": "2014-12-16 13:45:01"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2695,6 +2695,25 @@
             "time": "2014-10-13 12:58:55"
         },
         {
+            "name": "eddiejaoude/dev-helper-cmds",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eddiejaoude/dev-helper-cmds.git",
+                "reference": "8b84438b0a8d08b2f066c87e6bbecfd906eeda16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/8b84438b0a8d08b2f066c87e6bbecfd906eeda16",
+                "reference": "8b84438b0a8d08b2f066c87e6bbecfd906eeda16",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Useful commands for every Developer",
+            "time": "2014-12-14 22:14:18"
+        },
+        {
             "name": "fabpot/goutte",
             "version": "v1.0.7",
             "source": {
@@ -3210,16 +3229,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v49",
+            "version": "v50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "0adff36b9d648a3f836271fb7a6dc7eafff74356"
+                "reference": "dcfaa2445bdd977c7ea8b38059a86ee2265e9699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/0adff36b9d648a3f836271fb7a6dc7eafff74356",
-                "reference": "0adff36b9d648a3f836271fb7a6dc7eafff74356",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/dcfaa2445bdd977c7ea8b38059a86ee2265e9699",
+                "reference": "dcfaa2445bdd977c7ea8b38059a86ee2265e9699",
                 "shasum": ""
             },
             "bin": [
@@ -3250,7 +3269,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2014-11-28 14:22:06"
+            "time": "2014-12-11 00:24:11"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -3395,30 +3414,33 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "61712147412cb647b6cb68b19833a60bfda759a1"
+                "reference": "3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/61712147412cb647b6cb68b19833a60bfda759a1",
-                "reference": "61712147412cb647b6cb68b19833a60bfda759a1",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60",
+                "reference": "3d2ac6c2da3d7c1c42b966a39b0754bd055b4c60",
                 "shasum": ""
             },
             "require": {
+                "doctrine/instantiator": "~1.0,>=1.0.1",
                 "php": ">=5.3.3",
                 "phpspec/php-diff": "~1.0.0",
                 "phpspec/prophecy": "~1.1",
-                "symfony/console": "~2.1",
+                "sebastian/exporter": "~1.0",
+                "symfony/console": "~2.3",
                 "symfony/event-dispatcher": "~2.1",
                 "symfony/finder": "~2.1",
+                "symfony/process": "~2.1",
                 "symfony/yaml": "~2.1"
             },
             "require-dev": {
-                "behat/behat": "~2.5",
-                "bossa/phpspec2-expect": "dev-master",
+                "behat/behat": "~3.0",
+                "bossa/phpspec2-expect": "~1.0",
                 "symfony/filesystem": "~2.1"
             },
             "suggest": {
@@ -3430,7 +3452,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -3464,7 +3486,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2014-07-01 14:09:19"
+            "time": "2014-12-14 09:37:32"
         },
         {
             "name": "phpspec/prophecy",
@@ -4316,7 +4338,8 @@
         "behat/mink-browserkit-driver": 20,
         "behat/mink-goutte-driver": 20,
         "chartinger/behat-twig-report-extension": 20,
-        "phpunit/phpunit": 0
+        "phpunit/phpunit": 0,
+        "eddiejaoude/dev-helper-cmds": 20
     },
     "prefer-stable": false,
     "platform": {
