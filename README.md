@@ -8,7 +8,7 @@
 
 # CSR-Fast-Stream-frontend
 
-Latest deploy (inc. branches) https://csr-fast-stream-frontend-ci.herokuapp.com/en/  
+Latest deploy (inc. branches) https://csr-frontend-ci.herokuapp.com/en/
 
 **Note: if you get an error, wait a minute & try again (refresh the page), the Application is probably deploying out or has gone to sleep.**
 
