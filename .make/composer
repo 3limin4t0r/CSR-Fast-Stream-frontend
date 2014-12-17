@@ -1,5 +1,0 @@
-composer.download:
-	if [ ! -f "composer.phar" ] ; then curl -s http://getcomposer.org/installer | php ; fi
-
-composer.install: composer.download
-	php composer.phar install --dev --no-interaction
