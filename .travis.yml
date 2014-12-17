@@ -7,14 +7,14 @@ before_script:
   - make composer.install
 
 script:
-  - make test.run
+  - make symfony.test.run
   - make scrutinizer.coverage
 
 after_success:
   - make build.package
 
 after_failure:
-  - make logs
+  - make symfony.logs
 
 branches:
   except:
