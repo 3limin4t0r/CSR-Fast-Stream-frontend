@@ -86,10 +86,33 @@ class MyFormController extends Controller
     }
 
 
+    private function redirectsToggle($base, $locale)
+    {
+        $session = $this->get('session');
+        $toggler = $session->get('toggler');
+        if ($toggler == null) {
+            $toggler = false;        
+        }
+        if (isset($_GET['toggler'])) {
+            $toggler = !$toggler;
+            $session->set('toggler', $toggler);
+            return $this->generateUrl($this->findRoute(0, $base, $locale));
+        }
+        return $toggler;
+    }
+
+
     public function indexAction()
     {
         $base = 'myform';
         $locale = 'en';
+
+        $toggler = $this->redirectsToggle($base, $locale);  
+        if (!is_bool($toggler)) {
+            return $this->redirect($toggler);
+        }
+
+
         $formData = new PseudoUser();
         $flow = $this->get('myForm.form.flow.myForm');
         $transition = $flow->getRequestedTransition();
@@ -98,7 +121,7 @@ class MyFormController extends Controller
         // form of the current step
         $form = $flow->createForm();
        
-        if ($transition != '') {
+        if ($transition != '' && $toggler) {
             return $this->redirect($this->conditionalRedirect($base, $locale, $flow, $transition));
         }
 
@@ -108,7 +131,7 @@ class MyFormController extends Controller
 
             if ($flow->redirectAfterSubmit($form)) {
 
-                if (($loc = $this->conditionalRedirect($base, $locale, $flow)) !== false) {
+                if ($toggler && ($loc = $this->conditionalRedirect($base, $locale, $flow)) !== false) {
                     return $this->redirect($loc);
                 }
             }
@@ -131,6 +154,7 @@ class MyFormController extends Controller
         return $this->render('TransformCoreAppBundle:MyForm:myForm.html.twig', array(
             'form' => $form->createView(),
             'flow' => $flow,
+            'redirects' => $toggler? 'off': 'on'
         ));
     }
 
