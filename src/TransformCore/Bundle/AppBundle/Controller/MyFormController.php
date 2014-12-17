@@ -70,7 +70,7 @@ class MyFormController extends Controller
             break;
         }
 
-        if ($params['step'] < $totalSteps) {
+        if ($params['step'] <= $totalSteps) {
 
             $new_target_route = $this->findRoute($params['step'], $base, $locale);
             // attempted to remove 'instance' param
@@ -81,7 +81,7 @@ class MyFormController extends Controller
             return $this->generateUrl($new_target_route, $params);
             
         } else {
-            die('Invalid step to redirect to.');
+            return false;
         }
     }
 
@@ -106,8 +106,11 @@ class MyFormController extends Controller
 
             $flow->saveCurrentStepData($form);
 
-            if ($flow->redirectAfterSubmit($form)) {    
-                return $this->redirect($this->conditionalRedirect($base, $locale, $flow));
+            if ($flow->redirectAfterSubmit($form)) {
+
+                if (($loc = $this->conditionalRedirect($base, $locale, $flow)) !== false) {
+                    return $this->redirect($loc);
+                }
             }
 
             if ($flow->nextStep()) {
