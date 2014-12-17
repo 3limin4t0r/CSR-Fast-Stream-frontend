@@ -4,7 +4,8 @@ php:
   - 5.5
 
 before_script:
-  - make composer.install
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
 
 script:
   - make symfony.test.run
