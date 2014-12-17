@@ -1,0 +1,5 @@
+build.package: build.user build.version build.changelog build.assets build.tag
+
+build.version:
+	replace '{{ version_self }}' $(GIT_TAG) -- version.ini
+	git commit -m "Set build VERSION number $(GIT_TAG)" version.ini
