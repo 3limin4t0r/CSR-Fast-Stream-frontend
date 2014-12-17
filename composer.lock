@@ -1370,17 +1370,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.12",
+            "version": "v3.0.13",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "fcb1b0d52c5b5396228e52e65bc6924e9797ee84"
+                "reference": "a46e422c1135f2efa27b72a94e58852849134420"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/fcb1b0d52c5b5396228e52e65bc6924e9797ee84",
-                "reference": "fcb1b0d52c5b5396228e52e65bc6924e9797ee84",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/a46e422c1135f2efa27b72a94e58852849134420",
+                "reference": "a46e422c1135f2efa27b72a94e58852849134420",
                 "shasum": ""
             },
             "require": {
@@ -1419,7 +1419,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2014-12-03 13:51:42"
+            "time": "2014-12-17 06:40:12"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2700,18 +2700,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eddiejaoude/dev-helper-cmds.git",
-                "reference": "8b84438b0a8d08b2f066c87e6bbecfd906eeda16"
+                "reference": "d4020942d3147d352b4ae372315009b8454b459d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/8b84438b0a8d08b2f066c87e6bbecfd906eeda16",
-                "reference": "8b84438b0a8d08b2f066c87e6bbecfd906eeda16",
+                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/d4020942d3147d352b4ae372315009b8454b459d",
+                "reference": "d4020942d3147d352b4ae372315009b8454b459d",
                 "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Useful commands for every Developer",
-            "time": "2014-12-14 22:14:18"
+            "time": "2014-12-17 07:09:33"
         },
         {
             "name": "fabpot/goutte",
