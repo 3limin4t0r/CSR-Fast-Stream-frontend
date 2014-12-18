@@ -16,6 +16,8 @@ Latest deploy (inc. branches) https://csr-fast-stream-frontend-ci.herokuapp.com/
 
 * [Contribution guidelines](/CONTRIBUTING.md)
 * [Versioning successful builds - Release Candidates](/doc/Versioning.md)
+* [Localisation](/doc/Localisation.md)
+* [PageLayout](/doc/PageLayout.md)
 
 ## Run app
 
