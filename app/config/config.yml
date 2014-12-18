@@ -1,7 +1,6 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
-    - { resource: ../../version.ini }
 
 framework:
     #esi:             ~
@@ -30,7 +29,7 @@ twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
     globals:
-      version_self: %version_self%
+      version: "@transform_core_app_main.service.version"
 
 # Assetic Configuration
 assetic:
