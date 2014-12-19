@@ -4,19 +4,19 @@
 
 **Key**
 - Github: Code repository
-- Slack: Team chat & Services integration (eg. builds, deployment etc)
-- Travis CI: Continuous Integration / Build Server
-- Hosting: Currently Heroku (PaaS)
-- Static Code Analysis: Scrutinizer (inc. Cpd, Md, Cs, Coverage etc)
+- Comms: (eg. Slack) Team chat & Services integration (eg. builds, deployment etc)
+- CI: (eg. Travis) Continuous Integration / Build Server
+- Hosting: (eg. PaaS Heroku)
+- Static Code Analysis: (eg. Scrutinizer)
 
 ![Alt text](http://g.gravizo.com/g?
 @startuml;
 actor Developer;
 participant "Feature/Bug/Tests" as DEVELOPER;
 participant "Local Dev ENV" as LOCAL;
-participant "Slack" as SLACK;
+participant "Comms" as COMMS;
 participant "Github" as GITHUB;
-participant "Travis CI" as TRAVIS;
+participant "CI" as CI;
 participant "Hosting" as HOSTING;
 participant "Static Code Analysis" as ANALYSIS;
 Developer -> DEVELOPER: Code;
@@ -25,32 +25,28 @@ DEVELOPER -> LOCAL: Do Work;
 activate LOCAL;
 LOCAL -> GITHUB: Push;
 activate GITHUB;
-activate SLACK;
-GITHUB -> SLACK: Notification;
-GITHUB -> TRAVIS: Push Hook;
-activate TRAVIS;
+activate COMMS;
+GITHUB -> COMMS: Notification;
+GITHUB -> CI: Push Hook;
+activate CI;
 activate HOSTING;
-TRAVIS -> HOSTING: If Successful;
-TRAVIS --> GITHUB: If failure;
-TRAVIS --> SLACK: Notification;
+CI -> HOSTING: If Successful;
+CI --> GITHUB: If failure;
+CI --> COMMS: Notification;
 activate ANALYSIS;
-TRAVIS --> ANALYSIS: Push;
+CI --> ANALYSIS: Push;
 ANALYSIS --> GITHUB: Notification;
 deactivate ANALYSIS;
-TRAVIS -> GITHUB: Notification;
-HOSTING --> SLACK: Notification;
+CI -> GITHUB: Notification;
+HOSTING --> COMMS: Notification;
 deactivate HOSTING;
-TRAVIS --> GITHUB: Notification;
-deactivate TRAVIS;
+CI --> GITHUB: Notification;
+deactivate CI;
 deactivate GITHUB;
-SLACK --> DEVELOPER: Notification;
-deactivate SLACK;
+COMMS --> DEVELOPER: Notification;
+deactivate COMMS;
 deactivate LOCAL;
 DEVELOPER --> Developer: Done;
 deactivate DEVELOPER;
 @enduml
 )
-
-### Peer Review / Pull Request
-
-`To be done`
