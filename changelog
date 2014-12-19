@@ -1,0 +1,14 @@
+a7d6e04	Travis CI	Fri Dec 19 06:26:58 2014 +0000	Set build VERSION number build-documentation-pipeline-diagram-105
+ccfa63c	Eddie Abou-Jaoude	Fri Dec 19 06:25:25 2014 +0000	Checkpoints made generic with example
+1fe5a8d	Eddie Abou-Jaoude	Sun Dec 7 08:43:58 2014 +0000	Note for Peer Review / Pull Request diagram
+31e3483	Eddie Abou-Jaoude	Sun Dec 7 08:43:19 2014 +0000	Section titles & Key added for Swim lane diagram
+a8f89b8	Eddie Abou-Jaoude	Sun Dec 7 08:17:49 2014 +0000	Added Travis to Slack notification
+dd62cad	Eddie Abou-Jaoude	Sat Dec 6 23:33:38 2014 +0000	Initial pipeline diagram for single developer
+0302f30	Eddie Jaoude	Fri Dec 5 10:54:03 2014 +0000	Fixed path issue for Contributing documentation
+fe27b7c	Eddie Jaoude	Fri Dec 5 10:32:42 2014 +0000	Updated Slack Token & Github Token for TravisCI
+5e9df71	Eddie Jaoude	Fri Dec 5 09:57:38 2014 +0000	Renamed Deployment App on Heroku
+c5b7560	Eddie Jaoude	Thu Dec 4 14:55:18 2014 +0000	Ignoring web fonts files (web/fonts)
+93d9eb4	Eddie Jaoude	Thu Dec 4 14:53:27 2014 +0000	Updated badges & urls
+dcdebbb	Eddie Jaoude	Thu Dec 4 14:40:59 2014 +0000	Initial commit from Dial-Tone-Frontend repo
+4ba39e6	Rory Woodward	Tue Sep 30 12:03:58 2014 +0100	Update LICENSE
+fca9aa9	Rory Woodward	Tue Sep 30 12:02:33 2014 +0100	Initial commit
