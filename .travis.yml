@@ -4,17 +4,18 @@ php:
   - 5.5
 
 before_script:
-  - make composer.install
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
 
 script:
-  - make test.run
+  - make symfony.test.run
   - make scrutinizer.coverage
 
 after_success:
   - make build.package
 
 after_failure:
-  - make logs
+  - make symfony.logs
 
 branches:
   except:

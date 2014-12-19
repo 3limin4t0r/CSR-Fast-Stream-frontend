@@ -16,21 +16,21 @@ services:
     tags:
         - { name: knp_menu.menu, alias: main } # The alias is what is used to retrieve the menu
 
-
-
+  transform_core_app_main.service.version:
+      class: TransformCore\Bundle\AppBundle\Service\Version
+      arguments: ["%kernel.root_dir%/../version"]
+      
   myForm.form.flow.myForm.Storage:
-    class: TransformCore\Bundle\AppBundle\Form\MyStorage
-    scope: request
-    arguments:
-      - "@session"
-    calls:
-      - [ setLogger, [ @logger ] ]
-
+      class: TransformCore\Bundle\AppBundle\Form\MyStorage
+      scope: request
+      arguments:
+        - "@session"
+      calls:
+        - [ setLogger, [ @logger ] ]
+  
   myForm.form.flow.myForm:
-    class: TransformCore\Bundle\AppBundle\Form\MyFormFlow
-    parent: craue.form.flow
-    scope: request
-    calls:
-      - [ setStorage, [ "@myForm.form.flow.myForm.Storage" ] ]
-
-
+      class: TransformCore\Bundle\AppBundle\Form\MyFormFlow
+      parent: craue.form.flow
+      scope: request
+      calls:
+        - [ setStorage, [ "@myForm.form.flow.myForm.Storage" ] ]
