@@ -11,7 +11,6 @@ In addition to the standard template mentioned above, append the following:
        * [ ] Chrome (latest)
        * [ ] Safari (Mac only)
        * [ ] Internet Explorer (Windows only) 
-              * gfdgds
               * [ ] v6 - functional
               * [ ] v7
               * [ ] v8
