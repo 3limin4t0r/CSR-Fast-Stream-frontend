@@ -7,12 +7,12 @@ Please refer to Transform standard [Definition of Done](https://github.com/Trans
 In addition to the standard template mentioned above, append the following:
 
 * [ ] Browser support
-       * [ ] Firefox (latest)
-       * [ ] Chrome (latest)
-       * [ ] Safari (Mac only)
-       * [ ] Internet Explorer (Windows only) 
-              * [ ] v6 - functional
-              * [ ] v7
-              * [ ] v8
-              * [ ] v9
-              * [ ] v10
+  * [ ] Firefox (latest)
+  * [ ] Chrome (latest)
+  * [ ] Safari (Mac only)
+  * [ ] Internet Explorer (Windows only) 
+    * [ ] v6 - functional
+    * [ ] v7
+    * [ ] v8
+    * [ ] v9
+    * [ ] v10
