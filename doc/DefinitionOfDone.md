@@ -7,12 +7,13 @@ Please refer to Transform standard [Definition of Done](https://github.com/Trans
 In addition to the standard template mentioned above, append the following:
 
 * [ ] Browser support
-        * [ ] Firefox (latest)
-        * [ ] Chrome (latest)
-        * [ ] Safari (Mac only)
-        * [ ] IE (each project should specify versions)
-            * [ ] 6
-            * [ ] 7
-            * [ ] 8
-            * [ ] 9
-            * [ ] 10
+       * [ ] Firefox (latest)
+       * [ ] Chrome (latest)
+       * [ ] Safari (Mac only)
+       * [ ] Internet Explorer (Windows only) 
+              * gfdgds
+              * [ ] v6 - functional
+              * [ ] v7
+              * [ ] v8
+              * [ ] v9
+              * [ ] v10
