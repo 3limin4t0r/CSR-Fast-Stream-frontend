@@ -27,15 +27,10 @@ class MyFormFlow extends FormFlow {
         return 'MyFormFlow';
     }
 
-    public function getStepCount()
-    {
-        return $this->stepCount;
-    }
-
-
+   
     protected function loadStepsConfig()
     {
-        $steps = array(
+        return = array(
             array(
                 'label' => 'firstName',
                 'type' => new MyFormFirstName(),
@@ -63,9 +58,6 @@ class MyFormFlow extends FormFlow {
                 'label' => 'confirmation',
                 'type' => new MyFormConfirmation()
             ),
-        );
-
-        $this->stepCount = sizeof($steps);
-        return $steps;
+        );       
     }
 }
