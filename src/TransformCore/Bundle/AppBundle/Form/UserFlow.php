@@ -8,6 +8,8 @@ use Symfony\Component\Form\FormTypeInterface;
 class UserFlow extends FormFlow
 {
 
+    protected $allowDynamicStepNavigation = true;
+
     public function getName()
     {
         return 'user';
@@ -17,11 +19,11 @@ class UserFlow extends FormFlow
     {
         return array(
             array(
-                'label' => 'Register',
+                'label' => 'User',
                 'type' => new User(),
             ),
             array(
-                'label' => 'Details',
+                'label' => 'Detail',
                 'type' => new Detail(),
             ),
             array(
