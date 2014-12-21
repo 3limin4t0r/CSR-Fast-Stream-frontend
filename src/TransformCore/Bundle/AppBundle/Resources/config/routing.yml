@@ -5,3 +5,7 @@ transform_core_app_changelog:
 transform_core_app_homepage:
     path:     /
     defaults: { _controller: TransformCoreAppBundle:Default:index }
+
+transform_core_app_user:
+    path:     /user
+    defaults: { _controller: TransformCoreAppBundle:User:index }
