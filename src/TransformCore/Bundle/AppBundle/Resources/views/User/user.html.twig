@@ -1,0 +1,11 @@
+<div>
+    Steps:
+    {% include 'CraueFormFlowBundle:FormFlow:stepList.html.twig' %}
+</div>
+<form method="post" {{ form_enctype(form) }}>
+    {{ form_errors(form) }}
+
+    {{ form_rest(form) }}
+
+    {% include 'CraueFormFlowBundle:FormFlow:buttons.html.twig' %}
+</form>

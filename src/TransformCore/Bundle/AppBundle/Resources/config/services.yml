@@ -19,3 +19,8 @@ services:
   transform_core_app_main.service.version:
     class: TransformCore\Bundle\AppBundle\Service\Version
     arguments: ["%kernel.root_dir%/../version"]
+
+  transform_core_app.form.flow.user:
+      class: TransformCore\Bundle\AppBundle\Form\UserFlow
+      parent: craue.form.flow
+      scope: request
