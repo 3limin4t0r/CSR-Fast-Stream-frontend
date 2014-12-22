@@ -3,8 +3,11 @@
 namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use TransformCore\Bundle\AppBundle\Entity\PseudoUser;
+use TransformCore\Bundle\AppBundle\Form\MyFormFlow;
 use Craue\FormFlowBundle\Form\FormFlow as CraueFlow;
+use TransformCore\Bundle\AppBundle\Entity\User;
+use TransformCore\Bundle\AppBundle\Entity\Detail;
+
 
 /**
  * Class DefaultController
@@ -101,6 +104,11 @@ class MyFormController extends Controller
         return $toggler;
     }
 
+    private function stepByRedirects()
+    {
+        return $this->getRequest()->get('step');        
+    }
+
 
     public function indexAction()
     {
@@ -112,10 +120,27 @@ class MyFormController extends Controller
             return $this->redirect($toggler);
         }
 
-
-        $formData = new PseudoUser();
         $flow = $this->get('myForm.form.flow.myForm');
         $transition = $flow->getRequestedTransition();
+
+        switch ($this->stepByRedirects()) {
+
+            case MyFormFlow::FLOW_USER_DETAIL:
+                echo 'detail';
+                $formData = new Detail();
+                break;
+            case MyFormFlow::FLOW_USER_ADDRESS:
+                echo 'address';
+                $formData = new User();
+                break;
+            default:
+                // Implies first step: MyFormFlow::FLOW_USER_ACCOUNT
+                echo 'user';
+                $formData = new User();
+                break;
+        }
+
+        //$formData = new User();
         $flow->bind($formData);
 
         // form of the current step
@@ -126,27 +151,20 @@ class MyFormController extends Controller
         }
 
         if ($flow->isValid($form)) {
-
             $flow->saveCurrentStepData($form);
-
             if ($flow->redirectAfterSubmit($form)) {
-
                 if ($toggler && ($loc = $this->conditionalRedirect($base, $locale, $flow)) !== false) {
                     return $this->redirect($loc);
                 }
             }
-
             if ($flow->nextStep()) {
                 // form for the next step
                 $form = $flow->createForm();
             } else {
-
                 print_r($formData);
                 $flow->reset(); // remove step data from the session
-
                 echo 'Form finished.. w00t!';
                 exit();
-
                 return $this->redirect($this->generateUrl('home')); // redirect when done
             }
         }

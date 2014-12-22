@@ -13,29 +13,17 @@
     {% set flowStepNumber = flow.getCurrentStepNumber() %}
 
 
-    {% if flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_FIRSTNAME') %}
+    {% if flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_ACCOUNT') %}
 
-        <h2>First Name</h2>
+        <h2>User account</h2>
 
-    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_LASTNAME') %}
+    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_DETAIL') %}
 
-        <h2>Last Name</h2>        
+        <h2>Details</h2>        
 
-    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_EMAIL') %}
+    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_ADDRESS') %}
 
-        <h2>Email</h2>
-
-    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_TERMS') %}
-
-        <h2>User Terms</h2>
-
-    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_REASONS') %}
-
-        <h2>User Reasons</h2>
-
-    {% elseif flowStepNumber == constant('\\TransformCore\\Bundle\\AppBundle\\Form\\MyFormFlow::FLOW_USER_CONFIRMATION') %}
-
-        <h2>Confirmation</h2>
+        <h2>Address</h2>
 
     {% endif %}
 
