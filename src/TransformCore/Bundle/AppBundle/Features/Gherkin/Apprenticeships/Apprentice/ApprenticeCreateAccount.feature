@@ -3,7 +3,7 @@ Feature: As an user, I want to be able to create an account, in order to apply f
   @CSR-100 @CSR-18
   Scenario: Create Account with valid details
     Given I am on the homepage
-    And I press "Create account"
+    And I press "Create apprentice account"
     Then I should see "Create an account"
     When I fill "salutation" with "Mr"
     And I fill in "first-name" with "Tester"
@@ -20,6 +20,9 @@ Feature: As an user, I want to be able to create an account, in order to apply f
     And I fill in "email-input" with "test@test.com"
     And I fill in "phone-input" with "07951234567"
     And I fill in "password" with "Sunshine88"
+    And I select "Blind" from "disability"
+    And I fill in "disability-adjustments" with "disability-adjustments"
+    And I select "Google" from "how-you-found-us"
     And I check "accept-terms"
     And I press createAccountBtn"
     Then I should see "You've successfully created your account"
@@ -28,11 +31,10 @@ Feature: As an user, I want to be able to create an account, in order to apply f
     When I press "btnSignIn"
     Then I should see "You are now activated"
 
-
   @CSR-100 @CSR-18
   Scenario: Create account with invalid details (format)
     Given I am on the homepage
-    And I press "Create account"
+    And I press "Create apprentice account"
     Then I should see "Create an account"
     When I select "Mr" from "salutation"
     And I fill in "first-name" with "Bil@l"
@@ -48,9 +50,10 @@ Feature: As an user, I want to be able to create an account, in order to apply f
     Then field "address-select" contains "38 Bolton Road"
     And I fill in "password" with "a"
     And I fill in "passwordConfirm" with "a"
-    And I fill in "email" with "bill.carr@test"
-    And I fill in "mobileNumber" with "abc"
-    And I fill in "Please tell us where you first heard about the Fast Stream" with "blah blah"
+    And I fill in "email-input" with "bill.carr@test"
+    And I fill in "phone-input" with "abc"
+    And I select "Blind" from "disability"
+    And I fill in "disability-adjustments" with "disability-adjustments"
     And I press "Create account"
     Then I should see "username in wrong format"
     Then I should see "password too short"
@@ -60,3 +63,4 @@ Feature: As an user, I want to be able to create an account, in order to apply f
     Then I should see "Year in wrong format"
     Then I should see "Mobile number in wrong format"
     Then I should see "Please accept terms and conditions before continuing"
+    Then I should see "Please tell us how you found faststream"

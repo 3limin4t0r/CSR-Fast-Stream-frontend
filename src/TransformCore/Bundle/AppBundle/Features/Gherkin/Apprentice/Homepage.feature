@@ -1,1 +1,0 @@
-Feature: As an user, I want a homepage, to allow me to navigate to multiple features
