@@ -1,0 +1,62 @@
+Feature: As an user, I want to be able to create an account, in order to apply for jobs
+
+  @CSR-100 @CSR-18
+  Scenario: Create Account with valid details
+    Given I am on the homepage
+    And I press "Create account"
+    Then I should see "Create an account"
+    When I fill "salutation" with "Mr"
+    And I fill in "first-name" with "Tester"
+    And I fill in "last-name" with "Lastname"
+    And I fill in "dob-day" with "08"
+    And I fill in "dob-month" with "02"
+    And I fill in "dob-year" with "1968"
+    And I fill in "post-code" with "sw4 8lb"
+    And I press "Find address"
+    And field "address-select" contains "38 Bolton Road"
+    And I select "38 Bolton Road"
+    And I fill in "address2" with "test address line 2"
+    And I fill in "address3b" with "test county"
+    And I fill in "email-input" with "test@test.com"
+    And I fill in "phone-input" with "07951234567"
+    And I fill in "password" with "Sunshine88"
+    And I check "accept-terms"
+    And I press createAccountBtn"
+    Then I should see "You've successfully created your account"
+    And email "test@test.com" should receive registration confirmation
+    And I fill in "activation-code" with "2345"
+    When I press "btnSignIn"
+    Then I should see "You are now activated"
+
+
+  @CSR-100 @CSR-18
+  Scenario: Create account with invalid details (format)
+    Given I am on the homepage
+    And I press "Create account"
+    Then I should see "Create an account"
+    When I select "Mr" from "salutation"
+    And I fill in "first-name" with "Bil@l"
+    And I fill in "last-name" with "Carr"
+    And I fill in "dob-day" with "c"
+    And I fill in "dob-month" with "b"
+    And I fill in "dob-year" with "a"
+    And I fill in "post-code" with "CFT 888"
+    And I press "Find address"
+    Then I should see "Invalid postcode - no matching address found"
+    And I fill in "postcode" with "SW4 8LB"
+    And I press "Find address"
+    Then field "address-select" contains "38 Bolton Road"
+    And I fill in "password" with "a"
+    And I fill in "passwordConfirm" with "a"
+    And I fill in "email" with "bill.carr@test"
+    And I fill in "mobileNumber" with "abc"
+    And I fill in "Please tell us where you first heard about the Fast Stream" with "blah blah"
+    And I press "Create account"
+    Then I should see "username in wrong format"
+    Then I should see "password too short"
+    Then I should see "email address in wrong format"
+    Then I should see "Day in wrong format"
+    Then I should see "Month in wrong format"
+    Then I should see "Year in wrong format"
+    Then I should see "Mobile number in wrong format"
+    Then I should see "Please accept terms and conditions before continuing"
