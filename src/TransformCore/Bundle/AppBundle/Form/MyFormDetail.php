@@ -4,7 +4,9 @@ namespace TransformCore\Bundle\AppBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use TransformCore\Bundle\AppBundle\Entity\Detail;
+
 
 
 class MyFormDetail extends AbstractType
@@ -13,6 +15,17 @@ class MyFormDetail extends AbstractType
     {
         return 'MyFormDetail';
     }
+
+
+    // public function setDefaultOptions(OptionsResolverInterface $resolver)
+    // {
+    //     $resolver->setDefaults(array(
+    //         'data_class' => 'TransformCore\Bundle\AppBundle\Entity\Detail',
+    //         'translation_domain' => 'forms'
+    //     ));
+    //     return $resolver;
+    // }
+
 
 
     public function buildForm(FormBuilderInterface $builder, array $options)
@@ -31,6 +44,7 @@ class MyFormDetail extends AbstractType
             'label' => 'Date of Birth',
             'max_length' => Detail::MAX_NAME_LENGTH,
             'required' => true
-        ));   
+        ));
+        //->addModelTransformer(new MyTransformer());
     }
 }

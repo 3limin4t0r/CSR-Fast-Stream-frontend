@@ -123,24 +123,7 @@ class MyFormController extends Controller
         $flow = $this->get('myForm.form.flow.myForm');
         $transition = $flow->getRequestedTransition();
 
-        switch ($this->stepByRedirects()) {
-
-            case MyFormFlow::FLOW_USER_DETAIL:
-                echo 'detail';
-                $formData = new Detail();
-                break;
-            case MyFormFlow::FLOW_USER_ADDRESS:
-                echo 'address';
-                $formData = new User();
-                break;
-            default:
-                // Implies first step: MyFormFlow::FLOW_USER_ACCOUNT
-                echo 'user';
-                $formData = new User();
-                break;
-        }
-
-        //$formData = new User();
+        $formData = new User();
         $flow->bind($formData);
 
         // form of the current step

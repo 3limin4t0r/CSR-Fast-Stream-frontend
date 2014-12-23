@@ -4,8 +4,8 @@ namespace TransformCore\Bundle\AppBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use TransformCore\Bundle\AppBundle\Entity\User;
-
 
 class MyFormAccount extends AbstractType
 {
@@ -15,6 +15,18 @@ class MyFormAccount extends AbstractType
     {
         return 'MyFormAccount';
     }
+
+
+    // public function setDefaultOptions(OptionsResolverInterface $resolver)
+    // {
+    //     $resolver->setDefaults(array(
+    //         'data_class' => 'TransformCore\Bundle\AppBundle\Entity\User',
+    //         'translation_domain' => 'forms'
+    //     ));
+    //     return $resolver;
+    // }
+
+
 
 
     public function buildForm(FormBuilderInterface $builder, array $options)
