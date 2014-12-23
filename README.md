@@ -74,7 +74,7 @@ make test.run
 9ms
 
  [Robo\Task\ParallelExecTask] Processes: 2/2 [============================] 100%
- [Robo\Task\ParallelExecTask] Output for  bin/behat --config test/behat.yml "@TransformAppBundle" 
+ [Robo\Task\ParallelExecTask] Output for  bin/behat --config test/behat.yml "@TransformAppBundle"
 No scenarios
 No steps
 0m0.005s

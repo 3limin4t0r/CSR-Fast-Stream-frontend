@@ -1,13 +1,13 @@
-Feature: As an user, I want to be able to create an account, in order to apply for jobs
+Feature: As an user, I want to be able to add details about myself on my account, in order to apply for jobs
 
-  @CSR-100 @CSR-18
-  Scenario: Create Account with valid details
-    Given I am on the homepage
-    And I press "Create apprentice account"
-    Then I should see "Create an account"
+  @CSR-135
+  Scenario: Complete About Section
+    Given I am logged in as "test1@test.com" with password "Password1"
+    And I press "My Details"
+    Then I should see "About You"
     When I fill "salutation" with "Mr"
-    And I fill in "first-name" with "Tester"
-    And I fill in "last-name" with "Lastname"
+    And I fill in "first-name" with "One"
+    And I fill in "last-name" with "Apprentice"
     And I fill in "dob-day" with "08"
     And I fill in "dob-month" with "02"
     And I fill in "dob-year" with "1968"
@@ -31,11 +31,11 @@ Feature: As an user, I want to be able to create an account, in order to apply f
     When I press "btnSignIn"
     Then I should see "You are now activated"
 
-  @CSR-100 @CSR-18
-  Scenario: Create account with invalid details (format)
-    Given I am on the homepage
-    And I press "Create apprentice account"
-    Then I should see "Create an account"
+  @CSR-1356
+  Scenario: Complete About Section
+    Given I am logged in as "test1@test.com" with password "Password1"
+    And I press "My Details"
+    Then I should see "About You"
     When I select "Mr" from "salutation"
     And I fill in "first-name" with "Bil@l"
     And I fill in "last-name" with "Carr"
@@ -53,7 +53,7 @@ Feature: As an user, I want to be able to create an account, in order to apply f
     And I fill in "email-input" with "bill.carr@test"
     And I fill in "phone-input" with "abc"
     And I select "Blind" from "disability"
-    And I fill in "disability-adjustments" with "disability-adjustments"
+    And I fill in "disability-adjustments" with "disability adjustments detail"
     And I press "Create account"
     Then I should see "username in wrong format"
     Then I should see "password too short"

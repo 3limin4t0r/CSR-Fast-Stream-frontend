@@ -1,7 +1,14 @@
 Feature: As an user, I want to be able to apply for Apprenticeship, without re-entering my personal information
 
+  Background:
+    Given following users for each persona exist on system:
+      | apprentice1  |
+      | trainee1     |
+      | employer1    |
+      | trainingorg1 |
+
   Scenario: Apply for an apprenticeship
-    Given I am logged in as "apprenticeone" with password "Password1"
+    Given I am logged in as "apprentice1" with password "Password1"
     And I fill in "school-name" with "A schoold"
     And I fill in "school-from" with "1991"
     And I fill in "school-to" with "1995"
