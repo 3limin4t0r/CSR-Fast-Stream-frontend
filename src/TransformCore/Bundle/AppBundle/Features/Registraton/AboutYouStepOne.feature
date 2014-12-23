@@ -1,44 +1,50 @@
 Feature: As an user, I want to be able to add details about myself on my account, in order to apply for jobs
 
   @CSR-135
-  Scenario: Complete About Section
+  Scenario: Complete About Section (Section 1)
     Given I am logged in as "test1@test.com" with password "Password1"
-    And I press "My Details"
+    And I follow "My Details"
     Then I should see "About You"
-    When I fill "salutation" with "Mr"
-    And I fill in "first-name" with "One"
-    And I fill in "last-name" with "Apprentice"
+    When I fill "salutation" with "Mrs"
+    And I fill in "first-name" with "Onechange"
+    And I fill in "last-name" with "Apprenticechange"
     And I fill in "dob-day" with "08"
     And I fill in "dob-month" with "02"
     And I fill in "dob-year" with "1968"
     And I fill in "post-code" with "sw4 8lb"
     And I press "Find address"
     And field "address-select" contains "38 Bolton Road"
-    And I select "38 Bolton Road"
+    And I select "38 Bolton Road" from "address-select"
     And I fill in "address2" with "test address line 2"
     And I fill in "address3b" with "test county"
-    And I fill in "email-input" with "test@test.com"
+    And I fill om "address3c" with "post code"
     And I fill in "phone-input" with "07951234567"
-    And I fill in "password" with "Sunshine88"
-    And I select "Blind" from "disability"
-    And I fill in "disability-adjustments" with "disability-adjustments"
-    And I select "Google" from "how-you-found-us"
-    And I check "accept-terms"
-    And I press createAccountBtn"
-    Then I should see "You've successfully created your account"
-    And email "test@test.com" should receive registration confirmation
-    And I fill in "activation-code" with "2345"
-    When I press "btnSignIn"
-    Then I should see "You are now activated"
+    And I check "This is my mobile number"
+    When I press "Save and continue"
+    Then I should see "Nationality, Immigration and Employment Restrictions"
+    Then I follow "Go back the the previous section"
+    # Checking that values have been retained
+    And the "first-name" field should contain ""Onechange"
+    And the "last-name" field should contain ""Apprenticechange"
+    And the "salutation" field should contain "Mrs"
+    And the "dob-day"" field should contain "08"
+    And the "dob-month" field should contain "02"
+    And the "dob-year" field should contain "1968"
+    And the "post-code" field should contain "sw4 8lb"
+    And the "address2"" field should contain "test address line 2"
+    And the "address3b" field should contain "test county"
+    And the "address3c" field should contain "post code"
+    And the "phone-input" field should contain "07951234567"
+    And the "checkbox1" checkbox should be checked
+    And the "This is my mobile number" checkbox should be checked
 
-  @CSR-1356
-  Scenario: Complete About Section
-    Given I am logged in as "test1@test.com" with password "Password1"
-    And I press "My Details"
+  @CSR-135
+  Scenario: Complete About Section (Section 1)
+    Given I am logged in as "test2@test.com" with password "Password1"
+    And I follow "My Details"
     Then I should see "About You"
-    When I select "Mr" from "salutation"
     And I fill in "first-name" with "Bil@l"
-    And I fill in "last-name" with "Carr"
+    And I fill in "last-name" with "Ca*&rr"
     And I fill in "dob-day" with "c"
     And I fill in "dob-month" with "b"
     And I fill in "dob-year" with "a"
@@ -55,7 +61,9 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I select "Blind" from "disability"
     And I fill in "disability-adjustments" with "disability adjustments detail"
     And I press "Create account"
-    Then I should see "username in wrong format"
+    # Checking that field validation is working
+    Then I should see "first name in wrong format"
+    Then I should see "last name in wrong format"
     Then I should see "password too short"
     Then I should see "email address in wrong format"
     Then I should see "Day in wrong format"
