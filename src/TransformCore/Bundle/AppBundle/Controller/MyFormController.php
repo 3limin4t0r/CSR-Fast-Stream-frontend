@@ -112,6 +112,10 @@ class MyFormController extends Controller
 
     public function indexAction()
     {
+        //unset($_SESSION);
+        //$_SESSION = array();
+        print_r($_SESSION);
+
         $base = 'myform';
         $locale = 'en';
 
@@ -145,7 +149,7 @@ class MyFormController extends Controller
                 $form = $flow->createForm();
             } else {
                 print_r($formData);
-                $flow->reset(); // remove step data from the session
+                //$flow->reset(); // remove step data from the session
                 echo 'Form finished.. w00t!';
                 exit();
                 return $this->redirect($this->generateUrl('home')); // redirect when done

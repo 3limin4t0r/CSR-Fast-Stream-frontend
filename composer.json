@@ -21,7 +21,9 @@
         "symfony/yaml": "2.6.*",
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery":  "1.11.1",
-        "craue/formflow-bundle": "3.0.*@dev"
+        "craue/formflow-bundle": "3.0.*@dev",
+    	"mikejw/csrsimplesdk": "dev-develop",
+        "mikejw/elib-base": "dev-develop"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",

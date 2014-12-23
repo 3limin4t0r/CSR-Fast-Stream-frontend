@@ -83,7 +83,7 @@ class Address
      */
     public function setSecondLine($secondLine)
     {
-        $this->secondLine = $secondLind;
+        $this->secondLine = $secondLine;
         return $this;
     }
 
