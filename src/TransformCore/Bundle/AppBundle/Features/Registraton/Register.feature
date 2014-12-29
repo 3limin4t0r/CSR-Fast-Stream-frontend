@@ -12,7 +12,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     # Contact details
     And I fill in "email-input" with "<email-input>"
     # Disability details
-    And I select "Google" from "how-you-found-us"
     And I check "I require adjustments based on my disability"
     And I select "<disability>" from "disability"
     And I fill in "phone-input" with "07739898078"
