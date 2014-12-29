@@ -11,19 +11,11 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "last-name" with "<last-name>"
     # Contact details
     And I fill in "email-input" with "<email-input>"
-    And I fill in "phone-input" with "<phone-input>"
-    # Address entry
-    And I fill in "post-code" with "sw4 8lb"
-    And I press "Find address"
-    And the "address-select" field should contain "19, Pinewood Court"
-    And I select "19, Pinewood Court" from "address-select"
-    And I fill in "address2" with "test address line 2"
-    And I fill in "address3b" with "test county1"
-    And I fill om "address3c" with "p1 code"
     # Disability details
     And I select "Google" from "how-you-found-us"
     And I check "I require adjustments based on my disability"
     And I select "<disability>" from "disability"
+    And I fill in "phone-input" with "07739898078"
     And I fill in "disability-adjustments" with "disability adjustments text"
     # Signin Details
     And I fill in "password" with "<password>"
@@ -53,7 +45,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "last-name" with "Ca!rr"
         # Contact details
     And I fill in "email-input" with "bill.carr@test"
-    And I fill in "phone-input" with "0773A898078"
         # Signin Details
     And I fill in "password" with "P@ssword1"
     And I fill in "passwordConfirm" with "P@ssword11"
@@ -79,7 +70,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "password" with "<P@ssword1>"
     And I fill in "passwordConfirm" with "<password2>"
     And I fill in "email-input" with "bill.carr@test.com"
-    And I fill in "phone-input" with "07739898078"
     And I press "Create account"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
   Examples:
