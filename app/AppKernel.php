@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new TransformCore\Bundle\AppBundle\TransformCoreAppBundle(),
+            new TransformCore\Bundle\UserBundle\TransformCoreUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

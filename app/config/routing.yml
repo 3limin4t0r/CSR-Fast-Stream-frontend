@@ -1,3 +1,7 @@
+transform_core_user:
+    resource: "@TransformCoreUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 transform_core_app:
     resource: "@TransformCoreAppBundle/Resources/config/routing.yml"
     prefix:   /
