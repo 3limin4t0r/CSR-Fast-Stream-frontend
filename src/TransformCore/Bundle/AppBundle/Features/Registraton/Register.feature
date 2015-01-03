@@ -11,26 +11,29 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "last-name" with "<last-name>"
     # Contact details
     And I fill in "email-input" with "<email-input>"
+        # Signin Details
+    And I fill in "password" with "<password>"
+    And I fill in "passwordConfirm" with "<password>"
+    # Referrer
+    And I fill in "referrer" with "<referrer-input>"
     # Disability details
     And I check "I require adjustments based on my disability"
     And I select "<disability>" from "disability"
-    And I fill in "phone-input" with "07739898078"
-    And I fill in "disability-adjustments" with "disability adjustments text"
-    # Signin Details
-    And I fill in "password" with "<password>"
-    And I fill in "passwordConfirm" with "<password>"
+    And I fill in "phone-input" with "<phone-input>"
+    And I fill in "disability-adjustments" with "some disability adjustments text"
+
     # Checkboxes
     And I check "I wish to apply via the Guaranteed Interview Scheme"
     And I check "accept-terms"
     And I press "Register"
     Then I should see "Registration: COMPLETE"
     And I should see "Welcome, <first-name>"
-    And email "test@test.com" should receive registration confirmation
+    And email "email-input" should receive registration confirmation
 
   Examples:
-    | salutation | first-name | last-name | email-input       | phone-input | password  | disability         |
-    | Mr         | Persona    | One       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           |
-    | Mr         | Persona    | Two       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment |
+    | salutation | first-name | last-name | email-input       | phone-input | password  | disability |referrer-input|
+    | Mr         | Persona    | One       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           | Search Engine |
+    | Mr         | Persona    | Two       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment | Friend or Family |
 
 
   @CSR-6
