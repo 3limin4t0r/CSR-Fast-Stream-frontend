@@ -21,7 +21,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I select "<disability>" from "disability"
     And I fill in "phone-input" with "<phone-input>"
     And I fill in "disability-adjustments" with "some disability adjustments text"
-
     # Checkboxes
     And I check "I wish to apply via the Guaranteed Interview Scheme"
     And I check "accept-terms"
@@ -32,8 +31,8 @@ Feature: As an user, I want to be able to register a new account, in order to ap
 
   Examples:
     | salutation | first-name | last-name | email-input       | phone-input | password  | disability |referrer-input|
-    | Mr         | Persona    | One       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           | Search Engine |
-    | Mr         | Persona    | Two       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment | Friend or Family |
+    | Mr         | One    | Persona       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           | Search Engine |
+    | Mr         | Two    | persona       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment | Friend or Family |
 
 
   @CSR-6
