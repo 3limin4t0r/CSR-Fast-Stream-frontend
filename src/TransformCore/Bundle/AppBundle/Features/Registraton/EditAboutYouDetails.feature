@@ -10,13 +10,12 @@ Feature: As an user, I want to be able to add details about myself on my account
     Given I am logged in as "persona1@test.com" with password "P@ssword1"
     And I follow "My Details"
     Then I should see "Your account settings"
+    And the "first-name" field should contain "One"
+    And the "last-name" field should contain "Persona"
     And I select "Mrs" from "salutation"
     And I fill in "first-name" with "Onechange"
-    And I fill in "last-name" with "Apprenticechange"
-    And I fill in "dob-day" with "08"
-    And I fill in "dob-month" with "02"
-    And I fill in "dob-year" with "1968"
-    And I fill in "post-code" with "SW2 2AU"
+    And I fill in "last-name" with "Personachange"
+    # Address Details
     And I press "Find address"
     And the "address-select" field should contain "44, Craster Road"
     And I select "44, Craster Road" from "address-select"
@@ -25,6 +24,12 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "town" with "a town"
     And I fill in "county" with "a county"
     And I fill in "postcode" with "post code"
+    # Date of Birth
+    And I fill in "dob-day" with "08"
+    And I fill in "dob-month" with "02"
+    And I fill in "dob-year" with "1968"
+    And I fill in "post-code" with "SW2 2AU"
+    # Phone details
     And I fill in "phone-input" with "07951234567"
     And I check "mobile-number-yes"
     # End of My Details step one form
@@ -33,11 +38,13 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I follow "Go back the the previous section"
     # Checking that values have been retained
     And the "first-name" field should contain "Onechange"
-    And the "last-name" field should contain "Apprenticechange"
+    And the "last-name" field should contain "Personachange"
     And the "salutation" field should contain "Mrs"
+    # Date of birth
     And the "dob-day" field should contain "08"
     And the "dob-month" field should contain "02"
     And the "dob-year" field should contain "1968"
+    # Address details
     And the "post-code" field should contain "SW2 2AU"
     And the "address1" field should contain "44, Craster Road"
     And the "address2" field should contain "address line two"
@@ -45,7 +52,9 @@ Feature: As an user, I want to be able to add details about myself on my account
     And the "county" field should contain "a county"
     And the "town" field should contain "a town"
     And the "postcode" field should contain "post code"
+    # Phone details
     And the "phone-input" field should contain "07951234567"
+    # conditional checkboxes
     And the "checkbox1" checkbox should be checked
     And the "This is my mobile number" checkbox should be checked
 
@@ -78,6 +87,6 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Day in wrong format"
     Then I should see "Month in wrong format"
     Then I should see "Year in wrong format"
-    Then I should see "Mobile number in wrong format"
+    Then I should see "Phone input in wrong format"
     Then I should see "Please accept terms and conditions before continuing"
     Then I should see "Please tell us how you found faststream"
