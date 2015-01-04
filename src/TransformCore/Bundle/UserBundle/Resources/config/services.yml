@@ -2,3 +2,10 @@ services:
 #    transform_core_user.example:
 #        class: TransformCore\Bundle\UserBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+
+  transform_core_user.custom_manager:
+    class: TransformCore\Bundle\UserBundle\Model\UserManager
+    arguments: [@security.encoder_factory, @fos_user.util.username_canonicalizer, @fos_user.util.email_canonicalizer]
+
+  transform_core_user.mailer:
+    class: TransformCore\Bundle\UserBundle\Model\Mailer

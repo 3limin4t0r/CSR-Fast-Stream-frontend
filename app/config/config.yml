@@ -64,3 +64,11 @@ jms_i18n_routing:
     default_locale: en
     locales: [en, fr]
     strategy: prefix
+
+fos_user:
+    db_driver: custom # orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: TransformCore\Bundle\UserBundle\Entity\User
+    service:
+        user_manager: transform_core_user.custom_manager
+        mailer: transform_core_user.mailer
