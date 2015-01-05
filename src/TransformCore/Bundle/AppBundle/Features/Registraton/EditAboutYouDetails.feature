@@ -90,3 +90,4 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Phone input in wrong format"
     Then I should see "Please accept terms and conditions before continuing"
     Then I should see "Please tell us how you found faststream"
+    
