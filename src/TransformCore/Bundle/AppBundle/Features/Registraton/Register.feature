@@ -22,7 +22,13 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "phone-input" with "<phone-input>"
     And I fill in "disability-adjustments" with "some disability adjustments text"
     # Checkboxes
+    And I follow "What is the Guaranteed Interview Scheme?"
+    Then I should see:
+    """
+    The Civil Service Fast Stream operates the Guaranteed Interview Scheme (GIS) which means that applicants with a registered disability need only meet the minimum qualifying criteria for their chosen scheme(s).
+    """
     And I check "I wish to apply via the Guaranteed Interview Scheme"
+    Then I follow "terms and conditions"
     And I check "accept-terms"
     And I press "Register"
     Then I should see "Registration: COMPLETE"
