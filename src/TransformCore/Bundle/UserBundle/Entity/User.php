@@ -16,6 +16,11 @@ class User implements UserInterface
 {
 
     /**
+     * @var int
+     */
+    private $id;
+
+    /**
      * @var string
      */
     private $username;
@@ -53,6 +58,25 @@ class User implements UserInterface
         $this->expired = false;
         $this->roles = array();
         $this->credentialsExpired = false;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     * @return User
+     */
+    public function setId($id)
+    {
+        $this->id = (int) $id;
+
+        return $this;
     }
 
     /**
