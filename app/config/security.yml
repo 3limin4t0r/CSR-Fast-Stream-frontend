@@ -8,7 +8,7 @@ security:
 
     providers:
         fos_userbundle:
-            id: fos_user.user_provider.username
+            id: transform_core_user.user_provider #fos_user.user_provider.username
 
     firewalls:
         dev:

@@ -9,3 +9,7 @@ services:
 
   transform_core_user.mailer:
     class: TransformCore\Bundle\UserBundle\Model\Mailer
+
+  transform_core_user.user_provider:
+    class: TransformCore\Bundle\UserBundle\Model\UserProvider
+    arguments: [@transform_core_user.custom_manager]
