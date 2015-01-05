@@ -74,15 +74,13 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     When I select "Mr" from "salutation"
     And I fill in "first-name" with "Bill"
     And I fill in "last-name" with "Carr"
-    And I fill in "password" with "<P@ssword1>"
+    And I fill in "password" with "<password1>"
     And I fill in "passwordConfirm" with "<password2>"
     And I fill in "email-input" with "bill.carr@test.com"
     And I press "Create account"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
   Examples:
-    | P@ssword1 | password2 |
+    | password1 | password2 |
     | 1234567   | 1234567   |
     | 12345678  | 12345678  |
-    | P@ssword1 | P@ssword1 |
-    | P@ssword  | P@ssword  |
     
