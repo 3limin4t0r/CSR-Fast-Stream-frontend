@@ -43,4 +43,3 @@ Feature: As a user, I want to be able to login, in order to manage my account an
     | username              | password  | message                                     |
     | apprentice11@test.com | P@ssword1 | Your username and/or password are incorrect |
     | trainee11@test.com    | P@ssword1 | Your username and/or password are incorrect |
-    
