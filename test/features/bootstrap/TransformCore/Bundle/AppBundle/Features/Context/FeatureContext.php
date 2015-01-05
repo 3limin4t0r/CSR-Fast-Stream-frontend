@@ -352,6 +352,14 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                 ' (actual: ' . $this->_response->getStatusCode() . ')');
         }
     }
+    /**
+     * @Given following users for each persona exist on system:
+     */
+    public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
+    {
+        throw new \Exception();
+    }
+
 
 }
 
