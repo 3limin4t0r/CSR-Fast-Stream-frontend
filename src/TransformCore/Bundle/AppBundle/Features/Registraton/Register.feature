@@ -79,3 +79,4 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | 12345678  | 12345678  |
     | P@ssword1 | P@ssword1 |
     | P@ssword  | P@ssword  |
+    
