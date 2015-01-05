@@ -83,4 +83,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | password1 | password2 |
     | 1234567   | 1234567   |
     | 12345678  | 12345678  |
+    | abcdefgh  | abcdefgh  |
+    | abcdefgh1  | abcdefgh1  |
+    | abcdefgh@  | abcdefgh@  |
     
