@@ -94,6 +94,7 @@ class UserManager implements UserManagerInterface
         }
 
         return (new User())
+            ->setId($res->json()['data']['User']['id'])
             ->setUsername($res->json()['data']['User']['username'])
             ->setPlainPassword($res->json()['data']['User']['password'])
             ->setLocked($res->json()['data']['User']['locked'])
