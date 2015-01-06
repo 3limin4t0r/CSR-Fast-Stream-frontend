@@ -106,3 +106,13 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     |password|
     |email|
     
+    @CSR-6
+  Scenario Outline: Create account using email that has already been used
+    Given I am on the homepage
+    And I press "Register"
+    Then fill in email with "<email>"
+    And I press "Create account"
+    Then I should see "<email> is already taken"
+    Examples:
+    |email|
+    |persona3@test.com|
