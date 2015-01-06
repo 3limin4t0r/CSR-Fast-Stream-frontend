@@ -1,5 +1,9 @@
 Feature: As an user, I want to be able to register a new account, in order to apply for jobs
 
+  Background:
+    Given following users for each persona exist on system:
+      | persona3@test.com |
+      
   @CSR-6
   Scenario Outline: Create Account with valid details
     Given I am on the homepage
