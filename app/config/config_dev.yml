@@ -31,3 +31,6 @@ monolog:
 
 assetic:
     use_controller: "%use_assetic_controller%"
+
+swiftmailer:
+    disable_delivery: true
