@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new TransformCore\Bundle\AppBundle\TransformCoreAppBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new TransformCore\Bundle\CsrFastStreamBundle\TransformCoreCsrFastStreamBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

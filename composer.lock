@@ -1947,20 +1947,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "651b48bfc5cf3d88388fa22fe4d52ca0b344bf64"
+                "reference": "ceef88a1b1076aafca953889750d8e6731ddbed4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/651b48bfc5cf3d88388fa22fe4d52ca0b344bf64",
-                "reference": "651b48bfc5cf3d88388fa22fe4d52ca0b344bf64",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/ceef88a1b1076aafca953889750d8e6731ddbed4",
+                "reference": "ceef88a1b1076aafca953889750d8e6731ddbed4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "friendsofsymfony/user-bundle": "~2.0@dev",
+                "php": ">=5.3.2",
+                "symfony/form": "~2.3",
+                "symfony/framework-bundle": "~2.3"
             },
             "require-dev": {
                 "henrikbjorn/phpspec-code-coverage": "~0.2",
-                "phpspec/phpspec": "~2.0"
+                "phpspec/phpspec": "~2.0",
+                "sensio/generator-bundle": "2.5.*"
             },
             "type": "library",
             "autoload": {
@@ -1973,7 +1977,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-06 13:05:55"
+            "time": "2015-01-06 15:31:00"
         },
         {
             "name": "twbs/bootstrap",
