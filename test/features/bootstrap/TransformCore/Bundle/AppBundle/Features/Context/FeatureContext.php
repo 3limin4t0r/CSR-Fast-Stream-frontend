@@ -8,6 +8,7 @@ use Behat\MinkExtension\Context\MinkContext;
 use Guzzle\Http;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use Behat\Symfony2Extension\Driver\KernelDriver;
 
 /**
  * Class FeatureContext
@@ -65,89 +66,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             "Timeout thrown by " . $backtrace[1]['class'] . "::" . $backtrace[1]['function'] . "()\n" .
             $backtrace[1]['file'] . ", line " . $backtrace[1]['line']
         );
-    }
-
-    /**
-     * Adds Basic Authentication header to next request.
-     *
-     * @param string $username
-     * @param string $password
-     *
-     * @Given /^I am authenticating as "([^"]*)" with "([^"]*)" password$/
-     */
-    public function iAmAuthenticatingAs($username, $password)
-    {
-        // $this->removeHeader('Authorization');
-        //$this->authorization = base64_encode($username . ':' . $password);
-        $this->addHeader('X-USER-ID:' . $username);
-    }
-
-    /**
-     * Adds header
-     *
-     * @param string $header
-     */
-    protected function addHeader($header)
-    {
-        $this->headers[] = $header;
-    }
-
-    private $headers = array();
-
-    /**
-     * @When /^I request "([^"]*)"$/
-     */
-    public function iRequest($uri)
-    {
-        $request = $this->_client->get($uri);
-        $this->_response = $request->send();
-        $request->send();
-    }
-
-    /**
-     * @Then /^the response should be JSON$/
-     */
-    public function theResponseShouldBeJson()
-    {
-
-        $data = json_decode($this->_response->getBody());
-        if (empty($data)) {
-            throw new Exception("Response was not JSON\n" . $this->_response);
-        }
-    }
-
-    /**
-     * @Given /^the response has a "([^"]*)" property$/
-     */
-    public function theResponseHasAProperty($propertyName)
-    {
-        $data = json_decode($this->_response->getBody(true));
-        if (!empty($data)) {
-            if (!isset($data->$propertyName)) {
-                throw new Exception("Property '" . $propertyName . "' is not set!\n");
-            }
-        } else {
-            throw new Exception("Response was not JSON\n" . $this->_response->getBody(true));
-        }
-    }
-
-    /**
-     * @Then /^the "([^"]*)" property equals "([^"]*)"$/
-     */
-    public function thePropertyEquals($propertyName, $propertyValue)
-    {
-        $data = json_decode($this->_response->getBody(true));
-        if (!empty($data)) {
-            if (!isset($data->$propertyName)) {
-                throw new Exception("Property '" . $propertyName . "' is not set!\n");
-            }
-            if ($data->$propertyName !== $propertyValue) {
-                throw new \Exception('Property value mismatch! (given: ' . $propertyValue . ', match: ' . $data->$propertyName . ')');
-            }
-        } else {
-            throw new Exception("Response was not JSON\n" . $this->_response->getBody(true));
-        }
-        echo $data->$propertyName;
     }
 
     /**
@@ -353,6 +271,73 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         }
     }
 
+    public function getSymfonyProfile()
+    {
+        $driver = $this->getSession()->getDriver();
+        if (!$driver instanceof KernelDriver) {
+            throw new UnsupportedDriverActionException(
+                'You need to tag the scenario with '.
+                '"@mink:symfony2". Using the profiler is not '.
+                'supported by %s', $driver
+            );
+        }
+
+        $profile = $driver->getClient()->getProfile();
+        if (false === $profile) {
+            throw new \RuntimeException(
+                'The profiler is disabled. Activate it by setting '.
+                'framework.profiler.only_exceptions to false in '.
+                'your config'
+            );
+        }
+
+        return $profile;
+    }
+
+    /**
+     * @Given /^I should get an email on "(?P<email>[^"]+)" with:$/
+     */
+    public function iShouldGetAnEmail($email, PyStringNode $text)
+    {
+        $error     = sprintf('No message sent to "%s"', $email);
+        $profile   = $this->getSymfonyProfile();
+        $collector = $profile->getCollector('swiftmailer');
+
+        foreach ($collector->getMessages() as $message) {
+            // Checking the recipient email and the X-Swift-To
+            // header to handle the RedirectingPlugin.
+            // If the recipient is not the expected one, check
+            // the next mail.
+            $correctRecipient = array_key_exists(
+                $email, $message->getTo()
+            );
+            $headers = $message->getHeaders();
+            $correctXToHeader = false;
+            if ($headers->has('X-Swift-To')) {
+                $correctXToHeader = array_key_exists($email,
+                    $headers->get('X-Swift-To')->getFieldBodyModel()
+                );
+            }
+
+            if (!$correctRecipient && !$correctXToHeader) {
+                continue;
+            }
+
+            try {
+                // checking the content
+                return assertContains(
+                    $text->getRaw(), $message->getBody()
+                );
+            } catch (\Exception $e) {
+                $error = sprintf(
+                    'An email has been found for "%s" but without '.
+                    'the text "%s".', $email, $text->getRaw()
+                );
+            }
+        }
+
+        throw new \Exception($error, $this->getSession());
+    }
 }
 
 ?>
