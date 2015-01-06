@@ -87,3 +87,19 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | abcdefgh1  | abcdefgh1  |
     | abcdefgh@  | abcdefgh@  |
     
+    
+    @CSR-6
+  Scenario Outline: Create account using blank fields (mandatory field check)
+    Given I am on the homepage
+    And I press "Register"
+    Then I should see "Create an account"
+    And I press "Create account"
+    Then I should see "<fieldname> should not be blank"
+    Examples:
+    |fieldname|
+    |salutation|
+    |first-name|
+    |last-name|
+    |password|
+    |email-input|
+    
