@@ -8,7 +8,9 @@ before_script:
   - php composer.phar install --dev --no-interaction
 
 script:
-  - bin/robo parallel:run
+  - make symfony.test.bdd
+  - make symfony.test.unit
+  - make symfony.test.spec
   - make scrutinizer.coverage
 
 after_success:
