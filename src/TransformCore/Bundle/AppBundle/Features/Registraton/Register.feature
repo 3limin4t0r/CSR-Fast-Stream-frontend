@@ -54,7 +54,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "first-name" with "Bil@l"
     And I fill in "last-name" with "Ca!rr"
         # Contact details
-    And I fill in "email-input" with "bill.carr@test"
+    And I fill in "email" with "bill.carr@test"
         # Signin Details
     And I fill in "password" with "P@ssword1"
     And I fill in "passwordConfirm" with "P@ssword11"
@@ -79,7 +79,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "last-name" with "Carr"
     And I fill in "password" with "<password1>"
     And I fill in "passwordConfirm" with "<password2>"
-    And I fill in "email-input" with "bill.carr@test.com"
+    And I fill in "email" with "bill.carr@test.com"
     And I press "Create account"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
   Examples:
@@ -104,5 +104,5 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     |first-name|
     |last-name|
     |password|
-    |email-input|
+    |email|
     
