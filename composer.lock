@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "663228bd761f9442ffabae60506676a7",
+    "hash": "d45806ac23441d187189c101db39ca5d",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1943,16 +1943,16 @@
         },
         {
             "name": "transformcore/csr-fast-stream-domain-model",
-            "version": "dev-master",
+            "version": "dev-feature/CSR-6-registration",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "98190c5d2f0f82b43c241c4a127a51852ecfb2bd"
+                "reference": "651b48bfc5cf3d88388fa22fe4d52ca0b344bf64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/98190c5d2f0f82b43c241c4a127a51852ecfb2bd",
-                "reference": "98190c5d2f0f82b43c241c4a127a51852ecfb2bd",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/651b48bfc5cf3d88388fa22fe4d52ca0b344bf64",
+                "reference": "651b48bfc5cf3d88388fa22fe4d52ca0b344bf64",
                 "shasum": ""
             },
             "require": {
@@ -1965,7 +1965,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "TransformCore\\CsrFastStream\\DomainModel\\": "src"
+                    "TransformCore": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1973,7 +1973,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-06 11:00:21"
+            "time": "2015-01-06 13:05:55"
         },
         {
             "name": "twbs/bootstrap",
