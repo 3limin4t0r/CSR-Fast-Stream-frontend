@@ -21,7 +21,8 @@
         "symfony/yaml": "2.6.*",
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery":  "1.11.1",
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "transformcore/csr-fast-stream-domain-model": "dev-master"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
