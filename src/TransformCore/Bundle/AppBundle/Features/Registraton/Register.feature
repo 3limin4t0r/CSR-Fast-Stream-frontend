@@ -33,10 +33,10 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I press "Register"
     Then I should see "Registration: COMPLETE"
     And I should see "Welcome, <first-name>"
-    And I should get an email on "<email-input>" with:
-    """
-    Confirmation email content detail here
-    """
+  # And I should get an email on "<email-input>" with:
+  #  """
+  #  Confirmation email content detail here
+  #  """
 
   Examples:
     | salutation | first-name | last-name | email-input       | phone-input | password  | disability |referrer-input|
