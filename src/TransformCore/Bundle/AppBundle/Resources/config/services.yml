@@ -19,3 +19,11 @@ services:
   transform_core_app_main.service.version:
     class: TransformCore\Bundle\AppBundle\Service\Version
     arguments: ["%kernel.root_dir%/../version"]
+
+  my_fos_user_registration:
+    class: TransformCore\Bundle\AppBundle\Form\MyRegistrationFormType
+    tags:
+      -  { name: form.type }
+    arguments:
+      - "TransformCore\Bundle\CsrFastStreamBundle\Entity\User"
+

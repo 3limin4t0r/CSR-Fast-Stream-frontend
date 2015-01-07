@@ -1,18 +1,7 @@
+
 security:
-    providers:
-        in_memory:
-            memory: ~
-
-    firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
-
-        default:
-            anonymous: ~
-
     encoders:
-            FOS\UserBundle\Model\UserInterface: sha512
+        FOS\UserBundle\Model\UserInterface: sha512
 
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
@@ -28,7 +17,7 @@ security:
             form_login:
                 provider: fos_userbundle
                 csrf_provider: form.csrf_provider
-            logout:       true
+            logout: true
             anonymous:    true
 
     access_control:
@@ -36,3 +25,5 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
+
+    
