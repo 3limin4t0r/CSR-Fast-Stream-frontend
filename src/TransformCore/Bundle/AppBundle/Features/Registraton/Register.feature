@@ -46,8 +46,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | salutation | first-name | last-name | email-input       | phone-input | password  | disability |referrer-input|
     | Mr         | One    | Persona       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           | Search Engine |
     | Mr         | Two    | persona       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment | Friend or Family |
-
-
+    
   @CSR-6
   Scenario: Create account with invalid details (field formats)
     Given I am on the homepage
@@ -93,8 +92,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | abcdefgh  | abcdefgh  |
     | abcdefgh1  | abcdefgh1  |
     | abcdefgh@  | abcdefgh@  |
-    
-    
+
     @CSR-6
   Scenario Outline: Create account using blank fields (mandatory field check)
     Given I am on the homepage
