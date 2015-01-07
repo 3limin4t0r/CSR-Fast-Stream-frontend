@@ -99,4 +99,4 @@ fos_user:
     user_class: TransformCore\Bundle\CsrFastStreamBundle\Entity\User
     registration:
         form:
-            type: my_fos_user_registration
+            type: csr_fast_stream_domain_model_reg_form

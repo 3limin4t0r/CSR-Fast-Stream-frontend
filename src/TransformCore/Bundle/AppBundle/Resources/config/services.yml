@@ -20,8 +20,8 @@ services:
     class: TransformCore\Bundle\AppBundle\Service\Version
     arguments: ["%kernel.root_dir%/../version"]
 
-  my_fos_user_registration:
-    class: TransformCore\Bundle\AppBundle\Form\MyRegistrationFormType
+  csr_fast_stream_domain_model_reg_form:
+    class:  TransformCore\Bundle\CsrFastStreamBundle\Form\RegFormType
     tags:
       -  { name: form.type }
     arguments:
