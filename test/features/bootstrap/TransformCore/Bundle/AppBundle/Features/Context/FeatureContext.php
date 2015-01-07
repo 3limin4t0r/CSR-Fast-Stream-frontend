@@ -269,15 +269,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     {
 //        throw new PendingException();
     }
-
-    /**
-     * @Then I should see:
-     */
-    public function iShouldSee(PyStringNode $string)
-    {
-        $this->getSession()->getPage()->responseContains($string->getRaw());
-    }
-
 }
 
 ?>
