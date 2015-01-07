@@ -15,7 +15,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "last-name" with "<last-name>"
     # Contact details
     And I fill in "email" with "<email-input>"
-        # Signin Details
+    # Signin Details
     And I fill in "password" with "<password>"
     And I fill in "passwordConfirm" with "<password>"
     # Referrer
