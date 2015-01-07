@@ -1,17 +1,21 @@
 Feature: As an user, I want to be able to register a new account, in order to apply for jobs
 
+  Background:
+    Given following users for each persona exist on system:
+      | persona3@test.com |
+      
   @CSR-6
   Scenario Outline: Create Account with valid details
     Given I am on the homepage
     And I press "Register"
-    Then I should see "Create an account"
+    Then I should see "Register Your Details:"
     #    Your details
     When I select "<salutation>" from "salutation"
     And I fill in "first-name" with "<first-name>"
     And I fill in "last-name" with "<last-name>"
     # Contact details
-    And I fill in "email-input" with "<email-input>"
-        # Signin Details
+    And I fill in "email" with "<email-input>"
+    # Signin Details
     And I fill in "password" with "<password>"
     And I fill in "passwordConfirm" with "<password>"
     # Referrer
@@ -33,14 +37,16 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I press "Register"
     Then I should see "Registration: COMPLETE"
     And I should see "Welcome, <first-name>"
-    And email "email-input" should receive registration confirmation
+  # And I should get an email on "<email-input>" with:
+  #  """
+  #  Confirmation email content detail here
+  #  """
 
   Examples:
     | salutation | first-name | last-name | email-input       | phone-input | password  | disability |referrer-input|
     | Mr         | One    | Persona       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           | Search Engine |
     | Mr         | Two    | persona       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment | Friend or Family |
-
-
+    
   @CSR-6
   Scenario: Create account with invalid details (field formats)
     Given I am on the homepage
@@ -51,7 +57,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "first-name" with "Bil@l"
     And I fill in "last-name" with "Ca!rr"
         # Contact details
-    And I fill in "email-input" with "bill.carr@test"
+    And I fill in "email" with "bill.carr@test"
         # Signin Details
     And I fill in "password" with "P@ssword1"
     And I fill in "passwordConfirm" with "P@ssword11"
@@ -76,7 +82,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "last-name" with "Carr"
     And I fill in "password" with "<password1>"
     And I fill in "passwordConfirm" with "<password2>"
-    And I fill in "email-input" with "bill.carr@test.com"
+    And I fill in "email" with "bill.carr@test.com"
     And I press "Create account"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
   Examples:
@@ -86,4 +92,29 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | abcdefgh  | abcdefgh  |
     | abcdefgh1  | abcdefgh1  |
     | abcdefgh@  | abcdefgh@  |
+
+    @CSR-6
+  Scenario Outline: Create account using blank fields (mandatory field check)
+    Given I am on the homepage
+    And I press "Register"
+    Then I should see "Create an account"
+    And I press "Create account"
+    Then I should see "<fieldname> should not be blank"
+    Examples:
+    |fieldname|
+    |salutation|
+    |first-name|
+    |last-name|
+    |password|
+    |email|
     
+    @CSR-6
+  Scenario Outline: Create account using email that has already been used
+    Given I am on the homepage
+    And I press "Register"
+    Then fill in email with "<email>"
+    And I press "Create account"
+    Then I should see "<email> is already taken"
+    Examples:
+    |email|
+    |persona3@test.com|

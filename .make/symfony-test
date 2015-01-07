@@ -1,0 +1,2 @@
+symfony.test.bdd:
+	bin/behat --suite=${suite} --config=${config} --format=pretty
