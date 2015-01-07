@@ -10,7 +10,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I press "Register"
     Then I should see "Register Your Details:"
     #    Your details
-    When I select "<salutation>" from "salutation"
     And I fill in "first-name" with "<first-name>"
     And I fill in "last-name" with "<last-name>"
     # Contact details
@@ -40,9 +39,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   #  """
 
   Examples:
-    | salutation | first-name | last-name | email-input       | phone-input | password  | disability |referrer-input|
-    | Mr         | One    | Persona       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           | Search Engine |
-    | Mr         | Two    | persona       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment | Friend or Family |
+    | first-name | last-name | email-input       | phone-input | password  | disability |referrer-input|
+    | One    | Persona       | persona1@test.com | 07739898078 | P@ssword1 | Diabetes           | Search Engine |
+    | Two    | persona       | persona2@test.com | 07739898079 | P@ssword1 | Hearing impairment | Friend or Family |
     
   @CSR-6
   Scenario: Create account with invalid details (field formats)
@@ -50,7 +49,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I press "Register"
     Then I should see "Create an account"
     # Your details
-    When I select "Mr" from "salutation"
     And I fill in "first-name" with "Bil@l"
     And I fill in "last-name" with "Ca!rr"
         # Contact details
@@ -74,7 +72,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Given I am on the homepage
     And I press "Register"
     Then I should see "Create an account"
-    When I select "Mr" from "salutation"
     And I fill in "first-name" with "Bill"
     And I fill in "last-name" with "Carr"
     And I fill in "password" with "<password1>"
@@ -99,7 +96,6 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "<fieldname> should not be blank"
     Examples:
     |fieldname|
-    |salutation|
     |first-name|
     |last-name|
     |password|

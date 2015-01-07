@@ -13,9 +13,6 @@ register:
   summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
   subtitle: Register Your Details
   form:
-    salutation:
-      label: Title
-      value: ["Mr", "Miss", "Mrs", "Ms", "Dr"]
     first-name:
       label: First Name
     last-name:
