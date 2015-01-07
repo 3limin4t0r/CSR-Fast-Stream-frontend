@@ -12,7 +12,6 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Your account settings"
     And the "first-name" field should contain "One"
     And the "last-name" field should contain "Persona"
-    And I select "Mrs" from "salutation"
     And I fill in "first-name" with "Onechange"
     And I fill in "last-name" with "Personachange"
     # Address Details
@@ -39,7 +38,6 @@ Feature: As an user, I want to be able to add details about myself on my account
     # Checking that values have been retained
     And the "first-name" field should contain "Onechange"
     And the "last-name" field should contain "Personachange"
-    And the "salutation" field should contain "Mrs"
     # Date of birth
     And the "dob-day" field should contain "08"
     And the "dob-month" field should contain "02"
