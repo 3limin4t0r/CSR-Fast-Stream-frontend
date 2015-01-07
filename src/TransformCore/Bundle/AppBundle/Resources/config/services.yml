@@ -19,3 +19,11 @@ services:
   transform_core_app_main.service.version:
     class: TransformCore\Bundle\AppBundle\Service\Version
     arguments: ["%kernel.root_dir%/../version"]
+
+  csr_fast_stream_domain_model_reg_form:
+    class:  TransformCore\Bundle\CsrFastStreamBundle\Form\RegFormType
+    tags:
+      -  { name: form.type }
+    arguments:
+      - "TransformCore\Bundle\CsrFastStreamBundle\Entity\User"
+
