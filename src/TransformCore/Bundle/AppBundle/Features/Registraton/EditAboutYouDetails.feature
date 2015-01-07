@@ -74,7 +74,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I select "19, Pinewood Court" from "address-select"
     And I fill in "password" with "a"
     And I fill in "passwordConfirm" with "a"
-    And I fill in "email-input" with "bill.carr@test"
+    And I fill in "email" with "bill.carr@test"
     And I fill in "phone-input" with "abc"
     And I press "Create account"
     # Checking that field validation is working
