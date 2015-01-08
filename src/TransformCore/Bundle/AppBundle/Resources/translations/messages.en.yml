@@ -26,8 +26,11 @@ register:
       label: Confirm Password
     heard-about-us:
       label: Please tell us where you first heard about Fast Stream
+    disabled-title: Registered Disability
+    disabled-subtitle1: If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail.
+    disabled-subtitle2: Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
     disabled:
-      label: Registered Disability - If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail. Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
+      label: Registered Disability
     disabled-adjustment-required:
       label: I require adjustments based on my disability
     disabled-details:
@@ -40,9 +43,9 @@ register:
       label: Please tell us what adjustments you require based on your disability
     guaranteed-interview-scheme:
       label: I wish to apply via the Guaranteed Interview Scheme
-    terms-and-conditions:
-      label: Acknowledge Terms & Conditions
-      summary: Please review our terms and conditions detailing how we use your personal data, and indicate your consent below
+      link: What is the Guaranteed Interview Scheme?
+    terms-and-conditions-title: Acknowledge Terms & Conditions
+    terms-and-conditions-subtitle: Please review our terms and conditions detailing how we use your personal data, and indicate your consent below
     terms-and-conditions:
       label: Please confirm your consent to the use of your personal data in the ways described above
     register-button:
