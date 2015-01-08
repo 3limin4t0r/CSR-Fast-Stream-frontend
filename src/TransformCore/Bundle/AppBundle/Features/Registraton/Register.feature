@@ -25,7 +25,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I follow "What is the Guaranteed Interview Scheme?"
     Then I should see "The Civil Service Fast Stream operates the Guaranteed Interview Scheme (GIS) which means that applicants with a registered disability need only meet the minimum qualifying criteria for their chosen scheme(s)."
     And I check "fos_user_registration_form_guaranteedInterviewScheme"
-    Then I follow "terms and conditions"
+    Then I follow "Please review our terms and conditions detailing how we use your personal data, and indicate your consent below"
     And I check "fos_user_registration_form_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "Registration: COMPLETE"

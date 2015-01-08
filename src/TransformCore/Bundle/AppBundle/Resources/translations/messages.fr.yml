@@ -23,7 +23,7 @@ register:
     password:
       label: Mot de passe
     password-confirm:
-      label: Confirm Password
+      label: Mot de passe de confirmation
     heard-about-us:
       label: Veuillez nous indiquer où vous avez entendu parler pour la première fois Fast Stream
     disabled-title: Invalidité
