@@ -353,6 +353,18 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         }
     }
 
+    /**
+     * @Given I am logged in as :arg1 with password :arg2
+     */
+    public function iAmLoggedInAsWithPassword($email, $password)
+    {
+        $this->visitPath('/');
+        $this->getSession()->getPage()->fillField('email', $email);
+        $this->getSession()->getPage()->fillField('password', $password);
+        $this->getSession()->getPage()->pressButton('Sign In');
+    }
+
+
 }
 
 ?>
