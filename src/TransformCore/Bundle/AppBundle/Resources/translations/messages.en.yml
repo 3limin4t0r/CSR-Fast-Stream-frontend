@@ -29,8 +29,6 @@ register:
     disabled-title: Registered Disability
     disabled-subtitle1: If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail.
     disabled-subtitle2: Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
-    disabled:
-      label: Registered Disability
     disabled-adjustment-required:
       label: I require adjustments based on my disability
     disabled-details:
