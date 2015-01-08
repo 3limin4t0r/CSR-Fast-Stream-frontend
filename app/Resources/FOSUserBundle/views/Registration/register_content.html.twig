@@ -19,10 +19,10 @@
         {{ form_row(form.phoneNumber2) }}
         {{ form_row(form.disabledAdjustmentDetails) }}
         {{ form_row(form.guaranteedInterviewScheme) }}
-        <a>{% trans %}register.form.guaranteed-interview-scheme.link{% endtrans %}</a>
+        <a href="{{ path('transform_core_app_guaranteed_interview_scheme') }}">{% trans %}register.form.guaranteed-interview-scheme.link{% endtrans %}</a>
 
         <h4>{% trans %}register.form.terms-and-conditions-title{% endtrans %}</h4>
-        <a>{% trans %}register.form.terms-and-conditions-subtitle{% endtrans %}</a>
+        <a href="{{ path('transform_core_app_terms_and_conditions') }}">{% trans %}register.form.terms-and-conditions-subtitle{% endtrans %}</a>
         {{ form_row(form.termsAndConditions) }}
 
         {{ form_row(form.registerButton) }}
