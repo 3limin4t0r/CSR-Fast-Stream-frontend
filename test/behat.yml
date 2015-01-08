@@ -19,7 +19,7 @@ default:
             goutte: ~
       chartinger\Behat\TwigReportExtension\Extension:
          output:
-          file: test/build/report.html
+          file: test/report.html
          templates:
           file: default.twig
 phantomjs:
@@ -44,6 +44,6 @@ phantomjs:
             goutte: ~
       chartinger\Behat\TwigReportExtension\Extension:
          output:
-          file: test/build/report.html
+          file: test/report.html
          templates:
           file: default.twig

@@ -1,9 +1,5 @@
 Feature: As an user, I want to be able to register a new account, in order to apply for jobs
 
-  Background:
-    Given following users for each persona exist on system:
-      | persona3@test.com |
-      
   @CSR-6
   Scenario Outline: Create Account with valid details
     Given I am on the homepage
@@ -32,7 +28,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I check "fos_user_registration_form_guaranteedInterviewScheme"
     Then I follow "terms and conditions"
     And I check "fos_user_registration_form_termsAndConditions"
-    And I follow "Register"
+    And I press "Register"
     Then I should see "Registration: COMPLETE"
     And I should see "Welcome, <first-name>"
   # And I should get an email on "<email-input>" with:
@@ -41,9 +37,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   #  """
 
   Examples:
-    | first-name | last-name | email-input       | phone-input1 | phone-input2 |password  | disability |referrer-input|
-    | One    | Persona       | persona1@test.com | 07739898078 | 07739898011 |P@ssword1 | 1           | Search Engine |
-    | Two    | persona       | persona2@test.com | 07739898079 | 07739898022 |P@ssword1 | 2 | Friend or Family |
+    | first-name | last-name | email-input       | phone-input1 | phone-input2 | password  | disability | referrer-input   |
+    | One        | Persona   | persona1@test.com | 07739898078  | 07739898011  | P@ssword1 | 1          | Search Engine    |
+    | Two        | persona   | persona2@test.com | 07739898079  | 07739898022  | P@ssword1 | 1          | Friend or Family |
 
   @CSR-6
   Scenario: Create account with invalid details (field formats)
@@ -60,7 +56,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form[plainPassword][second]" with "P@ssword11"
         # Disability details
     And I check "I require adjustments based on my disability"
-    And I follow "Register"
+    And I press "Register"
     Then I should see "first name contains illegal characters"
     Then I should see "last name name contains illegal characters"
     Then I should see "passwords do not match"
@@ -79,37 +75,49 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password1>"
     And I fill in "fos_user_registration_form[plainPassword][second]" with "<password2>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
-    And I follow "Register"
+    And I press "Register"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
   Examples:
     | password1 | password2 |
     | 1234567   | 1234567   |
     | 12345678  | 12345678  |
     | abcdefgh  | abcdefgh  |
-    | abcdefgh1  | abcdefgh1  |
-    | abcdefgh@  | abcdefgh@  |
+    | abcdefgh1 | abcdefgh1 |
+    | abcdefgh@ | abcdefgh@ |
 
-    @CSR-6
-  Scenario Outline: Create account using blank fields (mandatory field check)
+  @CSR-6
+  Scenario: Create account using blank form text fields (mandatory field check)
     Given I am on the homepage
     And I follow "Register"
-    Then I should see "Register Your Details"
-    And I press "Create account"
-    Then I should see "<fieldname> should not be blank"
-    Examples:
-    |fieldname|fieldvalue|
-    |first-name|         |
-    |last-name|          |
-    |password|           |
-    |email|              |
-    
-    @CSR-6
+    And I fill in "fos_user_registration_form_email" with "email@test.com"
+    And I press "Register"
+    Then I should see "Please fill in this field"
+    And I fill in "fos_user_registration_form_firstname" with "firstname"
+    And I press "Register"
+    Then I should see "Please fill in this field"
+    And I fill in "fos_user_registration_form_lastname" with "lastname"
+    And I press "Register"
+    Then I should see "Please fill in this field"
+    And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
+    And I press "Register"
+    Then I should see "Please fill in this field"
+    And I fill in "fos_user_registration_form[plainPassword][second]" with "P@ssword1"
+    And I press "Register"
+    Then I should see "Please fill in this field"
+    And I fill in "fos_user_registration_form_disabledAdjustmentDetails" with "some disability adjustments text"
+    And I press "Register"
+    Then I should see "Please fill in this field"
+    And I fill in "fos_user_registration_form_phoneNumber1" with "phone-input1"
+    And I press "Register"
+    Then I should not see "Please fill in this field"
+
+  @CSR-6
   Scenario Outline: Create account using email that has already been used
     Given I am on the homepage
     And I follow "Register"
     Then I fill in "fos_user_registration_form_email" with "<email>"
-    And I press "Create account"
+    And I press "Register"
     Then I should see "<email> is already taken"
-    Examples:
-    |email|
-    |persona3@test.com|
+  Examples:
+    | email             |
+    | persona1@test.com |
