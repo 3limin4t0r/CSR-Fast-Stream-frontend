@@ -16,7 +16,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_lastname" with "<last-name>"
     # Signin Details
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
-    And I fill in "passwordConfirm" with "<password>"
+    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
     # Referrer
     And I select "<referrer-input>" from "fos_user_registration_form_heardAboutUs"
     # Disability details
@@ -42,8 +42,8 @@ Feature: As an user, I want to be able to register a new account, in order to ap
 
   Examples:
     | first-name | last-name | email-input       | phone-input1 | phone-input2 |password  | disability |referrer-input|
-    | One    | Persona       | persona1@test.com | 07739898078 | 07739898011 |P@ssword1 | Diabetes           | Search Engine |
-    | Two    | persona       | persona2@test.com | 07739898079 | 07739898022 |P@ssword1 | Hearing impairment | Friend or Family |
+    | One    | Persona       | persona1@test.com | 07739898078 | 07739898011 |P@ssword1 | 1           | Search Engine |
+    | Two    | persona       | persona2@test.com | 07739898079 | 07739898022 |P@ssword1 | 2 | Friend or Family |
 
   @CSR-6
   Scenario: Create account with invalid details (field formats)
@@ -57,10 +57,10 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_email" with "bill.carr@test"
         # Signin Details
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
-    And I fill in "passwordConfirm" with "P@ssword11"
+    And I fill in "fos_user_registration_form[plainPassword][second]" with "P@ssword11"
         # Disability details
     And I check "I require adjustments based on my disability"
-    And I press "Create account"
+    And I follow "Register"
     Then I should see "first name contains illegal characters"
     Then I should see "last name name contains illegal characters"
     Then I should see "passwords do not match"
@@ -77,9 +77,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_firstname" with "Bill"
     And I fill in "fos_user_registration_form_lastname" with "Carr"
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password1>"
-    And I fill in "passwordConfirm" with "<password2>"
+    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password2>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
-    And I press "Create account"
+    And I follow "Register"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
   Examples:
     | password1 | password2 |
