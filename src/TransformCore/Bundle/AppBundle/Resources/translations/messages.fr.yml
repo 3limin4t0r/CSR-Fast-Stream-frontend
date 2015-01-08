@@ -1,6 +1,8 @@
 nav:
   home: Accueil
+  register: Register
   login: S'identifier
+  logout: Logout
 
 home:
   title: Bonjour
@@ -10,38 +12,38 @@ form:
 
 register:
   title: Registre
-  summary: Quam ob rem circumspecta cautela observatum est deinceps et cum edita montium petere coeperint grassatores, loci iniquitati milites cedunt. ubi autem in planitie potuerint reperiri, quod contingit adsidue, nec exsertare lacertos nec crispare permissi tela, quae vehunt bina vel terna, pecudum ritu inertium trucidantur.
   subtitle: Enregistrez vos coordonnées
   form:
-    first-name:
+    firstname:
       label: Prénom
-    last-name:
+    lastname:
       label: Nom de famille
+    email:
+      label: Email
     password:
       label: Mot de passe
     password-confirm:
       label: Confirm Password
-    referrer: 
+    heard-about-us:
       label: Veuillez nous indiquer où vous avez entendu parler pour la première fois Fast Stream
-      value: [ "Ami ou Famille" , "université" , "Moteur de Recherche" , "autres"]
-    handicap: 
-      label: Invalidité enregistrées
-      valeur: [ "Si vous avez enregistré une invalidité ou ont l'intention de demander des ajustements raisonnables, nous demandons que vous indiquer ce ci-dessous. Nous prendrons contact avec vous pour discuter de vos besoins de manière plus détaillée. Certains réglages typiques demandées sont temps supplémentaire, logiciel de grossissement d'écran ou copies imprimées sur papier ordinaire ou couleur. "]
-    réglages-req-case:
+    disabled:
+      label: Invalidité enregistrées - Si vous avez enregistré une invalidité ou ont l'intention de demander des ajustements raisonnables, nous demandons que vous indiquer ce ci-dessous. Nous prendrons contact avec vous pour discuter de vos besoins de manière plus détaillée. Certains réglages typiques demandées sont temps supplémentaire, logiciel de grossissement d'écran ou copies imprimées sur papier ordinaire ou couleur. "]
+    disabled-adjustment-required:
       label: je nécessiter des ajustements en fonction de mon handicap
     handicap:
       label: Veuillez décrire votre invalidité
-      valeur: [ "déficience sensorielle (vision et de l'audition) " , "coeur conditions" , "affections musculo-squelettiques tels que problèmes de dos" , "récurrents ou des fluctuations des conditions, telles que l'arthrite ou l'asthme" , "problèmes de santé mentale, comme la dépression" , " L'épilepsie" , "dyslexie" , "Diabète" , "défigurations sévères" , "learning disabilities"]
-    numéro de téléphone:
+    phone-number-1:
       label: Veuillez fournir votre numéro de téléphone
-    handicap-détail:
+    phone-number-2:
+      label: Veuillez fournir un autre numéro de téléphone (facultatif)
+    disabled-adjustment-details:
       label: Veuillez nous dire quels ajustements dont vous avez besoin en fonction de votre invalidité
-    garantis-interview-régime:
+    guaranteed-interview-scheme:
       label: Je tiens à appliquer via l'interview garanti régime
-    termes et conditions:
+    terms-and-conditions:
       label: Reconnaissez Termes & Conditions
-      résumé: Veuillez consulter nos conditions générales d'utilisation conditions détaillant comment nous utilisons vos données personnelles, et indiquer votre consentement ci-dessous
+      summary: Veuillez consulter nos conditions générales d'utilisation conditions détaillant comment nous utilisons vos données personnelles, et indiquer votre consentement ci-dessous
     conditions-case:
       label: Veuillez confirmer Votre consentement à l'utilisation de vos données personnelles par les moyens décrits ci-dessus
-    inscrivez-bouton:
+    register-button:
       label: Registre
