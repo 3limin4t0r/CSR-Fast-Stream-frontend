@@ -8,8 +8,8 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   Scenario Outline: Create Account with valid details
     Given I am on the homepage
     And I press "Register"
-    Then I should see "Register Your Details:"
-    #    Your details
+    Then I should see "Register Your Details"
+    # Your details
     And I fill in "first-name" with "<first-name>"
     And I fill in "last-name" with "<last-name>"
     # Contact details
