@@ -4,3 +4,44 @@ nav:
 
 home:
   title: Bonjour
+
+form:
+  select: Veuillez sélectionner
+
+register:
+  title: Registre
+  summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+  subtitle: Enregistrez vos coordonnées
+  form:
+    first-name:
+      label: Prénom
+    last-name:
+      label: Nom de famille
+    password:
+      label: Mot de passe
+    password-confirm:
+      label: Confirm Password
+    referrer: 
+      label: Veuillez nous indiquer où vous avez entendu parler pour la première fois Fast Stream
+      value: [ "Ami ou Famille" , "université" , "Moteur de Recherche" , "autres"]
+    handicap: 
+      label: Invalidité enregistrées
+      valeur: [ "Si vous avez enregistré une invalidité ou ont l'intention de demander des ajustements raisonnables, nous demandons que vous indiquer ce ci-dessous. Nous prendrons contact avec vous pour discuter de vos besoins de manière plus détaillée. Certains réglages typiques demandées sont temps supplémentaire, logiciel de grossissement d'écran ou copies imprimées sur papier ordinaire ou couleur. "]
+    réglages-req-case:
+      label: je nécessiter des ajustements en fonction de mon handicap
+    handicap:
+      label: Veuillez décrire votre invalidité
+      valeur: [ "déficience sensorielle (vision et de l'audition) " , "coeur conditions" , "affections musculo-squelettiques tels que problèmes de dos" , "récurrents ou des fluctuations des conditions, telles que l'arthrite ou l'asthme" , "problèmes de santé mentale, comme la dépression" , " L'épilepsie" , "dyslexie" , "Diabète" , "défigurations sévères" , "learning disabilities"]
+    numéro de téléphone:
+      label: Veuillez fournir votre numéro de téléphone
+    handicap-détail:
+      label: Veuillez nous dire quels ajustements dont vous avez besoin en fonction de votre invalidité
+    garantis-interview-régime:
+      label: Je tiens à appliquer via l'interview garanti régime
+    termes et conditions:
+      label: Reconnaissez Termes & Conditions
+      résumé: Veuillez consulter nos conditions générales d'utilisation conditions détaillant comment nous utilisons vos données personnelles, et indiquer votre consentement ci-dessous
+    conditions-case:
+      label: Veuillez confirmer Votre consentement à l'utilisation de vos données personnelles par les moyens décrits ci-dessus
+    inscrivez-bouton:
+      label: Registre
