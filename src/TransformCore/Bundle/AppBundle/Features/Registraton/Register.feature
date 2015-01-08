@@ -5,11 +5,11 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Given I am on the homepage
     And I follow "Register"
     Then I should see "Register Your Details"
-    # Contact details
-    And I fill in "fos_user_registration_form_email" with "<email-input>"
     # Your details
     And I fill in "fos_user_registration_form_firstname" with "<first-name>"
     And I fill in "fos_user_registration_form_lastname" with "<last-name>"
+    # Contact details
+    And I fill in "fos_user_registration_form_email" with "<email-input>"
     # Signin Details
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
     And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
@@ -88,13 +88,15 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   Scenario: Create account using blank form text fields (mandatory field check)
     Given I am on the homepage
     And I follow "Register"
-    And I fill in "fos_user_registration_form_email" with "email@test.com"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_firstname" with "firstname"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_lastname" with "lastname"
+    And I press "fos_user_registration_form_registerButton"
+    Then I should see "Please fill in this field"
+    And I fill in "fos_user_registration_form_email" with "email@test.com"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
