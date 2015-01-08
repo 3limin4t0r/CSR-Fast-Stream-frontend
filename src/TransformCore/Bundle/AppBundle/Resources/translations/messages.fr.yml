@@ -26,11 +26,14 @@ register:
       label: Confirm Password
     heard-about-us:
       label: Veuillez nous indiquer où vous avez entendu parler pour la première fois Fast Stream
+    disabled-title: Invalidité
+    disabled-subtitle1: Si vous avez un handicap inscrit et avez l'intention de demander des ajustements raisonnables , nous demandons que vous indiquez ci dessous . Nous communiquerons avec vous pour discuter de vos besoins plus en détail.
+    disabled-subtitle2: Certains ajustements demandés sont typiques du temps supplémentaire , les logiciels de grossissement d'écran ou copies imprimées sur du papier ordinaire ou de couleur.
     disabled:
-      label: Invalidité enregistrées - Si vous avez enregistré une invalidité ou ont l'intention de demander des ajustements raisonnables, nous demandons que vous indiquer ce ci-dessous. Nous prendrons contact avec vous pour discuter de vos besoins de manière plus détaillée. Certains réglages typiques demandées sont temps supplémentaire, logiciel de grossissement d'écran ou copies imprimées sur papier ordinaire ou couleur. "]
+      label: Invalidité
     disabled-adjustment-required:
       label: je nécessiter des ajustements en fonction de mon handicap
-    handicap:
+    disabled-details:
       label: Veuillez décrire votre invalidité
     phone-number-1:
       label: Veuillez fournir votre numéro de téléphone
@@ -40,10 +43,10 @@ register:
       label: Veuillez nous dire quels ajustements dont vous avez besoin en fonction de votre invalidité
     guaranteed-interview-scheme:
       label: Je tiens à appliquer via l'interview garanti régime
+      link: Quel est le schéma d'entrevue garanti?
+    terms-and-conditions-title: Reconnaître Conditions générales
+    terms-and-conditions-subtitle: Se il vous plaît examiner nos termes et conditions détaillant la façon dont nous utilisons vos données personnelles , et indiquer votre consentement ci-dessous
     terms-and-conditions:
-      label: Reconnaissez Termes & Conditions
-      summary: Veuillez consulter nos conditions générales d'utilisation conditions détaillant comment nous utilisons vos données personnelles, et indiquer votre consentement ci-dessous
-    conditions-case:
-      label: Veuillez confirmer Votre consentement à l'utilisation de vos données personnelles par les moyens décrits ci-dessus
+      label: Se il vous plaît confirmer votre consentement à l'utilisation de vos données personnelles de la manière décrite ci-dessus
     register-button:
       label: Registre

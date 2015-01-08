@@ -34,6 +34,7 @@ phantomjs:
     extensions:
       Behat\Symfony2Extension: ~
       Behat\MinkExtension:
+        base_url: 'http://localhost:8000'
         sessions:
           my_session:
             symfony2: ~
