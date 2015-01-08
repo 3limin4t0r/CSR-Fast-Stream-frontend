@@ -5,7 +5,7 @@ services:
 
   transform_core_app_main.menu_builder:
     class: TransformCore\Bundle\AppBundle\Menu\MenuBuilder
-    arguments: ["@knp_menu.factory"]
+    arguments: ["@knp_menu.factory","@security.context"]
 
   transform_core_app_main.menu.main:
     class: Knp\Menu\MenuItem # the service definition requires setting the class
@@ -20,10 +20,7 @@ services:
     class: TransformCore\Bundle\AppBundle\Service\Version
     arguments: ["%kernel.root_dir%/../version"]
 
-  csr_fast_stream_domain_model_reg_form:
-    class:  TransformCore\Bundle\CsrFastStreamBundle\Form\RegFormType
+  transform_core_app_user_registration_listener:
+    class: TransformCore\Bundle\AppBundle\EventListener\RegistrationListener
     tags:
-      -  { name: form.type }
-    arguments:
-      - "TransformCore\Bundle\CsrFastStreamBundle\Entity\User"
-
+        - { name: kernel.event_subscriber }
