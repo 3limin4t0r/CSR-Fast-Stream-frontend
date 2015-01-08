@@ -26,7 +26,6 @@ register:
       label: Confirm Password
     heard-about-us:
       label: Please tell us where you first heard about Fast Stream
-      value: ["Friend or Family","university","Search Engine","other"]
     disabled:
       label: Registered Disability - If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail. Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
     disabled-adjustment-required:
