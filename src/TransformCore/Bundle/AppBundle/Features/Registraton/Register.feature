@@ -28,7 +28,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I check "fos_user_registration_form_guaranteedInterviewScheme"
     Then I follow "terms and conditions"
     And I check "fos_user_registration_form_termsAndConditions"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Registration: COMPLETE"
     And I should see "Welcome, <first-name>"
   # And I should get an email on "<email-input>" with:
@@ -56,7 +56,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form[plainPassword][second]" with "P@ssword11"
         # Disability details
     And I check "I require adjustments based on my disability"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "first name contains illegal characters"
     Then I should see "last name name contains illegal characters"
     Then I should see "passwords do not match"
@@ -75,7 +75,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password1>"
     And I fill in "fos_user_registration_form[plainPassword][second]" with "<password2>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
   Examples:
     | password1 | password2 |
@@ -90,25 +90,25 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Given I am on the homepage
     And I follow "Register"
     And I fill in "fos_user_registration_form_email" with "email@test.com"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_firstname" with "firstname"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_lastname" with "lastname"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form[plainPassword][second]" with "P@ssword1"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_disabledAdjustmentDetails" with "some disability adjustments text"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "Please fill in this field"
     And I fill in "fos_user_registration_form_phoneNumber1" with "phone-input1"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should not see "Please fill in this field"
 
   @CSR-6
@@ -116,7 +116,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Given I am on the homepage
     And I follow "Register"
     Then I fill in "fos_user_registration_form_email" with "<email>"
-    And I press "Register"
+    And I press "fos_user_registration_form_registerButton"
     Then I should see "<email> is already taken"
   Examples:
     | email             |

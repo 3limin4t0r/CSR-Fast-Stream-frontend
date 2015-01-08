@@ -42,8 +42,5 @@ register:
       label: I wish to apply via the Guaranteed Interview Scheme
     terms-and-conditions:
       label: Acknowledge Terms & Conditions
-      summary: Please review our terms and conditions detailing how we use your personal data, and indicate your consent below
-    terms-and-conditions:
-      label: Please confirm your consent to the use of your personal data in the ways described above
     register-button:
       label: Register

@@ -41,9 +41,6 @@ register:
     guaranteed-interview-scheme:
       label: Je tiens à appliquer via l'interview garanti régime
     terms-and-conditions:
-      label: Reconnaissez Termes & Conditions
-      summary: Veuillez consulter nos conditions générales d'utilisation conditions détaillant comment nous utilisons vos données personnelles, et indiquer votre consentement ci-dessous
-    conditions-case:
       label: Veuillez confirmer Votre consentement à l'utilisation de vos données personnelles par les moyens décrits ci-dessus
     register-button:
       label: Registre
