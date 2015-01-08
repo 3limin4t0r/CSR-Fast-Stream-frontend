@@ -1,0 +1,28 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        {{ form_row(form.firstname) }}
+        {{ form_row(form.lastname) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.plainPassword.first) }}
+        {{ form_row(form.plainPassword.second) }}
+        {{ form_row(form.heardAboutUs) }}
+        {{ form_row(form.disabled) }}
+        {{ form_row(form.disabledDetails) }}
+        {{ form_row(form.disabledAdjustmentRequired) }}
+        {{ form_row(form.disabledAdjustmentDetails) }}
+        {{ form_row(form.phoneNumber1) }}
+        {{ form_row(form.phoneNumber2) }}
+        {{ form_row(form.guaranteedInterviewScheme) }}
+        {{ form_row(form.termsAndConditions) }}
+        {{ form_row(form.termsAndConditions) }}
+
+        {{ form_row(form.registerButton) }}
+
+    {{ form_end(form) }}
+
+</form>
