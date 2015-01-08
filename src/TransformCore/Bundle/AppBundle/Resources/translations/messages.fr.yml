@@ -29,8 +29,6 @@ register:
     disabled-title: Invalidité
     disabled-subtitle1: Si vous avez un handicap inscrit et avez l'intention de demander des ajustements raisonnables , nous demandons que vous indiquez ci dessous . Nous communiquerons avec vous pour discuter de vos besoins plus en détail.
     disabled-subtitle2: Certains ajustements demandés sont typiques du temps supplémentaire , les logiciels de grossissement d'écran ou copies imprimées sur du papier ordinaire ou de couleur.
-    disabled:
-      label: Invalidité
     disabled-adjustment-required:
       label: je nécessiter des ajustements en fonction de mon handicap
     disabled-details:
