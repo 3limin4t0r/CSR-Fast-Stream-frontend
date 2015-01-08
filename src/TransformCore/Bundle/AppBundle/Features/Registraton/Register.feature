@@ -16,9 +16,8 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     # Referrer
     And I select "<referrer-input>" from "fos_user_registration_form_heardAboutUs"
     # Disability details
-    And I check "fos_user_registration_form_disabled"
-    And I select "<disability>" from "disability"
     And I check "fos_user_registration_form_disabledAdjustmentRequired"
+    And I select "<disability>" from "disability"
     And I fill in "fos_user_registration_form_disabledAdjustmentDetails" with "some disability adjustments text"
     And I fill in "fos_user_registration_form_phoneNumber1" with "<phone-input1>"
     And I fill in "fos_user_registration_form_phoneNumber2" with "<phone-input2>"
@@ -41,7 +40,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | One        | Persona   | persona1@test.com | 07739898078  | 07739898011  | P@ssword1 | 1          | Search Engine    |
     | Two        | persona   | persona2@test.com | 07739898079  | 07739898022  | P@ssword1 | 1          | Friend or Family |
 
-  @CSR-6
+  @CSR-6-1
   Scenario: Create account with invalid details (field formats)
     Given I am on the homepage
     And I follow "Register"
@@ -65,7 +64,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "Please accept terms and conditions before continuing"
     Then I should see "Please tell us how you found faststream"
 
-  @CSR-6
+  @CSR-6-1
   Scenario Outline: Create account with invalid details (password check)
     Given I am on the homepage
     And I follow "Register"
@@ -115,7 +114,19 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   Scenario Outline: Create account using email that has already been used
     Given I am on the homepage
     And I follow "Register"
-    Then I fill in "fos_user_registration_form_email" with "<email>"
+    And I fill in "fos_user_registration_form_email" with "<email>"
+    And I fill in "fos_user_registration_form_firstname" with "<first-name>"
+    And I fill in "fos_user_registration_form_lastname" with "<last-name>"
+    And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
+    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
+    And I select "<referrer-input>" from "fos_user_registration_form_heardAboutUs"
+    And I check "fos_user_registration_form_disabledAdjustmentRequired"
+    And I select "<disability>" from "disability"
+    And I fill in "fos_user_registration_form_disabledAdjustmentDetails" with "some disability adjustments text"
+    And I fill in "fos_user_registration_form_phoneNumber1" with "<phone-input1>"
+    And I fill in "fos_user_registration_form_phoneNumber2" with "<phone-input2>"
+    And I check "fos_user_registration_form_guaranteedInterviewScheme"
+    And I check "fos_user_registration_form_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "<email> is already taken"
   Examples:
