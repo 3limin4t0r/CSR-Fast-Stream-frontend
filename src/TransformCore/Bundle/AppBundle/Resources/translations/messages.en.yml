@@ -1,6 +1,8 @@
 nav:
   home: Home
+  register: Register
   login: Login
+  logout: Logout
 
 home:
   title: Hello
@@ -10,38 +12,39 @@ form:
 
 register:
   title: Register
-  summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
   subtitle: Register Your Details
   form:
-    first-name:
+    firstname:
       label: First Name
-    last-name:
+    lastname:
       label: Last Name
+    email:
+      label: Email
     password:
       label: Password
     password-confirm:
       label: Confirm Password
-    referrer:
+    heard-about-us:
       label: Please tell us where you first heard about Fast Stream
       value: ["Friend or Family","university","Search Engine","other"]
-    disability:
-      label: Registered Disability
-      value: ["If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail. Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper."]
-    adjustments-req-checkbox:
+    disabled:
+      label: Registered Disability - If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail. Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
+    disabled-adjustment-required:
       label: I require adjustments based on my disability
-    disability:
+    disabled-details:
       label: Please describe your disability
-      value: ["Sensory impairment (vision and hearing)","Heart conditions","Musculoskeletal conditions such as back problems","Recurring or fluctuating conditions, such as arthritis or asthma","Mental health problems, such as depression","Epilepsy","Dyslexia","Diabetes","Severe disfigurements","Learning disabilities"]
-    phone-number:
+    phone-number-1:
       label: Please provide your telephone number
-    disability-detail:
+    phone-number-2:
+      label: Please provide another telephone number (optional)
+    disabled-adjustment-details:
       label: Please tell us what adjustments you require based on your disability
     guaranteed-interview-scheme:
       label: I wish to apply via the Guaranteed Interview Scheme
     terms-and-conditions:
       label: Acknowledge Terms & Conditions
       summary: Please review our terms and conditions detailing how we use your personal data, and indicate your consent below
-    terms-checkbox:
+    terms-and-conditions:
       label: Please confirm your consent to the use of your personal data in the ways described above
     register-button:
       label: Register
