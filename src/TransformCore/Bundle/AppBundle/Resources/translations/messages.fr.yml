@@ -1,14 +1,27 @@
+project:
+  name: CSR
+
 nav:
   home: Accueil
   register: Register
   login: S'identifier
-  logout: Logout
+  logout: Déconnexion
 
 home:
   title: Bonjour
 
 form:
   select: Veuillez sélectionner
+
+login:
+  title: Connexion
+  form:
+    username:
+      label: Email
+    password:
+      label: Mot de passe
+    login:
+      label: Connexion
 
 register:
   title: Registre

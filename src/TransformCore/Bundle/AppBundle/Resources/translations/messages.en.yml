@@ -13,6 +13,17 @@ home:
 form:
   select: Please Select
 
+login:
+  title: Login
+  subtitle: Register Your Details
+  form:
+    username:
+      label: Email address
+    password:
+      label: Password
+    login:
+      label: Login
+
 register:
   title: Register
   subtitle: Register Your Details
