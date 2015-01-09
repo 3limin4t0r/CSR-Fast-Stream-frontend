@@ -14,7 +14,7 @@ Feature: As a user, I want to be able to login, in order to manage my account an
     Then I should see "<message>"
 
   Examples:
-    | email-input             | password  | message    |
+    | email-input       | password  | message    |
     | persona3@test.com | P@ssword1 | My Account |
 
   @CSR-5
@@ -27,7 +27,7 @@ Feature: As a user, I want to be able to login, in order to manage my account an
     Then I should see "<message>"
 
   Examples:
-    | email-input          | password  | message             |
+    | email-input       | password  | message             |
     | persona3@test.com | P@ssword  | Invalid credentials |
     | persona3@test.com | p@ssword1 | Invalid credentials |
 
