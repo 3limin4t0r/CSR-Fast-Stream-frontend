@@ -1,6 +1,6 @@
 Feature: As an user, I want to be able to register a new account, in order to apply for jobs
 
-  @CSR-6 @javascript
+  @CSR-6
   Scenario Outline: Create Account with valid details
     Given I am on the homepage
     And I follow "Register"
@@ -39,7 +39,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | Two        | persona   | persona2@test.com | 07739898079  | 07739898022  | P@ssword1 | 1          | Friend or Family |
 
 
-  @CSR-6 @javascript
+  @CSR-6
   Scenario Outline: Check info links on Register form
     Given I am on homepage
     And I follow "Register"
@@ -50,7 +50,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | What is the Guaranteed Interview Scheme?                                                                        | Guaranteed Interview Scheme                                         |
     | Please review our terms and conditions detailing how we use your personal data, and indicate your consent below | We take our obligations under data protection legislation seriously |
 
-  @CSR-6 @javascript
+  @CSR-6
   Scenario: Create account with invalid details (field formats)
     Given I am on the homepage
     And I follow "Register"
@@ -71,7 +71,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "The entered passwords don't match"
     Then I should see "This value is not a valid email address"
 
-  @CSR-6-omit @javascript
+  @omit
   Scenario Outline: Create account with invalid details (password check)
     Given I am on the homepage
     And I follow "Register"
@@ -91,7 +91,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | abcdefgh1 |
     | abcdefgh@ |
 
-  @CSR-6 @javascript
+  @CSR-6
   Scenario: Create account using blank form text fields (mandatory field check)
     Given I am on the homepage
     And I follow "Register"
@@ -118,10 +118,11 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I press "fos_user_registration_form_registerButton"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
+    And I press "fos_user_registration_form_registerButton"
     Then I should not see "This value should not be blank"
     And I should see "My Account"
 
-  @CSR-6 @javascript
+  @CSR-6
   Scenario Outline: Create account using email that has already been used
     Given I am on the homepage
     And I follow "Register"
