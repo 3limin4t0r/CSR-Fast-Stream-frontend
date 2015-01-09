@@ -1,3 +1,6 @@
+project:
+  name: CSR
+
 nav:
   home: Home
   register: Register
