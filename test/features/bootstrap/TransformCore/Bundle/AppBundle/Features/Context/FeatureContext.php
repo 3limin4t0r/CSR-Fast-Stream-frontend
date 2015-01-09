@@ -5,7 +5,6 @@ namespace TransformCore\Bundle\AppBundle\Features\Context;
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\MinkExtension\Context\MinkContext;
-use Guzzle\Http;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 
@@ -16,13 +15,6 @@ use Behat\Gherkin\Node\TableNode;
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 
 {
-    /**
-     * The response given from the resource.
-     */
-    protected $response;
-    protected $json_response;
-    private $_response;
-    public $_client;
     private $_parameters = array();
 
     /**
@@ -65,89 +57,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             "Timeout thrown by " . $backtrace[1]['class'] . "::" . $backtrace[1]['function'] . "()\n" .
             $backtrace[1]['file'] . ", line " . $backtrace[1]['line']
         );
-    }
-
-    /**
-     * Adds Basic Authentication header to next request.
-     *
-     * @param string $username
-     * @param string $password
-     *
-     * @Given /^I am authenticating as "([^"]*)" with "([^"]*)" password$/
-     */
-    public function iAmAuthenticatingAs($username, $password)
-    {
-        // $this->removeHeader('Authorization');
-        //$this->authorization = base64_encode($username . ':' . $password);
-        $this->addHeader('X-USER-ID:' . $username);
-    }
-
-    /**
-     * Adds header
-     *
-     * @param string $header
-     */
-    protected function addHeader($header)
-    {
-        $this->headers[] = $header;
-    }
-
-    private $headers = array();
-
-    /**
-     * @When /^I request "([^"]*)"$/
-     */
-    public function iRequest($uri)
-    {
-        $request = $this->_client->get($uri);
-        $this->_response = $request->send();
-        $request->send();
-    }
-
-    /**
-     * @Then /^the response should be JSON$/
-     */
-    public function theResponseShouldBeJson()
-    {
-
-        $data = json_decode($this->_response->getBody());
-        if (empty($data)) {
-            throw new Exception("Response was not JSON\n" . $this->_response);
-        }
-    }
-
-    /**
-     * @Given /^the response has a "([^"]*)" property$/
-     */
-    public function theResponseHasAProperty($propertyName)
-    {
-        $data = json_decode($this->_response->getBody(true));
-        if (!empty($data)) {
-            if (!isset($data->$propertyName)) {
-                throw new Exception("Property '" . $propertyName . "' is not set!\n");
-            }
-        } else {
-            throw new Exception("Response was not JSON\n" . $this->_response->getBody(true));
-        }
-    }
-
-    /**
-     * @Then /^the "([^"]*)" property equals "([^"]*)"$/
-     */
-    public function thePropertyEquals($propertyName, $propertyValue)
-    {
-        $data = json_decode($this->_response->getBody(true));
-        if (!empty($data)) {
-            if (!isset($data->$propertyName)) {
-                throw new Exception("Property '" . $propertyName . "' is not set!\n");
-            }
-            if ($data->$propertyName !== $propertyValue) {
-                throw new \Exception('Property value mismatch! (given: ' . $propertyValue . ', match: ' . $data->$propertyName . ')');
-            }
-        } else {
-            throw new Exception("Response was not JSON\n" . $this->_response->getBody(true));
-        }
-        echo $data->$propertyName;
     }
 
     /**
@@ -219,7 +128,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             }
 
             if (null === $node) {
-                throw new \Behat\Mink\Exception\ElementNotFoundException($this->getSession(), 'form field', 'id|name|label|value', $field);
+                throw new \Exception($this->getSession(), 'form field', 'id|name|label|value', $field);
             }
 
             if ($node->getTagName() == 'input' && in_array($node->getAttribute('type'), array('checkbox', 'radio'))) {
@@ -258,7 +167,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
             if (!preg_match($regex, $actual)) {
                 $message = sprintf('The field "%s" value is "%s", but "%s" expected.', $field, $actual, $value);
-                throw new \Behat\Mink\Exception\ExpectationException($message, $this->getSession());
+                throw new \Exception($message, $this->getSession());
             }
         }
     }
@@ -297,7 +206,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
         if (!preg_match($regex, $actual)) {
             $message = sprintf('The field "%s" value is "%s", but "%s" expected.', $field, $actual, $value);
-            throw new \Behat\Mink\Exception\ExpectationException($message, $this->getSession());
+            throw new \Exception($message, $this->getSession());
         }
     }
 
@@ -364,6 +273,12 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $this->getSession()->getPage()->fillField('password', $password);
         $this->getSession()->getPage()->pressButton('Sign In');
     }
+
+     * @Given following users for each persona exist on system:
+     */
+    public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
+    {
+
+    }
 }
 
-?>
