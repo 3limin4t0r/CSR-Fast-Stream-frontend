@@ -1,0 +1,32 @@
+<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        {{ form_row(form.firstname) }}
+        {{ form_row(form.lastname) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.plainPassword.first) }}
+        {{ form_row(form.plainPassword.second) }}
+        {{ form_row(form.heardAboutUs) }}
+
+        <h4>{% trans %}register.form.disabled-title{% endtrans %}</h4>
+        <p>{% trans %}register.form.disabled-subtitle1{% endtrans %}</p>
+        <p>{% trans %}register.form.disabled-subtitle2{% endtrans %}</p>
+        {{ form_row(form.disabledAdjustmentRequired) }}
+        {{ form_row(form.disabledDetails) }}
+        {{ form_row(form.phoneNumber1) }}
+        {{ form_row(form.phoneNumber2) }}
+        {{ form_row(form.disabledAdjustmentDetails) }}
+        {{ form_row(form.guaranteedInterviewScheme) }}
+        <a href="{{ path('transform_core_app_guaranteed_interview_scheme') }}">{% trans %}register.form.guaranteed-interview-scheme.link{% endtrans %}</a>
+
+        <h4>{% trans %}register.form.terms-and-conditions-title{% endtrans %}</h4>
+        <a href="{{ path('transform_core_app_terms_and_conditions') }}">{% trans %}register.form.terms-and-conditions-subtitle{% endtrans %}</a>
+        {{ form_row(form.termsAndConditions) }}
+
+        {{ form_row(form.registerButton) }}
+
+    {{ form_end(form) }}
+
+</form>
