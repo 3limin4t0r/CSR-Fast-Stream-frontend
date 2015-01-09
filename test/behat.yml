@@ -7,6 +7,8 @@ default:
       transformcore_app:
         type: symfony_bundle
         bundle: TransformCoreAppBundle
+        filters:
+          tags: ~@omit
     extensions:
       Behat\Symfony2Extension: ~
       Behat\MinkExtension:
@@ -34,6 +36,7 @@ phantomjs:
     extensions:
       Behat\Symfony2Extension: ~
       Behat\MinkExtension:
+        base_url: 'http://localhost:8000'
         sessions:
           my_session:
             symfony2: ~
