@@ -22,5 +22,6 @@ services:
 
   transform_core_app_user_registration_listener:
     class: TransformCore\Bundle\AppBundle\EventListener\RegistrationListener
+    arguments: [@router]
     tags:
         - { name: kernel.event_subscriber }
