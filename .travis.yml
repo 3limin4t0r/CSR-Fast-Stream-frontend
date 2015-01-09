@@ -8,6 +8,7 @@ before_script:
   - php composer.phar install --dev --no-interaction
   - mysql -e 'create database csr;'
   - php app/console doctrine:schema:update --force
+  - php app/console doctrine:fixtures:load
 
 script:
   - make symfony.test.bdd suite=transformcore_app config=test/behat.yml
