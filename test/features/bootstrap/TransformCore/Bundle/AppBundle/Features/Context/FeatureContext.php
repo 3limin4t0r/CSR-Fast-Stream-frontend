@@ -267,7 +267,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
     {
-        throw new \Exception();
     }
 }
 

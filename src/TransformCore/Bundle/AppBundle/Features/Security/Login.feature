@@ -7,46 +7,39 @@ Feature: As a user, I want to be able to login, in order to manage my account an
   @CSR-5
   Scenario Outline: Login (Valid details)
     Given I am on the homepage
-    And I fill in "email" with "<email-input>"
+    And I follow "Login"
+    And I fill in "username" with "<email-input>"
     And I fill in "password" with "<password>"
     And I press "Login"
     Then I should see "<message>"
 
   Examples:
-    | email             | password  | message               |
-    | persona3@test.com | P@ssword1 | My Account            |
-    | email-input       | password  | message               |
-    | persona1@test.com | P@ssword1 | You are now logged in |
-    | persona2@test.com | P@ssword1 | You are now logged in |
+    | email-input             | password  | message    |
+    | persona3@test.com | P@ssword1 | My Account |
 
   @CSR-5
   Scenario Outline: Login (Invalid password)
     Given I am on the homepage
-    And I fill in "email" with "<email-input >"
+    And I follow "Login"
+    And I fill in "username" with "<email-input>"
     And I fill in "password" with "<password>"
     And I press "Login"
     Then I should see "<message>"
 
   Examples:
-    | username          | password  | message                                     |
-    | persona3@test.com | P@ssword  | Invalid credentials                         |
-    | persona3@test.com | p@ssword1 | Invalid credentials                         |
-    | email-input       | password  | message                                     |
-    | persona1@test.com | P@ssword  | Your username and/or password are incorrect |
-    | persona2@test.com | p@ssword1 | Your username and/or password are incorrect |
+    | email-input          | password  | message             |
+    | persona3@test.com | P@ssword  | Invalid credentials |
+    | persona3@test.com | p@ssword1 | Invalid credentials |
 
   @CSR-5
   Scenario Outline: Login (Invalid username)
     Given I am on the homepage
-    And I fill in "email" with "email-input"
+    And I follow "Login"
+    And I fill in "username" with "<email-input>"
     And I fill in "password" with "<password>"
     And I press "Login"
     Then I should see "<message>"
 
   Examples:
-  <<<<<<< HEAD:src/TransformCore/Bundle/AppBundle/Features/Security/Login.feature
-    | username              | password  | message                                     |
-    | Persona3@test.com     | P@ssword1 | Invalid credentials                         |
-    | email-input           | password  | message                                     |
-    | apprentice11@test.com | P@ssword1 | Your username and/or password are incorrect |
-    | trainee11@test.com    | P@ssword1 | Your username and/or password are incorrect |
+    | email-input          | password  | message             |
+    | nonexistent@test.com | P@ssword1 | Invalid credentials |
