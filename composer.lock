@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d45806ac23441d187189c101db39ca5d",
+    "hash": "5b866d1107f95fa8352bfd84d3e40dd0",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1947,12 +1947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "1dbd5b396cd7ec1a1a880c3ed3af6266706b59ec"
+                "reference": "2f651c26c1e403081b5a192fd911be9ca78a18f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/1dbd5b396cd7ec1a1a880c3ed3af6266706b59ec",
-                "reference": "1dbd5b396cd7ec1a1a880c3ed3af6266706b59ec",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/2f651c26c1e403081b5a192fd911be9ca78a18f8",
+                "reference": "2f651c26c1e403081b5a192fd911be9ca78a18f8",
                 "shasum": ""
             },
             "require": {
@@ -1962,6 +1962,7 @@
                 "symfony/framework-bundle": "~2.3"
             },
             "require-dev": {
+                "doctrine/doctrine-fixtures-bundle": "2.2.*",
                 "henrikbjorn/phpspec-code-coverage": "~0.2",
                 "phpspec/phpspec": "~2.0",
                 "sensio/generator-bundle": "2.5.*"
@@ -1977,7 +1978,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-08 15:27:53"
+            "time": "2015-01-09 10:21:40"
         },
         {
             "name": "twbs/bootstrap",
@@ -2340,13 +2341,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Behat/MinkBrowserKitDriver.git",
-                "reference": "aed8f4a596b79014a75254c3e337511c33e38cbd"
+                "url": "https://github.com/minkphp/MinkBrowserKitDriver.git",
+                "reference": "896e8a8c640ef712030b9d40269657b65ced98ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkBrowserKitDriver/zipball/aed8f4a596b79014a75254c3e337511c33e38cbd",
-                "reference": "aed8f4a596b79014a75254c3e337511c33e38cbd",
+                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/896e8a8c640ef712030b9d40269657b65ced98ca",
+                "reference": "896e8a8c640ef712030b9d40269657b65ced98ca",
                 "shasum": ""
             },
             "require": {
@@ -2388,7 +2389,7 @@
                 "browser",
                 "testing"
             ],
-            "time": "2014-09-26 11:35:19"
+            "time": "2015-01-08 20:20:26"
         },
         {
             "name": "behat/mink-extension",
@@ -2454,13 +2455,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Behat/MinkGoutteDriver.git",
-                "reference": "7f531a03233f60b2292352d4eaa1fc45975aba2c"
+                "url": "https://github.com/minkphp/MinkGoutteDriver.git",
+                "reference": "3551995271f32c42787f1602637985e2cd665714"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkGoutteDriver/zipball/7f531a03233f60b2292352d4eaa1fc45975aba2c",
-                "reference": "7f531a03233f60b2292352d4eaa1fc45975aba2c",
+                "url": "https://api.github.com/repos/minkphp/MinkGoutteDriver/zipball/3551995271f32c42787f1602637985e2cd665714",
+                "reference": "3551995271f32c42787f1602637985e2cd665714",
                 "shasum": ""
             },
             "require": {
@@ -2499,7 +2500,7 @@
                 "headless",
                 "testing"
             ],
-            "time": "2014-12-19 11:23:33"
+            "time": "2015-01-08 09:20:50"
         },
         {
             "name": "behat/mink-selenium2-driver",
@@ -2751,6 +2752,122 @@
             ],
             "description": "Modern task runner",
             "time": "2014-12-26 04:22:04"
+        },
+        {
+            "name": "doctrine/data-fixtures",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/data-fixtures.git",
+                "reference": "b4a135c7db56ecc4602b54a2184368f440cac33e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/b4a135c7db56ecc4602b54a2184368f440cac33e",
+                "reference": "b4a135c7db56ecc4602b54a2184368f440cac33e",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": ">=2.2,<2.5-dev",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "doctrine/orm": ">=2.2,<2.5-dev"
+            },
+            "suggest": {
+                "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
+                "doctrine/orm": "For loading ORM fixtures",
+                "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\DataFixtures": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Data Fixtures for all Doctrine Object Managers",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database"
+            ],
+            "time": "2013-07-10 17:04:07"
+        },
+        {
+            "name": "doctrine/doctrine-fixtures-bundle",
+            "version": "v2.2.0",
+            "target-dir": "Doctrine/Bundle/FixturesBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
+                "reference": "c811f96f0cf83b997e3a3ed037cac729bbe3e803"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/c811f96f0cf83b997e3a3ed037cac729bbe3e803",
+                "reference": "c811f96f0cf83b997e3a3ed037cac729bbe3e803",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/data-fixtures": "~1.0",
+                "doctrine/doctrine-bundle": "~1.0",
+                "php": ">=5.3.2",
+                "symfony/doctrine-bridge": "~2.1"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Bundle\\FixturesBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Doctrine Project",
+                    "homepage": "http://www.doctrine-project.org"
+                }
+            ],
+            "description": "Symfony DoctrineFixturesBundle",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "Fixture",
+                "persistence"
+            ],
+            "time": "2013-09-05 11:23:37"
         },
         {
             "name": "doctrine/instantiator",
@@ -3341,16 +3458,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v54",
+            "version": "v55",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "38f427958bdfdec46681ff3be9fdbb058aab86f7"
+                "reference": "1846cbd1f609872ff774c203bc525ae5829505eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/38f427958bdfdec46681ff3be9fdbb058aab86f7",
-                "reference": "38f427958bdfdec46681ff3be9fdbb058aab86f7",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1846cbd1f609872ff774c203bc525ae5829505eb",
+                "reference": "1846cbd1f609872ff774c203bc525ae5829505eb",
                 "shasum": ""
             },
             "bin": [
@@ -3381,7 +3498,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-01-05 18:06:56"
+            "time": "2015-01-07 20:04:25"
         },
         {
             "name": "instaclick/php-webdriver",

@@ -42,7 +42,8 @@
         "phpspec/phpspec": "~2.0",
         "codegyre/robo": "*",
         "henrikbjorn/phpspec-code-coverage": "~0.2",
-        "eddiejaoude/dev-helper-cmds": "dev-master"
+        "eddiejaoude/dev-helper-cmds": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "scripts": {
         "post-root-package-install": [
