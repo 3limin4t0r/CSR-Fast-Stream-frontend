@@ -24,14 +24,14 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        default:
-            anonymous: ~
-
-
     access_control:
-        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/admin/, role: ROLE_ADMIN }
-
-
+        - { path: ^/en/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/en/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/en/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/en/admin/, role: ROLE_ADMIN }
+        - { path: ^/en/account, role: ROLE_USER }
+        - { path: ^/fr/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/fr/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/fr/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/fr/admin/, role: ROLE_ADMIN }
+        - { path: ^/fr/account, role: ROLE_USER }

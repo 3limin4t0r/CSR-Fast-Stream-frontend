@@ -13,3 +13,7 @@ transform_core_app_guaranteed_interview_scheme:
 transform_core_app_terms_and_conditions:
     path:     /terms-and-conditions
     defaults: { _controller: TransformCoreAppBundle:Default:termsAndConditions }
+
+transform_core_app_account:
+    path:     /account
+    defaults: { _controller: TransformCoreAppBundle:Account:index }
