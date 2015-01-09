@@ -133,4 +133,4 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "<email> is already taken"
   Examples:
     | email             |
-    | persona1@test.com |
+    | persona3@test.com |
