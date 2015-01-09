@@ -2929,18 +2929,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eddiejaoude/dev-helper-cmds.git",
-                "reference": "392dd70068ae3554b418e79477bd35e76270fe88"
+                "reference": "219cc2c7a341ef81f112c026e878eb2a9f78a9f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/392dd70068ae3554b418e79477bd35e76270fe88",
-                "reference": "392dd70068ae3554b418e79477bd35e76270fe88",
+                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/219cc2c7a341ef81f112c026e878eb2a9f78a9f3",
+                "reference": "219cc2c7a341ef81f112c026e878eb2a9f78a9f3",
                 "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Useful commands for every Developer",
-            "time": "2014-12-17 22:19:02"
+            "time": "2015-01-09 14:28:21"
         },
         {
             "name": "fabpot/goutte",
