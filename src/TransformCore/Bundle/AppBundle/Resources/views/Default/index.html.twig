@@ -23,7 +23,7 @@
 
                 <p>Consectetur adipiscing elit. Nunc eu enim arcu. Suspendisse tristique facilisis elit at
                     dignissim. Proin eu sem non ipsum rutrum</p>
-                <a href="#" class="btn btn-default btn-lg btn-success">Register NOW!</a>
+                <a href="{{ path('fos_user_registration_register') }}" class="btn btn-default btn-lg btn-success">Register NOW!</a>
             </div>
         </div>
 
@@ -32,7 +32,7 @@
                 <div class="panel panel-info">
                     <div class="panel-heading">I am a candidate and I want to sign in to the portal</div>
                     <div class="panel-body">
-                        <form role="form" action="{{ path('transform_core_app_account') }}">
+                        <form role="form" action="#">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
