@@ -45,7 +45,7 @@ class MenuBuilder
         if ($this->securityContext->isGranted('IS_AUTHENTICATED_FULLY')) {
             $menu->addChild(
                 $this->securityContext->getToken()->getUser()->getEmail(),
-                array('route' => 'transform_core_app_homepage')
+                array('route' => 'transform_core_app_account')
             );
             $menu->addChild('nav.logout', array('route' => 'fos_user_security_logout'));
         } else {

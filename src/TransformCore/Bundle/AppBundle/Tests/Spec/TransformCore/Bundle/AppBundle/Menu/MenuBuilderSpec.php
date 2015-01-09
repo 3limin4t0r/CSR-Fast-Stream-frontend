@@ -96,7 +96,7 @@ class MenuBuilderSpec extends ObjectBehavior
             ->shouldBeCalled()
             ->willReturn($user);
 
-        $menu->addChild($email, array('route' => 'transform_core_app_homepage'))
+        $menu->addChild($email, array('route' => 'transform_core_app_account'))
             ->shouldBeCalled()
             ->willReturn($menu);
 
