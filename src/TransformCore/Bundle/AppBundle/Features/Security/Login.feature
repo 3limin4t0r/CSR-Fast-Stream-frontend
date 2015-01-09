@@ -2,8 +2,7 @@ Feature: As a user, I want to be able to login, in order to manage my account an
 
   Background:
     Given following users for each persona exist on system:
-      | persona1@test.com |
-      | persona2@test.com |
+      | persona3@test.com |
 
   @CSR-5
   Scenario Outline: Login (Valid details)
@@ -14,9 +13,8 @@ Feature: As a user, I want to be able to login, in order to manage my account an
     Then I should see "<message>"
 
   Examples:
-    | email             | password  | message               |
-    | persona1@test.com | P@ssword1 | You are now logged in |
-    | persona2@test.com | P@ssword1 | You are now logged in |
+    | email             | password  | message    |
+    | persona3@test.com | P@ssword1 | My Account |
 
   @CSR-5
   Scenario Outline: Login (Invalid password)
@@ -27,9 +25,9 @@ Feature: As a user, I want to be able to login, in order to manage my account an
     Then I should see "<message>"
 
   Examples:
-    | username          | password  | message                                     |
-    | persona1@test.com | P@ssword  | Your username and/or password are incorrect |
-    | persona2@test.com | p@ssword1 | Your username and/or password are incorrect |
+    | username          | password  | message             |
+    | persona3@test.com | P@ssword  | Invalid credentials |
+    | persona3@test.com | p@ssword1 | Invalid credentials |
 
   @CSR-5
   Scenario Outline: Login (Invalid username)
@@ -40,6 +38,5 @@ Feature: As a user, I want to be able to login, in order to manage my account an
     Then I should see "<message>"
 
   Examples:
-    | username              | password  | message                                     |
-    | apprentice11@test.com | P@ssword1 | Your username and/or password are incorrect |
-    | trainee11@test.com    | P@ssword1 | Your username and/or password are incorrect |
+    | username          | password  | message             |
+    | Persona3@test.com | P@ssword1 | Invalid credentials |
