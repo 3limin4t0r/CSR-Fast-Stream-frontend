@@ -1,4 +1,6 @@
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
 transform_core_app:
     resource: "@TransformCoreAppBundle/Resources/config/routing.yml"
     prefix:   /
-

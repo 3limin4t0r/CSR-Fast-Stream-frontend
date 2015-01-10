@@ -6,9 +6,14 @@ php:
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev --no-interaction
+  - mysql -e 'create database csr;'
+  - php app/console doctrine:schema:update --force
+  - php app/console doctrine:fixtures:load --no-interaction
 
 script:
-  - make symfony.test.run
+  - make symfony.test.bdd suite=transformcore_app config=test/behat.yml
+  - make symfony.test.unit
+  - make symfony.test.spec
   - make scrutinizer.coverage
 
 after_success:
