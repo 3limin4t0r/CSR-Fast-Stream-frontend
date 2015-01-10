@@ -26,7 +26,9 @@
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery":  "1.11.1",
         "friendsofsymfony/user-bundle": "~2.0@dev",
-        "transformcore/csr-fast-stream-domain-model": "dev-feature/CSR-6-registration"
+        "transformcore/csr-fast-stream-domain-model": "dev-feature/CSR-6-registration",
+        "eddiejaoude/dev-helper-cmds": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
@@ -42,9 +44,7 @@
         "phpunit/phpunit": "4.*@stable",
         "phpspec/phpspec": "~2.0",
         "codegyre/robo": "*",
-        "henrikbjorn/phpspec-code-coverage": "~0.2",
-        "eddiejaoude/dev-helper-cmds": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "henrikbjorn/phpspec-code-coverage": "~0.2"
     },
     "scripts": {
         "post-root-package-install": [
