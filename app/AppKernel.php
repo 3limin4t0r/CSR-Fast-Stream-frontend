@@ -22,13 +22,14 @@ class AppKernel extends Kernel
             new TransformCore\Bundle\AppBundle\TransformCoreAppBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new TransformCore\Bundle\CsrFastStreamBundle\TransformCoreCsrFastStreamBundle(),
+            // @TODO: move to dev/test below - heroku running in prod mode but need fixtures
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
         }
 
         return $bundles;
