@@ -41,3 +41,5 @@ deploy:
   app: csr-frontend-ci
   on:
     all_branches: true
+  run:
+      - "make symfony.dev.rebuild"
