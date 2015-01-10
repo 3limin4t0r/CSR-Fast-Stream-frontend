@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5b866d1107f95fa8352bfd84d3e40dd0",
+    "hash": "5c3dfca55027eac75054c592c8f0653c",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -2566,12 +2566,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Symfony2Extension.git",
-                "reference": "3a7b26908a7a21665d0918edbaa99c5e8e125ed5"
+                "reference": "5aa75a211aff3b8acfc918f4d6c98bc773ab535b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Symfony2Extension/zipball/3a7b26908a7a21665d0918edbaa99c5e8e125ed5",
-                "reference": "3a7b26908a7a21665d0918edbaa99c5e8e125ed5",
+                "url": "https://api.github.com/repos/Behat/Symfony2Extension/zipball/5aa75a211aff3b8acfc918f4d6c98bc773ab535b",
+                "reference": "5aa75a211aff3b8acfc918f4d6c98bc773ab535b",
                 "shasum": ""
             },
             "require": {
@@ -2618,7 +2618,7 @@
                 "framework",
                 "symfony"
             ],
-            "time": "2014-10-17 15:23:13"
+            "time": "2015-01-09 17:28:21"
         },
         {
             "name": "behat/transliterator",
@@ -2929,18 +2929,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eddiejaoude/dev-helper-cmds.git",
-                "reference": "219cc2c7a341ef81f112c026e878eb2a9f78a9f3"
+                "reference": "711102c2ac34f7e1f6b7dc0c90f21b35ffa15fed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/219cc2c7a341ef81f112c026e878eb2a9f78a9f3",
-                "reference": "219cc2c7a341ef81f112c026e878eb2a9f78a9f3",
+                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/711102c2ac34f7e1f6b7dc0c90f21b35ffa15fed",
+                "reference": "711102c2ac34f7e1f6b7dc0c90f21b35ffa15fed",
                 "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Useful commands for every Developer",
-            "time": "2015-01-09 14:28:21"
+            "time": "2015-01-10 05:26:22"
         },
         {
             "name": "fabpot/goutte",
@@ -4575,7 +4575,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~5.5"
+        "php": "~5.5",
+        "ext-mbstring": "*"
     },
     "platform-dev": []
 }
