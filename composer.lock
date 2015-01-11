@@ -918,12 +918,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eddiejaoude/symfony-translation-twig-collection-bundle.git",
-                "reference": "528e722d4e0b7de8d166cc2483f1e80336160de6"
+                "reference": "3840862ad9e499d414bb0058540964b78a23774a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eddiejaoude/symfony-translation-twig-collection-bundle/zipball/528e722d4e0b7de8d166cc2483f1e80336160de6",
-                "reference": "528e722d4e0b7de8d166cc2483f1e80336160de6",
+                "url": "https://api.github.com/repos/eddiejaoude/symfony-translation-twig-collection-bundle/zipball/3840862ad9e499d414bb0058540964b78a23774a",
+                "reference": "3840862ad9e499d414bb0058540964b78a23774a",
                 "shasum": ""
             },
             "require": {
@@ -946,7 +946,7 @@
                 "MIT"
             ],
             "description": "Symfony Translation Bundle for Twig Extension to handle collection",
-            "time": "2015-01-11 08:32:14"
+            "time": "2015-01-11 10:32:27"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2118,12 +2118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "34df94d84ed867a8706df0ca552818e57a7c1ea8"
+                "reference": "4eeeeb6a98163bb17412449dabd2630f9dfadbb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/34df94d84ed867a8706df0ca552818e57a7c1ea8",
-                "reference": "34df94d84ed867a8706df0ca552818e57a7c1ea8",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/4eeeeb6a98163bb17412449dabd2630f9dfadbb1",
+                "reference": "4eeeeb6a98163bb17412449dabd2630f9dfadbb1",
                 "shasum": ""
             },
             "require": {
@@ -2148,7 +2148,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-10 20:43:49"
+            "time": "2015-01-11 09:04:06"
         },
         {
             "name": "twbs/bootstrap",
