@@ -6,10 +6,10 @@
 
 {% block body %}
     <h2>{% trans %}termsAndConditions.title{% endtrans %}</h2>
-    <p>{% trans %}termsAndConditions.paragraph1{% endtrans %}</p>
-    <p>{% trans %}termsAndConditions.paragraph2{% endtrans %}</p>
-    <p>{% trans %}termsAndConditions.paragraph3{% endtrans %}</p>
-    <p>{% trans %}termsAndConditions.paragraph4{% endtrans %}</p>
+
+    {% for i in range(0,'termsAndConditions.paragraph'|translationLength) -%}
+        <p>{{('termsAndConditions.paragraph.'~i)|trans}}</p>
+    {%- endfor %}
 
     <table class="table">
         <thead class="lead">

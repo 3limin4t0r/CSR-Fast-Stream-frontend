@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "92cd22b1b004936592836fdc6adcf588",
+    "hash": "d948f0d19e9c10f27215f7978a78ddb8",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -911,6 +911,42 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "Useful commands for every Developer",
             "time": "2015-01-10 05:26:22"
+        },
+        {
+            "name": "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eddiejaoude/symfony-translation-twig-collection-bundle.git",
+                "reference": "528e722d4e0b7de8d166cc2483f1e80336160de6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eddiejaoude/symfony-translation-twig-collection-bundle/zipball/528e722d4e0b7de8d166cc2483f1e80336160de6",
+                "reference": "528e722d4e0b7de8d166cc2483f1e80336160de6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5",
+                "symfony/translation": "*",
+                "symfony/twig-bundle": "*"
+            },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "~0.2",
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "EddieJaoude": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Symfony Translation Bundle for Twig Extension to handle collection",
+            "time": "2015-01-11 08:32:14"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2082,12 +2118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "ca8ac162880ac18ede55c5b96ca5b183be02ea09"
+                "reference": "34df94d84ed867a8706df0ca552818e57a7c1ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/ca8ac162880ac18ede55c5b96ca5b183be02ea09",
-                "reference": "ca8ac162880ac18ede55c5b96ca5b183be02ea09",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/34df94d84ed867a8706df0ca552818e57a7c1ea8",
+                "reference": "34df94d84ed867a8706df0ca552818e57a7c1ea8",
                 "shasum": ""
             },
             "require": {
@@ -2099,8 +2135,7 @@
             "require-dev": {
                 "doctrine/doctrine-fixtures-bundle": "2.2.*",
                 "henrikbjorn/phpspec-code-coverage": "~0.2",
-                "phpspec/phpspec": "~2.0",
-                "sensio/generator-bundle": "2.5.*"
+                "phpspec/phpspec": "~2.0"
             },
             "type": "library",
             "autoload": {
@@ -2113,7 +2148,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-09 15:43:35"
+            "time": "2015-01-10 20:43:49"
         },
         {
             "name": "twbs/bootstrap",
@@ -4564,6 +4599,7 @@
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
         "transformcore/csr-fast-stream-domain-model": 20,
+        "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": 20,
         "eddiejaoude/dev-helper-cmds": 20,
         "behat/symfony2-extension": 20,
         "behat/mink-extension": 20,

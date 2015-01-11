@@ -65,10 +65,11 @@ register:
 
 termsAndConditions:
   title: Terms and Conditions
-  paragraph1: We take our obligations under data protection legislation seriously. These require us to explain how the data you provide during this registration and application process will be used, together with other personal data that may be created in connection with your application, such as test results.
-  paragraph2: Your data will be held in secure conditions with access restricted to those who need it to deal with your application, selection and assignment to a department (i.e. employees of our service provider, Parity, and those involved in the Fast Stream selection and assignment processes). If you are successful, the data will be passed by secure means to your employing department. Data may also be used to monitor the effectiveness of the Fast Stream selection process. No individual will be identifiable in any analysis or other outputs from such monitoring. If you are unsuccessful, the data will be kept in secure conditions for up to five years to enable us to analyse the effectiveness of the Fast Stream selection process.
-  paragraph3: If you are successful, we shall ask you to provide additional information to enable us to confirm your eligibility to join the Fast Stream. This information will be passed securely to your employing department and will not be used for monitoring or statistical purposes.
-  paragraph4: Use of cookies. The only cookies we store on your computer are to enable you to establish secure sessions to our website. No other cookies are used.
+  paragraph:
+    - We take our obligations under data protection legislation seriously. These require us to explain how the data you provide during this registration and application process will be used, together with other personal data that may be created in connection with your application, such as test results.
+    - Your data will be held in secure conditions with access restricted to those who need it to deal with your application, selection and assignment to a department (i.e. employees of our service provider, Parity, and those involved in the Fast Stream selection and assignment processes). If you are successful, the data will be passed by secure means to your employing department. Data may also be used to monitor the effectiveness of the Fast Stream selection process. No individual will be identifiable in any analysis or other outputs from such monitoring. If you are unsuccessful, the data will be kept in secure conditions for up to five years to enable us to analyse the effectiveness of the Fast Stream selection process.
+    - If you are successful, we shall ask you to provide additional information to enable us to confirm your eligibility to join the Fast Stream. This information will be passed securely to your employing department and will not be used for monitoring or statistical purposes.
+    - Use of cookies. The only cookies we store on your computer are to enable you to establish secure sessions to our website. No other cookies are used.
   table:
     col1:
       row1: candidate.faststream.gov.uk
