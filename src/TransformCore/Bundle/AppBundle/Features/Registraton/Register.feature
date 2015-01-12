@@ -71,7 +71,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "The entered passwords don't match"
     Then I should see "This value is not a valid email address"
 
-  @CSR-6
+  @omit
   Scenario Outline: Create account with invalid details (password check)
     Given I am on the homepage
     And I follow "Register"
