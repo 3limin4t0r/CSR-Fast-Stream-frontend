@@ -2118,12 +2118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "4eeeeb6a98163bb17412449dabd2630f9dfadbb1"
+                "reference": "07c3ce33bc34a5953c4c10e0ae56f604bf3f00fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/4eeeeb6a98163bb17412449dabd2630f9dfadbb1",
-                "reference": "4eeeeb6a98163bb17412449dabd2630f9dfadbb1",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/07c3ce33bc34a5953c4c10e0ae56f604bf3f00fd",
+                "reference": "07c3ce33bc34a5953c4c10e0ae56f604bf3f00fd",
                 "shasum": ""
             },
             "require": {
@@ -2148,7 +2148,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-11 09:04:06"
+            "time": "2015-01-12 07:03:45"
         },
         {
             "name": "twbs/bootstrap",
