@@ -6,9 +6,7 @@ php:
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev --no-interaction
-  - mysql -e 'create database csr;'
-  - make symfony.dev.db.update
-  - make symfony.dev.db.data
+  - make symfony.dev.rebuild
 
 script:
   - make symfony.test.bdd suite=transformcore_app config=test/behat.yml

@@ -899,18 +899,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/eddiejaoude/dev-helper-cmds.git",
-                "reference": "711102c2ac34f7e1f6b7dc0c90f21b35ffa15fed"
+                "reference": "055085eb73b2ddbd736815ea427d02e6100dcb02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/711102c2ac34f7e1f6b7dc0c90f21b35ffa15fed",
-                "reference": "711102c2ac34f7e1f6b7dc0c90f21b35ffa15fed",
+                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/055085eb73b2ddbd736815ea427d02e6100dcb02",
+                "reference": "055085eb73b2ddbd736815ea427d02e6100dcb02",
                 "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Useful commands for every Developer",
-            "time": "2015-01-10 05:26:22"
+            "time": "2015-01-12 06:02:14"
         },
         {
             "name": "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle",
