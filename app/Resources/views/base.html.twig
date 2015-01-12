@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">NAME</a>
+                <a class="navbar-brand" href="{{ path('transform_core_app_homepage') }}">{% trans %}project.name{% endtrans %}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,6 +37,14 @@
         </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
+        {% for type, messages in app.session.flashbag.all() %}
+            {% for message in messages %}
+                <div class="flash-{{ type }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+
         {% block body %}{% endblock body %}
         {% block javascripts %}{% endblock javascripts %}
     </div>

@@ -1,0 +1,35 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    {% trans %}termsAndConditions.title{% endtrans %}
+{% endblock %}
+
+{% block body %}
+    <h2>{% trans %}termsAndConditions.title{% endtrans %}</h2>
+
+    {% for i in range(0,'termsAndConditions.paragraph'|translationLength) -%}
+        <p>{{('termsAndConditions.paragraph.'~i)|trans}}</p>
+    {%- endfor %}
+
+    <table class="table">
+        <thead class="lead">
+            <tr>
+                <td>Site</td>
+                <td>Cookie Name</td>
+                <td>Purpose</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{% trans %}termsAndConditions.table.col1.row1{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.col2.row1{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.col3.row1{% endtrans %}</td>
+            </tr>
+            <tr>
+                <td>{% trans %}termsAndConditions.table.col1.row2{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.col2.row2{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.col3.row2{% endtrans %}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
