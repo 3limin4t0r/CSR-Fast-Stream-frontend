@@ -6,9 +6,12 @@ php:
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev --no-interaction
+  - make symfony.dev.rebuild
 
 script:
-  - make symfony.test.run
+  - make symfony.test.bdd suite=transformcore_app config=test/behat.yml
+  - make symfony.test.unit suite=app
+  - make symfony.test.spec config=test/phpspec.yml
   - make scrutinizer.coverage
 
 after_success:
@@ -36,3 +39,5 @@ deploy:
   app: csr-frontend-ci
   on:
     all_branches: true
+  run:
+      - "make symfony.dev.rebuild"
