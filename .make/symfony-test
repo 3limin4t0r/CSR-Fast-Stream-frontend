@@ -1,2 +1,5 @@
 symfony.test.bdd:
 	bin/behat --suite=${suite} --config=${config} --format=pretty
+
+symfony.test.spec:
+	bin/phpspec run -vvv --format=pretty --config=${config}

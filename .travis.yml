@@ -11,7 +11,7 @@ before_script:
 script:
   - make symfony.test.bdd suite=transformcore_app config=test/behat.yml
   - make symfony.test.unit suite=app
-  - make symfony.test.spec
+  - make symfony.test.spec config=test/phpspec.yml
   - make scrutinizer.coverage
 
 after_success:
