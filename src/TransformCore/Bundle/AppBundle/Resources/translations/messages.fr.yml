@@ -1,6 +1,90 @@
+project:
+  name: CSR
+
 nav:
   home: Accueil
+  register: Register
   login: S'identifier
+  logout: Déconnexion
 
 home:
   title: Bonjour
+
+form:
+  select: Veuillez sélectionner
+
+login:
+  title: Connexion
+  form:
+    username:
+      label: Email
+    password:
+      label: Mot de passe
+    login:
+      label: Connexion
+
+register:
+  title: Registre
+  subtitle: Enregistrez vos coordonnées
+  form:
+    firstname:
+      label: Prénom
+    lastname:
+      label: Nom de famille
+    email:
+      label: Email
+    password:
+      label: Mot de passe
+    password-confirm:
+      label: Mot de passe de confirmation
+    heard-about-us:
+      label: Veuillez nous indiquer où vous avez entendu parler pour la première fois Fast Stream
+    disabled-title: Invalidité
+    disabled-subtitle1: Si vous avez un handicap inscrit et avez l'intention de demander des ajustements raisonnables , nous demandons que vous indiquez ci dessous . Nous communiquerons avec vous pour discuter de vos besoins plus en détail.
+    disabled-subtitle2: Certains ajustements demandés sont typiques du temps supplémentaire , les logiciels de grossissement d'écran ou copies imprimées sur du papier ordinaire ou de couleur.
+    disabled-adjustment-required:
+      label: je nécessiter des ajustements en fonction de mon handicap
+    disabled-details:
+      label: Veuillez décrire votre invalidité
+    phone-number-1:
+      label: Veuillez fournir votre numéro de téléphone
+    phone-number-2:
+      label: Veuillez fournir un autre numéro de téléphone (facultatif)
+    disabled-adjustment-details:
+      label: Veuillez nous dire quels ajustements dont vous avez besoin en fonction de votre invalidité
+    guaranteed-interview-scheme:
+      label: Je tiens à appliquer via l'interview garanti régime
+      link: Quel est le schéma d'entrevue garanti?
+    terms-and-conditions-title: Reconnaître Conditions générales
+    terms-and-conditions-subtitle: Se il vous plaît examiner nos termes et conditions détaillant la façon dont nous utilisons vos données personnelles , et indiquer votre consentement ci-dessous
+    terms-and-conditions:
+      label: Se il vous plaît confirmer votre consentement à l'utilisation de vos données personnelles de la manière décrite ci-dessus
+    register-button:
+      label: Registre
+
+termsAndConditions:
+  title: Termes et conditions
+  paragraph:
+    - Nous prenons nos obligations en vertu de la législation de protection des données au sérieux. Ceux-ci exigent d'expliquer comment les données que vous fournissez lors de ce processus d'inscription et l'application sera utilisé , avec d'autres données personnelles susceptibles d'être créé dans le cadre de votre application , tels que les résultats des tests .
+    - Vos données seront conservées dans des conditions sécurisées à accès restreint à ceux qui en ont besoin pour traiter votre demande, sélection et d'affectation à un service ( ce est à dire les employés de notre fournisseur de services , la parité, et ceux qui sont impliqués dans les processus de sélection Fast Stream et d'affectation ) . Si vous avez du succès , les données seront transmises par des moyens sûrs à votre ministère employeur . Les données peuvent également être utilisé pour surveiller l'efficacité du processus de sélection Fast Stream . Aucun individu ne sera identifiable dans les analyses ou autres sorties de ce suivi . Si vous échouez , les données seront conservées dans des conditions sécurisées jusqu'à cinq ans pour nous permettre d'analyser l'efficacité du processus de sélection Fast Stream .
+    - Si vous avez du succès , nous vous demandons de fournir des informations supplémentaires pour nous permettre de confirmer votre admissibilité au Fast Stream. Cette information sera transmise en toute sécurité à votre ministère employeur et ne sera pas utilisé pour la surveillance ou à des fins statistiques .
+    - Utilisation de cookies . Les seuls cookies que nous stockons sur votre ordinateur sont pour vous permettre d'établir des sessions sécurisées à notre site . Pas d'autres cookies sont utilisés .
+  table:
+    title:
+      col1: Site
+      col2: Cookie Nom
+      col3: But
+    row1:
+      col1: candidate.faststream.gov.uk
+      col2: ASP.NET_SessionId
+      col3: Ce cookie crée un id de session pour l'utilisation de notre site Web par un visiteur unique et authentifie la session . Ce cookie expire lorsque vous fermez votre navigateur .
+    row2:
+      col1: candidate.faststream.gov.uk
+      col2: fmLogin
+      col3: Ce cookie est également essentiel pour établir votre connexion sécurisée sur notre site et vous ne serez pas en mesure d'établir une session sans elle.
+
+guaranteedInterviewScheme:
+  title: Interview régime de garantie
+
+account:
+  title: Mon accout
