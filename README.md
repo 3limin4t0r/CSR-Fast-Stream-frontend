@@ -40,6 +40,9 @@ This will run the following:
 ```
 make test.run
 ```
+
+This Rebuild the database & will run the commands below.
+
 ### Behat command (using config in test/behat.yml)
 
 ```

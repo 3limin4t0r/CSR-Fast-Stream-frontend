@@ -1,3 +1,5 @@
+test.run: symfony.dev.rebuild symfony.test.bdd symfony.test.spec symfony.test.unit
+
 symfony.test.bdd:
 	bin/behat --suite=transformcore_app --config=test/behat.yml --format=pretty
 
