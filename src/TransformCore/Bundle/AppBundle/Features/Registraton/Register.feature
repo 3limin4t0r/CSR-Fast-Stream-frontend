@@ -91,9 +91,8 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | abcdefgh1 |
     | abcdefgh@ |
 
-
   @CSR-6
-  .Scenario Outline: Create account with invalid details (password)
+  Scenario Outline: Create account with invalid details (password)
     Given I am on the homepage
     And I follow "Register"
     Then I should see "Register Your Details"
