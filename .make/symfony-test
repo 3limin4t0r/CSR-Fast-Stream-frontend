@@ -1,0 +1,8 @@
+symfony.test.bdd:
+	bin/behat --suite=transformcore_app --config=test/behat.yml --format=pretty
+
+symfony.test.spec:
+	bin/phpspec run -vvv --format=pretty --config=test/phpspec.yml
+
+symfony.test.unit:
+	bin/phpunit --configuration app

@@ -15,73 +15,66 @@ Latest deploy (inc. branches) https://csr-frontend-ci.herokuapp.com/en/
 ## Table of Contents
 
 * [Contribution guidelines](/CONTRIBUTING.md)
+* [Definition of Done](/doc/DefinitionOfDone.md)
 * [Versioning successful builds - Release Candidates](/doc/Versioning.md)
 * [Localisation](/doc/Localisation.md)
 * [PageLayout](/doc/PageLayout.md)
+* [Registration](/doc/Registration.md)
 
 ## Run app
 
 1. `make dev.run`
 
-Optionally add a **branch / release tag** `make dev.run branch=build-feature/symfony2-behat-35`
+Optionally add a **branch / release tag** `make dev.run branch=feature/story-123`
 
 This will run the following:
 * Switch to **branch / release** tag if requested
 * Install any/all dependencies (composer install)
+* Rebuild the database with fixtures
 * Start WebServer
 
 2. Then go to `http://localhost:8000`
-
-
-## Behat command (use config in test/behat.yml)
-
-Documentation at http://docs.behat.org/en/latest/quick_intro_pt1.html
-
-```
-make test.bdd
-```
-
-## PHPSpec
-
-To run PHPSpec suite `make test.spec`
-
-Results:
-```
-                       100%                        1
-1 specs
-1 example (1 passed)
-21ms
-```
-
-## PHPUnit
-
-To run PHPSpec suite `make test.unit`
 
 ## Run full test suite in parallel
 
 ```
 make test.run
 ```
+### Behat command (using config in test/behat.yml)
 
 ```
- [Robo\Task\ParallelExecTask] bin/phpspec run  --config test/phpspec.yml
- [Robo\Task\ParallelExecTask] bin/behat --config test/behat.yml "@TransformAppBundle"
- [Robo\Task\ParallelExecTask] Processes: 1/2 [==============>-------------]  50%
- [Robo\Task\ParallelExecTask] Output for  bin/phpspec run  --config test/phpspec.yml 
-/  pending: 0%  / passed: 100%  /  failed: 0%   /  broken: 0%   /  1 examples
-1 specs
-1 example (1 passed)
-9ms
-
- [Robo\Task\ParallelExecTask] Processes: 2/2 [============================] 100%
- [Robo\Task\ParallelExecTask] Output for  bin/behat --config test/behat.yml "@TransformAppBundle" 
-No scenarios
-No steps
-0m0.005s
-
-
- [Robo\Task\ParallelExecTask] 2 processes ended in 0.18 s
+make symfony.test.bdd
 ```
+
+### PHPSpec
+
+```
+make symfony.test.spec
+```
+
+### PHPUnit
+
+```
+make symfony.test.unit
+```
+
+## Rebuild database
+
+[Reference](https://github.com/eddiejaoude/dev-helper-cmds#database)
+
+```
+make symfony.dev.rebuild
+```
+
+---
+
+These commands are only **wrappers**, you can still use the original commands if you wish.
+
+More information on commands available visit [Make CMDs lib](https://github.com/eddiejaoude/dev-helper-cmds#built-in-commands)
+
+
+---
+---
 
 ## Contributions
 
