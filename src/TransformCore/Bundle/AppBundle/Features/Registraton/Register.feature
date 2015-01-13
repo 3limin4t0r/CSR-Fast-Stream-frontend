@@ -91,6 +91,26 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | abcdefgh1 |
     | abcdefgh@ |
 
+
+  @CSR-6
+  .Scenario Outline: Create account with invalid details (password)
+    Given I am on the homepage
+    And I follow "Register"
+    Then I should see "Register Your Details"
+    And I fill in "fos_user_registration_form_firstname" with "Bill"
+    And I fill in "fos_user_registration_form_lastname" with "Carr"
+    And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
+    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
+    And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
+    And I press "fos_user_registration_form_registerButton"
+    Then I should see "<Message>"
+  Examples:
+    | password | Message                                                      |
+    | 1234567  | This value is too short. It should have 8 characters or more |
+    | 12345678 | Must contain at least 1 lower letter                         |
+    | abcdefgh | Must contain at least 1 number                               |
+    | 1bcdefgh | Must contain at least 1 symbol (eg. !@#$%^*_-)               |
+
   @CSR-6
   Scenario: Create account using blank form text fields (mandatory field check)
     Given I am on the homepage
