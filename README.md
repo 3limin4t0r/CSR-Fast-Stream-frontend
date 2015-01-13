@@ -58,6 +58,22 @@ make symfony.test.spec
 make symfony.test.unit
 ```
 
+## Rebuild database
+
+[Reference](https://github.com/eddiejaoude/dev-helper-cmds#database)
+
+```
+make symfony.dev.rebuild
+```
+
+---
+
+More information on commands available visit [Make CMDs lib](https://github.com/eddiejaoude/dev-helper-cmds#built-in-commands)
+
+
+---
+---
+
 ## Contributions
 
 Please read on [Contribution Guildlines](/CONTRIBUTING.md)
