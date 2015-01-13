@@ -43,3 +43,10 @@ Feature: As a user, I want to be able to login, in order to manage my account an
   Examples:
     | email-input          | password  | message             |
     | nonexistent@test.com | P@ssword1 | Invalid credentials |
+
+  @CSR-5
+  Scenario: Redirect to Login (permission denied)
+    Given I am on the homepage
+    And I go to "/en/account"
+    Then I should see "Email address"
+    And I should see "Password"
