@@ -106,7 +106,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   Examples:
     | password | Message                                                      |
     | 1234567  | This value is too short. It should have 8 characters or more |
-    | 12345678 | Must contain at least 1 lower letter                         |
+    | 12345678 | Must contain at least 1 letter                         |
     | abcdefgh | Must contain at least 1 number                               |
     | 1bcdefgh | Must contain at least 1 symbol (eg. !@#$%^*_-)               |
 
