@@ -15,9 +15,11 @@ Latest deploy (inc. branches) https://csr-frontend-ci.herokuapp.com/en/
 ## Table of Contents
 
 * [Contribution guidelines](/CONTRIBUTING.md)
+* [Definition of Done](/doc/DefinitionOfDone.md)
 * [Versioning successful builds - Release Candidates](/doc/Versioning.md)
 * [Localisation](/doc/Localisation.md)
 * [PageLayout](/doc/PageLayout.md)
+* [Registration](/doc/Registration.md)
 
 ## Run app
 
