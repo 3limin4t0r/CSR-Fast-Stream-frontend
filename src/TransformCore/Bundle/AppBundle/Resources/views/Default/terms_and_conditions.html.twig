@@ -1,0 +1,35 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    {% trans %}termsAndConditions.title{% endtrans %}
+{% endblock %}
+
+{% block body %}
+    <h2>{% trans %}termsAndConditions.title{% endtrans %}</h2>
+
+    {% for i in range(0,'termsAndConditions.paragraph'|translationLength) -%}
+        <p>{{('termsAndConditions.paragraph.'~i)|trans}}</p>
+    {%- endfor %}
+
+    <table class="table">
+        <thead class="lead">
+            <tr>
+                <td>{% trans %}termsAndConditions.table.title.col1{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.title.col2{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.title.col3{% endtrans %}</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{% trans %}termsAndConditions.table.row1.col1{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.row1.col2{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.row1.col3{% endtrans %}</td>
+            </tr>
+            <tr>
+                <td>{% trans %}termsAndConditions.table.row2.col1{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.row2.col2{% endtrans %}</td>
+                <td>{% trans %}termsAndConditions.table.row2.col3{% endtrans %}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
