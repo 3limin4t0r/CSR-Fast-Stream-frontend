@@ -29,8 +29,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 {{ knp_menu_render('main', {'template': 'TransformCoreAppBundle:Default:knp_menu.html.twig'}) }}
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ path('transform_core_app_homepage', {'_locale': 'en'}) }}">en</a></li>
-                    <li><a href="{{ path('transform_core_app_homepage', {'_locale': 'fr'}) }}">fr</a></li>
+                    <li><a href="{{ path(app.request.attributes.get('_route'), {'_locale': 'en'}) }}">en</a></li>
+                    <li><a href="{{ path(app.request.attributes.get('_route'), {'_locale': 'fr'}) }}">fr</a></li>
                     <li><a href="{{ path('transform_core_app_changelog') }}">{{ version.current }} / {{ app.environment }}</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
