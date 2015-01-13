@@ -13,15 +13,18 @@
             <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
             <div class="form-group">
-                <label for="username">Email address</label>
-                <input type="email" class="form-control" placeholder="Enter email" id="username" name="_username" value="{{ last_username }}" required="required">
+                <label for="username">{% trans %}login.form.username.label{% endtrans %}</label>
+                <input type="email" class="form-control" id="username"
+                       name="_username" value="{{ last_username }}" required="required">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" name="_password" required="required">
+                <label for="password">{% trans %}login.form.password.label{% endtrans %}</label>
+                <input type="password" class="form-control" id="password"
+                       name="_password" required="required">
             </div>
 
-            <button type="submit" class="btn btn-default" id="_submit" name="_submit">Login</button>
+            <button type="submit" class="btn btn-default" id="_submit"
+                    name="_submit">{% trans %}login.form.login.label{% endtrans %}</button>
         </form>
     {% endblock fos_user_content %}
 
