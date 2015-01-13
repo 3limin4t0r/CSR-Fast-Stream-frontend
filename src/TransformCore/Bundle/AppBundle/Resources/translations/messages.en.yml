@@ -71,14 +71,18 @@ termsAndConditions:
     - If you are successful, we shall ask you to provide additional information to enable us to confirm your eligibility to join the Fast Stream. This information will be passed securely to your employing department and will not be used for monitoring or statistical purposes.
     - Use of cookies. The only cookies we store on your computer are to enable you to establish secure sessions to our website. No other cookies are used.
   table:
-    col1:
-      row1: candidate.faststream.gov.uk
-      row2: ASP.NET_SessionId
-      row3: This cookie creates a session id for the use of our website by a unique visitor and authenticates the session. This cookie expires when you close your browser.
-    col2:
-      row1: candidate.faststream.gov.uk
-      row2: fmLogin
-      row3: This cookie is also essential to establish your secure login to our website and you will not be able to establish a session without it
+    title:
+      col1: Site
+      col2: Cookie Name
+      col3: Purpose
+    row1:
+      col1: candidate.faststream.gov.uk
+      col2: ASP.NET_SessionId
+      col3: This cookie creates a session id for the use of our website by a unique visitor and authenticates the session. This cookie expires when you close your browser.
+    row2:
+      col1: candidate.faststream.gov.uk
+      col2: fmLogin
+      col3: This cookie is also essential to establish your secure login to our website and you will not be able to establish a session without it.
 
 guaranteedInterviewScheme:
   title: Guaranteed Interview Scheme
