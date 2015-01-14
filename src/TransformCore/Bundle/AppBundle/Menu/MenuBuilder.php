@@ -31,6 +31,8 @@ class MenuBuilder
     }
 
     /**
+     * @TODO: Move below to config
+     *
      * @param Request $request
      *
      * @return \Knp\Menu\ItemInterface
