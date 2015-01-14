@@ -5,26 +5,26 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Given I am on the homepage
     And I follow "Register"
     Then I should see "Register Your Details"
+    When I fill form with:
     # Your details
-    And I fill in "fos_user_registration_form_firstname" with "<first-name>"
-    And I fill in "fos_user_registration_form_lastname" with "<last-name>"
-    # Contact details
-    And I fill in "fos_user_registration_form_email" with "<email-input>"
-    # Signin Details
-    And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
-    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
-    # Referrer
-    And I select "<referrer-input>" from "fos_user_registration_form_heardAboutUs"
-    # Disability details
-    And I check "fos_user_registration_form_disabledAdjustmentRequired"
-    And I select "<disability>" from "fos_user_registration_form_disabledDetails"
-    And I fill in "fos_user_registration_form_disabledAdjustmentDetails" with "some disability adjustments text"
-    And I fill in "fos_user_registration_form_phoneNumber1" with "<phone-input1>"
-    And I fill in "fos_user_registration_form_phoneNumber2" with "<phone-input2>"
+      | fos_user_registration_form_firstname                  | <first-name>                            |
+      | fos_user_registration_form_lastname                   | <last-name>                             |
+        # Contact details
+      | fos_user_registration_form_email                      | <email-input>                           |
+        # Signin Details
+      | fos_user_registration_form_plainPassword_first        | <password>                              |
+      | fos_user_registration_form_plainPassword_second       | <password>                              |
+        # Referrer
+      | fos_user_registration_form_heardAboutUs | <referrer-input> |
+        # Disability details
+      | fos_user_registration_form_disabledAdjustmentRequired | YES                                     |
+      | fos_user_registration_form_disabledDetails            | <disability>                            |
+      | fos_user_registration_form_disabledAdjustmentDetails  | some disability adjustments text
+      | fos_user_registration_form_phoneNumber1               | <phone-input1>                          |
+      | fos_user_registration_form_phoneNumber2               | <phone-input2>                          |
     # Checkboxes
-    Then I should see "Guaranteed Interview Scheme"
-    And I check "fos_user_registration_form_guaranteedInterviewScheme"
-    And I check "fos_user_registration_form_termsAndConditions"
+      | fos_user_registration_form_guaranteedInterviewScheme | YES |
+      | fos_user_registration_form_termsAndConditions        | YES |
     And I press "fos_user_registration_form_registerButton"
     Then I should see "My Account"
     And I should see "<email-input>"
@@ -106,7 +106,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   Examples:
     | password | Message                                                      |
     | 1234567  | This value is too short. It should have 8 characters or more |
-    | 12345678 | Must contain at least 1 letter                         |
+    | 12345678 | Must contain at least 1 letter                               |
     | abcdefgh | Must contain at least 1 number                               |
     | 1bcdefgh | Must contain at least 1 symbol (eg. !@#$%^*_-)               |
 
