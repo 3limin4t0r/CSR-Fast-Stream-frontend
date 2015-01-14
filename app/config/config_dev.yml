@@ -1,5 +1,6 @@
 imports:
     - { resource: config.yml }
+    - { resource: parameters_dev.yml }
 
 framework:
     router:
@@ -31,3 +32,6 @@ monolog:
 
 assetic:
     use_controller: "%use_assetic_controller%"
+
+swiftmailer:
+    disable_delivery: true
