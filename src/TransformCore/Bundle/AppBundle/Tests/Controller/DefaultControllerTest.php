@@ -12,7 +12,7 @@ class DefaultControllerTest extends WebTestCase
 
         $crawler = $client->request('GET', '/en/');
 
-        $this->assertTrue($crawler->filter('html:contains("Hello")')->count() > 0);
+        $this->assertTrue($crawler->filter('html:contains("Join the Civil Service Fast Stream")')->count() > 0);
     }
 
     public function testIndexFr()
