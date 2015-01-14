@@ -2118,12 +2118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "d0f78852ad2e1d34ea784c452df4fd2063827df6"
+                "reference": "0cd3e9a0c36e147ea919fc8e1eb59a83b8d5dbd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/d0f78852ad2e1d34ea784c452df4fd2063827df6",
-                "reference": "d0f78852ad2e1d34ea784c452df4fd2063827df6",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/0cd3e9a0c36e147ea919fc8e1eb59a83b8d5dbd6",
+                "reference": "0cd3e9a0c36e147ea919fc8e1eb59a83b8d5dbd6",
                 "shasum": ""
             },
             "require": {
@@ -2148,7 +2148,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-13 11:04:59"
+            "time": "2015-01-14 11:22:32"
         },
         {
             "name": "twbs/bootstrap",
@@ -2255,16 +2255,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.16.3",
+            "version": "v1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "6dc11a1e8ecfc30e2c68aaeb218148409d8e68af"
+                "reference": "2493970fa4d587eca73f77e6d8bd48a8bdd4c608"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/6dc11a1e8ecfc30e2c68aaeb218148409d8e68af",
-                "reference": "6dc11a1e8ecfc30e2c68aaeb218148409d8e68af",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/2493970fa4d587eca73f77e6d8bd48a8bdd4c608",
+                "reference": "2493970fa4d587eca73f77e6d8bd48a8bdd4c608",
                 "shasum": ""
             },
             "require": {
@@ -2273,7 +2273,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.16-dev"
+                    "dev-master": "1.17-dev"
                 }
             },
             "autoload": {
@@ -2308,7 +2308,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-12-25 19:58:19"
+            "time": "2015-01-14 10:15:49"
         }
     ],
     "packages-dev": [
@@ -2836,12 +2836,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chartinger/behat-twig-report-extension.git",
-                "reference": "339b6ef8f235af9a74d9ee6d19e204b498d0526c"
+                "reference": "a3e439d9312061ad9694a5cf0ebb30072fb4a38b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chartinger/behat-twig-report-extension/zipball/339b6ef8f235af9a74d9ee6d19e204b498d0526c",
-                "reference": "339b6ef8f235af9a74d9ee6d19e204b498d0526c",
+                "url": "https://api.github.com/repos/chartinger/behat-twig-report-extension/zipball/a3e439d9312061ad9694a5cf0ebb30072fb4a38b",
+                "reference": "a3e439d9312061ad9694a5cf0ebb30072fb4a38b",
                 "shasum": ""
             },
             "require": {
@@ -2870,7 +2870,7 @@
                 }
             ],
             "description": "Create Behat 3 test reports with Twig templates",
-            "time": "2014-07-24 13:48:58"
+            "time": "2015-01-13 15:14:35"
         },
         {
             "name": "codegyre/robo",
