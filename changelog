@@ -1,0 +1,64 @@
+c3a86f0	Travis CI	Wed Jan 14 06:08:28 2015 +0000	Set build VERSION number build-features/CSR-6-384
+9c30319	Eddie Jaoude	Wed Jan 14 06:05:38 2015 +0000	Comments added
+82e9898	Eddie Jaoude	Tue Jan 13 19:20:28 2015 +0000	[CSR-6] Run all Tests CMD now Rebuilds DB/Fixtures
+8059627	Eddie Jaoude	Tue Jan 13 15:54:14 2015 +0000	Comment about CMDs being wrappers
+323ca1e	Eddie Jaoude	Tue Jan 13 15:52:10 2015 +0000	[CSR-5] Rebuild the DB & use Fixtures
+7033113	Eddie Jaoude	Tue Jan 13 15:43:38 2015 +0000	Updated make CMDs & relevant Docs
+5898783	Eddie Jaoude	Tue Jan 13 15:22:30 2015 +0000	[CSR-6] Added link from Index to Registration docs
+f516dba	jaffamonkey	Tue Jan 13 11:52:03 2015 +0000	CSR-6 edited password test to fully reflect requirements
+0a9893d	jaffamonkey	Tue Jan 13 11:20:22 2015 +0000	CSR-6 corrected error in behat test
+0156f53	Eddie Jaoude	Tue Jan 13 11:09:51 2015 +0000	[CSR-6] Password validation dependency updated
+f9ba0eb	jaffamonkey	Tue Jan 13 11:02:28 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+d70237d	jaffamonkey	Tue Jan 13 11:02:10 2015 +0000	CSR-6 added new password check scenario
+6160877	Eddie Jaoude	Tue Jan 13 10:49:41 2015 +0000	[CSR-208] Change localisation stay on same page
+0ff55cf	Eddie Jaoude	Tue Jan 13 10:19:55 2015 +0000	[CSR-5] Test secure pages 403 redirect to login
+fff8b3b	Eddie Jaoude	Tue Jan 13 07:49:03 2015 +0000	[CSR-5] 403 redirect to login page
+9a3374a	Eddie Jaoude	Tue Jan 13 07:14:07 2015 +0000	[CSR-6] Translated T&Cs table
+09d96ea	Eddie Jaoude	Tue Jan 13 06:59:08 2015 +0000	[CSR-5] Translation added to login form
+98f8ba1	jaffamonkey	Mon Jan 12 16:45:31 2015 +0000	CSR-6 omitted scenario with error validation
+47a8f27	jaffamonkey	Mon Jan 12 11:12:25 2015 +0000	CSR-6 added password char check test back in
+9c7002a	Eddie Jaoude	Mon Jan 12 08:02:21 2015 +0000	[CSR-6] Updated Registration documentation
+a6aed7a	Eddie Jaoude	Mon Jan 12 07:08:38 2015 +0000	[CSR-6] Updated D/M dependency (password strength)
+0e1bcee	Eddie Jaoude	Mon Jan 12 06:22:23 2015 +0000	[CSR-6] Fixed CI & Spec command
+db72755	Eddie Jaoude	Mon Jan 12 06:05:43 2015 +0000	[CSR-5] Updated make cmd dep & rebuild cmd on CI
+cceea0c	Eddie Jaoude	Mon Jan 12 05:55:41 2015 +0000	[CSR-5] Moved CI DB setup to make commands
+c4bf7f8	Eddie Jaoude	Sun Jan 11 10:35:45 2015 +0000	Updated dependencies
+fc1e360	Eddie Jaoude	Sun Jan 11 09:25:52 2015 +0000	[CSR-6] Translation collection extension added
+d75d4f3	Eddie Jaoude	Sat Jan 10 19:52:31 2015 +0000	Revert "[CSR-6] Moving deploy ENV from prod to test"
+c39543b	Eddie Jaoude	Sat Jan 10 19:48:10 2015 +0000	[CSR-6] Moving deploy ENV from prod to test
+145e039	Eddie Jaoude	Sat Jan 10 19:28:48 2015 +0000	[CSR-6] Project name / logo links to homepage
+eea08be	Eddie Jaoude	Sat Jan 10 08:17:39 2015 +0000	[CSR-6] Move Cmd & Fixture Deps from dev to prod
+6b37136	Eddie Jaoude	Sat Jan 10 08:07:47 2015 +0000	[CSR-6] Moved Fixtures in Kernel to prod
+99bb1c6	Eddie Jaoude	Sat Jan 10 07:58:30 2015 +0000	[cSR-6] Rebuild DB after deployment
+00b89e1	Eddie Jaoude	Sat Jan 10 07:50:27 2015 +0000	[cSR-6] Updated Unit test command with Suite
+fe3d2b2	Eddie Jaoude	Sat Jan 10 07:43:47 2015 +0000	[CSR-6] Updated Dependencies
+68ea446	Eddie Jaoude	Sat Jan 10 07:41:20 2015 +0000	Revert "[CSR-6] Renamed php EXT for Heroku deploy"
+65e1382	Eddie Jaoude	Sat Jan 10 07:34:20 2015 +0000	[CSR-6] Renamed php EXT for Heroku deploy
+8d00b90	Eddie Jaoude	Sat Jan 10 07:21:46 2015 +0000	[CSR-6] mbstring EXT added to Composer for Heroku
+ea7adb3	Eddie Jaoude	Sat Jan 10 07:05:19 2015 +0000	[CSR-6] Added Dev parameters
+a6045ab	Eddie Jaoude	Sat Jan 10 07:04:58 2015 +0000	[CSR-6] Moved params template to ENV vars
+7412de6	Eddie Jaoude	Fri Jan 9 16:00:38 2015 +0000	[CSR-173] Fixed failing test
+8ad9b8c	jaffamonkey	Fri Jan 9 15:59:09 2015 +0000	CSR-6 added translations for Login page
+5984447	jaffamonkey	Fri Jan 9 15:48:47 2015 +0000	CSR-6 added test data to fixture
+fa35302	jaffamonkey	Fri Jan 9 15:33:21 2015 +0000	CSR-6 added filter to omit scenarios tagged @omit and corrected homepage.feature
+f997eb1	jaffamonkey	Fri Jan 9 15:23:10 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+7f3ced4	Eddie Abou-Jaoude	Fri Jan 9 15:22:51 2015 +0000	Merge pull request #25 from TransformCore/features/CSR-173
+d9a186e	Eddie Jaoude	Fri Jan 9 15:08:47 2015 +0000	Merge CSR-6 into CSR-173
+a96cb00	jaffamonkey	Fri Jan 9 14:36:32 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+1849808	Eddie Jaoude	Fri Jan 9 14:36:11 2015 +0000	[CSR-6] Make updated & dependency
+592108f	jaffamonkey	Fri Jan 9 14:35:58 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+dbc465e	jaffamonkey	Fri Jan 9 14:35:29 2015 +0000	CSR-6 added new tag format for omitted scenarios (-omit)
+2b649a7	Eddie Jaoude	Fri Jan 9 14:14:58 2015 +0000	[CSR-6] Enforce unique email (D/M dependency)
+334bda2	jaffamonkey	Fri Jan 9 14:10:24 2015 +0000	CSR-6 amended error messages on tests
+2790a34	Eddie Jaoude	Fri Jan 9 13:05:00 2015 +0000	[CSR-6] Registration validation group config
+5a363f8	Eddie Jaoude	Fri Jan 9 11:49:42 2015 +0000	[CSR-6] Project name in Translation file & layout
+78b07c5	Eddie Jaoude	Fri Jan 9 11:42:47 2015 +0000	[CSR-5] Removed html5 validation on Login
+74fbeb2	Eddie Jaoude	Fri Jan 9 11:42:39 2015 +0000	[CSR-6] Removed html5 validation on Registration
+45f78f9	jaffamonkey	Fri Jan 9 11:41:07 2015 +0000	CSR 173 added new verifications for homepage after login
+fbf4769	jaffamonkey	Thu Jan 8 11:16:05 2015 +0000	CSR-173 added new feature file, and new login function
+a82fdb1	Eddie Jaoude	Fri Dec 19 18:03:23 2014 +0000	Revert "test demo"
+ef95232	Mike Whiting	Fri Dec 19 11:42:06 2014 +0000	Merge pull request #5 from TransformCore/feature/documentation-dod
+8cfd183	Eddie Jaoude	Fri Dec 19 10:31:02 2014 +0000	test demo
+c058d52	Eddie Jaoude	Fri Dec 19 06:17:22 2014 +0000	Fixed filename typo
+08da415	Eddie Abou-Jaoude	Fri Dec 19 04:59:54 2014 +0000	Double nesting list formatting improved
+0a69379	Eddie Abou-Jaoude	Fri Dec 19 04:57:59 2014 +0000	Removed test double nested list point
