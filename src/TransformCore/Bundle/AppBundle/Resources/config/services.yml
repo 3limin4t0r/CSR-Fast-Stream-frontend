@@ -20,8 +20,11 @@ services:
     class: TransformCore\Bundle\AppBundle\Service\Version
     arguments: ["%kernel.root_dir%/../version"]
 
+  transform_core_app_main.service.random_username_generator:
+    class: TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator
+
   transform_core_app_user_registration_listener:
     class: TransformCore\Bundle\AppBundle\EventListener\RegistrationListener
-    arguments: [@router]
+    arguments: [@router, @transform_core_app_main.service.random_username_generator]
     tags:
         - { name: kernel.event_subscriber }

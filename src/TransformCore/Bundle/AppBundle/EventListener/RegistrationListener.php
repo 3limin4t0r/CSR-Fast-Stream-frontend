@@ -8,6 +8,7 @@ use FOS\UserBundle\Event\UserEvent;
 use FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator;
 
 /**
  * Class UserRegistrationListener
@@ -24,9 +25,19 @@ class RegistrationListener implements EventSubscriberInterface
      */
     private $router;
 
-    public function __construct(UrlGeneratorInterface $router)
+    /**
+     * @var RandomUsernameGenerator
+     */
+    private $generator;
+
+    /**
+     * @param UrlGeneratorInterface $router
+     * @param RandomUsernameGenerator $generator
+     */
+    public function __construct(UrlGeneratorInterface $router, RandomUsernameGenerator $generator)
     {
         $this->router = $router;
+        $this->generator = $generator;
     }
 
     /**
@@ -43,12 +54,15 @@ class RegistrationListener implements EventSubscriberInterface
     /**
      * take action when registration is initialized
      * set the username to a unique id
+     *
      * @param UserEvent $event
      */
     public function onRegistrationInit(UserEvent $event)
     {
         $user = $event->getUser();
-        $user->setUsername(uniqid(time(), true));
+        $user->setUsername(
+            $this->generator->getUsername()
+        );
     }
 
     /**

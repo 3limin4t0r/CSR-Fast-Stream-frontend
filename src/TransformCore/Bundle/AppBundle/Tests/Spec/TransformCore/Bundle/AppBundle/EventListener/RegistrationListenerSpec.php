@@ -7,14 +7,15 @@ use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use FOS\UserBundle\Event\UserEvent;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\User;
 
 class RegistrationListenerSpec extends ObjectBehavior
 {
 
-    function let(UrlGeneratorInterface $router)
+    function let(UrlGeneratorInterface $router, RandomUsernameGenerator $generator)
     {
-        $this->beConstructedWith($router, true);
+        $this->beConstructedWith($router, $generator);
     }
     
     function it_is_initializable()
@@ -22,8 +23,26 @@ class RegistrationListenerSpec extends ObjectBehavior
         $this->shouldHaveType('TransformCore\Bundle\AppBundle\EventListener\RegistrationListener');
     }
 
-    function its_on_registration_init(UrlGeneratorInterface $router, UserEvent $userEvent, User $user)
+    function it_gets_subsribed_events()
     {
+        $this->getSubscribedEvents()
+            ->shouldBeArray();
+    }
+
+    function its_on_registration_init(
+        UserEvent $userEvent,
+        User $user,
+        UrlGeneratorInterface $router,
+        RandomUsernameGenerator $generator
+    )
+    {
+        $generator
+            ->getUsername()
+            ->shouldBeCalled()
+            ->willReturn('12345');
+
+        $this->beConstructedWith($router, $generator);
+
         $user
             ->setUsername(Argument::type('string'))
             ->shouldBeCalled();
@@ -36,17 +55,23 @@ class RegistrationListenerSpec extends ObjectBehavior
         $this->onRegistrationInit($userEvent);
     }
 
-    function its_on_registration_success(UrlGeneratorInterface $router, FormEvent $event)
+    function its_on_registration_success(
+        FormEvent $event,
+        UrlGeneratorInterface $router,
+        RandomUsernameGenerator $generator
+    )
     {
         $router
             ->generate('transform_core_app_account')
             ->shouldBeCalled()
             ->willReturn('/en/account');
 
-        $this->beConstructedWith($router, true);
+        $this->beConstructedWith($router, $generator);
 
         $event
-            ->setResponse(Argument::type('Symfony\Component\HttpFoundation\RedirectResponse'))
+            ->setResponse(
+                Argument::type('Symfony\Component\HttpFoundation\RedirectResponse')
+            )
             ->shouldBeCalled();
 
         $this->onRegistrationSuccess($event);
