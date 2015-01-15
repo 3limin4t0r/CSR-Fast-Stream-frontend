@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b199f319895065fcac152e8f5ed33e24",
+    "hash": "f8e3a8983df422eb089d9b250554db46",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -2114,16 +2114,16 @@
         },
         {
             "name": "transformcore/csr-fast-stream-domain-model",
-            "version": "0.7.0",
+            "version": "dev-user-applicant-entity",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "47213022cd0e8844fda088485c8530078e2a08d1"
+                "reference": "7a3ffe5d9234e45c499ac6e9f47c1075f7c49435"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/47213022cd0e8844fda088485c8530078e2a08d1",
-                "reference": "47213022cd0e8844fda088485c8530078e2a08d1",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/7a3ffe5d9234e45c499ac6e9f47c1075f7c49435",
+                "reference": "7a3ffe5d9234e45c499ac6e9f47c1075f7c49435",
                 "shasum": ""
             },
             "require": {
@@ -2148,7 +2148,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-14 13:51:00"
+            "time": "2015-01-14 17:22:14"
         },
         {
             "name": "twbs/bootstrap",
@@ -4598,6 +4598,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
+        "transformcore/csr-fast-stream-domain-model": 20,
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": 20,
         "eddiejaoude/dev-helper-cmds": 20,
         "behat/symfony2-extension": 20,
