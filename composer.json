@@ -8,9 +8,13 @@
     },
     "require": {
         "php": "~5.5",
+        "ext-mbstring": "*",
         "symfony/symfony": "2.6.*",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
         "twig/extensions": "~1.0",
         "symfony/assetic-bundle": "~2.3",
+        "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
@@ -20,7 +24,12 @@
         "jms/i18n-routing-bundle": "1.1.*",
         "symfony/yaml": "2.6.*",
         "twbs/bootstrap": "3.3.*",
-        "jquery/jquery":  "1.11.1"
+        "jquery/jquery":  "1.11.1",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "transformcore/csr-fast-stream-domain-model": "0.7.*",
+        "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "dev-master",
+        "eddiejaoude/dev-helper-cmds": "dev-master",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
@@ -36,8 +45,7 @@
         "phpunit/phpunit": "4.*@stable",
         "phpspec/phpspec": "~2.0",
         "codegyre/robo": "*",
-        "henrikbjorn/phpspec-code-coverage": "~0.2",
-        "eddiejaoude/dev-helper-cmds": "dev-master"
+        "henrikbjorn/phpspec-code-coverage": "~0.2"
     },
     "scripts": {
         "post-root-package-install": [
