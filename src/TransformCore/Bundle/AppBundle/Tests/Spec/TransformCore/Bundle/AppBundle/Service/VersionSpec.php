@@ -18,9 +18,9 @@ class VersionSpec extends ObjectBehavior
         $this->shouldHaveType('TransformCore\Bundle\AppBundle\Service\Version');
     }
 
-
     function it_should_get_current_version()
     {
-        $this->current()->shouldReturn('-- unknown --');
+        $this->current()
+            ->shouldReturn('-- unknown --');
     }
 }
