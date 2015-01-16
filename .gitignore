@@ -5,6 +5,11 @@
 .idea
 .project
 .settings
+*.phpproj
+*.phpproj.user
+*.sln
+*.suo
+
 composer.phar
 
 /web/bundles/
