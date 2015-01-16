@@ -15,16 +15,16 @@ Feature: As an user, I want to be able to register a new account, in order to ap
       | fos_user_registration_form_plainPassword_first        | <password>                              |
       | fos_user_registration_form_plainPassword_second       | <password>                              |
         # Referrer
-      | fos_user_registration_form_heardAboutUs | <referrer-input> |
+      | fos_user_registration_form_applicant_heardAboutUs | <referrer-input> |
         # Disability details
-      | fos_user_registration_form_disabledAdjustmentRequired | YES                                     |
-      | fos_user_registration_form_disabledDetails            | <disability>                            |
-      | fos_user_registration_form_disabledAdjustmentDetails  | some disability adjustments text
-      | fos_user_registration_form_phoneNumber1               | <phone-input1>                          |
-      | fos_user_registration_form_phoneNumber2               | <phone-input2>                          |
+      | fos_user_registration_form_applicant_disabledAdjustmentRequired | YES                                     |
+      | fos_user_registration_form_applicant_disabledDetails            | <disability>                            |
+      | fos_user_registration_form_applicant_disabledAdjustmentDetails  | some disability adjustments text
+      | fos_user_registration_form_applicant_phoneNumber1               | <phone-input1>                          |
+      | fos_user_registration_form_applicant_phoneNumber2               | <phone-input2>                          |
     # Checkboxes
-      | fos_user_registration_form_guaranteedInterviewScheme | YES |
-      | fos_user_registration_form_termsAndConditions        | YES |
+      | fos_user_registration_form_applicant_guaranteedInterviewScheme | YES |
+      | fos_user_registration_form_applicant_termsAndConditions        | YES |
     And I press "fos_user_registration_form_registerButton"
     Then I should see "My Account"
     And I should see "<email-input>"
@@ -133,7 +133,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value should not be blank"
-    And I check "fos_user_registration_form_termsAndConditions"
+    And I check "fos_user_registration_form_applicant_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
@@ -150,12 +150,12 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_lastname" with "<last-name>"
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
     And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
-    And I check "fos_user_registration_form_disabledAdjustmentRequired"
-    And I select "Diabetes" from "fos_user_registration_form_disabledDetails"
-    And I fill in "fos_user_registration_form_disabledAdjustmentDetails" with "some disability adjustments text"
-    And I fill in "fos_user_registration_form_phoneNumber1" with "02084567878"
-    And I check "fos_user_registration_form_guaranteedInterviewScheme"
-    And I check "fos_user_registration_form_termsAndConditions"
+    And I check "fos_user_registration_form_applicant_disabledAdjustmentRequired"
+    And I select "Diabetes" from "fos_user_registration_form_applicant_disabledDetails"
+    And I fill in "fos_user_registration_form_applicant_disabledAdjustmentDetails" with "some disability adjustments text"
+    And I fill in "fos_user_registration_form_applicant_phoneNumber1" with "02084567878"
+    And I check "fos_user_registration_form_applicant_guaranteedInterviewScheme"
+    And I check "fos_user_registration_form_applicant_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value is already used"
   Examples:
