@@ -1,1 +1,1 @@
-dev.run: git.branch composer.install symfony.server
+dev.run: git.branch composer.install symfony.dev.rebuild symfony.server
