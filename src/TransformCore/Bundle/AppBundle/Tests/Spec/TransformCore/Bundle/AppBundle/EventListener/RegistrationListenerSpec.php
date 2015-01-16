@@ -44,7 +44,7 @@ class RegistrationListenerSpec extends ObjectBehavior
         $this->beConstructedWith($router, $generator);
 
         $user
-            ->setUsername(Argument::type('string'))
+            ->setUsername('12345')
             ->shouldBeCalled();
 
         $userEvent
