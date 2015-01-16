@@ -101,4 +101,4 @@ fos_user:
     registration:
         form:
             type: csr_dm_user_registration
-            validation_groups: [Default, CsrRegistration]
+            validation_groups: [CsrRegistration]
