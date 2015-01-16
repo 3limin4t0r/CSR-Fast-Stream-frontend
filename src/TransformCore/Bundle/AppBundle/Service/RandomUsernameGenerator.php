@@ -13,6 +13,6 @@ class RandomUsernameGenerator
      */
     public function getUsername()
     {
-        return uniqid(time(), true);
+        return uniqid('', true);
     }
 }
