@@ -13,19 +13,34 @@ class RandomUsernameGeneratorSpec extends ObjectBehavior
         $this->shouldHaveType('TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator');
     }
 
-    function it_should_get_random_username()
+    function it_should_generate_a_string()
     {
         $this->getUsername()
-            ->shouldBeString();
+             ->shouldBeString();
     }
 
-    function it_should_get_random_username_each_time()
+    function it_should_generate_a_unique_username_each_time()
     {
-        $this->getUsername()
-            ->shouldNotBeLike(
-                // @TODO: this does not return string but PhpSpec\Wrapper\Subject
-                // There this will pass, but not in the way we want
-                $this->getUsername()
-            );
+        $this->getUsername()->shouldBeUnique();
+        $this->getUsername()->shouldBeUnique();
+        $this->getUsername()->shouldBeUnique();
+    }
+
+    public function getMatchers()
+    {
+        return array(
+
+            'beUnique' => function($value)
+            {
+                static $observedValues = array();
+
+                if (in_array($value, $observedValues)) {
+                    return false;
+                }
+
+                $observedValues[] = $value;
+                return true;
+            },
+        );
     }
 }
