@@ -343,15 +343,31 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     }
 
     /**
-     * @Then /^the server code response should be (\d+)$/
+     * @Given I am logged in as :arg1 with password :arg2
      */
-    public function theResponseStatusCodeShouldBe($httpStatus)
+    public function iAmLoggedInAsWithPassword($email, $password)
     {
-        if ((string)$this->_response->getStatusCode() !== $httpStatus) {
-            throw new \Exception('HTTP code does not match ' . $httpStatus .
-                ' (actual: ' . $this->_response->getStatusCode() . ')');
-        }
+        $this->visitPath('/');
+        $this->getSession()->getPage()->clickLink('Login');
+        $this->getSession()->getPage()->fillField('username', $email);
+        $this->getSession()->getPage()->fillField('password', $password);
+        $this->getSession()->getPage()->pressButton('_submit');
     }
+    /**
+     * @Given following users for each persona exist on system:
+     */
+    public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
+    {
+    }
+
+    /**
+     * @Given :arg1 has completed the :arg2 section
+     */
+    public function hasCompletedTheSection($arg1, $arg2)
+    {
+//        throw new PendingException();
+    }
+
 
 }
 
