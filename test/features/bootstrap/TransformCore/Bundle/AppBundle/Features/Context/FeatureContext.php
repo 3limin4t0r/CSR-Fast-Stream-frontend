@@ -77,6 +77,10 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                 }
             }
 
+            if (empty($field)) {
+                die('Field not found ' . $fieldSelector. PHP_EOL);
+            }
+
             $tag = strtolower($field->getTagName());
 
             if ($tag == 'textarea') {
