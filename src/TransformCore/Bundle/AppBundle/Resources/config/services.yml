@@ -5,7 +5,7 @@ services:
 
   transform_core_app_main.menu_builder:
     class: TransformCore\Bundle\AppBundle\Menu\MenuBuilder
-    arguments: ["@knp_menu.factory"]
+    arguments: ["@knp_menu.factory","@security.context"]
 
   transform_core_app_main.menu.main:
     class: Knp\Menu\MenuItem # the service definition requires setting the class
@@ -19,3 +19,12 @@ services:
   transform_core_app_main.service.version:
     class: TransformCore\Bundle\AppBundle\Service\Version
     arguments: ["%kernel.root_dir%/../version"]
+
+  transform_core_app_main.service.random_username_generator:
+    class: TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator
+
+  transform_core_app_user_registration_listener:
+    class: TransformCore\Bundle\AppBundle\EventListener\RegistrationListener
+    arguments: [@router, @transform_core_app_main.service.random_username_generator]
+    tags:
+        - { name: kernel.event_subscriber }

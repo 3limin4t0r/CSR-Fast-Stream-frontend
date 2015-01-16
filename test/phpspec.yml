@@ -9,11 +9,15 @@ extensions:
 
 code_coverage:
   whitelist:
+    - src/TransformCore/Bundle/AppBundle/DependencyInjection
+    - src/TransformCore/Bundle/AppBundle/EventListener
     - src/TransformCore/Bundle/AppBundle/Menu
     - src/TransformCore/Bundle/AppBundle/Service
+  whitelist_files:
+    - src/TransformCore/Bundle/AppBundle/TransformCoreAppBundle.php
   format:
-    #- html
+    - html
     - clover
   output:
-    #html: test/build/coverage
+    html: test/build/coverage
     clover: test/build/coverage.xml
