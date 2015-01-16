@@ -77,6 +77,10 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                 }
             }
 
+            if (empty($field)) {
+                die('Field not found ' . $fieldSelector. PHP_EOL);
+            }
+
             $tag = strtolower($field->getTagName());
 
             if ($tag == 'textarea') {
@@ -128,7 +132,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             }
 
             if (null === $node) {
-                throw new \Behat\Mink\Exception\ElementNotFoundException($this->getSession(), 'form field', 'id|name|label|value', $field);
+                throw new \Exception($this->getSession(), 'form field', 'id|name|label|value', $field);
             }
 
             if ($node->getTagName() == 'input' && in_array($node->getAttribute('type'), array('checkbox', 'radio'))) {
@@ -167,7 +171,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
             if (!preg_match($regex, $actual)) {
                 $message = sprintf('The field "%s" value is "%s", but "%s" expected.', $field, $actual, $value);
-                throw new \Behat\Mink\Exception\ExpectationException($message, $this->getSession());
+                throw new \Exception($message, $this->getSession());
             }
         }
     }
@@ -206,7 +210,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
         if (!preg_match($regex, $actual)) {
             $message = sprintf('The field "%s" value is "%s", but "%s" expected.', $field, $actual, $value);
-            throw new \Behat\Mink\Exception\ExpectationException($message, $this->getSession());
+            throw new \Exception($message, $this->getSession());
         }
     }
 
@@ -262,6 +266,24 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         }
     }
 
+    /**
+     * @Given I am logged in as :arg1 with password :arg2
+     */
+    public function iAmLoggedInAsWithPassword($email, $password)
+    {
+        $this->visitPath('/');
+        $this->getSession()->getPage()->clickLink('Login');
+        $this->getSession()->getPage()->fillField('username', $email);
+        $this->getSession()->getPage()->fillField('password', $password);
+        $this->getSession()->getPage()->pressButton('_submit');
+    }
+
+    /**
+     * @Given following users for each persona exist on system:
+     */
+    public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
+    {
+
+    }
 }
 
-?>
