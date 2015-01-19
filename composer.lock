@@ -955,12 +955,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "c2eba41d1c3cdda3ad4d97c0f6f47ff623a9646a"
+                "reference": "7b0f26f3d7d89d25d0cfc1120c2ca321b6970b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/c2eba41d1c3cdda3ad4d97c0f6f47ff623a9646a",
-                "reference": "c2eba41d1c3cdda3ad4d97c0f6f47ff623a9646a",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/7b0f26f3d7d89d25d0cfc1120c2ca321b6970b62",
+                "reference": "7b0f26f3d7d89d25d0cfc1120c2ca321b6970b62",
                 "shasum": ""
             },
             "require": {
@@ -1014,7 +1014,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2015-01-18 09:36:09"
+            "time": "2015-01-19 13:24:35"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2119,12 +2119,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "8575596aae006ee94630110f29b6bf058ea9cef7"
+                "reference": "7bf8cfe803b0f584949bc797351a0d81887436d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/8575596aae006ee94630110f29b6bf058ea9cef7",
-                "reference": "8575596aae006ee94630110f29b6bf058ea9cef7",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/7bf8cfe803b0f584949bc797351a0d81887436d0",
+                "reference": "7bf8cfe803b0f584949bc797351a0d81887436d0",
                 "shasum": ""
             },
             "require": {
@@ -2149,7 +2149,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-19 11:13:57"
+            "time": "2015-01-19 13:28:30"
         },
         {
             "name": "twbs/bootstrap",
