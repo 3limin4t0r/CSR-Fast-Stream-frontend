@@ -45,7 +45,7 @@ Feature: As an applicant after logging in I want to see my homepage
 
   @CSR-196
   Scenario: Complete Nationality and immigration section (Mandatory field validation)
-    Given I am logged in as "persona4@test.com" with password "P@ssword1"
+    Given I am logged in as "persona5@test.com" with password "P@ssword1"
     And I follow "My Details"
     Then I should see "About You"
     And I follow "save-and-continue"
@@ -56,7 +56,34 @@ Feature: As an applicant after logging in I want to see my homepage
     Then I should see "Please select gender"
     And I select "Male" from "gender"
     And I follow "save-and-continue"
-
+    Then I should see "Please select gender"
+    Then I select "Mixed - White and Black Caribbean" from "ethnic-origin"
+    And I follow "save-and-continue"
+    Then I should see "Please select religion"
+    Then I select "Zoroastrianism" from "religion"
+    And I follow "save-and-continue"
+    Then I should see "Please select sexual orientation"
+    Then I select "Prefer not to say" from "sexual-orientation"
+    And I follow "save-and-continue"
+    Then I should see "Please select marital status"
+    Then I select "In a Domestic Partnership" from "marital-status"
+    And I follow "save-and-continue"
+    Then I should see "Please select school type"
+    Then I select "An independent school, and your fees were not paid in part by the local authority or bursary/scholarship" from "school-type"
+    And I follow "save-and-continue"
+    Then I should see "Please select whether or not your are first member of your family to attend university"
+    Then I select "Yes" from "first-family-member-in-university"
+    And I follow "save-and-continue"
+    Then I should see "Please select whether you were eligible for school meals"
+    Then I select "Yes" from "free-meals-eligible"
+    And I follow "save-and-continue"
+    Then I should see "Please select whether or not you have been in care for over 3 months"
+    Then I select "Prefer Not to Say" from "longer-than-three-months-in-care"
+    And I follow "save-and-continue"
+    Then I should see "Please select Please select whether or not you have been has either asylum seeker or refugee status"
+    Then I select "Prefer Not to Say" from "asylum-seeker-refugee-status"
+    And I follow "save-and-continue"
+    Then I should see "Socio Economic Details"
 
 
 
