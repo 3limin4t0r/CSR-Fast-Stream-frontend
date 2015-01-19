@@ -1,0 +1,63 @@
+2afaa9b	Travis CI	Mon Jan 19 10:21:07 2015 +0000	Set build VERSION number build-feature/CSR-196-428
+9d23704	jaffamonkey	Mon Jan 19 10:18:11 2015 +0000	CSR-196 corrected field id
+3ca6102	jaffamonkey	Mon Jan 19 09:40:04 2015 +0000	CSR-196 corrected story reference in test
+6ef2fcf	jaffamonkey	Fri Jan 16 13:09:59 2015 +0000	CSR-196 diversity gherkin following table form entry approach
+97a4ea0	jaffamonkey	Wed Jan 7 11:42:36 2015 +0000	first commit for new story
+a82fdb1	Eddie Jaoude	Fri Dec 19 18:03:23 2014 +0000	Revert "test demo"
+ef95232	Mike Whiting	Fri Dec 19 11:42:06 2014 +0000	Merge pull request #5 from TransformCore/feature/documentation-dod
+8cfd183	Eddie Jaoude	Fri Dec 19 10:31:02 2014 +0000	test demo
+c058d52	Eddie Jaoude	Fri Dec 19 06:17:22 2014 +0000	Fixed filename typo
+08da415	Eddie Abou-Jaoude	Fri Dec 19 04:59:54 2014 +0000	Double nesting list formatting improved
+0a69379	Eddie Abou-Jaoude	Fri Dec 19 04:57:59 2014 +0000	Removed test double nested list point
+46304c9	Eddie Abou-Jaoude	Fri Dec 19 04:56:59 2014 +0000	Improved formatting of nested list
+c3a47a3	Eddie Jaoude	Fri Dec 19 04:51:34 2014 +0000	Addition to standard template F/E browser support
+3c5b0d0	Mike Whiting	Thu Dec 18 11:08:25 2014 +0000	Merge pull request #10 from TransformCore/feature/alias-cmds
+04b5dba	Mike Whiting	Thu Dec 18 10:06:34 2014 +0000	Merge pull request #9 from TransformCore/feature/documentation-contributing
+21f008f	Eddie Jaoude	Thu Dec 18 10:00:31 2014 +0000	Updated Documentation links in README
+691827f	Eddie Jaoude	Thu Dec 18 09:42:45 2014 +0000	Removed remaining config for `swiftmailer`
+1119d83	Eddie Jaoude	Thu Dec 18 09:36:25 2014 +0000	Remove Swift mailer as Frontend not required
+0153cb1	Eddie Jaoude	Thu Dec 18 09:33:11 2014 +0000	Removed Doctrine as Frontend will not require it
+f32be10	Eddie Jaoude	Thu Dec 18 09:19:11 2014 +0000	Updated Version file name in main Makefile
+a2d0ac7	Eddie Jaoude	Thu Dec 18 09:14:31 2014 +0000	Updated PHPSpec Code Coverage report whitelist
+e58eb74	Eddie Jaoude	Thu Dec 18 09:14:09 2014 +0000	Implemented Version service in App & Template
+6d8e694	Eddie Jaoude	Thu Dec 18 09:13:36 2014 +0000	Version service & Spec Test
+47df3b7	Eddie Jaoude	Thu Dec 18 09:12:51 2014 +0000	Removed PHPSpec example Entity & Spec Test
+2756442	Eddie Jaoude	Thu Dec 18 08:05:54 2014 +0000	Override  build.version.* for packaging
+becd221	Mike Whiting	Wed Dec 17 13:16:03 2014 +0000	Set build VERSION number build--
+c7fb4e1	Eddie Abou-Jaoude	Wed Dec 17 11:53:02 2014 +0000	Updated Demo link information
+3e7005c	Eddie Jaoude	Wed Dec 17 08:05:59 2014 +0000	Get composer & install dependencies
+5165ede	Eddie Jaoude	Wed Dec 17 08:05:03 2014 +0000	Revert "Can not use Alias CMDs with Deps"
+1fc7ab5	Eddie Jaoude	Wed Dec 17 07:59:14 2014 +0000	Can not use Alias CMDs with Deps
+949fd48	Eddie Jaoude	Wed Dec 17 07:55:21 2014 +0000	Symfony generated file updated
+54c7763	Eddie Jaoude	Wed Dec 17 07:55:04 2014 +0000	Updated Dependencies
+4f3e250	Eddie Jaoude	Wed Dec 17 07:23:10 2014 +0000	Updated TravisCI config file to use std alias CMDs
+ba4046d	Eddie Jaoude	Wed Dec 17 07:22:48 2014 +0000	Updated Make file to use standard Alias library
+dcb295f	Eddie Jaoude	Wed Dec 17 07:22:20 2014 +0000	Override default commands
+5f72fc2	Eddie Jaoude	Wed Dec 17 07:21:57 2014 +0000	Dev alias commands moved to `dev` file
+14aa0bc	Eddie Jaoude	Wed Dec 17 06:10:54 2014 +0000	Updated Deps & added Cmd aliases
+648bb16	Eddie Jaoude	Tue Dec 16 13:04:26 2014 +0000	DoD referencing Transform template doc
+17f8c12	Eddie Jaoude	Tue Dec 16 12:56:53 2014 +0000	Contributing docs referencing template repo
+cc99e61	Mike Whiting	Fri Dec 12 11:52:16 2014 +0000	Merge pull request #7 from TransformCore/hotfix/git-version-toolbar
+10791ba	Eddie Jaoude	Fri Dec 12 08:49:54 2014 +0000	Removed Toolbar Git bundle after upgrade SF v2.6
+8432845	Tom Ruppel	Wed Dec 10 15:44:08 2014 +0000	Typo fix
+dffb909	Eddie Jaoude	Wed Dec 10 15:42:08 2014 +0000	Formatting updated
+28bbc74	Eddie Jaoude	Wed Dec 10 15:40:24 2014 +0000	Used step numbers for sections of list
+79f872d	Eddie Jaoude	Wed Dec 10 15:39:19 2014 +0000	Updated indentation on list
+fc1e951	Eddie Jaoude	Wed Dec 10 15:35:01 2014 +0000	Initial stage of Definition of Done
+7f86a34	jaffamonkey	Wed Dec 10 15:07:51 2014 +0000	removed erroneous reference to SharedContext in behat.yml
+2a8299e	Mike Whiting	Wed Dec 10 15:03:27 2014 +0000	Merge pull request #4 from TransformCore/feature/updated-dependencies
+e8bc04f	Eddie Jaoude	Wed Dec 10 14:50:21 2014 +0000	Fixed Deps conflict & removed unused file
+06cdc58	jaffamonkey	Wed Dec 10 14:37:41 2014 +0000	corrected report output directory struture
+16f2121	jaffamonkey	Wed Dec 10 14:35:31 2014 +0000	cleaned up test gherkin and report location
+8bbffa9	jaffamonkey	Wed Dec 10 14:26:03 2014 +0000	added behat code and updated behat.yml to use more test clients and composer.json with required extensions
+d732946	Eddie Jaoude	Wed Dec 10 13:58:45 2014 +0000	Updated dependencies
+8b353dd	Paul Littlebury	Wed Dec 10 12:53:08 2014 +0000	Merge pull request #2 from TransformCore/feature/git-pull-tags
+551ab62	Eddie Jaoude	Wed Dec 10 12:31:51 2014 +0000	Updated dev commands to use Makefile
+0302f30	Eddie Jaoude	Fri Dec 5 10:54:03 2014 +0000	Fixed path issue for Contributing documentation
+fe27b7c	Eddie Jaoude	Fri Dec 5 10:32:42 2014 +0000	Updated Slack Token & Github Token for TravisCI
+5e9df71	Eddie Jaoude	Fri Dec 5 09:57:38 2014 +0000	Renamed Deployment App on Heroku
+c5b7560	Eddie Jaoude	Thu Dec 4 14:55:18 2014 +0000	Ignoring web fonts files (web/fonts)
+93d9eb4	Eddie Jaoude	Thu Dec 4 14:53:27 2014 +0000	Updated badges & urls
+dcdebbb	Eddie Jaoude	Thu Dec 4 14:40:59 2014 +0000	Initial commit from Dial-Tone-Frontend repo
+4ba39e6	Rory Woodward	Tue Sep 30 12:03:58 2014 +0100	Update LICENSE
+fca9aa9	Rory Woodward	Tue Sep 30 12:02:33 2014 +0100	Initial commit
