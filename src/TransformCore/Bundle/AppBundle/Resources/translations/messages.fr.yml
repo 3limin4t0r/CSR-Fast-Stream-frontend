@@ -46,10 +46,8 @@ register:
       label: je nécessiter des ajustements en fonction de mon handicap
     disabled-details:
       label: Veuillez décrire votre invalidité
-    phone-number-1:
+    phone-number:
       label: Veuillez fournir votre numéro de téléphone
-    phone-number-2:
-      label: Veuillez fournir un autre numéro de téléphone (facultatif)
     disabled-adjustment-details:
       label: Veuillez nous dire quels ajustements dont vous avez besoin en fonction de votre invalidité
     guaranteed-interview-scheme:
