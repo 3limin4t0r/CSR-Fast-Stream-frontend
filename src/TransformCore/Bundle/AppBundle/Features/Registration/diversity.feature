@@ -7,7 +7,7 @@ Feature: As an applicant after logging in I want to see my homepage
     And "persona4@test.com" has completed the "About you,Nationality" section
     And "persona5@test.com" has completed the "About you,Nationality" section
 
-  @CSR-916
+  @CSR-196
   Scenario: Complete Nationality and immigration section (Happy path)
     Given I am logged in as "persona4@test.com" with password "P@ssword1"
     And I follow "My Details"
@@ -26,7 +26,7 @@ Feature: As an applicant after logging in I want to see my homepage
       | first-to-attend-university      | No                                                                          |
       | school-meals-eligibility        | No                                                                          |
       | three-plus-months-in-care       | No                                                                          |
-      | refugee status or asylum status | Prefer Not to Say                                                           |
+      | refugee-status-or-asylum-status | Prefer Not to Say                                                           |
     And I press "save-and-continue"
     Then I should see "Socio Economic Details"
     And I follow "go back to the previous section"
@@ -40,4 +40,4 @@ Feature: As an applicant after logging in I want to see my homepage
       | first-to-attend-university      | No                                                                          |
       | school-meals-eligibility        | No                                                                          |
       | three-plus-months-in-care       | No                                                                          |
-      | refugee status or asylum status | Prefer Not to Say                                                           |
+      | refugee-status-or-asylum-status | Prefer Not to Say                                                           |
