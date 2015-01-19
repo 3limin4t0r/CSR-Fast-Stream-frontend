@@ -21,7 +21,15 @@ Latest deploy (inc. branches) https://csr-frontend-ci.herokuapp.com/en/
 * [PageLayout](/doc/PageLayout.md)
 * [Registration](/doc/Registration.md)
 
-## Run app
+## Setup App
+
+1. Install dependencies with **Composer**
+
+```
+php composer.phar install
+```
+
+## Run App
 
 1. `make dev.run`
 
