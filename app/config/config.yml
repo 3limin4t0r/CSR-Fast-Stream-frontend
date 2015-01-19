@@ -100,5 +100,5 @@ fos_user:
     use_username_form_type: false
     registration:
         form:
-            type: csr_dm_user_registration
+            type: csr_dm_user_applicant
             validation_groups: [CsrRegistration]
