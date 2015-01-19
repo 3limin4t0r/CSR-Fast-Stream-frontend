@@ -96,7 +96,7 @@ jms_i18n_routing:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: TransformCore\Bundle\CsrFastStreamBundle\Entity\User
+    user_class: TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant
     use_username_form_type: false
     registration:
         form:
