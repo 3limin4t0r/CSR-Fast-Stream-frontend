@@ -4,8 +4,8 @@ Feature: As an applicant after logging in I want to see my homepage
     Given following users for each persona exist on system:
       | persona4@test.com |
       | persona5@test.com |
-    And "persona4@test.com" has completed the "About you,Nationality" section
-    And "persona5@test.com" has completed the "About you,Nationality" section
+    And "persona4@test.com" has completed the "About you,Nationality,Education" section
+    And "persona5@test.com" has completed the "About you,Nationality,Education" section
 
   @CSR-196
   Scenario: Complete Nationality and immigration section (Happy path)
@@ -41,3 +41,22 @@ Feature: As an applicant after logging in I want to see my homepage
       | school-meals-eligibility        | No                                                                          |
       | three-plus-months-in-care       | No                                                                          |
       | refugee-status-or-asylum-status | Prefer Not to Say                                                           |
+
+
+  @CSR-196
+  Scenario: Complete Nationality and immigration section (Mandatory field validation)
+    Given I am logged in as "persona4@test.com" with password "P@ssword1"
+    And I follow "My Details"
+    Then I should see "About You"
+    And I follow "save-and-continue"
+    Then I should see "Nationality"
+    And I follow "save-and-continue"
+    Then I should see "Diversity"
+    And I follow "save-and-continue"
+    Then I should see "Please select gender"
+    And I select "Male" from "gender"
+    And I follow "save-and-continue"
+
+
+
+
