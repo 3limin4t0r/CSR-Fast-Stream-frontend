@@ -16,7 +16,7 @@ Feature: As an applicant after logging in I want to see my homepage
     Then I should see "Nationality"
     And I follow "save-and-continue"
     Then I should see "Diversity"
-    And I fill in form with:
+    And I fill form with:
       | gender                          | Male                                                                        |
       | ethnic-origin                   | White - English / Welsh / Scottish / Northern Irish / British               |
       | religion                        | Agnostic                                                                    |
