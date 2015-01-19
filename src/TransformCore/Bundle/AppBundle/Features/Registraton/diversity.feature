@@ -4,8 +4,8 @@ Feature: As an applicant after logging in I want to see my homepage
     Given following users for each persona exist on system:
       | persona4@test.com |
       | persona5@test.com |
-    And "persona4@test.com" has completed the "About you,Nationality,Education" section
-    And "persona5@test.com" has completed the "About you,Nationality,Education" section
+    And "persona4@test.com" has completed the "About you,Nationality,Education" sections
+    And "persona5@test.com" has completed the "About you,Nationality,Education" sections
 
   @CSR-196
   Scenario: Complete Nationality and immigration section (Happy path)
