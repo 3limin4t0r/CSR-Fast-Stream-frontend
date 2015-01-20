@@ -6,6 +6,7 @@ nav:
   register: Register
   login: Login
   logout: Logout
+  profile: Profile
 
 home:
   title: CSR
@@ -87,3 +88,29 @@ guaranteedInterviewScheme:
 
 account:
   title: My Account
+  overview: Overview
+
+address:
+  form:
+    line1:
+      label: Line 1
+    line2:
+      label: Line 2
+    line3:
+      label: Line 3
+    town:
+      label: Town
+    county:
+      label: County
+    postcode:
+      label: Postcode
+    country:
+      label: Country
+
+profile:
+  title: Profile
+  form:
+    dateOfBirth:
+      label: Date of Birth
+    updateButton:
+      label: Update

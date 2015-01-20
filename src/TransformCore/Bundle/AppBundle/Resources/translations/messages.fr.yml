@@ -6,6 +6,7 @@ nav:
   register: Register
   login: S'identifier
   logout: Déconnexion
+  profile: Profile
 
 home:
   title: Bonjour
@@ -86,3 +87,4 @@ guaranteedInterviewScheme:
 
 account:
   title: Mon accout
+  overview: Overview
