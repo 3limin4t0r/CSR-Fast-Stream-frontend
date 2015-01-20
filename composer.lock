@@ -955,12 +955,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "cb3a5d3550183522416b422e140c9e4d062004f1"
+                "reference": "f54031a652846cd8e7b12119fe713eae90e24cf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/cb3a5d3550183522416b422e140c9e4d062004f1",
-                "reference": "cb3a5d3550183522416b422e140c9e4d062004f1",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/f54031a652846cd8e7b12119fe713eae90e24cf9",
+                "reference": "f54031a652846cd8e7b12119fe713eae90e24cf9",
                 "shasum": ""
             },
             "require": {
@@ -1014,7 +1014,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2015-01-19 13:42:15"
+            "time": "2015-01-20 09:35:03"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2119,12 +2119,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "5fafd843b4234e08e17df908068283314ce043d6"
+                "reference": "8c7b9f406f8995f24d8a6a648d6236b44e2a2344"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/5fafd843b4234e08e17df908068283314ce043d6",
-                "reference": "5fafd843b4234e08e17df908068283314ce043d6",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/8c7b9f406f8995f24d8a6a648d6236b44e2a2344",
+                "reference": "8c7b9f406f8995f24d8a6a648d6236b44e2a2344",
                 "shasum": ""
             },
             "require": {
@@ -2149,20 +2149,20 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-19 13:59:16"
+            "time": "2015-01-20 10:41:41"
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v3.3.1",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "9a7e365c2c4360335d25246dac11afb1f577210a"
+                "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/9a7e365c2c4360335d25246dac11afb1f577210a",
-                "reference": "9a7e365c2c4360335d25246dac11afb1f577210a",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
+                "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
                 "shasum": ""
             },
             "replace": {
@@ -2200,7 +2200,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-11-12 17:03:16"
+            "time": "2015-01-19 17:03:09"
         },
         {
             "name": "twig/extensions",
@@ -3494,16 +3494,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v56",
+            "version": "v57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "02352cd6fc1f3351fa8bd088602b2816e133f094"
+                "reference": "166ad317a307082d037a6d201ddb602f3295af9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/02352cd6fc1f3351fa8bd088602b2816e133f094",
-                "reference": "02352cd6fc1f3351fa8bd088602b2816e133f094",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/166ad317a307082d037a6d201ddb602f3295af9a",
+                "reference": "166ad317a307082d037a6d201ddb602f3295af9a",
                 "shasum": ""
             },
             "bin": [
@@ -3534,7 +3534,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-01-13 10:40:10"
+            "time": "2015-01-19 23:21:04"
         },
         {
             "name": "instaclick/php-webdriver",
