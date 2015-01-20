@@ -49,6 +49,7 @@ class MenuBuilder
                 $this->securityContext->getToken()->getUser()->getEmail(),
                 array('route' => 'transform_core_app_account')
             );
+            $menu->addChild('nav.profile', array('route' => 'transform_core_app_profile_edit'));
             $menu->addChild('nav.logout', array('route' => 'fos_user_security_logout'));
         } else {
             $menu->addChild('nav.register', array('route' => 'fos_user_registration_register'));
