@@ -20,27 +20,33 @@ class AccountController extends Controller
     public function indexAction()
     {
         return $this->render('TransformCoreAppBundle:Account:index.html.twig',
-            array(
-
-            )
+            array()
         );
     }
 
     /**
+     * @param Request $request
+     *
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function profileAction(Request $request)
     {
-        $applicant = new Applicant();
+        $applicant = $this->get('transform_core_app_main.service.applicants')
+                          ->getById(
+                              $this->get('security.token_storage')
+                                   ->getToken()
+                                   ->getUser()
+                                   ->getId()
+                          );
 
         $form = $this->createForm(new ProfileFormType(), $applicant);
-
         $form->handleRequest($request);
 
         if ($form->isValid()) {
             $applicant = $form->getData();
 
-            var_dump('valid', $applicant); exit;
+            $this->get('transform_core_app_main.service.applicants')
+                 ->update($applicant);
         }
 
         return $this->render('TransformCoreAppBundle:Account:profile.html.twig',
