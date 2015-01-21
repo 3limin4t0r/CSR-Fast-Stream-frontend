@@ -1,7 +1,36 @@
 Feature: As registrant, I want to be able to add education details, to fully indicate my experience and skills
 
-Scenario: Add education details (happy path)
+  Background:
+    Given following users for each persona exist on system:
+      | persona6@test.com |
+      | persona7@test.com |
+    And "persona6@test.com" has completed sections "About You, Nationality"
+    And "persona7@test.com" has completed sections "About You, Nationality"
 
-Scenario: Applying via In Service Route
 
-Scenario: Education details fields validation
+  Scenario: Add education details (no degree needed)
+    Given I am logged in as "persona6@test.com" with password "P@ssword1"
+    And I follow "My Details"
+    And I press "Save and continue"
+    And I press "Save and continue"
+    Then I should see "Education"
+    When I check "I want to apply for the Early Diversity Internship Programme or the Summer Diversity Internship Programme"
+    And I press "Save and continue"
+    Then I should see "Please answer whether or not you took the Early Diversity Internship Programme"
+    Then I should see "Please answer whether or not you took the Summer Diversity Internship Programme"
+    And I check "early-diversity-internship-programme-no"
+    And I check "summer-diversity-internship-programme-no"
+    And I press "Save and continue"
+    Then I should see "Diversity"
+    And I follow "go back to the previous section"
+
+  Scenario: Add education details (degreee needed)
+    Given I am logged in as "persona7@test.com" with password "P@ssword1"
+    And I follow "My Details"
+    And I press "Save and continue"
+    And I press "Save and continue"
+
+  Scenario: Applying via In Service Route
+
+
+  Scenario: Education details fields validation
