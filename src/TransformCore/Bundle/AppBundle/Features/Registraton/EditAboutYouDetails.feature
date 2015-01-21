@@ -80,7 +80,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     # Checking that field validation is working
     Then I should see "first name in wrong format"
     Then I should see "last name in wrong format"
-    Then I should see "password too short"
+    Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
     Then I should see "email address in wrong format"
     Then I should see "Day in wrong format"
     Then I should see "Month in wrong format"
