@@ -63,7 +63,7 @@ class Applicants
                 '/applicants/' . $applicant->getId(),
                 array(
                     'body' => array(
-                        $this->serializer
+                        'csr_dm_user_profile' => $this->serializer
                             ->serialize(
                                 $applicant,
                                 'json'
@@ -74,11 +74,6 @@ class Applicants
             ->getBody()
             ->getContents();
 
-        return $this->serializer
-            ->deserialize(
-                json_encode(json_decode($response)->applicant),
-                'TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant',
-                'json'
-            );
+        return $applicant;
     }
 }

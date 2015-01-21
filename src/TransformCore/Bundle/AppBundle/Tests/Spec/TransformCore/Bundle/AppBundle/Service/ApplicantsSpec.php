@@ -70,12 +70,12 @@ class ApplicantsSpec extends ObjectBehavior
         $applicant = new Applicant();
         $applicant->setId(123);
 
-        $jsonData = '{"applicant":{"id":123}}';
+        $jsonData = '{"id":123}';
 
         $stream
             ->getContents()
             ->shouldBeCalled()
-            ->willReturn($jsonData);
+            ->willReturn(array('applicant' => $jsonData));
 
         $response
             ->getBody()
@@ -87,7 +87,7 @@ class ApplicantsSpec extends ObjectBehavior
                 '/applicants/' . $applicant->getId(),
                 array(
                     'body' => array(
-                        $jsonData
+                        'csr_dm_user_profile' => $jsonData
                     )
                 )
             )
@@ -101,15 +101,6 @@ class ApplicantsSpec extends ObjectBehavior
             )
             ->shouldBeCalled()
             ->willReturn($jsonData);
-
-        $serializer
-            ->deserialize(
-                json_encode(json_decode($jsonData)->applicant),
-                'TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant',
-                'json'
-            )
-            ->shouldBeCalled()
-            ->willReturn($response);
 
         $this->beConstructedWith($client, $serializer);
 
