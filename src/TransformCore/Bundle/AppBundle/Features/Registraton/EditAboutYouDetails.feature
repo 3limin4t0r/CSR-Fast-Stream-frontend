@@ -15,9 +15,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "first-name" with "Onechange"
     And I fill in "last-name" with "Personachange"
     # Address Details
-    And I press "Find address"
-    And the "address-select" field should contain "44, Craster Road"
-    And I select "44, Craster Road" from "address-select"
+    And I follow "Enter address manually"
+    And I fill in "address1" with "address line one"
     And I fill in "address2" with "address line two"
     And I fill in "address3b" with "address line three"
     And I fill in "town" with "a town"
@@ -67,11 +66,10 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "dob-month" with "b"
     And I fill in "dob-year" with "a"
     And I fill in "post-code" with "CFT 888"
-    And I press "Find address"
-    Then I should see "Invalid postcode - no matching address found"
-    And I fill in "postcode" with "SW4 8LB"
-    And I press "Find address"
-    And I select "19, Pinewood Court" from "address-select"
+    And I follow "Enter address manually"
+    And I fill in "address1" with "address line one"
+    And I fill in "town" with "London"
+    And I fill in "postcode" with "SW9 999"
     And I fill in "password" with "a"
     And I fill in "passwordConfirm" with "a"
     And I fill in "email" with "bill.carr@test"
@@ -88,4 +86,19 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Phone input in wrong format"
     Then I should see "Please accept terms and conditions before continuing"
     Then I should see "Please tell us how you found faststream"
-    
+
+  @CSR-135
+  Scenario: Complete About You Section (Mandatory fields)
+    Given I am logged in as "persona2@test.com" with password "P@ssword1"
+    And I follow "My Details"
+    Then I should see "About You"
+    And I check "sms-alerts"
+    And I check "sms-alerts-mobile-number"
+    And I press "Save and continue"
+    Then I should see "Please enter your address"
+    And I should see "Please enter your date of birth"
+    And I should see "Please enter your daytime telephone number"
+    And I should see "Please enter mobile number for sms alerts"
+
+
+
