@@ -90,6 +90,3 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I should see "Please enter your date of birth"
     And I should see "Please enter your daytime telephone number"
     And I should see "Please enter mobile number for sms alerts"
-
-
-
