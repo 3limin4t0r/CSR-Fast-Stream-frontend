@@ -89,3 +89,23 @@ guaranteedInterviewScheme:
 
 account:
   title: My Account
+
+nationality:
+  name:
+    label: Please fill in present nationality
+
+eligibility:
+  title: About You
+  subject-to-immigration-controls:
+    label: Please check whether or not you are subject to immigration controls
+  subject-to-immigration-controls-details:
+    label: Please fill in immigration controls details
+  residency-or-employment-restrictions:
+    label: Please select whether or not you have employment restrictions
+  residency-or-employment-restrictions-details:
+    label: Please fill in employment restrictions details
+  permission-to-check-background:
+    label: Please check box to indicate you give permission for us to undertake checks
+  form:
+    updateButton:
+      label: Save and continue
