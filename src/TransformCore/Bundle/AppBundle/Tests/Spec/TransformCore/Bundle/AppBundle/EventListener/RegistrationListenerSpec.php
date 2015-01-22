@@ -8,7 +8,7 @@ use Prophecy\Argument;
 use FOS\UserBundle\Event\UserEvent;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\User;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 
 class RegistrationListenerSpec extends ObjectBehavior
 {
@@ -31,7 +31,7 @@ class RegistrationListenerSpec extends ObjectBehavior
 
     function its_on_registration_init(
         UserEvent $userEvent,
-        User $user,
+        Applicant $user,
         UrlGeneratorInterface $router,
         RandomUsernameGenerator $generator
     )

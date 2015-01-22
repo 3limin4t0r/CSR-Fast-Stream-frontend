@@ -1,0 +1,14 @@
+TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
+    exclusion_policy: all
+    properties:
+        firstname:
+            expose: true
+        lastname:
+            expose: true
+        phoneNumber:
+            expose: true
+        dateOfBirth:
+            expose: true
+            type: DateTime<'Y-m-d'>
+        address:
+            expose: true

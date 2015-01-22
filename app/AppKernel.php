@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new TransformCore\Bundle\AppBundle\TransformCoreAppBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new TransformCore\Bundle\CsrFastStreamBundle\TransformCoreCsrFastStreamBundle(),
