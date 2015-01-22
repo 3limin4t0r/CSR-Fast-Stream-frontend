@@ -88,13 +88,14 @@ guaranteedInterviewScheme:
 
 account:
   title: My Account
+  overview: Overview
 
 nationality:
   name:
     label: Please fill in present nationality
 
 eligibility:
-  title: About You
+  title: Eligibility
   subject-to-immigration-controls:
     label: Please check whether or not you are subject to immigration controls
   subject-to-immigration-controls-details:
@@ -108,7 +109,6 @@ eligibility:
   form:
     updateButton:
       label: Save and continue
-  overview: Overview
 
 address:
   form:
@@ -133,4 +133,4 @@ profile:
     dateOfBirth:
       label: Date of Birth
     updateButton:
-      label: Update
+      label: Save and Continue
