@@ -102,11 +102,11 @@ class AccountController extends Controller
                     );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_profile_edit')
+                $this->generateUrl('transform_core_app_eligibility')
             );
         }
 
-        return $this->render('TransformCoreAppBundle:Account:profile.html.twig',
+        return $this->render('TransformCoreAppBundle:Account:eligibility.html.twig',
             array(
                 'form' => $form->createView(),
             )
