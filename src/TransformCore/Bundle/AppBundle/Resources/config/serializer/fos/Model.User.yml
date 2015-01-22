@@ -3,6 +3,8 @@ FOS\UserBundle\Model\User:
     properties:
         email:
             expose: true
+        plainPassword:
+            expose: true
         enabled:
             expose: false
         id:
