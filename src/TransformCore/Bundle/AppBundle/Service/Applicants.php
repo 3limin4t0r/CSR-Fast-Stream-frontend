@@ -63,16 +63,16 @@ class Applicants
                 '/applicants/' . $applicant->getId(),
                 array(
                     'body' => array(
-                        'csr_dm_user_profile' => $this->serializer
-                            ->serialize(
-                                $applicant,
-                                'json'
-                            )
+                        'csr_dm_user_profile' => json_decode(
+                            $this->serializer
+                                ->serialize(
+                                    $applicant,
+                                    'json'
+                                ), true
+                        )
                     )
                 )
-            )
-            ->getBody()
-            ->getContents();
+            );
 
         return $applicant;
     }

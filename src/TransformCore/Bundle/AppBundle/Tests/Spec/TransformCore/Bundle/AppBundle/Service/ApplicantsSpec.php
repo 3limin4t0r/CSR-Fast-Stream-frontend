@@ -72,22 +72,12 @@ class ApplicantsSpec extends ObjectBehavior
 
         $jsonData = '{"id":123}';
 
-        $stream
-            ->getContents()
-            ->shouldBeCalled()
-            ->willReturn(array('applicant' => $jsonData));
-
-        $response
-            ->getBody()
-            ->shouldBeCalled()
-            ->willReturn($stream);
-
         $client
             ->put(
                 '/applicants/' . $applicant->getId(),
                 array(
                     'body' => array(
-                        'csr_dm_user_profile' => $jsonData
+                        'csr_dm_user_profile' => json_decode($jsonData, true)
                     )
                 )
             )
