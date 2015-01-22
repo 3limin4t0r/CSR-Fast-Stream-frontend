@@ -284,7 +284,13 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
     {
+    }
 
+    /**
+     * @Given :arg1 has completed the :arg2 section
+     */
+    public function hasCompletedTheSection($arg1, $arg2)
+    {
     }
 }
 
