@@ -47,6 +47,17 @@ class AccountController extends Controller
 
             $this->get('transform_core_app_main.service.applicants')
                  ->update($applicant);
+
+            $request->getSession()
+                    ->getFlashBag()
+                    ->add(
+                        'success',
+                        'Your changes were saved!'
+                    );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_profile_edit')
+            );
         }
 
         return $this->render('TransformCoreAppBundle:Account:profile.html.twig',
