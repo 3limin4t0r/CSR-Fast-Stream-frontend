@@ -26,10 +26,10 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_profile_dateOfBirth" with "1968-08-02"
     # Phone details
     And I fill in "csr_dm_user_profile_phoneNumber_number" with "07951234567"
-    And I fill in "csr_dm_user_profile_address_country" with "United Kingdom"
+    And I select "United Kingdom" from "csr_dm_user_profile_address_country"
 #    And I check "mobile-number-yes"
 #    # End of My Details step one form
-    When I press "Update"
+    When I press "Save and Continue"
     Then I should see "Your changes were saved"
 #    Then I follow "Go back the the previous section"
     # Checking that values have been retained
@@ -45,7 +45,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And the "csr_dm_user_profile_address_county" field should contain "a county"
     And the "csr_dm_user_profile_address_town" field should contain "a town"
     And the "csr_dm_user_profile_address_postcode" field should contain "post code"
-    And the "csr_dm_user_profile_address_country" field should contain "United Kingdom"
+    And I select "United Kingdom" from "csr_dm_user_profile_address_country"
     # Phone details
     And the "csr_dm_user_profile_phoneNumber_number" field should contain "07951234567"
     # conditional checkboxes
@@ -69,7 +69,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_profile_plainPassword_second" with "a"
     And I fill in "csr_dm_user_profile_email" with "bill.carr@test"
 #    And I fill in "csr_dm_user_profile_phoneNumber_number" with "abc"
-    And I press "Update"
+    When I press "Save and Continue"
     # Checking that field validation is working
     Then count of "2" instances of "This value should be of type alpha" exists on page
     And I should see "This value is too short. It should have 8 characters or more."
@@ -78,8 +78,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I should see "This value is not a valid email address"
 #    And I should see "Date of birth in wrong format"
 #    And I should see "Phone input in wrong format"
-    And I should see "Please accept terms and conditions before continuing"
-    And I should see "Please tell us how you found faststream"
+#    And I should see "Please accept terms and conditions before continuing"
+#    And I should see "Please tell us how you found faststream"
 
   @CSR-135
   Scenario: Complete About You Section (Mandatory fields)
@@ -88,8 +88,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "First Name"
 #    And I check "sms-alerts-yes"
 #    And I check "sms-alerts-mobile-number"
-    And I press "Update"
-    Then count of "5" instances of "This value should not be blank" exists on page
+    When I press "Save and Continue"
+    Then count of "4" instances of "This value should not be blank" exists on page
 #    Then I should see "This value should not be blank"
 #    And I should see "Please enter your date of birth"
 #    And I should see "Please enter your daytime telephone number"

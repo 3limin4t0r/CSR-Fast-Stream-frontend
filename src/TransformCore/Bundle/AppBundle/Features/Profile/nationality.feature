@@ -10,9 +10,9 @@ Feature: As an user, I want to be able to add details about myself on my account
   @CSR-24
   Scenario: Complete Nationality and immigration section (Happy path)
     Given I am logged in as "four@test.com" with password "P@ssword1"
-    And I follow "My Details"
-    Then I should see "About You"
-    And I follow "save-and-continue"
+    And I follow "Profile"
+    Then I should see "First Name"
+    And I press "Save and Continue"
     And I select "British" from "nationality"
     And I check "not-subject-to-immigration-controls"
     And I check "no-employment-restrictions"
@@ -23,8 +23,8 @@ Feature: As an user, I want to be able to add details about myself on my account
   @CSR-24
   Scenario: Complete Nationality and immigration section (Dependant fields validation)
     Given I am logged in as "four@test.com" with password "P@ssword1"
-    And I follow "My Details"
-    Then I should see "About You"
+    And I follow "Profile"
+    Then I should see "First Name"
     And I select "British" from "nationality"
     When I press "save-and-continue"
     Then I should see "Please check whether or not you are subject to immigration controls"
@@ -50,9 +50,9 @@ Feature: As an user, I want to be able to add details about myself on my account
   @CSR-24
   Scenario: Complete Nationality and immigration section (Minimal happy path)
     Given I am logged in as "five@test.com" with password "P@ssword1"
-    And I follow "My Details"
-    Then I should see "About You"
-    And I follow "save-and-continue"
+    And I follow "Profile"
+    Then I should see "First Name"
+    And I press "Save and Continue"
     And I check "not-subject-to-immigration-controls"
     And I check "no-employment-restrictions"
     And I check "permission-to-undertake-checks"
