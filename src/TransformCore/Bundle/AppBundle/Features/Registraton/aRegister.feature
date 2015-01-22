@@ -34,8 +34,8 @@ Feature: As an user, I want to be able to register a new account, in order to ap
 
   Examples:
     | first-name | last-name | email-input       | phoneNumber | password  | disability | referrer-input   |
-    | One        | Persona   | persona1@test.com | 07739898078 | P@ssword1 | 1          | Search Engine    |
-    | Two        | persona   | persona2@test.com | 07739898079 | P@ssword1 | 1          | Friend or Family |
+    | One        | Persona   | one@test.com | 07739898078 | P@ssword1 | 1          | Search Engine    |
+    | Two        | persona   | two@test.com | 07739898079 | P@ssword1 | 1          | Friend or Family |
 
 
   @CSR-6
@@ -122,7 +122,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_email" with "email@test"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value is not a valid email address"
-    And I fill in "fos_user_registration_form_email" with "persona4@test.com"
+    And I fill in "fos_user_registration_form_email" with "four@test.com"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value should not be blank"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
@@ -158,4 +158,4 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "This value is already used"
   Examples:
     | email             |
-    | persona3@test.com |
+    | three@test.com |
