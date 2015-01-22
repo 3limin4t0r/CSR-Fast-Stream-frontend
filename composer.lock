@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ebe163bfea15257f246b1f35db031637",
+    "hash": "26ee05c1a3474d77e8c247d8d38f50ca",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -2441,19 +2441,20 @@
         },
         {
             "name": "transformcore/csr-fast-stream-domain-model",
-            "version": "dev-feature/CSR-135",
+            "version": "dev-feature/CSR-24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "26e00aff921ae54e42d87e7906f9ce684c5c3e47"
+                "reference": "2731f27759276533a62be11d59078bb7790ac8c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/26e00aff921ae54e42d87e7906f9ce684c5c3e47",
-                "reference": "26e00aff921ae54e42d87e7906f9ce684c5c3e47",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/2731f27759276533a62be11d59078bb7790ac8c6",
+                "reference": "2731f27759276533a62be11d59078bb7790ac8c6",
                 "shasum": ""
             },
             "require": {
+                "doctrine/orm": "~2.2,>=2.2.3",
                 "friendsofsymfony/user-bundle": "~2.0@dev",
                 "php": ">=5.3.2",
                 "symfony/form": "~2.3",
@@ -2475,7 +2476,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-22 14:49:56"
+            "time": "2015-01-22 17:06:21"
         },
         {
             "name": "twbs/bootstrap",

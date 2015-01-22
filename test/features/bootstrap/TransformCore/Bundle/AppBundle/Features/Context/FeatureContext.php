@@ -210,6 +210,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
         if (!preg_match($regex, $actual)) {
             $message = sprintf('The field "%s" value is "%s", but "%s" expected.', $field, $actual, $value);
+
             throw new \Exception($message);
         }
     }
@@ -293,4 +294,3 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     {
     }
 }
-

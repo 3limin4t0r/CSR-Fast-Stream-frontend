@@ -1,0 +1,2 @@
+TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility:
+    exclusion_policy: none
