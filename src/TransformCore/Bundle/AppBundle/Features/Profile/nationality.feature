@@ -2,14 +2,14 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   Background:
     Given following users for each persona exist on system:
-    |persona4@test.com|
-    |persona5@test.com|
-    And "persona4@test.com" has completed the "About you" section
-    And "persona5@test.com" has completed the "About you" section
+    |four@test.com|
+    |five@test.com|
+    And "four@test.com" has completed the "About you" section
+    And "five@test.com" has completed the "About you" section
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Happy path)
-    Given I am logged in as "persona4@test.com" with password "P@ssword1"
+    Given I am logged in as "four@test.com" with password "P@ssword1"
     And I follow "My Details"
     Then I should see "About You"
     And I follow "save-and-continue"
@@ -22,7 +22,7 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Dependant fields validation)
-    Given I am logged in as "persona4@test.com" with password "P@ssword1"
+    Given I am logged in as "four@test.com" with password "P@ssword1"
     And I follow "My Details"
     Then I should see "About You"
     And I select "British" from "nationality"
@@ -49,7 +49,7 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Minimal happy path)
-    Given I am logged in as "persona5@test.com" with password "P@ssword1"
+    Given I am logged in as "five@test.com" with password "P@ssword1"
     And I follow "My Details"
     Then I should see "About You"
     And I follow "save-and-continue"
