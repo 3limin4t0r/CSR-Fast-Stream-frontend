@@ -18,6 +18,6 @@ transform_core_app_account:
     path:     /account
     defaults: { _controller: TransformCoreAppBundle:Account:index }
 
-transform_core_app_eligibility:
-    path:     /eligibility
-    defaults: { _controller: TransformCoreAppBundle:Account:eligibility }
+transform_core_app_profile_edit:
+    path:     /account/edit
+    defaults: { _controller: TransformCoreAppBundle:Account:profile }

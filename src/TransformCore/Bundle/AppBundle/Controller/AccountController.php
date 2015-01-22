@@ -4,7 +4,8 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
 
 /**
  * Class AccountController
@@ -19,33 +20,47 @@ class AccountController extends Controller
     public function indexAction()
     {
         return $this->render('TransformCoreAppBundle:Account:index.html.twig',
-            array(
-
-            )
+            array()
         );
     }
 
-    public function eligibilityAction(Request $request)
+    /**
+     * @param Request $request
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function profileAction(Request $request)
     {
-        $form = $this->createForm(new EligibilityFormType());
+        $applicant = $this->get('transform_core_app_main.service.applicants')
+                          ->getById(
+                              $this->get('security.token_storage')
+                                   ->getToken()
+                                   ->getUser()
+                                   ->getId()
+                          );
+
+        $form = $this->createForm(new ProfileFormType(), $applicant);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
-            $eligibility = $form->getData();
+            $applicant = $form->getData();
 
-            // TODO: Save eligibility entity...
+            $this->get('transform_core_app_main.service.applicants')
+                 ->update($applicant);
 
             $request->getSession()
-                ->getFlashBag()
-                    ->add('success', 'Your changes were saved!');
+                    ->getFlashBag()
+                    ->add(
+                        'success',
+                        'Your changes were saved!'
+                    );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_eligibility')
+                $this->generateUrl('transform_core_app_profile_edit')
             );
         }
 
-        return $this->render(
-            'TransformCoreAppBundle:Account:eligibility.html.twig',
+        return $this->render('TransformCoreAppBundle:Account:profile.html.twig',
             array(
                 'form' => $form->createView(),
             )
