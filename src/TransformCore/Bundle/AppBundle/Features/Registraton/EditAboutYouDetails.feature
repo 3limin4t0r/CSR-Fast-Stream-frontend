@@ -2,12 +2,12 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   Background:
     Given following users for each persona exist on system:
-      | persona1@test.com |
-      | persona2@test.com |
+      | one@test.com |
+      | two@test.com |
 
   @CSR-135
   Scenario: Complete About You Section (Happy path)
-    Given I am logged in as "persona1@test.com" with password "P@ssword1"
+    Given I am logged in as "one@test.com" with password "P@ssword1"
     And I am on "/en/account/edit"
     Then I should see "First Name"
     And the "csr_dm_user_profile_firstname" field should contain "One"
@@ -54,7 +54,7 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   @CSR-135
   Scenario: Complete About You Section (Field validation)
-    Given I am logged in as "persona2@test.com" with password "P@ssword1"
+    Given I am logged in as "two@test.com" with password "P@ssword1"
     And I follow "Profile"
     Then I should see "First Name"
     And I fill in "csr_dm_user_profile_firstname" with "Bill1"
@@ -68,7 +68,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_profile_plainPassword_first" with "a"
     And I fill in "csr_dm_user_profile_plainPassword_second" with "a"
     And I fill in "csr_dm_user_profile_email" with "bill.carr@test"
-    And I fill in "csr_dm_user_profile_phoneNumber_number" with "abc"
+#    And I fill in "csr_dm_user_profile_phoneNumber_number" with "abc"
     And I press "Update"
     # Checking that field validation is working
     Then count of "2" instances of "This value should be of type alpha" exists on page
@@ -76,14 +76,14 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I should see "Must contain at least 1 number"
     And I should see "Must contain at least 1 symbol (eg. !@#$%^*_-)"
     And I should see "This value is not a valid email address"
-    And I should see "Date of birth in wrong format"
-    And I should see "Phone input in wrong format"
+#    And I should see "Date of birth in wrong format"
+#    And I should see "Phone input in wrong format"
     And I should see "Please accept terms and conditions before continuing"
     And I should see "Please tell us how you found faststream"
 
   @CSR-135
   Scenario: Complete About You Section (Mandatory fields)
-    Given I am logged in as "persona2@test.com" with password "P@ssword1"
+    Given I am logged in as "two@test.com" with password "P@ssword1"
     And I follow "Profile"
     Then I should see "First Name"
 #    And I check "sms-alerts-yes"
