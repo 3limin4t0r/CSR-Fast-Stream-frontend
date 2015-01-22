@@ -120,10 +120,12 @@ eligibility:
   permission-to-check-background:
     label: Please check box to indicate you give permission for us to undertake checks
   form:
-    dateOfBirth:
-      label: Date of Birth
     updateButton:
       label: Save and continue
+
+nationality:
+  name:
+    label: Naitionality
 
 profile:
   title: Profile
