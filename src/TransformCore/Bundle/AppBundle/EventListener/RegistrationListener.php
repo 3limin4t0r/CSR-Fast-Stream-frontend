@@ -8,6 +8,8 @@ use FOS\UserBundle\Event\UserEvent;
 use FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Nationality;
 use TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator;
 
 /**
@@ -60,6 +62,13 @@ class RegistrationListener implements EventSubscriberInterface
     public function onRegistrationInit(UserEvent $event)
     {
         $user = $event->getUser();
+
+        $eligibility = new Eligibility();
+        $nationality = new Nationality();
+
+        $eligibility->setPresentNationality($nationality);
+        $user->setEligibility($eligibility);
+
         $user->setUsername(
             $this->generator->getUsername()
         );
