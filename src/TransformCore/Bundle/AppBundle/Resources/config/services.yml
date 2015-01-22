@@ -33,6 +33,10 @@ services:
     class: TransformCore\Bundle\AppBundle\Service\Applicants
     arguments: [@transform_core_app_main.service.http, @jms_serializer  ]
 
+  transform_core_app_main.service.eligibility:
+    class: TransformCore\Bundle\AppBundle\Service\Eligibility
+    arguments: [@transform_core_app_main.service.http, @jms_serializer  ]
+
   transform_core_app_main.service.http:
     class: GuzzleHttp\Client
     arguments: [%api_url%]
