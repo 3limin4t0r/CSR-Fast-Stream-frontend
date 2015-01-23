@@ -93,3 +93,14 @@ Feature: As an user, I want to be able to add details about myself on my account
 #    And I should see "Please enter your daytime telephone number"
 #    And I should see "Please enter mobile number for sms alerts"
 
+  @CSR-135
+  Scenario: Password reset in About You Section
+    Given I am logged in as "one@test.com" with password "P@ssword1"
+    And I follow "Profile"
+    And I fill in "csr_dm_user_profile_plainPassword_first" with "P@ssword2"
+    And I fill in "csr_dm_user_profile_plainPassword_second" with "P@ssword2"
+    Then I press "Save and Continue"
+    And I follow "Logout"
+    When I am logged in as "one@test.com" with password "P@ssword2"
+    Then I should see "Logout"
+    And I should not see "Login"
