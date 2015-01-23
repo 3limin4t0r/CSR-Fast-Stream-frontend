@@ -134,3 +134,7 @@ profile:
       label: Date of Birth
     updateButton:
       label: Save and Continue
+
+phone-number:
+  number:
+    label: Phone Number
