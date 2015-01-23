@@ -8,9 +8,8 @@ Feature: As an user, I want to be able to add details about myself on my account
   @CSR-135
   Scenario: Complete About You Section (Happy path)
     Given I am logged in as "one@test.com" with password "P@ssword1"
-    And I am on "/en/account/edit"
-    Then I should see "First Name"
-    And the "csr_dm_user_profile_firstname" field should contain "One"
+    And I follow "Profile"
+    Then the "csr_dm_user_profile_firstname" field should contain "One"
     And the "csr_dm_user_profile_lastname" field should contain "Persona"
     And I fill in "csr_dm_user_profile_firstname" with "Onechange"
     And I fill in "csr_dm_user_profile_lastname" with "Personachange"
@@ -30,8 +29,8 @@ Feature: As an user, I want to be able to add details about myself on my account
 #    And I check "mobile-number-yes"
 #    # End of My Details step one form
     When I press "Save and Continue"
-    Then I should see "Your changes were saved"
-#    Then I follow "Go back the the previous section"
+    Then I should see "Nationality, Immigration and Employment Restrictions"
+    Then I follow "Profile"
     # Checking that values have been retained
     And the "csr_dm_user_profile_firstname" field should contain "Onechange"
     And the "csr_dm_user_profile_lastname" field should contain "Personachange"
@@ -56,7 +55,6 @@ Feature: As an user, I want to be able to add details about myself on my account
   Scenario: Complete About You Section (Field validation)
     Given I am logged in as "two@test.com" with password "P@ssword1"
     And I follow "Profile"
-    Then I should see "First Name"
     And I fill in "csr_dm_user_profile_firstname" with "Bill1"
     And I fill in "csr_dm_user_profile_lastname" with "C4@rr"
 #    And I fill in "csr_dm_user_profile_dateOfBirth" with "c/b/d"
@@ -94,3 +92,4 @@ Feature: As an user, I want to be able to add details about myself on my account
 #    And I should see "Please enter your date of birth"
 #    And I should see "Please enter your daytime telephone number"
 #    And I should see "Please enter mobile number for sms alerts"
+
