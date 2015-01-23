@@ -30,7 +30,8 @@
         "transformcore/csr-fast-stream-domain-model": "dev-feature/CSR-24",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
         "eddiejaoude/dev-helper-cmds": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "guzzlehttp/guzzle": "~5.1"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
