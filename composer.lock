@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d69a12b85d97a53acdca2869596cf551",
+    "hash": "26ee05c1a3474d77e8c247d8d38f50ca",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -2445,12 +2445,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "2731f27759276533a62be11d59078bb7790ac8c6"
+                "reference": "e3ec6824376b423990d3bbec9caeba3584c19fd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/2731f27759276533a62be11d59078bb7790ac8c6",
-                "reference": "2731f27759276533a62be11d59078bb7790ac8c6",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/e3ec6824376b423990d3bbec9caeba3584c19fd0",
+                "reference": "e3ec6824376b423990d3bbec9caeba3584c19fd0",
                 "shasum": ""
             },
             "require": {
@@ -2476,7 +2476,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-22 17:06:21"
+            "time": "2015-01-23 05:09:01"
         },
         {
             "name": "twbs/bootstrap",
@@ -2895,12 +2895,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/MinkExtension.git",
-                "reference": "ad17b046496593ddd89d0236c46feb1bf1326dff"
+                "reference": "ba5329be65a816adfc2d9ba9b639a92f548371da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/ad17b046496593ddd89d0236c46feb1bf1326dff",
-                "reference": "ad17b046496593ddd89d0236c46feb1bf1326dff",
+                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/ba5329be65a816adfc2d9ba9b639a92f548371da",
+                "reference": "ba5329be65a816adfc2d9ba9b639a92f548371da",
                 "shasum": ""
             },
             "require": {
@@ -2946,7 +2946,7 @@
                 "test",
                 "web"
             ],
-            "time": "2015-01-19 10:19:43"
+            "time": "2015-01-23 00:01:18"
         },
         {
             "name": "behat/mink-goutte-driver",
