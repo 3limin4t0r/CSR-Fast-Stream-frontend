@@ -24,6 +24,6 @@ parameters:
     use_assetic_controller: true
 
     api_url:
-        base_url: http://127.0.0.1:8001
+        base_url: "%api.url%"
 
     jms_serializer.camel_case_naming_strategy.class: JMS\Serializer\Naming\IdenticalPropertyNamingStrategy
