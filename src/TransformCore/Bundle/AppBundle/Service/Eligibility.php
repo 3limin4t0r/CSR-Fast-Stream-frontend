@@ -63,7 +63,7 @@ class Eligibility
                 '/applicants/' . $eligibility->getId() . '/eligibility',
                 array(
                     'body' => array(
-                        'csr_dm_user_profile' => json_decode(
+                        'csr_dm_user_eligibility' => json_decode(
                             $this->serializer
                                 ->serialize(
                                     $eligibility,
