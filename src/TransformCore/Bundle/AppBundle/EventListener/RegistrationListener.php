@@ -63,12 +63,6 @@ class RegistrationListener implements EventSubscriberInterface
     {
         $user = $event->getUser();
 
-        $eligibility = new Eligibility();
-        $nationality = new Nationality();
-
-        $eligibility->setPresentNationality($nationality);
-        $user->setEligibility($eligibility);
-
         $user->setUsername(
             $this->generator->getUsername()
         );
