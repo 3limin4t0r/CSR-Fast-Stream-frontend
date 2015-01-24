@@ -19,7 +19,10 @@ after_success:
 
 after_failure:
   - make symfony.logs
-  - make build.package
+  - php app/console cache:clear --env=prod
+  - php app/console assets:install --env=prod
+  - php app/console assetic:dump --env=prod
+  - make build.tag
 
 branches:
   except:
