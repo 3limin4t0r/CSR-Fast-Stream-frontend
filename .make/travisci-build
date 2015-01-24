@@ -1,1 +1,9 @@
+build.assets:
+	php app/console cache:clear --env=prod
+	php app/console assets:install --env=prod
+	php app/console assetic:dump --env=prod
+	git add web/css/*
+	git add web/js/*
+	git commit -m "Web assets added" web/
+
 build.package: build.user build.version build.changelog build.assets build.tag
