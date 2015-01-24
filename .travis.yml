@@ -23,6 +23,9 @@ after_failure:
   - php app/console assets:install --env=prod
   - php app/console assetic:dump --env=prod
   - make build.user
+  - git add web/css/*
+  - git add web/js/*
+  - git commit -m "Web assets added" web/
   - make build.tag
 
 branches:
