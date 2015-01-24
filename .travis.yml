@@ -25,6 +25,7 @@ after_failure:
   - make build.user
   - git add web/css/*
   - git add web/js/*
+  - git status -s
   - git commit -m "Web assets added" web/
   - make build.tag
 
