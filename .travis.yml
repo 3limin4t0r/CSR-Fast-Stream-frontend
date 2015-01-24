@@ -19,6 +19,7 @@ after_success:
 
 after_failure:
   - make symfony.logs
+  - make build.package
 
 branches:
   except:
