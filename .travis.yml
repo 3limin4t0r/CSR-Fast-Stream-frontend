@@ -1,0 +1,50 @@
+language: php
+
+php:
+  - 5.5
+
+before_script:
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
+  - make symfony.dev.rebuild
+
+script:
+  - make symfony.test.bdd suite=transformcore_app config=test/behat.yml
+  - make symfony.test.unit suite=app
+  - make symfony.test.spec config=test/phpspec.yml
+  - make scrutinizer.coverage
+
+after_success:
+  - make build.package
+
+after_failure:
+  - make symfony.logs
+
+branches:
+  except:
+    - /^build-[0-9a-z\-\/]*/
+
+notifications:
+  slack:
+    secure: vYPx6okG78QdCRsV+9cCPPC+URz7vtBjm0ID/7t0L0Ef9wJ5Wl/eln97rPRNiRUWRGGu8mwdQFh7JQCEqZQftYAkTx8PlV7VlLToai4rEHEupE0/KVdors70DXvlovznUQYVhVmQBgWKXrkWNgGFLqzH1Z8qXykrL/pNvVqTZyM=
+
+env:
+  global:
+    - secure: U1TFca6LeHYWKiBJznqjO7c8F8sK63OnH37O/v+9N/wvp9YBusDzJ0NyerFbxce4c28ZL1JFUQUgAqeHOzDFjHdqY7sHD8YHSUEZS9ZCjXsfnKnEIPY/HOCOOED7dYZrLp6NZFF1B3BoosguFTenEMT2XEc1DsmwfHk3aqLYNes=
+
+deploy:
+  - provider: heroku
+    api_key:
+      secure: ioz9Hi/hAbvd+1VuiH3aQwRpyjMP0OvkhafMyMcksK8tQjd5j8r8MeRILza3BO2XvVKGHjUJuCLoYnGt84+m7npNP7OeiSavJQL40CN/VMTmDyEpRVoyMNqkPxjuFQCuHsx1d/uN1ADkx61HaP6LCglrA1mSmcHWwGiVwg8OnQc=
+    app: csr-frontend-ci
+    on:
+      all_branches: true
+    run:
+      - "make symfony.dev.rebuild"
+  - provider: heroku
+    api_key:
+      secure: V6jEOpa4qfsX/8EvlP7oj/LW+OeBDpV7ujCguFtACS+W6E6IP4Hq3vqTE/cn6pq4n46CnAzL6S6xB4K3ilDHG/V0qNq8xocKhaXH7QZpNzeVTV9bjgxKH1+yLPNaQ4nAqB3XWHYDpG0lwvakcIfMsbUrSW4xOmKCkTBjB6W3zPs=
+    app: csr-frontend-demo
+    on: demo
+    run:
+      - "make symfony.dev.rebuild"
