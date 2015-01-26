@@ -44,11 +44,11 @@ Feature: As an user, I want to be able to add details about myself on my account
     When I press "Save and Continue"
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill in "csr_dm_user_eligibility_presentNationality_name" with "British"
-#    And I check "csr_dm_user_eligibility_subjectToImmigrationControls"
-#    And I check "csr_dm_user_eligibility_residencyOrEmploymentRestrictions"
+    And I check "csr_dm_user_eligibility_subjectToImmigrationControls"
+    And I check "csr_dm_user_eligibility_residencyOrEmploymentRestrictions"
     And I check "csr_dm_user_eligibility_permissionToCheckBackground"
     Then I press "Save and continue"
-    Then I should see "Education"
+    Then I should see "Your changes were saved"
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Dependant fields validation)
@@ -73,10 +73,10 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Please check box to indicate you give permission for us to undertake checks"
     And I check "csr_dm_user_eligibility_permissionToCheckBackground"
     And I press "Save and continue"
-    Then I should see "Education"
-    And I follow "go back to the previous section"
-    Then the "csr_dm_user_eligibility_subjectToImmigrationControlsDetails" field should contain "Some immigration controls detail"
-    And the "csr_dm_user_eligibility_residencyOrEmploymentRestrictionsDetails" field should contain "Some employment restrictions detail"
+    Then I should see "Your changes were saved"
+#    And I follow "go back to the previous section"
+#    Then the "csr_dm_user_eligibility_subjectToImmigrationControlsDetails" field should contain "Some immigration controls detail"
+#    And the "csr_dm_user_eligibility_residencyOrEmploymentRestrictionsDetails" field should contain "Some employment restrictions detail"
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Minimal happy path)
@@ -86,4 +86,4 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill in "csr_dm_user_eligibility_presentNationality_name" with "British"
     And I press "Save and continue"
-    Then I should see "Education"
+    Then I should see "Your changes were saved"
