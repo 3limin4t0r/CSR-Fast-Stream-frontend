@@ -4,8 +4,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     Given following users for each persona exist on system:
     |four@test.com|
     |five@test.com|
-    And "four@test.com" has completed the "About you" section
-    And "five@test.com" has completed the "About you" section
+    And "four@test.com" has completed sections "About you"
+    And "five@test.com" has completed sections "About you"
 
 
   @CSR-135
