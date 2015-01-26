@@ -1,7 +1,11 @@
 language: php
+sudo: false
 
 php:
   - 5.5
+
+before_install:
+  - mysql -e "create database IF NOT EXISTS csr;" -uroot
 
 before_script:
   - curl -s http://getcomposer.org/installer | php
@@ -24,6 +28,9 @@ branches:
   except:
     - /^build-[0-9a-z\-\/]*/
 
+services:
+  - mysql
+
 notifications:
   slack:
     secure: vYPx6okG78QdCRsV+9cCPPC+URz7vtBjm0ID/7t0L0Ef9wJ5Wl/eln97rPRNiRUWRGGu8mwdQFh7JQCEqZQftYAkTx8PlV7VlLToai4rEHEupE0/KVdors70DXvlovznUQYVhVmQBgWKXrkWNgGFLqzH1Z8qXykrL/pNvVqTZyM=
@@ -31,6 +38,10 @@ notifications:
 env:
   global:
     - secure: U1TFca6LeHYWKiBJznqjO7c8F8sK63OnH37O/v+9N/wvp9YBusDzJ0NyerFbxce4c28ZL1JFUQUgAqeHOzDFjHdqY7sHD8YHSUEZS9ZCjXsfnKnEIPY/HOCOOED7dYZrLp6NZFF1B3BoosguFTenEMT2XEc1DsmwfHk3aqLYNes=
+    - SYMFONY__DATABASE__HOST="127.0.0.1"
+    - SYMFONY__DATABASE__NAME="csr"
+    - SYMFONY__DATABASE__USER="travis"
+    - SYMFONY__DATABASE__PASSWORD=""
 
 deploy:
   provider: heroku
