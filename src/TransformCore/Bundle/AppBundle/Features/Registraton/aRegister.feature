@@ -7,7 +7,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "Register Your Details"
     When I fill form with:
     # Your details
-      | fos_user_registration_form_firstname                               | <first-name>                            |
+      | fos_user_registration_form_firstname                             | <first-name>                            |
       | fos_user_registration_form_lastname                                | <last-name>                             |
         # Contact details                                                  
       | fos_user_registration_form_email                                   | <email-input>                           |
