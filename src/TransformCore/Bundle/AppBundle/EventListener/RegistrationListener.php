@@ -8,8 +8,6 @@ use FOS\UserBundle\Event\UserEvent;
 use FOS\UserBundle\FOSUserEvents;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Nationality;
 use TransformCore\Bundle\AppBundle\Service\RandomUsernameGenerator;
 
 /**
