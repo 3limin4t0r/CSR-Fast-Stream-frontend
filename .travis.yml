@@ -33,11 +33,18 @@ env:
     - secure: U1TFca6LeHYWKiBJznqjO7c8F8sK63OnH37O/v+9N/wvp9YBusDzJ0NyerFbxce4c28ZL1JFUQUgAqeHOzDFjHdqY7sHD8YHSUEZS9ZCjXsfnKnEIPY/HOCOOED7dYZrLp6NZFF1B3BoosguFTenEMT2XEc1DsmwfHk3aqLYNes=
 
 deploy:
-  provider: heroku
-  api_key:
-    secure: ioz9Hi/hAbvd+1VuiH3aQwRpyjMP0OvkhafMyMcksK8tQjd5j8r8MeRILza3BO2XvVKGHjUJuCLoYnGt84+m7npNP7OeiSavJQL40CN/VMTmDyEpRVoyMNqkPxjuFQCuHsx1d/uN1ADkx61HaP6LCglrA1mSmcHWwGiVwg8OnQc=
-  app: csr-frontend-ci
-  on:
-    all_branches: true
-  run:
+  - provider: heroku
+    api_key:
+      secure: ioz9Hi/hAbvd+1VuiH3aQwRpyjMP0OvkhafMyMcksK8tQjd5j8r8MeRILza3BO2XvVKGHjUJuCLoYnGt84+m7npNP7OeiSavJQL40CN/VMTmDyEpRVoyMNqkPxjuFQCuHsx1d/uN1ADkx61HaP6LCglrA1mSmcHWwGiVwg8OnQc=
+    app: csr-frontend-ci
+    on:
+      all_branches: true
+    run:
+      - "make symfony.dev.rebuild"
+  - provider: heroku
+    api_key:
+      secure: V6jEOpa4qfsX/8EvlP7oj/LW+OeBDpV7ujCguFtACS+W6E6IP4Hq3vqTE/cn6pq4n46CnAzL6S6xB4K3ilDHG/V0qNq8xocKhaXH7QZpNzeVTV9bjgxKH1+yLPNaQ4nAqB3XWHYDpG0lwvakcIfMsbUrSW4xOmKCkTBjB6W3zPs=
+    app: csr-frontend-demo
+    on: demo
+    run:
       - "make symfony.dev.rebuild"
