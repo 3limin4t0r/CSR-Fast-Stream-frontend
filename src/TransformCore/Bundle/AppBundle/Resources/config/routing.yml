@@ -1,0 +1,19 @@
+transform_core_app_changelog:
+    path:     /changelog
+    defaults: { _controller: TransformCoreAppBundle:Default:changelog }
+
+transform_core_app_homepage:
+    path:     /
+    defaults: { _controller: TransformCoreAppBundle:Default:index }
+
+transform_core_app_guaranteed_interview_scheme:
+    path:     /guaranteed-interview-scheme
+    defaults: { _controller: TransformCoreAppBundle:Default:guaranteedInterviewScheme }
+
+transform_core_app_terms_and_conditions:
+    path:     /terms-and-conditions
+    defaults: { _controller: TransformCoreAppBundle:Default:termsAndConditions }
+
+transform_core_app_account:
+    path:     /account
+    defaults: { _controller: TransformCoreAppBundle:Account:index }
