@@ -1,0 +1,91 @@
+project:
+  name: CSR
+
+nav:
+  home: Home
+  register: Register
+  login: Login
+  logout: Logout
+
+home:
+  title: CSR
+
+form:
+  select: Please Select
+
+login:
+  title: Login
+  subtitle: Register Your Details
+  form:
+    username:
+      label: Email address
+    password:
+      label: Password
+    login:
+      label: Login
+
+register:
+  title: Register
+  subtitle: Register Your Details
+  form:
+    firstname:
+      label: First Name
+    lastname:
+      label: Last Name
+    email:
+      label: Email
+    password:
+      label: Password
+    password-confirm:
+      label: Confirm Password
+    heard-about-us:
+      label: Please tell us where you first heard about Fast Stream
+    disabled-title: Registered Disability
+    disabled-subtitle1: If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail.
+    disabled-subtitle2: Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
+    disabled-adjustment-required:
+      label: I require adjustments based on my disability
+    disabled-details:
+      label: Please describe your disability
+    phone-number-1:
+      label: Please provide your telephone number
+    phone-number-2:
+      label: Please provide another telephone number (optional)
+    disabled-adjustment-details:
+      label: Please tell us what adjustments you require based on your disability
+    guaranteed-interview-scheme:
+      label: I wish to apply via the Guaranteed Interview Scheme
+      link: What is the Guaranteed Interview Scheme?
+    terms-and-conditions-title: Acknowledge Terms & Conditions
+    terms-and-conditions-subtitle: Please review our terms and conditions detailing how we use your personal data, and indicate your consent below
+    terms-and-conditions:
+      label: Please confirm your consent to the use of your personal data in the ways described above
+    register-button:
+      label: Register
+
+termsAndConditions:
+  title: Terms and Conditions
+  paragraph:
+    - We take our obligations under data protection legislation seriously. These require us to explain how the data you provide during this registration and application process will be used, together with other personal data that may be created in connection with your application, such as test results.
+    - Your data will be held in secure conditions with access restricted to those who need it to deal with your application, selection and assignment to a department (i.e. employees of our service provider, Parity, and those involved in the Fast Stream selection and assignment processes). If you are successful, the data will be passed by secure means to your employing department. Data may also be used to monitor the effectiveness of the Fast Stream selection process. No individual will be identifiable in any analysis or other outputs from such monitoring. If you are unsuccessful, the data will be kept in secure conditions for up to five years to enable us to analyse the effectiveness of the Fast Stream selection process.
+    - If you are successful, we shall ask you to provide additional information to enable us to confirm your eligibility to join the Fast Stream. This information will be passed securely to your employing department and will not be used for monitoring or statistical purposes.
+    - Use of cookies. The only cookies we store on your computer are to enable you to establish secure sessions to our website. No other cookies are used.
+  table:
+    title:
+      col1: Site
+      col2: Cookie Name
+      col3: Purpose
+    row1:
+      col1: candidate.faststream.gov.uk
+      col2: ASP.NET_SessionId
+      col3: This cookie creates a session id for the use of our website by a unique visitor and authenticates the session. This cookie expires when you close your browser.
+    row2:
+      col1: candidate.faststream.gov.uk
+      col2: fmLogin
+      col3: This cookie is also essential to establish your secure login to our website and you will not be able to establish a session without it.
+
+guaranteedInterviewScheme:
+  title: Guaranteed Interview Scheme
+
+account:
+  title: My Account
