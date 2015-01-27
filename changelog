@@ -1,0 +1,61 @@
+9c56bb0	Travis CI	Tue Jan 27 12:42:29 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-579
+e9cbf78	Eddie Jaoude	Tue Jan 27 12:38:19 2015 +0000	Updated composer to require php ext intl
+7c23bec	Eddie Jaoude	Tue Jan 27 12:35:35 2015 +0000	Revert "Revert "Composer internationalisation php extension added""
+08a5aa8	Eddie Jaoude	Tue Jan 27 12:19:57 2015 +0000	Revert "Composer internationalisation php extension added"
+d6e0610	Eddie Jaoude	Tue Jan 27 12:00:03 2015 +0000	Composer internationalisation php extension added
+db320fd	Eddie Jaoude	Tue Jan 27 11:07:28 2015 +0000	Removed PHPSpec tests just to deploy debug code
+4e3e663	Eddie Jaoude	Tue Jan 27 11:07:00 2015 +0000	Revert "Temporary simplification of CI config to deploy"
+1e3830d	Eddie Jaoude	Tue Jan 27 11:03:50 2015 +0000	Temporary simplification of CI config to deploy
+92298ef	Eddie Jaoude	Tue Jan 27 11:02:54 2015 +0000	Revert "Simplified build just for a deploy"
+4b0d993	Eddie Jaoude	Tue Jan 27 10:56:29 2015 +0000	Simplified build just for a deploy
+d860abf	Eddie Jaoude	Tue Jan 27 10:50:54 2015 +0000	Logging added to Applicants Service
+6239713	Eddie Jaoude	Tue Jan 27 10:00:30 2015 +0000	Revert "PHP version requirements"
+e6078d6	Eddie Jaoude	Tue Jan 27 09:58:35 2015 +0000	PHP version requirements
+788b4c3	Eddie Jaoude	Tue Jan 27 07:28:53 2015 +0000	Revert "[CSR-207] Refactored CI B/E dependency to make cmd"
+16ff90c	Eddie Jaoude	Tue Jan 27 07:19:47 2015 +0000	[CSR-207] Refactored CI B/E dependency to make cmd
+b9d0e54	Eddie Jaoude	Tue Jan 27 06:57:44 2015 +0000	Revert "[CSR-207] try/catch on first Profile API request"
+2fb5acf	Eddie Jaoude	Tue Jan 27 06:29:44 2015 +0000	[CSR-207] try/catch on first Profile API request
+880f29d	Eddie Jaoude	Tue Jan 27 06:28:26 2015 +0000	Marked CI config to be refactored
+cb2d6f1	Eddie Jaoude	Tue Jan 27 05:24:31 2015 +0000	Send B/E API server into background on CI
+6478fe9	Eddie Jaoude	Tue Jan 27 05:21:19 2015 +0000	Updated branch name for B/E build as dep on CI
+148cb95	Eddie Jaoude	Tue Jan 27 05:18:23 2015 +0000	Create B/E API dependency on CI
+cfee816	Paul Littlebury	Mon Jan 26 16:39:40 2015 +0000	Added error trapping for login test
+03432e5	Paul Littlebury	Mon Jan 26 16:25:27 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+4faf2c4	Paul Littlebury	Mon Jan 26 16:24:38 2015 +0000	Cosmetic - Tidied register/about you profile
+d597c19	Jamie Burns	Mon Jan 26 16:21:51 2015 +0000	Removing phpunit test call from Robofile
+49531d4	Jamie Burns	Mon Jan 26 16:14:56 2015 +0000	Composer lock update
+fe79019	Jamie Burns	Mon Jan 26 16:14:46 2015 +0000	Removing phpunit test support
+7e86c7a	Jamie Burns	Mon Jan 26 16:14:37 2015 +0000	Removing phpunit tests
+d42421b	Paul Littlebury	Mon Jan 26 16:08:22 2015 +0000	Fixed nationality test
+a7149e4	Eddie Jaoude	Mon Jan 26 12:45:08 2015 +0000	Remove committed local password mistake
+8ab13cf	Eddie Jaoude	Mon Jan 26 12:42:55 2015 +0000	[CSR-24] Update CI config for DB
+6a273dd	Jamie Burns	Mon Jan 26 12:18:43 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+f561199	Jamie Burns	Mon Jan 26 12:18:35 2015 +0000	Removed imports that are no longer required
+8d76894	Eddie Jaoude	Mon Jan 26 12:17:46 2015 +0000	[CSR-24] Added in MySQL services to CI
+2b437a9	Paul Littlebury	Mon Jan 26 11:11:48 2015 +0000	added new features with @omit tag - will not touch CSR-24 anymore now
+10c8e26	Paul Littlebury	Mon Jan 26 11:03:56 2015 +0000	Feature file tidyup
+48fbbbb	Paul Littlebury	Mon Jan 26 10:17:26 2015 +0000	brought CSR-24 up to date enough to merge back into develop
+e448c3c	Jamie Burns	Fri Jan 23 16:14:15 2015 +0000	Removed entity creation (handled in Domain Model)
+2a5d9f6	Paul Littlebury	Fri Jan 23 15:02:58 2015 +0000	CSR-135 added tests to check reset password
+258a69f	Paul Littlebury	Fri Jan 23 10:22:23 2015 +0000	CSR-24 Gherkin fully updated - important this is merged to develop and other branches updated
+5810e57	Paul Littlebury	Fri Jan 23 10:14:25 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+62d1b17	Paul Littlebury	Fri Jan 23 10:14:07 2015 +0000	CSR-24 updated tests for nationality
+f0f10bc	Jamie Burns	Fri Jan 23 09:57:12 2015 +0000	Spelling correction
+8a01af5	Eddie Jaoude	Fri Jan 23 06:17:33 2015 +0000	[CSR-135] Phone number localisation text updated
+18ed4b6	Eddie Jaoude	Fri Jan 23 06:04:13 2015 +0000	[CSR-207] Serialisation type added for Applicant
+3e947f4	Eddie Jaoude	Fri Jan 23 05:56:18 2015 +0000	[CSR-207] Including Guzzle for production mode
+8ae56a5	Eddie Jaoude	Fri Jan 23 05:48:14 2015 +0000	[CSR-207] Backend API as PARAM/ENV variable
+64a881a	Eddie Jaoude	Fri Jan 23 05:36:17 2015 +0000	[cSR-24] Updated D/M dependency
+20379b0	Eddie Jaoude	Fri Jan 23 05:33:09 2015 +0000	[CSR-24] Renamed key for update Eligibility
+7685059	Eddie Jaoude	Fri Jan 23 05:32:50 2015 +0000	[CSR-24] Localisation for phone number
+de7be3c	Jamie Burns	Thu Jan 22 22:46:06 2015 +0000	Composer lock
+f443588	Jamie Burns	Thu Jan 22 22:34:26 2015 +0000	Applicant Eligibility entities created on registration
+3076e86	Paul Littlebury	Thu Jan 22 20:49:40 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+cf7f42d	Paul Littlebury	Thu Jan 22 20:48:54 2015 +0000	CSR-24 fixed/updated gherkin tests
+07e95ac	Paul Littlebury	Thu Jan 22 20:04:48 2015 +0000	correct register feature which was out of step
+d03b81d	Eddie Jaoude	Thu Jan 22 20:04:22 2015 +0000	[CSR-24] [INCOMPLETE] Eligibility Server
+c109421	Eddie Jaoude	Thu Jan 22 20:03:55 2015 +0000	[CSR-24] Nationality location form field
+8e41a1d	Paul Littlebury	Thu Jan 22 19:54:31 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+9630be4	Paul Littlebury	Thu Jan 22 19:54:28 2015 +0000	added stub for future tests
+a7b6174	Eddie Jaoude	Thu Jan 22 19:04:48 2015 +0000	[CSR-24] End of file blank line
+518e881	Eddie Jaoude	Thu Jan 22 19:04:31 2015 +0000	[CSR-24] Re-ordered routing
