@@ -7,48 +7,48 @@ Feature: As an applicant, after completing all profile sections, I want to be ab
     Then I should see "Register Your Details"
     When I fill form with:
     # Your details
-      | fos_user_registration_form_firstname                             | <first-name>                            |
-      | fos_user_registration_form_lastname                                | <last-name>                             |
+      | fos_user_registration_form_firstname                               | <first-name>                     |
+      | fos_user_registration_form_lastname                                | <last-name>                      |
         # Contact details
-      | fos_user_registration_form_email                                   | <email-input>                           |
+      | fos_user_registration_form_email                                   | <email-input>                    |
         # Signin Details
-      | fos_user_registration_form_plainPassword_first                    | <password>                              |
-      | fos_user_registration_form_plainPassword_second                    | <password>                              |
+      | fos_user_registration_form_plainPassword_first                     | <password>                       |
+      | fos_user_registration_form_plainPassword_second                    | <password>                       |
         # Referrer
-      | fos_user_registration_form_registration_heardAboutUs               | <referrer-input> |
+      | fos_user_registration_form_registration_heardAboutUs               | <referrer-input>                 |
         # Disability details
-      | fos_user_registration_form_registration_disabledAdjustmentRequired | YES                                     |
-      | fos_user_registration_form_registration_disabledDetails            | <disability>                            |
+      | fos_user_registration_form_registration_disabledAdjustmentRequired | YES                              |
+      | fos_user_registration_form_registration_disabledDetails            | <disability>                     |
       | fos_user_registration_form_registration_disabledAdjustmentDetails  | some disability adjustments text
-      | fos_user_registration_form_phoneNumber_number                      | <phoneNumber>                          |
+      | fos_user_registration_form_phoneNumber_number                      | <phoneNumber>                    |
     # Checkboxes
-      | fos_user_registration_form_registration_guaranteedInterviewScheme  | YES |
-      | fos_user_registration_form_registration_termsAndConditions         | YES |
+      | fos_user_registration_form_registration_guaranteedInterviewScheme  | YES                              |
+      | fos_user_registration_form_registration_termsAndConditions         | YES                              |
     And I press "fos_user_registration_form_registerButton"
     Then I should see "The user has been created successfully"
     And I follow "Profile"
     When I fill form with:
-      | csr_dm_user_profile_firstname | Onechange |
-      | csr_dm_user_profile_lastname | Personachange |
-      | csr_dm_user_profile_address_line1 | address line one |
-      | csr_dm_user_profile_address_line2 | address line two |
-      | csr_dm_user_profile_address_line3 | address line three |
-      | csr_dm_user_profile_address_town | a town |
-      | csr_dm_user_profile_address_county | a county |
-      | csr_dm_user_profile_address_postcode | post code |
-      | csr_dm_user_profile_dateOfBirth | 1968-08-02 |
-      | csr_dm_user_profile_phoneNumber_number | 07951234567 |
-      | United Kingdom | csr_dm_user_profile_address_country |
+      | csr_dm_user_profile_firstname          | Onechange                           |
+      | csr_dm_user_profile_lastname           | Personachange                       |
+      | csr_dm_user_profile_address_line1      | address line one                    |
+      | csr_dm_user_profile_address_line2      | address line two                    |
+      | csr_dm_user_profile_address_line3      | address line three                  |
+      | csr_dm_user_profile_address_town       | a town                              |
+      | csr_dm_user_profile_address_county     | a county                            |
+      | csr_dm_user_profile_address_postcode   | post code                           |
+      | csr_dm_user_profile_dateOfBirth        | 1968-08-02                          |
+      | csr_dm_user_profile_phoneNumber_number | 07951234567                         |
+      | United Kingdom                         | csr_dm_user_profile_address_country |
     When I press "Save and Continue"
     Then I should see "Nationality, Immigration and Employment Restrictions"
     When I fill form with:
-      | csr_dm_user_eligibility_presentNationality_name | British |
-      | csr_dm_user_eligibility_subjectToImmigrationControls | No |
-      | csr_dm_user_eligibility_residencyOrEmploymentRestrictions| No |
-      | csr_dm_user_eligibility_permissionToCheckBackground| Yes |
-      |I want to apply for the Early Diversity Internship Programme or the Summer Diversity Internship Programme | Yes |
-      |early-diversity-internship-programme-no | No |
-     |summer-diversity-internship-programme-no | No |
+      | csr_dm_user_eligibility_presentNationality_name                                                           | British |
+      | csr_dm_user_eligibility_subjectToImmigrationControls                                                      | No      |
+      | csr_dm_user_eligibility_residencyOrEmploymentRestrictions                                                 | No      |
+      | csr_dm_user_eligibility_permissionToCheckBackground                                                       | Yes     |
+      | I want to apply for the Early Diversity Internship Programme or the Summer Diversity Internship Programme | Yes     |
+      | early-diversity-internship-programme-no                                                                   | No      |
+      | summer-diversity-internship-programme-no                                                                  | No      |
     And I press "Save and continue"
     Then I should see "Diversity"
     And I fill form with:
@@ -87,5 +87,5 @@ Feature: As an applicant, after completing all profile sections, I want to be ab
     And I should see "Socio Economic Details"
 
   Examples:
-  | first-name | last-name | email-input       | phoneNumber | password  | disability | referrer-input   |
-  | ninetynine        | Persona   | ninetynine@test.com | 07739898078 | P@ssword1 | 1          | Search Engine    |
+    | first-name | last-name | email-input         | phoneNumber | password  | disability | referrer-input |
+    | ninetynine | Persona   | ninetynine@test.com | 07739898078 | P@ssword1 | 1          | Search Engine  |

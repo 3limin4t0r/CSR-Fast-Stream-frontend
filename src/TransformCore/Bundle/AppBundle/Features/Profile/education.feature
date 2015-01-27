@@ -2,12 +2,12 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 
   Background:
     Given following users for each persona exist on system:
-      | six@test.com |
+      | six@test.com   |
       | seven@test.com |
     And "six@test.com" has completed sections "About You, Nationality"
     And "seven@test.com" has completed sections "About You, Nationality"
 
-@CSR-26 @omit
+  @CSR-26 @omit
   Scenario: Add education details (no degree needed)
     Given I am logged in as "six@test.com" with password "P@ssword1"
     And I follow "My Details"
