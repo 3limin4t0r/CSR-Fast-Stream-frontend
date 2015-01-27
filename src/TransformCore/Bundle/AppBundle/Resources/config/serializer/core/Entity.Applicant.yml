@@ -3,6 +3,7 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
     properties:
         id:
             type: integer
+            expose: true
         firstname:
             expose: true
         lastname:
@@ -13,5 +14,5 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
             expose: true
             type: DateTime<'Y-m-d'>
         address:
-            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Address
             expose: true
+            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Address
