@@ -19,7 +19,7 @@ before_script:
   - cd CSR-Fast-Stream-backend/
   - git checkout feature/CSR-24
   - php composer.phar install --dev --no-interaction
-  - make symfony.server
+  - make symfony.server &
   - cd ..
   - make symfony.dev.rebuild
 
