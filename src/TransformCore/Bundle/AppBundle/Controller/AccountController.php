@@ -34,13 +34,29 @@ class AccountController extends Controller
      */
     public function profileAction(Request $request)
     {
-        $applicant = $this->get('transform_core_app_main.service.applicants')
-                          ->getById(
-                              $this->get('security.token_storage')
-                                   ->getToken()
-                                   ->getUser()
-                                   ->getId()
-                          );
+        try {
+            $applicant = $this->get('transform_core_app_main.service.applicants')
+                              ->getById(
+                                  $this->get('security.token_storage')
+                                       ->getToken()
+                                       ->getUser()
+                                       ->getId()
+                              );
+        } catch(\Exception $e) {
+            $logger = $this->get('logger');
+            $logger->error($e->getMessage());
+
+            $request->getSession()
+                    ->getFlashBag()
+                    ->add(
+                        'error',
+                        'An error occurred.'
+                    );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_account')
+            );
+        }
 
         $form = $this->createForm(new ProfileFormType(), $applicant);
         $form->handleRequest($request);
