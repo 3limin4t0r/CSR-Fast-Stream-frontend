@@ -14,7 +14,7 @@ before_script:
   - git clone https://github.com/TransformCore/CSR-Fast-Stream-backend.git
   - cp composer.phar CSR-Fast-Stream-backend/
   - cd CSR-Fast-Stream-backend/
-  - git checkout feature/CSR-24
+  - git checkout develop
   - php composer.phar install --dev --no-interaction
   - make symfony.server &
   - cd ..
