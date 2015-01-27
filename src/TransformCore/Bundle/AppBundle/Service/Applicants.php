@@ -53,14 +53,14 @@ class Applicants
 
     /**
      * @param Applicant $applicant
-     *
-     * @return Applicant
      */
     public function update(Applicant $applicant)
     {
+        $endpoint = '/applicants/'.$applicant->getId();
+
         $response = $this->client
             ->put(
-                '/applicants/' . $applicant->getId(),
+                $endpoint,
                 array(
                     'body' => array(
                         'csr_dm_user_profile' => json_decode(
@@ -73,7 +73,5 @@ class Applicants
                     )
                 )
             );
-
-        return $applicant;
     }
 }

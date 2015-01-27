@@ -77,13 +77,13 @@ class AccountController extends Controller
      */
     public function eligibilityAction(Request $request)
     {
-        $eligibility = $this->get('transform_core_app_main.service.eligibility')
-                          ->getById(
-                              $this->get('security.token_storage')
+        $applicantId = $this->get('security.token_storage')
                                    ->getToken()
                                    ->getUser()
-                                   ->getId()
-                          );
+                                   ->getId();
+        
+        $eligibility = $this->get('transform_core_app_main.service.eligibility')
+                          ->getById($applicantId);
 
         $form = $this->createForm(new EligibilityFormType(), $eligibility);
         $form->handleRequest($request);
@@ -92,7 +92,7 @@ class AccountController extends Controller
             $eligibility = $form->getData();
 
             $this->get('transform_core_app_main.service.eligibility')
-                 ->update($eligibility);
+                 ->update($applicantId, $eligibility);
 
             $request->getSession()
                     ->getFlashBag()
