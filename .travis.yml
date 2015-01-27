@@ -17,7 +17,7 @@ before_script:
   - git checkout develop
   - php composer.phar install --dev --no-interaction
   - make symfony.server &
-  - cd ..
+  - cd ../
   # -----------------------------------------
   - make symfony.dev.rebuild
 
