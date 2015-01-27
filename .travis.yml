@@ -10,7 +10,15 @@ before_install:
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev --no-interaction
-  - make build.dependency.api backendversion=feature/CSR-24
+  # -------------- move to make command -----
+  - git clone https://github.com/TransformCore/CSR-Fast-Stream-backend.git
+  - cp composer.phar CSR-Fast-Stream-backend/
+  - cd CSR-Fast-Stream-backend/
+  - git checkout feature/CSR-24
+  - php composer.phar install --dev --no-interaction
+  - make symfony.server &
+  - cd ..
+  # -----------------------------------------
   - make symfony.dev.rebuild
 
 script:
