@@ -1,1 +1,11 @@
 build.package: build.user build.version build.changelog build.assets build.tag
+
+build.dependency.api:
+	git clone https://github.com/TransformCore/CSR-Fast-Stream-backend.git
+	cp composer.phar CSR-Fast-Stream-backend/
+	cd CSR-Fast-Stream-backend/
+	# @TODO: move version to read from composer.json
+	git checkout ${backendversion}
+	php composer.phar install --dev --no-interaction
+	make symfony.server &
+	cd ..
