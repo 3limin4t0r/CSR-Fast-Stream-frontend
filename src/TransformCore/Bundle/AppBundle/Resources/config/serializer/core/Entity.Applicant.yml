@@ -13,4 +13,5 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
             expose: true
             type: DateTime<'Y-m-d'>
         address:
+            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Address
             expose: true
