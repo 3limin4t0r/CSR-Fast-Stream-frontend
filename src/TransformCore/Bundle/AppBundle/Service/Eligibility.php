@@ -52,15 +52,16 @@ class Eligibility
     }
 
     /**
+     * @param int $applicantId
      * @param EligibilityEntity $eligibility
-     *
-     * @return EligibilityEntity
      */
-    public function update(EligibilityEntity $eligibility)
+    public function update($applicantId, EligibilityEntity $eligibility)
     {
+        $endpoint = '/applicants/'.$applicantId.'/eligibility';
+
         $response = $this->client
             ->put(
-                '/applicants/' . $eligibility->getId() . '/eligibility',
+                $endpoint,
                 array(
                     'body' => array(
                         'csr_dm_user_eligibility' => json_decode(
@@ -73,7 +74,5 @@ class Eligibility
                     )
                 )
             );
-
-        return $eligibility;
     }
 }
