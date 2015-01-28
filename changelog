@@ -1,0 +1,403 @@
+a04a197	Travis CI	Wed Jan 28 06:31:45 2015 +0000	Set build VERSION number build-features/CSR-24-608
+c20eaaa	Eddie Abou-Jaoude	Wed Jan 28 06:30:01 2015 +0000	Merge b5dac363daa88373d88bfbf533a8fa15994ae556 into f2f919662f4c07361d0c11ac4f8e19331689bb51
+b5dac36	Eddie Jaoude	Wed Jan 28 06:27:46 2015 +0000	[CSR-207] Removed Logger injection into Service
+d5d66e3	Eddie Jaoude	Wed Jan 28 06:24:56 2015 +0000	[CSR-207] Removed debug code & re-enabled Specs
+ca9d562	Eddie Jaoude	Wed Jan 28 06:07:25 2015 +0000	Line break end of file
+aebcbb7	Eddie Jaoude	Wed Jan 28 05:56:48 2015 +0000	Updated D/M dependency
+324ceaa	Eddie Jaoude	Wed Jan 28 05:56:27 2015 +0000	[CSR-207] Updated Serialisation config
+5a99ff4	Eddie Jaoude	Wed Jan 28 05:54:51 2015 +0000	[CSR-207] Removed debug code
+2876bc9	Eddie Jaoude	Tue Jan 27 20:21:59 2015 +0000	Eligibility serialisation config for nationality
+6d28ac6	Eddie Jaoude	Tue Jan 27 20:21:42 2015 +0000	Applicant serialisation config updated for all
+7b60603	Eddie Jaoude	Tue Jan 27 20:21:23 2015 +0000	Serialisation config added for all Entities
+1b096e7	Eddie Jaoude	Tue Jan 27 20:09:14 2015 +0000	Expose Applicant.id in Serialiser config
+b6151c4	Eddie Jaoude	Tue Jan 27 19:40:40 2015 +0000	Address class type added to serialization config
+df8ddb2	Eddie Jaoude	Tue Jan 27 19:38:10 2015 +0000	Revert "Type string added to Serializer config"
+11cb803	Eddie Jaoude	Tue Jan 27 19:33:31 2015 +0000	Type string added to Serializer config
+bd3434b	Eddie Jaoude	Tue Jan 27 19:22:45 2015 +0000	Revert "[CSR-207] Serialiser Type for Address in Applicant"
+94ddf5b	Eddie Jaoude	Tue Jan 27 19:19:09 2015 +0000	Simple change to trigger build
+409e4c0	Eddie Jaoude	Tue Jan 27 16:03:10 2015 +0000	[CSR-207] Updated B/E branch dependency
+ae01f9b	Eddie Jaoude	Tue Jan 27 15:58:06 2015 +0000	[CSR-207] Serialiser Type for Address in Applicant
+d9ca7bd	Eddie Jaoude	Tue Jan 27 13:55:18 2015 +0000	Removed clearCache command at the end of install
+f2f9196	Jamie Burns	Tue Jan 27 13:15:28 2015 +0000	Composer lock for domain model
+e9cbf78	Eddie Jaoude	Tue Jan 27 12:38:19 2015 +0000	Updated composer to require php ext intl
+7c23bec	Eddie Jaoude	Tue Jan 27 12:35:35 2015 +0000	Revert "Revert "Composer internationalisation php extension added""
+ed777e4	Jamie Burns	Tue Jan 27 12:25:33 2015 +0000	Fix for eligibility update id error
+08a5aa8	Eddie Jaoude	Tue Jan 27 12:19:57 2015 +0000	Revert "Composer internationalisation php extension added"
+d6e0610	Eddie Jaoude	Tue Jan 27 12:00:03 2015 +0000	Composer internationalisation php extension added
+db320fd	Eddie Jaoude	Tue Jan 27 11:07:28 2015 +0000	Removed PHPSpec tests just to deploy debug code
+4e3e663	Eddie Jaoude	Tue Jan 27 11:07:00 2015 +0000	Revert "Temporary simplification of CI config to deploy"
+1e3830d	Eddie Jaoude	Tue Jan 27 11:03:50 2015 +0000	Temporary simplification of CI config to deploy
+92298ef	Eddie Jaoude	Tue Jan 27 11:02:54 2015 +0000	Revert "Simplified build just for a deploy"
+4b0d993	Eddie Jaoude	Tue Jan 27 10:56:29 2015 +0000	Simplified build just for a deploy
+d860abf	Eddie Jaoude	Tue Jan 27 10:50:54 2015 +0000	Logging added to Applicants Service
+6239713	Eddie Jaoude	Tue Jan 27 10:00:30 2015 +0000	Revert "PHP version requirements"
+e6078d6	Eddie Jaoude	Tue Jan 27 09:58:35 2015 +0000	PHP version requirements
+788b4c3	Eddie Jaoude	Tue Jan 27 07:28:53 2015 +0000	Revert "[CSR-207] Refactored CI B/E dependency to make cmd"
+16ff90c	Eddie Jaoude	Tue Jan 27 07:19:47 2015 +0000	[CSR-207] Refactored CI B/E dependency to make cmd
+b9d0e54	Eddie Jaoude	Tue Jan 27 06:57:44 2015 +0000	Revert "[CSR-207] try/catch on first Profile API request"
+2fb5acf	Eddie Jaoude	Tue Jan 27 06:29:44 2015 +0000	[CSR-207] try/catch on first Profile API request
+880f29d	Eddie Jaoude	Tue Jan 27 06:28:26 2015 +0000	Marked CI config to be refactored
+cb2d6f1	Eddie Jaoude	Tue Jan 27 05:24:31 2015 +0000	Send B/E API server into background on CI
+6478fe9	Eddie Jaoude	Tue Jan 27 05:21:19 2015 +0000	Updated branch name for B/E build as dep on CI
+148cb95	Eddie Jaoude	Tue Jan 27 05:18:23 2015 +0000	Create B/E API dependency on CI
+cfee816	Paul Littlebury	Mon Jan 26 16:39:40 2015 +0000	Added error trapping for login test
+03432e5	Paul Littlebury	Mon Jan 26 16:25:27 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+4faf2c4	Paul Littlebury	Mon Jan 26 16:24:38 2015 +0000	Cosmetic - Tidied register/about you profile
+d597c19	Jamie Burns	Mon Jan 26 16:21:51 2015 +0000	Removing phpunit test call from Robofile
+49531d4	Jamie Burns	Mon Jan 26 16:14:56 2015 +0000	Composer lock update
+fe79019	Jamie Burns	Mon Jan 26 16:14:46 2015 +0000	Removing phpunit test support
+7e86c7a	Jamie Burns	Mon Jan 26 16:14:37 2015 +0000	Removing phpunit tests
+d42421b	Paul Littlebury	Mon Jan 26 16:08:22 2015 +0000	Fixed nationality test
+a7149e4	Eddie Jaoude	Mon Jan 26 12:45:08 2015 +0000	Remove committed local password mistake
+8ab13cf	Eddie Jaoude	Mon Jan 26 12:42:55 2015 +0000	[CSR-24] Update CI config for DB
+6a273dd	Jamie Burns	Mon Jan 26 12:18:43 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+f561199	Jamie Burns	Mon Jan 26 12:18:35 2015 +0000	Removed imports that are no longer required
+8d76894	Eddie Jaoude	Mon Jan 26 12:17:46 2015 +0000	[CSR-24] Added in MySQL services to CI
+2b437a9	Paul Littlebury	Mon Jan 26 11:11:48 2015 +0000	added new features with @omit tag - will not touch CSR-24 anymore now
+10c8e26	Paul Littlebury	Mon Jan 26 11:03:56 2015 +0000	Feature file tidyup
+48fbbbb	Paul Littlebury	Mon Jan 26 10:17:26 2015 +0000	brought CSR-24 up to date enough to merge back into develop
+e448c3c	Jamie Burns	Fri Jan 23 16:14:15 2015 +0000	Removed entity creation (handled in Domain Model)
+2a5d9f6	Paul Littlebury	Fri Jan 23 15:02:58 2015 +0000	CSR-135 added tests to check reset password
+258a69f	Paul Littlebury	Fri Jan 23 10:22:23 2015 +0000	CSR-24 Gherkin fully updated - important this is merged to develop and other branches updated
+5810e57	Paul Littlebury	Fri Jan 23 10:14:25 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+62d1b17	Paul Littlebury	Fri Jan 23 10:14:07 2015 +0000	CSR-24 updated tests for nationality
+f0f10bc	Jamie Burns	Fri Jan 23 09:57:12 2015 +0000	Spelling correction
+8a01af5	Eddie Jaoude	Fri Jan 23 06:17:33 2015 +0000	[CSR-135] Phone number localisation text updated
+18ed4b6	Eddie Jaoude	Fri Jan 23 06:04:13 2015 +0000	[CSR-207] Serialisation type added for Applicant
+3e947f4	Eddie Jaoude	Fri Jan 23 05:56:18 2015 +0000	[CSR-207] Including Guzzle for production mode
+8ae56a5	Eddie Jaoude	Fri Jan 23 05:48:14 2015 +0000	[CSR-207] Backend API as PARAM/ENV variable
+64a881a	Eddie Jaoude	Fri Jan 23 05:36:17 2015 +0000	[cSR-24] Updated D/M dependency
+20379b0	Eddie Jaoude	Fri Jan 23 05:33:09 2015 +0000	[CSR-24] Renamed key for update Eligibility
+7685059	Eddie Jaoude	Fri Jan 23 05:32:50 2015 +0000	[CSR-24] Localisation for phone number
+de7be3c	Jamie Burns	Thu Jan 22 22:46:06 2015 +0000	Composer lock
+f443588	Jamie Burns	Thu Jan 22 22:34:26 2015 +0000	Applicant Eligibility entities created on registration
+3076e86	Paul Littlebury	Thu Jan 22 20:49:40 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+cf7f42d	Paul Littlebury	Thu Jan 22 20:48:54 2015 +0000	CSR-24 fixed/updated gherkin tests
+07e95ac	Paul Littlebury	Thu Jan 22 20:04:48 2015 +0000	correct register feature which was out of step
+d03b81d	Eddie Jaoude	Thu Jan 22 20:04:22 2015 +0000	[CSR-24] [INCOMPLETE] Eligibility Server
+c109421	Eddie Jaoude	Thu Jan 22 20:03:55 2015 +0000	[CSR-24] Nationality location form field
+8e41a1d	Paul Littlebury	Thu Jan 22 19:54:31 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+9630be4	Paul Littlebury	Thu Jan 22 19:54:28 2015 +0000	added stub for future tests
+a7b6174	Eddie Jaoude	Thu Jan 22 19:04:48 2015 +0000	[CSR-24] End of file blank line
+518e881	Eddie Jaoude	Thu Jan 22 19:04:31 2015 +0000	[CSR-24] Re-ordered routing
+80a12a5	Eddie Jaoude	Thu Jan 22 19:04:14 2015 +0000	[CSR-24] Fixed conflict issues
+aa155e9	Eddie Jaoude	Thu Jan 22 18:40:26 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+9d272c6	Eddie Jaoude	Thu Jan 22 18:22:53 2015 +0000	[CSR-24] Eligibility Serialisation config
+55ad81c	Eddie Jaoude	Thu Jan 22 18:22:19 2015 +0000	[CSR-24] Fixed missing localisation issues
+b636ba8	Eddie Jaoude	Thu Jan 22 18:21:57 2015 +0000	[CSR-135] [CSR-24] Steps to Breadcrumb
+2c7551f	Eddie Jaoude	Thu Jan 22 18:21:01 2015 +0000	[CSR-6] Moved Registration documentation
+7c76ea3	Eddie Jaoude	Thu Jan 22 18:16:08 2015 +0000	[CSR-24] Documentation
+46adc55	Paul Littlebury	Thu Jan 22 16:48:31 2015 +0000	merged CSR-24 with CSR-135
+3e90105	Paul Littlebury	Thu Jan 22 16:25:43 2015 +0000	CSR-4 added nationality test and tidied existing
+187aeb9	Eddie Jaoude	Thu Jan 22 15:07:28 2015 +0000	[CSR-24] Merged in CSR-135 into CSR-24
+3231815	Paul Littlebury	Thu Jan 22 14:55:45 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+64d65f5	Paul Littlebury	Thu Jan 22 14:55:27 2015 +0000	CSR-135 commented out more specific error messages
+f370e4f	Paul Littlebury	Thu Jan 22 14:53:39 2015 +0000	CSR-135 commented out more specific error messages
+76749fa	Dave Nash	Thu Jan 22 14:52:55 2015 +0000	Updated domain model in composer
+5747974	Paul Littlebury	Thu Jan 22 14:22:30 2015 +0000	CSR-135 final corrections
+9ecc73e	Paul Littlebury	Thu Jan 22 13:54:59 2015 +0000	CSR-135 corrected paramater ids in tests
+1607e9f	Dave Nash	Thu Jan 22 12:56:52 2015 +0000	Added eligibility form to frontend
+529e8a5	Eddie Jaoude	Thu Jan 22 12:54:20 2015 +0000	[CSR-135] plainPassword Serialised config
+1003576	Paul Littlebury	Thu Jan 22 12:52:29 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+222c39d	Paul Littlebury	Thu Jan 22 12:52:20 2015 +0000	CSR-135 fixed tests not only for CSR-135, but CSR-6 also
+bf6e7e3	Eddie Jaoude	Thu Jan 22 12:40:09 2015 +0000	[CSR-135] D/M dependency updated
+6829bcf	Eddie Jaoude	Thu Jan 22 10:24:27 2015 +0000	[CSR-135] Updated Applicant Service with comms
+15caef8	Eddie Jaoude	Thu Jan 22 09:17:34 2015 +0000	[CSR-135] Layout flash message class updated
+49cd07d	Eddie Jaoude	Thu Jan 22 09:16:46 2015 +0000	[CSR-135] Successful Update flash message
+2ef91c3	Eddie Jaoude	Thu Jan 22 08:49:59 2015 +0000	[CSR-135] Updated D/M depedency
+55455d2	Eddie Jaoude	Thu Jan 22 08:49:45 2015 +0000	[CSR-135] JMS Serializer Config added
+4a16c5d	Eddie Jaoude	Thu Jan 22 05:25:01 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+f96fdf8	Eddie Jaoude	Thu Jan 22 05:18:18 2015 +0000	[CSR-135] API url added to config
+3955d95	Eddie Jaoude	Thu Jan 22 05:17:47 2015 +0000	[CSR-135] Updated D/M dependency
+ea00cb4	Paul Littlebury	Wed Jan 21 19:39:20 2015 +0000	update
+f6dd9dd	Paul Littlebury	Wed Jan 21 15:51:15 2015 +0000	CSR-135 updated scenarios assuming date of birth one field
+8759d66	Paul Littlebury	Wed Jan 21 15:41:33 2015 +0000	CSR-135 added mandatory field check
+10a696a	Paul Littlebury	Wed Jan 21 15:13:24 2015 +0000	Update EditAboutYouDetails.feature
+8119934	Eddie Jaoude	Wed Jan 21 11:49:24 2015 +0000	[CSR-135] Applicant Service updated
+28f55a5	Eddie Jaoude	Wed Jan 21 11:12:42 2015 +0000	[CSR-135] Profile controller action
+0223e1a	Eddie Jaoude	Wed Jan 21 11:12:23 2015 +0000	[CSR-135] Applicant Service (Comms to B/E)
+4ab4233	Eddie Jaoude	Wed Jan 21 11:11:46 2015 +0000	[CSR-135] Included JMS & updated Goutte
+709db4e	Paul Littlebury	Wed Jan 21 10:34:00 2015 +0000	Added education feature
+0746d6d	Paul Littlebury	Wed Jan 21 10:29:46 2015 +0000	CSR-24 added scenario placeholders for Education section of profile
+90d0baa	Eddie Jaoude	Wed Jan 21 07:09:14 2015 +0000	[CSR-135] Fixed failing Registration Listener Spec
+f7d7c51	Eddie Jaoude	Wed Jan 21 07:08:54 2015 +0000	[CSR-135] Fixed failing Spec test for Menu
+9caadb6	Eddie Jaoude	Tue Jan 20 10:47:33 2015 +0000	Added Docbloc for Version Service
+b714b07	Eddie Jaoude	Tue Jan 20 10:46:33 2015 +0000	[CSR-135] Edit Profile page with validation
+52dbc97	Eddie Jaoude	Tue Jan 20 10:42:46 2015 +0000	Removed Breadcrumb from homepage
+07a3c0f	Eddie Jaoude	Tue Jan 20 10:42:30 2015 +0000	[CSR-135] Updated Translation files
+8789064	Eddie Jaoude	Tue Jan 20 10:37:00 2015 +0000	[CSR-135] Updated breadcrumb on Account page
+a18bfc8	Eddie Jaoude	Tue Jan 20 10:36:35 2015 +0000	Removed breadcrumb from changelog page
+4cca012	Eddie Jaoude	Tue Jan 20 10:36:08 2015 +0000	[CSR-135] Profile link added to main Nav
+a6a8c81	Eddie Jaoude	Tue Jan 20 10:35:54 2015 +0000	[CSR-135] Profile routing added
+e9d0b70	Eddie Jaoude	Mon Jan 19 16:03:26 2015 +0000	[CSR-135] Breadcrumb placeholder added to Layout
+ef63405	Jamie Burns	Mon Jan 19 17:08:20 2015 +0000	Updated feature in light of Form name changes
+b278985	Jamie Burns	Mon Jan 19 16:27:20 2015 +0000	Environment variable pass though development mode filter
+6cafaec	Eddie Jaoude	Mon Jan 19 14:12:19 2015 +0000	[CSR-135] Updated D/M dependency (validation)
+31fa6d4	Eddie Jaoude	Mon Jan 19 13:33:37 2015 +0000	[CSR-135] Updated D/M dependency
+331683a	Eddie Jaoude	Mon Jan 19 13:29:46 2015 +0000	[CSR-135] Translation file for single phone number
+cba23ec	jaffamonkey	Mon Jan 19 12:53:32 2015 +0000	CSR-24 corrected form validation checks
+f3cdced	Eddie Jaoude	Mon Jan 19 11:24:43 2015 +0000	[CSR-135] Updated Form View to use new D/M
+126069c	Eddie Jaoude	Mon Jan 19 11:20:58 2015 +0000	[CSR-135] Updated dependency for D/M
+d88a074	Eddie Jaoude	Mon Jan 19 07:12:13 2015 +0000	[CSR-135] Using new D/M with Applicant Entity
+9937a1a	Eddie Jaoude	Fri Jan 16 14:55:15 2015 +0000	Merge branch 'develop' into features/CSR-135
+3c427b9	Eddie Abou-Jaoude	Fri Jan 16 14:53:45 2015 +0000	Merge pull request #18 from TransformCore/features/CSR-6
+30bbb2f	Jamie Burns	Fri Jan 16 11:48:04 2015 +0000	Asserting generated username is set into user correctly
+22a8aba	Jamie Burns	Fri Jan 16 11:32:59 2015 +0000	Ignoring VS project files
+7ed2c20	Jamie Burns	Fri Jan 16 11:29:19 2015 +0000	Removed use of time for prefix
+890e666	Jamie Burns	Fri Jan 16 11:29:05 2015 +0000	Random username generator test for uniqueness
+d2ae428	Eddie Jaoude	Fri Jan 16 11:34:06 2015 +0000	[CSR-6] FeatureContext now states missing ID
+7c84d38	jaffamonkey	Fri Jan 16 10:18:27 2015 +0000	CSR-24 updated Gherkin to reflect wireframes
+21c7d57	Eddie Jaoude	Fri Jan 16 06:19:40 2015 +0000	Revert "Space added to deploy for review"
+7847855	jaffamonkey	Thu Jan 15 12:57:57 2015 +0000	CSR-24 Added nationality gherkin file
+c3a6d83	Eddie Abou-Jaoude	Thu Jan 15 10:18:48 2015 +0000	Space added to deploy for review
+f6e88e4	Eddie Jaoude	Thu Jan 15 06:36:28 2015 +0000	[CSR-6] Moved Registration Listener to use Service
+9737546	Eddie Jaoude	Thu Jan 15 06:34:12 2015 +0000	[CSR-6] Username random generator
+d62e0c6	Eddie Jaoude	Thu Jan 15 06:31:59 2015 +0000	[CSR-6] Improved formatting of Version Spec
+cb67fb1	Eddie Jaoude	Thu Jan 15 05:53:18 2015 +0000	[CSR-6] Should have gone in last commit with lock
+c292832	Eddie Jaoude	Thu Jan 15 05:20:12 2015 +0000	[CSR-6] Updated composer to use Release of D/M
+ed56ae5	Eddie Jaoude	Wed Jan 14 11:42:31 2015 +0000	[CSR-6] Updated D/M dependency
+157ee88	jaffamonkey	Wed Jan 14 10:44:37 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+7992d1a	jaffamonkey	Wed Jan 14 10:43:35 2015 +0000	update register to demonstrate table method of completing forms
+9c30319	Eddie Jaoude	Wed Jan 14 06:05:38 2015 +0000	Comments added
+82e9898	Eddie Jaoude	Tue Jan 13 19:20:28 2015 +0000	[CSR-6] Run all Tests CMD now Rebuilds DB/Fixtures
+8059627	Eddie Jaoude	Tue Jan 13 15:54:14 2015 +0000	Comment about CMDs being wrappers
+323ca1e	Eddie Jaoude	Tue Jan 13 15:52:10 2015 +0000	[CSR-5] Rebuild the DB & use Fixtures
+7033113	Eddie Jaoude	Tue Jan 13 15:43:38 2015 +0000	Updated make CMDs & relevant Docs
+5898783	Eddie Jaoude	Tue Jan 13 15:22:30 2015 +0000	[CSR-6] Added link from Index to Registration docs
+f516dba	jaffamonkey	Tue Jan 13 11:52:03 2015 +0000	CSR-6 edited password test to fully reflect requirements
+0a9893d	jaffamonkey	Tue Jan 13 11:20:22 2015 +0000	CSR-6 corrected error in behat test
+0156f53	Eddie Jaoude	Tue Jan 13 11:09:51 2015 +0000	[CSR-6] Password validation dependency updated
+f9ba0eb	jaffamonkey	Tue Jan 13 11:02:28 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+d70237d	jaffamonkey	Tue Jan 13 11:02:10 2015 +0000	CSR-6 added new password check scenario
+6160877	Eddie Jaoude	Tue Jan 13 10:49:41 2015 +0000	[CSR-208] Change localisation stay on same page
+0ff55cf	Eddie Jaoude	Tue Jan 13 10:19:55 2015 +0000	[CSR-5] Test secure pages 403 redirect to login
+fff8b3b	Eddie Jaoude	Tue Jan 13 07:49:03 2015 +0000	[CSR-5] 403 redirect to login page
+9a3374a	Eddie Jaoude	Tue Jan 13 07:14:07 2015 +0000	[CSR-6] Translated T&Cs table
+09d96ea	Eddie Jaoude	Tue Jan 13 06:59:08 2015 +0000	[CSR-5] Translation added to login form
+98f8ba1	jaffamonkey	Mon Jan 12 16:45:31 2015 +0000	CSR-6 omitted scenario with error validation
+47a8f27	jaffamonkey	Mon Jan 12 11:12:25 2015 +0000	CSR-6 added password char check test back in
+9c7002a	Eddie Jaoude	Mon Jan 12 08:02:21 2015 +0000	[CSR-6] Updated Registration documentation
+a6aed7a	Eddie Jaoude	Mon Jan 12 07:08:38 2015 +0000	[CSR-6] Updated D/M dependency (password strength)
+0e1bcee	Eddie Jaoude	Mon Jan 12 06:22:23 2015 +0000	[CSR-6] Fixed CI & Spec command
+db72755	Eddie Jaoude	Mon Jan 12 06:05:43 2015 +0000	[CSR-5] Updated make cmd dep & rebuild cmd on CI
+cceea0c	Eddie Jaoude	Mon Jan 12 05:55:41 2015 +0000	[CSR-5] Moved CI DB setup to make commands
+c4bf7f8	Eddie Jaoude	Sun Jan 11 10:35:45 2015 +0000	Updated dependencies
+fc1e360	Eddie Jaoude	Sun Jan 11 09:25:52 2015 +0000	[CSR-6] Translation collection extension added
+d75d4f3	Eddie Jaoude	Sat Jan 10 19:52:31 2015 +0000	Revert "[CSR-6] Moving deploy ENV from prod to test"
+c39543b	Eddie Jaoude	Sat Jan 10 19:48:10 2015 +0000	[CSR-6] Moving deploy ENV from prod to test
+145e039	Eddie Jaoude	Sat Jan 10 19:28:48 2015 +0000	[CSR-6] Project name / logo links to homepage
+eea08be	Eddie Jaoude	Sat Jan 10 08:17:39 2015 +0000	[CSR-6] Move Cmd & Fixture Deps from dev to prod
+6b37136	Eddie Jaoude	Sat Jan 10 08:07:47 2015 +0000	[CSR-6] Moved Fixtures in Kernel to prod
+99bb1c6	Eddie Jaoude	Sat Jan 10 07:58:30 2015 +0000	[cSR-6] Rebuild DB after deployment
+00b89e1	Eddie Jaoude	Sat Jan 10 07:50:27 2015 +0000	[cSR-6] Updated Unit test command with Suite
+fe3d2b2	Eddie Jaoude	Sat Jan 10 07:43:47 2015 +0000	[CSR-6] Updated Dependencies
+68ea446	Eddie Jaoude	Sat Jan 10 07:41:20 2015 +0000	Revert "[CSR-6] Renamed php EXT for Heroku deploy"
+65e1382	Eddie Jaoude	Sat Jan 10 07:34:20 2015 +0000	[CSR-6] Renamed php EXT for Heroku deploy
+8d00b90	Eddie Jaoude	Sat Jan 10 07:21:46 2015 +0000	[CSR-6] mbstring EXT added to Composer for Heroku
+ea7adb3	Eddie Jaoude	Sat Jan 10 07:05:19 2015 +0000	[CSR-6] Added Dev parameters
+a6045ab	Eddie Jaoude	Sat Jan 10 07:04:58 2015 +0000	[CSR-6] Moved params template to ENV vars
+7412de6	Eddie Jaoude	Fri Jan 9 16:00:38 2015 +0000	[CSR-173] Fixed failing test
+8ad9b8c	jaffamonkey	Fri Jan 9 15:59:09 2015 +0000	CSR-6 added translations for Login page
+5984447	jaffamonkey	Fri Jan 9 15:48:47 2015 +0000	CSR-6 added test data to fixture
+fa35302	jaffamonkey	Fri Jan 9 15:33:21 2015 +0000	CSR-6 added filter to omit scenarios tagged @omit and corrected homepage.feature
+f997eb1	jaffamonkey	Fri Jan 9 15:23:10 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+7f3ced4	Eddie Abou-Jaoude	Fri Jan 9 15:22:51 2015 +0000	Merge pull request #25 from TransformCore/features/CSR-173
+d9a186e	Eddie Jaoude	Fri Jan 9 15:08:47 2015 +0000	Merge CSR-6 into CSR-173
+a96cb00	jaffamonkey	Fri Jan 9 14:36:32 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+1849808	Eddie Jaoude	Fri Jan 9 14:36:11 2015 +0000	[CSR-6] Make updated & dependency
+592108f	jaffamonkey	Fri Jan 9 14:35:58 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+dbc465e	jaffamonkey	Fri Jan 9 14:35:29 2015 +0000	CSR-6 added new tag format for omitted scenarios (-omit)
+2b649a7	Eddie Jaoude	Fri Jan 9 14:14:58 2015 +0000	[CSR-6] Enforce unique email (D/M dependency)
+334bda2	jaffamonkey	Fri Jan 9 14:10:24 2015 +0000	CSR-6 amended error messages on tests
+2790a34	Eddie Jaoude	Fri Jan 9 13:05:00 2015 +0000	[CSR-6] Registration validation group config
+5a363f8	Eddie Jaoude	Fri Jan 9 11:49:42 2015 +0000	[CSR-6] Project name in Translation file & layout
+78b07c5	Eddie Jaoude	Fri Jan 9 11:42:47 2015 +0000	[CSR-5] Removed html5 validation on Login
+74fbeb2	Eddie Jaoude	Fri Jan 9 11:42:39 2015 +0000	[CSR-6] Removed html5 validation on Registration
+45f78f9	jaffamonkey	Fri Jan 9 11:41:07 2015 +0000	CSR 173 added new verifications for homepage after login
+f75f5db	jaffamonkey	Fri Jan 9 11:35:36 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+8870154	jaffamonkey	Fri Jan 9 11:35:01 2015 +0000	CSR-5 amended gherkin to reflect current error and success messages displayed
+ff7963c	Eddie Jaoude	Fri Jan 9 11:17:57 2015 +0000	[CSR-5] Force loading of Data Fixtures on CI
+7347862	jaffamonkey	Fri Jan 9 11:17:43 2015 +0000	CSR-6 tidied format
+d13ce83	Eddie Abou-Jaoude	Fri Jan 9 11:03:23 2015 +0000	Merge pull request #24 from TransformCore/features/CSR-5
+72e5edb	Eddie Jaoude	Fri Jan 9 11:02:13 2015 +0000	Merged in CSR-6 into CSR-5
+5d871e8	jaffamonkey	Fri Jan 9 10:55:05 2015 +0000	CSR-5 update
+69b6249	Eddie Jaoude	Fri Jan 9 10:49:19 2015 +0000	[CSR-5] DataFixture added to CI build
+f6169e4	Eddie Jaoude	Fri Jan 9 10:49:08 2015 +0000	[CSR-5] Updated D/M dependency with DataFixture
+85fbde9	jaffamonkey	Fri Jan 9 10:47:18 2015 +0000	CSR-5 amended gherkin to reflect more generic error messages
+beeb4b4	Eddie Jaoude	Fri Jan 9 10:29:20 2015 +0000	[CSR-5] Data Fixture dependency added
+164584f	Eddie Jaoude	Fri Jan 9 09:19:55 2015 +0000	[CSR-6] MySQL support for CI
+8907439	Eddie Jaoude	Fri Jan 9 07:50:14 2015 +0000	[CSR-5] Home page login form updated IDs etc
+3838479	Eddie Jaoude	Fri Jan 9 07:39:23 2015 +0000	[CSR-5] Login form with Error messages
+d1b7b54	Eddie Jaoude	Fri Jan 9 07:33:16 2015 +0000	[CSR-5] Login failure path updated to login form
+1fa2fd6	Eddie Jaoude	Fri Jan 9 07:11:46 2015 +0000	[CSR-6] [CSR-5] Basic Successful Login
+b786821	Eddie Jaoude	Fri Jan 9 06:55:54 2015 +0000	[CSR-6] Homepage Register button with link
+f6aac82	Eddie Jaoude	Fri Jan 9 06:55:38 2015 +0000	[CSR-6] Click on Email go to Account page in Nav
+39a80d3	Eddie Jaoude	Fri Jan 9 06:40:48 2015 +0000	[CSR-6] Behat generated report to build directory
+b18b026	Eddie Jaoude	Fri Jan 9 06:39:02 2015 +0000	[CSR-6] Updated Behat test for homepage
+18cb4c2	Eddie Jaoude	Fri Jan 9 06:33:10 2015 +0000	[CSR-6] Updated homepage title
+12037a2	Eddie Jaoude	Fri Jan 9 06:32:17 2015 +0000	[CSR-6] Content for Homepage
+17fc3bd	Eddie Jaoude	Fri Jan 9 06:31:58 2015 +0000	[CSR-6] Successful Register redirect to Account
+481f0e6	Eddie Jaoude	Fri Jan 9 06:30:00 2015 +0000	[CSR-6] [CSR-173] Create basic Account page
+6b02a9d	Eddie Jaoude	Thu Jan 8 20:51:21 2015 +0000	[CSR-6] T&Cs / Interview Scheme links on Register
+08cd56a	Eddie Jaoude	Thu Jan 8 20:51:01 2015 +0000	[CSR-6] T&Cs / Interview Scheme routing
+be0b9cb	Eddie Jaoude	Thu Jan 8 20:50:45 2015 +0000	[CSR-6] T&Cs / Interview Scheme Actions added
+962dd48	Eddie Jaoude	Thu Jan 8 20:50:02 2015 +0000	[CSR-6] T&Cs / Interview Scheme localisation
+972259d	Eddie Jaoude	Thu Jan 8 20:49:27 2015 +0000	[CSR-6] Interview Scheme view added
+488f488	Eddie Jaoude	Thu Jan 8 20:48:59 2015 +0000	[CSR-6] T&Cs view added
+cbd0861	jaffamonkey	Thu Jan 8 17:10:08 2015 +0000	CSR-6 added french for confirm password text, and some register feature tidyup
+1edfb00	jaffamonkey	Thu Jan 8 15:52:19 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+4be23cb	jaffamonkey	Thu Jan 8 15:52:16 2015 +0000	CSR-6 minor corrections
+57be8a7	Eddie Jaoude	Thu Jan 8 15:39:42 2015 +0000	[CSR-6] Removed disabled field
+ba11d2e	jaffamonkey	Thu Jan 8 15:26:19 2015 +0000	CSR-6 tagged too-specific vaidation checks with CSR-6-1 and removed erroneous disability checkbox
+9296b9f	Eddie Jaoude	Thu Jan 8 15:07:16 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+817b331	Eddie Jaoude	Thu Jan 8 14:57:13 2015 +0000	[CSR-6] Re-ordered Registration Form & Labels
+50852ec	jaffamonkey	Thu Jan 8 14:53:33 2015 +0000	CSR-6 removed erroneous t&c and corrected Gherkin
+9231add	jaffamonkey	Thu Jan 8 14:36:13 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+a97649a	jaffamonkey	Thu Jan 8 14:36:09 2015 +0000	CSR-6 amended field ids and changed report loc
+8fa27c6	Eddie Jaoude	Thu Jan 8 14:16:15 2015 +0000	[CSR-6] Override Registration Form ordering
+1aa0dce	jaffamonkey	Thu Jan 8 13:21:53 2015 +0000	CSR-6 amended field ids
+a459c48	jaffamonkey	Thu Jan 8 13:18:18 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+4e22462	jaffamonkey	Thu Jan 8 13:18:14 2015 +0000	CSR-6 amended field ids
+46745ef	Eddie Jaoude	Thu Jan 8 13:14:50 2015 +0000	[CSR-6] Updating D/M dependency
+b5a20f9	Eddie Jaoude	Thu Jan 8 12:08:52 2015 +0000	[CSR-6] PHPSpec for Bundle files
+ae2e1e3	Eddie Jaoude	Thu Jan 8 12:08:39 2015 +0000	[CSR-6] Menu builder aware of SecurityContext
+0b6dde5	Eddie Jaoude	Thu Jan 8 12:07:58 2015 +0000	[CSR-6] PHPSpec to produce html code coverage
+ba2bc20	Eddie Jaoude	Thu Jan 8 12:07:27 2015 +0000	[CSR-6] Removed `:` from Title in Behat test
+840e7d7	Eddie Jaoude	Thu Jan 8 12:06:54 2015 +0000	[CSR-6] Registration Event Listener
+67f4a14	Eddie Jaoude	Thu Jan 8 12:03:35 2015 +0000	[CSR-6] Updated D/M dependency
+a6b95ec	Eddie Jaoude	Thu Jan 8 12:02:52 2015 +0000	[CSR-6] Flash alert messages added to layout
+c73a2a2	Eddie Jaoude	Thu Jan 8 12:01:30 2015 +0000	[CSR-6] Override Registration for to have Title
+d351fa0	Eddie Jaoude	Thu Jan 8 12:01:05 2015 +0000	[CSR-6] Removed unused layout code
+6b9fb01	Eddie Jaoude	Thu Jan 8 12:00:37 2015 +0000	[CSR-6] Security config using email to login
+f8966e8	Eddie Jaoude	Thu Jan 8 11:59:18 2015 +0000	[CSR-6] Using new Registration Form
+16ded08	jaffamonkey	Thu Jan 8 11:52:21 2015 +0000	CSR-6 removed dropdown values from en file
+fbf4769	jaffamonkey	Thu Jan 8 11:16:05 2015 +0000	CSR-173 added new feature file, and new login function
+df7369c	jaffamonkey	Thu Jan 8 10:43:28 2015 +0000	CSR-6 added french translations for registration page
+e41638b	jaffamonkey	Thu Jan 8 10:22:36 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+ea4c00d	jaffamonkey	Thu Jan 8 10:22:06 2015 +0000	CSR-6 added french translations for registration page
+a3863eb	jaffamonkey	Thu Jan 8 10:21:12 2015 +0000	CSR-6 added french translations for registration page
+ff2503f	Eddie Jaoude	Thu Jan 8 10:07:17 2015 +0000	[CSR-6] Removed `summary` from localisation
+d0ce7ff	Eddie Jaoude	Thu Jan 8 10:02:24 2015 +0000	[CSR-6] English localisation file
+3dbd194	jaffamonkey	Wed Jan 7 16:03:12 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+84acb20	jaffamonkey	Wed Jan 7 16:01:22 2015 +0000	removed refs to salutation
+8c69949	jaffamonkey	Wed Jan 7 15:53:03 2015 +0000	removed ref to salutation in tests
+dc99195	jaffamonkey	Wed Jan 7 15:39:24 2015 +0000	minor adjustments to text checking for t&c
+612e84d	jaffamonkey	Wed Jan 7 14:58:56 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+75a7297	jaffamonkey	Wed Jan 7 14:57:49 2015 +0000	added multiline text check and stubbed test data step statement
+c97c40a	Mike Whiting	Wed Jan 7 12:18:55 2015 +0000	fixing stuff.
+3fd9307	Mike Whiting	Wed Jan 7 12:13:21 2015 +0000	removing old class.
+bec995e	Mike Whiting	Wed Jan 7 12:07:29 2015 +0000	Merge branch 'features/CSR-6' of github.com:TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+8b0e219	Mike Whiting	Wed Jan 7 12:06:48 2015 +0000	fixing names.
+ceac8ef	jaffamonkey	Wed Jan 7 12:01:16 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+97a4ea0	jaffamonkey	Wed Jan 7 11:42:36 2015 +0000	first commit for new story
+f9c559c	Mike Whiting	Wed Jan 7 11:38:24 2015 +0000	Merge branch 'features/CSR-6' of github.com:TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+d2b62c6	Eddie Jaoude	Wed Jan 7 11:19:27 2015 +0000	[CSR-6] Updated Domain Model Deps
+425db7e	jaffamonkey	Wed Jan 7 11:13:25 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+c639c80	jaffamonkey	Wed Jan 7 11:10:36 2015 +0000	added english translations for register page
+cd82d87	Mike Whiting	Wed Jan 7 10:57:43 2015 +0000	working on custom registation page changes.
+cff4569	Eddie Jaoude	Wed Jan 7 10:14:15 2015 +0000	[CSR-6] Re-formatting in Feature file
+dafdfa3	Eddie Jaoude	Wed Jan 7 10:13:29 2015 +0000	[CSR-6] Updated formatting
+1b9bde4	Eddie Jaoude	Wed Jan 7 07:43:19 2015 +0000	[CSR-6] Generated file
+0beb3fe	Eddie Jaoude	Wed Jan 7 07:43:06 2015 +0000	[CSR-6] Using new D/M with UserEntity
+52b3454	Eddie Jaoude	Tue Jan 6 15:35:18 2015 +0000	[CSR-6] Domain Model Bundle loaded
+3ab0c5b	Eddie Jaoude	Tue Jan 6 14:33:32 2015 +0000	[CSR-6] Registration Docs
+1ce2c6e	Paul Littlebury	Tue Jan 6 13:56:31 2015 +0000	Update Register.feature
+3f1ae33	Paul Littlebury	Tue Jan 6 13:54:56 2015 +0000	Update Register.feature
+efe82c9	Paul Littlebury	Tue Jan 6 13:51:15 2015 +0000	Update EditAboutYouDetails.feature
+690ea73	Paul Littlebury	Tue Jan 6 13:50:09 2015 +0000	Update Login.feature
+26fa801	Paul Littlebury	Tue Jan 6 13:47:25 2015 +0000	Update Register.feature
+64fe752	Eddie Jaoude	Tue Jan 6 13:46:43 2015 +0000	[CSR-6] FOSUser added
+56a84cc	Eddie Jaoude	Tue Jan 6 12:48:02 2015 +0000	[CSR-6] SwiftMailer added back in for FOSUser
+dc0c6e3	Paul Littlebury	Tue Jan 6 13:44:34 2015 +0000	Update Register.feature
+f99c280	Paul Littlebury	Tue Jan 6 12:36:17 2015 +0000	Update Register.feature
+5e14fc9	Paul Littlebury	Tue Jan 6 12:34:54 2015 +0000	Update Register.feature
+bf09ed4	Eddie Jaoude	Tue Jan 6 12:04:14 2015 +0000	[CSR-6] Generated file
+080f5dc	Eddie Jaoude	Tue Jan 6 12:04:03 2015 +0000	[CSR-6] Doctrine added back in to F/E
+0c3e294	Eddie Jaoude	Tue Jan 6 11:38:17 2015 +0000	[CSR-6] Domain Model dependency added
+59cf68b	Eddie Jaoude	Tue Jan 6 11:24:47 2015 +0000	[CSR-6] Installed basic FOSUser
+529fa24	Paul Littlebury	Tue Jan 6 11:03:13 2015 +0000	Update Register.feature
+1255fe2	Paul Littlebury	Tue Jan 6 10:50:07 2015 +0000	Update Register.feature
+5f398bc	Paul Littlebury	Tue Jan 6 10:47:44 2015 +0000	Update Register.feature
+16baceb	Paul Littlebury	Tue Jan 6 10:40:06 2015 +0000	Update Register.feature
+e751792	Paul Littlebury	Tue Jan 6 10:13:15 2015 +0000	Update Register.feature
+c3c7b64	Eddie Jaoude	Tue Jan 6 08:57:06 2015 +0000	#21 improved Robo file & comments
+df2055c	Eddie Jaoude	Tue Jan 6 05:58:05 2015 +0000	#21 Build dir & keep file added
+53501a2	Eddie Jaoude	Tue Jan 6 05:49:17 2015 +0000	make bed using config & suite params
+14dd3ff	Eddie Jaoude	Tue Jan 6 05:35:40 2015 +0000	Running tests individually
+10c4fd3	jaffamonkey	Mon Jan 5 14:27:49 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+4e57573	jaffamonkey	Mon Jan 5 14:25:08 2015 +0000	added new scenarios for password
+af277f7	jaffamonkey	Mon Jan 5 12:54:39 2015 +0000	corrected password check scenario
+eee7458	jaffamonkey	Mon Jan 5 12:31:48 2015 +0000	added checks for info links
+2c07456	Eddie Jaoude	Mon Jan 5 11:00:11 2015 +0000	[CSR-6] Trying to get output to fail
+ee45ded	jaffamonkey	Mon Jan 5 10:40:09 2015 +0000	added new gherkin for new step
+447688e	jaffamonkey	Mon Jan 5 10:38:27 2015 +0000	added new gherkin for new step
+558f536	jaffamonkey	Mon Jan 5 10:24:04 2015 +0000	added blank line
+453541d	jaffamonkey	Mon Jan 5 10:22:59 2015 +0000	added blank line
+58a4d81	jaffamonkey	Mon Jan 5 10:20:25 2015 +0000	added blank line
+aaaebc7	jaffamonkey	Sat Jan 3 23:28:19 2015 +0000	amended test data
+be6c9f2	jaffamonkey	Sat Jan 3 23:25:52 2015 +0000	amended to fully reflect wireframe
+69c3321	jaffamonkey	Sat Jan 3 22:41:16 2015 +0000	amended to fully reflect wireframe
+083115e	jaffamonkey	Tue Dec 30 18:40:03 2014 +0000	updated tests to fully reflect wireframes
+44ec00d	jaffamonkey	Mon Dec 29 22:01:44 2014 +0000	corrections to form fields available
+8f75e5d	jaffamonkey	Mon Dec 29 21:58:28 2014 +0000	corrections to form fields available
+52ab7ce	jaffamonkey	Thu Dec 25 18:58:33 2014 +0000	CSR-135
+fd32028	jaffamonkey	Thu Dec 25 18:56:35 2014 +0000	CSR-6
+634d5b1	jaffamonkey	Thu Dec 25 18:54:03 2014 +0000	CSR-5
+a82fdb1	Eddie Jaoude	Fri Dec 19 18:03:23 2014 +0000	Revert "test demo"
+ef95232	Mike Whiting	Fri Dec 19 11:42:06 2014 +0000	Merge pull request #5 from TransformCore/feature/documentation-dod
+8cfd183	Eddie Jaoude	Fri Dec 19 10:31:02 2014 +0000	test demo
+c058d52	Eddie Jaoude	Fri Dec 19 06:17:22 2014 +0000	Fixed filename typo
+08da415	Eddie Abou-Jaoude	Fri Dec 19 04:59:54 2014 +0000	Double nesting list formatting improved
+0a69379	Eddie Abou-Jaoude	Fri Dec 19 04:57:59 2014 +0000	Removed test double nested list point
+46304c9	Eddie Abou-Jaoude	Fri Dec 19 04:56:59 2014 +0000	Improved formatting of nested list
+c3a47a3	Eddie Jaoude	Fri Dec 19 04:51:34 2014 +0000	Addition to standard template F/E browser support
+3c5b0d0	Mike Whiting	Thu Dec 18 11:08:25 2014 +0000	Merge pull request #10 from TransformCore/feature/alias-cmds
+04b5dba	Mike Whiting	Thu Dec 18 10:06:34 2014 +0000	Merge pull request #9 from TransformCore/feature/documentation-contributing
+21f008f	Eddie Jaoude	Thu Dec 18 10:00:31 2014 +0000	Updated Documentation links in README
+691827f	Eddie Jaoude	Thu Dec 18 09:42:45 2014 +0000	Removed remaining config for `swiftmailer`
+1119d83	Eddie Jaoude	Thu Dec 18 09:36:25 2014 +0000	Remove Swift mailer as Frontend not required
+0153cb1	Eddie Jaoude	Thu Dec 18 09:33:11 2014 +0000	Removed Doctrine as Frontend will not require it
+f32be10	Eddie Jaoude	Thu Dec 18 09:19:11 2014 +0000	Updated Version file name in main Makefile
+a2d0ac7	Eddie Jaoude	Thu Dec 18 09:14:31 2014 +0000	Updated PHPSpec Code Coverage report whitelist
+e58eb74	Eddie Jaoude	Thu Dec 18 09:14:09 2014 +0000	Implemented Version service in App & Template
+6d8e694	Eddie Jaoude	Thu Dec 18 09:13:36 2014 +0000	Version service & Spec Test
+47df3b7	Eddie Jaoude	Thu Dec 18 09:12:51 2014 +0000	Removed PHPSpec example Entity & Spec Test
+2756442	Eddie Jaoude	Thu Dec 18 08:05:54 2014 +0000	Override  build.version.* for packaging
+becd221	Mike Whiting	Wed Dec 17 13:16:03 2014 +0000	Set build VERSION number build--
+c7fb4e1	Eddie Abou-Jaoude	Wed Dec 17 11:53:02 2014 +0000	Updated Demo link information
+3e7005c	Eddie Jaoude	Wed Dec 17 08:05:59 2014 +0000	Get composer & install dependencies
+5165ede	Eddie Jaoude	Wed Dec 17 08:05:03 2014 +0000	Revert "Can not use Alias CMDs with Deps"
+1fc7ab5	Eddie Jaoude	Wed Dec 17 07:59:14 2014 +0000	Can not use Alias CMDs with Deps
+949fd48	Eddie Jaoude	Wed Dec 17 07:55:21 2014 +0000	Symfony generated file updated
+54c7763	Eddie Jaoude	Wed Dec 17 07:55:04 2014 +0000	Updated Dependencies
+4f3e250	Eddie Jaoude	Wed Dec 17 07:23:10 2014 +0000	Updated TravisCI config file to use std alias CMDs
+ba4046d	Eddie Jaoude	Wed Dec 17 07:22:48 2014 +0000	Updated Make file to use standard Alias library
+dcb295f	Eddie Jaoude	Wed Dec 17 07:22:20 2014 +0000	Override default commands
+5f72fc2	Eddie Jaoude	Wed Dec 17 07:21:57 2014 +0000	Dev alias commands moved to `dev` file
+14aa0bc	Eddie Jaoude	Wed Dec 17 06:10:54 2014 +0000	Updated Deps & added Cmd aliases
+648bb16	Eddie Jaoude	Tue Dec 16 13:04:26 2014 +0000	DoD referencing Transform template doc
+17f8c12	Eddie Jaoude	Tue Dec 16 12:56:53 2014 +0000	Contributing docs referencing template repo
+cc99e61	Mike Whiting	Fri Dec 12 11:52:16 2014 +0000	Merge pull request #7 from TransformCore/hotfix/git-version-toolbar
+10791ba	Eddie Jaoude	Fri Dec 12 08:49:54 2014 +0000	Removed Toolbar Git bundle after upgrade SF v2.6
+8432845	Tom Ruppel	Wed Dec 10 15:44:08 2014 +0000	Typo fix
+dffb909	Eddie Jaoude	Wed Dec 10 15:42:08 2014 +0000	Formatting updated
+28bbc74	Eddie Jaoude	Wed Dec 10 15:40:24 2014 +0000	Used step numbers for sections of list
+79f872d	Eddie Jaoude	Wed Dec 10 15:39:19 2014 +0000	Updated indentation on list
+fc1e951	Eddie Jaoude	Wed Dec 10 15:35:01 2014 +0000	Initial stage of Definition of Done
+7f86a34	jaffamonkey	Wed Dec 10 15:07:51 2014 +0000	removed erroneous reference to SharedContext in behat.yml
+2a8299e	Mike Whiting	Wed Dec 10 15:03:27 2014 +0000	Merge pull request #4 from TransformCore/feature/updated-dependencies
+e8bc04f	Eddie Jaoude	Wed Dec 10 14:50:21 2014 +0000	Fixed Deps conflict & removed unused file
+06cdc58	jaffamonkey	Wed Dec 10 14:37:41 2014 +0000	corrected report output directory struture
+16f2121	jaffamonkey	Wed Dec 10 14:35:31 2014 +0000	cleaned up test gherkin and report location
+8bbffa9	jaffamonkey	Wed Dec 10 14:26:03 2014 +0000	added behat code and updated behat.yml to use more test clients and composer.json with required extensions
+d732946	Eddie Jaoude	Wed Dec 10 13:58:45 2014 +0000	Updated dependencies
+8b353dd	Paul Littlebury	Wed Dec 10 12:53:08 2014 +0000	Merge pull request #2 from TransformCore/feature/git-pull-tags
+551ab62	Eddie Jaoude	Wed Dec 10 12:31:51 2014 +0000	Updated dev commands to use Makefile
+0302f30	Eddie Jaoude	Fri Dec 5 10:54:03 2014 +0000	Fixed path issue for Contributing documentation
+fe27b7c	Eddie Jaoude	Fri Dec 5 10:32:42 2014 +0000	Updated Slack Token & Github Token for TravisCI
+5e9df71	Eddie Jaoude	Fri Dec 5 09:57:38 2014 +0000	Renamed Deployment App on Heroku
+c5b7560	Eddie Jaoude	Thu Dec 4 14:55:18 2014 +0000	Ignoring web fonts files (web/fonts)
+93d9eb4	Eddie Jaoude	Thu Dec 4 14:53:27 2014 +0000	Updated badges & urls
+dcdebbb	Eddie Jaoude	Thu Dec 4 14:40:59 2014 +0000	Initial commit from Dial-Tone-Frontend repo
+4ba39e6	Rory Woodward	Tue Sep 30 12:03:58 2014 +0100	Update LICENSE
+fca9aa9	Rory Woodward	Tue Sep 30 12:02:33 2014 +0100	Initial commit
