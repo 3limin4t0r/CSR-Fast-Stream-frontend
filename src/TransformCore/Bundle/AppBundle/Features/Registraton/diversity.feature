@@ -4,10 +4,10 @@ Feature: As an applicant after logging in I want to see my homepage
     Given following users for each persona exist on system:
       | persona4@test.com |
       | persona5@test.com |
-    And "persona4@test.com" has completed the "About you,Nationality,Education" sections
-    And "persona5@test.com" has completed the "About you,Nationality,Education" sections
+    And "persona4@test.com" has completed sections "About you,Nationality,Education"
+    And "persona5@test.com" has completed sections "About you,Nationality,Education"
 
-  @CSR-196
+  @CSR-196 @omit
   Scenario: Complete Nationality and immigration section (Happy path)
     Given I am logged in as "persona4@test.com" with password "P@ssword1"
     And I follow "My Details"
@@ -43,7 +43,7 @@ Feature: As an applicant after logging in I want to see my homepage
       | refugee-status-or-asylum-status | Prefer Not to Say                                                           |
 
 
-  @CSR-196
+  @CSR-196 @omit
   Scenario: Complete Nationality and immigration section (Mandatory field validation)
     Given I am logged in as "persona5@test.com" with password "P@ssword1"
     And I follow "My Details"
@@ -84,6 +84,3 @@ Feature: As an applicant after logging in I want to see my homepage
     Then I select "Prefer Not to Say" from "asylum-seeker-refugee-status"
     And I follow "save-and-continue"
     Then I should see "Socio Economic Details"
-
-
-
