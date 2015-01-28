@@ -21,3 +21,7 @@ transform_core_app_account:
 transform_core_app_profile_edit:
     path:     /account/edit
     defaults: { _controller: TransformCoreAppBundle:Account:profile }
+
+transform_core_app_eligibility:
+    path:     /applicant/eligibility
+    defaults: { _controller: TransformCoreAppBundle:Account:eligibility }

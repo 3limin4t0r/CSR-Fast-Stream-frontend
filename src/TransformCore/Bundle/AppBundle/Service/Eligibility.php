@@ -3,13 +3,13 @@ namespace TransformCore\Bundle\AppBundle\Service;
 
 use GuzzleHttp\Client;
 use JMS\Serializer\Serializer;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility as EligibilityEntity;
 
 /**
- * Class Applicants
+ * Class Eligibility
  * @package TransformCore\Bundle\AppBundle\Service
  */
-class Applicants
+class Eligibility
 {
 
     /**
@@ -34,39 +34,40 @@ class Applicants
     /**
      * @param int $id
      *
-     * @return Applicant
+     * @return Eligibility
      */
     public function getById($id)
     {
         $response = $this->client
-            ->get('/applicants/' . $id)
+            ->get('/applicants/' . $id . '/eligibility')
             ->getBody()
             ->getContents();
 
         return $this->serializer
             ->deserialize(
-                json_encode(json_decode($response)->applicant),
-                'TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant',
+                json_encode(json_decode($response)->eligibility),
+                'TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility',
                 'json'
             );
     }
 
     /**
-     * @param Applicant $applicant
+     * @param int $applicantId
+     * @param EligibilityEntity $eligibility
      */
-    public function update(Applicant $applicant)
+    public function update($applicantId, EligibilityEntity $eligibility)
     {
-        $endpoint = '/applicants/'.$applicant->getId();
+        $endpoint = '/applicants/'.$applicantId.'/eligibility';
 
         $response = $this->client
             ->put(
                 $endpoint,
                 array(
                     'body' => array(
-                        'csr_dm_user_profile' => json_decode(
+                        'csr_dm_user_eligibility' => json_decode(
                             $this->serializer
                                 ->serialize(
-                                    $applicant,
+                                    $eligibility,
                                     'json'
                                 ), true
                         )
