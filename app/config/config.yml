@@ -98,6 +98,9 @@ fos_user:
     firewall_name: main
     user_class: TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant
     use_username_form_type: false
+    change_password:
+        form:
+            validation_groups: [CsrPassword]
     registration:
         form:
             type: csr_dm_user_applicant
