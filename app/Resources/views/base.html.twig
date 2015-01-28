@@ -37,9 +37,10 @@
         </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
+        {% block breadcrumb %}{% endblock breadcrumb %}
         {% for type, messages in app.session.flashbag.all() %}
             {% for message in messages %}
-                <div class="flash-{{ type }}">
+                <div class="alert alert-{{ type }}">
                     {{ message }}
                 </div>
             {% endfor %}

@@ -1,0 +1,5 @@
+TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility:
+    exclusion_policy: none
+    properties:
+        presentNationality:
+            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Nationality

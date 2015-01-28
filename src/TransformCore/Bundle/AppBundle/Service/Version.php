@@ -1,6 +1,10 @@
 <?php
 namespace TransformCore\Bundle\AppBundle\Service;
 
+/**
+ * Class Version
+ * @package TransformCore\Bundle\AppBundle\Service
+ */
 class Version
 {
 

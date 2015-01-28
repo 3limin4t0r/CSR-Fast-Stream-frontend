@@ -9,6 +9,7 @@
     "require": {
         "php": "~5.5",
         "ext-mbstring": "*",
+        "ext-intl": "*",
         "symfony/symfony": "2.6.*",
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
@@ -22,14 +23,16 @@
         "braincrafted/bootstrap-bundle": "~2.0",
         "knplabs/knp-menu-bundle": "~2.0",
         "jms/i18n-routing-bundle": "1.1.*",
+        "jms/serializer-bundle": "0.13.*",
         "symfony/yaml": "2.6.*",
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery":  "1.11.1",
         "friendsofsymfony/user-bundle": "~2.0@dev",
-        "transformcore/csr-fast-stream-domain-model": "dev-feature/CSR-135",
+        "transformcore/csr-fast-stream-domain-model": "dev-master",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
         "eddiejaoude/dev-helper-cmds": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "guzzlehttp/guzzle": "~5.1"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
@@ -38,9 +41,8 @@
         "behat/symfony2-extension": "~2.0@dev",
         "behat/mink-extension": "~2.0@dev",
         "behat/mink-browserkit-driver": "~1.1@dev",
-        "behat/mink-goutte-driver": "*@dev",
+        "behat/mink-goutte-driver": "dev-master",
         "behat/mink-selenium2-driver": "1.*",
-        "guzzlehttp/guzzle": "5.*",
         "chartinger/behat-twig-report-extension": "*@dev",
         "phpunit/phpunit": "4.*@stable",
         "phpspec/phpspec": "~2.0",
@@ -58,8 +60,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -68,8 +69,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install"
         ]
     },
     "config": {
