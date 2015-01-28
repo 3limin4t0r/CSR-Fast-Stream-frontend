@@ -27,7 +27,7 @@
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery":  "1.11.1",
         "friendsofsymfony/user-bundle": "~2.0@dev",
-        "transformcore/csr-fast-stream-domain-model": "dev-feature/CSR-24",
+        "transformcore/csr-fast-stream-domain-model": "dev-master",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
         "eddiejaoude/dev-helper-cmds": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
