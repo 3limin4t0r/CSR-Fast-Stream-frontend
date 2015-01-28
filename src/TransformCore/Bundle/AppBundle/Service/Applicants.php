@@ -50,9 +50,6 @@ class Applicants
             ->getBody()
             ->getContents();
 
-        $this->logger->debug($response);
-        $this->logger->debug(json_encode(json_decode($response)->applicant));
-
         return $this->serializer
             ->deserialize(
                 json_encode(json_decode($response)->applicant),
