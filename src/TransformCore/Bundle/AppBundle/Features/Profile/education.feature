@@ -23,6 +23,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I press "Save and continue"
     Then I should see "Diversity"
     And I follow "go back to the previous section"
+    And the "summer-diversity-internship-programme-no" checkbox should not be checked
 
   @CSR-26 @omit
   Scenario: Add education details (degreee needed)
