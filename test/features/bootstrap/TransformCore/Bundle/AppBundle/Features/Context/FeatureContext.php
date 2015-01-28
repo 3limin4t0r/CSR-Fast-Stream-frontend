@@ -278,6 +278,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $this->getSession()->getPage()->fillField('username', $email);
         $this->getSession()->getPage()->fillField('password', $password);
         $this->getSession()->getPage()->pressButton('_submit');
+        $this->assertResponseContains($email);
     }
 
     /**
@@ -288,7 +289,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     }
 
     /**
-     * @Given :arg1 has completed the :arg2 section
+     * @Given :arg1 has completed sections :arg2
      */
     public function hasCompletedTheSection($arg1, $arg2)
     {

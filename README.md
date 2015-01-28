@@ -21,7 +21,15 @@ Latest deploy (inc. branches) https://csr-frontend-ci.herokuapp.com/en/
 * [PageLayout](/doc/PageLayout.md)
 * [Registration](/doc/Registration.md)
 
-## Run app
+## Setup App
+
+1. Install dependencies with **Composer**
+
+```
+php composer.phar install
+```
+
+## Run App
 
 1. `make dev.run`
 
@@ -74,7 +82,6 @@ make symfony.dev.rebuild
 These commands are only **wrappers**, you can still use the original commands if you wish.
 
 More information on commands available visit [Make CMDs lib](https://github.com/eddiejaoude/dev-helper-cmds#built-in-commands)
-
 
 ---
 ---
