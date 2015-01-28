@@ -3,6 +3,7 @@ namespace TransformCore\Bundle\AppBundle\Service;
 
 use GuzzleHttp\Client;
 use JMS\Serializer\Serializer;
+use Monolog\Logger;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 
 /**
@@ -23,12 +24,18 @@ class Applicants
     private $serializer;
 
     /**
+     * @var Logger
+     */
+    private $logger;
+
+    /**
      * @param Client $client
      */
-    public function __construct(Client $client, Serializer $serializer)
+    public function __construct(Client $client, Serializer $serializer, Logger $logger)
     {
         $this->client = $client;
         $this->serializer = $serializer;
+        $this->logger = $logger;
     }
 
     /**
