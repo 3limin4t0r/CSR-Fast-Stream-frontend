@@ -96,9 +96,20 @@ jms_i18n_routing:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: TransformCore\Bundle\CsrFastStreamBundle\Entity\User
+    user_class: TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant
     use_username_form_type: false
     registration:
         form:
-            type: csr_dm_user_registration
+            type: csr_dm_user_applicant
             validation_groups: [CsrRegistration]
+
+jms_serializer:
+    metadata:
+        auto_detection: true
+        directories:
+            FOSUserBundle:
+                namespace_prefix: "FOS\\UserBundle"
+                path: "@TransformCoreAppBundle/Resources/config/serializer/fos"
+            TransformCoreCsrFastStreamBundle:
+                namespace_prefix: "TransformCore\\Bundle\\CsrFastStreamBundle"
+                path: "@TransformCoreAppBundle/Resources/config/serializer/core"

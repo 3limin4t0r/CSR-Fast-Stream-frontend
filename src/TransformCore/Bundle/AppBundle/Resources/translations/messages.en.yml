@@ -6,6 +6,7 @@ nav:
   register: Register
   login: Login
   logout: Logout
+  profile: Profile
 
 home:
   title: CSR
@@ -47,10 +48,8 @@ register:
       label: I require adjustments based on my disability
     disabled-details:
       label: Please describe your disability
-    phone-number-1:
+    phone-number:
       label: Please provide your telephone number
-    phone-number-2:
-      label: Please provide another telephone number (optional)
     disabled-adjustment-details:
       label: Please tell us what adjustments you require based on your disability
     guaranteed-interview-scheme:
@@ -89,3 +88,29 @@ guaranteedInterviewScheme:
 
 account:
   title: My Account
+  overview: Overview
+
+address:
+  form:
+    line1:
+      label: Line 1
+    line2:
+      label: Line 2
+    line3:
+      label: Line 3
+    town:
+      label: Town
+    county:
+      label: County
+    postcode:
+      label: Postcode
+    country:
+      label: Country
+
+profile:
+  title: Profile
+  form:
+    dateOfBirth:
+      label: Date of Birth
+    updateButton:
+      label: Update
