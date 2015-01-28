@@ -22,7 +22,10 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_profile_address_county" with "a county"
     And I fill in "csr_dm_user_profile_address_postcode" with "post code"
     # Date of Birth
-    And I fill in "csr_dm_user_profile_dateOfBirth" with "1968-08-02"
+#    And I fill in "csr_dm_user_profile_dateOfBirth" with "1968-08-02"
+    And I fill in "csr_dm_user_profile_dateOfBirth_day" with "02"
+    And I fill in "csr_dm_user_profile_dateOfBirth_month" with "08"
+    And I fill in "csr_dm_user_profile_dateOfBirth_year" with "1968"
     # Phone details
     And I fill in "csr_dm_user_profile_phoneNumber_number" with "07951234567"
     And I select "United Kingdom" from "csr_dm_user_profile_address_country"
@@ -35,7 +38,9 @@ Feature: As an user, I want to be able to add details about myself on my account
     And the "csr_dm_user_profile_firstname" field should contain "Onechange"
     And the "csr_dm_user_profile_lastname" field should contain "Personachange"
     # Date of birth
-    And the "csr_dm_user_profile_dateOfBirth" field should contain "1968-08-02"
+    And the "csr_dm_user_profile_dateOfBirth_day" field should contain "02"
+    And the "csr_dm_user_profile_dateOfBirth_month" field should contain "08"
+    And the "csr_dm_user_profile_dateOfBirth_year" field should contain "1968"
     # Address details
     And the "csr_dm_user_profile_address_postcode" field should contain "post code"
     And the "csr_dm_user_profile_address_line1" field should contain "address line one"
