@@ -62,15 +62,9 @@ class Applicants
             ->put(
                 '/applicants/' . $applicant->getId(),
                 array(
-                    'body' => array(
-                        'csr_dm_user_profile' => json_decode(
-                            $this->serializer
-                                ->serialize(
-                                    $applicant,
-                                    'json'
-                                ), true
-                        )
-                    )
+                    'body'    => $this->serializer
+                        ->serialize($applicant, 'json'),
+                    'headers' => array('Content-Type' => 'application/json')
                 )
             );
 

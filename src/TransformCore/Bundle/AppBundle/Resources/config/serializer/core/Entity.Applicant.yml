@@ -2,6 +2,7 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
     exclusion_policy: all
     properties:
         id:
+            expose: true
             type: integer
         firstname:
             expose: true

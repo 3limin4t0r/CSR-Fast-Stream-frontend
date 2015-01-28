@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9599cdd1d6b776f605e001f9b22b109c",
+    "hash": "ff076c2981a66abee9dc05f521870687",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -2643,16 +2643,16 @@
         },
         {
             "name": "transformcore/csr-fast-stream-domain-model",
-            "version": "dev-feature/CSR-24",
+            "version": "dev-feature/CSR-344",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "e0acb87c87e0e63ec670a4e161ddd98564b4bc06"
+                "reference": "917a5a9ee68363113913cab666ed40ba6754638e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/e0acb87c87e0e63ec670a4e161ddd98564b4bc06",
-                "reference": "e0acb87c87e0e63ec670a4e161ddd98564b4bc06",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/917a5a9ee68363113913cab666ed40ba6754638e",
+                "reference": "917a5a9ee68363113913cab666ed40ba6754638e",
                 "shasum": ""
             },
             "require": {
@@ -2678,7 +2678,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-26 15:32:34"
+            "time": "2015-01-28 10:52:47"
         },
         {
             "name": "twbs/bootstrap",
@@ -3042,12 +3042,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkBrowserKitDriver.git",
-                "reference": "384c50d8e695633bc5ae21e61e86b51700bdf4d3"
+                "reference": "896e8a8c640ef712030b9d40269657b65ced98ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/384c50d8e695633bc5ae21e61e86b51700bdf4d3",
-                "reference": "384c50d8e695633bc5ae21e61e86b51700bdf4d3",
+                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/896e8a8c640ef712030b9d40269657b65ced98ca",
+                "reference": "896e8a8c640ef712030b9d40269657b65ced98ca",
                 "shasum": ""
             },
             "require": {
@@ -3066,8 +3066,8 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Behat\\Mink\\Driver\\": "src/"
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3089,7 +3089,7 @@
                 "browser",
                 "testing"
             ],
-            "time": "2015-01-25 22:23:08"
+            "time": "2015-01-08 20:20:26"
         },
         {
             "name": "behat/mink-extension",
@@ -3156,12 +3156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkGoutteDriver.git",
-                "reference": "63a593c25a449292787c7418f08b6181c27271f6"
+                "reference": "3551995271f32c42787f1602637985e2cd665714"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkGoutteDriver/zipball/63a593c25a449292787c7418f08b6181c27271f6",
-                "reference": "63a593c25a449292787c7418f08b6181c27271f6",
+                "url": "https://api.github.com/repos/minkphp/MinkGoutteDriver/zipball/3551995271f32c42787f1602637985e2cd665714",
+                "reference": "3551995271f32c42787f1602637985e2cd665714",
                 "shasum": ""
             },
             "require": {
@@ -3177,8 +3177,8 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Behat\\Mink\\Driver\\": "src/"
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3200,7 +3200,7 @@
                 "headless",
                 "testing"
             ],
-            "time": "2015-01-25 22:24:40"
+            "time": "2015-01-08 09:20:50"
         },
         {
             "name": "behat/mink-selenium2-driver",
