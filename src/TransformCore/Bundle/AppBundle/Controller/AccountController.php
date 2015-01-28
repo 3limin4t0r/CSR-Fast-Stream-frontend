@@ -5,6 +5,7 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
+use TransformCore\Bundle\CsrFastStreamBundle\Form\EducationFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
@@ -64,6 +65,50 @@ class AccountController extends Controller
         }
 
         return $this->render('TransformCoreAppBundle:Account:profile.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
+        );
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
+    public function educationAction(Request $request)
+    {
+        $applicantId = $this->get('security.token_storage')
+            ->getToken()
+            ->getUser()
+            ->getId();
+
+//        $eligibility = $this->get('transform_core_app_main.service.eligibility')
+//                          ->getById($applicantId);
+
+        $form = $this->createForm(new EducationFormType()/*, $eligibility*/);
+        $form->handleRequest($request);
+        /*
+        if ($form->isValid()) {
+            $eligibility = $form->getData();
+
+            $this->get('transform_core_app_main.service.eligibility')
+                 ->update($applicantId, $eligibility);
+
+            $request->getSession()
+                    ->getFlashBag()
+                    ->add(
+                        'success',
+                        'Your changes were saved!'
+                    );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_eligibility')
+            );
+        }
+*/
+        return $this->render(
+            'TransformCoreAppBundle:Account:education.html.twig',
             array(
                 'form' => $form->createView(),
             )
