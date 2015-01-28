@@ -1,2 +1,6 @@
 TransformCore\Bundle\CsrFastStreamBundle\Entity\PhoneNumber:
     exclusion_policy: none
+    properties:
+        number:
+            expose: true
+            type: string

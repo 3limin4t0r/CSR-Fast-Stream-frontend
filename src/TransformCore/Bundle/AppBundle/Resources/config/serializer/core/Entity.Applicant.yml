@@ -9,10 +9,7 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
             type: string
         lastname:
             expose: true
-            type: integer
-        phoneNumber:
-            expose: true
-            type: integer
+            type: string
         dateOfBirth:
             expose: true
             type: DateTime<'Y-m-d'>
@@ -23,7 +20,7 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
             expose: true
             type: TransformCore\Bundle\CsrFastStreamBundle\Entity\PhoneNumber
         registration:
-            expose: true
+            expose: false
             type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Registration
         eligibility:
             expose: true
