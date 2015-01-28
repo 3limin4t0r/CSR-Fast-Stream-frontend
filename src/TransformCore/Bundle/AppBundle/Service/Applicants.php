@@ -3,7 +3,6 @@ namespace TransformCore\Bundle\AppBundle\Service;
 
 use GuzzleHttp\Client;
 use JMS\Serializer\Serializer;
-use Monolog\Logger;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 
 /**
