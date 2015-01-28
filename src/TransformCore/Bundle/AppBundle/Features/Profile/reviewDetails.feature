@@ -1,6 +1,6 @@
 Feature: As an applicant, after completing all profile sections, I want to be able to review before submitting
 
-  @CSR-211 @omit
+  @CSR-211
   Scenario Outline: Review and Submit (User Journey)
     Given I am on the homepage
     And I follow "Register"
