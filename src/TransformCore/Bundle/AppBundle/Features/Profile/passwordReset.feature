@@ -9,6 +9,7 @@ Feature: As an user, I want to be able to reset my password, for security reason
     And I fill in "fos_user_change_password_form_plainPassword_first" with "P@ssword2"
     And I fill in "fos_user_change_password_form_plainPassword_second" with "P@ssword2"
     Then I press "Change password"
+    And I should not see "This value is too short"
     And I follow "Logout"
     When I am logged in as "five@test.com" with password "P@ssword2"
     Then I should see "Logout"
