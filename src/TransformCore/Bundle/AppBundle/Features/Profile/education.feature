@@ -2,14 +2,14 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 
   Background:
     Given following users for each persona exist on system:
-      | persona6@test.com |
-      | persona7@test.com |
-    And "persona6@test.com" has completed sections "About You, Nationality"
-    And "persona7@test.com" has completed sections "About You, Nationality"
+      | six@test.com   |
+      | seven@test.com |
+    And "six@test.com" has completed sections "About You, Nationality"
+    And "seven@test.com" has completed sections "About You, Nationality"
 
   @CSR-26 @omit
   Scenario: Add education details (no degree needed)
-    Given I am logged in as "persona6@test.com" with password "P@ssword1"
+    Given I am logged in as "six@test.com" with password "P@ssword1"
     And I follow "My Details"
     And I press "Save and continue"
     And I press "Save and continue"
@@ -23,10 +23,11 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I press "Save and continue"
     Then I should see "Diversity"
     And I follow "go back to the previous section"
+    And the "summer-diversity-internship-programme-no" checkbox should not be checked
 
   @CSR-26 @omit
   Scenario: Add education details (degreee needed)
-    Given I am logged in as "persona7@test.com" with password "P@ssword1"
+    Given I am logged in as "seven@test.com" with password "P@ssword1"
     And I follow "My Details"
     And I press "Save and continue"
     And I press "Save and continue"
