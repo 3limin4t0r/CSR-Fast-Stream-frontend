@@ -1018,16 +1018,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f1085bb4e023766a66b7b051914ec73bdf7202b5"
+                "reference": "475b29ccd411f2fa8a408e64576418728c032cfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f1085bb4e023766a66b7b051914ec73bdf7202b5",
-                "reference": "f1085bb4e023766a66b7b051914ec73bdf7202b5",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/475b29ccd411f2fa8a408e64576418728c032cfa",
+                "reference": "475b29ccd411f2fa8a408e64576418728c032cfa",
                 "shasum": ""
             },
             "require": {
@@ -1072,7 +1072,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-12-19 20:27:15"
+            "time": "2015-01-28 01:03:29"
         },
         {
             "name": "guzzlehttp/ringphp",
@@ -2250,16 +2250,16 @@
         },
         {
             "name": "sensiolabs/security-checker",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/security-checker.git",
-                "reference": "5b4eb4743ebe68276c911c84101ecdf4a9ae76ee"
+                "reference": "134cecf1c61256bd8e973e11376891a724543820"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/5b4eb4743ebe68276c911c84101ecdf4a9ae76ee",
-                "reference": "5b4eb4743ebe68276c911c84101ecdf4a9ae76ee",
+                "url": "https://api.github.com/repos/sensiolabs/security-checker/zipball/134cecf1c61256bd8e973e11376891a724543820",
+                "reference": "134cecf1c61256bd8e973e11376891a724543820",
                 "shasum": ""
             },
             "require": {
@@ -2291,7 +2291,7 @@
                 }
             ],
             "description": "A security checker for your composer.lock",
-            "time": "2014-07-19 10:52:35"
+            "time": "2015-01-26 16:25:19"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2347,32 +2347,33 @@
         },
         {
             "name": "symfony/assetic-bundle",
-            "version": "v2.6.0",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/AsseticBundle.git",
-                "reference": "39d0e15b63936464a9929c00f8e28a30f2331419"
+                "reference": "422b0add2110f0cf9bc7a873a386ea053f4a89f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/39d0e15b63936464a9929c00f8e28a30f2331419",
-                "reference": "39d0e15b63936464a9929c00f8e28a30f2331419",
+                "url": "https://api.github.com/repos/symfony/AsseticBundle/zipball/422b0add2110f0cf9bc7a873a386ea053f4a89f0",
+                "reference": "422b0add2110f0cf9bc7a873a386ea053f4a89f0",
                 "shasum": ""
             },
             "require": {
                 "kriswallsmith/assetic": "~1.2",
                 "php": ">=5.3.0",
-                "symfony/console": "~2.1",
-                "symfony/framework-bundle": "~2.1",
-                "symfony/yaml": "~2.1"
+                "symfony/console": "~2.3",
+                "symfony/dependency-injection": "~2.3",
+                "symfony/framework-bundle": "~2.3",
+                "symfony/yaml": "~2.3"
             },
             "require-dev": {
                 "kriswallsmith/spork": "~0.2",
                 "patchwork/jsqueeze": "~1.0",
-                "symfony/class-loader": "~2.1",
-                "symfony/css-selector": "~2.1",
-                "symfony/dom-crawler": "~2.1",
-                "symfony/twig-bundle": "~2.1"
+                "symfony/class-loader": "~2.3",
+                "symfony/css-selector": "~2.3",
+                "symfony/dom-crawler": "~2.3",
+                "symfony/twig-bundle": "~2.3"
             },
             "suggest": {
                 "kriswallsmith/spork": "to be able to dump assets in parallel",
@@ -2407,7 +2408,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2015-01-26 13:00:20"
+            "time": "2015-01-27 12:45:16"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -3404,16 +3405,16 @@
         },
         {
             "name": "codegyre/robo",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codegyre/Robo.git",
-                "reference": "cf9491a591c18415c50c9613798e1d216f194d93"
+                "reference": "c75c2f21c41c851803a25b2ff1ed018fe10b6cf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codegyre/Robo/zipball/cf9491a591c18415c50c9613798e1d216f194d93",
-                "reference": "cf9491a591c18415c50c9613798e1d216f194d93",
+                "url": "https://api.github.com/repos/Codegyre/Robo/zipball/c75c2f21c41c851803a25b2ff1ed018fe10b6cf6",
+                "reference": "c75c2f21c41c851803a25b2ff1ed018fe10b6cf6",
                 "shasum": ""
             },
             "require": {
@@ -3451,7 +3452,7 @@
                 }
             ],
             "description": "Modern task runner",
-            "time": "2015-01-22 03:40:25"
+            "time": "2015-01-27 02:41:11"
         },
         {
             "name": "doctrine/instantiator",
@@ -4429,16 +4430,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2047ae17f6e8cfd10fbde0b4535c97eb22d99cbe"
+                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2047ae17f6e8cfd10fbde0b4535c97eb22d99cbe",
-                "reference": "2047ae17f6e8cfd10fbde0b4535c97eb22d99cbe",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2e8580deebb7d1ac92ac878595e6bffe01069c2a",
+                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a",
                 "shasum": ""
             },
             "require": {
@@ -4456,8 +4457,9 @@
                 "sebastian/comparator": "~1.0",
                 "sebastian/diff": "~1.1",
                 "sebastian/environment": "~1.1",
-                "sebastian/exporter": "~1.0",
+                "sebastian/exporter": "~1.1",
                 "sebastian/global-state": "~1.0",
+                "sebastian/recursion-context": "~1.0",
                 "sebastian/version": "~1.0",
                 "symfony/yaml": "~2.0"
             },
@@ -4496,7 +4498,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-01-24 14:23:56"
+            "time": "2015-01-27 16:06:15"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

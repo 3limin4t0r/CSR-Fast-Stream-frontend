@@ -53,21 +53,19 @@ class Applicants
 
     /**
      * @param Applicant $applicant
-     *
-     * @return Applicant
      */
     public function update(Applicant $applicant)
     {
+        $endpoint = '/applicants/'.$applicant->getId();
+
         $response = $this->client
             ->put(
-                '/applicants/' . $applicant->getId(),
+                $endpoint,
                 array(
                     'body'    => $this->serializer
                         ->serialize($applicant, 'json'),
                     'headers' => array('Content-Type' => 'application/json')
                 )
             );
-
-        return $applicant;
     }
 }
