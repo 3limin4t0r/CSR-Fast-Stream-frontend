@@ -24,18 +24,12 @@ class Applicants
     private $serializer;
 
     /**
-     * @var Logger
-     */
-    private $logger;
-
-    /**
      * @param Client $client
      */
-    public function __construct(Client $client, Serializer $serializer, Logger $logger)
+    public function __construct(Client $client, Serializer $serializer)
     {
         $this->client = $client;
         $this->serializer = $serializer;
-        $this->logger = $logger;
     }
 
     /**
