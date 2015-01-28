@@ -9,6 +9,7 @@
     "require": {
         "php": "~5.5",
         "ext-mbstring": "*",
+        "ext-intl": "*",
         "symfony/symfony": "2.6.*",
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
@@ -27,7 +28,7 @@
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery":  "1.11.1",
         "friendsofsymfony/user-bundle": "~2.0@dev",
-        "transformcore/csr-fast-stream-domain-model": "dev-feature/CSR-24",
+        "transformcore/csr-fast-stream-domain-model": "dev-master",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
         "eddiejaoude/dev-helper-cmds": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
@@ -59,8 +60,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -69,8 +69,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+            "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install"
         ]
     },
     "config": {

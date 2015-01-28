@@ -1,0 +1,2 @@
+TransformCore\Bundle\CsrFastStreamBundle\Entity\Nationality:
+    exclusion_policy: none

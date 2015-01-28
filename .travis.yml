@@ -10,11 +10,20 @@ before_install:
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --dev --no-interaction
+  # -------------- move to make command -----
+  - git clone https://github.com/TransformCore/CSR-Fast-Stream-backend.git
+  - cp composer.phar CSR-Fast-Stream-backend/
+  - cd CSR-Fast-Stream-backend/
+  - git checkout develop
+  - php composer.phar install --dev --no-interaction
+  - make symfony.server &
+  - cd ../
+  # -----------------------------------------
   - make symfony.dev.rebuild
 
 script:
   - make symfony.test.bdd suite=transformcore_app config=test/behat.yml
-  - make symfony.test.spec config=test/phpspec.yml
+#  - make symfony.test.spec config=test/phpspec.yml
   - make scrutinizer.coverage
 
 after_success:
