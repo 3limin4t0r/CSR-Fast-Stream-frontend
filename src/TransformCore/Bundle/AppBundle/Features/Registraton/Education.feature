@@ -7,8 +7,6 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And "persona6@test.com" has completed sections "About You, Nationality"
     And "persona7@test.com" has completed sections "About You, Nationality"
 
-<<<<<<< HEAD
-
   Scenario: Add education details (no degree needed)
     Given I am logged in as "persona6@test.com" with password "P@ssword1"
     And I follow "My Details"
@@ -25,7 +23,6 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     Then I should see "Diversity"
     And I follow "go back to the previous section"
 
-=======
   @CSR-26 @omit
   Scenario: Add education details (no degree needed)
     Given I am logged in as "persona6@test.com" with password "P@ssword1"
@@ -44,21 +41,14 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I follow "go back to the previous section"
 
   @CSR-26 @omit
->>>>>>> develop
   Scenario: Add education details (degreee needed)
     Given I am logged in as "persona7@test.com" with password "P@ssword1"
     And I follow "My Details"
     And I press "Save and continue"
     And I press "Save and continue"
 
-<<<<<<< HEAD
-  Scenario: Applying via In Service Route
-
-
-=======
   @CSR-26 @omit
   Scenario: Applying via In Service Route
 
   @CSR-26 @omit
->>>>>>> develop
   Scenario: Education details fields validation
