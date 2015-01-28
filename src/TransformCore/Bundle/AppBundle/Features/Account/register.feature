@@ -7,26 +7,25 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "Register Your Details"
     When I fill form with:
     # Your details
-      | fos_user_registration_form_firstname                  | <first-name>                            |
-      | fos_user_registration_form_lastname                   | <last-name>                             |
+      | fos_user_registration_form_firstname                               | <first-name>                     |
+      | fos_user_registration_form_lastname                                | <last-name>                      |
         # Contact details
-      | fos_user_registration_form_email                      | <email-input>                           |
+      | fos_user_registration_form_email                                   | <email-input>                    |
         # Signin Details
-      | fos_user_registration_form_plainPassword_first        | <password>                              |
-      | fos_user_registration_form_plainPassword_second       | <password>                              |
+      | fos_user_registration_form_plainPassword_first                     | <password>                       |
+      | fos_user_registration_form_plainPassword_second                    | <password>                       |
         # Referrer
-      | fos_user_registration_form_heardAboutUs | <referrer-input> |
+      | fos_user_registration_form_registration_heardAboutUs               | <referrer-input>                 |
         # Disability details
-      | fos_user_registration_form_disabledAdjustmentRequired | YES                                     |
-      | fos_user_registration_form_disabledDetails            | <disability>                            |
-      | fos_user_registration_form_disabledAdjustmentDetails  | some disability adjustments text
-      | fos_user_registration_form_phoneNumber1               | <phone-input1>                          |
-      | fos_user_registration_form_phoneNumber2               | <phone-input2>                          |
+      | fos_user_registration_form_registration_disabledAdjustmentRequired | YES                              |
+      | fos_user_registration_form_registration_disabledDetails            | <disability>                     |
+      | fos_user_registration_form_registration_disabledAdjustmentDetails  | some disability adjustments text
+      | fos_user_registration_form_phoneNumber_number                      | <phoneNumber>                    |
     # Checkboxes
-      | fos_user_registration_form_guaranteedInterviewScheme | YES |
-      | fos_user_registration_form_termsAndConditions        | YES |
+      | fos_user_registration_form_registration_guaranteedInterviewScheme  | YES                              |
+      | fos_user_registration_form_registration_termsAndConditions         | YES                              |
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "My Account"
+    Then I should see "The user has been created successfully"
     And I should see "<email-input>"
   # And I should get an email on "<email-input>" with:
   #  """
@@ -34,9 +33,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   #  """
 
   Examples:
-    | first-name | last-name | email-input       | phone-input1 | phone-input2 | password  | disability | referrer-input   |
-    | One        | Persona   | persona1@test.com | 07739898078  | 07739898011  | P@ssword1 | 1          | Search Engine    |
-    | Two        | persona   | persona2@test.com | 07739898079  | 07739898022  | P@ssword1 | 1          | Friend or Family |
+    | first-name | last-name | email-input  | phoneNumber | password  | disability | referrer-input   |
+    | One        | Persona   | one@test.com | 07739898078 | P@ssword1 | 1          | Search Engine    |
+    | Two        | persona   | two@test.com | 07739898079 | P@ssword1 | 1          | Friend or Family |
 
 
   @CSR-6
@@ -62,7 +61,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_email" with "bill.carr@test"
         # Signin Details
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
-    And I fill in "fos_user_registration_form[plainPassword][second]" with "P@ssword11"
+    And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword11"
         # Disability details
     And I check "I require adjustments based on my disability"
     And I press "fos_user_registration_form_registerButton"
@@ -79,7 +78,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_firstname" with "Bill"
     And I fill in "fos_user_registration_form_lastname" with "Carr"
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
-    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
+    And I fill in "fos_user_registration_form_plainPassword_second" with "<password>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
@@ -123,7 +122,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_email" with "email@test"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value is not a valid email address"
-    And I fill in "fos_user_registration_form_email" with "persona4@test.com"
+    And I fill in "fos_user_registration_form_email" with "four@test.com"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value should not be blank"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
@@ -133,13 +132,12 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value should not be blank"
-    And I check "fos_user_registration_form_termsAndConditions"
+    And I check "fos_user_registration_form_registration_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
     And I press "fos_user_registration_form_registerButton"
     Then I should not see "This value should not be blank"
-    And I should see "My Account"
 
   @CSR-6
   Scenario Outline: Create account using email that has already been used
@@ -149,15 +147,15 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_firstname" with "<first-name>"
     And I fill in "fos_user_registration_form_lastname" with "<last-name>"
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
-    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
-    And I check "fos_user_registration_form_disabledAdjustmentRequired"
-    And I select "Diabetes" from "fos_user_registration_form_disabledDetails"
-    And I fill in "fos_user_registration_form_disabledAdjustmentDetails" with "some disability adjustments text"
-    And I fill in "fos_user_registration_form_phoneNumber1" with "02084567878"
-    And I check "fos_user_registration_form_guaranteedInterviewScheme"
-    And I check "fos_user_registration_form_termsAndConditions"
+    And I fill in "fos_user_registration_form_plainPassword_second" with "<password>"
+    And I check "fos_user_registration_form_registration_disabledAdjustmentRequired"
+    And I select "Diabetes" from "fos_user_registration_form_registration_disabledDetails"
+    And I fill in "fos_user_registration_form_registration_disabledAdjustmentDetails" with "some disability adjustments text"
+    And I fill in "fos_user_registration_form_phoneNumber_number" with "02084567878"
+    And I check "fos_user_registration_form_registration_guaranteedInterviewScheme"
+    And I check "fos_user_registration_form_registration_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value is already used"
   Examples:
-    | email             |
-    | persona3@test.com |
+    | email          |
+    | three@test.com |

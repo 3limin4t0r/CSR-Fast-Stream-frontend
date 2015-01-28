@@ -60,6 +60,7 @@ class RegistrationListener implements EventSubscriberInterface
     public function onRegistrationInit(UserEvent $event)
     {
         $user = $event->getUser();
+
         $user->setUsername(
             $this->generator->getUsername()
         );

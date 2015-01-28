@@ -9,7 +9,7 @@ use Prophecy\Argument;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\SecurityContext;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\User;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 
 class MenuBuilderSpec extends ObjectBehavior
 {
@@ -64,7 +64,7 @@ class MenuBuilderSpec extends ObjectBehavior
         Request $request,
         SecurityContext $securityContext,
         TokenInterface $token,
-        User $user
+        Applicant $user
     )
     {
         $menu->setChildrenAttributes(array('class' => 'navbar-nav nav'))
@@ -97,6 +97,10 @@ class MenuBuilderSpec extends ObjectBehavior
             ->willReturn($user);
 
         $menu->addChild($email, array('route' => 'transform_core_app_account'))
+            ->shouldBeCalled()
+            ->willReturn($menu);
+
+        $menu->addChild('nav.profile', array('route' => 'transform_core_app_profile_edit'))
             ->shouldBeCalled()
             ->willReturn($menu);
 

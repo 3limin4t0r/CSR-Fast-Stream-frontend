@@ -210,7 +210,8 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
         if (!preg_match($regex, $actual)) {
             $message = sprintf('The field "%s" value is "%s", but "%s" expected.', $field, $actual, $value);
-            throw new \Exception($message, $this->getSession());
+
+            throw new \Exception($message);
         }
     }
 
@@ -246,9 +247,10 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function thePersonsAreUnlinked($count, $area)
     {
+        sleep(1);
         $str = $this->getSession()->getPage()->getContent();
         $count2 = substr_count($str, $area);
-        if ($count === $count2) {
+        if ($count == $count2) {
             echo 'The count of:' . $count2 . ' is correct';
         } else {
             throw new \Exception("Count " . $count . " expected but got " . $count2);
@@ -276,6 +278,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $this->getSession()->getPage()->fillField('username', $email);
         $this->getSession()->getPage()->fillField('password', $password);
         $this->getSession()->getPage()->pressButton('_submit');
+        $this->assertResponseContains($email);
     }
 
     /**
@@ -283,7 +286,13 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
     {
+    }
 
+    /**
+     * @Given :arg1 has completed sections :arg2
+     */
+    public function hasCompletedTheSection($arg1, $arg2)
+    {
     }
 
     /**
@@ -294,4 +303,3 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
     }
 }
-
