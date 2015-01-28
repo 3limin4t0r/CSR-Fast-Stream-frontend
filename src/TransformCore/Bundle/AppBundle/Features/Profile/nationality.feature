@@ -2,8 +2,8 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   Background:
     Given following users for each persona exist on system:
-    |four@test.com|
-    |five@test.com|
+      | four@test.com |
+      | five@test.com |
     And "four@test.com" has completed sections "About you"
     And "five@test.com" has completed sections "About you"
 
@@ -32,9 +32,9 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Nationality, Immigration and Employment Restrictions"
 
   Examples:
-    |applicant|firstname|
-    |four@test.com|four |
-    |five@test.com|five |
+    | applicant     | firstname |
+    | four@test.com | four      |
+    | five@test.com | five      |
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Happy path)
