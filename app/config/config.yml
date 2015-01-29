@@ -28,6 +28,8 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form_themes:
+        - 'TransformCoreGovUkStyleBundle:Form:fields.html.twig'
     globals:
       version: "@transform_core_app_main.service.version"
 
