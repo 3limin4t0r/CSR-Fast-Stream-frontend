@@ -13,6 +13,11 @@
     {{ parent() }}
 {%- endblock form_label -%}
 
+{%- block button_attributes -%}
+    {% set attr = attr|merge({'class': (attr.class|default('') ~ ' button')|trim}) %}
+    {{ parent() }}
+{%- endblock button_attributes -%}
+
 {%- block widget_attributes -%}
     {% set attr = attr|merge({'class': (attr.class|default('') ~ ' form-control')|trim}) %}
     {{ parent() }}
