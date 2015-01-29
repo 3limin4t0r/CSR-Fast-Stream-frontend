@@ -1,6 +1,12 @@
-<form novalidate action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+
+<form action="{{ path('fos_user_registration_register') }}"
+      class="fos_user_registration_register"
+      {{ form_enctype(form) }}
+      method="POST"
+      novalidate>
 
     {{ form_start(form) }}
+
         {{ form_errors(form) }}
 
         {{ form_row(form.firstname) }}
@@ -13,6 +19,7 @@
         <h4>{% trans %}register.form.disabled-title{% endtrans %}</h4>
         <p>{% trans %}register.form.disabled-subtitle1{% endtrans %}</p>
         <p>{% trans %}register.form.disabled-subtitle2{% endtrans %}</p>
+
         {{ form_row(form.registration.disabledAdjustmentRequired) }}
         {{ form_row(form.registration.disabledDetails) }}
         {{ form_row(form.phoneNumber.number) }}
@@ -25,6 +32,10 @@
         {{ form_row(form.registration.termsAndConditions) }}
 
         {{ form_row(form.registerButton) }}
+
+        {# note: because FOS User re-renders the phoneNumber field (because of a naming clash)
+                 it is being forced to render inside html comments #}
+                 <!-- {{ form_row(form.phoneNumber) }} -->
 
     {{ form_end(form) }}
 
