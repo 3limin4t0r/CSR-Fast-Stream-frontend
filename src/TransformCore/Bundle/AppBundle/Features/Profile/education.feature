@@ -21,8 +21,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I check "early-diversity-internship-programme-yes"
     And I check "summer-diversity-internship-programme-completed-no"
     And I press "Save and continue"
-    Then I should see "Please enter details of summer diversity internship"
-    And I should see "Please enter details of early diversity internship"
+    And I should see "Please enter details of government department you were in for summer diversity internship"
+    And I should see "Please enter details of government department you were in for early diversity internship"
+    And I should see "Please enter date you completed summer diversity internship"
+    And I should see "Please enter date you completed early diversity internship"
     And I select "Oct 14" from "summer-diversity-internship-programme-date"
     Then I fill in "summer-diversity-programme-detail" with "Summer diversity programme government department"
     And I select "Oct 14" from "early-diversity-internship-programme-date"
@@ -41,7 +43,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And the "summer-diversity-internship-programme-completed-no" checkbox should be checked
 
   @CSR-26 @omit
-  Scenario: Add education details (degree needed)
+  Scenario: Add education details (mandatory field check)
     Given I am logged in as "seven@test.com" with password "P@ssword1"
     And I follow "My Details"
     And I press "Save and continue"
@@ -51,13 +53,8 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     Then I should see "Please indicate whether you are an existing Civil Servant"
     And I should see "Please complete the Undergraduate degree section"
     And I should see "Please complete the Postgraduate degree section"
-    And I should see "Please indicate whether or not you took the Early Diversity Internship Programme"
-    And I should see "Please indicate whether or not you took the Summer Diversity Internship Programme"
-    And I should see "Please indicate if you have completed the Summer Diversity Internship Programme"
-    And I check "early-diversity-internship-programme-no"
-    And I check "summer-diversity-internship-programme-no"
-    And I press "Save and continue"
-    Then I should see "Diversity"
+    And I should see "Please indicate whether or not you completed the Early Diversity Internship Programme"
+    And I should see "Please indicate whether or not you completed the Summer Diversity Internship Programme"
 
 
 
