@@ -53,9 +53,15 @@
     <meta property="og:image" content="http://govuk-elements.herokuapp.com/public/images/opengraph-image.png?0.10.1">
 
   <!--[if gt IE 8]><!--><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main.css"  rel="stylesheet" type="text/css"><!--<![endif]-->
-  <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if IE 8]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+          <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+          <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+          <!--[if IE 8]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/main-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+  <!--[if gt IE 8]><!--><link href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page.css"  rel="stylesheet" type="text/css"><!--<![endif]-->
+          <!--[if IE 6]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+          <!--[if IE 7]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+          <!--[if IE 8]><link href="http://govuk-elements.herokuapp.com/public/stylesheets/elements-page-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+
   </head>
 
   <body class="">
@@ -94,7 +100,7 @@
               <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
               <nav id="proposition-menu">
 
-                <a href="/" id="proposition-name">CSR Fast Stream</a>
+                <a href="/" id="proposition-name">Civil Service Fast Stream</a>
                 {{ knp_menu_render('main', {'template': 'TransformCoreGovUkStyleBundle::knp_menu.html.twig'}) }}
 
               </nav>
@@ -122,9 +128,20 @@
 
     <main id="content" role="main">
 
-        <h1 class="form-title heading-large">{{ block('title') }}</h1>
+        {% block phase_banner %}
 
+            <div class="phase-banner">
+                <p>
+                    <strong class="phase-tag">ALPHA</strong>
+                    <span>This is a new service - your <a href="#">feedback</a> will help us to improve it.</span>
+                </p>
+            </div>
+
+        {% endblock phase_banner %}
+
+        {% block heading %}{% endblock heading %}
         {% block body %}{% endblock body %}
+
         {% block javascripts %}{% endblock javascripts %}
 
     </main><!-- / #content -->
