@@ -56,65 +56,59 @@
 
                 <p>Please select all that apply</p>
 
-                {{ form_row(form.undergraduateDegree) }}
-
-                <div class="form-group">
-                    <label class="control-label required">{{ form_label(form.undergradFromUK) }}</label>
-                    <div id="csr_dm_form_education_undergraduateDegree_0">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_undergraduateDegree_0_widget" class="required">
-                                {{ form_widget(form.undergradFromUK.children[0]) }} {{ form_label(form.undergradFromUK.children[0], null) }}
-                            </label>
+                {% for undergrad in form.undergradDegrees %}
+                    <div class="form-group">
+                        <label class="control-label required">{{ form_label(undergrad.ukDegree) }}</label>
+                        <div id="csr_dm_form_education_undergrad_ukDegree_0">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_undergrad_ukDegree_0_widget" class="required">
+                                    {{ form_widget(undergrad.ukDegree.children[0]) }} {{ form_label(undergrad.ukDegree.children[0], null) }}
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                {{ form_row(form.undergradUKUniversity) }}
-                {{ form_row(form.undergradUKGrade) }}
-
-                <div class="form-group">
-                    <div id="csr_dm_form_education_undergraduateDegree_1">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_undergraduateDegree_1_widget" class="required">
-                                {{ form_widget(form.undergradFromUK.children[1]) }} {{ form_label(form.undergradFromUK.children[1], null) }}
-                            </label>
+                    {{ form_row(undergrad.ukUniversity) }}
+                    {{ form_row(undergrad.undergradGrade) }}
+                    <div class="form-group">
+                        <div id="csr_dm_form_education_undergrad_ukDegree_1">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_undergrad_ukDegree_1_widget" class="required">
+                                    {{ form_widget(undergrad.ukDegree.children[1]) }} {{ form_label(undergrad.ukDegree.children[1], null) }}
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                {{ form_row(form.undergradNonUKInstitution) }}
+                    {{ form_row(undergrad.nonUKInstitution) }}
+                {% endfor %}
 
                 <h4>Postgraduate degree</h4>
 
                 <p>Please select all that apply</p>
 
-                {{ form_row(form.postgraduateDegree) }}
-
-                <div class="form-group">
-                    <label class="control-label required">{{ form_label(form.postgradFromUK) }}</label>
-                    <div id="csr_dm_form_education_postgraduateDegree_0">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_postgraduateDegree_0_widget" class="required">
-                                {{ form_widget(form.postgradFromUK.children[0]) }} {{ form_label(form.postgradFromUK.children[0], null) }}
-                            </label>
+                {% for postgrad in form.postgradDegrees %}
+                    <div class="form-group">
+                        <label class="control-label required">{{ form_label(postgrad.ukDegree) }}</label>
+                        <div id="csr_dm_form_education_postgrad_ukDegree_0">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_postgrad_ukDegree_0_widget" class="required">
+                                    {{ form_widget(postgrad.ukDegree.children[0]) }} {{ form_label(postgrad.ukDegree.children[0], null) }}
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                {{ form_row(form.postgradUKUniversity) }}
-                {{ form_row(form.postgradUKDegree) }}
-
-                <div class="form-group">
-                    <div id="csr_dm_form_education_postgraduateDegree_1">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_postgraduateDegree_1_widget" class="required">
-                                {{ form_widget(form.postgradFromUK.children[1]) }} {{ form_label(form.postgradFromUK.children[1], null) }}
-                            </label>
+                    {{ form_row(postgrad.ukUniversity) }}
+                    {{ form_row(postgrad.postgradDegree) }}
+                    <div class="form-group">
+                        <div id="csr_dm_form_education_postgrad_ukDegree_1">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_postgrad_ukDegree_1_widget" class="required">
+                                    {{ form_widget(postgrad.ukDegree.children[1]) }} {{ form_label(postgrad.ukDegree.children[1], null) }}
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                {{ form_row(form.postgradNonUKInstitution) }}
+                    {{ form_row(postgrad.nonUKInstitution) }}
+                {% endfor %}
 
                 <h3>Internship Programmes</h3>
 

@@ -4,7 +4,6 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EducationFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
@@ -74,7 +73,7 @@ class AccountController extends Controller
     /**
      * @param Request $request
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @return Symfony\Component\HttpFoundation\Response
      */
     public function educationAction(Request $request)
     {
@@ -83,17 +82,17 @@ class AccountController extends Controller
             ->getUser()
             ->getId();
 
-//        $eligibility = $this->get('transform_core_app_main.service.eligibility')
-//                          ->getById($applicantId);
+        $education = $this->get('transform_core_app_main.service.education')
+            ->getById($applicantId);
 
-        $form = $this->createForm(new EducationFormType()/*, $eligibility*/);
+        $form = $this->createForm(new EducationFormType(), $education);
         $form->handleRequest($request);
-        /*
-        if ($form->isValid()) {
-            $eligibility = $form->getData();
 
-            $this->get('transform_core_app_main.service.eligibility')
-                 ->update($applicantId, $eligibility);
+        if ($form->isValid()) {
+            $education = $form->getData();
+
+            $this->get('transform_core_app_main.service.education')
+                 ->update($applicantId, $education);
 
             $request->getSession()
                     ->getFlashBag()
@@ -103,10 +102,10 @@ class AccountController extends Controller
                     );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_eligibility')
+                $this->generateUrl('transform_core_app_education')
             );
         }
-*/
+
         return $this->render(
             'TransformCoreAppBundle:Account:education.html.twig',
             array(
