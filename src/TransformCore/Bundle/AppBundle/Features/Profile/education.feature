@@ -35,9 +35,9 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And the "undergraduate-degree-inside-uk" checkbox should be checked
     And the "postgraduate-degree-no" checkbox should be checked
     And the "summer-diversity-internship-programme-yes" checkbox should be checked
-    And the "early-diversity-programme-detail" field should contain "Early diversity programme detail"
+    And the "early-diversity-programme-detail" field should contain "Summer diversity programme government department"
     And the "early-diversity-internship-programme-yes" checkbox should be checked
-    And the "summer-diversity-programme-detail" field should contain "Summer diversity programme detail"
+    And the "summer-diversity-programme-detail" field should contain "Early diversity programme government department"
     And the "summer-diversity-internship-programme-completed-no" checkbox should be checked
 
   @CSR-26 @omit
