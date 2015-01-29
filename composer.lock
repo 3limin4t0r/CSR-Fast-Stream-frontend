@@ -4,8 +4,58 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "df3a6b4ba3dceace67f7a9fbad26ea9a",
+    "hash": "44abbf6c705bc4e1d2f08231b9308324",
     "packages": [
+        {
+            "name": "adamquaile/symfony-fieldset-bundle",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamquaile/AdamQuaileFieldsetBundle.git",
+                "reference": "cd1e3831014cb8d9f0b71813750b9df715458122"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamquaile/AdamQuaileFieldsetBundle/zipball/cd1e3831014cb8d9f0b71813750b9df715458122",
+                "reference": "cd1e3831014cb8d9f0b71813750b9df715458122",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/config": "~2.5.0",
+                "symfony/dependency-injection": "~2.5.0",
+                "symfony/form": "~2.5.0",
+                "symfony/http-kernel": "~2.5.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "AdamQuaile\\Bundle\\FieldsetBundle\\": [
+                        "",
+                        "Tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Quaile",
+                    "email": "adamquaile@gmail.com"
+                }
+            ],
+            "description": "Fieldset Type in Symfony Forms",
+            "keywords": [
+                "Forms",
+                "fieldset",
+                "symfony"
+            ],
+            "time": "2014-11-07 19:30:22"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.3",

@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new TransformCore\Bundle\CsrFastStreamBundle\TransformCoreCsrFastStreamBundle(),
             new TransformCore\Bundle\GovUkStyleBundle\TransformCoreGovUkStyleBundle(),
             new EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\EddieJaoudeSymfonyTranslationTwigCollectionBundle(),
+            new AdamQuaile\Bundle\FieldsetBundle\AdamQuaileFieldsetBundle(),
 
             // @TODO: move to dev/test below - heroku running in prod mode but need fixtures
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle()
