@@ -12,3 +12,8 @@
     {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' form-label')|trim}) %}
     {{ parent() }}
 {%- endblock form_label -%}
+
+{%- block widget_attributes -%}
+    {% set attr = attr|merge({'class': (attr.class|default('') ~ ' form-control')|trim}) %}
+    {{ parent() }}
+{%- endblock widget_attributes -%}
