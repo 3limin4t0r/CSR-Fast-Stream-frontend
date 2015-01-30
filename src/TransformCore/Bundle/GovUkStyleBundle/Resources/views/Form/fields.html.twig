@@ -74,6 +74,14 @@
 {% endspaceless %}
 {%- endblock checkbox_widget %}
 
+{% block textarea_widget -%}
+{% spaceless %}
+
+    <textarea {{ block('widget_attributes') }} rows="10">{{ value }}</textarea>
+
+{% endspaceless %}
+{%- endblock textarea_widget %}
+
 {%- block button_attributes -%}
 {% spaceless %}
 
