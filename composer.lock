@@ -2648,12 +2648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "01aab95f1e5898db66f47095761b5d7ea78d84e3"
+                "reference": "7ed5f92ed713d329a82ea266d5b3860ed6e9f004"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/01aab95f1e5898db66f47095761b5d7ea78d84e3",
-                "reference": "01aab95f1e5898db66f47095761b5d7ea78d84e3",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/7ed5f92ed713d329a82ea266d5b3860ed6e9f004",
+                "reference": "7ed5f92ed713d329a82ea266d5b3860ed6e9f004",
                 "shasum": ""
             },
             "require": {
@@ -2679,7 +2679,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-01-28 18:55:22"
+            "time": "2015-01-30 09:03:40"
         },
         {
             "name": "twbs/bootstrap",
@@ -3866,16 +3866,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v57",
+            "version": "v59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "166ad317a307082d037a6d201ddb602f3295af9a"
+                "reference": "1746ff03c4c7e44a9c882efd1c90d30baa99f7d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/166ad317a307082d037a6d201ddb602f3295af9a",
-                "reference": "166ad317a307082d037a6d201ddb602f3295af9a",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1746ff03c4c7e44a9c882efd1c90d30baa99f7d4",
+                "reference": "1746ff03c4c7e44a9c882efd1c90d30baa99f7d4",
                 "shasum": ""
             },
             "bin": [
@@ -3906,7 +3906,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-01-19 23:21:04"
+            "time": "2015-01-29 23:14:14"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -4557,25 +4557,25 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "c484a80f97573ab934e37826dba0135a3301b26a"
+                "reference": "1dd8869519a225f7f2b9eb663e225298fade819e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/c484a80f97573ab934e37826dba0135a3301b26a",
-                "reference": "c484a80f97573ab934e37826dba0135a3301b26a",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/1dd8869519a225f7f2b9eb663e225298fade819e",
+                "reference": "1dd8869519a225f7f2b9eb663e225298fade819e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "sebastian/diff": "~1.1",
-                "sebastian/exporter": "~1.0"
+                "sebastian/diff": "~1.2",
+                "sebastian/exporter": "~1.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.1"
+                "phpunit/phpunit": "~4.4"
             },
             "type": "library",
             "extra": {
@@ -4617,7 +4617,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2014-11-16 21:32:38"
+            "time": "2015-01-29 16:28:08"
         },
         {
             "name": "sebastian/diff",
@@ -4723,16 +4723,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "35ab8d385eef068186c83e23ae83c96b0288b3ee"
+                "reference": "84839970d05254c73cde183a721c7af13aede943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/35ab8d385eef068186c83e23ae83c96b0288b3ee",
-                "reference": "35ab8d385eef068186c83e23ae83c96b0288b3ee",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/84839970d05254c73cde183a721c7af13aede943",
+                "reference": "84839970d05254c73cde183a721c7af13aede943",
                 "shasum": ""
             },
             "require": {
@@ -4745,7 +4745,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -4785,7 +4785,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2015-01-24 09:57:24"
+            "time": "2015-01-27 07:23:06"
         },
         {
             "name": "sebastian/global-state",
