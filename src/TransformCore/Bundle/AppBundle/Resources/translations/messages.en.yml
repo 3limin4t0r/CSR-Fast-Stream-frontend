@@ -16,7 +16,7 @@ form:
 
 login:
   title: Login
-  subtitle: Register Your Details
+  subtitle: Login
   form:
     username:
       label: Email address
