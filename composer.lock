@@ -2638,12 +2638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "29f6f8df651b00c5a7d2bc9f06d67fecdc8d5f40"
+                "reference": "ed49d189bea9c04dddcafbf7f92d059ba9632cc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/29f6f8df651b00c5a7d2bc9f06d67fecdc8d5f40",
-                "reference": "29f6f8df651b00c5a7d2bc9f06d67fecdc8d5f40",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/ed49d189bea9c04dddcafbf7f92d059ba9632cc2",
+                "reference": "ed49d189bea9c04dddcafbf7f92d059ba9632cc2",
                 "shasum": ""
             },
             "require": {
