@@ -27,7 +27,7 @@ login:
 
 register:
   title: Register
-  subtitle: Register Your Details
+  subtitle: Register your details
   form:
     firstname:
       label: First Name
@@ -108,7 +108,8 @@ address:
       label: Country
 
 eligibility:
-  title: Eligibility
+  title: Nationality, Immigration and Employment Restrictions
+  step: Step 2 of 5
   subject-to-immigration-controls:
     label: Please check whether or not you are subject to immigration controls
   subject-to-immigration-controls-details:
@@ -128,13 +129,17 @@ nationality:
     label: Nationality
 
 profile:
-  title: Profile
+  title: About you
+  step: Step 1 of 5
+  introduction: Please let us know your contact details. Note that you can change these at any time during the application process.
+  name-group:
+    legend: Your name
   form:
     dateOfBirth:
       label: Date of Birth
     updateButton:
-      label: Save and Continue
+      label: Save and continue
 
 phone-number:
   number:
-    label: Number
+    label: Daytime contact number
