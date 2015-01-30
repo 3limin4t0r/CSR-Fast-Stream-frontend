@@ -173,6 +173,16 @@
     <script src="{{ asset('bundles/transformcoregovukstyle/js/selection-buttons.js') }}"></script>
     <script src="{{ asset('bundles/transformcoregovukstyle/js/application.js') }}"></script>
 
+    {# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #}
+
+    {# TECH DEBT - need to find a way to add this class to the fieldset legends using twig #}
+    <script> $('legend').addClass('form-label-bold'); </script>
+
+    {# TECH DEBT - move to custom own css file #}
+    <style> legend { margin-bottom: 15px !important; } </style>
+
+    {# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #}
+
     {% block javascripts %}{% endblock javascripts %}
 
   </body>
