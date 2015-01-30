@@ -54,6 +54,8 @@
 
                 <h4>Undergraduate degree</h4>
 
+                {{ form_row(form.undergraduateDegree) }}
+
                 <p>Please select all that apply</p>
 
                 {% for undergrad in form.undergradDegrees %}
@@ -82,6 +84,8 @@
                 {% endfor %}
 
                 <h4>Postgraduate degree</h4>
+
+                {{ form_row(form.postgraduateDegree) }}
 
                 <p>Please select all that apply</p>
 
