@@ -28,23 +28,23 @@ Feature: As an applicant, after completing all profile sections, I want to be ab
     Then I should see "The user has been created successfully"
     And I follow "Profile"
     When I fill form with:
-      | csr_dm_user_profile_firstname          | Onechange                           |
-      | csr_dm_user_profile_lastname           | Personachange                       |
-      | csr_dm_user_profile_address_line1      | address line one                    |
-      | csr_dm_user_profile_address_line2      | address line two                    |
-      | csr_dm_user_profile_address_line3      | address line three                  |
-      | csr_dm_user_profile_address_town       | a town                              |
-      | csr_dm_user_profile_address_county     | a county                            |
-      | csr_dm_user_profile_address_postcode   | post code                           |
-      | csr_dm_user_profile_dateOfBirth        | 1968-08-02                          |
-      | csr_dm_user_profile_phoneNumber_number | 07951234567                         |
-      | United Kingdom                         | csr_dm_user_profile_address_country |
-    When I press "Save and Continue"
+      | csr_dm_user_profile_name_group_firstname                  | Onechange                                         |
+      | csr_dm_user_profile_name_group_lastname                   | Personachange                                     |
+      | csr_dm_user_profile_address_address_group_line1           | address line one                                  |
+      | csr_dm_user_profile_address_address_group_line2           | address line two                                  |
+      | csr_dm_user_profile_address_address_group_line3           | address line three                                |
+      | csr_dm_user_profile_address_address_group_town            | a town                                            |
+      | csr_dm_user_profile_address_address_group_county          | a county                                          |
+      | csr_dm_user_profile_address_address_group_postcode        | post code                                         |
+      | csr_dm_user_profile_date_of_birth_group_dateOfBirth       | 1968-08-02                                        |
+      | csr_dm_user_profile_phone_number_group_phoneNumber_number | 07951234567                                       |
+      | United Kingdom                                            | csr_dm_user_profile_address_address_group_country |
+    When I press "Save and continue"
     Then I should see "Nationality, Immigration and Employment Restrictions"
     When I fill form with:
-      | csr_dm_user_eligibility_presentNationality_name                                                           | British |
-      | csr_dm_user_eligibility_subjectToImmigrationControls                                                      | No      |
-      | csr_dm_user_eligibility_residencyOrEmploymentRestrictions                                                 | No      |
+      | csr_dm_user_eligibility_nationality_group_presentNationality_name                                                           | British |
+      | csr_dm_user_eligibility_immigration_group_subjectToImmigrationControls                                                      | No      |
+      | csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictions                                                 | No      |
       | csr_dm_user_eligibility_permissionToCheckBackground                                                       | Yes     |
       | I want to apply for the Early Diversity Internship Programme or the Summer Diversity Internship Programme | Yes     |
       | early-diversity-internship-programme-no                                                                   | No      |
