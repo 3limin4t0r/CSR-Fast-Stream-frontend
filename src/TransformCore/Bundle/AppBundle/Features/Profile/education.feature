@@ -42,8 +42,22 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And the "summer-diversity-programme-detail" field should contain "Early diversity programme government department"
 
   @CSR-26 @omit
+  Scenario: Add education details (mandatory field check)
+    Given I am logged in as "seven@test.com" with password "P@ssword1"
+    And I follow "My Details"
+    And I press "Save and continue"
+    And I press "Save and continue"
+    Then I should see "Education"
+    And I press "Save and continue"
+    Then I should see "Please indicate whether or not you are an existing Civil Servant"
+    And I should see "Please complete the Undergraduate degree section"
+    And I should see "Please complete the Postgraduate degree section"
+    And I should see "Please indicate whether or not you completed the Early Diversity Internship Programme"
+    And I should see "Please indicate whether or not you completed the Summer Diversity Internship Programme"
+
+  @CSR-26 @omit
   Scenario: Add education details (degrees completed and civil servant)
-    Given I am logged in as "six@test.com" with password "P@ssword1"
+    Given I am logged in as "seven@test.com" with password "P@ssword1"
     And I follow "My Details"
     And I press "Save and continue"
     And I press "Save and continue"
@@ -78,22 +92,8 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And the "postgraduate-university" field should contain "Postgraduate University 1"
 
   @CSR-26 @omit
-  Scenario: Add education details (mandatory field check)
-    Given I am logged in as "seven@test.com" with password "P@ssword1"
-    And I follow "My Details"
-    And I press "Save and continue"
-    And I press "Save and continue"
-    Then I should see "Education"
-    And I press "Save and continue"
-    Then I should see "Please indicate whether or not you are an existing Civil Servant"
-    And I should see "Please complete the Undergraduate degree section"
-    And I should see "Please complete the Postgraduate degree section"
-    And I should see "Please indicate whether or not you completed the Early Diversity Internship Programme"
-    And I should see "Please indicate whether or not you completed the Summer Diversity Internship Programme"
-
-  @CSR-26 @omit
   Scenario: Add education details (no degrees completed)
-    Given I am logged in as "six@test.com" with password "P@ssword1"
+    Given I am logged in as "five@test.com" with password "P@ssword1"
     And I follow "My Details"
     And I press "Save and continue"
     And I press "Save and continue"
