@@ -131,12 +131,12 @@ education:
     label: ""
     "false": "I have, or will have completed, an undergraduate degree in this recruitment year from outside the United Kingdom"
     "true": "I have, or will have completed, an undergraduate degree in this recruitment year from a university in the United Kingdom"
-  ukUniversity:
+  undergradUniversity:
     label: "Name of university"
   undergradGrade:
     label: "Grade achieved or predicted"
     placeholder: "Select grade"
-  nonUKInstitution:
+  undergradInstitution:
     label: "Name of institution"
   postgraduateDegree:
     label: ""
@@ -146,8 +146,12 @@ education:
     label: ""
     "false": "I have, or will have completed, a postgraduate degree in this recruitment year from outside the United Kingdom"
     "true": "I have, or will have completed, a postgraduate degree in this recruitment year from a university in the United Kingdom"
+  postgradUniversity:
+    label: "Name of university"
   postgradDegree:
     label: "Degree achieved"
+  postgradInstitution:
+    label: "Name of institution"
   earlyDiversityIntern:
     label: "Have you completed the Early Diversity Internship Programme?"
     "false": "No, I have not completed the Early Diversity Internship Programme"

@@ -60,27 +60,27 @@
 
                 {% for undergrad in form.undergradDegrees %}
                     <div class="form-group">
-                        <label class="control-label required">{{ form_label(undergrad.ukDegree) }}</label>
-                        <div id="csr_dm_form_education_undergrad_ukDegree_0">
+                        <label class="control-label required">{{ form_label(undergrad.uk) }}</label>
+                        <div id="csr_dm_form_education_undergrad_uk_0">
                             <div class="radio">
-                                <label for="csr_dm_form_education_undergrad_ukDegree_0_widget" class="required">
-                                    {{ form_widget(undergrad.ukDegree.children[0]) }} {{ form_label(undergrad.ukDegree.children[0], null) }}
+                                <label for="csr_dm_form_education_undergrad_uk_0_widget" class="required">
+                                    {{ form_widget(undergrad.uk.children[0]) }} {{ form_label(undergrad.uk.children[0], null) }}
                                 </label>
                             </div>
                         </div>
                     </div>
-                    {{ form_row(undergrad.ukUniversity) }}
-                    {{ form_row(undergrad.undergradGrade) }}
+                    {{ form_row(undergrad.university) }}
+                    {{ form_row(undergrad.grade) }}
                     <div class="form-group">
-                        <div id="csr_dm_form_education_undergrad_ukDegree_1">
+                        <div id="csr_dm_form_education_undergrad_uk_1">
                             <div class="radio">
-                                <label for="csr_dm_form_education_undergrad_ukDegree_1_widget" class="required">
-                                    {{ form_widget(undergrad.ukDegree.children[1]) }} {{ form_label(undergrad.ukDegree.children[1], null) }}
+                                <label for="csr_dm_form_education_undergrad_uk_1_widget" class="required">
+                                    {{ form_widget(undergrad.uk.children[1]) }} {{ form_label(undergrad.uk.children[1], null) }}
                                 </label>
                             </div>
                         </div>
                     </div>
-                    {{ form_row(undergrad.nonUKInstitution) }}
+                    {{ form_row(undergrad.institution) }}
                 {% endfor %}
 
                 <h4>Postgraduate degree</h4>
@@ -91,27 +91,27 @@
 
                 {% for postgrad in form.postgradDegrees %}
                     <div class="form-group">
-                        <label class="control-label required">{{ form_label(postgrad.ukDegree) }}</label>
-                        <div id="csr_dm_form_education_postgrad_ukDegree_0">
+                        <label class="control-label required">{{ form_label(postgrad.uk) }}</label>
+                        <div id="csr_dm_form_education_postgrad_uk_0">
                             <div class="radio">
-                                <label for="csr_dm_form_education_postgrad_ukDegree_0_widget" class="required">
-                                    {{ form_widget(postgrad.ukDegree.children[0]) }} {{ form_label(postgrad.ukDegree.children[0], null) }}
+                                <label for="csr_dm_form_education_postgrad_uk_0_widget" class="required">
+                                    {{ form_widget(postgrad.uk.children[0]) }} {{ form_label(postgrad.uk.children[0], null) }}
                                 </label>
                             </div>
                         </div>
                     </div>
-                    {{ form_row(postgrad.ukUniversity) }}
-                    {{ form_row(postgrad.postgradDegree) }}
+                    {{ form_row(postgrad.university) }}
+                    {{ form_row(postgrad.degree) }}
                     <div class="form-group">
-                        <div id="csr_dm_form_education_postgrad_ukDegree_1">
+                        <div id="csr_dm_form_education_postgrad_uk_1">
                             <div class="radio">
-                                <label for="csr_dm_form_education_postgrad_ukDegree_1_widget" class="required">
-                                    {{ form_widget(postgrad.ukDegree.children[1]) }} {{ form_label(postgrad.ukDegree.children[1], null) }}
+                                <label for="csr_dm_form_education_postgrad_uk_1_widget" class="required">
+                                    {{ form_widget(postgrad.uk.children[1]) }} {{ form_label(postgrad.uk.children[1], null) }}
                                 </label>
                             </div>
                         </div>
                     </div>
-                    {{ form_row(postgrad.nonUKInstitution) }}
+                    {{ form_row(postgrad.institution) }}
                 {% endfor %}
 
                 <h3>Internship Programmes</h3>

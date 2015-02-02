@@ -7,7 +7,8 @@ use Symfony\Component\HttpFoundation\Request;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EducationFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Degree;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\PostgradDegree;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\UndergradDegree;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
 
 
@@ -89,13 +90,13 @@ class AccountController extends Controller
         $undergradDegrees = $education->getUndergradDegrees();
 
         if (is_null($undergradDegrees) || $undergradDegrees->count() == 0) {
-            $education->addUndergradDegree(new Degree());
+            $education->addUndergradDegree(new UndergradDegree());
         }
 
         $postgradDegrees = $education->getPostgradDegrees();
 
         if (is_null($postgradDegrees) || $postgradDegrees->count() == 0) {
-            $education->addPostgradDegree(new Degree());
+            $education->addPostgradDegree(new PostgradDegree());
         }
 
         $form = $this->createForm(new EducationFormType(), $education);
