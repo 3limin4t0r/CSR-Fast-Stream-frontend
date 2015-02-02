@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b207d074785f5c26578709b0131babba",
+    "hash": "aa5264592e098ee4ee53e704212f8d11",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -2644,16 +2644,16 @@
         },
         {
             "name": "transformcore/csr-fast-stream-domain-model",
-            "version": "dev-feature/CSR-196",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "1dcf771158b67220dfd46d4d302c49cd160ad5e1"
+                "reference": "6c4dd3ca85e9e29a0705d1d061fcc3339714659f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/1dcf771158b67220dfd46d4d302c49cd160ad5e1",
-                "reference": "1dcf771158b67220dfd46d4d302c49cd160ad5e1",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/6c4dd3ca85e9e29a0705d1d061fcc3339714659f",
+                "reference": "6c4dd3ca85e9e29a0705d1d061fcc3339714659f",
                 "shasum": ""
             },
             "require": {
@@ -2679,7 +2679,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-02 09:30:33"
+            "time": "2015-02-02 17:31:50"
         },
         {
             "name": "twbs/bootstrap",
