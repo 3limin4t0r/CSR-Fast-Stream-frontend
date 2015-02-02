@@ -77,6 +77,49 @@ class AccountController extends Controller
     /**
      * @param Request $request
      *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
+    public function eligibilityAction(Request $request)
+    {
+        $applicantId = $this->get('security.token_storage')
+                                   ->getToken()
+                                   ->getUser()
+                                   ->getId();
+        
+        $eligibility = $this->get('transform_core_app_main.service.eligibility')
+                          ->getById($applicantId);
+
+        $form = $this->createForm(new EligibilityFormType(), $eligibility);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $eligibility = $form->getData();
+
+            $this->get('transform_core_app_main.service.eligibility')
+                 ->update($applicantId, $eligibility);
+
+            $request->getSession()
+                    ->getFlashBag()
+                    ->add(
+                        'success',
+                        'Your changes were saved!'
+                    );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_education')
+            );
+        }
+
+        return $this->render('TransformCoreAppBundle:Account:eligibility.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
+        );
+    }
+
+    /**
+     * @param Request $request
+     *
      * @return Symfony\Component\HttpFoundation\Response
      */
     public function educationAction(Request $request)
@@ -118,55 +161,12 @@ class AccountController extends Controller
                     );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_education')
+                $this->generateUrl('transform_core_app_diversity')
             );
         }
 
         return $this->render(
             'TransformCoreAppBundle:Account:education.html.twig',
-            array(
-                'form' => $form->createView(),
-            )
-        );
-    }
-
-    /**
-     * @param Request $request
-     *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
-     */
-    public function eligibilityAction(Request $request)
-    {
-        $applicantId = $this->get('security.token_storage')
-                                   ->getToken()
-                                   ->getUser()
-                                   ->getId();
-        
-        $eligibility = $this->get('transform_core_app_main.service.eligibility')
-                          ->getById($applicantId);
-
-        $form = $this->createForm(new EligibilityFormType(), $eligibility);
-        $form->handleRequest($request);
-
-        if ($form->isValid()) {
-            $eligibility = $form->getData();
-
-            $this->get('transform_core_app_main.service.eligibility')
-                 ->update($applicantId, $eligibility);
-
-            $request->getSession()
-                    ->getFlashBag()
-                    ->add(
-                        'success',
-                        'Your changes were saved!'
-                    );
-
-            return $this->redirect(
-                $this->generateUrl('transform_core_app_diversity')
-            );
-        }
-
-        return $this->render('TransformCoreAppBundle:Account:eligibility.html.twig',
             array(
                 'form' => $form->createView(),
             )
