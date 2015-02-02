@@ -24,18 +24,18 @@ Feature: As an applicant after logging in I want to see my homepage
       | csr_dm_diversity_socioEconomic_everSpentMoreThanThreeMonthsInCare             | No                                                                          |
       | csr_dm_diversity_socioEconomic_everPersonallyHadRefugeeOrAsylumStatus         | Prefer Not to Say                                                           |
     And I press "Save and Continue"
-    Then I should see "Your changes were saved"
-    And I should see form with:
-      | csr_dm_diversity_diversity_gender                                             | Male                                                                        |
-      | csr_dm_diversity_diversity_ethnicOrigin                                       | White - English / Welsh / Scottish / Northern Irish / British               |
-      | csr_dm_diversity_diversity_religionOrBelief                                   | Agnostic                                                                    |
-      | csr_dm_diversity_diversity_sexualOrientation                                  | Prefer not to say                                                           |
-      | csr_dm_diversity_diversity_maritalStatus                                      | Separated                                                                   |
-      | csr_dm_diversity_socioEconomic_typeOfSchoolAttendanceAtFourteen               | A state run or funded school that selected on the basis of academic ability |
-      | csr_dm_diversity_socioEconomic_firstPersonInImmediateFamilyToAttendUniversity | No                                                                          |
-      | csr_dm_diversity_socioEconomic_eligibleForFreeSchoolMeals                     | No                                                                          |
-      | csr_dm_diversity_socioEconomic_everSpentMoreThanThreeMonthsInCare             | No                                                                          |
-      | csr_dm_diversity_socioEconomic_everPersonallyHadRefugeeOrAsylumStatus         | Prefer Not to Say                                                           |
+    Then I should see "Your changes were saved!"
+#    And I should see form with:
+#      | csr_dm_diversity_diversity_gender                                             | Male                                                                        |
+#      | csr_dm_diversity_diversity_ethnicOrigin                                       | White - English / Welsh / Scottish / Northern Irish / British               |
+#      | csr_dm_diversity_diversity_religionOrBelief                                   | Agnostic                                                                    |
+#      | csr_dm_diversity_diversity_sexualOrientation                                  | Prefer not to say                                                           |
+#      | csr_dm_diversity_diversity_maritalStatus                                      | Separated                                                                   |
+#      | csr_dm_diversity_socioEconomic_typeOfSchoolAttendanceAtFourteen               | A state run or funded school that selected on the basis of academic ability |
+#      | csr_dm_diversity_socioEconomic_firstPersonInImmediateFamilyToAttendUniversity | No                                                                          |
+#      | csr_dm_diversity_socioEconomic_eligibleForFreeSchoolMeals                     | No                                                                          |
+#      | csr_dm_diversity_socioEconomic_everSpentMoreThanThreeMonthsInCare             | No                                                                          |
+#      | csr_dm_diversity_socioEconomic_everPersonallyHadRefugeeOrAsylumStatus         | Prefer Not to Say                                                           |
 
   @CSR-196
   Scenario: Complete Diversity section (Mandatory field validation)
@@ -59,6 +59,9 @@ Feature: As an applicant after logging in I want to see my homepage
     Then I select "In a Domestic Partnership" from "csr_dm_diversity_diversity_maritalStatus"
     And I press "Save and Continue"
     Then I should see "This value should not be blank"
+    Then I select "A state run or funded school that selected on the basis of academic ability" from "csr_dm_diversity_socioEconomic_typeOfSchoolAttendanceAtFourteen"
+    And I press "Save and Continue"
+    Then I should see "This value should not be blank"
     Then I select "Yes" from "csr_dm_diversity_socioEconomic_firstPersonInImmediateFamilyToAttendUniversity"
     And I press "Save and Continue"
     Then I should see "This value should not be blank"
@@ -70,4 +73,4 @@ Feature: As an applicant after logging in I want to see my homepage
     Then I should see "This value should not be blank"
     Then I select "Prefer Not to Say" from "csr_dm_diversity_socioEconomic_everPersonallyHadRefugeeOrAsylumStatus"
     And I press "Save and Continue"
-    Then I should see "You changes were saved"
+    Then I should see "Your changes were saved"
