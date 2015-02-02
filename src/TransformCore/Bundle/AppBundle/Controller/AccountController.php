@@ -104,7 +104,7 @@ class AccountController extends Controller
                     );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_eligibility')
+                $this->generateUrl('transform_core_app_diversity')
             );
         }
 
