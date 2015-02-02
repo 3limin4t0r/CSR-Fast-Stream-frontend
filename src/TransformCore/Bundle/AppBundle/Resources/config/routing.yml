@@ -29,3 +29,7 @@ transform_core_app_education:
 transform_core_app_eligibility:
     path:     /applicant/eligibility
     defaults: { _controller: TransformCoreAppBundle:Account:eligibility }
+
+transform_core_app_diversity:
+    path:     /applicant/diversity
+    defaults: { _controller: TransformCoreAppBundle:Account:diversity }
