@@ -10,15 +10,17 @@ Feature: As registrant, I want to be able to add education details, to fully ind
   @CSR-26
   Scenario: Add education details (degrees completed and not a civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
-    And I follow "Profile"
-    And I press "Save and continue"
-    And I press "Save and continue"
+#    And I follow "Profile"
+#    And I press "Save and continue"
+#    And I press "Save and continue"
+    And I am on "/en/applicant/education"
     Then I should see "Education"
-    When I check "civil-servant-no"
-    And I check "undergraduate-degree-no"
-    And I check "postgraduate-degree-no"
-    And I check "summer-diversity-internship-programme-yes"
-    And I check "early-diversity-internship-programme-yes"
+    And I fill form with:
+      | csr_dm_form_education_existingCivilServant_0 | 0 |
+      | csr_dm_form_education_undergraduateDegree_0  | 0 |
+      | csr_dm_form_education_postgraduateDegree_0   | 0 |
+      | csr_dm_form_education_earlyIntern_1          | 1 |
+      | csr_dm_form_education_summerIntern_1         | 1 |
     And I press "Save and continue"
     And I should see "Please enter details of government department you were in for summer diversity internship"
     And I should see "Please enter details of government department you were in for early diversity internship"
@@ -44,16 +46,19 @@ Feature: As registrant, I want to be able to add education details, to fully ind
   @CSR-26
   Scenario: Add education details (degrees completed and civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
-    And I follow "Profile"
-    And I press "Save and continue"
-    And I press "Save and continue"
+#    And I follow "Profile"
+#    And I press "Save and continue"
+#    And I press "Save and continue"
+    And I am on "/en/applicant/education"
     Then I should see "Education"
-    When I check "civil-servant-yes"
-    Then I check "fast-track-apprentice-scheme-complete-this-year"
-    And I check "undergraduate-degree-yes"
-    And I check "postgraduate-degree-yes"
-    And I check "summer-diversity-internship-programme-no"
-    And I check "early-diversity-internship-programme-no"
+    When I check the "csr_dm_form_education_existingCivilServant_1" radio button
+    Then I check "csr_dm_form_education_fastTrackScheme"
+    And I select "Scheme 1" from "csr_dm_form_education_schemeName"
+    And I fill in "csr_dm_form_education_yearOfCompletion" with "2015"
+    And I check the "csr_dm_form_education_undergraduateDegree_1" radio button
+    And I check the "csr_dm_form_education_postgraduateDegree_1" radio button
+    And I check "csr_dm_form_education_earlyInternCompleted_0"
+    And I check "csr_dm_form_education_summerInternCompleted_0"
     When I press "Save and continue"
     And I should see "Please indicate if you will complete Fast Track apprentice scheme in this recruitment year"
     And I should see "Please enter details of undergraduate degree"
@@ -62,10 +67,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I should see "Please enter Fast Track apprentice year of completion"
     Then I select "2015" from "year-of-completion"
     And I select "finance" from "fast-track-scheme"
-    And I fill in "undergraduate-university" with "Undergraduate University 1"
-    And I select "1st" from "undergraduate-grade"
-    And I fill in "postgraduate-university" with "Postgraduate University 1"
-    And I select "1st" from "postgraduate-grade"
+    And I fill in "csr_dm_form_education_undergradDegrees_0_university" with "Undergraduate University 1"
+    And I select "First-class honours" from "csr_dm_form_education_undergradDegrees_0_grade"
+    And I fill in "csr_dm_form_education_postgradDegrees_0_university" with "Postgraduate University 1"
+    And I select "Ordinary degree" from "csr_dm_form_education_postgradDegrees_0_grade"
     And I press "Save and continue"
     Then I should see "Diversity"
     And I follow "go back to the previous section"
@@ -80,9 +85,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
   @CSR-26
   Scenario: Add education details (mandatory field check)
     Given I am logged in as "seven@test.com" with password "P@ssword1"
-    And I follow "Profile"
-    And I press "Save and continue"
-    And I press "Save and continue"
+#    And I follow "Profile"
+#    And I press "Save and continue"
+#    And I press "Save and continue"
+    And I am on "/en/applicant/education"
     Then I should see "Education"
     And I press "Save and continue"
     Then I should see "Please indicate whether or not you are an existing Civil Servant"
@@ -92,17 +98,19 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I should see "Please indicate whether or not you completed the Summer Diversity Internship Programme"
 
   @CSR-26
-  Scenario: Add education details (no degrees completed)
+  Scenario: Add education details (no degrees needed)
     Given I am logged in as "six@test.com" with password "P@ssword1"
-    And I follow "Profile"
-    And I press "Save and continue"
-    And I press "Save and continue"
+#    And I follow "Profile"
+#    And I press "Save and continue"
+#    And I press "Save and continue"
+    And I am on "/en/applicant/education"
     Then I should see "Education"
-    When I check "civil-servant-no"
-    And I check "undergraduate-degree-no"
-    And I check "postgraduate-degree-no"
-    And I check "summer-diversity-internship-programme-yes"
-    And I check "early-diversity-internship-programme-yes"
+    When I check the "csr_dm_form_education_existingCivilServant_0" radio button
+    And I check "csr_dm_form_education_inServiceRoute"
+#    And I check "undergraduate-degree-no"
+#    And I check "postgraduate-degree-no"
+    And I check the "summer-diversity-internship-programme-yes" radio button
+    And I check the "early-diversity-internship-programme-yes" radio button
     And I press "Save and continue"
     And I should see "Please enter details of government department you were in for summer diversity internship"
     And I should see "Please enter details of government department you were in for early diversity internship"
