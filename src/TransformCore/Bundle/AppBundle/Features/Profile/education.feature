@@ -57,8 +57,8 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I fill in "csr_dm_form_education_yearOfCompletion" with "2015"
     And I check the "csr_dm_form_education_undergraduateDegree_1" radio button
     And I check the "csr_dm_form_education_postgraduateDegree_1" radio button
-    And I check "csr_dm_form_education_earlyInternCompleted_0"
-    And I check "csr_dm_form_education_summerInternCompleted_0"
+    And I check the "csr_dm_form_education_earlyInternCompleted_0" radio button
+    And I check the "csr_dm_form_education_summerInternCompleted_0" radio button
     When I press "Save and continue"
     And I should see "Please indicate if you will complete Fast Track apprentice scheme in this recruitment year"
     And I should see "Please enter details of undergraduate degree"
