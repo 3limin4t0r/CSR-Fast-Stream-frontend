@@ -47,11 +47,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I check "csr_dm_user_eligibility_permissionToCheckBackground"
     Then I press "Save and continue"
     Then I should see "Your changes were saved"
-    When I uncheck "csr_dm_user_eligibility_subjectToImmigrationControls"
-    And I press "Save and continue"
-    Then I should see form with:
-      | csr_dm_user_eligibility_subjectToImmigrationControls" field should contain | No |
-    
+
   @CSR-24
   Scenario: Complete Nationality and immigration section (Dependant fields validation)
     Given I am logged in as "two@test.com" with password "P@ssword1"
@@ -88,4 +84,3 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_eligibility_presentNationality_name" with "British"
     And I press "Save and continue"
     Then I should see "Your changes were saved"
-

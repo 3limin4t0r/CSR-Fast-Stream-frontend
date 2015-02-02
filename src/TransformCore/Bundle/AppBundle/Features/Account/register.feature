@@ -20,7 +20,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
       | fos_user_registration_form_registration_disabledAdjustmentRequired | YES                              |
       | fos_user_registration_form_registration_disabledDetails            | <disability>                     |
       | fos_user_registration_form_registration_disabledAdjustmentDetails  | some disability adjustments text
-      | fos_user_registration_form_phoneNumber_number                      | <phoneNumber>                    |
+#      | fos_user_registration_form_phoneNumber_number                      | <phoneNumber>                    |
     # Checkboxes
       | fos_user_registration_form_registration_guaranteedInterviewScheme  | YES                              |
       | fos_user_registration_form_registration_termsAndConditions         | YES                              |
