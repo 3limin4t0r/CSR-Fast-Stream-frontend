@@ -138,3 +138,35 @@ profile:
 phone-number:
   number:
     label: Number
+
+diversity:
+  title: Diversity
+  paragraph:
+    - The Civil Service is committed to promoting diversity, irrespective of ethnicity or nationality, gender, transgender, sexuality, disability, age, religion, marital status, working patterns and socio-economic status.
+    - We collect diversity and socio economic information for monitoring purposes only and this data is treated separately from the application process. Your response in this section will not in any way affect your results and will be treated in strict confidence.
+  form:
+    gender:
+      label: Please select your gender.
+    ethnicOrigin:
+      label: What is your ethnic origin?
+    religionOrBelief:
+      label: Please select your religion or belief.
+    sexualOrientation:
+      label: Please select your sexual orientation.
+    maritalStatus:
+      label: Please select your marital status.
+    updateButton:
+      label: Save and Continue
+
+socioEconomic:
+  form:
+    typeOfSchoolAttendanceAtFourteen:
+      label: Please indicate the type of school you were attending on your 14th birthday.
+    firstPersonInImmediateFamilyToAttendUniversity:
+      label: Please indicate whether you were the first person in your immediate family to attend University.
+    eligibleForFreeSchoolMeals:
+      label: Please indicate whether you were eligible for free school meals:
+    everSpentMoreThanThreeMonthsInCare:
+      label: Have you ever personally spent longer than three months in care?
+    everPersonallyHadRefugeeOrAsylumStatus:
+      label: Have you ever personally had refugee status or asylum status?

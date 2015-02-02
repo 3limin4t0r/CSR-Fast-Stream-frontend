@@ -39,9 +39,7 @@ Feature: As an user, I want to be able to add details about myself on my account
   @CSR-24
   Scenario: Complete Nationality and immigration section (Happy path)
     Given I am logged in as "four@test.com" with password "P@ssword1"
-    And I follow "Profile"
-    Then I should see "First Name"
-    When I press "Save and Continue"
+    And I am on "/en/applicant/eligibility"
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill in "csr_dm_user_eligibility_presentNationality_name" with "British"
     And I check "csr_dm_user_eligibility_subjectToImmigrationControls"
@@ -52,9 +50,9 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Dependant fields validation)
-    Given I am logged in as "four@test.com" with password "P@ssword1"
-    And I follow "Profile"
-    When I press "Save and Continue"
+    Given I am logged in as "two@test.com" with password "P@ssword1"
+    And I am on "/en/applicant/eligibility"
+    Then I should see "Nationality"
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill in "csr_dm_user_eligibility_presentNationality_name" with "British"
     When I press "Save and continue"
@@ -81,8 +79,7 @@ Feature: As an user, I want to be able to add details about myself on my account
   @CSR-24
   Scenario: Complete Nationality and immigration section (Minimal happy path)
     Given I am logged in as "five@test.com" with password "P@ssword1"
-    And I follow "Profile"
-    When I press "Save and Continue"
+    And I am on "/en/applicant/eligibility"
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill in "csr_dm_user_eligibility_presentNationality_name" with "British"
     And I press "Save and continue"
