@@ -294,4 +294,12 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     public function hasCompletedTheSection($arg1, $arg2)
     {
     }
+
+    /**
+     * @Given :arg1 has completed the :arg2 sections
+     */
+    public function hasCompletedTheSections($applicant,$sections)
+    {
+
+    }
 }

@@ -83,4 +83,4 @@ Feature: As an applicant after logging in I want to see my homepage
     Then I should see "Please select Please select whether or not you have been has either asylum seeker or refugee status"
     Then I select "Prefer Not to Say" from "asylum-seeker-refugee-status"
     And I follow "save-and-continue"
-    Then I should see "Socio Economic Details"
+    Then I should see "Education"
