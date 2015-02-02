@@ -12,11 +12,11 @@ home:
   title: CSR
 
 form:
-  select: Please Select
+  select: Please select
 
 login:
   title: Login
-  subtitle: Register Your Details
+  subtitle: Register your details
   form:
     username:
       label: Email address
@@ -27,22 +27,22 @@ login:
 
 register:
   title: Register
-  subtitle: Register Your Details
+  subtitle: Register your details
   form:
     firstname:
-      label: First Name
+      label: First name
     lastname:
-      label: Last Name
+      label: Last name
     email:
       label: Email
     password:
-      label: Password
+      label: "Password \n Your password must be at least 8 characters and contain at least 1 number and 1 symbol (eg. !@#$%^*_-)"
     password-confirm:
-      label: Confirm Password
+      label: Confirm password
     heard-about-us:
       label: Please tell us where you first heard about Fast Stream
-    disabled-title: Registered Disability
-    disabled-subtitle1: If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail.
+    disabled-title: Registered disability
+    disabled-subtitle1: If you have a registered disability and and would like to request adjustments, please tick the box below. We will contact you to discuss your needs in more detail.
     disabled-subtitle2: Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
     disabled-adjustment-required:
       label: I require adjustments based on my disability
@@ -55,7 +55,7 @@ register:
     guaranteed-interview-scheme:
       label: I wish to apply via the Guaranteed Interview Scheme
       link: What is the Guaranteed Interview Scheme?
-    terms-and-conditions-title: Acknowledge Terms & Conditions
+    terms-and-conditions-title: Acknowledge Terms and conditions
     terms-and-conditions-subtitle: Please review our terms and conditions detailing how we use your personal data, and indicate your consent below
     terms-and-conditions:
       label: Please confirm your consent to the use of your personal data in the ways described above
@@ -63,7 +63,7 @@ register:
       label: Register
 
 termsAndConditions:
-  title: Terms and Conditions
+  title: Terms and conditions
   paragraph:
     - We take our obligations under data protection legislation seriously. These require us to explain how the data you provide during this registration and application process will be used, together with other personal data that may be created in connection with your application, such as test results.
     - Your data will be held in secure conditions with access restricted to those who need it to deal with your application, selection and assignment to a department (i.e. employees of our service provider, Parity, and those involved in the Fast Stream selection and assignment processes). If you are successful, the data will be passed by secure means to your employing department. Data may also be used to monitor the effectiveness of the Fast Stream selection process. No individual will be identifiable in any analysis or other outputs from such monitoring. If you are unsuccessful, the data will be kept in secure conditions for up to five years to enable us to analyse the effectiveness of the Fast Stream selection process.
@@ -87,7 +87,7 @@ guaranteedInterviewScheme:
   title: Guaranteed Interview Scheme
 
 account:
-  title: My Account
+  title: My account
   overview: Overview
 
 address:
@@ -131,9 +131,9 @@ profile:
   title: Profile
   form:
     dateOfBirth:
-      label: Date of Birth
+      label: Date of birth
     updateButton:
-      label: Save and Continue
+      label: Save and continue
 
 phone-number:
   number:
