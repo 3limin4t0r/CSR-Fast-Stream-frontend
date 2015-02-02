@@ -7,7 +7,7 @@ Feature: As an applicant after logging in I want to see my homepage
     And "four@test.com" has completed sections "About you,Nationality,Education"
     And "five@test.com" has completed sections "About you,Nationality,Education"
 
-  @CSR-196 @omit
+  @CSR-196
   Scenario: Complete Nationality and immigration section (Happy path)
     Given I am logged in as "four@test.com" with password "P@ssword1"
     And I follow "My Details"
@@ -43,7 +43,7 @@ Feature: As an applicant after logging in I want to see my homepage
       | refugee-status-or-asylum-status | Prefer Not to Say                                                           |
 
 
-  @CSR-196 @omit
+  @CSR-196
   Scenario: Complete Nationality and immigration section (Mandatory field validation)
     Given I am logged in as "five@test.com" with password "P@ssword1"
     And I follow "My Details"
