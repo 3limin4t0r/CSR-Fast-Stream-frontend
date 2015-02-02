@@ -117,10 +117,16 @@
                 <h3>Internship Programmes</h3>
 
                 <p>Please indicate whether you have completed the Early Diversity Internship Programme</p>
-                {{ form_row(form.earlyDiversityIntern) }}
+                {{ form_row(form.earlyIntern) }}
+
+                {{ form_row(form.earlyInternCompleted) }}
+                {{ form_row(form.earlyInternDept) }}
 
                 <p>Please indicate whether you have completed the Civil Service Summer Diversity Internship Programme</p>
-                {{ form_row(form.summerDiversityIntern) }}
+                {{ form_row(form.summerIntern) }}
+
+                {{ form_row(form.summerInternCompleted) }}
+                {{ form_row(form.summerInternDept) }}
 
             {{ form_end(form) }}
         </div>

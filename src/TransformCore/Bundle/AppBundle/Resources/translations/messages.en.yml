@@ -152,14 +152,24 @@ education:
     label: "Degree achieved"
   postgradInstitution:
     label: "Name of institution"
-  earlyDiversityIntern:
+  earlyIntern:
     label: "Have you completed the Early Diversity Internship Programme?"
     "false": "No, I have not completed the Early Diversity Internship Programme"
     "true": "Yes, I have completed the Early Diversity Internship Programme"
-  summerDiversityIntern:
+  earlyInternCompleted:
+    label: "Please indicate when you completed this programme"
+    placeholder: "Select date"
+  earlyInternDept:
+    label: "Please also indicate in which Government department you were placed"
+  summerIntern:
     label: "Have you completed the Civil Service Summer Diversity Internship Programme?"
     "false": "No, I have not completed the Civil Service Summer Diversity Internship Programme"
     "true": "Yes, I have completed the Civil Service Summer Diversity Internship Programme"
+  summerInternCompleted:
+    label: "Please indicate when you completed this programme"
+    placeholder: "Select date"
+  summerInternDept:
+    label: "Please also indicate in which Government department you were placed"
   saveAndContinue:
     label: "Save and continue"
 
