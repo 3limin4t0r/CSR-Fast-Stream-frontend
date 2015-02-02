@@ -10,7 +10,7 @@ Feature: As an applicant after logging in I want to see my homepage
   @CSR-196 @omit
   Scenario: Complete Nationality and immigration section (Happy path)
     Given I am logged in as "four@test.com" with password "P@ssword1"
-    And I follow "My Details"
+    And I follow "Profile"
     Then I should see "About You"
     And I follow "save-and-continue"
     Then I should see "Nationality"

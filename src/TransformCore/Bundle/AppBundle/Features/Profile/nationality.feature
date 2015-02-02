@@ -51,7 +51,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I press "Save and continue"
     Then I should see form with:
       | csr_dm_user_eligibility_subjectToImmigrationControls" field should contain | No |
-
+    
   @CSR-24
   Scenario: Complete Nationality and immigration section (Dependant fields validation)
     Given I am logged in as "two@test.com" with password "P@ssword1"

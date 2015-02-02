@@ -7,10 +7,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And "six@test.com" has completed sections "About You, Nationality"
     And "seven@test.com" has completed sections "About You, Nationality"
 
-  @CSR-26 @omit
+  @CSR-26
   Scenario: Add education details (degrees completed and not a civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
-    And I follow "My Details"
+    And I follow "Profile"
     And I press "Save and continue"
     And I press "Save and continue"
     Then I should see "Education"
@@ -41,10 +41,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And the "early-diversity-internship-programme-yes" checkbox should be checked
     And the "summer-diversity-programme-detail" field should contain "Early diversity programme government department"
 
-  @CSR-26 @omit
+  @CSR-26
   Scenario: Add education details (degrees completed and civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
-    And I follow "My Details"
+    And I follow "Profile"
     And I press "Save and continue"
     And I press "Save and continue"
     Then I should see "Education"
@@ -77,10 +77,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And the "undergraduate-university" field should contain "Undergraduate University 1"
     And the "postgraduate-university" field should contain "Postgraduate University 1"
 
-  @CSR-26 @omit
+  @CSR-26
   Scenario: Add education details (mandatory field check)
     Given I am logged in as "seven@test.com" with password "P@ssword1"
-    And I follow "My Details"
+    And I follow "Profile"
     And I press "Save and continue"
     And I press "Save and continue"
     Then I should see "Education"
@@ -91,10 +91,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I should see "Please indicate whether or not you completed the Early Diversity Internship Programme"
     And I should see "Please indicate whether or not you completed the Summer Diversity Internship Programme"
 
-  @CSR-26 @omit
+  @CSR-26
   Scenario: Add education details (no degrees completed)
     Given I am logged in as "six@test.com" with password "P@ssword1"
-    And I follow "My Details"
+    And I follow "Profile"
     And I press "Save and continue"
     And I press "Save and continue"
     Then I should see "Education"
