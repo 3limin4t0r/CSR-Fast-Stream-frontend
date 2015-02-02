@@ -18,7 +18,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
       | fos_user_registration_form_registration_heardAboutUs               | <referrer-input>                 |
         # Disability details
       | fos_user_registration_form_registration_disabledAdjustmentRequired | YES                              |
-      | fos_user_registration_form_registration_disabledDetails            | <disability>                     |
+      | fos_user_registration_form_registration_disabledDetails            | Heart conditions                 |
       | fos_user_registration_form_registration_disabledAdjustmentDetails  | some disability adjustments text
       | fos_user_registration_form_phoneNumber_number                      | <phoneNumber>                    |
     # Checkboxes
@@ -34,9 +34,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   #  """
 
   Examples:
-    | first-name | last-name | email-input  | phoneNumber | password  | disability | referrer-input   |
-    | One        | Persona   | one@test.com | 07739898078 | P@ssword1 | 1          | Search Engine    |
-    | Two        | persona   | two@test.com | 07739898079 | P@ssword1 | 1          | Friend or Family |
+    | first-name | last-name | email-input  | phoneNumber | password  | referrer-input   |
+    | One        | Persona   | one@test.com | 07739898078 | P@ssword1 | Search Engine    |
+    | Two        | persona   | two@test.com | 07739898079 | P@ssword1 | Friend or Family |
 
 
   @CSR-6
