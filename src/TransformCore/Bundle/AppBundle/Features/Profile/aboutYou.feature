@@ -88,7 +88,7 @@ Feature: As an user, I want to be able to add details about myself on my account
 #    And I check "sms-alerts-yes"
 #    And I check "sms-alerts-mobile-number"
     When I press "Save and continue"
-    And I should see "error.dateOfbirth.notBlank"
+    And I should see "Please enter your date of birth"
     Then count of "3" instances of "This value should not be blank" exists on page
 #    Then I should see "This value should not be blank"
 #    And I should see "Please enter your date of birth"
