@@ -1,0 +1,1583 @@
+ad32fd4	Travis CI	Tue Feb 3 17:22:46 2015 +0000	Set build VERSION number build-diversity-form-styling-786
+a562c9e	Paul Littlebury	Tue Feb 3 17:10:38 2015 +0000	CSR-345 corrected DoB missing error message
+56a0e8d	Jamie Burns	Tue Feb 3 17:09:43 2015 +0000	Edit buttons aligned as per wireframe
+41c84ba	Travis CI	Tue Feb 3 17:05:59 2015 +0000	Created changelog
+212ca29	Travis CI	Tue Feb 3 17:05:59 2015 +0000	Set build VERSION number build-develop-783
+26ac1d8	Travis CI	Tue Feb 3 17:05:30 2015 +0000	Created changelog
+31d8465	Travis CI	Tue Feb 3 17:05:30 2015 +0000	Set build VERSION number build-diversity-form-styling-782
+689f34b	Travis CI	Tue Feb 3 17:01:06 2015 +0000	Created changelog
+3949520	Travis CI	Tue Feb 3 17:01:06 2015 +0000	Set build VERSION number build-develop-781
+0d72b29	Jamie Burns	Tue Feb 3 16:57:40 2015 +0000	Merge 160b150bde9bf9afe43fb0d87d310f081ed664f0 into d79b7b7cb7a1ac138a52935dce75f3cbac13407b
+160b150	Jamie Burns	Tue Feb 3 16:57:36 2015 +0000	Composer domain model bump
+716e7b2	Dave Nash	Tue Feb 3 16:43:32 2015 +0000	Updated composer.lock
+5f88dce	Jamie Burns	Tue Feb 3 16:42:22 2015 +0000	Merge remote-tracking branch 'origin/develop' into diversity-form-styling
+3e27b87	Jamie Burns	Tue Feb 3 16:42:02 2015 +0000	Styling updates for diversity form
+4d865ba	Travis CI	Tue Feb 3 16:41:22 2015 +0000	Created changelog
+e4532f4	Travis CI	Tue Feb 3 16:41:22 2015 +0000	Set build VERSION number build-develop-780
+d79b7b7	Eddie Abou-Jaoude	Tue Feb 3 16:40:48 2015 +0000	Merge pull request #65 from TransformCore/progressive-disclosure-javascript
+2e93df6	Travis CI	Tue Feb 3 16:38:44 2015 +0000	Created changelog
+7e91c18	Travis CI	Tue Feb 3 16:38:44 2015 +0000	Set build VERSION number build-feature/CSR-345-779
+ac541bd	Travis CI	Tue Feb 3 16:33:19 2015 +0000	Created changelog
+f46326e	Travis CI	Tue Feb 3 16:33:19 2015 +0000	Set build VERSION number build-develop-778
+8fb33b2	Travis CI	Tue Feb 3 16:31:51 2015 +0000	Created changelog
+ef9a279	Travis CI	Tue Feb 3 16:31:51 2015 +0000	Set build VERSION number build-progressive-disclosure-javascript-777
+6d0cc86	Dave Nash	Tue Feb 3 16:20:43 2015 +0000	Merge 17cba907933b749a7f9b8f08f1f33f03dbc4cabb into 366cf129bee31d101f467af7a0bc60c0f52a1666
+17cba90	Paul Littlebury	Tue Feb 3 16:20:28 2015 +0000	Major gherkin change for error message texts
+61de724	Jamie Burns	Tue Feb 3 16:17:20 2015 +0000	Merge 4be566529dd61ea778d0220d72c83a5ae460ed41 into 366cf129bee31d101f467af7a0bc60c0f52a1666
+4be5665	Jamie Burns	Tue Feb 3 16:16:19 2015 +0000	Progressive disclosure for the eligibility restrictions
+a0c6839	Jamie Burns	Tue Feb 3 16:15:56 2015 +0000	Renamed variable controller -> trigger
+d6553bf	Jamie Burns	Tue Feb 3 16:07:55 2015 +0000	Merge remote-tracking branch 'origin/develop' into feature/CSR-211
+c944ebe	Travis CI	Tue Feb 3 16:03:13 2015 +0000	Created changelog
+403f1ce	Travis CI	Tue Feb 3 16:03:13 2015 +0000	Set build VERSION number build-develop-774
+366cf12	Eddie Abou-Jaoude	Tue Feb 3 15:54:57 2015 +0000	Merge pull request #63 from TransformCore/progressive-disclosure-javascript
+05dacd2	Travis CI	Tue Feb 3 15:46:43 2015 +0000	Created changelog
+38813d3	Travis CI	Tue Feb 3 15:46:43 2015 +0000	Set build VERSION number build-develop-773
+c08b817	Travis CI	Tue Feb 3 15:46:11 2015 +0000	Created changelog
+d8df20d	Travis CI	Tue Feb 3 15:46:11 2015 +0000	Set build VERSION number build-progressive-disclosure-javascript-772
+0768158	Jamie Burns	Tue Feb 3 15:38:35 2015 +0000	Merge 1b2d7636da4788bc41fa04adaa459232c278a342 into 023705b1dbcc5c7555096e0439d672807b6c0625
+1b2d763	Jamie Burns	Tue Feb 3 15:38:13 2015 +0000	Progressive disclosure for the registration disability group
+6270f84	Jamie Burns	Tue Feb 3 15:05:48 2015 +0000	Moving to manual method
+1e43d4a	Travis CI	Tue Feb 3 13:27:12 2015 +0000	Created changelog
+a0b79f3	Travis CI	Tue Feb 3 13:27:12 2015 +0000	Set build VERSION number build-feature/CSR-26-767
+e42e05a	Paul Littlebury	Tue Feb 3 13:23:40 2015 +0000	Updated socio-economic geherkin update so this branch is more uptodate
+e51cd80	Travis CI	Tue Feb 3 13:10:12 2015 +0000	Created changelog
+249f75f	Travis CI	Tue Feb 3 13:10:12 2015 +0000	Set build VERSION number build-feature/CSR-26-764
+d4779ac	Dave Nash	Tue Feb 3 13:08:16 2015 +0000	Updated composer.lock
+531f67e	Paul Littlebury	Tue Feb 3 13:07:56 2015 +0000	Updated socio-economic geherkin update so this branch is more uptodate
+3f363aa	Dave Nash	Tue Feb 3 13:05:53 2015 +0000	Fixed merge conflicts
+217ad88	Dave Nash	Tue Feb 3 12:56:55 2015 +0000	Updated composer.lock
+11971e8	Travis CI	Tue Feb 3 12:46:36 2015 +0000	Created changelog
+f0c0714	Travis CI	Tue Feb 3 12:46:36 2015 +0000	Set build VERSION number build-feature/CSR-345-761
+ca5f0d3	Travis CI	Tue Feb 3 12:46:12 2015 +0000	Created changelog
+164d0b0	Travis CI	Tue Feb 3 12:46:12 2015 +0000	Set build VERSION number build-develop-762
+6703938	Dave Nash	Tue Feb 3 12:43:18 2015 +0000	Merge 0addfb0d7958b95759664f1abe2eb5dba40cc5a5 into 023705b1dbcc5c7555096e0439d672807b6c0625
+0addfb0	Dave Nash	Tue Feb 3 12:43:08 2015 +0000	Changed transformcore/csr-fast-stream-domain-model to dev-master
+a37d906	Jamie Burns	Tue Feb 3 12:35:23 2015 +0000	Merge remote-tracking branch 'origin/develop' into feature/CSR-211
+ac0de48	Travis CI	Tue Feb 3 12:25:37 2015 +0000	Created changelog
+38458ba	Travis CI	Tue Feb 3 12:25:37 2015 +0000	Set build VERSION number build-develop-757
+023705b	Eddie Abou-Jaoude	Tue Feb 3 12:23:06 2015 +0000	Merge pull request #56 from TransformCore/feature/CSR-214
+7ac02c5	Travis CI	Tue Feb 3 12:11:41 2015 +0000	Created changelog
+90ec8a8	Travis CI	Tue Feb 3 12:11:41 2015 +0000	Set build VERSION number build-develop-756
+54202a7	Travis CI	Tue Feb 3 12:11:32 2015 +0000	Created changelog
+6c4147c	Travis CI	Tue Feb 3 12:11:32 2015 +0000	Set build VERSION number build-feature/CSR-214-755
+7115645	Jamie Burns	Tue Feb 3 12:09:16 2015 +0000	Merge 33d4a55ff91bf00c74f4d5f70a323c9fecdd5c69 into e048cb782cc5589b0a42166ceba947fb73269d63
+33d4a55	Jamie Burns	Tue Feb 3 12:09:12 2015 +0000	Composer domain model branch updated
+b5707de	Jamie Burns	Tue Feb 3 12:06:15 2015 +0000	Review display
+8794bb8	Travis CI	Tue Feb 3 12:00:18 2015 +0000	Created changelog
+362b1c5	Travis CI	Tue Feb 3 12:00:18 2015 +0000	Set build VERSION number build-feature/CSR-26-754
+9fcc339	Travis CI	Tue Feb 3 11:59:11 2015 +0000	Created changelog
+a4e2fc3	Travis CI	Tue Feb 3 11:59:11 2015 +0000	Set build VERSION number build-develop-752
+70c3fd5	Travis CI	Tue Feb 3 11:58:43 2015 +0000	Created changelog
+2025810	Travis CI	Tue Feb 3 11:58:43 2015 +0000	Set build VERSION number build-feature/CSR-211-753
+8df4c59	Paul Littlebury	Tue Feb 3 11:57:19 2015 +0000	CSR-26 final Gherkin for education feature
+ef7c93a	Jamie Burns	Tue Feb 3 11:55:45 2015 +0000	Merge 21a044f9a785ffd527544c7e4042c710c39cbe0b into e048cb782cc5589b0a42166ceba947fb73269d63
+21a044f	Jamie Burns	Tue Feb 3 11:55:06 2015 +0000	Merge remote-tracking branch 'origin/develop' into feature/CSR-211
+9583bc6	Eddie Jaoude	Tue Feb 3 11:50:29 2015 +0000	Removed PHPUnit reference in README
+8be9bd8	Jamie Burns	Tue Feb 3 11:34:50 2015 +0000	Review controller
+4569c5d	Eddie Jaoude	Tue Feb 3 11:28:05 2015 +0000	Changed header from Accept to Cotnent-Type
+0c237d2	Travis CI	Tue Feb 3 11:24:01 2015 +0000	Created changelog
+84ddb24	Travis CI	Tue Feb 3 11:24:01 2015 +0000	Set build VERSION number build-develop-746
+66d8f9a	Travis CI	Tue Feb 3 11:22:00 2015 +0000	Created changelog
+59af3d1	Travis CI	Tue Feb 3 11:22:00 2015 +0000	Set build VERSION number build-headers-745
+d980fbc	Eddie Abou-Jaoude	Tue Feb 3 11:21:51 2015 +0000	Merge b4503895392467a125e113175ec0b0a4df466490 into e048cb782cc5589b0a42166ceba947fb73269d63
+b450389	Eddie Jaoude	Tue Feb 3 11:19:48 2015 +0000	Updated http client to send json request (Guzzle)
+acffe86	Travis CI	Tue Feb 3 11:07:29 2015 +0000	Created changelog
+08a18de	Travis CI	Tue Feb 3 11:07:29 2015 +0000	Set build VERSION number build-feature/CSR-214-743
+6cca0cb	Travis CI	Tue Feb 3 11:07:26 2015 +0000	Created changelog
+0648676	Travis CI	Tue Feb 3 11:07:26 2015 +0000	Set build VERSION number build-develop-744
+2e5581a	Jamie Burns	Tue Feb 3 11:04:19 2015 +0000	Merge 0e70458d43fcf6214e74d1058098f4331cde4c8e into e048cb782cc5589b0a42166ceba947fb73269d63
+0e70458	Jamie Burns	Tue Feb 3 10:58:11 2015 +0000	Removed XDEBUG parameter from API call
+9eedecc	Travis CI	Tue Feb 3 11:01:29 2015 +0000	Created changelog
+680abab	Travis CI	Tue Feb 3 11:01:29 2015 +0000	Created changelog
+6b58767	Travis CI	Tue Feb 3 11:01:29 2015 +0000	Set build VERSION number build-develop-742
+8ef3d02	Travis CI	Tue Feb 3 11:01:29 2015 +0000	Set build VERSION number build-feature/CSR-214-741
+9daee58	Travis CI	Tue Feb 3 11:00:37 2015 +0000	Created changelog
+cfbcb28	Travis CI	Tue Feb 3 11:00:37 2015 +0000	Set build VERSION number build-develop-740
+8af1f6a	Travis CI	Tue Feb 3 11:00:29 2015 +0000	Created changelog
+07eac02	Travis CI	Tue Feb 3 11:00:29 2015 +0000	Set build VERSION number build-feature/CSR-345-739
+81e39f7	Jamie Burns	Tue Feb 3 10:58:15 2015 +0000	Merge d6959b836b7447df8907eca752c954acd02271a1 into e048cb782cc5589b0a42166ceba947fb73269d63
+d6959b8	Jamie Burns	Tue Feb 3 10:58:11 2015 +0000	Removed XDEBUG parameter from API call
+f3957ea	Dave Nash	Tue Feb 3 10:57:13 2015 +0000	Merge ff7a7af513c9e14923996b0069b3c3666da58ee1 into e048cb782cc5589b0a42166ceba947fb73269d63
+ff7a7af	Dave Nash	Tue Feb 3 10:52:37 2015 +0000	Merge branch 'develop' into feature/CSR-345
+dd4e2fb	Eddie Jaoude	Tue Feb 3 10:39:32 2015 +0000	[CSR-12] Simple holding Page & routing added
+596a4d4	Eddie Jaoude	Tue Feb 3 10:39:11 2015 +0000	[CSR-12] Updated D/M dependency
+e447623	Jamie Burns	Tue Feb 3 10:28:22 2015 +0000	Merge remote-tracking branch 'origin/develop' into feature/CSR-214
+7831f78	Jamie Burns	Tue Feb 3 10:28:05 2015 +0000	Merge remote-tracking branch 'origin/develop' into feature/CSR-214
+60a219e	Travis CI	Tue Feb 3 09:50:28 2015 +0000	Created changelog
+c981f1b	Travis CI	Tue Feb 3 09:50:28 2015 +0000	Set build VERSION number build-develop-736
+c99ac4b	Travis CI	Tue Feb 3 09:48:24 2015 +0000	Created changelog
+5914471	Travis CI	Tue Feb 3 09:48:24 2015 +0000	Set build VERSION number build-feature/CSR-345-735
+8cce85d	Travis CI	Tue Feb 3 09:47:58 2015 +0000	Created changelog
+ceabd14	Travis CI	Tue Feb 3 09:47:58 2015 +0000	Set build VERSION number build-develop-734
+e048cb7	Dave Nash	Tue Feb 3 09:47:12 2015 +0000	Merge pull request #61 from TransformCore/feature/CSR-196
+c000952	Dave Nash	Tue Feb 3 09:44:46 2015 +0000	Merge 33c1c1f103224525ceb27848f7edca1e9b2ef592 into 581fde6b7faee40290715b1f584fa0ce9769a7f9
+33c1c1f	Dave Nash	Tue Feb 3 09:44:39 2015 +0000	Updated composer.json to use feature/CSR-345 on D/M
+5c7051a	Dave Nash	Tue Feb 3 09:43:17 2015 +0000	Added camelCase to error translation markers
+ea239ef	Dave Nash	Tue Feb 3 09:40:38 2015 +0000	Merge branch 'develop' into feature/CSR-345
+2804724	Travis CI	Tue Feb 3 05:34:13 2015 +0000	Created changelog
+ee0592c	Travis CI	Tue Feb 3 05:34:13 2015 +0000	Set build VERSION number build-develop-733
+46d7ce6	Travis CI	Tue Feb 3 05:33:37 2015 +0000	Created changelog
+de82d58	Travis CI	Tue Feb 3 05:33:37 2015 +0000	Set build VERSION number build-feature/CSR-196-732
+fd478b8	Eddie Abou-Jaoude	Tue Feb 3 05:32:25 2015 +0000	Merge 103230e411799fb9297be9cc9cfc29b803f84515 into 581fde6b7faee40290715b1f584fa0ce9769a7f9
+103230e	Eddie Jaoude	Tue Feb 3 05:31:41 2015 +0000	[CSR-196] Eligibility Spec tests
+bc1c9b6	Travis CI	Mon Feb 2 21:17:23 2015 +0000	Created changelog
+26c12e4	Travis CI	Mon Feb 2 21:17:23 2015 +0000	Set build VERSION number build-feature/CSR-26-731
+d2c90cd	Paul Littlebury	Mon Feb 2 21:16:03 2015 +0000	CSR-26 more updates to education gherkin
+7322aef	Paul Littlebury	Mon Feb 2 20:59:46 2015 +0000	CSR-26 multiple updates to education gherkin (incomplete) and key addition to FeatureContext which should be merged ASAP
+f19560c	Dave Nash	Mon Feb 2 18:41:52 2015 +0000	Updated breadcrumb links
+680c7b8	Dave Nash	Mon Feb 2 18:10:43 2015 +0000	Updated composer.lock
+829ad1f	Travis CI	Mon Feb 2 18:02:22 2015 +0000	Created changelog
+cfce95b	Travis CI	Mon Feb 2 18:02:22 2015 +0000	Set build VERSION number build-feature/CSR-214-728
+bbc124c	Dave Nash	Mon Feb 2 17:58:53 2015 +0000	Fixed merge conflicts
+160f3da	Jamie Burns	Mon Feb 2 17:57:51 2015 +0000	Merge branch 'develop' into feature/CSR-214
+e39d3a2	Travis CI	Mon Feb 2 17:50:06 2015 +0000	Created changelog
+77b4e5c	Travis CI	Mon Feb 2 17:50:05 2015 +0000	Set build VERSION number build-develop-727
+581fde6	Dave Nash	Mon Feb 2 17:46:17 2015 +0000	Merge pull request #53 from TransformCore/feature/CSR-196
+7cad0b6	Travis CI	Mon Feb 2 17:42:54 2015 +0000	Created changelog
+848b341	Travis CI	Mon Feb 2 17:42:54 2015 +0000	Set build VERSION number build-develop-726
+b5f1a49	Travis CI	Mon Feb 2 17:42:12 2015 +0000	Created changelog
+9c3b96e	Travis CI	Mon Feb 2 17:42:12 2015 +0000	Set build VERSION number build-feature/CSR-196-725
+a163f1b	Eddie Abou-Jaoude	Mon Feb 2 17:38:36 2015 +0000	Merge a2536a7c96478804a2a0c944d2fbb53552516086 into d06fb352a2538fe693711c8d8a14670b30e6be96
+a2536a7	Eddie Jaoude	Mon Feb 2 17:38:29 2015 +0000	[CSR-196] Updated D/M dependency to master
+32709da	Travis CI	Mon Feb 2 17:17:41 2015 +0000	Created changelog
+dddc457	Travis CI	Mon Feb 2 17:17:41 2015 +0000	Set build VERSION number build-feature/CSR-196-724
+5ebdb02	Travis CI	Mon Feb 2 17:17:12 2015 +0000	Created changelog
+1592c88	Travis CI	Mon Feb 2 17:17:12 2015 +0000	Set build VERSION number build-develop-724
+e564ef1	Eddie Abou-Jaoude	Mon Feb 2 17:14:22 2015 +0000	Merge 3a39a39278ccb88be605c157110bad8c93cd4b1a into d06fb352a2538fe693711c8d8a14670b30e6be96
+3a39a39	Eddie Jaoude	Mon Feb 2 17:13:57 2015 +0000	[CSR-196] Fixed Checkbox issue #57
+1393721	Travis CI	Mon Feb 2 16:48:32 2015 +0000	Created changelog
+6a3035e	Travis CI	Mon Feb 2 16:48:32 2015 +0000	Set build VERSION number build-feature/CSR-26-723
+a33993c	Paul Littlebury	Mon Feb 2 16:44:24 2015 +0000	updated other gherkin tests as were out of date for this branch
+3fad1a3	Tom Ruppel	Mon Feb 2 16:27:22 2015 +0000	Copy corrections
+1462940	Dave Nash	Mon Feb 2 16:25:58 2015 +0000	Updated composer.lock
+3d0f091	Dave Nash	Mon Feb 2 15:53:01 2015 +0000	Merge branch 'develop' into feature/CSR-26
+82c2293	Dave Nash	Mon Feb 2 15:41:34 2015 +0000	Merge branch 'feature/CSR-26' of github.com:TransformCore/CSR-Fast-Stream-frontend into feature/CSR-26
+c4b5e9c	Dave Nash	Mon Feb 2 15:41:06 2015 +0000	Updated composer.lock hash
+6c45199	Paul Littlebury	Mon Feb 2 15:40:08 2015 +0000	Merge branch 'feature/CSR-26' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into feature/CSR-26
+7494b43	Paul Littlebury	Mon Feb 2 15:39:23 2015 +0000	CSR-26 updated gherkin
+6cd3a00	Dave Nash	Mon Feb 2 15:37:23 2015 +0000	Merge branch 'feature/CSR-26' of github.com:TransformCore/CSR-Fast-Stream-frontend into feature/CSR-26
+f31fb25	Dave Nash	Mon Feb 2 15:35:35 2015 +0000	Updated composer
+a7ab501	Paul Littlebury	Mon Feb 2 14:55:48 2015 +0000	Added scenario for Issue#57
+0afaff7	Travis CI	Mon Feb 2 14:36:55 2015 +0000	Created changelog
+80a7eed	Travis CI	Mon Feb 2 14:36:55 2015 +0000	Set build VERSION number build-develop-714
+0c2fbdb	Travis CI	Mon Feb 2 14:36:37 2015 +0000	Created changelog
+b89b309	Travis CI	Mon Feb 2 14:36:37 2015 +0000	Set build VERSION number build-feature/CSR-196-713
+c8e7f53	Eddie Abou-Jaoude	Mon Feb 2 14:33:37 2015 +0000	Merge e4501b9e45697064a7d8e02281339523d1372020 into d06fb352a2538fe693711c8d8a14670b30e6be96
+e4501b9	Paul Littlebury	Mon Feb 2 14:33:15 2015 +0000	CSR-196 amaneded checks due to no data persitence on f/e
+9e580b3	Jamie Burns	Mon Feb 2 14:18:38 2015 +0000	Composer update
+9f58601	Paul Littlebury	Mon Feb 2 13:45:43 2015 +0000	CSR-196 tweaks for gherkin UX on several features
+60124c0	Dave Nash	Mon Feb 2 12:31:41 2015 +0000	Added internship fields
+a7e5a53	Travis CI	Mon Feb 2 12:29:58 2015 +0000	Created changelog
+cb95256	Travis CI	Mon Feb 2 12:29:58 2015 +0000	Set build VERSION number build-about-copy-update-708
+ab9ff0d	Paul Littlebury	Mon Feb 2 12:15:38 2015 +0000	corrected change in aboutyou gherkin realting to ux
+b736901	Paul Littlebury	Mon Feb 2 12:11:05 2015 +0000	tweaks to diversity gherkin to allow for generic validation messages
+0a6e079	Dave Nash	Mon Feb 2 11:54:39 2015 +0000	Swapped out Degree entity for separate Postgrad and Undergrad entities
+63a0971	Travis CI	Mon Feb 2 11:46:30 2015 +0000	Created changelog
+f418090	Travis CI	Mon Feb 2 11:46:30 2015 +0000	Set build VERSION number build-develop-702
+84e47ef	Travis CI	Mon Feb 2 11:46:20 2015 +0000	Created changelog
+eb17d80	Travis CI	Mon Feb 2 11:46:20 2015 +0000	Set build VERSION number build-feature/CSR-211-701
+82f1372	Jamie Burns	Mon Feb 2 11:43:17 2015 +0000	Merge 29b61966857b741ecff2e116161876b9aaad0525 into d06fb352a2538fe693711c8d8a14670b30e6be96
+29b6196	Jamie Burns	Mon Feb 2 11:14:40 2015 +0000	Git attributes for explicit line ending configuration
+8c23a0d	Eddie Jaoude	Mon Feb 2 11:35:52 2015 +0000	[CSR-196] Redirect to Diversity
+b661263	Travis CI	Mon Feb 2 11:26:48 2015 +0000	Created changelog
+49d92bd	Travis CI	Mon Feb 2 11:26:48 2015 +0000	Set build VERSION number build-develop-698
+b40be45	Jamie Burns	Mon Feb 2 11:24:01 2015 +0000	Merge 17349f5e4c58e31e1b3ebf4cf43f7700de52b8a1 into d06fb352a2538fe693711c8d8a14670b30e6be96
+dece1f2	Travis CI	Mon Feb 2 11:16:40 2015 +0000	Created changelog
+ebbe4e0	Travis CI	Mon Feb 2 11:16:40 2015 +0000	Set build VERSION number build-feature/CSR-211-697
+17349f5	Jamie Burns	Mon Feb 2 11:14:40 2015 +0000	Git attributes for explicit line ending configuration
+a9bf448	Jamie Burns	Thu Jan 29 03:26:26 2015 +0000	Renamed app_dev access variable to reduce confusion with symfony env
+8ee8523	Paul Littlebury	Mon Feb 2 11:05:25 2015 +0000	removed Registration directory as uneeded
+386a1e4	Travis CI	Mon Feb 2 10:51:55 2015 +0000	Created changelog
+3a9da8a	Travis CI	Mon Feb 2 10:51:55 2015 +0000	Set build VERSION number build-feature/CSR-211-694
+1707e5e	Travis CI	Mon Feb 2 10:20:08 2015 +0000	Created changelog
+afb9b46	Travis CI	Mon Feb 2 10:20:08 2015 +0000	Set build VERSION number build-feature/CSR-196-692
+100998d	Travis CI	Mon Feb 2 10:19:49 2015 +0000	Created changelog
+7f6ce85	Travis CI	Mon Feb 2 10:19:49 2015 +0000	Set build VERSION number build-develop-693
+e9ce93c	Eddie Abou-Jaoude	Mon Feb 2 10:17:59 2015 +0000	Merge e3412abab3460a5a054d003195fe66d7e2bb8d5c into d06fb352a2538fe693711c8d8a14670b30e6be96
+e3412ab	Eddie Jaoude	Mon Feb 2 10:17:40 2015 +0000	[CSR-196] Fixed failing disability detail test
+c87a60c	Eddie Jaoude	Mon Feb 2 09:59:52 2015 +0000	[CSR-196] Updated D/M depedency
+8e8daeb	Paul Littlebury	Mon Feb 2 10:10:14 2015 +0000	Updated gherkin
+f7a4751	Eddie Jaoude	Mon Feb 2 09:17:49 2015 +0000	[CSR-196] Updated D/M dependency
+5355100	Eddie Jaoude	Mon Feb 2 08:45:14 2015 +0000	Security routing added for current routes
+f1648df	Dave Nash	Fri Jan 30 17:16:51 2015 +0000	Merge branch 'feature/CSR-26' of github.com:TransformCore/CSR-Fast-Stream-frontend into feature/CSR-26
+399f650	Dave Nash	Fri Jan 30 17:15:46 2015 +0000	Added degree type radio buttons
+38cbe93	Travis CI	Fri Jan 30 16:49:11 2015 +0000	Created changelog
+7fd8846	Travis CI	Fri Jan 30 16:49:11 2015 +0000	Set build VERSION number build-feature/CSR-214-687
+1f0b0a3	Travis CI	Fri Jan 30 16:47:17 2015 +0000	Created changelog
+56990f1	Travis CI	Fri Jan 30 16:47:17 2015 +0000	Set build VERSION number build-feature/CSR-214-686
+d50a876	Jamie Burns	Fri Jan 30 16:45:27 2015 +0000	Composer using sources for downloading
+25d508d	Jamie Burns	Fri Jan 30 16:43:06 2015 +0000	Composer domain model update
+2d14f26	Jamie Burns	Fri Jan 30 16:30:30 2015 +0000	Composer update (pointing to story branch)
+aea1cff	Jamie Burns	Fri Jan 30 16:20:28 2015 +0000	Behat tests updated to match fieldset grouping
+47d6f45	Jamie Burns	Fri Jan 30 15:53:45 2015 +0000	Inline error messages in red
+a33bbb7	Jamie Burns	Fri Jan 30 15:53:24 2015 +0000	Language menu
+6b8e8bd	Paul Littlebury	Fri Jan 30 15:37:12 2015 +0000	General - Updated gherkin to capture errors better
+0be9231	Jamie Burns	Fri Jan 30 13:04:53 2015 +0000	Login page text correction
+50506f8	Jamie Burns	Fri Jan 30 13:04:44 2015 +0000	Account page styling
+9747645	Jamie Burns	Fri Jan 30 13:04:37 2015 +0000	Homepage styling
+ac7fbb6	Jamie Burns	Fri Jan 30 13:04:27 2015 +0000	Changelog styling
+9dde3db	Jamie Burns	Fri Jan 30 13:04:21 2015 +0000	Guaranteed interview scheme styling
+a2f068e	Jamie Burns	Fri Jan 30 13:04:10 2015 +0000	Terms and conditions styling
+f5b981e	Jamie Burns	Fri Jan 30 13:03:59 2015 +0000	Textarea override
+9ca4fbd	Eddie Jaoude	Fri Jan 30 12:59:53 2015 +0000	[CSR-196] Diversity page with SocioEconomic
+3b36d02	Eddie Jaoude	Fri Jan 30 12:59:17 2015 +0000	[CSR-196] Updated D/M dependency
+fc3435e	Jamie Burns	Thu Jan 29 15:36:10 2015 +0000	Updated copy for homepage
+4ea6779	Eddie Abou-Jaoude	Thu Jan 29 15:10:26 2015 +0000	Removed homepage placeholders under Hero block
+fcd88c2	Jamie Burns	Fri Jan 30 12:17:12 2015 +0000	Eligibility form basic styling
+ae5aea5	Jamie Burns	Fri Jan 30 12:17:04 2015 +0000	Breadcrumb labels different to title
+354c612	Jamie Burns	Fri Jan 30 12:01:40 2015 +0000	Tech debt to be removed later
+442329b	Jamie Burns	Fri Jan 30 12:01:26 2015 +0000	Profile page improvements
+19e2d71	Eddie Jaoude	Fri Jan 30 09:23:48 2015 +0000	[CSR-196] Updated D/M dependency
+10f8fae	Paul Littlebury	Thu Jan 29 21:08:00 2015 +0000	CSR-26 Expanded tests around degree entries
+52009f7	Paul Littlebury	Thu Jan 29 21:06:04 2015 +0000	General Gherkin updates
+59ee682	Jamie Burns	Thu Jan 29 18:25:50 2015 +0000	Profile breadcrumb styled
+963d1cf	Jamie Burns	Thu Jan 29 17:32:26 2015 +0000	Login page laid out for GovUkStyle
+9278d4a	Jamie Burns	Thu Jan 29 17:32:04 2015 +0000	Assets stored locally
+9dc7f4a	Jamie Burns	Thu Jan 29 17:31:08 2015 +0000	Registration form using fieldset and laid out for GovUkStyle
+5c33591	Jamie Burns	Thu Jan 29 17:29:32 2015 +0000	Improved form controls
+ba7a233	Jamie Burns	Thu Jan 29 17:28:56 2015 +0000	Removed some cruft
+2695811	Dave Nash	Thu Jan 29 17:00:37 2015 +0000	Merge branch 'feature/CSR-26' of github.com:TransformCore/CSR-Fast-Stream-frontend into feature/CSR-26
+45ddd64	Dave Nash	Thu Jan 29 16:59:53 2015 +0000	Separated degree from education
+6c68871	Paul Littlebury	Thu Jan 29 16:35:26 2015 +0000	CSR-196 fine tune of diversity gherkin
+f8f5da0	Travis CI	Thu Jan 29 15:43:30 2015 +0000	Created changelog
+8add4a4	Travis CI	Thu Jan 29 15:43:30 2015 +0000	Set build VERSION number build-develop-666
+f29cabe	Travis CI	Thu Jan 29 15:39:44 2015 +0000	Created changelog
+09c91f3	Travis CI	Thu Jan 29 15:39:44 2015 +0000	Set build VERSION number build-homepage-copy-update-664
+ff98285	Travis CI	Thu Jan 29 15:39:33 2015 +0000	Created changelog
+b4b354e	Travis CI	Thu Jan 29 15:39:33 2015 +0000	Set build VERSION number build-develop-665
+9c43769	Travis CI	Thu Jan 29 15:39:18 2015 +0000	Created changelog
+dfcdb79	Travis CI	Thu Jan 29 15:39:18 2015 +0000	Set build VERSION number build-homepage-copy-update-663
+d06fb35	Eddie Abou-Jaoude	Thu Jan 29 15:38:41 2015 +0000	Merge pull request #55 from TransformCore/homepage-copy-update
+a7223cd	Jamie Burns	Thu Jan 29 15:36:19 2015 +0000	Merge 75c61576a7ee211efa957f2a0d7b10c38336962e into 94247dbdc2c317a85f55508e39c9199927af7135
+75c6157	Jamie Burns	Thu Jan 29 15:36:10 2015 +0000	Updated copy for homepage
+ec695f7	Travis CI	Thu Jan 29 15:24:17 2015 +0000	Created changelog
+0a39a01	Travis CI	Thu Jan 29 15:24:17 2015 +0000	Set build VERSION number build-develop-662
+94247db	Jamie Burns	Thu Jan 29 15:22:15 2015 +0000	Merge pull request #54 from TransformCore/homepage
+e40cc27	Travis CI	Thu Jan 29 15:14:54 2015 +0000	Created changelog
+fbd5361	Travis CI	Thu Jan 29 15:14:54 2015 +0000	Set build VERSION number build-homepage-659
+4ef8d7a	Travis CI	Thu Jan 29 15:14:15 2015 +0000	Created changelog
+7094363	Travis CI	Thu Jan 29 15:14:15 2015 +0000	Set build VERSION number build-develop-661
+bc31aa0	Travis CI	Thu Jan 29 15:13:56 2015 +0000	Created changelog
+6356463	Travis CI	Thu Jan 29 15:13:56 2015 +0000	Set build VERSION number build-homepage-660
+cca75e4	Eddie Abou-Jaoude	Thu Jan 29 15:10:54 2015 +0000	Merge 84176ac805b5515c1815ec60b6fa99a17957ae9b into 4dbd9c98d9bad3261b097aa4f496007042afcbd5
+84176ac	Eddie Abou-Jaoude	Thu Jan 29 15:10:26 2015 +0000	Removed homepage placeholders under Hero block
+80b47cd	Paul Littlebury	Thu Jan 29 12:59:17 2015 +0000	CSR-26 Updated test data refs
+d170cb7	Paul Littlebury	Thu Jan 29 12:56:41 2015 +0000	CSR-26 Mandatory fields checks added
+5707da7	Paul Littlebury	Thu Jan 29 12:28:57 2015 +0000	CSR-26 - minor correction on field verification
+3168854	Paul Littlebury	Thu Jan 29 12:23:52 2015 +0000	CSR-26 - Updated gherkin based on w/f changes
+806dec2	Jamie Burns	Thu Jan 29 10:45:11 2015 +0000	Removed bootstrap hook
+abe90ba	Jamie Burns	Thu Jan 29 10:44:55 2015 +0000	Requiring fieldset bundle
+d38ffb2	Paul Littlebury	Thu Jan 29 10:43:26 2015 +0000	CSR-26 Updated education feature file
+6b1ed18	Jamie Burns	Thu Jan 29 05:10:47 2015 +0000	Registration form title
+06a3713	Jamie Burns	Thu Jan 29 05:10:33 2015 +0000	Page title and phase banner
+66eb9ea	Jamie Burns	Thu Jan 29 05:10:16 2015 +0000	Field help
+abb5d76	Jamie Burns	Thu Jan 29 04:40:20 2015 +0000	Button class name
+c655013	Jamie Burns	Thu Jan 29 04:40:11 2015 +0000	Form control class name
+1fa703b	Jamie Burns	Thu Jan 29 04:39:54 2015 +0000	Form label class name
+302a8dd	Jamie Burns	Thu Jan 29 04:39:37 2015 +0000	Class name correction for form row
+f1d223b	Jamie Burns	Thu Jan 29 04:38:39 2015 +0000	Registration form fix for duplicate phoneNumber field
+39f5cf0	Jamie Burns	Thu Jan 29 03:55:10 2015 +0000	Form row class name
+80315f0	Jamie Burns	Thu Jan 29 03:54:52 2015 +0000	Empty form theme
+ac027d7	Jamie Burns	Thu Jan 29 03:54:13 2015 +0000	Base template style and KPN menu style
+c8b0d8f	Jamie Burns	Thu Jan 29 03:37:49 2015 +0000	Created GovUkStyleBundle
+f20fbff	Jamie Burns	Thu Jan 29 03:35:31 2015 +0000	Removed bootstrap bundle
+50aadf6	Jamie Burns	Thu Jan 29 03:26:26 2015 +0000	Renamed app_dev access variable to reduce confusion with symfony env
+9f1f54b	Eddie Jaoude	Wed Jan 28 19:01:57 2015 +0000	[CSR-196] Update D/M dependency
+469121f	Dave Nash	Wed Jan 28 17:25:00 2015 +0000	Merge branch 'feature/CSR-26' of github.com:TransformCore/CSR-Fast-Stream-frontend into feature/CSR-26
+429ec0c	Dave Nash	Wed Jan 28 17:22:31 2015 +0000	Add education route and action
+42c411c	Eddie Jaoude	Wed Jan 28 17:20:24 2015 +0000	[CSR-196] Update D/M dependency
+716d0b6	Paul Littlebury	Wed Jan 28 16:00:04 2015 +0000	CSR-344 added password check code to config.yml
+be6f0b4	Paul Littlebury	Wed Jan 28 15:38:40 2015 +0000	CSR-344 updated tests to reflect changes in password reset and date of birth format change
+e308eff	Eddie Jaoude	Wed Jan 28 15:17:12 2015 +0000	[CSR-196] Dev parameters includes jams config
+5cd9d62	Eddie Jaoude	Wed Jan 28 15:12:43 2015 +0000	[CSR-196] Updated D/M dependency
+95a8e07	Travis CI	Wed Jan 28 15:09:29 2015 +0000	Created changelog
+9f7fce4	Travis CI	Wed Jan 28 15:09:29 2015 +0000	Set build VERSION number build-feature/CSR-196-643
+3d886f7	Paul Littlebury	Wed Jan 28 15:08:11 2015 +0000	CSR-344 updated aboutyou section with changes to password entry and date of birth
+1175dc3	Eddie Jaoude	Wed Jan 28 15:03:06 2015 +0000	[CSR-196] Merged in `develop` into CSR-196
+2b50d04	Eddie Jaoude	Wed Jan 28 15:02:42 2015 +0000	[CSR-196] Merged in `develop` into CSR-196
+4e934d3	Eddie Jaoude	Wed Jan 28 15:02:06 2015 +0000	[CSR-196] Merged in `develop` into CSR-196
+8b33688	Paul Littlebury	Wed Jan 28 13:51:45 2015 +0000	CSR-26 amended education feature
+37d40e3	Paul Littlebury	Wed Jan 28 13:27:59 2015 +0000	CSR-26 corrected gherkin
+8284c78	Travis CI	Wed Jan 28 13:22:53 2015 +0000	Created changelog
+ee48984	Travis CI	Wed Jan 28 13:22:53 2015 +0000	Set build VERSION number build-features/CSR-349-640
+f041267	Travis CI	Wed Jan 28 13:22:28 2015 +0000	Created changelog
+a29517c	Travis CI	Wed Jan 28 13:22:28 2015 +0000	Set build VERSION number build-features/CSR-348-639
+554f2ab	Travis CI	Wed Jan 28 13:21:55 2015 +0000	Created changelog
+82aa354	Travis CI	Wed Jan 28 13:21:55 2015 +0000	Set build VERSION number build-features/CSR-347-638
+1feac37	Travis CI	Wed Jan 28 13:21:14 2015 +0000	Created changelog
+6182d2c	Travis CI	Wed Jan 28 13:21:14 2015 +0000	Set build VERSION number build-features/CSR-346-637
+5fe4254	Travis CI	Wed Jan 28 13:20:30 2015 +0000	Created changelog
+0bcc41b	Travis CI	Wed Jan 28 13:20:30 2015 +0000	Set build VERSION number build-features/CSR-319-636
+a744dbc	Travis CI	Wed Jan 28 13:15:45 2015 +0000	Created changelog
+c83565c	Travis CI	Wed Jan 28 13:15:45 2015 +0000	Set build VERSION number build-features/CSR-318-635
+4a8d2c9	Travis CI	Wed Jan 28 13:13:23 2015 +0000	Created changelog
+2681818	Travis CI	Wed Jan 28 13:13:23 2015 +0000	Set build VERSION number build-features/CSR-364-634
+501bba4	Travis CI	Wed Jan 28 13:10:56 2015 +0000	Created changelog
+5c27376	Travis CI	Wed Jan 28 13:10:56 2015 +0000	Set build VERSION number build-features/CSR-12-633
+a9ab566	Travis CI	Wed Jan 28 13:08:20 2015 +0000	Created changelog
+172919a	Travis CI	Wed Jan 28 13:08:20 2015 +0000	Set build VERSION number build-features/CSR-26-632
+d418b8c	Travis CI	Wed Jan 28 12:56:32 2015 +0000	Created changelog
+5521b0f	Travis CI	Wed Jan 28 12:56:32 2015 +0000	Set build VERSION number build-features/CSR-211-631
+674feda	Travis CI	Wed Jan 28 12:55:54 2015 +0000	Created changelog
+8d41a74	Travis CI	Wed Jan 28 12:55:54 2015 +0000	Set build VERSION number build-features/CSR-211-630
+4ec3df3	Paul Littlebury	Wed Jan 28 12:53:34 2015 +0000	CSR-311 gherkin added for this story
+ded01c8	Paul Littlebury	Wed Jan 28 12:47:25 2015 +0000	CSR-344 added gherkin for password reset
+7b07983	Travis CI	Wed Jan 28 12:42:01 2015 +0000	Created changelog
+be3bd5f	Travis CI	Wed Jan 28 12:42:01 2015 +0000	Set build VERSION number build-develop-628
+4dbd9c9	Eddie Abou-Jaoude	Wed Jan 28 12:38:45 2015 +0000	Merge pull request #50 from TransformCore/Pauls-csr-24-branch
+4b3f089	Travis CI	Wed Jan 28 12:14:02 2015 +0000	Created changelog
+36a8995	Travis CI	Wed Jan 28 12:14:02 2015 +0000	Set build VERSION number build-develop-627
+6af8934	Dave Nash	Wed Jan 28 12:11:40 2015 +0000	Merge a2600405339d37350852c8f30589b50a81e1d22b into 1014c5c2fcceda6ece9ffbe739386f395fc94c87
+a260040	Dave Nash	Wed Jan 28 12:10:06 2015 +0000	Merge branch 'develop' into feature/CSR-345
+ba909b8	Travis CI	Wed Jan 28 12:06:26 2015 +0000	Created changelog
+477f819	Travis CI	Wed Jan 28 12:06:26 2015 +0000	Set build VERSION number build-develop-624
+92a55a9	Travis CI	Wed Jan 28 12:06:25 2015 +0000	Created changelog
+0c29839	Travis CI	Wed Jan 28 12:06:25 2015 +0000	Set build VERSION number build-Pauls-csr-24-branch-625
+b611e68	Paul Littlebury	Wed Jan 28 12:03:20 2015 +0000	Merge c5d61a910ac6e989ce1e304eb1a515fbb34ca63f into 1014c5c2fcceda6ece9ffbe739386f395fc94c87
+c5d61a9	Eddie Jaoude	Wed Jan 28 12:03:08 2015 +0000	Merge branch 'develop' into Pauls-csr-24-branch
+6bc0d78	Travis CI	Wed Jan 28 11:58:29 2015 +0000	Created changelog
+535fba9	Travis CI	Wed Jan 28 11:58:29 2015 +0000	Set build VERSION number build-develop-623
+1014c5c	Jamie Burns	Wed Jan 28 11:55:33 2015 +0000	Merge pull request #51 from TransformCore/feature/CSR-24-ci-deps
+4df8cf3	Travis CI	Wed Jan 28 11:52:50 2015 +0000	Created changelog
+34c05b5	Travis CI	Wed Jan 28 11:52:50 2015 +0000	Set build VERSION number build-develop-622
+e3e84af	Eddie Abou-Jaoude	Wed Jan 28 11:49:49 2015 +0000	Merge a976e14c888f0a99bd56647913ff9d09dac7b9ba into a895c00432ed9e6f2634ed7ac4b30dc070f856c5
+b7eac9d	Travis CI	Wed Jan 28 11:41:43 2015 +0000	Created changelog
+b798d76	Travis CI	Wed Jan 28 11:41:43 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-621
+f3ca646	Paul Littlebury	Wed Jan 28 11:17:03 2015 +0000	Merge branch 'develop' into Pauls-csr-24-branch
+5a07504	Dave Nash	Wed Jan 28 11:06:53 2015 +0000	Fixed merge conflicts
+4f48f31	Dave Nash	Wed Jan 28 11:04:48 2015 +0000	Added Content-Type to Applicants service and changed to json
+c3791cd	Paul Littlebury	Wed Jan 28 10:48:57 2015 +0000	first commit of new branch
+95c3579	Travis CI	Wed Jan 28 10:35:48 2015 +0000	Created changelog
+188229e	Travis CI	Wed Jan 28 10:35:48 2015 +0000	Set build VERSION number build-features/CSR-24-616
+df37d0a	Jamie Burns	Wed Jan 28 10:32:52 2015 +0000	Merge pull request #48 from TransformCore/feature/CSR-24-ci-deps
+aebb2c0	Travis CI	Wed Jan 28 10:30:41 2015 +0000	Created changelog
+15e1d97	Travis CI	Wed Jan 28 10:30:41 2015 +0000	Set build VERSION number build-features/CSR-24-615
+0155275	Travis CI	Wed Jan 28 10:29:40 2015 +0000	Created changelog
+e7c97f1	Travis CI	Wed Jan 28 10:29:40 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-614
+c0e35d6	Eddie Abou-Jaoude	Wed Jan 28 10:26:52 2015 +0000	Merge a976e14c888f0a99bd56647913ff9d09dac7b9ba into 1ea8ec1f3095ce040a74fc4647cb3501d3931ab7
+a976e14	Eddie Jaoude	Wed Jan 28 10:26:43 2015 +0000	Merged develop into CSR-24-ci-deps
+a895c00	Eddie Abou-Jaoude	Wed Jan 28 10:23:03 2015 +0000	Merge pull request #35 from TransformCore/features/CSR-24
+1ea8ec1	Eddie Jaoude	Wed Jan 28 10:22:47 2015 +0000	Merged in develop into CSR-24
+37739b3	Eddie Abou-Jaoude	Wed Jan 28 10:18:54 2015 +0000	Merge pull request #20 from TransformCore/features/CSR-135
+e020007	Travis CI	Wed Jan 28 06:43:14 2015 +0000	Created changelog
+570d589	Travis CI	Wed Jan 28 06:43:14 2015 +0000	Created changelog
+b2aced9	Travis CI	Wed Jan 28 06:43:14 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-609
+ba2b804	Travis CI	Wed Jan 28 06:43:14 2015 +0000	Set build VERSION number build-features/CSR-24-610
+2d321be	Eddie Abou-Jaoude	Wed Jan 28 06:41:29 2015 +0000	Merge 39aa58ce4c3a2f29f34b6baa70309ac2c65cbff3 into f2f919662f4c07361d0c11ac4f8e19331689bb51
+39aa58c	Eddie Jaoude	Wed Jan 28 06:41:21 2015 +0000	[CSR-207] Removed unused ns include
+1a1ea53	Travis CI	Wed Jan 28 06:31:45 2015 +0000	Created changelog
+d11d7ee	Travis CI	Wed Jan 28 06:31:45 2015 +0000	Created changelog
+c9bb423	Travis CI	Wed Jan 28 06:31:45 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-607
+a04a197	Travis CI	Wed Jan 28 06:31:45 2015 +0000	Set build VERSION number build-features/CSR-24-608
+c20eaaa	Eddie Abou-Jaoude	Wed Jan 28 06:30:01 2015 +0000	Merge b5dac363daa88373d88bfbf533a8fa15994ae556 into f2f919662f4c07361d0c11ac4f8e19331689bb51
+b5dac36	Eddie Jaoude	Wed Jan 28 06:27:46 2015 +0000	[CSR-207] Removed Logger injection into Service
+439c9ae	Travis CI	Wed Jan 28 06:26:53 2015 +0000	Created changelog
+3ebac21	Travis CI	Wed Jan 28 06:26:53 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-605
+1a5e0fb	Travis CI	Wed Jan 28 06:26:50 2015 +0000	Created changelog
+b8882b5	Travis CI	Wed Jan 28 06:26:50 2015 +0000	Set build VERSION number build-features/CSR-24-606
+bee7a58	Eddie Abou-Jaoude	Wed Jan 28 06:25:06 2015 +0000	Merge d5d66e310c17a858ef2f9627dc2eef3aefb8ed14 into f2f919662f4c07361d0c11ac4f8e19331689bb51
+d5d66e3	Eddie Jaoude	Wed Jan 28 06:24:56 2015 +0000	[CSR-207] Removed debug code & re-enabled Specs
+44de975	Travis CI	Wed Jan 28 06:09:11 2015 +0000	Created changelog
+9f1799f	Travis CI	Wed Jan 28 06:09:11 2015 +0000	Set build VERSION number build-features/CSR-24-604
+1ca9686	Travis CI	Wed Jan 28 06:09:08 2015 +0000	Created changelog
+7b28da5	Travis CI	Wed Jan 28 06:09:08 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-604
+8764b0f	Eddie Abou-Jaoude	Wed Jan 28 06:07:33 2015 +0000	Merge ca9d56295ba2067b458dd7ff00afe4e82104e826 into f2f919662f4c07361d0c11ac4f8e19331689bb51
+ca9d562	Eddie Jaoude	Wed Jan 28 06:07:25 2015 +0000	Line break end of file
+dc1a05b	Travis CI	Wed Jan 28 05:58:32 2015 +0000	Created changelog
+336ba01	Travis CI	Wed Jan 28 05:58:32 2015 +0000	Created changelog
+8b7ca98	Travis CI	Wed Jan 28 05:58:32 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-602
+8275ced	Travis CI	Wed Jan 28 05:58:32 2015 +0000	Set build VERSION number build-features/CSR-24-603
+029ceb0	Eddie Abou-Jaoude	Wed Jan 28 05:56:56 2015 +0000	Merge aebcbb765e0310fa85fe68fcb0ac2b61347e845d into f2f919662f4c07361d0c11ac4f8e19331689bb51
+aebcbb7	Eddie Jaoude	Wed Jan 28 05:56:48 2015 +0000	Updated D/M dependency
+324ceaa	Eddie Jaoude	Wed Jan 28 05:56:27 2015 +0000	[CSR-207] Updated Serialisation config
+5a99ff4	Eddie Jaoude	Wed Jan 28 05:54:51 2015 +0000	[CSR-207] Removed debug code
+2876bc9	Eddie Jaoude	Tue Jan 27 20:21:59 2015 +0000	Eligibility serialisation config for nationality
+6d28ac6	Eddie Jaoude	Tue Jan 27 20:21:42 2015 +0000	Applicant serialisation config updated for all
+7b60603	Eddie Jaoude	Tue Jan 27 20:21:23 2015 +0000	Serialisation config added for all Entities
+bf588a2	Travis CI	Tue Jan 27 20:12:10 2015 +0000	Created changelog
+6039b9a	Travis CI	Tue Jan 27 20:12:10 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-598
+ca6a974	Travis CI	Tue Jan 27 20:12:07 2015 +0000	Created changelog
+39c3837	Travis CI	Tue Jan 27 20:12:07 2015 +0000	Set build VERSION number build-features/CSR-24-599
+b5668d1	Eddie Abou-Jaoude	Tue Jan 27 20:09:22 2015 +0000	Merge 1b096e794db878552c7cbd80a73e7ee34262633d into f2f919662f4c07361d0c11ac4f8e19331689bb51
+1b096e7	Eddie Jaoude	Tue Jan 27 20:09:14 2015 +0000	Expose Applicant.id in Serialiser config
+8e11ebe	Travis CI	Tue Jan 27 19:45:39 2015 +0000	Created changelog
+8d9a629	Travis CI	Tue Jan 27 19:45:39 2015 +0000	Set build VERSION number build-features/CSR-24-596
+18e3c78	Travis CI	Tue Jan 27 19:44:54 2015 +0000	Created changelog
+db116ca	Travis CI	Tue Jan 27 19:44:54 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-597
+0ebdb30	Eddie Abou-Jaoude	Tue Jan 27 19:40:46 2015 +0000	Merge b6151c4e4f38c33912f22df418ce85c7baa5e33f into f2f919662f4c07361d0c11ac4f8e19331689bb51
+b6151c4	Eddie Jaoude	Tue Jan 27 19:40:40 2015 +0000	Address class type added to serialization config
+df8ddb2	Eddie Jaoude	Tue Jan 27 19:38:10 2015 +0000	Revert "Type string added to Serializer config"
+11cb803	Eddie Jaoude	Tue Jan 27 19:33:31 2015 +0000	Type string added to Serializer config
+28c51c6	Travis CI	Tue Jan 27 19:27:15 2015 +0000	Created changelog
+3cf1e6d	Travis CI	Tue Jan 27 19:27:15 2015 +0000	Set build VERSION number build-features/CSR-24-593
+f4e627d	Travis CI	Tue Jan 27 19:27:06 2015 +0000	Created changelog
+8c15790	Travis CI	Tue Jan 27 19:27:06 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-592
+7fad9b3	Eddie Abou-Jaoude	Tue Jan 27 19:24:24 2015 +0000	Merge bd3434b811ffe18bc3623f26ceed7ae376437883 into f2f919662f4c07361d0c11ac4f8e19331689bb51
+bd3434b	Eddie Jaoude	Tue Jan 27 19:22:45 2015 +0000	Revert "[CSR-207] Serialiser Type for Address in Applicant"
+94ddf5b	Eddie Jaoude	Tue Jan 27 19:19:09 2015 +0000	Simple change to trigger build
+0d92638	Paul Littlebury	Tue Jan 27 16:20:38 2015 +0000	feature file tidy up
+409e4c0	Eddie Jaoude	Tue Jan 27 16:03:10 2015 +0000	[CSR-207] Updated B/E branch dependency
+8c060c3	Paul Littlebury	Tue Jan 27 15:59:49 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+ae01f9b	Eddie Jaoude	Tue Jan 27 15:58:06 2015 +0000	[CSR-207] Serialiser Type for Address in Applicant
+803ebf0	Travis CI	Tue Jan 27 14:11:10 2015 +0000	Created changelog
+a4d0958	Travis CI	Tue Jan 27 14:11:10 2015 +0000	Set build VERSION number build-develop-585
+045c999	Jamie Burns	Tue Jan 27 14:08:43 2015 +0000	Merge pull request #40 from TransformCore/CSR-207-deployment2
+fab3bcc	Travis CI	Tue Jan 27 13:58:42 2015 +0000	Created changelog
+a579751	Travis CI	Tue Jan 27 13:58:42 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-583
+f3a44f1	Travis CI	Tue Jan 27 13:58:36 2015 +0000	Created changelog
+5e474e5	Travis CI	Tue Jan 27 13:58:35 2015 +0000	Set build VERSION number build-features/CSR-24-584
+ce50c6f	Eddie Abou-Jaoude	Tue Jan 27 13:55:27 2015 +0000	Merge d9ca7bd51ae52cb8292b81f18d02b3e9612a92db into f2f919662f4c07361d0c11ac4f8e19331689bb51
+d9ca7bd	Eddie Jaoude	Tue Jan 27 13:55:18 2015 +0000	Removed clearCache command at the end of install
+f2f9196	Jamie Burns	Tue Jan 27 13:15:28 2015 +0000	Composer lock for domain model
+40920b8	Travis CI	Tue Jan 27 12:43:20 2015 +0000	Created changelog
+d2a041f	Travis CI	Tue Jan 27 12:43:20 2015 +0000	Set build VERSION number build-features/CSR-24-580
+9588937	Travis CI	Tue Jan 27 12:42:29 2015 +0000	Created changelog
+9c56bb0	Travis CI	Tue Jan 27 12:42:29 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-579
+3eb7685	Eddie Abou-Jaoude	Tue Jan 27 12:38:26 2015 +0000	Merge e9cbf7851926297ab7df01eeffbdcb23f6c5d101 into ed777e443260d81d92342614138d1da0e1f6c14a
+e9cbf78	Eddie Jaoude	Tue Jan 27 12:38:19 2015 +0000	Updated composer to require php ext intl
+7c23bec	Eddie Jaoude	Tue Jan 27 12:35:35 2015 +0000	Revert "Revert "Composer internationalisation php extension added""
+ed777e4	Jamie Burns	Tue Jan 27 12:25:33 2015 +0000	Fix for eligibility update id error
+783f473	Travis CI	Tue Jan 27 12:22:52 2015 +0000	Created changelog
+a8485e6	Travis CI	Tue Jan 27 12:22:52 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-575
+7eb8011	Travis CI	Tue Jan 27 12:22:33 2015 +0000	Created changelog
+5a1c2d7	Travis CI	Tue Jan 27 12:22:33 2015 +0000	Set build VERSION number build-features/CSR-24-576
+f042579	Eddie Abou-Jaoude	Tue Jan 27 12:20:04 2015 +0000	Merge 08a5aa8e278863d9333ac6b7eb7f71b0b10ff8bc into cfee8167e9854c110941de2c086fc836c7ce1127
+08a5aa8	Eddie Jaoude	Tue Jan 27 12:19:57 2015 +0000	Revert "Composer internationalisation php extension added"
+92dfb19	Travis CI	Tue Jan 27 12:03:21 2015 +0000	Created changelog
+5d82bc0	Travis CI	Tue Jan 27 12:03:21 2015 +0000	Set build VERSION number build-features/CSR-24-574
+9b2207a	Travis CI	Tue Jan 27 12:03:20 2015 +0000	Created changelog
+3641360	Travis CI	Tue Jan 27 12:03:20 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-573
+6f395ad	Eddie Abou-Jaoude	Tue Jan 27 12:00:12 2015 +0000	Merge d6e06101bd9965709a883bc90a69bc2833516e52 into cfee8167e9854c110941de2c086fc836c7ce1127
+d6e0610	Eddie Jaoude	Tue Jan 27 12:00:03 2015 +0000	Composer internationalisation php extension added
+5ff0ce3	Paul Littlebury	Tue Jan 27 11:18:00 2015 +0000	Behat feature file name changes plus some test data corrections
+d0ef0f1	Travis CI	Tue Jan 27 11:10:37 2015 +0000	Created changelog
+54181a6	Travis CI	Tue Jan 27 11:10:37 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-571
+f749ca9	Travis CI	Tue Jan 27 11:10:08 2015 +0000	Created changelog
+a95a421	Travis CI	Tue Jan 27 11:10:08 2015 +0000	Set build VERSION number build-features/CSR-24-572
+884002f	Eddie Abou-Jaoude	Tue Jan 27 11:07:39 2015 +0000	Merge db320fda7f3d5b4662912b413a161dd1bed188ad into cfee8167e9854c110941de2c086fc836c7ce1127
+db320fd	Eddie Jaoude	Tue Jan 27 11:07:28 2015 +0000	Removed PHPSpec tests just to deploy debug code
+4e3e663	Eddie Jaoude	Tue Jan 27 11:07:00 2015 +0000	Revert "Temporary simplification of CI config to deploy"
+1e3830d	Eddie Jaoude	Tue Jan 27 11:03:50 2015 +0000	Temporary simplification of CI config to deploy
+92298ef	Eddie Jaoude	Tue Jan 27 11:02:54 2015 +0000	Revert "Simplified build just for a deploy"
+4b0d993	Eddie Jaoude	Tue Jan 27 10:56:29 2015 +0000	Simplified build just for a deploy
+d860abf	Eddie Jaoude	Tue Jan 27 10:50:54 2015 +0000	Logging added to Applicants Service
+6239713	Eddie Jaoude	Tue Jan 27 10:00:30 2015 +0000	Revert "PHP version requirements"
+e6078d6	Eddie Jaoude	Tue Jan 27 09:58:35 2015 +0000	PHP version requirements
+ce4f102	Travis CI	Tue Jan 27 07:32:21 2015 +0000	Created changelog
+e13d4a0	Travis CI	Tue Jan 27 07:32:21 2015 +0000	Set build VERSION number build-features/CSR-24-565
+45e66f6	Travis CI	Tue Jan 27 07:31:01 2015 +0000	Created changelog
+5eff9fc	Travis CI	Tue Jan 27 07:31:01 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-564
+2e10546	Eddie Abou-Jaoude	Tue Jan 27 07:29:52 2015 +0000	Merge 788b4c3a3c110d6887b37f3c738a112d8e199a52 into cfee8167e9854c110941de2c086fc836c7ce1127
+788b4c3	Eddie Jaoude	Tue Jan 27 07:28:53 2015 +0000	Revert "[CSR-207] Refactored CI B/E dependency to make cmd"
+16ff90c	Eddie Jaoude	Tue Jan 27 07:19:47 2015 +0000	[CSR-207] Refactored CI B/E dependency to make cmd
+b9d0e54	Eddie Jaoude	Tue Jan 27 06:57:44 2015 +0000	Revert "[CSR-207] try/catch on first Profile API request"
+d2b88aa	Travis CI	Tue Jan 27 06:33:13 2015 +0000	Created changelog
+479ac2b	Travis CI	Tue Jan 27 06:33:13 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-562
+2fb5acf	Eddie Jaoude	Tue Jan 27 06:29:44 2015 +0000	[CSR-207] try/catch on first Profile API request
+880f29d	Eddie Jaoude	Tue Jan 27 06:28:26 2015 +0000	Marked CI config to be refactored
+742a7ae	Travis CI	Tue Jan 27 05:27:01 2015 +0000	Created changelog
+c61e4a3	Travis CI	Tue Jan 27 05:27:01 2015 +0000	Set build VERSION number build-feature/CSR-24-ci-deps-561
+cb2d6f1	Eddie Jaoude	Tue Jan 27 05:24:31 2015 +0000	Send B/E API server into background on CI
+6478fe9	Eddie Jaoude	Tue Jan 27 05:21:19 2015 +0000	Updated branch name for B/E build as dep on CI
+148cb95	Eddie Jaoude	Tue Jan 27 05:18:23 2015 +0000	Create B/E API dependency on CI
+cfee816	Paul Littlebury	Mon Jan 26 16:39:40 2015 +0000	Added error trapping for login test
+03432e5	Paul Littlebury	Mon Jan 26 16:25:27 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+4faf2c4	Paul Littlebury	Mon Jan 26 16:24:38 2015 +0000	Cosmetic - Tidied register/about you profile
+d597c19	Jamie Burns	Mon Jan 26 16:21:51 2015 +0000	Removing phpunit test call from Robofile
+49531d4	Jamie Burns	Mon Jan 26 16:14:56 2015 +0000	Composer lock update
+fe79019	Jamie Burns	Mon Jan 26 16:14:46 2015 +0000	Removing phpunit test support
+7e86c7a	Jamie Burns	Mon Jan 26 16:14:37 2015 +0000	Removing phpunit tests
+d42421b	Paul Littlebury	Mon Jan 26 16:08:22 2015 +0000	Fixed nationality test
+a7149e4	Eddie Jaoude	Mon Jan 26 12:45:08 2015 +0000	Remove committed local password mistake
+8ab13cf	Eddie Jaoude	Mon Jan 26 12:42:55 2015 +0000	[CSR-24] Update CI config for DB
+6a273dd	Jamie Burns	Mon Jan 26 12:18:43 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+f561199	Jamie Burns	Mon Jan 26 12:18:35 2015 +0000	Removed imports that are no longer required
+8d76894	Eddie Jaoude	Mon Jan 26 12:17:46 2015 +0000	[CSR-24] Added in MySQL services to CI
+2b437a9	Paul Littlebury	Mon Jan 26 11:11:48 2015 +0000	added new features with @omit tag - will not touch CSR-24 anymore now
+10c8e26	Paul Littlebury	Mon Jan 26 11:03:56 2015 +0000	Feature file tidyup
+48fbbbb	Paul Littlebury	Mon Jan 26 10:17:26 2015 +0000	brought CSR-24 up to date enough to merge back into develop
+a2546e8	Dave Nash	Mon Jan 26 10:16:02 2015 +0000	Added validators file in translations
+ce47317	Travis CI	Mon Jan 26 06:49:41 2015 +0000	Created changelog
+9011cc7	Travis CI	Mon Jan 26 06:49:41 2015 +0000	Set build VERSION number build-develop-537
+ce74d6c	Travis CI	Mon Jan 26 06:49:33 2015 +0000	Created changelog
+3f0d0fb	Travis CI	Mon Jan 26 06:49:33 2015 +0000	Set build VERSION number build-CSR-207-deployment2-536
+e4d1950	Eddie Abou-Jaoude	Mon Jan 26 06:47:11 2015 +0000	Merge bd0c77033d949a44ecc97aaf09e7e7613311ac60 into c2bb4beb389594537af88d7f4f8d1500889f8426
+bd0c770	Eddie Jaoude	Mon Jan 26 06:47:02 2015 +0000	[CSR-207] Improved exclude regex build-* branches
+f509d64	Travis CI	Mon Jan 26 06:37:00 2015 +0000	Created changelog
+8c82dd7	Travis CI	Mon Jan 26 06:37:00 2015 +0000	Set build VERSION number build-demo-533
+7beea01	Eddie Abou-Jaoude	Mon Jan 26 06:35:28 2015 +0000	Merge 72fe1dc56c421109ed0ea96920fb35887b8296b3 into 4ba39e65bfdbad03d8bd6e6a3fbd11c09e247e03
+12e0e49	Travis CI	Mon Jan 26 06:34:50 2015 +0000	Created changelog
+5b8f3b6	Travis CI	Mon Jan 26 06:34:50 2015 +0000	Set build VERSION number build-demo-532
+a7f3f11	Travis CI	Mon Jan 26 05:40:34 2015 +0000	Created changelog
+54143e5	Travis CI	Mon Jan 26 05:40:34 2015 +0000	Set build VERSION number build-develop-526
+a84c513	Travis CI	Mon Jan 26 05:39:53 2015 +0000	Created changelog
+31fe607	Travis CI	Mon Jan 26 05:39:53 2015 +0000	Set build VERSION number build-develop-525
+f6a69bb	Eddie Abou-Jaoude	Mon Jan 26 05:38:38 2015 +0000	Merge 72fe1dc56c421109ed0ea96920fb35887b8296b3 into c2bb4beb389594537af88d7f4f8d1500889f8426
+8d1e0a6	Travis CI	Mon Jan 26 05:32:46 2015 +0000	Created changelog
+b05075b	Travis CI	Mon Jan 26 05:32:46 2015 +0000	Set build VERSION number build-demo-524
+729deac	Eddie Abou-Jaoude	Mon Jan 26 05:31:05 2015 +0000	Merge pull request #39 from TransformCore/CSR-207-deployment2
+1de97ab	Travis CI	Mon Jan 26 05:29:34 2015 +0000	Created changelog
+2a56137	Travis CI	Mon Jan 26 05:29:34 2015 +0000	Set build VERSION number build-demo-523
+dbc491b	Eddie Abou-Jaoude	Mon Jan 26 05:27:58 2015 +0000	Merge 72fe1dc56c421109ed0ea96920fb35887b8296b3 into 4ba39e65bfdbad03d8bd6e6a3fbd11c09e247e03
+8415b70	Travis CI	Mon Jan 26 05:23:52 2015 +0000	Created changelog
+d08a732	Travis CI	Mon Jan 26 05:23:52 2015 +0000	Set build VERSION number build-CSR-207-deployment2-522
+72fe1dc	Eddie Jaoude	Mon Jan 26 05:22:10 2015 +0000	[CSR-207] Deployment config for Demo ENV
+4d82de5	Eddie Jaoude	Sat Jan 24 09:14:25 2015 +0000	[CSR-207] Status command added before Tag
+60287a3	Eddie Jaoude	Sat Jan 24 09:10:05 2015 +0000	[CSR-207] Add built assets
+abef148	Eddie Jaoude	Sat Jan 24 09:04:59 2015 +0000	[CSR-207] Build user before package
+4ddca29	Eddie Jaoude	Sat Jan 24 09:01:42 2015 +0000	[CSR-207] Dump assets & package
+b61e677	Travis CI	Sat Jan 24 08:56:13 2015 +0000	Created changelog
+56a443d	Travis CI	Sat Jan 24 08:56:13 2015 +0000	Set build VERSION number build-feature/CSR-24-manual-deployment-of-tag-516
+6282c20	Eddie Jaoude	Sat Jan 24 08:53:53 2015 +0000	[CSR-207] Over writing asset package
+5a7af33	Travis CI	Sat Jan 24 08:45:56 2015 +0000	Created changelog
+f9d0f4c	Travis CI	Sat Jan 24 08:45:56 2015 +0000	Set build VERSION number build-feature/CSR-24-manual-deployment-of-tag-515
+3ae1d64	Eddie Jaoude	Sat Jan 24 08:43:20 2015 +0000	Fixed typo
+fa495d2	Eddie Jaoude	Sat Jan 24 08:21:35 2015 +0000	[CSR-207] Removed clearCache path issue not in core
+d15e5c6	Eddie Jaoude	Sat Jan 24 08:20:39 2015 +0000	[CSR-207] Create build/package even after failure
+e448c3c	Jamie Burns	Fri Jan 23 16:14:15 2015 +0000	Removed entity creation (handled in Domain Model)
+2a5d9f6	Paul Littlebury	Fri Jan 23 15:02:58 2015 +0000	CSR-135 added tests to check reset password
+258a69f	Paul Littlebury	Fri Jan 23 10:22:23 2015 +0000	CSR-24 Gherkin fully updated - important this is merged to develop and other branches updated
+5810e57	Paul Littlebury	Fri Jan 23 10:14:25 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+62d1b17	Paul Littlebury	Fri Jan 23 10:14:07 2015 +0000	CSR-24 updated tests for nationality
+f0f10bc	Jamie Burns	Fri Jan 23 09:57:12 2015 +0000	Spelling correction
+8a01af5	Eddie Jaoude	Fri Jan 23 06:17:33 2015 +0000	[CSR-135] Phone number localisation text updated
+18ed4b6	Eddie Jaoude	Fri Jan 23 06:04:13 2015 +0000	[CSR-207] Serialisation type added for Applicant
+3e947f4	Eddie Jaoude	Fri Jan 23 05:56:18 2015 +0000	[CSR-207] Including Guzzle for production mode
+8ae56a5	Eddie Jaoude	Fri Jan 23 05:48:14 2015 +0000	[CSR-207] Backend API as PARAM/ENV variable
+64a881a	Eddie Jaoude	Fri Jan 23 05:36:17 2015 +0000	[cSR-24] Updated D/M dependency
+20379b0	Eddie Jaoude	Fri Jan 23 05:33:09 2015 +0000	[CSR-24] Renamed key for update Eligibility
+7685059	Eddie Jaoude	Fri Jan 23 05:32:50 2015 +0000	[CSR-24] Localisation for phone number
+de7be3c	Jamie Burns	Thu Jan 22 22:46:06 2015 +0000	Composer lock
+f443588	Jamie Burns	Thu Jan 22 22:34:26 2015 +0000	Applicant Eligibility entities created on registration
+3076e86	Paul Littlebury	Thu Jan 22 20:49:40 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+cf7f42d	Paul Littlebury	Thu Jan 22 20:48:54 2015 +0000	CSR-24 fixed/updated gherkin tests
+07e95ac	Paul Littlebury	Thu Jan 22 20:04:48 2015 +0000	correct register feature which was out of step
+d03b81d	Eddie Jaoude	Thu Jan 22 20:04:22 2015 +0000	[CSR-24] [INCOMPLETE] Eligibility Server
+c109421	Eddie Jaoude	Thu Jan 22 20:03:55 2015 +0000	[CSR-24] Nationality location form field
+8e41a1d	Paul Littlebury	Thu Jan 22 19:54:31 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+9630be4	Paul Littlebury	Thu Jan 22 19:54:28 2015 +0000	added stub for future tests
+a7b6174	Eddie Jaoude	Thu Jan 22 19:04:48 2015 +0000	[CSR-24] End of file blank line
+518e881	Eddie Jaoude	Thu Jan 22 19:04:31 2015 +0000	[CSR-24] Re-ordered routing
+80a12a5	Eddie Jaoude	Thu Jan 22 19:04:14 2015 +0000	[CSR-24] Fixed conflict issues
+aa155e9	Eddie Jaoude	Thu Jan 22 18:40:26 2015 +0000	Merge branch 'features/CSR-24' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-24
+9d272c6	Eddie Jaoude	Thu Jan 22 18:22:53 2015 +0000	[CSR-24] Eligibility Serialisation config
+55ad81c	Eddie Jaoude	Thu Jan 22 18:22:19 2015 +0000	[CSR-24] Fixed missing localisation issues
+b636ba8	Eddie Jaoude	Thu Jan 22 18:21:57 2015 +0000	[CSR-135] [CSR-24] Steps to Breadcrumb
+2c7551f	Eddie Jaoude	Thu Jan 22 18:21:01 2015 +0000	[CSR-6] Moved Registration documentation
+7c76ea3	Eddie Jaoude	Thu Jan 22 18:16:08 2015 +0000	[CSR-24] Documentation
+46adc55	Paul Littlebury	Thu Jan 22 16:48:31 2015 +0000	merged CSR-24 with CSR-135
+3e90105	Paul Littlebury	Thu Jan 22 16:25:43 2015 +0000	CSR-4 added nationality test and tidied existing
+c23ad8f	Jamie Burns	Thu Jan 22 15:56:18 2015 +0000	Composer domain model reference updated
+187aeb9	Eddie Jaoude	Thu Jan 22 15:07:28 2015 +0000	[CSR-24] Merged in CSR-135 into CSR-24
+3231815	Paul Littlebury	Thu Jan 22 14:55:45 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+64d65f5	Paul Littlebury	Thu Jan 22 14:55:27 2015 +0000	CSR-135 commented out more specific error messages
+f370e4f	Paul Littlebury	Thu Jan 22 14:53:39 2015 +0000	CSR-135 commented out more specific error messages
+76749fa	Dave Nash	Thu Jan 22 14:52:55 2015 +0000	Updated domain model in composer
+5747974	Paul Littlebury	Thu Jan 22 14:22:30 2015 +0000	CSR-135 final corrections
+9ecc73e	Paul Littlebury	Thu Jan 22 13:54:59 2015 +0000	CSR-135 corrected paramater ids in tests
+1607e9f	Dave Nash	Thu Jan 22 12:56:52 2015 +0000	Added eligibility form to frontend
+529e8a5	Eddie Jaoude	Thu Jan 22 12:54:20 2015 +0000	[CSR-135] plainPassword Serialised config
+1003576	Paul Littlebury	Thu Jan 22 12:52:29 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+222c39d	Paul Littlebury	Thu Jan 22 12:52:20 2015 +0000	CSR-135 fixed tests not only for CSR-135, but CSR-6 also
+bf6e7e3	Eddie Jaoude	Thu Jan 22 12:40:09 2015 +0000	[CSR-135] D/M dependency updated
+6829bcf	Eddie Jaoude	Thu Jan 22 10:24:27 2015 +0000	[CSR-135] Updated Applicant Service with comms
+15caef8	Eddie Jaoude	Thu Jan 22 09:17:34 2015 +0000	[CSR-135] Layout flash message class updated
+49cd07d	Eddie Jaoude	Thu Jan 22 09:16:46 2015 +0000	[CSR-135] Successful Update flash message
+2ef91c3	Eddie Jaoude	Thu Jan 22 08:49:59 2015 +0000	[CSR-135] Updated D/M depedency
+55455d2	Eddie Jaoude	Thu Jan 22 08:49:45 2015 +0000	[CSR-135] JMS Serializer Config added
+4a16c5d	Eddie Jaoude	Thu Jan 22 05:25:01 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+f96fdf8	Eddie Jaoude	Thu Jan 22 05:18:18 2015 +0000	[CSR-135] API url added to config
+3955d95	Eddie Jaoude	Thu Jan 22 05:17:47 2015 +0000	[CSR-135] Updated D/M dependency
+ea00cb4	Paul Littlebury	Wed Jan 21 19:39:20 2015 +0000	update
+f6dd9dd	Paul Littlebury	Wed Jan 21 15:51:15 2015 +0000	CSR-135 updated scenarios assuming date of birth one field
+8759d66	Paul Littlebury	Wed Jan 21 15:41:33 2015 +0000	CSR-135 added mandatory field check
+10a696a	Paul Littlebury	Wed Jan 21 15:13:24 2015 +0000	Update EditAboutYouDetails.feature
+028a487	Paul Littlebury	Wed Jan 21 14:45:45 2015 +0000	CSR-26 added no-degree-needed scenario
+8119934	Eddie Jaoude	Wed Jan 21 11:49:24 2015 +0000	[CSR-135] Applicant Service updated
+28f55a5	Eddie Jaoude	Wed Jan 21 11:12:42 2015 +0000	[CSR-135] Profile controller action
+0223e1a	Eddie Jaoude	Wed Jan 21 11:12:23 2015 +0000	[CSR-135] Applicant Service (Comms to B/E)
+4ab4233	Eddie Jaoude	Wed Jan 21 11:11:46 2015 +0000	[CSR-135] Included JMS & updated Goutte
+709db4e	Paul Littlebury	Wed Jan 21 10:34:00 2015 +0000	Added education feature
+0746d6d	Paul Littlebury	Wed Jan 21 10:29:46 2015 +0000	CSR-24 added scenario placeholders for Education section of profile
+90d0baa	Eddie Jaoude	Wed Jan 21 07:09:14 2015 +0000	[CSR-135] Fixed failing Registration Listener Spec
+f7d7c51	Eddie Jaoude	Wed Jan 21 07:08:54 2015 +0000	[CSR-135] Fixed failing Spec test for Menu
+9caadb6	Eddie Jaoude	Tue Jan 20 10:47:33 2015 +0000	Added Docbloc for Version Service
+b714b07	Eddie Jaoude	Tue Jan 20 10:46:33 2015 +0000	[CSR-135] Edit Profile page with validation
+52dbc97	Eddie Jaoude	Tue Jan 20 10:42:46 2015 +0000	Removed Breadcrumb from homepage
+07a3c0f	Eddie Jaoude	Tue Jan 20 10:42:30 2015 +0000	[CSR-135] Updated Translation files
+8789064	Eddie Jaoude	Tue Jan 20 10:37:00 2015 +0000	[CSR-135] Updated breadcrumb on Account page
+a18bfc8	Eddie Jaoude	Tue Jan 20 10:36:35 2015 +0000	Removed breadcrumb from changelog page
+4cca012	Eddie Jaoude	Tue Jan 20 10:36:08 2015 +0000	[CSR-135] Profile link added to main Nav
+a6a8c81	Eddie Jaoude	Tue Jan 20 10:35:54 2015 +0000	[CSR-135] Profile routing added
+e9d0b70	Eddie Jaoude	Mon Jan 19 16:03:26 2015 +0000	[CSR-135] Breadcrumb placeholder added to Layout
+ef63405	Jamie Burns	Mon Jan 19 17:08:20 2015 +0000	Updated feature in light of Form name changes
+b278985	Jamie Burns	Mon Jan 19 16:27:20 2015 +0000	Environment variable pass though development mode filter
+6cafaec	Eddie Jaoude	Mon Jan 19 14:12:19 2015 +0000	[CSR-135] Updated D/M dependency (validation)
+31fa6d4	Eddie Jaoude	Mon Jan 19 13:33:37 2015 +0000	[CSR-135] Updated D/M dependency
+331683a	Eddie Jaoude	Mon Jan 19 13:29:46 2015 +0000	[CSR-135] Translation file for single phone number
+cba23ec	jaffamonkey	Mon Jan 19 12:53:32 2015 +0000	CSR-24 corrected form validation checks
+6531a3d	jaffamonkey	Mon Jan 19 12:26:07 2015 +0000	CSR-196 completed mandatory field check on Diversity section
+afa531f	jaffamonkey	Mon Jan 19 12:13:42 2015 +0000	CSR-196 completed mandatory field check on Diversity section
+4d6912b	Travis CI	Mon Jan 19 11:30:32 2015 +0000	Created changelog
+f01aedd	Travis CI	Mon Jan 19 11:30:32 2015 +0000	Set build VERSION number build-feature/CSR-196-434
+f3cdced	Eddie Jaoude	Mon Jan 19 11:24:43 2015 +0000	[CSR-135] Updated Form View to use new D/M
+99e2fea	jaffamonkey	Mon Jan 19 11:22:22 2015 +0000	CSR-196 added mandatory field completions gherkin
+126069c	Eddie Jaoude	Mon Jan 19 11:20:58 2015 +0000	[CSR-135] Updated dependency for D/M
+9cbd820	Travis CI	Mon Jan 19 10:31:09 2015 +0000	Created changelog
+d3e592f	Travis CI	Mon Jan 19 10:31:09 2015 +0000	Set build VERSION number build-develop-429
+c2bb4be	Eddie Abou-Jaoude	Mon Jan 19 10:28:30 2015 +0000	Install instructions added (composer)
+8f83a0e	Travis CI	Mon Jan 19 10:21:07 2015 +0000	Created changelog
+2afaa9b	Travis CI	Mon Jan 19 10:21:07 2015 +0000	Set build VERSION number build-feature/CSR-196-428
+0e152a6	Travis CI	Mon Jan 19 10:19:10 2015 +0000	Created changelog
+651f53a	Travis CI	Mon Jan 19 10:19:10 2015 +0000	Set build VERSION number build-develop-427
+9d23704	jaffamonkey	Mon Jan 19 10:18:11 2015 +0000	CSR-196 corrected field id
+4ed0911	Eddie Abou-Jaoude	Mon Jan 19 10:16:23 2015 +0000	Space in README just to trigger build & deploy
+553f171	Travis CI	Mon Jan 19 09:42:16 2015 +0000	Created changelog
+6a2ca51	Travis CI	Mon Jan 19 09:42:16 2015 +0000	Set build VERSION number build-feature/CSR-196-426
+3ca6102	jaffamonkey	Mon Jan 19 09:40:04 2015 +0000	CSR-196 corrected story reference in test
+d88a074	Eddie Jaoude	Mon Jan 19 07:12:13 2015 +0000	[CSR-135] Using new D/M with Applicant Entity
+03272d8	Travis CI	Fri Jan 16 14:59:09 2015 +0000	Created changelog
+2939457	Travis CI	Fri Jan 16 14:59:09 2015 +0000	Set build VERSION number build-develop-423
+9937a1a	Eddie Jaoude	Fri Jan 16 14:55:15 2015 +0000	Merge branch 'develop' into features/CSR-135
+3c427b9	Eddie Abou-Jaoude	Fri Jan 16 14:53:45 2015 +0000	Merge pull request #18 from TransformCore/features/CSR-6
+79a2e32	Travis CI	Fri Jan 16 13:12:30 2015 +0000	Created changelog
+a06f4ae	Travis CI	Fri Jan 16 13:12:30 2015 +0000	Set build VERSION number build-feature/CSR-196-422
+6ef2fcf	jaffamonkey	Fri Jan 16 13:09:59 2015 +0000	CSR-196 diversity gherkin following table form entry approach
+8c6c12d	Travis CI	Fri Jan 16 11:50:19 2015 +0000	Created changelog
+ef1b1ac	Travis CI	Fri Jan 16 11:50:18 2015 +0000	Set build VERSION number build-features/CSR-6-420
+0e3d2bc	Travis CI	Fri Jan 16 11:50:08 2015 +0000	Created changelog
+819c17e	Travis CI	Fri Jan 16 11:50:08 2015 +0000	Set build VERSION number build-develop-421
+c9c9266	Eddie Abou-Jaoude	Fri Jan 16 11:48:25 2015 +0000	Merge 30bbb2f37f539c82a9ed974243086d16d58e9131 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+30bbb2f	Jamie Burns	Fri Jan 16 11:48:04 2015 +0000	Asserting generated username is set into user correctly
+395b7e5	Travis CI	Fri Jan 16 11:40:56 2015 +0000	Created changelog
+1509d9f	Travis CI	Fri Jan 16 11:40:56 2015 +0000	Set build VERSION number build-features/CSR-6-419
+ff1ce60	Travis CI	Fri Jan 16 11:40:41 2015 +0000	Created changelog
+0e60ffe	Travis CI	Fri Jan 16 11:40:41 2015 +0000	Set build VERSION number build-user-applicant-entity-418
+f4d21f6	Eddie Abou-Jaoude	Fri Jan 16 11:39:02 2015 +0000	Merge fc46d19920daf4f3f63a5e0823ac19a5caa139b3 into 22a8aba0a1b0d9189f1138f10183c4e4a2246706
+fc46d19	Eddie Jaoude	Fri Jan 16 11:38:54 2015 +0000	[CSR-6] Updated Registration form ID for Applicant
+b56c0e8	Travis CI	Fri Jan 16 11:38:14 2015 +0000	Created changelog
+5016f7f	Travis CI	Fri Jan 16 11:38:14 2015 +0000	Set build VERSION number build-develop-417
+ab0456a	Travis CI	Fri Jan 16 11:37:10 2015 +0000	Created changelog
+2d2b32a	Travis CI	Fri Jan 16 11:37:10 2015 +0000	Set build VERSION number build-features/CSR-6-416
+fd30191	Travis CI	Fri Jan 16 11:36:19 2015 +0000	Created changelog
+81b2e48	Travis CI	Fri Jan 16 11:36:19 2015 +0000	Set build VERSION number build-develop-415
+68a147e	Travis CI	Fri Jan 16 11:35:51 2015 +0000	Created changelog
+c98f76c	Travis CI	Fri Jan 16 11:35:51 2015 +0000	Set build VERSION number build-features/CSR-6-414
+bf6ae40	Eddie Abou-Jaoude	Fri Jan 16 11:35:16 2015 +0000	Merge 22a8aba0a1b0d9189f1138f10183c4e4a2246706 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+22a8aba	Jamie Burns	Fri Jan 16 11:32:59 2015 +0000	Ignoring VS project files
+7ed2c20	Jamie Burns	Fri Jan 16 11:29:19 2015 +0000	Removed use of time for prefix
+890e666	Jamie Burns	Fri Jan 16 11:29:05 2015 +0000	Random username generator test for uniqueness
+c79658b	Eddie Abou-Jaoude	Fri Jan 16 11:34:15 2015 +0000	Merge d2ae428d1628446cd51904d29477f17bc3574487 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+d2ae428	Eddie Jaoude	Fri Jan 16 11:34:06 2015 +0000	[CSR-6] FeatureContext now states missing ID
+53c20ad	Eddie Jaoude	Fri Jan 16 11:17:48 2015 +0000	Merge branch 'features/CSR-6' into user-applicant-entity
+0d6fd3d	Eddie Jaoude	Fri Jan 16 11:14:48 2015 +0000	Updated D/M dependency for composer
+abb9e67	Eddie Jaoude	Fri Jan 16 11:06:35 2015 +0000	Updated D/M dependency
+fbd8cc9	Eddie Jaoude	Fri Jan 16 11:06:23 2015 +0000	[CSR-6] Only validate single group for Register
+7e2cd90	Travis CI	Fri Jan 16 10:21:16 2015 +0000	Created changelog
+a989e2f	Travis CI	Fri Jan 16 10:21:16 2015 +0000	Set build VERSION number build-features/CSR-24-407
+7c84d38	jaffamonkey	Fri Jan 16 10:18:27 2015 +0000	CSR-24 updated Gherkin to reflect wireframes
+827fd4e	Travis CI	Fri Jan 16 06:21:42 2015 +0000	Created changelog
+da61c85	Travis CI	Fri Jan 16 06:21:42 2015 +0000	Set build VERSION number build-features/CSR-6-405
+1cc2ee2	Travis CI	Fri Jan 16 06:21:25 2015 +0000	Created changelog
+57950f3	Travis CI	Fri Jan 16 06:21:25 2015 +0000	Set build VERSION number build-develop-406
+d645e90	Eddie Abou-Jaoude	Fri Jan 16 06:19:56 2015 +0000	Merge 21c7d572672c2e82017d1b0b61041932efb83297 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+21c7d57	Eddie Jaoude	Fri Jan 16 06:19:40 2015 +0000	Revert "Space added to deploy for review"
+b389d85	Travis CI	Fri Jan 16 05:41:50 2015 +0000	Created changelog
+9d787b2	Travis CI	Fri Jan 16 05:41:50 2015 +0000	Set build VERSION number build-feature/CSR-207-deployment-403
+5cef604	Travis CI	Fri Jan 16 05:41:45 2015 +0000	Created changelog
+4b1a8c8	Travis CI	Fri Jan 16 05:41:45 2015 +0000	Set build VERSION number build-feature/CSR-207-deployment-404
+c103834	Eddie Jaoude	Fri Jan 16 05:40:00 2015 +0000	[CSR-207] Deploying to F/E Demo App
+66ce39c	Eddie Jaoude	Thu Jan 15 15:00:44 2015 +0000	Updated D/M dependency
+5599d29	Travis CI	Thu Jan 15 13:01:01 2015 +0000	Created changelog
+3bd0212	Travis CI	Thu Jan 15 13:01:01 2015 +0000	Set build VERSION number build-features/CSR-24-400
+9cfec7a	Travis CI	Thu Jan 15 12:59:04 2015 +0000	Created changelog
+e9b45b8	Travis CI	Thu Jan 15 12:59:04 2015 +0000	Set build VERSION number build-features/CSR-24-399
+7847855	jaffamonkey	Thu Jan 15 12:57:57 2015 +0000	CSR-24 Added nationality gherkin file
+5a23000	Travis CI	Thu Jan 15 10:21:19 2015 +0000	Created changelog
+2a5ac4a	Travis CI	Thu Jan 15 10:21:19 2015 +0000	Set build VERSION number build-develop-398
+7a4ce18	Travis CI	Thu Jan 15 10:21:16 2015 +0000	Created changelog
+9f64c99	Travis CI	Thu Jan 15 10:21:16 2015 +0000	Set build VERSION number build-features/CSR-6-397
+c3a6d83	Eddie Abou-Jaoude	Thu Jan 15 10:18:48 2015 +0000	Space added to deploy for review
+d4e42ef	Eddie Abou-Jaoude	Thu Jan 15 10:18:48 2015 +0000	Merge c3a6d838f5fe2a5bc3cbba2132a7bba2d4b15833 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+1bc47f5	Eddie Jaoude	Thu Jan 15 07:31:08 2015 +0000	[INCOMPLETE] Splitting User & Applicant Entity
+fecbb12	Travis CI	Thu Jan 15 06:47:05 2015 +0000	Created changelog
+a6d014e	Travis CI	Thu Jan 15 06:47:05 2015 +0000	Set build VERSION number build-develop-394
+702a815	Travis CI	Thu Jan 15 06:41:44 2015 +0000	Created changelog
+0f01d63	Travis CI	Thu Jan 15 06:41:44 2015 +0000	Set build VERSION number build-features/CSR-6-393
+77105b4	Eddie Abou-Jaoude	Thu Jan 15 06:40:12 2015 +0000	Merge f6e88e4d5666d4d422a6513bc0c02cd4ad38c799 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+f6e88e4	Eddie Jaoude	Thu Jan 15 06:36:28 2015 +0000	[CSR-6] Moved Registration Listener to use Service
+9737546	Eddie Jaoude	Thu Jan 15 06:34:12 2015 +0000	[CSR-6] Username random generator
+d62e0c6	Eddie Jaoude	Thu Jan 15 06:31:59 2015 +0000	[CSR-6] Improved formatting of Version Spec
+2ecaf40	Travis CI	Thu Jan 15 05:55:25 2015 +0000	Created changelog
+11d4960	Travis CI	Thu Jan 15 05:55:25 2015 +0000	Set build VERSION number build-develop-392
+50e9b51	Travis CI	Thu Jan 15 05:55:07 2015 +0000	Created changelog
+589ac9d	Travis CI	Thu Jan 15 05:55:07 2015 +0000	Set build VERSION number build-features/CSR-6-391
+fd6a203	Eddie Abou-Jaoude	Thu Jan 15 05:53:24 2015 +0000	Merge cb67fb1b97bf90b4ea2d0cffe4e06501b1ca881e into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+cb67fb1	Eddie Jaoude	Thu Jan 15 05:53:18 2015 +0000	[CSR-6] Should have gone in last commit with lock
+c292832	Eddie Jaoude	Thu Jan 15 05:20:12 2015 +0000	[CSR-6] Updated composer to use Release of D/M
+d673082	Travis CI	Wed Jan 14 11:45:29 2015 +0000	Created changelog
+c7e63b1	Travis CI	Wed Jan 14 11:45:29 2015 +0000	Set build VERSION number build-develop-388
+f29e552	Travis CI	Wed Jan 14 11:44:46 2015 +0000	Created changelog
+2014a64	Travis CI	Wed Jan 14 11:44:46 2015 +0000	Set build VERSION number build-features/CSR-6-388
+6364ddf	Eddie Abou-Jaoude	Wed Jan 14 11:43:03 2015 +0000	Merge ed56ae50ebbf939863131b0b8f731dba99f6e327 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+ed56ae5	Eddie Jaoude	Wed Jan 14 11:42:31 2015 +0000	[CSR-6] Updated D/M dependency
+96b1039	Travis CI	Wed Jan 14 10:48:02 2015 +0000	Created changelog
+1aeabca	Travis CI	Wed Jan 14 10:48:02 2015 +0000	Set build VERSION number build-features/CSR-6-386
+691cff1	Travis CI	Wed Jan 14 10:47:32 2015 +0000	Created changelog
+d747e45	Travis CI	Wed Jan 14 10:47:32 2015 +0000	Set build VERSION number build-develop-387
+647d9d8	Eddie Abou-Jaoude	Wed Jan 14 10:44:58 2015 +0000	Merge 157ee88aa794d689d320ffdb901573760ae67f7d into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+157ee88	jaffamonkey	Wed Jan 14 10:44:37 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+7992d1a	jaffamonkey	Wed Jan 14 10:43:35 2015 +0000	update register to demonstrate table method of completing forms
+ef5162f	Travis CI	Wed Jan 14 06:08:28 2015 +0000	Created changelog
+c3a86f0	Travis CI	Wed Jan 14 06:08:28 2015 +0000	Set build VERSION number build-features/CSR-6-384
+28279e5	Travis CI	Wed Jan 14 06:07:51 2015 +0000	Created changelog
+2fcbbdb	Travis CI	Wed Jan 14 06:07:51 2015 +0000	Set build VERSION number build-develop-385
+7e8f428	Eddie Abou-Jaoude	Wed Jan 14 06:05:45 2015 +0000	Merge 9c3031901d60dd7e0a354352ef0c353eb5df90a1 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+9c30319	Eddie Jaoude	Wed Jan 14 06:05:38 2015 +0000	Comments added
+6f7abee	Travis CI	Tue Jan 13 19:24:34 2015 +0000	Created changelog
+e48b3c0	Travis CI	Tue Jan 13 19:24:34 2015 +0000	Set build VERSION number build-develop-383
+7dc5bab	Travis CI	Tue Jan 13 19:24:08 2015 +0000	Created changelog
+06c0f2c	Travis CI	Tue Jan 13 19:24:08 2015 +0000	Set build VERSION number build-features/CSR-6-382
+4959f7f	Eddie Abou-Jaoude	Tue Jan 13 19:20:36 2015 +0000	Merge 82e98989b346887d4147b72a21e813f66572328a into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+82e9898	Eddie Jaoude	Tue Jan 13 19:20:28 2015 +0000	[CSR-6] Run all Tests CMD now Rebuilds DB/Fixtures
+24bd175	Travis CI	Tue Jan 13 16:00:58 2015 +0000	Created changelog
+34d3448	Travis CI	Tue Jan 13 16:00:58 2015 +0000	Set build VERSION number build-features/CSR-6-380
+143bafd	Travis CI	Tue Jan 13 16:00:08 2015 +0000	Created changelog
+aff2f4b	Travis CI	Tue Jan 13 16:00:08 2015 +0000	Set build VERSION number build-develop-379
+dc506fa	Travis CI	Tue Jan 13 15:59:28 2015 +0000	Created changelog
+93dfcbd	Travis CI	Tue Jan 13 15:59:28 2015 +0000	Set build VERSION number build-develop-381
+2790793	Travis CI	Tue Jan 13 15:57:13 2015 +0000	Created changelog
+b9e5213	Travis CI	Tue Jan 13 15:57:13 2015 +0000	Set build VERSION number build-features/CSR-6-378
+04bbb2d	Eddie Abou-Jaoude	Tue Jan 13 15:54:22 2015 +0000	Merge 8059627b2cd703176fde5b48fe425918ea18acdb into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+8059627	Eddie Jaoude	Tue Jan 13 15:54:14 2015 +0000	Comment about CMDs being wrappers
+323ca1e	Eddie Jaoude	Tue Jan 13 15:52:10 2015 +0000	[CSR-5] Rebuild the DB & use Fixtures
+69d572d	Travis CI	Tue Jan 13 15:48:46 2015 +0000	Created changelog
+13b8b89	Travis CI	Tue Jan 13 15:48:46 2015 +0000	Set build VERSION number build-develop-377
+76cdb09	Travis CI	Tue Jan 13 15:48:05 2015 +0000	Created changelog
+0f441ae	Travis CI	Tue Jan 13 15:48:05 2015 +0000	Set build VERSION number build-features/CSR-6-376
+06aa90d	Eddie Abou-Jaoude	Tue Jan 13 15:43:45 2015 +0000	Merge 7033113802c4283d0373f5ab28b3ef7e2315bec1 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+7033113	Eddie Jaoude	Tue Jan 13 15:43:38 2015 +0000	Updated make CMDs & relevant Docs
+9045c99	Travis CI	Tue Jan 13 15:26:58 2015 +0000	Created changelog
+9e64ff2	Travis CI	Tue Jan 13 15:26:58 2015 +0000	Set build VERSION number build-develop-375
+f2c1748	Travis CI	Tue Jan 13 15:26:30 2015 +0000	Created changelog
+9935a81	Travis CI	Tue Jan 13 15:26:30 2015 +0000	Set build VERSION number build-features/CSR-6-375
+d10f907	Eddie Abou-Jaoude	Tue Jan 13 15:22:54 2015 +0000	Merge 589878384e9cd09ecfac35de22b52902b7182170 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+5898783	Eddie Jaoude	Tue Jan 13 15:22:30 2015 +0000	[CSR-6] Added link from Index to Registration docs
+5859581	Travis CI	Tue Jan 13 11:55:59 2015 +0000	Created changelog
+cc5b152	Travis CI	Tue Jan 13 11:55:59 2015 +0000	Set build VERSION number build-features/CSR-6-373
+ae58c01	Travis CI	Tue Jan 13 11:55:12 2015 +0000	Created changelog
+9c96619	Travis CI	Tue Jan 13 11:55:11 2015 +0000	Set build VERSION number build-develop-374
+158e93c	Eddie Abou-Jaoude	Tue Jan 13 11:52:35 2015 +0000	Merge f516dba3e199459141609644758d824d49e55c1f into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+f516dba	jaffamonkey	Tue Jan 13 11:52:03 2015 +0000	CSR-6 edited password test to fully reflect requirements
+0a9893d	jaffamonkey	Tue Jan 13 11:20:22 2015 +0000	CSR-6 corrected error in behat test
+0156f53	Eddie Jaoude	Tue Jan 13 11:09:51 2015 +0000	[CSR-6] Password validation dependency updated
+f9ba0eb	jaffamonkey	Tue Jan 13 11:02:28 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+d70237d	jaffamonkey	Tue Jan 13 11:02:10 2015 +0000	CSR-6 added new password check scenario
+922eb42	Travis CI	Tue Jan 13 10:52:15 2015 +0000	Created changelog
+848e165	Travis CI	Tue Jan 13 10:52:15 2015 +0000	Set build VERSION number build-features/CSR-6-365
+1549c3a	Travis CI	Tue Jan 13 10:52:12 2015 +0000	Created changelog
+84a2d59	Travis CI	Tue Jan 13 10:52:12 2015 +0000	Set build VERSION number build-develop-366
+6868320	Eddie Abou-Jaoude	Tue Jan 13 10:49:49 2015 +0000	Merge 616087721824478461aa9a26112174e032114db6 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+6160877	Eddie Jaoude	Tue Jan 13 10:49:41 2015 +0000	[CSR-208] Change localisation stay on same page
+d40e143	Travis CI	Tue Jan 13 10:23:13 2015 +0000	Created changelog
+0db33d2	Travis CI	Tue Jan 13 10:23:13 2015 +0000	Set build VERSION number build-features/CSR-6-363
+bbd6870	Travis CI	Tue Jan 13 10:22:37 2015 +0000	Created changelog
+ecd123e	Travis CI	Tue Jan 13 10:22:37 2015 +0000	Set build VERSION number build-develop-364
+d24ae2c	Eddie Abou-Jaoude	Tue Jan 13 10:20:07 2015 +0000	Merge 0ff55cf21d77fdd67421bbc9bd009be6bc6f1d42 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+0ff55cf	Eddie Jaoude	Tue Jan 13 10:19:55 2015 +0000	[CSR-5] Test secure pages 403 redirect to login
+2d92652	Travis CI	Tue Jan 13 07:51:40 2015 +0000	Created changelog
+83ed942	Travis CI	Tue Jan 13 07:51:40 2015 +0000	Set build VERSION number build-features/CSR-6-362
+70c4fd5	Travis CI	Tue Jan 13 07:50:44 2015 +0000	Created changelog
+4121a7c	Travis CI	Tue Jan 13 07:50:44 2015 +0000	Set build VERSION number build-develop-362
+943ae38	Eddie Abou-Jaoude	Tue Jan 13 07:49:10 2015 +0000	Merge fff8b3bfb0be35c649e93b537dcc8879ae354bb8 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+fff8b3b	Eddie Jaoude	Tue Jan 13 07:49:03 2015 +0000	[CSR-5] 403 redirect to login page
+0fb4921	Travis CI	Tue Jan 13 07:17:34 2015 +0000	Created changelog
+11cd70f	Travis CI	Tue Jan 13 07:17:34 2015 +0000	Set build VERSION number build-develop-361
+c8cdc81	Travis CI	Tue Jan 13 07:15:46 2015 +0000	Created changelog
+c77b762	Travis CI	Tue Jan 13 07:15:46 2015 +0000	Set build VERSION number build-features/CSR-6-360
+532bc26	Eddie Abou-Jaoude	Tue Jan 13 07:14:16 2015 +0000	Merge 9a3374a892d335d14696e3be64f721f83a326a2e into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+9a3374a	Eddie Jaoude	Tue Jan 13 07:14:07 2015 +0000	[CSR-6] Translated T&Cs table
+3d1d949	Travis CI	Tue Jan 13 07:01:38 2015 +0000	Created changelog
+95bfaa3	Travis CI	Tue Jan 13 07:01:38 2015 +0000	Set build VERSION number build-develop-359
+004e855	Travis CI	Tue Jan 13 07:01:29 2015 +0000	Created changelog
+679848f	Travis CI	Tue Jan 13 07:01:29 2015 +0000	Set build VERSION number build-features/CSR-6-359
+0e4eec6	Eddie Abou-Jaoude	Tue Jan 13 06:59:43 2015 +0000	Merge 09d96eafc0b3611629f6a3e6d03222bad3b6fd65 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+09d96ea	Eddie Jaoude	Tue Jan 13 06:59:08 2015 +0000	[CSR-5] Translation added to login form
+aedb8dc	Travis CI	Mon Jan 12 16:53:33 2015 +0000	Created changelog
+16a2f7e	Travis CI	Mon Jan 12 16:53:33 2015 +0000	Set build VERSION number build-copy-changes-358
+c29a51e	Travis CI	Mon Jan 12 16:53:03 2015 +0000	Created changelog
+4be270f	Travis CI	Mon Jan 12 16:53:03 2015 +0000	Set build VERSION number build-copy-changes-357
+49c8fb6	Travis CI	Mon Jan 12 16:51:29 2015 +0000	Created changelog
+5ffae4f	Travis CI	Mon Jan 12 16:51:29 2015 +0000	Set build VERSION number build-develop-356
+6edfdef	Paul Littlebury	Mon Jan 12 16:50:28 2015 +0000	Merge pull request #28 from TransformCore/features/CSR-6
+69bd185	Travis CI	Mon Jan 12 16:49:42 2015 +0000	Created changelog
+eec724c	Travis CI	Mon Jan 12 16:49:42 2015 +0000	Set build VERSION number build-features/CSR-6-355
+9e28f99	Paul Littlebury	Mon Jan 12 16:48:43 2015 +0000	Merge 98f8ba143397b9de084fc8e525361fb228ca11db into 23f61a75931c091e2da468e4e5e52c2536d143aa
+5f9a977	Eddie Abou-Jaoude	Mon Jan 12 16:46:00 2015 +0000	Merge 98f8ba143397b9de084fc8e525361fb228ca11db into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+98f8ba1	jaffamonkey	Mon Jan 12 16:45:31 2015 +0000	CSR-6 omitted scenario with error validation
+23f61a7	Tom Ruppel	Mon Jan 12 16:22:56 2015 +0000	Merge pull request #27 from TransformCore/features/CSR-6
+47a8f27	jaffamonkey	Mon Jan 12 11:12:25 2015 +0000	CSR-6 added password char check test back in
+e69483a	Travis CI	Mon Jan 12 11:03:21 2015 +0000	Created changelog
+be0a394	Travis CI	Mon Jan 12 11:03:21 2015 +0000	Set build VERSION number build-copy-changes-350
+1b32344	Travis CI	Mon Jan 12 08:05:29 2015 +0000	Created changelog
+c597592	Travis CI	Mon Jan 12 08:05:29 2015 +0000	Set build VERSION number build-develop-348
+1bc3b7e	Travis CI	Mon Jan 12 08:04:12 2015 +0000	Created changelog
+a2f3f7c	Travis CI	Mon Jan 12 08:04:12 2015 +0000	Set build VERSION number build-features/CSR-6-349
+3725f92	Eddie Abou-Jaoude	Mon Jan 12 08:02:27 2015 +0000	Merge 9c7002a3ecea8f523814caa6987aa1c9f8f8b8a8 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+9c7002a	Eddie Jaoude	Mon Jan 12 08:02:21 2015 +0000	[CSR-6] Updated Registration documentation
+dead04d	Travis CI	Mon Jan 12 07:10:35 2015 +0000	Created changelog
+165098d	Travis CI	Mon Jan 12 07:10:35 2015 +0000	Set build VERSION number build-develop-347
+83c174f	Travis CI	Mon Jan 12 07:10:22 2015 +0000	Created changelog
+9fd5678	Travis CI	Mon Jan 12 07:10:22 2015 +0000	Set build VERSION number build-features/CSR-6-346
+c2ad7ff	Eddie Abou-Jaoude	Mon Jan 12 07:08:44 2015 +0000	Merge a6aed7aa5d3949331db95a441c8a3a7acb9ae630 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+a6aed7a	Eddie Jaoude	Mon Jan 12 07:08:38 2015 +0000	[CSR-6] Updated D/M dependency (password strength)
+835f686	Travis CI	Mon Jan 12 06:24:06 2015 +0000	Created changelog
+574648b	Travis CI	Mon Jan 12 06:24:06 2015 +0000	Set build VERSION number build-develop-345
+b6e059c	Travis CI	Mon Jan 12 06:24:01 2015 +0000	Created changelog
+e398cfa	Travis CI	Mon Jan 12 06:24:01 2015 +0000	Set build VERSION number build-features/CSR-6-344
+531c7dc	Eddie Abou-Jaoude	Mon Jan 12 06:22:29 2015 +0000	Merge 0e1bcee282b7160949da062dd0ad18e8eca59599 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+0e1bcee	Eddie Jaoude	Mon Jan 12 06:22:23 2015 +0000	[CSR-6] Fixed CI & Spec command
+ed0ca0c	Travis CI	Mon Jan 12 06:07:29 2015 +0000	Created changelog
+25f4956	Travis CI	Mon Jan 12 06:07:29 2015 +0000	Created changelog
+da7386a	Travis CI	Mon Jan 12 06:07:29 2015 +0000	Set build VERSION number build-develop-343
+6ac4bee	Travis CI	Mon Jan 12 06:07:29 2015 +0000	Set build VERSION number build-features/CSR-6-342
+2e39bc4	Eddie Abou-Jaoude	Mon Jan 12 06:05:49 2015 +0000	Merge db727554b922a8909c81a8d409d1bcb0650f5958 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+db72755	Eddie Jaoude	Mon Jan 12 06:05:43 2015 +0000	[CSR-5] Updated make cmd dep & rebuild cmd on CI
+4395c86	Travis CI	Mon Jan 12 05:57:11 2015 +0000	Created changelog
+44be5da	Travis CI	Mon Jan 12 05:57:11 2015 +0000	Set build VERSION number build-features/CSR-6-340
+dcafed1	Travis CI	Mon Jan 12 05:57:04 2015 +0000	Created changelog
+25f4a0b	Travis CI	Mon Jan 12 05:57:04 2015 +0000	Set build VERSION number build-develop-341
+1e4ad46	Eddie Abou-Jaoude	Mon Jan 12 05:55:46 2015 +0000	Merge cceea0ce3fab7c6654258a78dbd5a134fd8876f9 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+cceea0c	Eddie Jaoude	Mon Jan 12 05:55:41 2015 +0000	[CSR-5] Moved CI DB setup to make commands
+674bfc0	Travis CI	Sun Jan 11 10:37:30 2015 +0000	Created changelog
+4a83281	Travis CI	Sun Jan 11 10:37:30 2015 +0000	Set build VERSION number build-features/CSR-6-338
+c220524	Travis CI	Sun Jan 11 10:37:22 2015 +0000	Created changelog
+c65fba0	Travis CI	Sun Jan 11 10:37:22 2015 +0000	Set build VERSION number build-develop-339
+a8c5315	Eddie Abou-Jaoude	Sun Jan 11 10:35:51 2015 +0000	Merge c4bf7f8d10554c5c9ae1ed2b5f52dfbb63f93710 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+c4bf7f8	Eddie Jaoude	Sun Jan 11 10:35:45 2015 +0000	Updated dependencies
+e8a150c	Travis CI	Sun Jan 11 09:27:36 2015 +0000	Created changelog
+d897a1a	Travis CI	Sun Jan 11 09:27:36 2015 +0000	Set build VERSION number build-develop-337
+96678db	Travis CI	Sun Jan 11 09:27:23 2015 +0000	Created changelog
+8387805	Travis CI	Sun Jan 11 09:27:23 2015 +0000	Set build VERSION number build-features/CSR-6-336
+f5053d7	Eddie Abou-Jaoude	Sun Jan 11 09:25:59 2015 +0000	Merge fc1e3606e3c4de2890d959f324b1b169bea83d09 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+fc1e360	Eddie Jaoude	Sun Jan 11 09:25:52 2015 +0000	[CSR-6] Translation collection extension added
+e6ab402	Travis CI	Sat Jan 10 19:55:08 2015 +0000	Created changelog
+26013a1	Travis CI	Sat Jan 10 19:55:08 2015 +0000	Set build VERSION number build-develop-335
+a30afae	Travis CI	Sat Jan 10 19:54:23 2015 +0000	Created changelog
+cd5b833	Travis CI	Sat Jan 10 19:54:23 2015 +0000	Set build VERSION number build-features/CSR-6-334
+83de291	Eddie Abou-Jaoude	Sat Jan 10 19:52:56 2015 +0000	Merge d75d4f39ebee27da4e32fceb6a7ffab883cc318c into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+d75d4f3	Eddie Jaoude	Sat Jan 10 19:52:31 2015 +0000	Revert "[CSR-6] Moving deploy ENV from prod to test"
+f193012	Travis CI	Sat Jan 10 19:49:45 2015 +0000	Created changelog
+e1f621b	Travis CI	Sat Jan 10 19:49:45 2015 +0000	Set build VERSION number build-features/CSR-6-332
+438644d	Travis CI	Sat Jan 10 19:49:35 2015 +0000	Created changelog
+0a56555	Travis CI	Sat Jan 10 19:49:35 2015 +0000	Set build VERSION number build-develop-333
+2bfa580	Eddie Abou-Jaoude	Sat Jan 10 19:48:20 2015 +0000	Merge c39543be4bb587c5184848d9d8dbb8240909ccde into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+c39543b	Eddie Jaoude	Sat Jan 10 19:48:10 2015 +0000	[CSR-6] Moving deploy ENV from prod to test
+d085b81	Travis CI	Sat Jan 10 19:31:41 2015 +0000	Created changelog
+6596c12	Travis CI	Sat Jan 10 19:31:41 2015 +0000	Set build VERSION number build-features/CSR-6-330
+c45d7c3	Travis CI	Sat Jan 10 19:30:44 2015 +0000	Created changelog
+6589390	Travis CI	Sat Jan 10 19:30:44 2015 +0000	Set build VERSION number build-develop-331
+04bdafd	Eddie Abou-Jaoude	Sat Jan 10 19:28:55 2015 +0000	Merge 145e039247c786d1e63f911b2d2296e20dcb2c0f into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+145e039	Eddie Jaoude	Sat Jan 10 19:28:48 2015 +0000	[CSR-6] Project name / logo links to homepage
+e8c6719	Travis CI	Sat Jan 10 08:19:52 2015 +0000	Created changelog
+58a031c	Travis CI	Sat Jan 10 08:19:52 2015 +0000	Set build VERSION number build-features/CSR-6-328
+b3ba81c	Travis CI	Sat Jan 10 08:19:11 2015 +0000	Created changelog
+9276144	Travis CI	Sat Jan 10 08:19:11 2015 +0000	Set build VERSION number build-develop-329
+af9ca65	Eddie Abou-Jaoude	Sat Jan 10 08:17:45 2015 +0000	Merge eea08bec647db69474571965ddfb3ee8e110dddd into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+eea08be	Eddie Jaoude	Sat Jan 10 08:17:39 2015 +0000	[CSR-6] Move Cmd & Fixture Deps from dev to prod
+50360d1	Travis CI	Sat Jan 10 08:10:32 2015 +0000	Created changelog
+dd344b8	Travis CI	Sat Jan 10 08:10:32 2015 +0000	Set build VERSION number build-develop-327
+d71a29b	Travis CI	Sat Jan 10 08:09:21 2015 +0000	Created changelog
+1fb7d75	Travis CI	Sat Jan 10 08:09:21 2015 +0000	Set build VERSION number build-features/CSR-6-327
+40f2281	Eddie Abou-Jaoude	Sat Jan 10 08:07:56 2015 +0000	Merge 6b371362fb73733c5eb0cd4b8650d9edeb3b925c into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+6b37136	Eddie Jaoude	Sat Jan 10 08:07:47 2015 +0000	[CSR-6] Moved Fixtures in Kernel to prod
+1e2678c	Travis CI	Sat Jan 10 08:00:05 2015 +0000	Created changelog
+3563d74	Travis CI	Sat Jan 10 08:00:05 2015 +0000	Set build VERSION number build-features/CSR-6-325
+7381e1a	Travis CI	Sat Jan 10 08:00:04 2015 +0000	Created changelog
+2182151	Travis CI	Sat Jan 10 08:00:04 2015 +0000	Set build VERSION number build-develop-326
+d60e742	Eddie Abou-Jaoude	Sat Jan 10 07:58:36 2015 +0000	Merge 99bb1c6aaa01b8c0c1bf95a4bf0f1c9babfa0f50 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+99bb1c6	Eddie Jaoude	Sat Jan 10 07:58:30 2015 +0000	[cSR-6] Rebuild DB after deployment
+d8fd08b	Travis CI	Sat Jan 10 07:52:01 2015 +0000	Created changelog
+c6b13f2	Travis CI	Sat Jan 10 07:52:01 2015 +0000	Created changelog
+400a17f	Travis CI	Sat Jan 10 07:52:01 2015 +0000	Set build VERSION number build-develop-324
+9242b0d	Travis CI	Sat Jan 10 07:52:01 2015 +0000	Set build VERSION number build-features/CSR-6-323
+ff201f9	Eddie Abou-Jaoude	Sat Jan 10 07:50:34 2015 +0000	Merge 00b89e13df3d5c15d98f7ff58f78019193cd551e into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+00b89e1	Eddie Jaoude	Sat Jan 10 07:50:27 2015 +0000	[cSR-6] Updated Unit test command with Suite
+fe3d2b2	Eddie Jaoude	Sat Jan 10 07:43:47 2015 +0000	[CSR-6] Updated Dependencies
+68ea446	Eddie Jaoude	Sat Jan 10 07:41:20 2015 +0000	Revert "[CSR-6] Renamed php EXT for Heroku deploy"
+2a9a72e	Travis CI	Sat Jan 10 07:35:52 2015 +0000	Created changelog
+a018f41	Travis CI	Sat Jan 10 07:35:52 2015 +0000	Set build VERSION number build-features/CSR-6-319
+65e1382	Eddie Jaoude	Sat Jan 10 07:34:20 2015 +0000	[CSR-6] Renamed php EXT for Heroku deploy
+3c4154e	Travis CI	Sat Jan 10 07:23:34 2015 +0000	Created changelog
+4afd73a	Travis CI	Sat Jan 10 07:23:34 2015 +0000	Set build VERSION number build-develop-318
+1f8370a	Travis CI	Sat Jan 10 07:23:09 2015 +0000	Created changelog
+bc527e2	Travis CI	Sat Jan 10 07:23:09 2015 +0000	Set build VERSION number build-features/CSR-6-317
+ab58644	Eddie Abou-Jaoude	Sat Jan 10 07:21:52 2015 +0000	Merge 8d00b90b5192b75f4cb919961bc1c5d453444b73 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+8d00b90	Eddie Jaoude	Sat Jan 10 07:21:46 2015 +0000	[CSR-6] mbstring EXT added to Composer for Heroku
+0637fc0	Travis CI	Sat Jan 10 07:12:48 2015 +0000	Created changelog
+69f4fc6	Travis CI	Sat Jan 10 07:12:48 2015 +0000	Set build VERSION number build-develop-316
+7582590	Travis CI	Sat Jan 10 07:12:33 2015 +0000	Created changelog
+1ade371	Travis CI	Sat Jan 10 07:12:33 2015 +0000	Set build VERSION number build-features/CSR-6-315
+3d3954b	Eddie Abou-Jaoude	Sat Jan 10 07:11:05 2015 +0000	Merge ea7adb37db77feb350b40d9b0771fd122b26e489 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+ea7adb3	Eddie Jaoude	Sat Jan 10 07:05:19 2015 +0000	[CSR-6] Added Dev parameters
+a6045ab	Eddie Jaoude	Sat Jan 10 07:04:58 2015 +0000	[CSR-6] Moved params template to ENV vars
+000a4d9	Travis CI	Fri Jan 9 16:04:06 2015 +0000	Created changelog
+7bffbc5	Travis CI	Fri Jan 9 16:04:06 2015 +0000	Set build VERSION number build-develop-312
+ded43a8	Travis CI	Fri Jan 9 16:03:58 2015 +0000	Created changelog
+6fb883a	Travis CI	Fri Jan 9 16:03:58 2015 +0000	Set build VERSION number build-develop-314
+c2f1b9e	Travis CI	Fri Jan 9 16:03:30 2015 +0000	Created changelog
+5ef4d25	Travis CI	Fri Jan 9 16:03:30 2015 +0000	Set build VERSION number build-features/CSR-6-313
+7db5474	Eddie Abou-Jaoude	Fri Jan 9 16:00:45 2015 +0000	Merge 7412de68cf5d58305db1d2f5ab76e8380e901016 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+7412de6	Eddie Jaoude	Fri Jan 9 16:00:38 2015 +0000	[CSR-173] Fixed failing test
+8ad9b8c	jaffamonkey	Fri Jan 9 15:59:09 2015 +0000	CSR-6 added translations for Login page
+5984447	jaffamonkey	Fri Jan 9 15:48:47 2015 +0000	CSR-6 added test data to fixture
+fa35302	jaffamonkey	Fri Jan 9 15:33:21 2015 +0000	CSR-6 added filter to omit scenarios tagged @omit and corrected homepage.feature
+f997eb1	jaffamonkey	Fri Jan 9 15:23:10 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+7f3ced4	Eddie Abou-Jaoude	Fri Jan 9 15:22:51 2015 +0000	Merge pull request #25 from TransformCore/features/CSR-173
+d9a186e	Eddie Jaoude	Fri Jan 9 15:08:47 2015 +0000	Merge CSR-6 into CSR-173
+a96cb00	jaffamonkey	Fri Jan 9 14:36:32 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+1849808	Eddie Jaoude	Fri Jan 9 14:36:11 2015 +0000	[CSR-6] Make updated & dependency
+592108f	jaffamonkey	Fri Jan 9 14:35:58 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+dbc465e	jaffamonkey	Fri Jan 9 14:35:29 2015 +0000	CSR-6 added new tag format for omitted scenarios (-omit)
+2b649a7	Eddie Jaoude	Fri Jan 9 14:14:58 2015 +0000	[CSR-6] Enforce unique email (D/M dependency)
+334bda2	jaffamonkey	Fri Jan 9 14:10:24 2015 +0000	CSR-6 amended error messages on tests
+2790a34	Eddie Jaoude	Fri Jan 9 13:05:00 2015 +0000	[CSR-6] Registration validation group config
+5a363f8	Eddie Jaoude	Fri Jan 9 11:49:42 2015 +0000	[CSR-6] Project name in Translation file & layout
+5bf63af	Travis CI	Fri Jan 9 11:43:28 2015 +0000	Created changelog
+660b13e	Travis CI	Fri Jan 9 11:43:28 2015 +0000	Set build VERSION number build-features/CSR-173-290
+78b07c5	Eddie Jaoude	Fri Jan 9 11:42:47 2015 +0000	[CSR-5] Removed html5 validation on Login
+74fbeb2	Eddie Jaoude	Fri Jan 9 11:42:39 2015 +0000	[CSR-6] Removed html5 validation on Registration
+45f78f9	jaffamonkey	Fri Jan 9 11:41:07 2015 +0000	CSR 173 added new verifications for homepage after login
+f75f5db	jaffamonkey	Fri Jan 9 11:35:36 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+8870154	jaffamonkey	Fri Jan 9 11:35:01 2015 +0000	CSR-5 amended gherkin to reflect current error and success messages displayed
+ff7963c	Eddie Jaoude	Fri Jan 9 11:17:57 2015 +0000	[CSR-5] Force loading of Data Fixtures on CI
+7347862	jaffamonkey	Fri Jan 9 11:17:43 2015 +0000	CSR-6 tidied format
+d13ce83	Eddie Abou-Jaoude	Fri Jan 9 11:03:23 2015 +0000	Merge pull request #24 from TransformCore/features/CSR-5
+72e5edb	Eddie Jaoude	Fri Jan 9 11:02:13 2015 +0000	Merged in CSR-6 into CSR-5
+f075500	Travis CI	Fri Jan 9 10:58:22 2015 +0000	Created changelog
+007e04a	Travis CI	Fri Jan 9 10:58:22 2015 +0000	Set build VERSION number build-features/CSR-5-281
+5d871e8	jaffamonkey	Fri Jan 9 10:55:05 2015 +0000	CSR-5 update
+69b6249	Eddie Jaoude	Fri Jan 9 10:49:19 2015 +0000	[CSR-5] DataFixture added to CI build
+f6169e4	Eddie Jaoude	Fri Jan 9 10:49:08 2015 +0000	[CSR-5] Updated D/M dependency with DataFixture
+85fbde9	jaffamonkey	Fri Jan 9 10:47:18 2015 +0000	CSR-5 amended gherkin to reflect more generic error messages
+beeb4b4	Eddie Jaoude	Fri Jan 9 10:29:20 2015 +0000	[CSR-5] Data Fixture dependency added
+164584f	Eddie Jaoude	Fri Jan 9 09:19:55 2015 +0000	[CSR-6] MySQL support for CI
+8907439	Eddie Jaoude	Fri Jan 9 07:50:14 2015 +0000	[CSR-5] Home page login form updated IDs etc
+3838479	Eddie Jaoude	Fri Jan 9 07:39:23 2015 +0000	[CSR-5] Login form with Error messages
+d1b7b54	Eddie Jaoude	Fri Jan 9 07:33:16 2015 +0000	[CSR-5] Login failure path updated to login form
+1fa2fd6	Eddie Jaoude	Fri Jan 9 07:11:46 2015 +0000	[CSR-6] [CSR-5] Basic Successful Login
+b786821	Eddie Jaoude	Fri Jan 9 06:55:54 2015 +0000	[CSR-6] Homepage Register button with link
+f6aac82	Eddie Jaoude	Fri Jan 9 06:55:38 2015 +0000	[CSR-6] Click on Email go to Account page in Nav
+39a80d3	Eddie Jaoude	Fri Jan 9 06:40:48 2015 +0000	[CSR-6] Behat generated report to build directory
+b18b026	Eddie Jaoude	Fri Jan 9 06:39:02 2015 +0000	[CSR-6] Updated Behat test for homepage
+18cb4c2	Eddie Jaoude	Fri Jan 9 06:33:10 2015 +0000	[CSR-6] Updated homepage title
+12037a2	Eddie Jaoude	Fri Jan 9 06:32:17 2015 +0000	[CSR-6] Content for Homepage
+17fc3bd	Eddie Jaoude	Fri Jan 9 06:31:58 2015 +0000	[CSR-6] Successful Register redirect to Account
+481f0e6	Eddie Jaoude	Fri Jan 9 06:30:00 2015 +0000	[CSR-6] [CSR-173] Create basic Account page
+6b02a9d	Eddie Jaoude	Thu Jan 8 20:51:21 2015 +0000	[CSR-6] T&Cs / Interview Scheme links on Register
+08cd56a	Eddie Jaoude	Thu Jan 8 20:51:01 2015 +0000	[CSR-6] T&Cs / Interview Scheme routing
+be0b9cb	Eddie Jaoude	Thu Jan 8 20:50:45 2015 +0000	[CSR-6] T&Cs / Interview Scheme Actions added
+962dd48	Eddie Jaoude	Thu Jan 8 20:50:02 2015 +0000	[CSR-6] T&Cs / Interview Scheme localisation
+972259d	Eddie Jaoude	Thu Jan 8 20:49:27 2015 +0000	[CSR-6] Interview Scheme view added
+488f488	Eddie Jaoude	Thu Jan 8 20:48:59 2015 +0000	[CSR-6] T&Cs view added
+cbd0861	jaffamonkey	Thu Jan 8 17:10:08 2015 +0000	CSR-6 added french for confirm password text, and some register feature tidyup
+1edfb00	jaffamonkey	Thu Jan 8 15:52:19 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+4be23cb	jaffamonkey	Thu Jan 8 15:52:16 2015 +0000	CSR-6 minor corrections
+57be8a7	Eddie Jaoude	Thu Jan 8 15:39:42 2015 +0000	[CSR-6] Removed disabled field
+ba11d2e	jaffamonkey	Thu Jan 8 15:26:19 2015 +0000	CSR-6 tagged too-specific vaidation checks with CSR-6-1 and removed erroneous disability checkbox
+9296b9f	Eddie Jaoude	Thu Jan 8 15:07:16 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+817b331	Eddie Jaoude	Thu Jan 8 14:57:13 2015 +0000	[CSR-6] Re-ordered Registration Form & Labels
+50852ec	jaffamonkey	Thu Jan 8 14:53:33 2015 +0000	CSR-6 removed erroneous t&c and corrected Gherkin
+9231add	jaffamonkey	Thu Jan 8 14:36:13 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+a97649a	jaffamonkey	Thu Jan 8 14:36:09 2015 +0000	CSR-6 amended field ids and changed report loc
+8fa27c6	Eddie Jaoude	Thu Jan 8 14:16:15 2015 +0000	[CSR-6] Override Registration Form ordering
+1aa0dce	jaffamonkey	Thu Jan 8 13:21:53 2015 +0000	CSR-6 amended field ids
+a459c48	jaffamonkey	Thu Jan 8 13:18:18 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+4e22462	jaffamonkey	Thu Jan 8 13:18:14 2015 +0000	CSR-6 amended field ids
+46745ef	Eddie Jaoude	Thu Jan 8 13:14:50 2015 +0000	[CSR-6] Updating D/M dependency
+b5a20f9	Eddie Jaoude	Thu Jan 8 12:08:52 2015 +0000	[CSR-6] PHPSpec for Bundle files
+ae2e1e3	Eddie Jaoude	Thu Jan 8 12:08:39 2015 +0000	[CSR-6] Menu builder aware of SecurityContext
+0b6dde5	Eddie Jaoude	Thu Jan 8 12:07:58 2015 +0000	[CSR-6] PHPSpec to produce html code coverage
+ba2bc20	Eddie Jaoude	Thu Jan 8 12:07:27 2015 +0000	[CSR-6] Removed `:` from Title in Behat test
+840e7d7	Eddie Jaoude	Thu Jan 8 12:06:54 2015 +0000	[CSR-6] Registration Event Listener
+67f4a14	Eddie Jaoude	Thu Jan 8 12:03:35 2015 +0000	[CSR-6] Updated D/M dependency
+a6b95ec	Eddie Jaoude	Thu Jan 8 12:02:52 2015 +0000	[CSR-6] Flash alert messages added to layout
+c73a2a2	Eddie Jaoude	Thu Jan 8 12:01:30 2015 +0000	[CSR-6] Override Registration for to have Title
+d351fa0	Eddie Jaoude	Thu Jan 8 12:01:05 2015 +0000	[CSR-6] Removed unused layout code
+6b9fb01	Eddie Jaoude	Thu Jan 8 12:00:37 2015 +0000	[CSR-6] Security config using email to login
+f8966e8	Eddie Jaoude	Thu Jan 8 11:59:18 2015 +0000	[CSR-6] Using new Registration Form
+16ded08	jaffamonkey	Thu Jan 8 11:52:21 2015 +0000	CSR-6 removed dropdown values from en file
+a8187c7	Travis CI	Thu Jan 8 11:17:46 2015 +0000	Created changelog
+5fc1b17	Travis CI	Thu Jan 8 11:17:46 2015 +0000	Set build VERSION number build-features/CSR-173-240
+fbf4769	jaffamonkey	Thu Jan 8 11:16:05 2015 +0000	CSR-173 added new feature file, and new login function
+df7369c	jaffamonkey	Thu Jan 8 10:43:28 2015 +0000	CSR-6 added french translations for registration page
+e41638b	jaffamonkey	Thu Jan 8 10:22:36 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+ea4c00d	jaffamonkey	Thu Jan 8 10:22:06 2015 +0000	CSR-6 added french translations for registration page
+a3863eb	jaffamonkey	Thu Jan 8 10:21:12 2015 +0000	CSR-6 added french translations for registration page
+ff2503f	Eddie Jaoude	Thu Jan 8 10:07:17 2015 +0000	[CSR-6] Removed `summary` from localisation
+d0ce7ff	Eddie Jaoude	Thu Jan 8 10:02:24 2015 +0000	[CSR-6] English localisation file
+08492ba	Travis CI	Wed Jan 7 16:06:29 2015 +0000	Created changelog
+1bf82b0	Travis CI	Wed Jan 7 16:06:29 2015 +0000	Set build VERSION number build-features/CSR-135-234
+f5a7857	Travis CI	Wed Jan 7 16:05:59 2015 +0000	Created changelog
+3566022	Travis CI	Wed Jan 7 16:05:59 2015 +0000	Set build VERSION number build-develop-233
+3b60c77	Eddie Abou-Jaoude	Wed Jan 7 16:04:08 2015 +0000	Merge 3dbd194c3a276b8e8ef6cb94231e63a7712719e2 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+3dbd194	jaffamonkey	Wed Jan 7 16:03:12 2015 +0000	Merge branch 'features/CSR-135' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-135
+84acb20	jaffamonkey	Wed Jan 7 16:01:22 2015 +0000	removed refs to salutation
+8c69949	jaffamonkey	Wed Jan 7 15:53:03 2015 +0000	removed ref to salutation in tests
+dc99195	jaffamonkey	Wed Jan 7 15:39:24 2015 +0000	minor adjustments to text checking for t&c
+d3590df	Travis CI	Wed Jan 7 11:45:28 2015 +0000	Created changelog
+2008cba	Travis CI	Wed Jan 7 11:45:28 2015 +0000	Set build VERSION number build-features/CSR-173-219
+97a4ea0	jaffamonkey	Wed Jan 7 11:42:36 2015 +0000	first commit for new story
+a84b435	Travis CI	Tue Jan 6 13:53:14 2015 +0000	Created changelog
+0b4d7ed	Travis CI	Tue Jan 6 13:53:14 2015 +0000	Set build VERSION number build-develop-199
+4d7c458	Travis CI	Tue Jan 6 13:53:02 2015 +0000	Created changelog
+1d99bab	Travis CI	Tue Jan 6 13:53:02 2015 +0000	Set build VERSION number build-features/CSR-135-201
+ba47940	Travis CI	Tue Jan 6 13:53:00 2015 +0000	Created changelog
+08fe912	Travis CI	Tue Jan 6 13:53:00 2015 +0000	Set build VERSION number build-develop-202
+42f7370	Travis CI	Tue Jan 6 13:52:34 2015 +0000	Created changelog
+4045918	Travis CI	Tue Jan 6 13:52:34 2015 +0000	Set build VERSION number build-features/CSR-5-200
+1d0f57c	Eddie Abou-Jaoude	Tue Jan 6 13:51:17 2015 +0000	Merge efe82c9ff2afaf49c5b72cefa9c6a4d68bf65df1 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+efe82c9	Paul Littlebury	Tue Jan 6 13:51:15 2015 +0000	Update EditAboutYouDetails.feature
+f37b932	Eddie Abou-Jaoude	Tue Jan 6 13:50:10 2015 +0000	Merge 690ea736f0668909e33ea3d73f993ee6309dddcb into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+690ea73	Paul Littlebury	Tue Jan 6 13:50:09 2015 +0000	Update Login.feature
+0d5ad75	Travis CI	Tue Jan 6 12:59:59 2015 +0000	Created changelog
+356af39	Travis CI	Tue Jan 6 12:59:59 2015 +0000	Set build VERSION number build-email-gherkin-code-192
+76e1377	Travis CI	Tue Jan 6 12:58:04 2015 +0000	Created changelog
+0305857	Travis CI	Tue Jan 6 12:58:03 2015 +0000	Set build VERSION number build-email-gherkin-code-191
+2670032	jaffamonkey	Tue Jan 6 12:55:20 2015 +0000	email gherkin code
+b655823	Travis CI	Tue Jan 6 12:53:14 2015 +0000	Created changelog
+33876f5	Travis CI	Tue Jan 6 12:53:14 2015 +0000	Set build VERSION number build-adding-doctrine-extension-190
+3412fb5	jaffamonkey	Tue Jan 6 12:46:09 2015 +0000	added email check gherkin and removed irrelevant API contexts
+9d00688	Travis CI	Mon Jan 5 14:30:13 2015 +0000	Created changelog
+165db5a	Travis CI	Mon Jan 5 14:30:13 2015 +0000	Set build VERSION number build-features/CSR-6-164
+ca055e8	Travis CI	Mon Jan 5 14:30:11 2015 +0000	Created changelog
+e0b7c45	Travis CI	Mon Jan 5 14:30:11 2015 +0000	Set build VERSION number build-develop-165
+ec77ef2	Eddie Abou-Jaoude	Mon Jan 5 14:28:16 2015 +0000	Merge 10c4fd305a53b5bd70e00a75e2b95ec318f76741 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+10c4fd3	jaffamonkey	Mon Jan 5 14:27:49 2015 +0000	Merge branch 'features/CSR-6' of https://github.com/TransformCore/CSR-Fast-Stream-frontend into features/CSR-6
+4e57573	jaffamonkey	Mon Jan 5 14:25:08 2015 +0000	added new scenarios for password
+af277f7	jaffamonkey	Mon Jan 5 12:54:39 2015 +0000	corrected password check scenario
+eee7458	jaffamonkey	Mon Jan 5 12:31:48 2015 +0000	added checks for info links
+c555e03	Travis CI	Mon Jan 5 11:01:40 2015 +0000	Created changelog
+1cd3fa7	Travis CI	Mon Jan 5 11:01:40 2015 +0000	Set build VERSION number build-develop-163
+1cb619e	Travis CI	Mon Jan 5 11:01:30 2015 +0000	Created changelog
+7636dd2	Travis CI	Mon Jan 5 11:01:30 2015 +0000	Set build VERSION number build-features/CSR-6-162
+4127c7a	Eddie Abou-Jaoude	Mon Jan 5 11:00:18 2015 +0000	Merge 2c074567ab3bc105343cd5e054aadc5913445da7 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+2c07456	Eddie Jaoude	Mon Jan 5 11:00:11 2015 +0000	[CSR-6] Trying to get output to fail
+e093376	Travis CI	Mon Jan 5 10:42:41 2015 +0000	Created changelog
+3b0a607	Travis CI	Mon Jan 5 10:42:41 2015 +0000	Set build VERSION number build-features/CSR-6-160
+8c671cf	Travis CI	Mon Jan 5 10:42:39 2015 +0000	Created changelog
+fc514a5	Travis CI	Mon Jan 5 10:42:39 2015 +0000	Set build VERSION number build-develop-161
+90120f7	Eddie Abou-Jaoude	Mon Jan 5 10:40:43 2015 +0000	Merge ee45dedf2071f0bda857e0c0e8439f4962d658a6 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+ee45ded	jaffamonkey	Mon Jan 5 10:40:09 2015 +0000	added new gherkin for new step
+447688e	jaffamonkey	Mon Jan 5 10:38:27 2015 +0000	added new gherkin for new step
+b125f26	Travis CI	Mon Jan 5 10:28:30 2015 +0000	Created changelog
+35208b0	Travis CI	Mon Jan 5 10:28:30 2015 +0000	Set build VERSION number build-develop-159
+a58232d	Travis CI	Mon Jan 5 10:26:11 2015 +0000	Created changelog
+67546fb	Travis CI	Mon Jan 5 10:26:11 2015 +0000	Set build VERSION number build-features/CSR-5-158
+aa664f1	Travis CI	Mon Jan 5 10:25:42 2015 +0000	Created changelog
+4cfbdc1	Travis CI	Mon Jan 5 10:25:42 2015 +0000	Set build VERSION number build-develop-157
+373282f	Travis CI	Mon Jan 5 10:25:37 2015 +0000	Created changelog
+14d02be	Travis CI	Mon Jan 5 10:25:37 2015 +0000	Set build VERSION number build-features/CSR-135-156
+586e700	Eddie Abou-Jaoude	Mon Jan 5 10:24:23 2015 +0000	Merge 558f536033fc4121846fcb94c5aad5d08c47648b into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+558f536	jaffamonkey	Mon Jan 5 10:24:04 2015 +0000	added blank line
+c4c9aab	Eddie Abou-Jaoude	Mon Jan 5 10:23:31 2015 +0000	Merge 453541d4bb0f7e497f8861d8e0b0b0c7245f36e1 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+d3baaab	Travis CI	Mon Jan 5 10:23:27 2015 +0000	Created changelog
+438b36e	Travis CI	Mon Jan 5 10:23:27 2015 +0000	Set build VERSION number build-features/CSR-6-154
+453541d	jaffamonkey	Mon Jan 5 10:22:59 2015 +0000	added blank line
+3725931	Travis CI	Mon Jan 5 10:22:49 2015 +0000	Created changelog
+93883d5	Travis CI	Mon Jan 5 10:22:49 2015 +0000	Set build VERSION number build-develop-155
+643bbc7	Eddie Abou-Jaoude	Mon Jan 5 10:20:58 2015 +0000	Merge 58a4d81c5b980001fbc63d364c30f66da08f63f8 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+58a4d81	jaffamonkey	Mon Jan 5 10:20:25 2015 +0000	added blank line
+a8d0f20	Travis CI	Mon Jan 5 10:06:02 2015 +0000	Created changelog
+7a0f8f9	Travis CI	Mon Jan 5 10:06:02 2015 +0000	Set build VERSION number build-develop-153
+819c16e	Travis CI	Mon Jan 5 10:04:56 2015 +0000	Created changelog
+5d30fd5	Travis CI	Mon Jan 5 10:04:56 2015 +0000	Set build VERSION number build-develop-152
+180fd62	Eddie Abou-Jaoude	Mon Jan 5 10:04:38 2015 +0000	Merge be6c9f2214c9fedd7dfa243c5b2b49db4f7fa096 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+b46dff2	Eddie Abou-Jaoude	Mon Jan 5 10:03:30 2015 +0000	Merge 634d5b17019a4699c24f08b244cf912923a12d14 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+bbb2119	Travis CI	Mon Jan 5 10:03:10 2015 +0000	Created changelog
+c9b5f61	Travis CI	Mon Jan 5 10:03:10 2015 +0000	Set build VERSION number build-develop-151
+086d6ff	Eddie Abou-Jaoude	Mon Jan 5 10:01:55 2015 +0000	Merge aaaebc72f0b20f5b59d612a04ed56f745c5cc23d into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+7ad4bee	Travis CI	Mon Jan 5 06:23:09 2015 +0000	Created changelog
+7d38e3a	Travis CI	Mon Jan 5 06:23:09 2015 +0000	Set build VERSION number build-feature/CSR-153-fos-user-150
+f8ec258	Eddie Jaoude	Mon Jan 5 06:21:53 2015 +0000	[CSR-153] Custom UserProvider
+5edbea6	Eddie Jaoude	Mon Jan 5 06:21:20 2015 +0000	[CSR-153] UserManager returns User.ID
+c679c68	Eddie Jaoude	Mon Jan 5 06:20:18 2015 +0000	[CSR-153] User.ID added to UserEntity
+399b618	Travis CI	Sun Jan 4 18:57:32 2015 +0000	Created changelog
+e341e9a	Travis CI	Sun Jan 4 18:57:32 2015 +0000	Set build VERSION number build-feature/CSR-153-fos-user-149
+9b35dbf	Eddie Jaoude	Sun Jan 4 18:55:56 2015 +0000	Generated file updated
+f856eb1	Eddie Jaoude	Sun Jan 4 18:55:35 2015 +0000	[CSR-153] FOSUser added
+ac419ba	Travis CI	Sat Jan 3 23:31:23 2015 +0000	Created changelog
+fe3ddba	Travis CI	Sat Jan 3 23:31:23 2015 +0000	Set build VERSION number build-features/CSR-6-148
+aaaebc7	jaffamonkey	Sat Jan 3 23:28:19 2015 +0000	amended test data
+44c9e5e	Travis CI	Sat Jan 3 23:27:18 2015 +0000	Created changelog
+39d993d	Travis CI	Sat Jan 3 23:27:18 2015 +0000	Set build VERSION number build-features/CSR-135-147
+be6c9f2	jaffamonkey	Sat Jan 3 23:25:52 2015 +0000	amended to fully reflect wireframe
+c348fa3	Travis CI	Sat Jan 3 22:43:58 2015 +0000	Created changelog
+b713c01	Travis CI	Sat Jan 3 22:43:58 2015 +0000	Set build VERSION number build-features/CSR-6-146
+69c3321	jaffamonkey	Sat Jan 3 22:41:16 2015 +0000	amended to fully reflect wireframe
+ed7dd42	Eddie Jaoude	Fri Jan 2 08:59:46 2015 +0000	[CSR-153] Created new User Bundle
+f072bae	Travis CI	Fri Jan 2 08:49:05 2015 +0000	Created changelog
+66f7deb	Travis CI	Fri Jan 2 08:49:05 2015 +0000	Set build VERSION number build-feature/CSR-153-fos-user-145
+f4742b2	Travis CI	Tue Dec 30 18:41:42 2014 +0000	Created changelog
+b673754	Travis CI	Tue Dec 30 18:41:42 2014 +0000	Set build VERSION number build-features/CSR-135-144
+083115e	jaffamonkey	Tue Dec 30 18:40:03 2014 +0000	updated tests to fully reflect wireframes
+e13930a	Travis CI	Mon Dec 29 22:03:03 2014 +0000	Created changelog
+99cb332	Travis CI	Mon Dec 29 22:03:03 2014 +0000	Set build VERSION number build-features/CSR-6-143
+44ec00d	jaffamonkey	Mon Dec 29 22:01:44 2014 +0000	corrections to form fields available
+bdec95a	Travis CI	Mon Dec 29 22:00:27 2014 +0000	Created changelog
+f2242a0	Travis CI	Mon Dec 29 22:00:27 2014 +0000	Set build VERSION number build-features/CSR-6-142
+8f75e5d	jaffamonkey	Mon Dec 29 21:58:28 2014 +0000	corrections to form fields available
+2b952ab	Travis CI	Thu Dec 25 19:05:19 2014 +0000	Created changelog
+a3e9fdb	Travis CI	Thu Dec 25 19:05:19 2014 +0000	Set build VERSION number build-features/CSR-6-141
+bd4da8c	Travis CI	Thu Dec 25 19:05:13 2014 +0000	Created changelog
+219bd3a	Travis CI	Thu Dec 25 19:05:13 2014 +0000	Set build VERSION number build-features/CSR-5-140
+e81b95a	Travis CI	Thu Dec 25 19:02:46 2014 +0000	Created changelog
+d141cc5	Travis CI	Thu Dec 25 19:02:46 2014 +0000	Set build VERSION number build-features/CSR-135-139
+ed0b6b0	Travis CI	Thu Dec 25 19:01:02 2014 +0000	Created changelog
+1b8feab	Travis CI	Thu Dec 25 19:01:02 2014 +0000	Set build VERSION number build-develop-CSR-135-138
+52ab7ce	jaffamonkey	Thu Dec 25 18:58:33 2014 +0000	CSR-135
+18a4bf5	Travis CI	Thu Dec 25 18:58:08 2014 +0000	Created changelog
+27de13c	Travis CI	Thu Dec 25 18:58:08 2014 +0000	Set build VERSION number build-develop-CSR-6-137
+fd32028	jaffamonkey	Thu Dec 25 18:56:35 2014 +0000	CSR-6
+9e145f8	Travis CI	Thu Dec 25 18:55:52 2014 +0000	Created changelog
+a59849f	Travis CI	Thu Dec 25 18:55:52 2014 +0000	Set build VERSION number build-develop-CSR-5-136
+634d5b1	jaffamonkey	Thu Dec 25 18:54:03 2014 +0000	CSR-5
+9cacd4f	Travis CI	Thu Dec 25 00:11:35 2014 +0000	Created changelog
+9c7177b	Travis CI	Thu Dec 25 00:11:35 2014 +0000	Set build VERSION number build-develop-135
+47d696b	Paul Littlebury	Thu Dec 25 00:10:21 2014 +0000	Merge 59828eb8359c208c53c90c84154838a14c4c5459 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+02fce26	Travis CI	Thu Dec 25 00:09:33 2014 +0000	Created changelog
+44c0de2	Travis CI	Thu Dec 25 00:09:33 2014 +0000	Set build VERSION number build-develop-gherkin-134
+59828eb	jaffamonkey	Thu Dec 25 00:07:36 2014 +0000	added new gherkin for CSR-5, CSR5, CSR-135
+a43d637	Travis CI	Wed Dec 24 16:52:07 2014 +0000	Created changelog
+8f4dd55	Travis CI	Wed Dec 24 16:52:07 2014 +0000	Set build VERSION number build-master-133
+b8e334d	Paul Littlebury	Wed Dec 24 16:50:01 2014 +0000	Merge bd9cdee13df9bdff39d5ce4cd50a11de0f34f781 into 4ba39e65bfdbad03d8bd6e6a3fbd11c09e247e03
+37d1104	Travis CI	Wed Dec 24 16:49:18 2014 +0000	Created changelog
+6e0c010	Travis CI	Wed Dec 24 16:49:18 2014 +0000	Set build VERSION number build-develop-new-gherkin-132
+bd9cdee	jaffamonkey	Wed Dec 24 16:47:37 2014 +0000	final draft changes
+75881ac	Travis CI	Tue Dec 23 19:44:02 2014 +0000	Created changelog
+a79fe21	Travis CI	Tue Dec 23 19:44:02 2014 +0000	Set build VERSION number build-develop-new-gherkin-131
+4517cbb	jaffamonkey	Tue Dec 23 19:41:46 2014 +0000	updates fo CSR-6, CSR-5 and CSR-135
+1bdc1a0	Travis CI	Tue Dec 23 16:26:30 2014 +0000	Created changelog
+018899b	Travis CI	Tue Dec 23 16:26:30 2014 +0000	Set build VERSION number build-feature/CSR-137-multi-step-form-129
+9c01079	Mike Whiting	Tue Dec 23 16:23:55 2014 +0000	CSR-137: trying to work out what has happended to session data.
+cc20049	Travis CI	Tue Dec 23 15:47:03 2014 +0000	Created changelog
+822d1b7	Travis CI	Tue Dec 23 15:47:03 2014 +0000	Set build VERSION number build-feature/CSR-137-multi-step-form-127
+c2d7ea9	Travis CI	Tue Dec 23 15:46:10 2014 +0000	Created changelog
+93c34d5	Travis CI	Tue Dec 23 15:46:10 2014 +0000	Set build VERSION number build-develop-128
+d075ff8	Mike Whiting	Tue Dec 23 15:44:11 2014 +0000	Merge 392b68f229a8f80d4f36fe1a27bf6848bede1be5 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+392b68f	Mike Whiting	Tue Dec 23 15:43:53 2014 +0000	CSR-137: removing old form classes.
+6d63963	Travis CI	Tue Dec 23 15:41:26 2014 +0000	Created changelog
+087a368	Travis CI	Tue Dec 23 15:41:26 2014 +0000	Set build VERSION number build-feature/CSR-137-multi-step-form-125
+73c7571	Travis CI	Tue Dec 23 15:41:14 2014 +0000	Created changelog
+4eab821	Travis CI	Tue Dec 23 15:41:14 2014 +0000	Set build VERSION number build-develop-126
+61779cd	Mike Whiting	Tue Dec 23 15:37:54 2014 +0000	Merge b625e52cf91faffeab7abd095f6044d422d14176 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+b625e52	Mike Whiting	Tue Dec 23 15:37:36 2014 +0000	CSR-137: found method for supporting multiple entities within flow but seems to force sacrifice of gathered data from view (if user goes back).
+01a24fd	Travis CI	Tue Dec 23 12:25:45 2014 +0000	Created changelog
+8cb2af4	Travis CI	Tue Dec 23 12:25:45 2014 +0000	Set build VERSION number build-develop-new-gherkin-124
+1b777e2	jaffamonkey	Tue Dec 23 12:20:48 2014 +0000	updates
+c751ba6	Travis CI	Tue Dec 23 08:38:51 2014 +0000	Created changelog
+c803051	Travis CI	Tue Dec 23 08:38:51 2014 +0000	Set build VERSION number build-develop-123
+164971c	Mike Whiting	Tue Dec 23 08:36:45 2014 +0000	Merge 1d7a0df4c5ded226b732abcbabdfe0b99c662033 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+663a186	Travis CI	Mon Dec 22 21:27:47 2014 +0000	Created changelog
+f8954ae	Travis CI	Mon Dec 22 21:27:47 2014 +0000	Set build VERSION number build-feature/CSR-137-multi-step-form-122
+1d7a0df	Mike Whiting	Mon Dec 22 21:24:45 2014 +0000	attempting multi-entity support.
+f361b46	Travis CI	Mon Dec 22 17:21:54 2014 +0000	Created changelog
+5c17034	Travis CI	Mon Dec 22 17:21:54 2014 +0000	Set build VERSION number build-develop-new-gherkin-121
+31459fd	jaffamonkey	Mon Dec 22 17:17:48 2014 +0000	updates to directory structure
+8cd3c43	Travis CI	Mon Dec 22 15:30:58 2014 +0000	Created changelog
+2f86fe1	Travis CI	Mon Dec 22 15:30:58 2014 +0000	Set build VERSION number build-develop-new-gherkin-120
+4af2397	jaffamonkey	Mon Dec 22 15:27:46 2014 +0000	updates
+6457489	Travis CI	Mon Dec 22 13:25:12 2014 +0000	Web assets added
+2286cbc	Travis CI	Mon Dec 22 13:25:10 2014 +0000	Created changelog
+70f4546	Travis CI	Mon Dec 22 13:25:10 2014 +0000	Set build VERSION number build-feature/splitfosuser-spike-119
+8df3244	Mike Whiting	Mon Dec 22 13:23:05 2014 +0000	CSR-134: final changes to abandoned spike.
+198b0b7	Mike Whiting	Mon Dec 22 13:22:36 2014 +0000	CSR-134: final changes to abandoned spike.
+5c2a68d	Travis CI	Mon Dec 22 12:00:16 2014 +0000	Created changelog
+be0dbc3	Travis CI	Mon Dec 22 12:00:16 2014 +0000	Set build VERSION number build-develop-new-gherkin-118
+e5a5964	jaffamonkey	Mon Dec 22 11:58:51 2014 +0000	added login feature
+a10c86d	Travis CI	Sun Dec 21 10:25:54 2014 +0000	Created changelog
+454a528	Travis CI	Sun Dec 21 10:25:54 2014 +0000	Set build VERSION number build-develop-117
+ea9c91e	Travis CI	Sun Dec 21 10:25:31 2014 +0000	Created changelog
+2299797	Travis CI	Sun Dec 21 10:25:31 2014 +0000	Set build VERSION number build-CSR-137-multi-step-form2-116
+62f0f94	Eddie Abou-Jaoude	Sun Dec 21 10:24:31 2014 +0000	Merge 6d4812ee972126b27ec71f7c6a3b5012ffff4723 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+6d4812e	Eddie Jaoude	Sun Dec 21 10:24:26 2014 +0000	[CSR-137] Dynamic navigation added
+7cb0ef6	Travis CI	Sun Dec 21 06:18:52 2014 +0000	Created changelog
+4dd6ea6	Travis CI	Sun Dec 21 06:18:52 2014 +0000	Set build VERSION number build-develop-115
+4d80f07	Travis CI	Sun Dec 21 06:18:40 2014 +0000	Created changelog
+add340b	Travis CI	Sun Dec 21 06:18:40 2014 +0000	Set build VERSION number build-CSR-137-multi-step-form2-114
+0e525d9	Eddie Abou-Jaoude	Sun Dec 21 06:17:46 2014 +0000	Merge ad54a6172c41cb1603a8d2ecbcaf41205ea9acf4 into a82fdb1c00867340098535a4538dcc8b0c1f7cee
+ad54a61	Eddie Jaoude	Sun Dec 21 06:16:45 2014 +0000	[CSR-137] Action & routing added for form flow
+b2c9ab4	Eddie Jaoude	Sun Dec 21 06:16:18 2014 +0000	[CSR-137] Initial form flow (2 steps)
+5375e2b	Eddie Jaoude	Sun Dec 21 06:15:01 2014 +0000	[CSR-137] Added Craue  Form Flow as a Dependency
+f0fcc1b	Eddie Jaoude	Sun Dec 21 06:14:18 2014 +0000	[CSR-137] Detail Entity & Form
+dab8c13	Eddie Jaoude	Sun Dec 21 06:13:57 2014 +0000	[CSR-137] User Form
+facb745	Eddie Jaoude	Sun Dec 21 06:13:18 2014 +0000	[CSR-137] User Entity to match B/E
+6893e42	Travis CI	Fri Dec 19 18:05:16 2014 +0000	Created changelog
+ec4f7c6	Travis CI	Fri Dec 19 18:05:16 2014 +0000	Set build VERSION number build-feature/CSR-137-multi-step-form-113
+0bf2453	Travis CI	Fri Dec 19 18:04:54 2014 +0000	Created changelog
+40afcf9	Travis CI	Fri Dec 19 18:04:54 2014 +0000	Set build VERSION number build-develop-112
+1eb9e60	Travis CI	Fri Dec 19 18:03:44 2014 +0000	Created changelog
+02748be	Travis CI	Fri Dec 19 18:03:44 2014 +0000	Set build VERSION number build-feature/CSR-137-multi-step-form-111
+cdd271b	Eddie Jaoude	Fri Dec 19 18:03:43 2014 +0000	Merge branch 'develop' into feature/CSR-137-multi-step-form
+a82fdb1	Eddie Jaoude	Fri Dec 19 18:03:23 2014 +0000	Revert "test demo"
+58cb3c2	Eddie Jaoude	Fri Dec 19 18:02:27 2014 +0000	Merge develop into feature/CSR-137-multi-step-form
+ffc5f07	Travis CI	Fri Dec 19 17:54:04 2014 +0000	Web assets added
+b1fd666	Travis CI	Fri Dec 19 17:54:02 2014 +0000	Created changelog
+149af48	Travis CI	Fri Dec 19 17:54:02 2014 +0000	Set build VERSION number build-feature/CSR-137-multi-step-form-110
+5207139	Travis CI	Fri Dec 19 11:44:39 2014 +0000	Created changelog
+2fd3c25	Travis CI	Fri Dec 19 11:44:39 2014 +0000	Set build VERSION number build-develop-109
+ef95232	Mike Whiting	Fri Dec 19 11:42:06 2014 +0000	Merge pull request #5 from TransformCore/feature/documentation-dod
+bc1b022	Travis CI	Fri Dec 19 10:32:59 2014 +0000	Created changelog
+b8a9da0	Travis CI	Fri Dec 19 10:32:59 2014 +0000	Set build VERSION number build-develop-108
+8cfd183	Eddie Jaoude	Fri Dec 19 10:31:02 2014 +0000	test demo
+3a0d013	Travis CI	Fri Dec 19 09:39:45 2014 +0000	Web assets added
+5748484	Travis CI	Fri Dec 19 09:39:42 2014 +0000	Created changelog
+af45e49	Travis CI	Fri Dec 19 09:39:42 2014 +0000	Set build VERSION number build-feature/craueform-spike-107
+8ba57cb	Mike Whiting	Fri Dec 19 09:36:35 2014 +0000	rmoving extraneous code (the bundle already has this method).
+30d6c5d	Travis CI	Fri Dec 19 06:27:00 2014 +0000	Web assets added
+febcbbb	Travis CI	Fri Dec 19 06:26:58 2014 +0000	Created changelog
+a7d6e04	Travis CI	Fri Dec 19 06:26:58 2014 +0000	Set build VERSION number build-documentation-pipeline-diagram-105
+326e849	Travis CI	Fri Dec 19 06:26:57 2014 +0000	Created changelog
+4dae687	Travis CI	Fri Dec 19 06:26:57 2014 +0000	Set build VERSION number build-develop-106
+bc194b3	Eddie Abou-Jaoude	Fri Dec 19 06:25:26 2014 +0000	Merge ccfa63cff5b7bae0833d25cf3f73a38a8963fed5 into c058d528ea75ff472e6f960798e693c4f04c4a21
+ccfa63c	Eddie Abou-Jaoude	Fri Dec 19 06:25:25 2014 +0000	Checkpoints made generic with example
+9244645	Travis CI	Fri Dec 19 06:18:52 2014 +0000	Created changelog
+6ce714b	Travis CI	Fri Dec 19 06:18:52 2014 +0000	Set build VERSION number build-develop-104
+c058d52	Eddie Jaoude	Fri Dec 19 06:17:22 2014 +0000	Fixed filename typo
+32357e1	Travis CI	Fri Dec 19 05:02:25 2014 +0000	Web assets added
+646cd8e	Travis CI	Fri Dec 19 05:02:23 2014 +0000	Created changelog
+d2856c7	Travis CI	Fri Dec 19 05:02:23 2014 +0000	Set build VERSION number build-feature/documentation-dod-102
+e3510ba	Travis CI	Fri Dec 19 05:02:18 2014 +0000	Created changelog
+b78a76e	Travis CI	Fri Dec 19 05:02:18 2014 +0000	Set build VERSION number build-develop-103
+6402710	Travis CI	Fri Dec 19 05:00:06 2014 +0000	Web assets added
+5ac649f	Travis CI	Fri Dec 19 05:00:04 2014 +0000	Created changelog
+4440ec2	Travis CI	Fri Dec 19 05:00:04 2014 +0000	Set build VERSION number build-feature/documentation-dod-99
+e61ed41	Eddie Abou-Jaoude	Fri Dec 19 04:59:55 2014 +0000	Merge 08da41508f1b36868d5300797e3d627e15ec2e60 into 3c5b0d043134bd2041f40410aabdec8ce4aef37d
+08da415	Eddie Abou-Jaoude	Fri Dec 19 04:59:54 2014 +0000	Double nesting list formatting improved
+b7686f0	Travis CI	Fri Dec 19 04:59:37 2014 +0000	Created changelog
+2747494	Travis CI	Fri Dec 19 04:59:37 2014 +0000	Set build VERSION number build-develop-100
+fd9657b	Travis CI	Fri Dec 19 04:59:32 2014 +0000	Created changelog
+0036c08	Travis CI	Fri Dec 19 04:59:32 2014 +0000	Set build VERSION number build-develop-101
+04d3e46	Travis CI	Fri Dec 19 04:58:38 2014 +0000	Web assets added
+01deef0	Travis CI	Fri Dec 19 04:58:37 2014 +0000	Created changelog
+3ac1c60	Travis CI	Fri Dec 19 04:58:37 2014 +0000	Set build VERSION number build-feature/documentation-dod-97
+a399965	Travis CI	Fri Dec 19 04:58:34 2014 +0000	Created changelog
+71f032b	Travis CI	Fri Dec 19 04:58:34 2014 +0000	Set build VERSION number build-develop-98
+0a69379	Eddie Abou-Jaoude	Fri Dec 19 04:57:59 2014 +0000	Removed test double nested list point
+95e0780	Eddie Abou-Jaoude	Fri Dec 19 04:57:59 2014 +0000	Merge 0a69379b000135cf984bb53e5d4f7484595d9ad7 into 3c5b0d043134bd2041f40410aabdec8ce4aef37d
+46304c9	Eddie Abou-Jaoude	Fri Dec 19 04:56:59 2014 +0000	Improved formatting of nested list
+a42c1f8	Travis CI	Fri Dec 19 04:53:34 2014 +0000	Web assets added
+8c5d716	Travis CI	Fri Dec 19 04:53:32 2014 +0000	Created changelog
+8734ac3	Travis CI	Fri Dec 19 04:53:32 2014 +0000	Set build VERSION number build-feature/documentation-dod-95
+8667eef	Travis CI	Fri Dec 19 04:53:20 2014 +0000	Created changelog
+692b272	Travis CI	Fri Dec 19 04:53:20 2014 +0000	Set build VERSION number build-develop-96
+540ccac	Eddie Abou-Jaoude	Fri Dec 19 04:51:38 2014 +0000	Merge c3a47a33a7bfcfbf7680756ec86b219a3a9748c3 into 3c5b0d043134bd2041f40410aabdec8ce4aef37d
+c3a47a3	Eddie Jaoude	Fri Dec 19 04:51:34 2014 +0000	Addition to standard template F/E browser support
+bbd3cab	Travis CI	Thu Dec 18 18:32:02 2014 +0000	Web assets added
+55792f1	Travis CI	Thu Dec 18 18:32:00 2014 +0000	Created changelog
+9c4859d	Travis CI	Thu Dec 18 18:32:00 2014 +0000	Set build VERSION number build-feature/splitfosuser-spike-94
+5068b6d	Travis CI	Thu Dec 18 11:10:59 2014 +0000	Created changelog
+f8b96b0	Travis CI	Thu Dec 18 11:10:59 2014 +0000	Set build VERSION number build-develop-93
+3c5b0d0	Mike Whiting	Thu Dec 18 11:08:25 2014 +0000	Merge pull request #10 from TransformCore/feature/alias-cmds
+fc20736	Travis CI	Thu Dec 18 10:13:21 2014 +0000	Created changelog
+9dc47a4	Travis CI	Thu Dec 18 10:13:21 2014 +0000	Set build VERSION number build-develop-91
+6170a33	Travis CI	Thu Dec 18 10:13:18 2014 +0000	Created changelog
+ce9dac7	Travis CI	Thu Dec 18 10:13:18 2014 +0000	Set build VERSION number build-develop-92
+fbc588f	Eddie Abou-Jaoude	Thu Dec 18 10:10:52 2014 +0000	Merge 21f008f02e692fabc418c3024cdf3851e7d16ec4 into 04b5dba6d883ea6cfdefa077046ba977335e7119
+ef78eb7	Travis CI	Thu Dec 18 10:09:44 2014 +0000	Web assets added
+9d898fb	Travis CI	Thu Dec 18 10:09:41 2014 +0000	Created changelog
+18a2316	Travis CI	Thu Dec 18 10:09:41 2014 +0000	Set build VERSION number build-develop-90
+04b5dba	Mike Whiting	Thu Dec 18 10:06:34 2014 +0000	Merge pull request #9 from TransformCore/feature/documentation-contributing
+4a772ad	Travis CI	Thu Dec 18 10:02:43 2014 +0000	Created changelog
+7c0348d	Travis CI	Thu Dec 18 10:02:43 2014 +0000	Set build VERSION number build-feature/alias-cmds-89
+21f008f	Eddie Jaoude	Thu Dec 18 10:00:31 2014 +0000	Updated Documentation links in README
+7e6b8e3	Travis CI	Thu Dec 18 09:46:12 2014 +0000	Created changelog
+7b8bea8	Travis CI	Thu Dec 18 09:46:12 2014 +0000	Set build VERSION number build-feature/alias-cmds-87
+eae83d9	Travis CI	Thu Dec 18 09:45:02 2014 +0000	Created changelog
+79899d5	Travis CI	Thu Dec 18 09:45:02 2014 +0000	Set build VERSION number build-develop-88
+c546515	Eddie Abou-Jaoude	Thu Dec 18 09:42:51 2014 +0000	Merge 691827f3e389525af89605c1f457e5f05f53b46e into c7fb4e1ec66c2a9f7eac37d2dedb0c8721d4515a
+691827f	Eddie Jaoude	Thu Dec 18 09:42:45 2014 +0000	Removed remaining config for `swiftmailer`
+a65f0c4	Travis CI	Thu Dec 18 09:38:54 2014 +0000	Created changelog
+2af4bff	Travis CI	Thu Dec 18 09:38:54 2014 +0000	Set build VERSION number build-develop-86
+d76b469	Travis CI	Thu Dec 18 09:38:46 2014 +0000	Created changelog
+4251745	Travis CI	Thu Dec 18 09:38:46 2014 +0000	Set build VERSION number build-feature/alias-cmds-85
+f6c4360	Eddie Abou-Jaoude	Thu Dec 18 09:36:30 2014 +0000	Merge 1119d83f9b7a028814105aa023accd75d129b1b3 into c7fb4e1ec66c2a9f7eac37d2dedb0c8721d4515a
+1119d83	Eddie Jaoude	Thu Dec 18 09:36:25 2014 +0000	Remove Swift mailer as Frontend not required
+0153cb1	Eddie Jaoude	Thu Dec 18 09:33:11 2014 +0000	Removed Doctrine as Frontend will not require it
+f8493ce	Travis CI	Thu Dec 18 09:21:12 2014 +0000	Created changelog
+35eec68	Travis CI	Thu Dec 18 09:21:12 2014 +0000	Set build VERSION number build-feature/alias-cmds-83
+78b492f	Travis CI	Thu Dec 18 09:21:02 2014 +0000	Created changelog
+f869aa9	Travis CI	Thu Dec 18 09:21:02 2014 +0000	Set build VERSION number build-develop-84
+6497415	Eddie Abou-Jaoude	Thu Dec 18 09:19:16 2014 +0000	Merge f32be10b82ca3ab927d149444c4957bdba897fb0 into c7fb4e1ec66c2a9f7eac37d2dedb0c8721d4515a
+f32be10	Eddie Jaoude	Thu Dec 18 09:19:11 2014 +0000	Updated Version file name in main Makefile
+a2d0ac7	Eddie Jaoude	Thu Dec 18 09:14:31 2014 +0000	Updated PHPSpec Code Coverage report whitelist
+e58eb74	Eddie Jaoude	Thu Dec 18 09:14:09 2014 +0000	Implemented Version service in App & Template
+6d8e694	Eddie Jaoude	Thu Dec 18 09:13:36 2014 +0000	Version service & Spec Test
+47df3b7	Eddie Jaoude	Thu Dec 18 09:12:51 2014 +0000	Removed PHPSpec example Entity & Spec Test
+2756442	Eddie Jaoude	Thu Dec 18 08:05:54 2014 +0000	Override  build.version.* for packaging
+8d76dd2	Travis CI	Wed Dec 17 15:38:36 2014 +0000	Web assets added
+6e9af00	Travis CI	Wed Dec 17 15:38:34 2014 +0000	Created changelog
+0b1cb3a	Travis CI	Wed Dec 17 15:38:34 2014 +0000	Set build VERSION number build-develop-79
+cda02cc	Travis CI	Wed Dec 17 15:37:57 2014 +0000	Web assets added
+e1a0945	Travis CI	Wed Dec 17 15:37:54 2014 +0000	Created changelog
+b59b10a	Travis CI	Wed Dec 17 15:37:54 2014 +0000	Set build VERSION number build-master-78
+799d4d1	Travis CI	Wed Dec 17 15:35:45 2014 +0000	Web assets added
+d72b662	Travis CI	Wed Dec 17 15:35:43 2014 +0000	Created changelog
+4403bd9	Travis CI	Wed Dec 17 15:35:43 2014 +0000	Set build VERSION number build-develop-paull-77
+706fbc9	Paul Littlebury	Wed Dec 17 15:34:28 2014 +0000	Merge 7fcbc4ba073ff05e834921462b10db77454b02ad into c7fb4e1ec66c2a9f7eac37d2dedb0c8721d4515a
+6745c97	Paul Littlebury	Wed Dec 17 15:33:29 2014 +0000	Merge 7fcbc4ba073ff05e834921462b10db77454b02ad into 4ba39e65bfdbad03d8bd6e6a3fbd11c09e247e03
+7fcbc4b	jaffamonkey	Wed Dec 17 15:32:59 2014 +0000	updates to remove errorneous files
+becd221	Mike Whiting	Wed Dec 17 13:16:03 2014 +0000	Set build VERSION number build--
+e590264	Travis CI	Wed Dec 17 12:21:28 2014 +0000	Web assets added
+453241a	Travis CI	Wed Dec 17 12:21:25 2014 +0000	Created changelog
+80f77d2	Travis CI	Wed Dec 17 12:21:25 2014 +0000	Set build VERSION number build-feature/craueform-spike-74
+1ad2ee2	Mike Whiting	Wed Dec 17 12:18:49 2014 +0000	adding redirects toggle control for demoing.
+d8b4cab	Travis CI	Wed Dec 17 11:54:58 2014 +0000	Web assets added
+f4ac478	Travis CI	Wed Dec 17 11:54:56 2014 +0000	Created changelog
+cc065de	Travis CI	Wed Dec 17 11:54:56 2014 +0000	Set build VERSION number build-develop-73
+c7fb4e1	Eddie Abou-Jaoude	Wed Dec 17 11:53:02 2014 +0000	Updated Demo link information
+475635b	Travis CI	Wed Dec 17 11:24:20 2014 +0000	Web assets added
+6698eaf	Travis CI	Wed Dec 17 11:24:18 2014 +0000	Created changelog
+184d904	Travis CI	Wed Dec 17 11:24:18 2014 +0000	Set build VERSION number build-feature/craueform-spike-72
+df4bd35	Mike Whiting	Wed Dec 17 11:21:37 2014 +0000	small fix (allow user to reach end of form and prevent redirect).
+3e7005c	Eddie Jaoude	Wed Dec 17 08:05:59 2014 +0000	Get composer & install dependencies
+5165ede	Eddie Jaoude	Wed Dec 17 08:05:03 2014 +0000	Revert "Can not use Alias CMDs with Deps"
+1fc7ab5	Eddie Jaoude	Wed Dec 17 07:59:14 2014 +0000	Can not use Alias CMDs with Deps
+949fd48	Eddie Jaoude	Wed Dec 17 07:55:21 2014 +0000	Symfony generated file updated
+54c7763	Eddie Jaoude	Wed Dec 17 07:55:04 2014 +0000	Updated Dependencies
+4f3e250	Eddie Jaoude	Wed Dec 17 07:23:10 2014 +0000	Updated TravisCI config file to use std alias CMDs
+ba4046d	Eddie Jaoude	Wed Dec 17 07:22:48 2014 +0000	Updated Make file to use standard Alias library
+dcb295f	Eddie Jaoude	Wed Dec 17 07:22:20 2014 +0000	Override default commands
+5f72fc2	Eddie Jaoude	Wed Dec 17 07:21:57 2014 +0000	Dev alias commands moved to `dev` file
+b512d4f	Travis CI	Wed Dec 17 06:40:40 2014 +0000	Web assets added
+90fdf37	Travis CI	Wed Dec 17 06:40:38 2014 +0000	Created changelog
+b083f8f	Travis CI	Wed Dec 17 06:40:38 2014 +0000	Set build VERSION number build-develop-64
+b83d5e8	Eddie Abou-Jaoude	Wed Dec 17 06:39:10 2014 +0000	Merge 14aa0bc1359f6286f7bba7cb183030fa93ce8475 into cc99e61ecf84a1f11b97bf379923c010ee0e14a6
+9275a69	Travis CI	Wed Dec 17 06:12:35 2014 +0000	Web assets added
+a9d384a	Travis CI	Wed Dec 17 06:12:33 2014 +0000	Created changelog
+f5ae125	Travis CI	Wed Dec 17 06:12:33 2014 +0000	Set build VERSION number build-feature/alias-cmds-63
+14aa0bc	Eddie Jaoude	Wed Dec 17 06:10:54 2014 +0000	Updated Deps & added Cmd aliases
+1abbdd6	Travis CI	Tue Dec 16 17:55:43 2014 +0000	Web assets added
+3b4e9ef	Travis CI	Tue Dec 16 17:55:41 2014 +0000	Created changelog
+ce0920d	Travis CI	Tue Dec 16 17:55:41 2014 +0000	Set build VERSION number build-feature/craueform-spike-62
+ce78d10	Mike Whiting	Tue Dec 16 17:47:38 2014 +0000	CSR-110: overriding storage mechanism (proof of concept).
+f3caf05	Travis CI	Tue Dec 16 15:31:12 2014 +0000	Web assets added
+0eb2483	Travis CI	Tue Dec 16 15:31:09 2014 +0000	Created changelog
+7427d15	Travis CI	Tue Dec 16 15:31:09 2014 +0000	Set build VERSION number build-feature/craueform-spike-61
+f06845a	Mike Whiting	Tue Dec 16 15:26:07 2014 +0000	CSR-108: making sure the user can navigate forward/back and reset with url redirection intact.
+ffd965d	Travis CI	Tue Dec 16 13:06:25 2014 +0000	Web assets added
+10bcb8c	Travis CI	Tue Dec 16 13:06:23 2014 +0000	Created changelog
+1266fa8	Travis CI	Tue Dec 16 13:06:23 2014 +0000	Set build VERSION number build-develop-60
+23aa142	Travis CI	Tue Dec 16 13:06:19 2014 +0000	Web assets added
+0d8ee28	Travis CI	Tue Dec 16 13:06:17 2014 +0000	Created changelog
+7ac2ff1	Travis CI	Tue Dec 16 13:06:17 2014 +0000	Set build VERSION number build-feature/documentation-dod-59
+c36abda	Eddie Abou-Jaoude	Tue Dec 16 13:04:31 2014 +0000	Merge 648bb16c1f0808a4ebbe233c50487c1e3f10ae02 into cc99e61ecf84a1f11b97bf379923c010ee0e14a6
+648bb16	Eddie Jaoude	Tue Dec 16 13:04:26 2014 +0000	DoD referencing Transform template doc
+9ece6ae	Travis CI	Tue Dec 16 12:59:10 2014 +0000	Web assets added
+857e88f	Travis CI	Tue Dec 16 12:59:07 2014 +0000	Created changelog
+4b4f9da	Travis CI	Tue Dec 16 12:59:07 2014 +0000	Set build VERSION number build-feature/documentation-contributing-57
+f52fc64	Travis CI	Tue Dec 16 12:58:43 2014 +0000	Web assets added
+33b27e5	Travis CI	Tue Dec 16 12:58:41 2014 +0000	Created changelog
+9d3ab22	Travis CI	Tue Dec 16 12:58:41 2014 +0000	Set build VERSION number build-develop-58
+55508b0	Eddie Abou-Jaoude	Tue Dec 16 12:57:17 2014 +0000	Merge 17f8c12a71d71122c002a119ed7aa77cb9d1bc09 into cc99e61ecf84a1f11b97bf379923c010ee0e14a6
+17f8c12	Eddie Jaoude	Tue Dec 16 12:56:53 2014 +0000	Contributing docs referencing template repo
+42009f3	Travis CI	Mon Dec 15 15:52:14 2014 +0000	Web assets added
+4480162	Travis CI	Mon Dec 15 15:52:11 2014 +0000	Created changelog
+7e8e3ac	Travis CI	Mon Dec 15 15:52:11 2014 +0000	Set build VERSION number build-feature/craueform-spike-56
+2aaeff0	Mike Whiting	Mon Dec 15 15:35:27 2014 +0000	CSR-107: found mechanism that should work but has some caveats!
+7c5c2a0	Travis CI	Mon Dec 15 13:35:24 2014 +0000	Web assets added
+d55a669	Travis CI	Mon Dec 15 13:35:20 2014 +0000	Created changelog
+80a8f77	Travis CI	Mon Dec 15 13:35:20 2014 +0000	Set build VERSION number build-feature/craueform-spike-55
+ee42339	Mike Whiting	Mon Dec 15 13:31:15 2014 +0000	CSR-85: simplifying -> removing unnecessary services and extra abstract form type.
+12897a1	Travis CI	Mon Dec 15 12:42:43 2014 +0000	Web assets added
+807e336	Travis CI	Mon Dec 15 12:42:41 2014 +0000	Created changelog
+8d04dd0	Travis CI	Mon Dec 15 12:42:41 2014 +0000	Set build VERSION number build-feature/craueform-spike-54
+dcdae07	Mike Whiting	Mon Dec 15 12:40:14 2014 +0000	CSR-85: initial demo working end-to-end.. no validation at model layer.. is this what we want?
+b2530d9	Travis CI	Fri Dec 12 12:29:46 2014 +0000	Web assets added
+ada102f	Travis CI	Fri Dec 12 12:29:44 2014 +0000	Created changelog
+5997735	Travis CI	Fri Dec 12 12:29:44 2014 +0000	Set build VERSION number build-feature/craueform-spike-53
+2bd7a72	Mike Whiting	Fri Dec 12 12:28:04 2014 +0000	CSR-85: working towards demo - doctrine needs disabling completely to prevent PDO exceptions? :/
+38dc943	Travis CI	Fri Dec 12 11:54:07 2014 +0000	Web assets added
+8225def	Travis CI	Fri Dec 12 11:54:04 2014 +0000	Created changelog
+9612b87	Travis CI	Fri Dec 12 11:54:04 2014 +0000	Set build VERSION number build-develop-52
+cc99e61	Mike Whiting	Fri Dec 12 11:52:16 2014 +0000	Merge pull request #7 from TransformCore/hotfix/git-version-toolbar
+a39b36f	Travis CI	Fri Dec 12 08:52:55 2014 +0000	Web assets added
+6dc0fac	Travis CI	Fri Dec 12 08:52:53 2014 +0000	Created changelog
+659fcc9	Travis CI	Fri Dec 12 08:52:53 2014 +0000	Set build VERSION number build-hotfix/git-version-toolbar-50
+811f224	Travis CI	Fri Dec 12 08:52:15 2014 +0000	Web assets added
+0ea1084	Travis CI	Fri Dec 12 08:52:12 2014 +0000	Created changelog
+359884f	Travis CI	Fri Dec 12 08:52:12 2014 +0000	Set build VERSION number build-develop-51
+138ae8b	Eddie Abou-Jaoude	Fri Dec 12 08:51:07 2014 +0000	Merge 10791ba3245028772619b1dc32f15da01dd219b0 into 7f86a34deac0b8a60aa96b3deb586a7775c87959
+10791ba	Eddie Jaoude	Fri Dec 12 08:49:54 2014 +0000	Removed Toolbar Git bundle after upgrade SF v2.6
+6263805	Travis CI	Thu Dec 11 18:00:25 2014 +0000	Web assets added
+d7a2e30	Travis CI	Thu Dec 11 18:00:22 2014 +0000	Created changelog
+e75ded6	Travis CI	Thu Dec 11 18:00:22 2014 +0000	Set build VERSION number build-develop-49
+cbc5fe5	Travis CI	Thu Dec 11 18:00:06 2014 +0000	Web assets added
+a690c5e	Travis CI	Thu Dec 11 18:00:04 2014 +0000	Created changelog
+9fd82ed	Travis CI	Thu Dec 11 18:00:04 2014 +0000	Set build VERSION number build-feature/craueform-spike-48
+afc8d45	Mike Whiting	Thu Dec 11 17:48:02 2014 +0000	Merge 5ed0de1ca9baf832b6c4b777a8f66540087aa2ab into 7f86a34deac0b8a60aa96b3deb586a7775c87959
+5ed0de1	Mike Whiting	Thu Dec 11 17:47:50 2014 +0000	CSR-85: working towards demo.
+9a84aab	Travis CI	Thu Dec 11 17:33:34 2014 +0000	Web assets added
+3c40c63	Travis CI	Thu Dec 11 17:33:31 2014 +0000	Created changelog
+78b4833	Travis CI	Thu Dec 11 17:33:31 2014 +0000	Set build VERSION number build-feature/craueform-spike-46
+8002597	Travis CI	Thu Dec 11 17:33:05 2014 +0000	Web assets added
+a90b8ee	Travis CI	Thu Dec 11 17:33:02 2014 +0000	Created changelog
+0f41320	Travis CI	Thu Dec 11 17:33:02 2014 +0000	Set build VERSION number build-develop-47
+c97556d	Travis CI	Thu Dec 11 17:32:16 2014 +0000	Web assets added
+93b595b	Travis CI	Thu Dec 11 17:32:14 2014 +0000	Created changelog
+984eeef	Travis CI	Thu Dec 11 17:32:14 2014 +0000	Set build VERSION number build-feature/craueform-spike-44
+d6d3fae	Travis CI	Thu Dec 11 17:28:16 2014 +0000	Web assets added
+80c148e	Travis CI	Thu Dec 11 17:28:14 2014 +0000	Created changelog
+5b1050f	Travis CI	Thu Dec 11 17:28:14 2014 +0000	Set build VERSION number build-develop-45
+77a97c6	Mike Whiting	Thu Dec 11 17:21:23 2014 +0000	Merge 251b303aae621cf9162a5ecd5d60503ebac7abb0 into 7f86a34deac0b8a60aa96b3deb586a7775c87959
+251b303	Mike Whiting	Thu Dec 11 17:21:13 2014 +0000	CSR-85: adding pseudo entity.
+3be2f0e	Mike Whiting	Thu Dec 11 17:16:10 2014 +0000	CSR-85: adding pseudo entity.
+74123a4	Travis CI	Thu Dec 11 17:15:57 2014 +0000	Web assets added
+53a92bd	Travis CI	Thu Dec 11 17:15:54 2014 +0000	Created changelog
+0531a7d	Travis CI	Thu Dec 11 17:15:54 2014 +0000	Set build VERSION number build-feature/craueform-spike-42
+34efd80	Travis CI	Thu Dec 11 17:15:41 2014 +0000	Web assets added
+612706f	Travis CI	Thu Dec 11 17:15:37 2014 +0000	Created changelog
+ba470be	Travis CI	Thu Dec 11 17:15:37 2014 +0000	Set build VERSION number build-develop-43
+f867971	Mike Whiting	Thu Dec 11 17:01:40 2014 +0000	Merge 718676d6f9bc28c74556e6972c844b155154be02 into 7f86a34deac0b8a60aa96b3deb586a7775c87959
+718676d	Mike Whiting	Thu Dec 11 17:01:28 2014 +0000	CSR-85: working towards basic demo.
+0eed7f5	Travis CI	Wed Dec 10 17:36:15 2014 +0000	Web assets added
+01d55ad	Travis CI	Wed Dec 10 17:36:13 2014 +0000	Created changelog
+953338e	Travis CI	Wed Dec 10 17:36:13 2014 +0000	Set build VERSION number build-feature/craueform-spike-40
+ecc4aee	Mike Whiting	Wed Dec 10 17:23:57 2014 +0000	CSR-85: working towards a working demo.
+9762cf1	Travis CI	Wed Dec 10 16:06:44 2014 +0000	Web assets added
+dfa6db6	Travis CI	Wed Dec 10 16:06:41 2014 +0000	Created changelog
+da25758	Travis CI	Wed Dec 10 16:06:41 2014 +0000	Set build VERSION number build-develop-39
+cc2de23	Travis CI	Wed Dec 10 16:04:33 2014 +0000	Web assets added
+325b2cb	Travis CI	Wed Dec 10 16:04:31 2014 +0000	Created changelog
+fad4144	Travis CI	Wed Dec 10 16:04:31 2014 +0000	Set build VERSION number build-feature/documentation-dod-38
+84f6082	Travis CI	Wed Dec 10 15:59:33 2014 +0000	Web assets added
+2cbaf55	Travis CI	Wed Dec 10 15:59:30 2014 +0000	Created changelog
+d46b810	Travis CI	Wed Dec 10 15:59:30 2014 +0000	Set build VERSION number build-develop-35
+eb72698	Travis CI	Wed Dec 10 15:59:08 2014 +0000	Web assets added
+be1552a	Travis CI	Wed Dec 10 15:59:06 2014 +0000	Created changelog
+f59cb99	Travis CI	Wed Dec 10 15:59:06 2014 +0000	Set build VERSION number build-develop-37
+4732891	Travis CI	Wed Dec 10 15:57:40 2014 +0000	Web assets added
+4a65da8	Travis CI	Wed Dec 10 15:57:38 2014 +0000	Created changelog
+4fd8b8b	Travis CI	Wed Dec 10 15:57:38 2014 +0000	Set build VERSION number build-feature/documentation-dod-36
+47e2fe4	Travis CI	Wed Dec 10 15:55:43 2014 +0000	Web assets added
+200d8f8	Travis CI	Wed Dec 10 15:55:41 2014 +0000	Created changelog
+caf6bf0	Travis CI	Wed Dec 10 15:55:41 2014 +0000	Set build VERSION number build-develop-33
+5fd41b6	Travis CI	Wed Dec 10 15:55:17 2014 +0000	Web assets added
+b62bc81	Travis CI	Wed Dec 10 15:55:15 2014 +0000	Created changelog
+dda4a7c	Travis CI	Wed Dec 10 15:55:15 2014 +0000	Set build VERSION number build-feature/documentation-dod-34
+583c806	Travis CI	Wed Dec 10 15:48:03 2014 +0000	Web assets added
+8425cb5	Travis CI	Wed Dec 10 15:48:02 2014 +0000	Created changelog
+ec300c5	Travis CI	Wed Dec 10 15:48:02 2014 +0000	Set build VERSION number build-feature/documentation-dod-32
+5f1c1e1	Travis CI	Wed Dec 10 15:47:11 2014 +0000	Web assets added
+8907d23	Travis CI	Wed Dec 10 15:47:08 2014 +0000	Created changelog
+ac2cbdf	Travis CI	Wed Dec 10 15:47:08 2014 +0000	Set build VERSION number build-develop-30
+59268f0	Travis CI	Wed Dec 10 15:46:14 2014 +0000	Web assets added
+c75af46	Travis CI	Wed Dec 10 15:46:12 2014 +0000	Created changelog
+5d6d0d6	Travis CI	Wed Dec 10 15:46:12 2014 +0000	Set build VERSION number build-feature/craueform-spike-31
+e11b6e9	Travis CI	Wed Dec 10 15:45:42 2014 +0000	Web assets added
+8bda467	Travis CI	Wed Dec 10 15:45:40 2014 +0000	Created changelog
+fbc5cb4	Travis CI	Wed Dec 10 15:45:40 2014 +0000	Set build VERSION number build-feature/documentation-dod-29
+acb843c	Eddie Abou-Jaoude	Wed Dec 10 15:44:09 2014 +0000	Merge 84328452e6bbe867827925974b02150c2b61eb0c into 7f86a34deac0b8a60aa96b3deb586a7775c87959
+8432845	Tom Ruppel	Wed Dec 10 15:44:08 2014 +0000	Typo fix
+dffb909	Eddie Jaoude	Wed Dec 10 15:42:08 2014 +0000	Formatting updated
+28bbc74	Eddie Jaoude	Wed Dec 10 15:40:24 2014 +0000	Used step numbers for sections of list
+79f872d	Eddie Jaoude	Wed Dec 10 15:39:19 2014 +0000	Updated indentation on list
+52ad307	Mike Whiting	Wed Dec 10 15:36:56 2014 +0000	CSR-85: adding craue bundle dependencies.
+fc1e951	Eddie Jaoude	Wed Dec 10 15:35:01 2014 +0000	Initial stage of Definition of Done
+87e75ce	Travis CI	Wed Dec 10 15:28:16 2014 +0000	Web assets added
+3e0e1f5	Travis CI	Wed Dec 10 15:28:14 2014 +0000	Created changelog
+e0d5dbd	Travis CI	Wed Dec 10 15:28:14 2014 +0000	Set build VERSION number build-feature/craueform-spike-28
+a6a0f6e	Travis CI	Wed Dec 10 15:15:46 2014 +0000	Web assets added
+c3a5f95	Travis CI	Wed Dec 10 15:15:43 2014 +0000	Created changelog
+db2e245	Travis CI	Wed Dec 10 15:15:43 2014 +0000	Set build VERSION number build-develop-27
+7a971b4	Travis CI	Wed Dec 10 15:11:02 2014 +0000	Web assets added
+5088e10	Travis CI	Wed Dec 10 15:11:00 2014 +0000	Created changelog
+7b163cc	Travis CI	Wed Dec 10 15:11:00 2014 +0000	Set build VERSION number build-develop-26
+7f86a34	jaffamonkey	Wed Dec 10 15:07:51 2014 +0000	removed erroneous reference to SharedContext in behat.yml
+2a8299e	Mike Whiting	Wed Dec 10 15:03:27 2014 +0000	Merge pull request #4 from TransformCore/feature/updated-dependencies
+5bd42fd	Travis CI	Wed Dec 10 14:56:44 2014 +0000	Web assets added
+7bc41d0	Travis CI	Wed Dec 10 14:56:41 2014 +0000	Created changelog
+178ebfc	Travis CI	Wed Dec 10 14:56:41 2014 +0000	Set build VERSION number build-feature/updated-dependencies-24
+e4324b5	Travis CI	Wed Dec 10 14:56:02 2014 +0000	Web assets added
+05dbb85	Travis CI	Wed Dec 10 14:56:00 2014 +0000	Created changelog
+194af32	Travis CI	Wed Dec 10 14:56:00 2014 +0000	Set build VERSION number build-develop-25
+4f3b463	Eddie Abou-Jaoude	Wed Dec 10 14:50:27 2014 +0000	Merge e8bc04fa42c788c6150ec297a8a4ed656c1b34d7 into 06cdc585da142bba9db6c414fd7fbf475b940d43
+e8bc04f	Eddie Jaoude	Wed Dec 10 14:50:21 2014 +0000	Fixed Deps conflict & removed unused file
+5bd7ad9	Travis CI	Wed Dec 10 14:41:03 2014 +0000	Web assets added
+b67ac73	Travis CI	Wed Dec 10 14:41:01 2014 +0000	Created changelog
+77636c6	Travis CI	Wed Dec 10 14:41:01 2014 +0000	Set build VERSION number build-develop-23
+a8b3720	Travis CI	Wed Dec 10 14:38:16 2014 +0000	Web assets added
+da1cacc	Travis CI	Wed Dec 10 14:38:14 2014 +0000	Created changelog
+9bc19c7	Travis CI	Wed Dec 10 14:38:14 2014 +0000	Set build VERSION number build-develop-22
+06cdc58	jaffamonkey	Wed Dec 10 14:37:41 2014 +0000	corrected report output directory struture
+16f2121	jaffamonkey	Wed Dec 10 14:35:31 2014 +0000	cleaned up test gherkin and report location
+74c8fe6	Travis CI	Wed Dec 10 14:28:15 2014 +0000	Web assets added
+b2ba6ea	Travis CI	Wed Dec 10 14:28:14 2014 +0000	Created changelog
+6edf225	Travis CI	Wed Dec 10 14:28:13 2014 +0000	Set build VERSION number build-develop-21
+8bbffa9	jaffamonkey	Wed Dec 10 14:26:03 2014 +0000	added behat code and updated behat.yml to use more test clients and composer.json with required extensions
+0e9dc41	Travis CI	Wed Dec 10 14:14:46 2014 +0000	Web assets added
+ba529e6	Travis CI	Wed Dec 10 14:14:44 2014 +0000	Created changelog
+4939f85	Travis CI	Wed Dec 10 14:14:44 2014 +0000	Set build VERSION number build-develop-20
+0ae6c9b	Eddie Abou-Jaoude	Wed Dec 10 14:11:10 2014 +0000	Merge d7329467507fa78c85a42dc963fb6a8c64951112 into 8b353ddb088941c3c7d6cae426ecba76ac4ed44f
+c82bc78	Travis CI	Wed Dec 10 14:01:32 2014 +0000	Web assets added
+7660f7c	Travis CI	Wed Dec 10 14:01:30 2014 +0000	Created changelog
+180465e	Travis CI	Wed Dec 10 14:01:30 2014 +0000	Set build VERSION number build-feature/updated-dependencies-19
+d732946	Eddie Jaoude	Wed Dec 10 13:58:45 2014 +0000	Updated dependencies
+cc5c8fa	Travis CI	Wed Dec 10 12:55:25 2014 +0000	Web assets added
+38047d7	Travis CI	Wed Dec 10 12:55:22 2014 +0000	Created changelog
+7b85c00	Travis CI	Wed Dec 10 12:55:22 2014 +0000	Set build VERSION number build-develop-18
+8b353dd	Paul Littlebury	Wed Dec 10 12:53:08 2014 +0000	Merge pull request #2 from TransformCore/feature/git-pull-tags
+6afb82e	Travis CI	Wed Dec 10 12:46:14 2014 +0000	Web assets added
+defbc60	Travis CI	Wed Dec 10 12:46:12 2014 +0000	Created changelog
+3230864	Travis CI	Wed Dec 10 12:46:12 2014 +0000	Set build VERSION number build-develop-17
+51bea71	Eddie Abou-Jaoude	Wed Dec 10 12:43:40 2014 +0000	Merge 1fe5a8d94041a47a18fba4516022af7bd51e3606 into 0302f303cc34096f834379e403e882e3b1ea1d46
+9f75af8	Travis CI	Wed Dec 10 12:38:55 2014 +0000	Web assets added
+2931a1d	Travis CI	Wed Dec 10 12:38:52 2014 +0000	Created changelog
+0339222	Travis CI	Wed Dec 10 12:38:52 2014 +0000	Set build VERSION number build-develop-16
+45ac137	Eddie Abou-Jaoude	Wed Dec 10 12:36:36 2014 +0000	Merge 551ab622dbcf1ede61de1c15a0aceea241e803d4 into 0302f303cc34096f834379e403e882e3b1ea1d46
+fb330db	Travis CI	Wed Dec 10 12:36:18 2014 +0000	Web assets added
+4ecac68	Travis CI	Wed Dec 10 12:36:16 2014 +0000	Created changelog
+7b18e45	Travis CI	Wed Dec 10 12:36:16 2014 +0000	Set build VERSION number build-master-15
+b3160af	Eddie Abou-Jaoude	Wed Dec 10 12:35:00 2014 +0000	Merge 551ab622dbcf1ede61de1c15a0aceea241e803d4 into 4ba39e65bfdbad03d8bd6e6a3fbd11c09e247e03
+6c444f2	Travis CI	Wed Dec 10 12:33:14 2014 +0000	Web assets added
+9443931	Travis CI	Wed Dec 10 12:33:12 2014 +0000	Created changelog
+7aab367	Travis CI	Wed Dec 10 12:33:12 2014 +0000	Set build VERSION number build-feature/git-pull-tags-14
+551ab62	Eddie Jaoude	Wed Dec 10 12:31:51 2014 +0000	Updated dev commands to use Makefile
+c4a4e65	Travis CI	Sun Dec 7 08:45:20 2014 +0000	Web assets added
+b28fb58	Travis CI	Sun Dec 7 08:45:17 2014 +0000	Created changelog
+3a98e1b	Travis CI	Sun Dec 7 08:45:17 2014 +0000	Set build VERSION number build-documentation-pipeline-diagram-13
+d8eda9c	Travis CI	Sun Dec 7 08:44:38 2014 +0000	Web assets added
+30f1078	Travis CI	Sun Dec 7 08:44:36 2014 +0000	Created changelog
+7f753a6	Travis CI	Sun Dec 7 08:44:36 2014 +0000	Set build VERSION number build-documentation-pipeline-diagram-12
+1fe5a8d	Eddie Abou-Jaoude	Sun Dec 7 08:43:58 2014 +0000	Note for Peer Review / Pull Request diagram
+31e3483	Eddie Abou-Jaoude	Sun Dec 7 08:43:19 2014 +0000	Section titles & Key added for Swim lane diagram
+fb85eba	Travis CI	Sun Dec 7 08:18:57 2014 +0000	Web assets added
+055ac81	Travis CI	Sun Dec 7 08:18:55 2014 +0000	Created changelog
+297c6c5	Travis CI	Sun Dec 7 08:18:55 2014 +0000	Set build VERSION number build-documentation-pipeline-diagram-11
+a8f89b8	Eddie Abou-Jaoude	Sun Dec 7 08:17:49 2014 +0000	Added Travis to Slack notification
+2d7d8c4	Travis CI	Sat Dec 6 23:35:23 2014 +0000	Web assets added
+0a6ac59	Travis CI	Sat Dec 6 23:35:21 2014 +0000	Created changelog
+4db7047	Travis CI	Sat Dec 6 23:35:21 2014 +0000	Set build VERSION number build-documentation-pipeline-diagram-10
+dd62cad	Eddie Abou-Jaoude	Sat Dec 6 23:33:38 2014 +0000	Initial pipeline diagram for single developer
+f6804a7	Travis CI	Sat Dec 6 20:41:38 2014 +0000	Web assets added
+2adcfcb	Travis CI	Sat Dec 6 20:41:35 2014 +0000	Created changelog
+a1eb439	Travis CI	Sat Dec 6 20:41:35 2014 +0000	Set build VERSION number build-documentation-pipeline-diagram-9
+a4b1d7d	Travis CI	Sat Dec 6 19:54:44 2014 +0000	Web assets added
+145d9ba	Travis CI	Sat Dec 6 19:54:42 2014 +0000	Created changelog
+06ada4b	Travis CI	Sat Dec 6 19:54:42 2014 +0000	Set build VERSION number build-feature/deploy-to-specific-branch-8
+4a8d520	Eddie Jaoude	Sat Dec 6 19:52:31 2014 +0000	Deploying to difference ENVs depending on branch
+43c1510	Travis CI	Fri Dec 5 10:55:50 2014 +0000	Web assets added
+83f3a40	Travis CI	Fri Dec 5 10:55:48 2014 +0000	Created changelog
+5f039d7	Travis CI	Fri Dec 5 10:55:48 2014 +0000	Set build VERSION number build-develop-7
+0302f30	Eddie Jaoude	Fri Dec 5 10:54:03 2014 +0000	Fixed path issue for Contributing documentation
+8b21e6f	Travis CI	Fri Dec 5 10:35:54 2014 +0000	Web assets added
+322e903	Travis CI	Fri Dec 5 10:35:51 2014 +0000	Created changelog
+29750d7	Travis CI	Fri Dec 5 10:35:51 2014 +0000	Set build VERSION number build-develop-6
+fe27b7c	Eddie Jaoude	Fri Dec 5 10:32:42 2014 +0000	Updated Slack Token & Github Token for TravisCI
+5e9df71	Eddie Jaoude	Fri Dec 5 09:57:38 2014 +0000	Renamed Deployment App on Heroku
+f751793	Eddie Jaoude	Fri Dec 5 09:56:19 2014 +0000	Example Homepage & Account page using Bootstrap
+c5b7560	Eddie Jaoude	Thu Dec 4 14:55:18 2014 +0000	Ignoring web fonts files (web/fonts)
+93d9eb4	Eddie Jaoude	Thu Dec 4 14:53:27 2014 +0000	Updated badges & urls
+dcdebbb	Eddie Jaoude	Thu Dec 4 14:40:59 2014 +0000	Initial commit from Dial-Tone-Frontend repo
+4ba39e6	Rory Woodward	Tue Sep 30 12:03:58 2014 +0100	Update LICENSE
+fca9aa9	Rory Woodward	Tue Sep 30 12:02:33 2014 +0100	Initial commit
