@@ -178,13 +178,10 @@ class AccountController extends Controller
             );
         }
 
-        $profileForm = $this->createForm(new ProfileFormType(), $applicant);
-        $eligibilityForm = $this->createForm(new EligibilityFormType(), $eligibility);
-
         return $this->render(
             'TransformCoreAppBundle:Account:review.html.twig',
-            [ 'profileForm' => $profileForm->createView(),
-              'eligibilityForm' => $eligibilityForm->createView() ]
+            [ 'applicant' => $applicant,
+              'eligibility' => $eligibility ]
         );
     }
 

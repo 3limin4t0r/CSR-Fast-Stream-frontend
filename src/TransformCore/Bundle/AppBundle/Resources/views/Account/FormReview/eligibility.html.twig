@@ -1,0 +1,59 @@
+<h3 class="heading-medium">{% trans %}eligibility.title{% endtrans %}</h3>
+
+<table>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}nationality.name.title{% endtrans %}</th>
+            <td>{{ eligibility.presentNationality.name }}</td>
+        </tr>
+
+    </tbody>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}eligibility.subject-to-immigration-controls.title{% endtrans %}</th>
+            <td>{{ eligibility.isSubjectToImmigrationControls ? 'Yes' : 'No' }}</td>
+        </tr>
+
+        {% if eligibility.isSubjectToImmigrationControls %}
+
+            <tr>
+                <th>{% trans %}eligibility.subject-to-immigration-controls-details.title{% endtrans %}</th>
+                <td>{{ eligibility.subjectToImmigrationControlsDetails }}</td>
+            </tr>
+
+        {% endif %}
+
+        <tr>
+            <th>{% trans %}eligibility.residency-or-employment-restrictions.title{% endtrans %}</th>
+            <td>{{ eligibility.hasResidencyOrEmploymentRestrictions ? 'Yes' : 'No' }}</td>
+        </tr>
+
+        {% if eligibility.hasResidencyOrEmploymentRestrictions %}
+
+            <tr>
+                <th>{% trans %}eligibility.residency-or-employment-restrictions-details.title{% endtrans %}</th>
+                <td>{{ eligibility.residencyOrEmploymentRestrictionsDetails }}</td>
+            </tr>
+
+        {% endif %}
+
+    </tbody>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}eligibility.permission-to-check-background.title{% endtrans %}</th>
+            <td>{{ eligibility.hasPermissionToCheckBackground ? 'Yes' : 'No' }}</td>
+        </tr>
+
+    </tbody>
+
+</table>
+
+<p>
+    <a class="button" href="{{ path('transform_core_app_eligibility') }}">{% trans %}button.edit{% endtrans %}</a>
+</p>
