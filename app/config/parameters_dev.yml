@@ -20,6 +20,6 @@ parameters:
         base_url: http://127.0.0.1:8001
         defaults:
             headers:
-                Accept: application/json
+                Content-Type: application/json
 
     jms_serializer.camel_case_naming_strategy.class: JMS\Serializer\Naming\IdenticalPropertyNamingStrategy
