@@ -58,7 +58,6 @@ class Eligibility
     public function update($applicantId, EligibilityEntity $eligibility)
     {
         $endpoint = '/applicants/' . $applicantId . '/eligibility';
-
         $response = $this->client
             ->put(
                 $endpoint,
@@ -68,7 +67,6 @@ class Eligibility
                             array('csr_dm_user_eligibility' => $eligibility),
                             'json'
                         )
-
                 )
             );
     }
