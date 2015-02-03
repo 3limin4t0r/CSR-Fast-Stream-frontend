@@ -39,4 +39,4 @@ services:
 
   transform_core_app_main.service.http:
     class: GuzzleHttp\Client
-    arguments: [%api_url%]
+    arguments: [%api%]

@@ -23,7 +23,10 @@ parameters:
     debug_redirects:        false
     use_assetic_controller: true
 
-    api_url:
+    api:
         base_url: "%api.url%"
+        defaults:
+            headers:
+                Accept: application/json
 
     jms_serializer.camel_case_naming_strategy.class: JMS\Serializer\Naming\IdenticalPropertyNamingStrategy
