@@ -6,9 +6,9 @@ use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use GuzzleHttp\Client;
 use JMS\Serializer\Serializer;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility;
 
-class ApplicantsSpec extends ObjectBehavior
+class EligibilitySpec extends ObjectBehavior
 {
 
     function let(Client $client, Serializer $serializer)
@@ -18,18 +18,17 @@ class ApplicantsSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('TransformCore\Bundle\AppBundle\Service\Applicants');
+        $this->shouldHaveType('TransformCore\Bundle\AppBundle\Service\Eligibility');
     }
 
-    function it_gets_applicant_by_id(
+    function it_gets_applicant_by_id_eligibilty(
         Client $client,
         Serializer $serializer,
         \GuzzleHttp\Message\Response $response,
         \GuzzleHttp\Stream\Stream $stream
-    )
-    {
+    ) {
         $id = 123;
-        $jsonData = '{"applicant":{"id":1}}';
+        $jsonData = '{"eligibility":{"id":1}}';
 
         $stream
             ->getContents()
@@ -42,14 +41,14 @@ class ApplicantsSpec extends ObjectBehavior
             ->willReturn($stream);
 
         $client
-            ->get('/applicants/' . $id)
+            ->get('/applicants/' . $id . '/eligibility')
             ->shouldBeCalled()
             ->willReturn($response);
 
         $serializer
             ->deserialize(
-                json_encode(json_decode($jsonData)->applicant),
-                'TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant',
+                json_encode(json_decode($jsonData)->eligibility),
+                'TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility',
                 'json'
             )
             ->shouldBeCalled()
@@ -60,24 +59,22 @@ class ApplicantsSpec extends ObjectBehavior
         $this->getById($id);
     }
 
-    function it_updates_applicant(
+    function it_updates_eligibilty(
         Client $client,
         Serializer $serializer,
         \GuzzleHttp\Message\Response $response
-    )
-    {
-        $applicant = new Applicant();
-        $applicant->setId(123);
+    ) {
+        $applicantId = 123;
+        $eligibility = new Eligibility();
+        $eligibility->setId(123);
 
         $jsonData = '{"id":123}';
 
         $client
             ->put(
-                '/applicants/' . $applicant->getId(),
+                '/applicants/' . $applicantId . '/eligibility',
                 array(
-                    'body' => array(
-                        'csr_dm_user_profile' => json_decode($jsonData, true)
-                    )
+                    'body' => $jsonData
                 )
             )
             ->shouldBeCalled()
@@ -85,7 +82,7 @@ class ApplicantsSpec extends ObjectBehavior
 
         $serializer
             ->serialize(
-                $applicant,
+                array('csr_dm_user_eligibility' => $eligibility),
                 'json'
             )
             ->shouldBeCalled()
@@ -93,6 +90,6 @@ class ApplicantsSpec extends ObjectBehavior
 
         $this->beConstructedWith($client, $serializer);
 
-        $this->update($applicant);
+        $this->update($applicantId, $eligibility);
     }
 }
