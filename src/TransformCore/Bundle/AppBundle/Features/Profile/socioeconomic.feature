@@ -51,4 +51,3 @@ Feature: As an applicant after logging in I want to see my homepage
     Then I should see "Socio Economic Details"
     And I press "Save and continue"
     Then count of "10" instances of "This value should not be blank" exists on page
-  
