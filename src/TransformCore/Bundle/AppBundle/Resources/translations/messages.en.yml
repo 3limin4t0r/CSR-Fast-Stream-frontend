@@ -16,7 +16,7 @@ form:
 
 login:
   title: Login
-  subtitle: Register Your Details
+  subtitle: Login
   form:
     username:
       label: Email address
@@ -27,7 +27,7 @@ login:
 
 register:
   title: Register
-  subtitle: Register Your Details
+  subtitle: Register your details
   form:
     firstname:
       label: First Name
@@ -87,6 +87,7 @@ guaranteedInterviewScheme:
   title: Guaranteed Interview Scheme
 
 account:
+  breadcrumb: My Account
   title: My Account
   overview: Overview
 
@@ -174,7 +175,9 @@ education:
     label: "Save and continue"
 
 eligibility:
-  title: Eligibility
+  breadcrumb: Eligibility
+  title: Nationality, Immigration and Employment Restrictions
+  step: Step 2 of 5
   subject-to-immigration-controls:
     label: Please check whether or not you are subject to immigration controls
   subject-to-immigration-controls-details:
@@ -191,19 +194,24 @@ eligibility:
 
 nationality:
   name:
-    label: Nationality
+    label: Present nationality
 
 profile:
-  title: Profile
+  breadcrumb: About you
+  title: About you
+  step: Step 1 of 5
+  introduction: Please let us know your contact details. Note that you can change these at any time during the application process.
+  name-group:
+    legend: Your name
   form:
     dateOfBirth:
       label: Date of Birth
     updateButton:
-      label: Save and Continue
+      label: Save and continue
 
 phone-number:
   number:
-    label: Number
+    label: Daytime contact number
 
 diversity:
   title: Diversity
@@ -222,7 +230,7 @@ diversity:
     maritalStatus:
       label: Please select your marital status.
     updateButton:
-      label: Save and Continue
+      label: Save and continue
 
 socioEconomic:
   form:
@@ -231,7 +239,7 @@ socioEconomic:
     firstPersonInImmediateFamilyToAttendUniversity:
       label: Please indicate whether you were the first person in your immediate family to attend University.
     eligibleForFreeSchoolMeals:
-      label: Please indicate whether you were eligible for free school meals:
+      label: Please indicate whether you were eligible for free school meals
     everSpentMoreThanThreeMonthsInCare:
       label: Have you ever personally spent longer than three months in care?
     everPersonallyHadRefugeeOrAsylumStatus:
