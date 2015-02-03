@@ -1,0 +1,45 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+
+    {% trans %}review.title{% endtrans %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+
+    <div id="global-breadcrumb" class="header-context">
+
+        <nav role="navigation">
+            <ol class="group">
+                <li><a href="{{ path('transform_core_app_account') }}">{% trans %}account.breadcrumb{% endtrans %}</a></li>
+                <li><a href="{{ path('transform_core_app_profile_edit') }}">{% trans %}profile.breadcrumb{% endtrans %}</a></li>
+                <li><a href="{{ path('transform_core_app_eligibility') }}">{% trans %}eligibility.breadcrumb{% endtrans %}</a></li>
+                <li><a href="#">{% trans %}education.breadcrumb{% endtrans %}</a></li>
+                <li><a href="{{ path('transform_core_app_diversity') }}">{% trans %}diversity.breadcrumb{% endtrans %}</a></li>
+                <li class="active">{% trans %}review.breadcrumb{% endtrans %}</li>
+            </ol>
+        </nav>
+    
+    </div>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="review">
+
+        {% include 'TransformCoreAppBundle:Account:FormReview/profile.html.twig' %}
+        {% include 'TransformCoreAppBundle:Account:FormReview/eligibility.html.twig' %}
+        {% include 'TransformCoreAppBundle:Account:FormReview/diversity.html.twig' %}
+        
+        <p class="submit"><a class="button" href="{{ path('transform_core_app_account') }}">{% trans %}button.submit{% endtrans %}</a></p>
+
+        <style scoped>
+            .heading a.button { float: right; font-size: 90%; margin-top: -3.2em; }
+            .submit { margin-top: 3em; }
+        </style>
+
+    </div>
+
+{% endblock %}
