@@ -4,49 +4,38 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aa5264592e098ee4ee53e704212f8d11",
+    "hash": "6897c6026d96795004715cd87793c957",
     "packages": [
         {
-            "name": "braincrafted/bootstrap-bundle",
-            "version": "v2.1.1",
-            "target-dir": "Braincrafted/Bundle/BootstrapBundle",
+            "name": "adamquaile/symfony-fieldset-bundle",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/braincrafted/bootstrap-bundle.git",
-                "reference": "2dc17466f95a035869b51c845024f6a92bc1d6d1"
+                "url": "https://github.com/adamquaile/AdamQuaileFieldsetBundle.git",
+                "reference": "cd1e3831014cb8d9f0b71813750b9df715458122"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/braincrafted/bootstrap-bundle/zipball/2dc17466f95a035869b51c845024f6a92bc1d6d1",
-                "reference": "2dc17466f95a035869b51c845024f6a92bc1d6d1",
+                "url": "https://api.github.com/repos/adamquaile/AdamQuaileFieldsetBundle/zipball/cd1e3831014cb8d9f0b71813750b9df715458122",
+                "reference": "cd1e3831014cb8d9f0b71813750b9df715458122",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
-                "symfony/console": "~2.3",
-                "symfony/finder": "~2.3",
-                "symfony/form": "~2.3",
-                "symfony/framework-bundle": "~2.3",
-                "symfony/twig-bundle": "~2.3"
+                "php": ">=5.3.3"
             },
             "require-dev": {
-                "knplabs/knp-menu": "~2.0@alpha",
-                "knplabs/knp-menu-bundle": "~2.0@alpha",
-                "knplabs/knp-paginator-bundle": "dev-master",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "3.7.*",
-                "symfony/assetic-bundle": "~2.3"
-            },
-            "suggest": {
-                "knplabs/knp-menu": "Required to use KnpMenuBundle.",
-                "knplabs/knp-menu-bundle": "BraincraftedBootstrapBundle styles the menus provided by KnpMenuBundle.",
-                "knplabs/knp-paginator-bundle": "BraincraftedBootstrapBundle styles the pagination provided by KnpPaginatorBundle.",
-                "twbs/bootstrap": "Twitter Bootstrap provides the assets (images, CSS and JS)"
+                "symfony/config": "~2.5.0",
+                "symfony/dependency-injection": "~2.5.0",
+                "symfony/form": "~2.5.0",
+                "symfony/http-kernel": "~2.5.0"
             },
             "type": "symfony-bundle",
             "autoload": {
-                "psr-0": {
-                    "Braincrafted\\Bundle\\BootstrapBundle": ""
+                "psr-4": {
+                    "AdamQuaile\\Bundle\\FieldsetBundle\\": [
+                        "",
+                        "Tests/"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -55,16 +44,17 @@
             ],
             "authors": [
                 {
-                    "name": "Florian Eckerstorfer",
-                    "email": "florian@eckerstorfer.co",
-                    "homepage": "http://florian.ec"
+                    "name": "Adam Quaile",
+                    "email": "adamquaile@gmail.com"
                 }
             ],
-            "description": "BraincraftedBootstrapBundle integrates Bootstrap into Symfony2 by providing templates, Twig extensions, services and commands.",
+            "description": "Fieldset Type in Symfony Forms",
             "keywords": [
-                "bootstrap"
+                "Forms",
+                "fieldset",
+                "symfony"
             ],
-            "time": "2015-01-31 10:32:31"
+            "time": "2014-11-07 19:30:22"
         },
         {
             "name": "doctrine/annotations",
@@ -2528,16 +2518,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "c34ef418015793a4653f2670afb69dd167ebf578"
+                "reference": "23b647f1e4eeb24a457d3c47f5f5046377d5a3bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/c34ef418015793a4653f2670afb69dd167ebf578",
-                "reference": "c34ef418015793a4653f2670afb69dd167ebf578",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/23b647f1e4eeb24a457d3c47f5f5046377d5a3bf",
+                "reference": "23b647f1e4eeb24a457d3c47f5f5046377d5a3bf",
                 "shasum": ""
             },
             "require": {
@@ -2640,7 +2630,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-01-07 14:47:29"
+            "time": "2015-02-02 18:02:30"
         },
         {
             "name": "transformcore/csr-fast-stream-domain-model",
@@ -2648,12 +2638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "6c4dd3ca85e9e29a0705d1d061fcc3339714659f"
+                "reference": "1d4ac3b55392a4437729d9346059ee824dec9ebe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/6c4dd3ca85e9e29a0705d1d061fcc3339714659f",
-                "reference": "6c4dd3ca85e9e29a0705d1d061fcc3339714659f",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/1d4ac3b55392a4437729d9346059ee824dec9ebe",
+                "reference": "1d4ac3b55392a4437729d9346059ee824dec9ebe",
                 "shasum": ""
             },
             "require": {
@@ -2679,58 +2669,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-02 17:31:50"
-        },
-        {
-            "name": "twbs/bootstrap",
-            "version": "v3.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
-                "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
-                "shasum": ""
-            },
-            "replace": {
-                "twitter/bootstrap": "self.version"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                },
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                }
-            ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "homepage": "http://getbootstrap.com",
-            "keywords": [
-                "JS",
-                "css",
-                "framework",
-                "front-end",
-                "less",
-                "mobile-first",
-                "responsive",
-                "web"
-            ],
-            "time": "2015-01-19 17:03:09"
+            "time": "2015-02-03 06:00:07"
         },
         {
             "name": "twig/extensions",
