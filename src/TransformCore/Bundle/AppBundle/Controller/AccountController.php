@@ -148,4 +148,38 @@ class AccountController extends Controller
             )
         );
     }
+
+    /**
+     * @param Request $request
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
+    public function socioeconomicAction(Request $request)
+    {
+//        $applicant = new Applicant();
+//
+//        $form = $this->createForm(new DiversityFormType(), $applicant);
+//        $form->handleRequest($request);
+//
+//        if ($form->isValid()) {
+//            $diversity = $form->getData();
+//
+//            $request->getSession()
+//                    ->getFlashBag()
+//                    ->add(
+//                        'success',
+//                        'Your changes were saved!'
+//                    );
+//
+//            return $this->redirect(
+//                $this->generateUrl('transform_core_app_diversity')
+//            );
+//        }
+
+        return $this->render('TransformCoreAppBundle:Account:socioeconomic.html.twig',
+            array(
+//                'form' => $form->createView(),
+            )
+        );
+    }
 }

@@ -159,6 +159,7 @@ diversity:
       label: Save and Continue
 
 socioEconomic:
+  title: Socio Economic Details - About your parents/guardians
   form:
     typeOfSchoolAttendanceAtFourteen:
       label: Please indicate the type of school you were attending on your 14th birthday.
