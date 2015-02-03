@@ -57,7 +57,7 @@ class Eligibility
      */
     public function update($applicantId, EligibilityEntity $eligibility)
     {
-        $endpoint = '/applicants/' . $applicantId . '/eligibility?XDEBUG_SESSION_START=6C2B4944';
+        $endpoint = '/applicants/' . $applicantId . '/eligibility';
         $payload = array(
                     'body' => $this->serializer
                         ->serialize(
