@@ -60,12 +60,12 @@
 
     (function ()
     {
-        var disabledAdjustmentRequiredController = 
+        var disabledAdjustmentRequiredTrigger = 
             $("#fos_user_registration_form_registered_disability_group_registration_disabledAdjustmentRequired");
 
         var disabledAdjustmentRequiredChangeObserver = function()
         {
-            if (disabledAdjustmentRequiredController.prop('checked')) {
+            if (disabledAdjustmentRequiredTrigger.prop('checked')) {
                 $("#disabled-adjustment-required-container").show();
             } else {
                 $("#disabled-adjustment-required-container").hide();
@@ -73,7 +73,7 @@
         }
 
         disabledAdjustmentRequiredChangeObserver();
-        disabledAdjustmentRequiredController.click(disabledAdjustmentRequiredChangeObserver);
+        disabledAdjustmentRequiredTrigger.click(disabledAdjustmentRequiredChangeObserver);
     })();
 
 </script>
