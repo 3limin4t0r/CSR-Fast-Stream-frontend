@@ -6,12 +6,22 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
             type: integer
         firstname:
             expose: true
+            type: string
         lastname:
             expose: true
-        phoneNumber:
-            expose: true
+            type: string
         dateOfBirth:
             expose: true
             type: DateTime<'Y-m-d'>
         address:
             expose: true
+            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Address
+        phoneNumber:
+            expose: true
+            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\PhoneNumber
+        registration:
+            expose: false
+            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Registration
+        eligibility:
+            expose: true
+            type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility
