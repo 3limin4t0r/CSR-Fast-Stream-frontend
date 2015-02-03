@@ -9,7 +9,7 @@ before_install:
 
 before_script:
   - curl -s http://getcomposer.org/installer | php
-  - php composer.phar install --dev --no-interaction
+  - php composer.phar install --dev --no-interaction --prefer-source
   # -------------- move to make command -----
   - git clone https://github.com/TransformCore/CSR-Fast-Stream-backend.git
   - cp composer.phar CSR-Fast-Stream-backend/

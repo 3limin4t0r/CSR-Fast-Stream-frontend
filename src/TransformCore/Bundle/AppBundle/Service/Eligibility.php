@@ -58,18 +58,19 @@ class Eligibility
     public function update($applicantId, EligibilityEntity $eligibility)
     {
         $endpoint = '/applicants/' . $applicantId . '/eligibility';
-
-        $response = $this->client
-            ->put(
-                $endpoint,
-                array(
+        $payload = array(
                     'body' => $this->serializer
                         ->serialize(
                             array('csr_dm_user_eligibility' => $eligibility),
                             'json'
                         )
 
-                )
+                );
+
+        $this->client
+            ->put(
+                $endpoint,
+                $payload
             );
     }
 }

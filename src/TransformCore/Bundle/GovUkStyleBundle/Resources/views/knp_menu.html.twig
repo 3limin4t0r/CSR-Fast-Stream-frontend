@@ -1,0 +1,14 @@
+{% extends 'knp_menu.html.twig' %}
+
+{% block label %}
+    {{ item.label|trans(item.getExtra('translation_params', {}), item.getExtra('translation_domain', 'messages')) }}
+{% endblock %}
+
+{% block list %}
+    {% if item.hasChildren and options.depth is not sameas(0) and item.displayChildren %}
+        {% import 'knp_menu.html.twig' as knp_menu %}
+        <ul id="proposition-links" {{ knp_menu.attributes(listAttributes) }}>
+            {{ block('children') }}
+        </ul>
+    {% endif %}
+{% endblock %}
