@@ -1,18 +1,20 @@
 {% extends "::base.html.twig" %}
 
 {% block title %}
-    {% trans %}profile.title{% endtrans %}
+    {% trans %}review.title{% endtrans %}
 {% endblock %}
 
 {% block breadcrumb %}
+
     <div class="row ">
         <ol class="breadcrumb">
             <li><a href="{{ path('transform_core_app_account') }}">{% trans %}account.title{% endtrans %}</a></li>
-            <li class="active">{% trans %}profile.title{% endtrans %}</li>
+            <li><a href="{{ path('transform_core_app_profile_edit') }}">{% trans %}profile.title{% endtrans %}</a></li>
             <li><a href="{{ path('transform_core_app_eligibility') }}">{% trans %}eligibility.title{% endtrans %}</a></li>
-            <li><a href="{{ path('transform_core_app_review') }}">{% trans %}review.title{% endtrans %}</a></li>
+            <li class="active">{% trans %}review.title{% endtrans %}</li>
         </ol>
     </div>
+
 {% endblock %}
 
 {% block body %}
@@ -20,7 +22,7 @@
     <div class="row">
 
         <div class="col-md-12">
-            <h2>{% trans %}profile.title{% endtrans %}</h2>
+            <h2>{% trans %}review.title{% endtrans %}</h2>
         </div>
 
     </div>
@@ -28,11 +30,11 @@
     <div class="row">
 
         <div class="col-md-12">
-            {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+            <h2>{% trans %}profile.title{% endtrans %}</h2>
+        </div>
 
-                {{ form_widget(form) }}
-
-            {{ form_end(form) }}
+        <div class="col-md-12">
+            <h2>{% trans %}eligibility.title{% endtrans %}</h2>
         </div>
 
     </div>
