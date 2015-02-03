@@ -70,4 +70,44 @@
 
     {{ form_end(form) }}
 
+    <script>
+
+        (function ()
+        {
+            var subjectToImmigrationControlsTrigger = 
+                $("#csr_dm_user_eligibility_immigration_group_subjectToImmigrationControls");
+
+            var subjectToImmigrationControlsChangeObserver = function()
+            {
+                if (subjectToImmigrationControlsTrigger.prop('checked')) {
+                    $("#csr_dm_user_eligibility_immigration_group_subjectToImmigrationControlsDetails").parent().show();
+                } else {
+                    $("#csr_dm_user_eligibility_immigration_group_subjectToImmigrationControlsDetails").parent().hide();
+                }
+            }
+
+            subjectToImmigrationControlsChangeObserver();
+            subjectToImmigrationControlsTrigger.click(subjectToImmigrationControlsChangeObserver);
+        })();
+
+        (function ()
+        {
+            var residencyOrEmploymentRestrictionsTrigger = 
+                $("#csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictions");
+
+            var residencyOrEmploymentRestrictionsChangeObserver = function()
+            {
+                if (residencyOrEmploymentRestrictionsTrigger.prop('checked')) {
+                    $("#csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictionsDetails").parent().show();
+                } else {
+                    $("#csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictionsDetails").parent().hide();
+                }
+            }
+
+            residencyOrEmploymentRestrictionsChangeObserver();
+            residencyOrEmploymentRestrictionsTrigger.click(residencyOrEmploymentRestrictionsChangeObserver);
+        })();
+
+    </script>
+
 {% endblock %}
