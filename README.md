@@ -63,12 +63,6 @@ make symfony.test.bdd
 make symfony.test.spec
 ```
 
-### PHPUnit
-
-```
-make symfony.test.unit
-```
-
 ## Rebuild database
 
 [Reference](https://github.com/eddiejaoude/dev-helper-cmds#database)
