@@ -69,11 +69,12 @@ Feature: As an user, I want to be able to add details about myself on my account
 #    And I fill in "csr_dm_user_profile_phone_number_group_phoneNumber_number" with "abc"
     When I press "Save and continue"
     # Checking that field validation is working
-    Then count of "2" instances of "This value should be of type alpha" exists on page
-    And I should see "This value is too short. It should have 8 characters or more."
-    And I should see "Must contain at least 1 number"
-    And I should see "Must contain at least 1 symbol (eg. !@#$%^*_-)"
-    And I should see "This value is not a valid email address"
+    Then I should see "Please enter only letters for your first name"
+    And I should see "Please enter only letters for your last name"
+    And I should see "Please make sure your password is at least 8 characters long"
+    And I should see "Please make sure your password contains at least 1 number"
+    And I should see "Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-)"
+    And I should see "Please make sure your e-mail address is valid"
 #    And I should see "Date of birth in wrong format"
 #    And I should see "Phone input in wrong format"
 #    And I should see "Please accept terms and conditions before continuing"
@@ -87,7 +88,8 @@ Feature: As an user, I want to be able to add details about myself on my account
 #    And I check "sms-alerts-yes"
 #    And I check "sms-alerts-mobile-number"
     When I press "Save and continue"
-    Then count of "4" instances of "This value should not be blank" exists on page
+    And I should see "error.dateOfbirth.notBlank"
+    Then count of "3" instances of "This value should not be blank" exists on page
 #    Then I should see "This value should not be blank"
 #    And I should see "Please enter your date of birth"
 #    And I should see "Please enter your daytime telephone number"
