@@ -50,6 +50,19 @@ Feature: As an applicant, after completing all profile sections, I want to be ab
       | early-diversity-internship-programme-no                                                                   | No      |
       | summer-diversity-internship-programme-no                                                                  | No      |
     And I press "Save and continue"
+    Then I should see "Education"
+    And I fill form with:
+      | civil-servant-no                           | Yes                                              |
+      | undergraduate-degree-no                    | Yes                                              |
+      | postgraduate-degree-no                     | Yes                                              |
+      | summer-diversity-internship-programme-yes  | Yes                                              |
+      | early-diversity-internship-programme-yes   | Yes                                              |
+      | summer-diversity-internship-programme-date | Oct 14                                           |
+      | summer-diversity-programme-detail          | Summer diversity programme government department |
+      | early-diversity-internship-programme-date  | Oct 14                                           |
+      | early-diversity-programme-detail           | Early diversity programme government department  |
+      | summer-diversity-programme-detail          | Summer diversity programme detail                |
+    And I press "Save and continue"
     Then I should see "Diversity"
     And I fill form with:
       | gender                          | Male                                                                        |
