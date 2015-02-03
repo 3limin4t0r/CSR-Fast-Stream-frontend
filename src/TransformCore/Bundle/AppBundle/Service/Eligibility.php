@@ -57,20 +57,17 @@ class Eligibility
      */
     public function update($applicantId, EligibilityEntity $eligibility)
     {
-        $endpoint = '/applicants/' . $applicantId . '/eligibility?XDEBUG_SESSION_START=6C2B4944';
-        $payload = array(
+        $endpoint = '/applicants/' . $applicantId . '/eligibility';
+        $response = $this->client
+            ->put(
+                $endpoint,
+                array(
                     'body' => $this->serializer
                         ->serialize(
                             array('csr_dm_user_eligibility' => $eligibility),
                             'json'
                         )
-
-                );
-
-        $this->client
-            ->put(
-                $endpoint,
-                $payload
+                )
             );
     }
 }
