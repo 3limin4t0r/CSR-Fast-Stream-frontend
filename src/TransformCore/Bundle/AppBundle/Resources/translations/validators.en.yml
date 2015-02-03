@@ -1,27 +1,27 @@
 error:
-    dateofbirth:
+    dateOfBirth:
         date: "Please make sure your date of birth is valid (e.g. YYYY-MM-DD)"
-        notblank: "Please enter your date of birth"
+        notBlank: "Please enter your date of birth"
     email:
         email: "Please make sure your e-mail address is valid"
-        notblank: "Please enter your e-mail address"
-    firstname:
+        notBlank: "Please enter your e-mail address"
+    firstName:
         length:
             max: "Please make sure your first name is at most {{ limit }} characters long"
             min: "Please make sure your first name is at least {{ limit }} characters long"
-        notblank: "Please enter your first name"
+        notBlank: "Please enter your first name"
         type: "Please enter only letters for your first name"
-    lastname:
+    lastName:
         length:
             max: "Please make sure your last name is at most {{ limit }} characters long"
             min: "Please make sure your last name is at least {{ limit }} characters long"
-        notblank: "Please enter your last name"
+        notBlank: "Please enter your last name"
         type: "Please enter only letters for your last name"
-    plainpassword:
+    plainPassword:
         length:
             max: "Please make sure your password is at most {{ limit }} characters long"
             min: "Please make sure your password is at least {{ limit }} characters long"
-        notblank: "Please enter your chosen password"
+        notBlank: "Please enter your chosen password"
         regex:
             letter: "Please make sure your password contains at least 1 letter"
             number: "Please make sure your password contains at least 1 number"
