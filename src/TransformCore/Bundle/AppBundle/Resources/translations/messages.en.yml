@@ -215,6 +215,7 @@ review:
 
 button:
   edit: Edit
+  submit: Submit
   
 education:
   breadcrumb: Education

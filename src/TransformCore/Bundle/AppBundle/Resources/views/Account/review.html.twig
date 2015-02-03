@@ -32,6 +32,13 @@
         {% include 'TransformCoreAppBundle:Account:FormReview/profile.html.twig' %}
         {% include 'TransformCoreAppBundle:Account:FormReview/eligibility.html.twig' %}
         {% include 'TransformCoreAppBundle:Account:FormReview/diversity.html.twig' %}
+        
+        <p class="submit"><a class="button" href="{{ path('transform_core_app_account') }}">{% trans %}button.submit{% endtrans %}</a></p>
+
+        <style scoped>
+            .heading a.button { float: right; font-size: 90%; margin-top: -3.2em; }
+            .submit { margin-top: 3em; }
+        </style>
 
     </div>
 

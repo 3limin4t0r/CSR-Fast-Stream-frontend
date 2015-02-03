@@ -1,4 +1,8 @@
-<h3 class="heading-medium">{% trans %}profile.title{% endtrans %}</h3>
+
+<div class="heading">
+    <h3 class="heading-medium">{% trans %}profile.title{% endtrans %}</h3>
+    <a class="button" href="{{ path('transform_core_app_profile_edit') }}">{% trans %}button.edit{% endtrans %}</a>
+</div>
 
 <table>
 
@@ -87,7 +91,3 @@
     </tbody>
 
 </table>
-
-<p>
-    <a class="button" href="{{ path('transform_core_app_profile_edit') }}">{% trans %}button.edit{% endtrans %}</a>
-</p>
