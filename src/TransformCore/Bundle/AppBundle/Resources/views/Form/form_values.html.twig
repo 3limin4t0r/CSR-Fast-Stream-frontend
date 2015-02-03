@@ -1,0 +1,27 @@
+{% extends 'form_div_layout.html.twig' %}
+
+{% block form_row -%}
+{% spaceless %}
+        {% if form.value %}
+        <tr id="{{ id }}">{{ parent() }}</tr>
+        {% endif %}
+{% endspaceless %}
+{%- endblock form_row %}
+
+{% block form_label -%}<th>{{ parent() }}</th>{%- endblock form_label %}
+
+{% block form_value -%}<td>{{ value }}</td>{%- endblock form_value %}
+
+{% block form_widget_simple -%}{{- block('form_value') -}}{%- endblock form_widget_simple %}
+
+{% block choice_widget_collapsed -%}{{- block('form_value') -}}{%- endblock choice_widget_collapsed %}
+
+{% block button_widget -%}{%- endblock button_widget %}
+
+{% block password_row -%}{%- endblock password_row %}
+
+{% block password_widget -%}{%- endblock password_widget -%}
+
+{% block hidden_widget -%}{%- endblock hidden_widget -%}
+
+{% block collection_widget -%}xxx{%- endblock collection_widget %}

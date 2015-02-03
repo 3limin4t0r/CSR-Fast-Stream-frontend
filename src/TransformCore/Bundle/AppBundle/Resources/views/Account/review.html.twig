@@ -1,5 +1,8 @@
 {% extends "::base.html.twig" %}
 
+{% form_theme profileForm 'TransformCoreAppBundle:Form:form_values.html.twig' %}
+{% form_theme eligibilityForm 'TransformCoreAppBundle:Form:form_values.html.twig' %}
+
 {% block title %}
     {% trans %}review.title{% endtrans %}
 {% endblock %}
@@ -29,11 +32,25 @@
     <div class="row">
 
         <div class="col-md-12">
-            <h2>{% trans %}profile.title{% endtrans %}</h2>
+
+            <h3>{% trans %}profile.title{% endtrans %}</h3>
+
+            <table>
+
+                <tbody>
+
+                    {{ form_widget(profileForm) }}
+
+                </tbody>
+
+            </table>
+
         </div>
 
         <div class="col-md-12">
-            <h2>{% trans %}eligibility.title{% endtrans %}</h2>
+
+            <h3>{% trans %}eligibility.title{% endtrans %}</h2>
+
         </div>
 
     </div>
