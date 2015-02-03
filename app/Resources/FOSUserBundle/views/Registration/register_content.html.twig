@@ -1,31 +1,54 @@
-<form novalidate action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
 
-    {{ form_start(form) }}
-        {{ form_errors(form) }}
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
 
-        {{ form_row(form.firstname) }}
-        {{ form_row(form.lastname) }}
-        {{ form_row(form.email) }}
-        {{ form_row(form.plainPassword.first) }}
-        {{ form_row(form.plainPassword.second) }}
-        {{ form_row(form.registration.heardAboutUs) }}
+    {{ form_errors(form) }}
 
-        <h4>{% trans %}register.form.disabled-title{% endtrans %}</h4>
-        <p>{% trans %}register.form.disabled-subtitle1{% endtrans %}</p>
-        <p>{% trans %}register.form.disabled-subtitle2{% endtrans %}</p>
-        {{ form_row(form.registration.disabledAdjustmentRequired) }}
-        {{ form_row(form.registration.disabledDetails) }}
-        {{ form_row(form.phoneNumber.number) }}
-        {{ form_row(form.registration.disabledAdjustmentDetails) }}
-        {{ form_row(form.registration.guaranteedInterviewScheme) }}
-        <a href="{{ path('transform_core_app_guaranteed_interview_scheme') }}">{% trans %}register.form.guaranteed-interview-scheme.link{% endtrans %}</a>
+    {{ form_row(form.firstname) }}
+    {{ form_row(form.lastname) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.plainPassword.first) }}
+    {{ form_row(form.plainPassword.second) }}
 
-        <h4>{% trans %}register.form.terms-and-conditions-title{% endtrans %}</h4>
-        <a href="{{ path('transform_core_app_terms_and_conditions') }}">{% trans %}register.form.terms-and-conditions-subtitle{% endtrans %}</a>
-        {{ form_row(form.registration.termsAndConditions) }}
+    {{ form_row(form.registered_disability_group.registration.heardAboutUs) }}
 
-        {{ form_row(form.registerButton) }}
+    <fieldset class="form-group">
 
-    {{ form_end(form) }}
+        <legend class="form-label-bold">{% trans %}register.form.disabled-title{% endtrans %}</legend>
 
-</form>
+        <div class="text">
+            <p>{% trans %}register.form.disabled-subtitle1{% endtrans %}</p>
+            <div class="panel-indent">
+                <p>{% trans %}register.form.disabled-subtitle2{% endtrans %}</p>
+            </div>
+        </div>
+
+        <div class="form-group form-group-compound">
+
+            {{ form_row(form.registered_disability_group.registration.disabledAdjustmentRequired) }}
+            {{ form_row(form.registered_disability_group.registration.disabledDetails) }}
+            {{ form_row(form.registered_disability_group.phoneNumber.number) }}
+            {{ form_row(form.registered_disability_group.registration.disabledAdjustmentDetails) }}
+
+            {{ form_row(form.registered_disability_group.registration.guaranteedInterviewScheme) }}
+
+            <div class="text">
+                <p><a href="{{ path('transform_core_app_guaranteed_interview_scheme') }}">{% trans %}register.form.guaranteed-interview-scheme.link{% endtrans %}</a></p>
+            </div>
+
+            <div class="text">
+                <h3 class="heading-medium">{% trans %}register.form.terms-and-conditions-title{% endtrans %}</h3>
+                <p><a href="{{ path('transform_core_app_terms_and_conditions') }}">{% trans %}register.form.terms-and-conditions-subtitle{% endtrans %}</a></p>
+                {{ form_row(form.registered_disability_group.registration.termsAndConditions) }}
+            </div>
+
+        </div>
+
+    </fieldset>
+
+    {{ form_row(form.registerButton) }}
+
+    {# note: because FOS User re-renders the phoneNumber field (because of a naming clash)
+                it is being forced to render inside html comments #}
+                <!-- {{ form_row(form.registered_disability_group.phoneNumber) }} -->
+
+{{ form_end(form) }}
