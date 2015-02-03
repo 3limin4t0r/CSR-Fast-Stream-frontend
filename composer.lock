@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c845aee86f183110378ed8766d26ec6b",
+    "hash": "6897c6026d96795004715cd87793c957",
     "packages": [
         {
             "name": "adamquaile/symfony-fieldset-bundle",
@@ -2634,16 +2634,16 @@
         },
         {
             "name": "transformcore/csr-fast-stream-domain-model",
-            "version": "dev-feature/CSR-214",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "bc26f61f0c173d326c57a23f909470cad9a1b809"
+                "reference": "1d4ac3b55392a4437729d9346059ee824dec9ebe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/bc26f61f0c173d326c57a23f909470cad9a1b809",
-                "reference": "bc26f61f0c173d326c57a23f909470cad9a1b809",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/1d4ac3b55392a4437729d9346059ee824dec9ebe",
+                "reference": "1d4ac3b55392a4437729d9346059ee824dec9ebe",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2669,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-02 18:13:18"
+            "time": "2015-02-03 06:00:07"
         },
         {
             "name": "twig/extensions",
