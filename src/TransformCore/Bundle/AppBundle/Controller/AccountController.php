@@ -95,8 +95,9 @@ class AccountController extends Controller
         if ($form->isValid()) {
             $eligibility = $form->getData();
 
-            $this->get('transform_core_app_main.service.eligibility')
-                 ->update($applicantId, $eligibility);
+            // TODO: This needs to be reinstated to work with backend
+            // $this->get('transform_core_app_main.service.eligibility')
+            //     ->update($applicantId, $eligibility);
 
             $request->getSession()
                     ->getFlashBag()
