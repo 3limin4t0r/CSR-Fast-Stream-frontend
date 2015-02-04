@@ -126,7 +126,7 @@ class AccountController extends Controller
                     );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_review')
+                $this->generateUrl('transform_core_app_socio_economic')
             );
         }
 
