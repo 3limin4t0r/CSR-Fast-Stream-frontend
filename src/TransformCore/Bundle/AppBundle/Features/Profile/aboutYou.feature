@@ -86,12 +86,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "First Name"
 #    And I check "sms-alerts-yes"
 #    And I check "sms-alerts-mobile-number"
-    When I press "Save and continue"
-    Then count of "4" instances of "This value should not be blank" exists on page
-#    Then I should see "This value should not be blank"
-#    And I should see "Please enter your date of birth"
-#    And I should see "Please enter your daytime telephone number"
-#    And I should see "Please enter mobile number for sms alerts"
+    When I press "Save and Continue"
+    Then count of "5" instances of "This value should not be blank" exists on page
 
   @CSR-135
   Scenario: Password reset in About You Section
