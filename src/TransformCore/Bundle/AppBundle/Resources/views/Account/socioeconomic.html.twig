@@ -1,7 +1,17 @@
 {% extends "::base.html.twig" %}
 
 {% block title %}
-    {% trans %}diversity.title{% endtrans %}
+
+    {% trans %}socioEconomic.title{% endtrans %}
+
+{% endblock %}
+
+{% block heading %}
+
+    <p class="step">{% trans %}socioEconomic.step{% endtrans %}</p>
+
+    <h1 class="form-title heading-large">{% trans %}socioEconomic.title{% endtrans %}</h1>
+
 {% endblock %}
 
 {% block breadcrumb %}
@@ -25,24 +35,8 @@
 
 {% block body %}
 
-    <div class="row">
-
-        <div class="col-md-12">
-            <h2>{% trans %}socioEconomic.title{% endtrans %}</h2>
-        </div>
-
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-12">
-            {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
-
-            {{ form_widget(form) }}
-
-            {{ form_end(form) }}
-        </div>
-
-    </div>
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_widget(form) }}
+    {{ form_end(form) }}
 
 {% endblock %}
