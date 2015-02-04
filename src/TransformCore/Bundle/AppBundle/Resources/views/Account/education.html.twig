@@ -1,0 +1,142 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+
+    {% trans %}education.title{% endtrans %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
+
+{% endblock %}
+
+{% block heading %}
+
+    <p class="step">{% trans %}education.step{% endtrans %}</p>
+
+    <h1 class="form-title heading-large">{% trans %}education.title{% endtrans %}</h1>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+
+        <div class="col-md-12">
+            {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+                <h3 class="heading-medium">Existing Civil Servant</h3>
+
+                <p>Please indicate whether you are an existing Civil Servant</p>
+                {{ form_row(form.existingCivilServant) }}
+                <p>If you are an existing Civil Servant you can apply via the In Service Application route. You will not need to have a degree to be eligible to apply but your options are limited to the following schemes:</p>
+
+                <p>Option 1:<br />Central Departments (within the Generalist Fast Stream) and/or the Digital and Technology Fast Stream.</p>
+                <p>Option 2:<br />Finance and Commercial (within the Commercial and Finance Fast Stream).</p>
+
+                <p>You may select the In Service route if:</p>
+                <ul>
+                    <li>You are currently a permanent Civil Servant and have passed your probationary period,</li>
+                    <li>You are currently grade HEO (equivalent) or below,</li>
+                    <li>You are not currently undergoing any absence or poor performance action.</li>
+                </ul>
+
+                <p>You may also select the In Service route if you will have completed a Fast Track apprentice scheme in this recuitment year. If you have, please indicate scheme and year of completion below:</p>
+
+                {{ form_row(form.fastTrackScheme) }}
+
+                {{ form_row(form.schemeName) }}
+                {{ form_row(form.yearOfCompletion) }}
+
+                <p>Note that if you have a degree you might want to apply via the external competition alongside non-Civil Servants as you will then have more schemes and options available.</p>
+
+                {{ form_row(form.inServiceRoute) }}
+
+                <p>Selecting this option will allow you to proceed without a degree.</p>
+
+                <h3 class="heading-medium">Degree Details</h3>
+
+                <h4 class="heading-small">Undergraduate degree</h4>
+
+                {{ form_row(form.undergraduateDegree) }}
+
+                <p>Please select all that apply</p>
+
+                {% for undergrad in form.undergradDegrees %}
+                    <div class="form-group">
+                        <label class="control-label required">{{ form_label(undergrad.uk) }}</label>
+                        <div id="csr_dm_form_education_undergrad_uk_0">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_undergrad_uk_0_widget" class="required">
+                                    {{ form_widget(undergrad.uk.children[0]) }} {{ form_label(undergrad.uk.children[0], null) }}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form_row(undergrad.university) }}
+                    {{ form_row(undergrad.grade) }}
+                    <div class="form-group">
+                        <div id="csr_dm_form_education_undergrad_uk_1">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_undergrad_uk_1_widget" class="required">
+                                    {{ form_widget(undergrad.uk.children[1]) }} {{ form_label(undergrad.uk.children[1], null) }}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form_row(undergrad.institution) }}
+                {% endfor %}
+
+                <h4 class="heading-small">Postgraduate degree</h4>
+
+                {{ form_row(form.postgraduateDegree) }}
+
+                <p>Please select all that apply</p>
+
+                {% for postgrad in form.postgradDegrees %}
+                    <div class="form-group">
+                        <label class="control-label required">{{ form_label(postgrad.uk) }}</label>
+                        <div id="csr_dm_form_education_postgrad_uk_0">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_postgrad_uk_0_widget" class="required">
+                                    {{ form_widget(postgrad.uk.children[0]) }} {{ form_label(postgrad.uk.children[0], null) }}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form_row(postgrad.university) }}
+                    {{ form_row(postgrad.degree) }}
+                    <div class="form-group">
+                        <div id="csr_dm_form_education_postgrad_uk_1">
+                            <div class="radio">
+                                <label for="csr_dm_form_education_postgrad_uk_1_widget" class="required">
+                                    {{ form_widget(postgrad.uk.children[1]) }} {{ form_label(postgrad.uk.children[1], null) }}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    {{ form_row(postgrad.institution) }}
+                {% endfor %}
+
+                <h3 class="heading-medium">Internship Programmes</h3>
+
+                <p>Please indicate whether you have completed the Early Diversity Internship Programme</p>
+                {{ form_row(form.earlyIntern) }}
+
+                {{ form_row(form.earlyInternCompleted) }}
+                {{ form_row(form.earlyInternDept) }}
+
+                <p>Please indicate whether you have completed the Civil Service Summer Diversity Internship Programme</p>
+                {{ form_row(form.summerIntern) }}
+
+                {{ form_row(form.summerInternCompleted) }}
+                {{ form_row(form.summerInternDept) }}
+
+            {{ form_end(form) }}
+        </div>
+
+    </div>
+
+{% endblock %}
