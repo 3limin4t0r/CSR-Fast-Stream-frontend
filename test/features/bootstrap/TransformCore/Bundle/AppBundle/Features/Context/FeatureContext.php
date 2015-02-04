@@ -235,13 +235,14 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iCheckTheRadioButton($radioLabel)
     {
-        $radioButton = $this->getSession()->getPage()->findField($radioLabel);
-        if (null === $radioButton) {
-            throw new \Exception("Cannot find radio button " . $radioLabel);
-        }
-        $value = $radioButton->getAttribute('value');
-        $this->getSession()->getDriver()->click($radioButton->getXPath());
-        sleep(1);
+       $page->fillField($fieldSelector, $value);
+    //   $radioButton = $this->getSession()->getPage()->findField($radioLabel);
+    //     if (null === $radioButton) {
+    //         throw new \Exception("Cannot find radio button " . $radioLabel);
+    //     }
+    //     $value = $radioButton->getAttribute('value');
+    //     $this->getSession()->getDriver()->click($radioButton->getXPath());
+    //     sleep(1);
     }
 
     /**
