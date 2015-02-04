@@ -9,6 +9,7 @@ use TransformCore\Bundle\CsrFastStreamBundle\Form\DiversityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EducationFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Education;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\PostgradDegree;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\UndergradDegree;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
@@ -130,8 +131,11 @@ class AccountController extends Controller
             ->getUser()
             ->getId();
 
-        $education = $this->get('transform_core_app_main.service.education')
-            ->getById($applicantId);
+        $education = new Education();
+
+        // TODO: This needs to be reinstated to work with backend
+        // $education = $this->get('transform_core_app_main.service.education')
+        //     ->getById($applicantId);
 
         $undergradDegrees = $education->getUndergradDegrees();
 
