@@ -99,7 +99,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 #    And I should see "Please indicate whether or not you completed the Early Diversity Internship Programme"
 #    And I should see "Please indicate whether or not you completed the Summer Diversity Internship Programme"
 
-  @CSR-26
+  @CSR-26 @omit
   Scenario: Add education details (no degrees needed)
     Given I am logged in as "six@test.com" with password "P@ssword1"
 #    And I follow "Profile"

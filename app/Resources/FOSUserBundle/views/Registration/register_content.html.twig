@@ -25,9 +25,12 @@
         <div class="form-group form-group-compound">
 
             {{ form_row(form.registered_disability_group.registration.disabledAdjustmentRequired) }}
-            {{ form_row(form.registered_disability_group.registration.disabledDetails) }}
-            {{ form_row(form.registered_disability_group.phoneNumber.number) }}
-            {{ form_row(form.registered_disability_group.registration.disabledAdjustmentDetails) }}
+
+            <div id="disabled-adjustment-required-container">
+                {{ form_row(form.registered_disability_group.registration.disabledDetails) }}
+                {{ form_row(form.registered_disability_group.phoneNumber.number) }}
+                {{ form_row(form.registered_disability_group.registration.disabledAdjustmentDetails) }}
+            </div>
 
             {{ form_row(form.registered_disability_group.registration.guaranteedInterviewScheme) }}
 
@@ -52,3 +55,25 @@
                 <!-- {{ form_row(form.registered_disability_group.phoneNumber) }} -->
 
 {{ form_end(form) }}
+
+<script>
+
+    (function ()
+    {
+        var disabledAdjustmentRequiredTrigger = 
+            $("#fos_user_registration_form_registered_disability_group_registration_disabledAdjustmentRequired");
+
+        var disabledAdjustmentRequiredChangeObserver = function()
+        {
+            if (disabledAdjustmentRequiredTrigger.prop('checked')) {
+                $("#disabled-adjustment-required-container").show();
+            } else {
+                $("#disabled-adjustment-required-container").hide();
+            }
+        }
+
+        disabledAdjustmentRequiredChangeObserver();
+        disabledAdjustmentRequiredTrigger.click(disabledAdjustmentRequiredChangeObserver);
+    })();
+
+</script>

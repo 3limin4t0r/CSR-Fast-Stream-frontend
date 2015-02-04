@@ -8,7 +8,7 @@ Feature: As an applicant after logging in I want to see my homepage
     And "five@test.com" has completed sections "About you,Nationality,Education,Diversity"
 
   @CSR-196 @omit
-  Scenario: Complete Nationality and immigration section (Happy path)
+  Scenario: Complete Socio-economic section (Happy path)
     Given I am logged in as "four@test.com" with password "P@ssword1"
     And I am on "/en/applicant/socio-economic"
     Then I should see "Socio Economic Details"
@@ -45,9 +45,10 @@ Feature: As an applicant after logging in I want to see my homepage
 
 
   @CSR-196 @omit
-  Scenario: Complete Nationality and immigration section (Happy path)
+  Scenario: Complete Socio-economic section (Mandatory fields)
     Given I am logged in as "four@test.com" with password "P@ssword1"
     And I am on "/en/applicant/socio-economic"
     Then I should see "Socio Economic Details"
     And I press "Save and continue"
     Then count of "10" instances of "This value should not be blank" exists on page
+  

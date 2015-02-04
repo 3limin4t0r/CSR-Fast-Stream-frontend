@@ -4,6 +4,8 @@ namespace TransformCore\Bundle\AppBundle\Features\Context;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
+use Behat\Behat\Tester\Exception\PendingException;
+use Behat\Mink\Exception\Exception;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
@@ -78,7 +80,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             }
 
             if (empty($field)) {
-                die('Field not found ' . $fieldSelector . PHP_EOL);
+                throw new \Exception('Field not found: ' . $fieldSelector);
             }
 
             $tag = strtolower($field->getTagName());
