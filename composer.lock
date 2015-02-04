@@ -2638,12 +2638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "11322aa72ca8a84fdd612165223f673a3fbd1c0b"
+                "reference": "47743711ba07f4af3bb64c17a8d995da63ebb2ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/11322aa72ca8a84fdd612165223f673a3fbd1c0b",
-                "reference": "11322aa72ca8a84fdd612165223f673a3fbd1c0b",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/47743711ba07f4af3bb64c17a8d995da63ebb2ce",
+                "reference": "47743711ba07f4af3bb64c17a8d995da63ebb2ce",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2669,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-03 12:47:07"
+            "time": "2015-02-04 10:28:39"
         },
         {
             "name": "twig/extensions",
@@ -3805,16 +3805,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v59",
+            "version": "v60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "1746ff03c4c7e44a9c882efd1c90d30baa99f7d4"
+                "reference": "b83fc472f24e187efc6c18ebc3b3fef1913ccf53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1746ff03c4c7e44a9c882efd1c90d30baa99f7d4",
-                "reference": "1746ff03c4c7e44a9c882efd1c90d30baa99f7d4",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/b83fc472f24e187efc6c18ebc3b3fef1913ccf53",
+                "reference": "b83fc472f24e187efc6c18ebc3b3fef1913ccf53",
                 "shasum": ""
             },
             "bin": [
@@ -3845,7 +3845,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-01-29 23:14:14"
+            "time": "2015-02-04 00:20:33"
         },
         {
             "name": "instaclick/php-webdriver",
