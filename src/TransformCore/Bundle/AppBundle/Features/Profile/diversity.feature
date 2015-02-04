@@ -25,6 +25,8 @@ Feature: As an applicant after logging in I want to see my homepage
       | csr_dm_diversity_socioEconomic_group_socioEconomic_everPersonallyHadRefugeeOrAsylumStatus         | Prefer Not to Say                                                           |
     And I press "Save and continue"
     Then I should see "Your changes were saved!"
+    And I should see "Socio Economic Details - About your parents/guardians"
+
 #    And I should see form with:
 #      | csr_dm_diversity_diversity_gender                                             | Male                                                                        |
 #      | csr_dm_diversity_diversity_ethnicOrigin                                       | White - English / Welsh / Scottish / Northern Irish / British               |
