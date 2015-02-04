@@ -6,9 +6,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Diversity;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Parents\Parents;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\DiversityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\ParentsFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
 
 
@@ -156,29 +158,29 @@ class AccountController extends Controller
      */
     public function socioeconomicAction(Request $request)
     {
-//        $applicant = new Applicant();
-//
-//        $form = $this->createForm(new DiversityFormType(), $applicant);
-//        $form->handleRequest($request);
-//
-//        if ($form->isValid()) {
-//            $diversity = $form->getData();
-//
-//            $request->getSession()
-//                    ->getFlashBag()
-//                    ->add(
-//                        'success',
-//                        'Your changes were saved!'
-//                    );
-//
-//            return $this->redirect(
-//                $this->generateUrl('transform_core_app_diversity')
-//            );
-//        }
+        $parents = new Parents();
+
+        $form = $this->createForm(new ParentsFormType(), $parents);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $parents = $form->getData();
+
+            $request->getSession()
+                    ->getFlashBag()
+                    ->add(
+                        'success',
+                        'Your changes were saved!'
+                    );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_socio_economic')
+            );
+        }
 
         return $this->render('TransformCoreAppBundle:Account:socioeconomic.html.twig',
             array(
-//                'form' => $form->createView(),
+                'form' => $form->createView(),
             )
         );
     }

@@ -16,7 +16,7 @@ form:
 
 login:
   title: Login
-  subtitle: Register Your Details
+  subtitle: Login
   form:
     username:
       label: Email address
@@ -27,7 +27,7 @@ login:
 
 register:
   title: Register
-  subtitle: Register Your Details
+  subtitle: Register your details
   form:
     firstname:
       label: First Name
@@ -87,6 +87,7 @@ guaranteedInterviewScheme:
   title: Guaranteed Interview Scheme
 
 account:
+  breadcrumb: My Account
   title: My Account
   overview: Overview
 
@@ -108,7 +109,9 @@ address:
       label: Country
 
 eligibility:
-  title: Eligibility
+  breadcrumb: Eligibility
+  title: Nationality, Immigration and Employment Restrictions
+  step: Step 2 of 5
   subject-to-immigration-controls:
     label: Please check whether or not you are subject to immigration controls
   subject-to-immigration-controls-details:
@@ -125,19 +128,24 @@ eligibility:
 
 nationality:
   name:
-    label: Nationality
+    label: Present nationality
 
 profile:
-  title: Profile
+  breadcrumb: About you
+  title: About you
+  step: Step 1 of 5
+  introduction: Please let us know your contact details. Note that you can change these at any time during the application process.
+  name-group:
+    legend: Your name
   form:
     dateOfBirth:
       label: Date of Birth
     updateButton:
-      label: Save and Continue
+      label: Save and continue
 
 phone-number:
   number:
-    label: Number
+    label: Daytime contact number
 
 diversity:
   title: Diversity
@@ -156,18 +164,53 @@ diversity:
     maritalStatus:
       label: Please select your marital status.
     updateButton:
-      label: Save and Continue
+      label: Save and continue
 
 socioEconomic:
   title: Socio Economic Details - About your parents/guardians
+  breadcrumb: Socio Economic
   form:
     typeOfSchoolAttendanceAtFourteen:
       label: Please indicate the type of school you were attending on your 14th birthday.
     firstPersonInImmediateFamilyToAttendUniversity:
       label: Please indicate whether you were the first person in your immediate family to attend University.
     eligibleForFreeSchoolMeals:
-      label: Please indicate whether you were eligible for free school meals:
+      label: Please indicate whether you were eligible for free school meals
     everSpentMoreThanThreeMonthsInCare:
       label: Have you ever personally spent longer than three months in care?
     everPersonallyHadRefugeeOrAsylumStatus:
       label: Have you ever personally had refugee status or asylum status?
+
+parents:
+  socioEconomic:
+    form:
+      updateButton:
+        label: Save and continue
+    education:
+      form:
+        highestEducationLevelThatYourFatherAchievedAtNormalEducationAge:
+          label: What was the highest education level that your father achieved (at normal education age, rather than as a mature student)?
+        highestEducationLevelThatYourMotherAchievedAtNormalEducationAge:
+          label: What was the highest education level that your mother achieved (at normal education age, rather than as a mature student)?
+    employment:
+      form:
+        whenYouWereFourteenYourFathersEmploymentStatus:
+          label: Thinking back to when you were aged about 14, did your father work as an employee or were they self employed?
+        whenYouWereFourteenYourMothersEmploymentStatus:
+          label: Thinking back to when you were aged about 14, did your mother work as an employee or were they self employed?
+    employer:
+      form:
+        whenYouWereFourteenNumberOfEmployeesByFather:
+          label: If your father was employed when you were aged 14, how many people worked for your father’s employer, or, if your father was self-employed and employed other people, how many people did your father employ?
+        whenYouWereFourteenNumberOfEmployeesByMother:
+          label: If your father was employed when you were aged 14, how many people worked for your mother’s employer, or, if your father was self-employed and employed other people, how many people did your mother employ?
+    role:
+      form:
+        whenYouWereFourteenFatherSuperviseAnyEmployees:
+          label: If your father was employed when you were aged 14, did they supervise any other employees? A supervisor is responsible for overseeing the work of other employees on a day-to-day basis
+        whenYouWereFourteenMotherSuperviseAnyEmployees:
+          label: If your mother was employed when you were aged 14, did they supervise any other employees? A supervisor is responsible for overseeing the work of other employees on a day-to-day basis
+        whenYouWereFourteenTypeOfWorkYourFatherDid:
+          label: Thinking back to when you were aged about 14, please select the sort of work your father did in their main job
+        whenYouWereFourteenTypeOfWorkYourMotherDid:
+          label: Thinking back to when you were aged about 14, please select the sort of work your mother did in their main job

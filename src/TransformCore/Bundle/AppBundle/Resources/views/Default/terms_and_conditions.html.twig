@@ -1,11 +1,14 @@
 {% extends "::base.html.twig" %}
 
-{% block title %}
-    {% trans %}termsAndConditions.title{% endtrans %}
+{% block title %}{% trans %}termsAndConditions.title{% endtrans %}{% endblock %}
+
+{% block heading %}
+
+    <h1 class="form-title heading-large">{% trans %}termsAndConditions.title{% endtrans %}</h1>
+
 {% endblock %}
 
 {% block body %}
-    <h2>{% trans %}termsAndConditions.title{% endtrans %}</h2>
 
     {% for i in range(0,'termsAndConditions.paragraph'|translationLength) -%}
         <p>{{('termsAndConditions.paragraph.'~i)|trans}}</p>
@@ -14,9 +17,9 @@
     <table class="table">
         <thead class="lead">
             <tr>
-                <td>{% trans %}termsAndConditions.table.title.col1{% endtrans %}</td>
-                <td>{% trans %}termsAndConditions.table.title.col2{% endtrans %}</td>
-                <td>{% trans %}termsAndConditions.table.title.col3{% endtrans %}</td>
+                <th>{% trans %}termsAndConditions.table.title.col1{% endtrans %}</th>
+                <th>{% trans %}termsAndConditions.table.title.col2{% endtrans %}</th>
+                <th>{% trans %}termsAndConditions.table.title.col3{% endtrans %}</th>
             </tr>
         </thead>
         <tbody>
@@ -32,4 +35,5 @@
             </tr>
         </tbody>
     </table>
+
 {% endblock %}

@@ -1,12 +1,15 @@
 {% extends "::base.html.twig" %}
 
+{% block heading %}
+
+    <h1 class="form-title heading-large">{% trans %}register.subtitle{% endtrans %}</h1>
+
+{% endblock heading %}
+
 {% block body %}
 
-    <h2>{% trans %}register.title{% endtrans %}</h2>
-    <h4>{% trans %}register.subtitle{% endtrans %}</h4>
-
     {% block fos_user_content %}
-    {% include "FOSUserBundle:Registration:register_content.html.twig" %}
+        {% include "FOSUserBundle:Registration:register_content.html.twig" %}
     {% endblock fos_user_content %}
 
 {% endblock body %}

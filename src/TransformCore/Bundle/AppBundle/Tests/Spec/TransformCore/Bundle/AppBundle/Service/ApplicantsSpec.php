@@ -63,8 +63,7 @@ class ApplicantsSpec extends ObjectBehavior
     function it_updates_applicant(
         Client $client,
         Serializer $serializer,
-        \GuzzleHttp\Message\Response $response,
-        \GuzzleHttp\Stream\Stream $stream
+        \GuzzleHttp\Message\Response $response
     )
     {
         $applicant = new Applicant();
