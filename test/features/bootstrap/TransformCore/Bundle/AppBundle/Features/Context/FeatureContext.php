@@ -97,15 +97,14 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                 }
             } elseif ($tag == 'input') {
                 $type = strtolower($field->getAttribute('type'));
-                if ($type == 'checkbox') {
+                if ($type == 'checkbox' || $type == 'radio') {
                     if (strtolower($value) == 'yes') {
                         $page->checkField($fieldSelector);
                     } else {
                         $page->uncheckField($fieldSelector);
                     }
-                } elseif ($type == 'radio') {
-//                    $page->find('css', '#' . $fieldSelector)->check();
-                    $page->fillField($fieldSelector, 1);
+//                } elseif ($type == 'radio') {
+//                    // TODO: handle radio
                 } else {
                     $page->fillField($fieldSelector, $value);
                 }
@@ -236,7 +235,13 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iCheckTheRadioButton($radioLabel)
     {
-        $this->getSession()->getPage()->fillField($radioLabel, 1);
+        $radioButton = $this->getSession()->getPage()->findField($radioLabel);
+        if (null === $radioButton) {
+            throw new \Exception("Cannot find radio button " . $radioLabel);
+        }
+        $value = $radioButton->getAttribute('value');
+        $this->getSession()->getDriver()->click($radioButton->getXPath());
+        sleep(1);
     }
 
     /**
@@ -295,7 +300,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     /**
      * @Given :arg1 has completed the :arg2 sections
      */
-    public function hasCompletedTheSections($applicant, $sections)
+    public function hasCompletedTheSections($applicant,$sections)
     {
 
     }
