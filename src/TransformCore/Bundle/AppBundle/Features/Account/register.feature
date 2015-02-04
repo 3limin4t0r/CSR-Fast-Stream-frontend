@@ -7,23 +7,23 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "Register Your Details"
     When I fill form with:
     # Your details
-      | fos_user_registration_form_firstname                               | <first-name>                     |
-      | fos_user_registration_form_lastname                                | <last-name>                      |
+      | fos_user_registration_form_firstname                                                           | <first-name>                     |
+      | fos_user_registration_form_lastname                                                            | <last-name>                      |
         # Contact details
-      | fos_user_registration_form_email                                   | <email-input>                    |
+      | fos_user_registration_form_email                                                               | <email-input>                    |
         # Signin Details
-      | fos_user_registration_form_plainPassword_first                     | <password>                       |
-      | fos_user_registration_form_plainPassword_second                    | <password>                       |
+      | fos_user_registration_form_plainPassword_first                                                 | <password>                       |
+      | fos_user_registration_form_plainPassword_second                                                | <password>                       |
         # Referrer
-      | fos_user_registration_form_registration_heardAboutUs               | <referrer-input>                 |
+      | fos_user_registration_form_registered_disability_group_registration_heardAboutUs               | <referrer-input>                 |
         # Disability details
-      | fos_user_registration_form_registration_disabledAdjustmentRequired | YES                              |
-      | fos_user_registration_form_registration_disabledDetails            | Heart conditions                 |
-      | fos_user_registration_form_registration_disabledAdjustmentDetails  | some disability adjustments text
-      | fos_user_registration_form_phoneNumber_number                      | <phoneNumber>                    |
+      | fos_user_registration_form_registered_disability_group_registration_disabledAdjustmentRequired | YES                              |
+      | fos_user_registration_form_registered_disability_group_registration_disabledDetails            | Heart conditions                 |
+      | fos_user_registration_form_registered_disability_group_registration_disabledAdjustmentDetails  | some disability adjustments text |
+      | fos_user_registration_form_registered_disability_group_phoneNumber_number                      | <phoneNumber>                    |
     # Checkboxes
-      | fos_user_registration_form_registration_guaranteedInterviewScheme  | YES                              |
-      | fos_user_registration_form_registration_termsAndConditions         | YES                              |
+      | fos_user_registration_form_registered_disability_group_registration_guaranteedInterviewScheme  | YES                              |
+      | fos_user_registration_form_registered_disability_group_registration_termsAndConditions         | YES                              |
     And I press "fos_user_registration_form_registerButton"
     Then I should not see "This value is already used"
     Then I should see "The user has been created successfully"
@@ -66,10 +66,10 @@ Feature: As an user, I want to be able to register a new account, in order to ap
         # Disability details
     And I check "I require adjustments based on my disability"
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "This value should be of type alpha"
-    Then I should see "This value should be of type alpha"
+    And I should see "Please enter only letters for your first name"
+    And I should see "Please enter only letters for your first name"
     Then I should see "The entered passwords don't match"
-    Then I should see "This value is not a valid email address"
+    And I should see "Please make sure your e-mail address is valid"
 
   @omit
   Scenario Outline: Create account with invalid details (password check)
@@ -82,7 +82,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_plainPassword_second" with "<password>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
+    Then I should see "Please make sure your password is at least 8 characters long"
+    And I should see "Please make sure your password contains at least 1 number"
+    And I should see "Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-)"
   Examples:
     | password  |
     | 1234567   |
@@ -102,13 +104,12 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "<Message>"
+    Then I should see "<Message1>"
+    Then I should see "<Message2>"
   Examples:
-    | password | Message                                                      |
-    | 1234567  | This value is too short. It should have 8 characters or more |
-    | 12345678 | Must contain at least 1 letter                               |
-    | abcdefgh | Must contain at least 1 number                               |
-    | 1bcdefgh | Must contain at least 1 symbol (eg. !@#$%^*_-)               |
+    | password | Message1                                                     | Message2                                                                   |
+    | 1234567  | Please make sure your password is at least 8 characters long | Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-) |
+    | abcdefgh | Please make sure your password contains at least 1 number    | Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-) |
 
   @CSR-6
   Scenario: Create account using blank form text fields (mandatory field check)
@@ -122,7 +123,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_lastname" with "Persona"
     And I fill in "fos_user_registration_form_email" with "email@test"
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "This value is not a valid email address"
+    Then I should see "Please make sure your e-mail address is valid"
     And I fill in "fos_user_registration_form_email" with "four@test.com"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value should not be blank"
@@ -133,7 +134,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value should not be blank"
-    And I check "fos_user_registration_form_registration_termsAndConditions"
+    And I check "fos_user_registration_form_registered_disability_group_registration_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
@@ -149,12 +150,12 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_lastname" with "<last-name>"
     And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
     And I fill in "fos_user_registration_form_plainPassword_second" with "<password>"
-    And I check "fos_user_registration_form_registration_disabledAdjustmentRequired"
-    And I select "Diabetes" from "fos_user_registration_form_registration_disabledDetails"
-    And I fill in "fos_user_registration_form_registration_disabledAdjustmentDetails" with "some disability adjustments text"
-    And I fill in "fos_user_registration_form_phoneNumber_number" with "02084567878"
-    And I check "fos_user_registration_form_registration_guaranteedInterviewScheme"
-    And I check "fos_user_registration_form_registration_termsAndConditions"
+    And I check "fos_user_registration_form_registered_disability_group_registration_disabledAdjustmentRequired"
+    And I select "Diabetes" from "fos_user_registration_form_registered_disability_group_registration_disabledDetails"
+    And I fill in "fos_user_registration_form_registered_disability_group_registration_disabledAdjustmentDetails" with "some disability adjustments text"
+    And I fill in "fos_user_registration_form_registered_disability_group_phoneNumber_number" with "02084567878"
+    And I check "fos_user_registration_form_registered_disability_group_registration_guaranteedInterviewScheme"
+    And I check "fos_user_registration_form_registered_disability_group_registration_termsAndConditions"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value is already used"
   Examples:
