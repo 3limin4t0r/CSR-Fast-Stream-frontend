@@ -4,7 +4,7 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Diversity;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Parents\Parents;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\DiversityFormType;
@@ -12,7 +12,6 @@ use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ParentsFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
-
 
 /**
  * Class AccountController
@@ -26,9 +25,7 @@ class AccountController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('TransformCoreAppBundle:Account:index.html.twig',
-            array()
-        );
+        return $this->render('TransformCoreAppBundle:Account:index.html.twig');
     }
 
     /**
@@ -38,18 +35,13 @@ class AccountController extends Controller
      */
     public function profileAction(Request $request)
     {
-        $applicant = $this->get('transform_core_app_main.service.applicants')
-                          ->getById(
-                              $this->get('security.token_storage')
-                                   ->getToken()
-                                   ->getUser()
-                                   ->getId()
-                          );
+        $applicant = $this->getApplicant();
 
         $form = $this->createForm(new ProfileFormType(), $applicant);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
+
             $applicant = $form->getData();
 
             $this->get('transform_core_app_main.service.applicants')
@@ -81,18 +73,14 @@ class AccountController extends Controller
      */
     public function eligibilityAction(Request $request)
     {
-        $applicantId = $this->get('security.token_storage')
-                                   ->getToken()
-                                   ->getUser()
-                                   ->getId();
-        
-        $eligibility = $this->get('transform_core_app_main.service.eligibility')
-                          ->getById($applicantId);
+        $eligibility = $this->getEligibility();
 
         $form = $this->createForm(new EligibilityFormType(), $eligibility);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
+
+            $applicantId = $this->getApplicantId();
             $eligibility = $form->getData();
 
             $this->get('transform_core_app_main.service.eligibility')
@@ -140,7 +128,7 @@ class AccountController extends Controller
                     );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_diversity')
+                $this->generateUrl('transform_core_app_review')
             );
         }
 
@@ -183,5 +171,66 @@ class AccountController extends Controller
                 'form' => $form->createView(),
             )
         );
+    }
+    
+    /**
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
+    public function reviewAction()
+    {
+        $validator = $this->get('validator');
+
+        $applicant = $this->getApplicant();
+        $applicantErrors = $validator->validate($applicant);
+        if (count($applicantErrors) > 0) {
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_profile_edit')
+            );
+        }
+
+        $eligibility = $this->getEligibility();
+        $eligibilityErrors = $validator->validate($eligibility);
+        if (count($eligibilityErrors) > 0) {
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_eligibility')
+            );
+        }
+
+        return $this->render(
+            'TransformCoreAppBundle:Account:review.html.twig',
+            [ 'applicant' => $applicant,
+              'eligibility' => $eligibility ]
+        );
+    }
+
+    /**
+     * @return \TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant
+     */
+    private function getApplicant()
+    {
+        $applicantId = $this->getApplicantId();
+        return $this->get('transform_core_app_main.service.applicants')
+                    ->getById($applicantId);
+    }
+
+    /**
+     * @return \TransformCore\Bundle\CsrFastStreamBundle\Entity\Eligibility
+     */
+    private function getEligibility()
+    {
+        $applicantId = $this->getApplicantId();
+        return $this->get('transform_core_app_main.service.eligibility')
+                    ->getById($applicantId);
+    }
+
+    /**
+     * @return int
+     */
+    private function getApplicantId()
+    {
+        return $this->get('security.token_storage')
+                    ->getToken()
+                    ->getUser()
+                    ->getId();
     }
 }

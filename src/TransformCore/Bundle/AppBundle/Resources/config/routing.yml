@@ -33,3 +33,7 @@ transform_core_app_diversity:
 transform_core_app_socio_economic:
     path:     /applicant/socioeconomic
     defaults: { _controller: TransformCoreAppBundle:Account:socioeconomic }
+
+transform_core_app_review:
+    path:     /applicant/review
+    defaults: { _controller: TransformCoreAppBundle:Account:review }
