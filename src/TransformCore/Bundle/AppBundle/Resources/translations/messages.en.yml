@@ -213,6 +213,7 @@ socioEconomic:
       title: Spent longer than three months in care
     everPersonallyHadRefugeeOrAsylumStatus:
       label: Have you ever personally had refugee status or asylum status?
+      title: Personally had refugee status or asylum status
     group:
       legend: Socio economic details
 
@@ -249,7 +250,6 @@ parents:
           label: Thinking back to when you were aged about 14, please select the sort of work your father did in their main job
         whenYouWereFourteenTypeOfWorkYourMotherDid:
           label: Thinking back to when you were aged about 14, please select the sort of work your mother did in their main job
-      title: Personally had refugee status or asylum status
 
 review:
   title: Review
