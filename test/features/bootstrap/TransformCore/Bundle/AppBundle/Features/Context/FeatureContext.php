@@ -235,7 +235,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iCheckTheRadioButton($radioLabel)
     {
-       $page->fillField($fieldSelector, $value);
+       $this->getSession()->getPage()->fillField($radioLabel, '1');
     //   $radioButton = $this->getSession()->getPage()->findField($radioLabel);
     //     if (null === $radioButton) {
     //         throw new \Exception("Cannot find radio button " . $radioLabel);

@@ -151,8 +151,9 @@ class AccountController extends Controller
         if ($form->isValid()) {
             $education = $form->getData();
 
-            $this->get('transform_core_app_main.service.education')
-                 ->update($applicantId, $education);
+            // TODO: This needs to be reinstated to work with backend
+            // $this->get('transform_core_app_main.service.education')
+            //     ->update($applicantId, $education);
 
             $request->getSession()
                     ->getFlashBag()
