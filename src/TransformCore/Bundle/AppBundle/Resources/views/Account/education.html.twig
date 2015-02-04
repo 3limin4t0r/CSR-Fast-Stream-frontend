@@ -1,21 +1,23 @@
 {% extends "::base.html.twig" %}
 
 {% block title %}
+
     {% trans %}education.title{% endtrans %}
+
 {% endblock %}
 
 {% block breadcrumb %}
-    <div id="global-breadcrumb" class="header-context">
-        <nav role="navigation">
-            <ol class="group">
-                <li><a href="{{ path('transform_core_app_account') }}">{% trans %}account.title{% endtrans %}</a></li>
-                <li><a href="{{ path('transform_core_app_profile_edit') }}">{% trans %}profile.title{% endtrans %}</a></li>
-                <li><a href="{{ path('transform_core_app_eligibility') }}">{% trans %}eligibility.title{% endtrans %}</a></li>
-                <li class="active">{% trans %}education.title{% endtrans %}</li>
-                <li><a href="{{ path('transform_core_app_diversity') }}">{% trans %}diversity.title{% endtrans %}</a></li>
-            </ol>
-        </nav>
-    </div>
+
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
+
+{% endblock %}
+
+{% block heading %}
+
+    <p class="step">{% trans %}education.step{% endtrans %}</p>
+
+    <h1 class="form-title heading-large">{% trans %}education.title{% endtrans %}</h1>
+
 {% endblock %}
 
 {% block body %}
@@ -25,7 +27,7 @@
         <div class="col-md-12">
             {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
 
-                <h3>Existing Civil Servant</h3>
+                <h3 class="heading-medium">Existing Civil Servant</h3>
 
                 <p>Please indicate whether you are an existing Civil Servant</p>
                 {{ form_row(form.existingCivilServant) }}
@@ -54,9 +56,9 @@
 
                 <p>Selecting this option will allow you to proceed without a degree.</p>
 
-                <h3>Degree Details</h3>
+                <h3 class="heading-medium">Degree Details</h3>
 
-                <h4>Undergraduate degree</h4>
+                <h4 class="heading-small">Undergraduate degree</h4>
 
                 {{ form_row(form.undergraduateDegree) }}
 
@@ -87,7 +89,7 @@
                     {{ form_row(undergrad.institution) }}
                 {% endfor %}
 
-                <h4>Postgraduate degree</h4>
+                <h4 class="heading-small">Postgraduate degree</h4>
 
                 {{ form_row(form.postgraduateDegree) }}
 
@@ -118,7 +120,7 @@
                     {{ form_row(postgrad.institution) }}
                 {% endfor %}
 
-                <h3>Internship Programmes</h3>
+                <h3 class="heading-medium">Internship Programmes</h3>
 
                 <p>Please indicate whether you have completed the Early Diversity Internship Programme</p>
                 {{ form_row(form.earlyIntern) }}
