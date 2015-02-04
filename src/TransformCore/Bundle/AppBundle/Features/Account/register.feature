@@ -9,9 +9,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     # Your details
       | fos_user_registration_form_firstname                                                           | <first-name>                     |
       | fos_user_registration_form_lastname                                                            | <last-name>                      |
-        # Contact details                                                                              
+        # Contact details
       | fos_user_registration_form_email                                                               | <email-input>                    |
-        # Signin Details                                                                               
+        # Signin Details
       | fos_user_registration_form_plainPassword_first                                                 | <password>                       |
       | fos_user_registration_form_plainPassword_second                                                | <password>                       |
         # Referrer
@@ -66,9 +66,10 @@ Feature: As an user, I want to be able to register a new account, in order to ap
         # Disability details
     And I check "I require adjustments based on my disability"
     And I press "fos_user_registration_form_registerButton"
-    Then count of "2" instances of "This value should be of type alpha" exists on page
+    And I should see "Please enter only letters for your first name"
+    And I should see "Please enter only letters for your first name"
     Then I should see "The entered passwords don't match"
-    Then I should see "This value is not a valid email address"
+    And I should see "Please make sure your e-mail address is valid"
 
   @omit
   Scenario Outline: Create account with invalid details (password check)
@@ -81,7 +82,9 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_plainPassword_second" with "<password>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "Your password should be eight characters long and include a mix of letters, numbers and symbols"
+    Then I should see "Please make sure your password is at least 8 characters long"
+    And I should see "Please make sure your password contains at least 1 number"
+    And I should see "Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-)"
   Examples:
     | password  |
     | 1234567   |
@@ -101,13 +104,12 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
     And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "<Message>"
+    Then I should see "<Message1>"
+    Then I should see "<Message2>"
   Examples:
-    | password | Message                                                      |
-    | 1234567  | This value is too short. It should have 8 characters or more |
-    | 12345678 | Must contain at least 1 letter                               |
-    | abcdefgh | Must contain at least 1 number                               |
-    | 1bcdefgh | Must contain at least 1 symbol (eg. !@#$%^*_-)               |
+    | password | Message1                                                     | Message2                                                                   |
+    | 1234567  | Please make sure your password is at least 8 characters long | Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-) |
+    | abcdefgh | Please make sure your password contains at least 1 number    | Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-) |
 
   @CSR-6
   Scenario: Create account using blank form text fields (mandatory field check)
@@ -121,7 +123,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     And I fill in "fos_user_registration_form_lastname" with "Persona"
     And I fill in "fos_user_registration_form_email" with "email@test"
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "This value is not a valid email address"
+    Then I should see "Please make sure your e-mail address is valid"
     And I fill in "fos_user_registration_form_email" with "four@test.com"
     And I press "fos_user_registration_form_registerButton"
     Then I should see "This value should not be blank"
