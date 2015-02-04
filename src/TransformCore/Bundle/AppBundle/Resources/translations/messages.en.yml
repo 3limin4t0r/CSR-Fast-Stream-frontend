@@ -197,6 +197,7 @@ socioEconomic:
   title: Socio Economic Details - About your parents/guardians
   breadcrumb: Socio Economic
   step: Step 5 of 5
+  introduction: We are interested in understanding the backgrounds of respondents and their home lives when they were growing up, and would like to ask you a few questions about your parents’ (or guardians’) employment and educational histories. As all other diversity data we collect, it will be treated in confidence and will not in any way affect your results.
   form:
     typeOfSchoolAttendanceAtFourteen:
       label: Please indicate the type of school you were attending on your 14th birthday.
