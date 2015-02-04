@@ -31,10 +31,13 @@ register:
   form:
     firstname:
       label: First Name
+      title: First Name
     lastname:
       label: Last Name
+      title: Last Name
     email:
       label: Email
+      title: Email
     password:
       label: Password
     password-confirm:
@@ -95,18 +98,25 @@ address:
   form:
     line1:
       label: Line 1
+      title: Line 1
     line2:
       label: Line 2
+      title: Line 2
     line3:
       label: Line 3
+      title: Line 3
     town:
       label: Town
+      title: Town
     county:
       label: County
+      title: County
     postcode:
       label: Postcode
+      title: Postcode
     country:
       label: Country
+      title: Country
 
 eligibility:
   breadcrumb: Eligibility
@@ -114,14 +124,19 @@ eligibility:
   step: Step 2 of 5
   subject-to-immigration-controls:
     label: Please check whether or not you are subject to immigration controls
+    title: Subject to immigration controls
   subject-to-immigration-controls-details:
     label: Please fill in immigration controls details
+    title: Immigration controls details
   residency-or-employment-restrictions:
     label: Please select whether or not you have employment restrictions
+    title: Employment restrictions
   residency-or-employment-restrictions-details:
     label: Please fill in employment restrictions details
+    title: Employment restrictions details
   permission-to-check-background:
     label: Please check box to indicate you give permission for us to undertake checks
+    title: Give permission for us to undertake checks
   form:
     updateButton:
       label: Save and continue
@@ -129,6 +144,7 @@ eligibility:
 nationality:
   name:
     label: Present nationality
+    title: Present nationality
 
 profile:
   breadcrumb: About you
@@ -140,29 +156,38 @@ profile:
   form:
     dateOfBirth:
       label: Date of Birth
+      title: Date of Birth
     updateButton:
       label: Save and continue
 
 phone-number:
   number:
     label: Daytime contact number
+    title: Daytime contact number
 
 diversity:
+  breadcrumb: Diversity
   title: Diversity
+  step: Step 3 of 5
   paragraph:
     - The Civil Service is committed to promoting diversity, irrespective of ethnicity or nationality, gender, transgender, sexuality, disability, age, religion, marital status, working patterns and socio-economic status.
     - We collect diversity and socio economic information for monitoring purposes only and this data is treated separately from the application process. Your response in this section will not in any way affect your results and will be treated in strict confidence.
   form:
     gender:
       label: Please select your gender.
+      title: Gender
     ethnicOrigin:
       label: What is your ethnic origin?
+      title: Ethnic origin
     religionOrBelief:
       label: Please select your religion or belief.
+      title: Religion or belief
     sexualOrientation:
       label: Please select your sexual orientation.
+      title: Sexual orientation
     maritalStatus:
       label: Please select your marital status.
+      title: Marital status
     updateButton:
       label: Save and continue
 
@@ -170,11 +195,29 @@ socioEconomic:
   form:
     typeOfSchoolAttendanceAtFourteen:
       label: Please indicate the type of school you were attending on your 14th birthday.
+      title: Type of school you were attending on your 14th birthday
     firstPersonInImmediateFamilyToAttendUniversity:
       label: Please indicate whether you were the first person in your immediate family to attend University.
+      title: The first person in your immediate family to attend University
     eligibleForFreeSchoolMeals:
       label: Please indicate whether you were eligible for free school meals
+      title: Were Eligible for free school meals
     everSpentMoreThanThreeMonthsInCare:
       label: Have you ever personally spent longer than three months in care?
+      title: Spent longer than three months in care
     everPersonallyHadRefugeeOrAsylumStatus:
       label: Have you ever personally had refugee status or asylum status?
+      title: Personally had refugee status or asylum status
+
+review:
+  title: Review
+  breadcrumb: Review
+
+button:
+  edit: Edit
+  submit: Submit
+  
+education:
+  breadcrumb: Education
+  title: Education
+  step: Step 4 of 5
