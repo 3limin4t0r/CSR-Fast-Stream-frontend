@@ -119,7 +119,11 @@ address:
       title: Country
 
 education:
-  title: "Education"
+  breadcrumb: Education
+  title: Education
+  step: Step 4 of 5
+  group:
+    legend: Socio economic details
   existingCivilServant:
     label: "Please let us know if you are currently working as a Civil Servant"
     "false": "No, I am not an existing Civil Servant"
@@ -324,10 +328,3 @@ review:
 button:
   edit: Edit
   submit: Submit
-
-education:
-  breadcrumb: Education
-  title: Education
-  step: Step 4 of 5
-  group:
-    legend: Socio economic details
