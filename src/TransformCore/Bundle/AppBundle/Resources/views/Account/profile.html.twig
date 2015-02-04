@@ -16,20 +16,7 @@
 
 {% block breadcrumb %}
 
-    <div id="global-breadcrumb" class="header-context">
-
-        <nav role="navigation">
-            <ol class="group">
-                <li><a href="{{ path('transform_core_app_account') }}">{% trans %}account.breadcrumb{% endtrans %}</a></li>
-                <li class="active">{% trans %}profile.breadcrumb{% endtrans %}</li>
-                <li><a href="{{ path('transform_core_app_eligibility') }}">{% trans %}eligibility.breadcrumb{% endtrans %}</a></li>
-                <li><a href="#">{% trans %}education.breadcrumb{% endtrans %}</a></li>
-                <li><a href="{{ path('transform_core_app_diversity') }}">{% trans %}diversity.breadcrumb{% endtrans %}</a></li>
-                <li><a href="{{ path('transform_core_app_review') }}">{% trans %}review.breadcrumb{% endtrans %}</a></li>
-            </ol>
-        </nav>
-    
-    </div>
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
 
 {% endblock %}
 
