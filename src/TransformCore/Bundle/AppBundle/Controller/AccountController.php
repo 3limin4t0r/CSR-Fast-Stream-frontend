@@ -5,11 +5,9 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Diversity;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Parents\Parents;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\DiversityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ParentsFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
 
