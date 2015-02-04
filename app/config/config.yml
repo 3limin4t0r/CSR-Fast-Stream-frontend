@@ -86,6 +86,9 @@ fos_user:
         form:
             type: csr_dm_user_applicant
             validation_groups: [CsrRegistration]
+    change_password:
+        form:
+            validation_groups: [CsrPassword]
 
 jms_serializer:
     metadata:

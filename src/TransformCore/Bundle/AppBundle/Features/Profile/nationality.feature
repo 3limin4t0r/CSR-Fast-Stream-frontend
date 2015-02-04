@@ -22,7 +22,9 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_profile_address_address_group_town" with "a town"
     And I fill in "csr_dm_user_profile_address_address_group_postcode" with "post code"
 # Date of Birth
-    And I fill in "csr_dm_user_profile_date_of_birth_group_dateOfBirth" with "1968-08-02"
+    And I fill in "csr_dm_user_profile_dateOfBirth_day" with "02"
+    And I fill in "csr_dm_user_profile_dateOfBirth_month" with "08"
+    And I fill in "csr_dm_user_profile_dateOfBirth_year" with "1968"
 # Phone details
     And I fill in "csr_dm_user_profile_phone_number_group_phoneNumber_number" with "07951234567"
     And I select "United Kingdom" from "csr_dm_user_profile_address_address_group_country"
