@@ -148,7 +148,9 @@ phone-number:
     label: Daytime contact number
 
 diversity:
+  breadcrumb: Diversity
   title: Diversity
+  step: Step 4 of 5
   paragraph:
     - The Civil Service is committed to promoting diversity, irrespective of ethnicity or nationality, gender, transgender, sexuality, disability, age, religion, marital status, working patterns and socio-economic status.
     - We collect diversity and socio economic information for monitoring purposes only and this data is treated separately from the application process. Your response in this section will not in any way affect your results and will be treated in strict confidence.
@@ -165,6 +167,8 @@ diversity:
       label: Please select your marital status.
     updateButton:
       label: Save and continue
+  group:
+    legend: Diversity details
 
 socioEconomic:
   title: Socio Economic Details - About your parents/guardians
@@ -180,6 +184,8 @@ socioEconomic:
       label: Have you ever personally spent longer than three months in care?
     everPersonallyHadRefugeeOrAsylumStatus:
       label: Have you ever personally had refugee status or asylum status?
+    group:
+      legend: Socio economic details
 
 parents:
   socioEconomic:
