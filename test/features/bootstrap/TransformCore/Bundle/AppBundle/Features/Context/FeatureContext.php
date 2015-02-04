@@ -97,7 +97,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                 }
             } elseif ($tag == 'input') {
                 $type = strtolower($field->getAttribute('type'));
-                if ($type == 'checkbox' || $type == 'radio') {
+                if ($type == 'checkbox') {
                     if (strtolower($value) == 'yes') {
                         $page->checkField($fieldSelector);
                     } else {
