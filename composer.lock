@@ -2638,12 +2638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "1dadd35f6ba48c4223e36b8885e73510f25143d6"
+                "reference": "b1bef974cdf36554dd9bc5491a6d3e6a0001a14e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/1dadd35f6ba48c4223e36b8885e73510f25143d6",
-                "reference": "1dadd35f6ba48c4223e36b8885e73510f25143d6",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/b1bef974cdf36554dd9bc5491a6d3e6a0001a14e",
+                "reference": "b1bef974cdf36554dd9bc5491a6d3e6a0001a14e",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2669,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-02 17:50:34"
+            "time": "2015-02-04 11:29:26"
         },
         {
             "name": "twig/extensions",
