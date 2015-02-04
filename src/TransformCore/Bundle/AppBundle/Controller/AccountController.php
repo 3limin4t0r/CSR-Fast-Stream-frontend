@@ -33,12 +33,6 @@ class AccountController extends Controller
      */
     public function profileAction(Request $request)
     {
-        if (!$this->isUserAuthenticated()) {
-            return $this->redirect(
-                $this->generateUrl('fos_user_security_login')
-            );
-        }
-
         $applicant = $this->getApplicant();
 
         $form = $this->createForm(new ProfileFormType(), $applicant);
@@ -77,12 +71,6 @@ class AccountController extends Controller
      */
     public function eligibilityAction(Request $request)
     {
-        if (!$this->isUserAuthenticated()) {
-            return $this->redirect(
-                $this->generateUrl('fos_user_security_login')
-            );
-        }
-
         $eligibility = $this->getEligibility();
 
         $form = $this->createForm(new EligibilityFormType(), $eligibility);
@@ -154,12 +142,6 @@ class AccountController extends Controller
      */
     public function reviewAction()
     {
-        if (!$this->isUserAuthenticated()) {
-            return $this->redirect(
-                $this->generateUrl('fos_user_security_login')
-            );
-        }
-
         $validator = $this->get('validator');
 
         $applicant = $this->getApplicant();
@@ -214,16 +196,5 @@ class AccountController extends Controller
                     ->getToken()
                     ->getUser()
                     ->getId();
-    }
-
-    /**
-     * @return bool
-     */
-    private function isUserAuthenticated()
-    {
-        $token = $this->get('security.token_storage')
-                      ->getToken();
-
-        return !($token instanceof AnonymousToken);
     }
 }
