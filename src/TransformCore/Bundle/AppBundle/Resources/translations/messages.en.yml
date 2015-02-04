@@ -194,6 +194,10 @@ diversity:
     legend: Diversity details
 
 socioEconomic:
+  title: Socio Economic Details - About your parents/guardians
+  breadcrumb: Socio Economic
+  step: Step 5 of 5
+  introduction: We are interested in understanding the backgrounds of respondents and their home lives when they were growing up, and would like to ask you a few questions about your parents’ (or guardians’) employment and educational histories. As all other diversity data we collect, it will be treated in confidence and will not in any way affect your results.
   form:
     typeOfSchoolAttendanceAtFourteen:
       label: Please indicate the type of school you were attending on your 14th birthday.
@@ -209,6 +213,42 @@ socioEconomic:
       title: Spent longer than three months in care
     everPersonallyHadRefugeeOrAsylumStatus:
       label: Have you ever personally had refugee status or asylum status?
+    group:
+      legend: Socio economic details
+
+parents:
+  socioEconomic:
+    form:
+      updateButton:
+        label: Save and continue
+    education:
+      form:
+        highestEducationLevelThatYourFatherAchievedAtNormalEducationAge:
+          label: What was the highest education level that your father achieved (at normal education age, rather than as a mature student)?
+        highestEducationLevelThatYourMotherAchievedAtNormalEducationAge:
+          label: What was the highest education level that your mother achieved (at normal education age, rather than as a mature student)?
+    employment:
+      form:
+        whenYouWereFourteenYourFathersEmploymentStatus:
+          label: Thinking back to when you were aged about 14, did your father work as an employee or were they self employed?
+        whenYouWereFourteenYourMothersEmploymentStatus:
+          label: Thinking back to when you were aged about 14, did your mother work as an employee or were they self employed?
+    employer:
+      form:
+        whenYouWereFourteenNumberOfEmployeesByFather:
+          label: If your father was employed when you were aged 14, how many people worked for your father’s employer, or, if your father was self-employed and employed other people, how many people did your father employ?
+        whenYouWereFourteenNumberOfEmployeesByMother:
+          label: If your father was employed when you were aged 14, how many people worked for your mother’s employer, or, if your father was self-employed and employed other people, how many people did your mother employ?
+    role:
+      form:
+        whenYouWereFourteenFatherSuperviseAnyEmployees:
+          label: If your father was employed when you were aged 14, did they supervise any other employees? A supervisor is responsible for overseeing the work of other employees on a day-to-day basis
+        whenYouWereFourteenMotherSuperviseAnyEmployees:
+          label: If your mother was employed when you were aged 14, did they supervise any other employees? A supervisor is responsible for overseeing the work of other employees on a day-to-day basis
+        whenYouWereFourteenTypeOfWorkYourFatherDid:
+          label: Thinking back to when you were aged about 14, please select the sort of work your father did in their main job
+        whenYouWereFourteenTypeOfWorkYourMotherDid:
+          label: Thinking back to when you were aged about 14, please select the sort of work your mother did in their main job
       title: Personally had refugee status or asylum status
 
 review:

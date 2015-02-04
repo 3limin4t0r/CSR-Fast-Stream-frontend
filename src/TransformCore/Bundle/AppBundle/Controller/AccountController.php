@@ -5,9 +5,10 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Diversity;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Parents\Parents;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\DiversityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\ParentsFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
 
 /**
@@ -130,6 +131,40 @@ class AccountController extends Controller
         }
 
         return $this->render('TransformCoreAppBundle:Account:diversity.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
+        );
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     */
+    public function socioeconomicAction(Request $request)
+    {
+        $parents = new Parents();
+
+        $form = $this->createForm(new ParentsFormType(), $parents);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $parents = $form->getData();
+
+            $request->getSession()
+                    ->getFlashBag()
+                    ->add(
+                        'success',
+                        'Your changes were saved!'
+                    );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_review')
+            );
+        }
+
+        return $this->render('TransformCoreAppBundle:Account:socioeconomic.html.twig',
             array(
                 'form' => $form->createView(),
             )
