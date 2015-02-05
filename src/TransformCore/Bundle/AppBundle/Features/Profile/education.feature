@@ -7,7 +7,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And "six@test.com" has completed sections "About You, Nationality"
     And "seven@test.com" has completed sections "About You, Nationality"
 
-  @CSR-26 @omit
+  @CSR-26
   Scenario: Add education details (degrees completed and not a civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
 #    And I follow "Profile"
@@ -44,7 +44,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 #      | from "csr_dm_form_education_earlyInternCompleted | Oct 2014                                           |
 #      | csr_dm_form_education_earlyInternDept            | Early diversity programme government department  |
 
-  @CSR-26 @omit
+  @CSR-26
   Scenario: Add education details (degrees completed and civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
 #    And I follow "Profile"
@@ -99,7 +99,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 #    And I should see "Please indicate whether or not you completed the Early Diversity Internship Programme"
 #    And I should see "Please indicate whether or not you completed the Summer Diversity Internship Programme"
 
-  @CSR-26 @omit
+  @CSR-26
   Scenario: Add education details (no degrees needed)
     Given I am logged in as "six@test.com" with password "P@ssword1"
 #    And I follow "Profile"

@@ -71,16 +71,16 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     Then I should see "The entered passwords don't match"
     And I should see "Please make sure your e-mail address is valid"
 
-  @omit
+  @CSR-6
   Scenario Outline: Create account with invalid details (password check)
     Given I am on the homepage
     And I follow "Register"
-    Then I should see "Register Your Details"
-    And I fill in "fos_user_registration_form_firstname" with "Bill"
-    And I fill in "fos_user_registration_form_lastname" with "Carr"
-    And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
-    And I fill in "fos_user_registration_form_plainPassword_second" with "<password>"
-    And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
+    Then I fill form with:
+    | fos_user_registration_form_firstname | Bill |
+    | fos_user_registration_form_lastname  | Carr |
+    | fos_user_registration_form_plainPassword_first | <password> |
+    | fos_user_registration_form_plainPassword_second | <password> |
+    | fos_user_registration_form_email                                  | bill.carr@test.com        |
     And I press "fos_user_registration_form_registerButton"
     Then I should see "Please make sure your password is at least 8 characters long"
     And I should see "Please make sure your password contains at least 1 number"
@@ -93,7 +93,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
     | abcdefgh1 |
     | abcdefgh@ |
 
-  @CSR-6
+  @CSR-6 @omit
   Scenario Outline: Create account with invalid details (password)
     Given I am on the homepage
     And I follow "Register"
@@ -145,6 +145,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
   Scenario Outline: Create account using email that has already been used
     Given I am on the homepage
     And I follow "Register"
+    And I fill form with:
     And I fill in "fos_user_registration_form_email" with "<email>"
     And I fill in "fos_user_registration_form_firstname" with "<first-name>"
     And I fill in "fos_user_registration_form_lastname" with "<last-name>"
