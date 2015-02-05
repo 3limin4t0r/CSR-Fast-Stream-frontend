@@ -6,17 +6,17 @@
 
 {% endblock %}
 
+{% block breadcrumb %}
+
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
+
+{% endblock %}
+
 {% block heading %}
 
     <p class="step">{% trans %}diversity.step{% endtrans %}</p>
 
     <h1 class="form-title heading-large">{% trans %}diversity.title{% endtrans %}</h1>
-
-{% endblock %}
-
-{% block breadcrumb %}
-
-    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
 
 {% endblock %}
 

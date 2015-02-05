@@ -64,16 +64,7 @@
 {% endspaceless %}
 {%- endblock form_label -%}
 
-{% block checkbox_row %}
-{% spaceless %}
-
-    <div class="form-group">
-        {{- form_errors(form) -}}
-        {{- form_widget(form) -}}
-    </div>
-
-{% endspaceless %}
-{% endblock checkbox_row %}
+{% block checkbox_label -%}{%- endblock checkbox_label %}
 
 {% block checkbox_widget -%}
 {% spaceless %}
@@ -87,6 +78,21 @@
 
 {% endspaceless %}
 {%- endblock checkbox_widget %}
+
+{% block radio_label -%}{%- endblock radio_label %}
+
+{% block radio_widget -%}
+{% spaceless %}
+
+    {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' block-label')|trim}) %}
+    {% set skip_form_control_class = true %}
+
+    <label {% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>
+        <input type="radio" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />{{ label|trans({}, translation_domain) }}
+    </label>
+
+{% endspaceless %}
+{%- endblock radio_widget %}
 
 {% block textarea_widget -%}
 {% spaceless %}
