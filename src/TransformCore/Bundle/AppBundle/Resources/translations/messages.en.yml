@@ -118,6 +118,76 @@ address:
       label: Country
       title: Country
 
+education:
+  breadcrumb: Education
+  title: Education
+  step: Step 4 of 5
+  group:
+    legend: Socio economic details
+  existingCivilServant:
+    label: "Please let us know if you are currently working as a Civil Servant"
+    "false": "No, I am not an existing Civil Servant"
+    "true": "Yes, I am an existing Civil Servant"
+  fastTrackScheme:
+    label: "Yes, I will have completed a Fast Track apprentice scheme in this recruitment year"
+  schemeName:
+    label: ""
+    placeholder: "Select Fast Track scheme"
+  yearOfCompletion:
+    label: ""
+    placeholder: "Year of completion"
+  inServiceRoute:
+    label: "I would like to apply via the In Service route"
+  undergraduateDegree:
+    label: ""
+    "false": "I will not have completed an undergraduate degree in this recruitment year (In service applicants only)"
+    "true": "I have, or will have, completed an undergraduate degree in this recruitment year"
+  undergradUKDegree:
+    label: ""
+    "false": "I have, or will have completed, an undergraduate degree in this recruitment year from outside the United Kingdom"
+    "true": "I have, or will have completed, an undergraduate degree in this recruitment year from a university in the United Kingdom"
+  undergradUniversity:
+    label: "Name of university"
+  undergradGrade:
+    label: "Grade achieved or predicted"
+    placeholder: "Select grade"
+  undergradInstitution:
+    label: "Name of institution"
+  postgraduateDegree:
+    label: ""
+    "false": "I will not have completed a postgraduate degree in this recruitment year"
+    "true": "I have, or will have, completed a postgraduate degree in this recruitment year"
+  postgradUKDegree:
+    label: ""
+    "false": "I have, or will have completed, a postgraduate degree in this recruitment year from outside the United Kingdom"
+    "true": "I have, or will have completed, a postgraduate degree in this recruitment year from a university in the United Kingdom"
+  postgradUniversity:
+    label: "Name of university"
+  postgradDegree:
+    label: "Degree achieved"
+  postgradInstitution:
+    label: "Name of institution"
+  earlyIntern:
+    label: "Have you completed the Early Diversity Internship Programme?"
+    "false": "No, I have not completed the Early Diversity Internship Programme"
+    "true": "Yes, I have completed the Early Diversity Internship Programme"
+  earlyInternCompleted:
+    label: "Please indicate when you completed this programme"
+    placeholder: "Select date"
+  earlyInternDept:
+    label: "Please also indicate in which Government department you were placed"
+  summerIntern:
+    label: "Have you completed the Civil Service Summer Diversity Internship Programme?"
+    "false": "No, I have not completed the Civil Service Summer Diversity Internship Programme"
+    "true": "Yes, I have completed the Civil Service Summer Diversity Internship Programme"
+  summerInternCompleted:
+    label: "Please indicate when you completed this programme"
+    placeholder: "Select date"
+  summerInternDept:
+    label: "Please also indicate in which Government department you were placed"
+  saveAndContinue:
+    label: "Save and continue"
+
 eligibility:
   breadcrumb: Eligibility
   title: Nationality, Immigration and Employment Restrictions
@@ -258,10 +328,3 @@ review:
 button:
   edit: Edit
   submit: Submit
-  
-education:
-  breadcrumb: Education
-  title: Education
-  step: Step 4 of 5
-  group:
-    legend: Socio economic details

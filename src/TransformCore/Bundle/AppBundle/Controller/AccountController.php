@@ -4,9 +4,15 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Diversity;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Education;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Parents\Parents;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\PostgradDegree;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\UndergradDegree;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\DiversityFormType;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\EducationFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\EligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ParentsFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
@@ -81,8 +87,68 @@ class AccountController extends Controller
             $applicantId = $this->getApplicantId();
             $eligibility = $form->getData();
 
-            $this->get('transform_core_app_main.service.eligibility')
-                 ->update($applicantId, $eligibility);
+            // TODO: This needs to be reinstated to work with backend
+            // $this->get('transform_core_app_main.service.eligibility')
+            //     ->update($applicantId, $eligibility);
+
+            $request->getSession()
+                    ->getFlashBag()
+                    ->add(
+                        'success',
+                        'Your changes were saved!'
+                    );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_education')
+            );
+        }
+
+        return $this->render('TransformCoreAppBundle:Account:eligibility.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
+        );
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return Symfony\Component\HttpFoundation\Response
+     */
+    public function educationAction(Request $request)
+    {
+        $applicantId = $this->get('security.token_storage')
+            ->getToken()
+            ->getUser()
+            ->getId();
+
+        $education = new Education();
+
+        // TODO: This needs to be reinstated to work with backend
+        // $education = $this->get('transform_core_app_main.service.education')
+        //     ->getById($applicantId);
+
+        $undergradDegrees = $education->getUndergradDegrees();
+
+        if (is_null($undergradDegrees) || $undergradDegrees->count() == 0) {
+            $education->addUndergradDegree(new UndergradDegree());
+        }
+
+        $postgradDegrees = $education->getPostgradDegrees();
+
+        if (is_null($postgradDegrees) || $postgradDegrees->count() == 0) {
+            $education->addPostgradDegree(new PostgradDegree());
+        }
+
+        $form = $this->createForm(new EducationFormType(), $education);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $education = $form->getData();
+
+            // TODO: This needs to be reinstated to work with backend
+            // $this->get('transform_core_app_main.service.education')
+            //     ->update($applicantId, $education);
 
             $request->getSession()
                     ->getFlashBag()
@@ -96,7 +162,8 @@ class AccountController extends Controller
             );
         }
 
-        return $this->render('TransformCoreAppBundle:Account:eligibility.html.twig',
+        return $this->render(
+            'TransformCoreAppBundle:Account:education.html.twig',
             array(
                 'form' => $form->createView(),
             )
