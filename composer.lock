@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6897c6026d96795004715cd87793c957",
+    "hash": "57f75408416ebb9d40a2d42d49444aea",
     "packages": [
         {
             "name": "adamquaile/symfony-fieldset-bundle",
@@ -1694,7 +1694,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -1750,7 +1750,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -2638,12 +2638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "bcf103a0e1cb3b27186a38e95f94e0d664edf330"
+                "reference": "a9d98e53217e8fae0d328ed0245e1abc560d0fb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/bcf103a0e1cb3b27186a38e95f94e0d664edf330",
-                "reference": "bcf103a0e1cb3b27186a38e95f94e0d664edf330",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/a9d98e53217e8fae0d328ed0245e1abc560d0fb9",
+                "reference": "a9d98e53217e8fae0d328ed0245e1abc560d0fb9",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2669,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-05 15:53:44"
+            "time": "2015-02-05 18:14:04"
         },
         {
             "name": "twig/extensions",
@@ -2923,16 +2923,16 @@
         },
         {
             "name": "behat/mink",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/Mink.git",
-                "reference": "090900a0049c441f1e072bbd837db4079b2250c5"
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/Mink/zipball/090900a0049c441f1e072bbd837db4079b2250c5",
-                "reference": "090900a0049c441f1e072bbd837db4079b2250c5",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/8b68523a339ec991bcd638b39dc8f04f808da88a",
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a",
                 "shasum": ""
             },
             "require": {
@@ -2952,8 +2952,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Behat\\Mink": "src/"
+                "psr-4": {
+                    "Behat\\Mink\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2967,14 +2967,14 @@
                     "homepage": "http://everzet.com"
                 }
             ],
-            "description": "Web acceptance testing framework for PHP 5.3",
+            "description": "Browser controller/emulator abstraction for PHP",
             "homepage": "http://mink.behat.org/",
             "keywords": [
                 "browser",
                 "testing",
                 "web"
             ],
-            "time": "2014-09-26 09:25:05"
+            "time": "2015-02-04 17:02:06"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -3147,12 +3147,12 @@
             "version": "v1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
+                "url": "https://github.com/Behat/MinkSelenium2Driver.git",
                 "reference": "8018fee80bf6573f909ece3e0dfc07d0eb352210"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/8018fee80bf6573f909ece3e0dfc07d0eb352210",
+                "url": "https://api.github.com/repos/Behat/MinkSelenium2Driver/zipball/8018fee80bf6573f909ece3e0dfc07d0eb352210",
                 "reference": "8018fee80bf6573f909ece3e0dfc07d0eb352210",
                 "shasum": ""
             },
@@ -3805,16 +3805,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v60",
+            "version": "v62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "b83fc472f24e187efc6c18ebc3b3fef1913ccf53"
+                "reference": "e4f5473184a955b3c91de1dac040ed58d9bc5347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/b83fc472f24e187efc6c18ebc3b3fef1913ccf53",
-                "reference": "b83fc472f24e187efc6c18ebc3b3fef1913ccf53",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/e4f5473184a955b3c91de1dac040ed58d9bc5347",
+                "reference": "e4f5473184a955b3c91de1dac040ed58d9bc5347",
                 "shasum": ""
             },
             "bin": [
@@ -3845,7 +3845,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-02-04 00:20:33"
+            "time": "2015-02-04 15:47:32"
         },
         {
             "name": "instaclick/php-webdriver",
