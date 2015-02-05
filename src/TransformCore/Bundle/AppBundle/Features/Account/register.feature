@@ -69,34 +69,14 @@ Feature: As an user, I want to be able to register a new account, in order to ap
       | fos_user_registration_form_plainPassword_second | <password>         |
       | fos_user_registration_form_email                | bill.carr@test.com |
     And I press "Register"
-    Then I should see "Please make sure your password is at least 8 characters long"
-    And I should see "Please make sure your password contains at least 1 number"
+    Then I should see "<message>"
     And I should see "Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-)"
   Examples:
-    | password  |
-    | 1234567   |
-    | 12345678  |
-    | abcdefgh  |
-    | abcdefgh1 |
-    | abcdefgh@ |
+    | password  |message|
+    | 123456a   | Please make sure your password is at least 8 characters long     |
+    | 12345678  | Please make sure your password contains at least 1 letter        |
+    | abcdefgh  | Please make sure your password contains at least 1 number        |
 
-  @CSR-6 @omit
-  Scenario Outline: Create account with invalid details (password)
-    Given I am on the homepage
-    And I follow "Register"
-    Then I should see "Register Your Details"
-    And I fill in "fos_user_registration_form_firstname" with "Bill"
-    And I fill in "fos_user_registration_form_lastname" with "Carr"
-    And I fill in "fos_user_registration_form_plainPassword_first" with "<password>"
-    And I fill in "fos_user_registration_form[plainPassword][second]" with "<password>"
-    And I fill in "fos_user_registration_form_email" with "bill.carr@test.com"
-    And I press "Register"
-    Then I should see "<Message1>"
-    Then I should see "<Message2>"
-  Examples:
-    | password | Message1                                                     | Message2                                                                   |
-    | 1234567  | Please make sure your password is at least 8 characters long | Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-) |
-    | abcdefgh | Please make sure your password contains at least 1 number    | Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-) |
 
   @CSR-6
   Scenario: Create account using blank form text fields (mandatory field check)
