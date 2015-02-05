@@ -1,0 +1,93 @@
+
+<div class="heading">
+    <h3 class="heading-medium">{% trans %}profile.title{% endtrans %}</h3>
+    <a class="button" href="{{ path('transform_core_app_profile_edit') }}">{% trans %}button.edit{% endtrans %}</a>
+</div>
+
+<table>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}register.form.firstname.title{% endtrans %}</th>
+            <td>{{ applicant.firstname }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}register.form.lastname.title{% endtrans %}</th>
+            <td>{{ applicant.lastname }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}register.form.email.title{% endtrans %}</th>
+            <td>{{ applicant.email }}</td>
+        </tr>
+
+    </tbody>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}address.form.line1.title{% endtrans %}</th>
+            <td>{{ applicant.address.line1 }}</td>
+        </tr>
+
+        {% if applicant.address.line2 %}
+
+            <tr>
+                <th>{% trans %}address.form.line2.title{% endtrans %}</th>
+                <td>{{ applicant.address.line2 }}</td>
+            </tr>
+
+        {% endif %}
+
+        {% if applicant.address.line3 %}
+
+            <tr>
+                <th>{% trans %}address.form.line3.title{% endtrans %}</th>
+                <td>{{ applicant.address.line3 }}</td>
+            </tr>
+
+        {% endif %}
+
+        <tr>
+            <th>{% trans %}address.form.town.title{% endtrans %}</th>
+            <td>{{ applicant.address.town }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}address.form.county.title{% endtrans %}</th>
+            <td>{{ applicant.address.county }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}address.form.postcode.title{% endtrans %}</th>
+            <td>{{ applicant.address.postcode }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}address.form.country.title{% endtrans %}</th>
+            <td>{{ applicant.address.country }}</td>
+        </tr>
+
+    </tbody>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}profile.form.dateOfBirth.title{% endtrans %}</th>
+            <td>{{ applicant.dateOfBirth }}</td>
+        </tr>
+
+    </tbody>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}phone-number.number.title{% endtrans %}</th>
+            <td>{{ applicant.phoneNumber.number }}</td>
+        </tr>
+
+    </tbody>
+
+</table>

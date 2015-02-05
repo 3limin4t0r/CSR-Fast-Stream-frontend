@@ -97,7 +97,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                 }
             } elseif ($tag == 'input') {
                 $type = strtolower($field->getAttribute('type'));
-                if ($type == 'checkbox' || $type == 'radio') {
+                if ($type == 'checkbox') {
                     if (strtolower($value) == 'yes') {
                         $page->checkField($fieldSelector);
                     } else {
@@ -235,13 +235,14 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iCheckTheRadioButton($radioLabel)
     {
-        $radioButton = $this->getSession()->getPage()->findField($radioLabel);
-        if (null === $radioButton) {
-            throw new \Exception("Cannot find radio button " . $radioLabel);
-        }
-        $value = $radioButton->getAttribute('value');
-        $this->getSession()->getDriver()->click($radioButton->getXPath());
-        sleep(1);
+       $this->getSession()->getPage()->fillField($radioLabel, '1');
+    //   $radioButton = $this->getSession()->getPage()->findField($radioLabel);
+    //     if (null === $radioButton) {
+    //         throw new \Exception("Cannot find radio button " . $radioLabel);
+    //     }
+    //     $value = $radioButton->getAttribute('value');
+    //     $this->getSession()->getDriver()->click($radioButton->getXPath());
+    //     sleep(1);
     }
 
     /**

@@ -6,27 +6,17 @@
 
 {% endblock %}
 
+{% block breadcrumb %}
+
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
+
+{% endblock %}
+
 {% block heading %}
 
     <p class="step">{% trans %}profile.step{% endtrans %}</p>
 
     <h1 class="form-title heading-large">{% trans %}profile.title{% endtrans %}</h1>
-
-{% endblock %}
-
-{% block breadcrumb %}
-
-    <div id="global-breadcrumb" class="header-context">
-
-        <nav role="navigation">
-            <ol class="group">
-                <li><a href="{{ path('transform_core_app_account') }}">{% trans %}account.breadcrumb{% endtrans %}</a></li>
-                <li>{% trans %}profile.breadcrumb{% endtrans %}</li>
-                <li><a href="{{ path('transform_core_app_eligibility') }}">{% trans %}eligibility.breadcrumb{% endtrans %}</a></li>
-            </ol>
-        </nav>
-    
-    </div>
 
 {% endblock %}
 
