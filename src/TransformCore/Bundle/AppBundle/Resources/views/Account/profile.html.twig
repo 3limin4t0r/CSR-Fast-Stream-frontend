@@ -30,4 +30,68 @@
         {{ form_widget(form) }}
     {{ form_end(form) }}
 
+    <script>
+
+        (function ()
+        {
+            var dateControlTemplate =
+                "<div class='form-date'>"
+              + "    <p class='form-hint'>For example, 31 3 1980</p>"
+              + "    <div class='form-group form-group-day'>"
+              + "        <label for='%input%-enhanced-day'>Day</label>"
+              + "        <input class='form-control' id='%input%-enhanced-day'   type='number' pattern='[0-9]*' min='0' max='31'>"
+              + "    </div>"
+              + "    <div class='form-group form-group-month'>"
+              + "        <label for='%input%-enhanced-month'>Month</label>"
+              + "        <input class='form-control' id='%input%-enhanced-month' type='number' pattern='[0-9]*' min='0' max='12'>"
+              + "    </div>"
+              + "    <div class='form-group form-group-year'>"
+              + "        <label for='%input%-enhanced-year'>Year</label>"
+              + "        <input class='form-control' id='%input%-enhanced-year'  type='number' pattern='[0-9]*' min='0' max='2050'>"
+              + "    </div>"
+              + "</div>";
+
+            var dateControls = 
+                $("input.date-enhancement");
+
+            dateControls.each(
+                function()
+                {
+                    var container = $(this).parent();
+                    var dateControl = $(this);
+
+                    var template = dateControlTemplate.replace("%input%", dateControl.attr("id"));
+
+                    dateControl.attr("type", "hidden");
+                    container.append(template);
+
+                    var yearControl = container.find(".form-group-year input");
+                    var monthControl = container.find(".form-group-month input");
+                    var dayControl = container.find(".form-group-day input");
+
+                    var date = new Date(dateControl.val());
+                    yearControl.val(date.getFullYear());
+                    monthControl.val(date.getMonth()+1);
+                    dayControl.val(date.getDate());
+
+                    var dateChangeObserver = function ()
+                    {
+                        var formattedDate =
+                              ""
+                            + yearControl.val()
+                            + "-"
+                            + monthControl.val()
+                            + "-"
+                            + dayControl.val();
+
+                        dateControl.val(formattedDate);
+                    }
+
+                    container.find(".form-date input").change(dateChangeObserver);
+                }
+            );
+        })();
+
+    </script>
+
 {% endblock %}
