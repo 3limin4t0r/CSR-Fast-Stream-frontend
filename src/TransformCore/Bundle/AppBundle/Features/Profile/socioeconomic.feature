@@ -25,13 +25,10 @@ Feature: As an applicant after logging in I want to see my homepage
 #Parent/guardian's Education
       | csr_dm_parents_education_group_education_highestEducationLevelThatYourFatherAchievedAtNormalEducationAge | No qualifications                                                                                                                  |
       | csr_dm_parents_education_group_education_highestEducationLevelThatYourMotherAchievedAtNormalEducationAge | Degree level or Degree equivalent or above (for example first or higher degrees, postgraduate diplomas, NVQ/SVQ level 4 or 5, etc) |
-      # Parent/guardian's Employment
       | csr_dm_parents_employment_group_employment_whenYouWereFourteenYourFathersEmploymentStatus                | Employee                                                                                                                           |
       | csr_dm_parents_employment_group_employment_whenYouWereFourteenYourMothersEmploymentStatus                | Self-employed with employees                                                                                                       |
-      # Parent/guardian's Employer
       | csr_dm_parents_employer_group_employer_whenYouWereFourteenNumberOfEmployeesByFather                      | 1-24                                                                                                                               |
       | csr_dm_parents_employer_group_employer_whenYouWereFourteenNumberOfEmployeesByMother                      | Do not know or cannot remember                                                                                                     |
-      # Parent/guardian's Employment Role
       | csr_dm_parents_role_group_role_whenYouWereFourteenFatherSuperviseAnyEmployees                            | Yes                                                                                                                                |
       | csr_dm_parents_role_group_role_whenYouWereFourteenMotherSuperviseAnyEmployees                            | Prefer not to say                                                                                                                  |
       | csr_dm_parents_role_group_role_whenYouWereFourteenTypeOfWorkYourFatherDid                                | Prefer not to say                                                                                                                  |

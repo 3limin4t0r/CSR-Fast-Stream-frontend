@@ -1,6 +1,6 @@
 Feature: End to End profile user journey
 
-  @CSR-6 @e2e
+  @CSR-6 @e2e @omit
   Scenario Outline: Create Account with valid details
     Given I am on the homepage
     And I follow "Register"
@@ -19,7 +19,7 @@ Feature: End to End profile user journey
       | fos_user_registration_form_registered_disability_group_phoneNumber_number                      | <phoneNumber>                    |
       | fos_user_registration_form_registered_disability_group_registration_guaranteedInterviewScheme  | YES                              |
       | fos_user_registration_form_registered_disability_group_registration_termsAndConditions         | YES                              |
-    And I press "fos_user_registration_form_registerButton"
+    And I press "Save and continue"
     Then I should not see "This value is already used"
     Then I should see "The user has been created successfully"
     And I should see "<email-input>"
@@ -27,12 +27,12 @@ Feature: End to End profile user journey
     | first-name | last-name | email-input       | phoneNumber | password  | referrer-input |
     | End        | Toend     | endtoend@test.com | 07739898078 | P@ssword1 | Search Engine  |
 
-  @CSR-135 @e2e
+  @CSR-135 @e2e @omit
   Scenario: Complete About You Section (Happy path)
     Given I am logged in as "endtoend@test.com" with password "P@ssword1"
     And I follow "Profile"
     Then I should see form with:
-      | csr_dm_user_profile_name_group_firstname | End     |
+      | csr_dm_user_profile_name_group_firstname | End   |
       | csr_dm_user_profile_name_group_lastname  | Toend |
     When I fill form with:
       | csr_dm_user_profile_name_group_firstname                  | Onechange          |
@@ -63,20 +63,20 @@ Feature: End to End profile user journey
       | United Kingdom                                            | csr_dm_user_profile_address_address_group_country |
       | csr_dm_user_profile_phone_number_group_phoneNumber_number | 07951234567                                       |
 
-  @CSR-24 @e2e
+  @CSR-24 @e2e @omit
   Scenario: Complete Nationality and immigration section (Happy path)
     Given I am logged in as "endtoend@test.com" with password "P@ssword1"
     And I am on "/en/applicant/eligibility"
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill form with:
-      | csr_dm_user_eligibility_nationality_group_presentNationality_name | British |
-      | csr_dm_user_eligibility_immigration_group_subjectToImmigrationControls           | Yes |
-      | csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictions      | Yes |
-      | csr_dm_user_eligibility_permissionToCheckBackground                              | Yes |
+      | csr_dm_user_eligibility_nationality_group_presentNationality_name           | British |
+      | csr_dm_user_eligibility_immigration_group_subjectToImmigrationControls      | Yes     |
+      | csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictions | Yes     |
+      | csr_dm_user_eligibility_permissionToCheckBackground                         | Yes     |
     Then I press "Save and continue"
     Then I should see "Your changes were saved"
 
-  @CSR-26 @e2e
+  @CSR-26 @e2e @omit
   Scenario: Add education details (degrees completed and not a civil servant)
     Given I am logged in as "endtoend@test.com" with password "P@ssword1"
     And I am on "/en/applicant/education"
@@ -99,7 +99,7 @@ Feature: End to End profile user journey
     And I press "Save and continue"
     Then I should see "Diversity"
 
-  @CSR-196 @e2e
+  @CSR-196 @e2e @omit
   Scenario: Complete Diversity section (Happy path)
     Given I am logged in as "endtoend@test.com" with password "P@ssword1"
     And I am on "/en/applicant/diversity"
@@ -119,7 +119,7 @@ Feature: End to End profile user journey
     Then I should see "Your changes were saved!"
     And I should see "Socio Economic Details - About your parents/guardians"
 
-  @CSR-12 @e2e
+  @CSR-12 @e2e @omit
   Scenario: Complete Socio-economic section (Happy path)
     Given I am logged in as "endtoend@test.com" with password "P@ssword1"
     And I am on "/en/applicant/socioeconomic"
@@ -138,7 +138,7 @@ Feature: End to End profile user journey
     And I press "Save and continue"
     And the url should match "/en/applicant/review"
 
-  @CSR-211 @e2e
+  @CSR-211 @e2e @omit
   Scenario: Review and Submit (User Journey)
     Given I am logged in as "endtoend@test.com" with password "P@ssword1"
     And I am on "/en/applicant/review"
