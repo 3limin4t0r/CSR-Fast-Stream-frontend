@@ -35,13 +35,11 @@ security:
         - { path: ^/en/admin/, role: ROLE_ADMIN }
         - { path: ^/en/account, role: ROLE_USER }
         - { path: ^/en/account/edit, role: ROLE_USER }
-        - { path: ^/en/applicant/diversity, role: ROLE_USER }
-        - { path: ^/en/applicant/eligibility, role: ROLE_USER }
+        - { path: ^/en/applicant/, role: ROLE_USER }
         - { path: ^/fr/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/fr/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/fr/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/fr/admin/, role: ROLE_ADMIN }
         - { path: ^/fr/account, role: ROLE_USER }
         - { path: ^/fr/account/edit, role: ROLE_USER }
-        - { path: ^/fr/applicant/eligibility, role: ROLE_USER }
-        - { path: ^/fr/applicant/diversity, role: ROLE_USER }
+        - { path: ^/fr/applicant/, role: ROLE_USER }
