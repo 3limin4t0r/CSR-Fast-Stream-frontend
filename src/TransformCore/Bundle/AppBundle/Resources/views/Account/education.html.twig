@@ -75,31 +75,22 @@
 
             {% for undergrad in form.undergradDegrees %}
 
-                <div class="form-group">
-                    <label class="control-label required">{{ form_label(undergrad.uk) }}</label>
-                    <div id="csr_dm_form_education_undergrad_uk_0">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_undergrad_uk_0_widget" class="required">
-                                {{ form_widget(undergrad.uk.children[0]) }} {{ form_label(undergrad.uk.children[0], null) }}
-                            </label>
-                        </div>
-                    </div>
+                {{ form_row(undergrad.uk.children[0]) }}
+
+                <div id="undergraduate-degree-uk-container">
+
+                    {{ form_row(undergrad.university) }}
+                    {{ form_row(undergrad.grade) }}
+
                 </div>
 
-                {{ form_row(undergrad.university) }}
-                {{ form_row(undergrad.grade) }}
+                {{ form_row(undergrad.uk.children[1]) }}
 
-                <div class="form-group">
-                    <div id="csr_dm_form_education_undergrad_uk_1">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_undergrad_uk_1_widget" class="required">
-                                {{ form_widget(undergrad.uk.children[1]) }} {{ form_label(undergrad.uk.children[1], null) }}
-                            </label>
-                        </div>
-                    </div>
+                <div id="undergraduate-degree-abroad-container">
+
+                    {{ form_row(undergrad.institution) }}
+                
                 </div>
-
-                {{ form_row(undergrad.institution) }}
 
             {% endfor %}
 
@@ -115,31 +106,22 @@
 
             {% for postgrad in form.postgradDegrees %}
 
-                <div class="form-group">
-                    <label class="control-label required">{{ form_label(postgrad.uk) }}</label>
-                    <div id="csr_dm_form_education_postgrad_uk_0">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_postgrad_uk_0_widget" class="required">
-                                {{ form_widget(postgrad.uk.children[0]) }} {{ form_label(postgrad.uk.children[0], null) }}
-                            </label>
-                        </div>
-                    </div>
+                {{ form_row(postgrad.uk.children[0]) }}
+
+                <div id="postgraduate-degree-uk-container">
+
+                    {{ form_row(postgrad.university) }}
+                    {{ form_row(postgrad.degree) }}
+                
                 </div>
 
-                {{ form_row(postgrad.university) }}
-                {{ form_row(postgrad.degree) }}
+                {{ form_row(postgrad.uk.children[1]) }}
+                
+                <div id="postgraduate-degree-abroad-container">
 
-                <div class="form-group">
-                    <div id="csr_dm_form_education_postgrad_uk_1">
-                        <div class="radio">
-                            <label for="csr_dm_form_education_postgrad_uk_1_widget" class="required">
-                                {{ form_widget(postgrad.uk.children[1]) }} {{ form_label(postgrad.uk.children[1], null) }}
-                            </label>
-                        </div>
-                    </div>
+                    {{ form_row(postgrad.institution) }}
+                
                 </div>
-
-                {{ form_row(postgrad.institution) }}
 
             {% endfor %}
 
@@ -175,11 +157,15 @@
 
         (function ()
         {
-            function registerBooleanProgressiveDisclosure(controlName, containerId)
+            function registerProgressiveDisclosure(controlName, containerId, triggerValue)
             {
+                if (triggerValue === undefined) {
+                    triggerValue = 1;
+                }
+
                 var container = $("#" + containerId);
                 var controlSet = $("input[name='" + controlName + "']");
-                var controlState = $("input[name='" + controlName + "'][value=1]");
+                var controlState = $("input[name='" + controlName + "'][value='" + triggerValue + "']");
 
                 var changeObserver = function()
                 {
@@ -194,12 +180,19 @@
                 controlSet.click(changeObserver);
             }
 
-            registerBooleanProgressiveDisclosure('csr_dm_form_education[existingCivilServant]', 'existing-civil-servant-container');
-            registerBooleanProgressiveDisclosure('csr_dm_form_education[fastTrackScheme]', 'fast-track-scheme-container');
-            registerBooleanProgressiveDisclosure('csr_dm_form_education[undergraduateDegree]', 'undergraduate-degree-container');
-            registerBooleanProgressiveDisclosure('csr_dm_form_education[postgraduateDegree]', 'postgraduate-degree-container');
-            registerBooleanProgressiveDisclosure('csr_dm_form_education[earlyIntern]', 'early-intern-container');
-            registerBooleanProgressiveDisclosure('csr_dm_form_education[summerIntern]', 'summer-intern-container');
+            registerProgressiveDisclosure('csr_dm_form_education[existingCivilServant]', 'existing-civil-servant-container');
+            registerProgressiveDisclosure('csr_dm_form_education[fastTrackScheme]', 'fast-track-scheme-container');
+            
+            registerProgressiveDisclosure('csr_dm_form_education[undergraduateDegree]', 'undergraduate-degree-container');
+            registerProgressiveDisclosure('csr_dm_form_education[undergradDegrees][0][uk]', 'undergraduate-degree-uk-container', 0);
+            registerProgressiveDisclosure('csr_dm_form_education[undergradDegrees][0][uk]', 'undergraduate-degree-abroad-container', 1);
+
+            registerProgressiveDisclosure('csr_dm_form_education[postgraduateDegree]', 'postgraduate-degree-container');
+            registerProgressiveDisclosure('csr_dm_form_education[postgradDegrees][0][uk]', 'postgraduate-degree-uk-container', 0);
+            registerProgressiveDisclosure('csr_dm_form_education[postgradDegrees][0][uk]', 'postgraduate-degree-abroad-container', 1);
+
+            registerProgressiveDisclosure('csr_dm_form_education[earlyIntern]', 'early-intern-container');
+            registerProgressiveDisclosure('csr_dm_form_education[summerIntern]', 'summer-intern-container');
         })();
 
     </script>
