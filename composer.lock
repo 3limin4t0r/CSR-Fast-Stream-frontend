@@ -2923,16 +2923,16 @@
         },
         {
             "name": "behat/mink",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Behat/Mink.git",
-                "reference": "090900a0049c441f1e072bbd837db4079b2250c5"
+                "url": "https://github.com/minkphp/Mink.git",
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Mink/zipball/090900a0049c441f1e072bbd837db4079b2250c5",
-                "reference": "090900a0049c441f1e072bbd837db4079b2250c5",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/8b68523a339ec991bcd638b39dc8f04f808da88a",
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a",
                 "shasum": ""
             },
             "require": {
@@ -2952,8 +2952,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Behat\\Mink": "src/"
+                "psr-4": {
+                    "Behat\\Mink\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2967,14 +2967,14 @@
                     "homepage": "http://everzet.com"
                 }
             ],
-            "description": "Web acceptance testing framework for PHP 5.3",
+            "description": "Browser controller/emulator abstraction for PHP",
             "homepage": "http://mink.behat.org/",
             "keywords": [
                 "browser",
                 "testing",
                 "web"
             ],
-            "time": "2014-09-26 09:25:05"
+            "time": "2015-02-04 17:02:06"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -3805,16 +3805,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v60",
+            "version": "v62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "b83fc472f24e187efc6c18ebc3b3fef1913ccf53"
+                "reference": "e4f5473184a955b3c91de1dac040ed58d9bc5347"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/b83fc472f24e187efc6c18ebc3b3fef1913ccf53",
-                "reference": "b83fc472f24e187efc6c18ebc3b3fef1913ccf53",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/e4f5473184a955b3c91de1dac040ed58d9bc5347",
+                "reference": "e4f5473184a955b3c91de1dac040ed58d9bc5347",
                 "shasum": ""
             },
             "bin": [
@@ -3845,7 +3845,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-02-04 00:20:33"
+            "time": "2015-02-04 15:47:32"
         },
         {
             "name": "instaclick/php-webdriver",
