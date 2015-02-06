@@ -44,7 +44,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 #      | from "csr_dm_form_education_earlyInternCompleted | Oct 2014                                           |
 #      | csr_dm_form_education_earlyInternDept            | Early diversity programme government department  |
 
-  @CSR-26 @javascript
+  @CSR-26
   Scenario: Add education details (degrees completed and civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
 #    And I follow "Profile"
@@ -101,7 +101,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
       | csr_dm_form_education_earlyIntern_1          | 1 |
       | csr_dm_form_education_summerIntern_1         | 1 |
     And I press "Save and continue"
-    Then count of "4" instances of "This value should not be blank" exists on page
+    Then count of "8" instances of "This value should not be blank" exists on page
 
 #  @CSR-26
 #  Scenario: Add education details (mandatory field check)
