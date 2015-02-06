@@ -87,8 +87,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I press "Save and continue"
     And I am on "/en/logout"
     When I am logged in as "three@test.com" with password "P@ssword2"
-    Then I should see "Logout"
-    And I should not see "Login"
+    Then I should not see "Invalid credentials"
+    And I should see "Logout"
     And I follow "Profile"
     And I fill form with:
       | csr_dm_user_profile_credentials_group_plainPassword_first  | P@ssword1 |
