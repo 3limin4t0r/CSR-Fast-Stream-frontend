@@ -84,6 +84,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill form with:
       | csr_dm_user_profile_credentials_group_plainPassword_first  | P@ssword2 |
       | csr_dm_user_profile_credentials_group_plainPassword_second | P@ssword2 |
+      | csr_dm_user_profile_date_of_birth_group_dateOfBirth       | 1968-08-02         |
     Then I press "Save and continue"
     And I am on "/en/logout"
     When I am logged in as "three@test.com" with password "P@ssword2"
