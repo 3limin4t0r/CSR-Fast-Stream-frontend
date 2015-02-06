@@ -4,8 +4,6 @@ namespace TransformCore\Bundle\AppBundle\Features\Context;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
-use Behat\Behat\Tester\Exception\PendingException;
-use Behat\Mink\Exception\Exception;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
@@ -38,27 +36,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             $parameters = $this->_parameters;
             return (isset($parameters[$name])) ? $parameters[$name] : null;
         }
-    }
-
-    public function spin($lambda, $wait = 60)
-    {
-        for ($i = 0; $i < $wait; $i++) {
-            try {
-                if ($lambda($this)) {
-                    return true;
-                }
-            } catch (\Exception $e) {
-                // do nothing
-            }
-            sleep(1);
-        }
-
-        $backtrace = debug_backtrace();
-
-        throw new \Exception(
-            "Timeout thrown by " . $backtrace[1]['class'] . "::" . $backtrace[1]['function'] . "()\n" .
-            $backtrace[1]['file'] . ", line " . $backtrace[1]['line']
-        );
     }
 
     /**
@@ -103,8 +80,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                     } else {
                         $page->uncheckField($fieldSelector);
                     }
-//                } elseif ($type == 'radio') {
-//                    // TODO: handle radio
                 } else {
                     $page->fillField($fieldSelector, $value);
                 }
@@ -235,14 +210,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iCheckTheRadioButton($radioLabel)
     {
-       $this->getSession()->getPage()->fillField($radioLabel, '1');
-    //   $radioButton = $this->getSession()->getPage()->findField($radioLabel);
-    //     if (null === $radioButton) {
-    //         throw new \Exception("Cannot find radio button " . $radioLabel);
-    //     }
-    //     $value = $radioButton->getAttribute('value');
-    //     $this->getSession()->getDriver()->click($radioButton->getXPath());
-    //     sleep(1);
+        $this->getSession()->getPage()->fillField($radioLabel, '1');
     }
 
     /**
@@ -280,7 +248,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $this->getSession()->getPage()->clickLink('Login');
         $this->getSession()->getPage()->fillField('username', $email);
         $this->getSession()->getPage()->fillField('password', $password);
-        $this->getSession()->getPage()->pressButton('_submit');
+        $this->getSession()->getPage()->pressButton('Login');
         $this->assertResponseContains($email);
     }
 
@@ -289,6 +257,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
     {
+        return true;
     }
 
     /**
@@ -296,13 +265,14 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function hasCompletedTheSection($arg1, $arg2)
     {
+        return true;
     }
 
     /**
      * @Given :arg1 has completed the :arg2 sections
      */
-    public function hasCompletedTheSections($applicant,$sections)
+    public function hasCompletedTheSections($applicant, $sections)
     {
-
+        return true;
     }
 }
