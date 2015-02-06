@@ -8,8 +8,9 @@ Feature: As a user, I want to be able to login, in order to manage my account an
   Scenario Outline: Login (Valid details)
     Given I am on the homepage
     And I follow "Login"
-    And I fill in "username" with "<email-input>"
-    And I fill in "password" with "<password>"
+    And I fill form with:
+      | username | <email-input> |
+      | password | <password>    |
     And I press "Login"
     Then I should see "<message>"
 
@@ -21,8 +22,9 @@ Feature: As a user, I want to be able to login, in order to manage my account an
   Scenario Outline: Login (Invalid password)
     Given I am on the homepage
     And I follow "Login"
-    And I fill in "username" with "<email-input>"
-    And I fill in "password" with "<password>"
+    And I fill form with:
+      | username | <email-input> |
+      | password | <password>    |
     And I press "Login"
     Then I should see "<message>"
 
@@ -35,8 +37,9 @@ Feature: As a user, I want to be able to login, in order to manage my account an
   Scenario Outline: Login (Invalid username)
     Given I am on the homepage
     And I follow "Login"
-    And I fill in "username" with "<email-input>"
-    And I fill in "password" with "<password>"
+    And I fill form with:
+      | username | <email-input> |
+      | password | <password>    |
     And I press "Login"
     Then I should see "<message>"
 
