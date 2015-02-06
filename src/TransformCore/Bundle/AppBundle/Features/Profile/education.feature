@@ -16,10 +16,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I am on "/en/applicant/education"
     Then I should see "Education"
     And I fill form with:
-      | csr_dm_form_education_existingCivilServant_0 | 0   |
-      | csr_dm_form_education_inServiceRoute         | Yes |
-      | csr_dm_form_education_undergraduateDegree_0  | 0   |
-      | csr_dm_form_education_postgraduateDegree_0   | 0   |
+      | csr_dm_form_education_existingCivilServant_1 | 1   |
+      | csr_dm_form_education_inServiceRoute        | 1   |
+      | csr_dm_form_education_undergraduateDegree_0  | 1   |
+      | csr_dm_form_education_postgraduateDegree_0   | 1   |
       | csr_dm_form_education_earlyIntern_1          | 1   |
       | csr_dm_form_education_summerIntern_1         | 1   |
     And I press "Save and continue"
@@ -31,12 +31,12 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     And I fill in "csr_dm_form_education_earlyInternDept" with "Early diversity programme government department"
     And I press "Save and continue"
     Then I should see "Diversity"
-#    And I follow "go back to the previous section"
+#    And I am on "/en/applicant/education"
 #    Then I should see form with:
-#      | csr_dm_form_education_existingCivilServant_0     | 0                                                |
-#      | csr_dm_form_education_inServiceRoute             | Yes                                              |
-#      | csr_dm_form_education_undergraduateDegree_0      | 0                                                |
-#      | csr_dm_form_education_postgraduateDegree_0       | 0                                                |
+#      | csr_dm_form_education_existingCivilServant_0     | Yes                                                |
+#      | csr_dm_form_education_inServiceRoute             | 1                                              |
+#      | csr_dm_form_education_undergraduateDegree_0      | 1                                                |
+#      | csr_dm_form_education_postgraduateDegree_0       | 1                                                |
 #      | csr_dm_form_education_earlyIntern_1              | 1                                                |
 #      | csr_dm_form_education_summerIntern_1             | 1                                                |
 #      | csr_dm_form_education_summerInternCompleted      | Oct 2014                                           |
@@ -44,7 +44,7 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 #      | from "csr_dm_form_education_earlyInternCompleted | Oct 2014                                           |
 #      | csr_dm_form_education_earlyInternDept            | Early diversity programme government department  |
 
-  @CSR-26
+  @CSR-26 @javascript
   Scenario: Add education details (degrees completed and civil servant)
     Given I am logged in as "six@test.com" with password "P@ssword1"
 #    And I follow "Profile"
@@ -52,21 +52,22 @@ Feature: As registrant, I want to be able to add education details, to fully ind
 #    And I press "Save and continue"
     And I am on "/en/applicant/education"
     Then I should see "Education"
+    Then I fill form with:
       | csr_dm_form_education_existingCivilServant_1 | 1        |
-      | csr_dm_form_education_fastTrackScheme        | 1        |
-      | csr_dm_form_education_schemeName             | Scheme 1 |
-      | csr_dm_form_education_yearOfCompletion       | 2015     |
+      | csr_dm_form_education_fastTrackScheme        | Yes        |
+#      | csr_dm_form_education_schemeName             | Scheme 1 |
+#      | csr_dm_form_education_yearOfCompletion       | 2015     |
       | csr_dm_form_education_undergraduateDegree_1  | 1        |
       | csr_dm_form_education_postgraduateDegree_1   | 1        |
       | csr_dm_form_education_earlyIntern_0          | 1        |
       | csr_dm_form_education_summerIntern_0         | 1        |
     When I press "Save and continue"
-#    Then count of "7" instances of "This value should not be blank" exists on page
-    And I should see "Please indicate if you will complete Fast Track apprentice scheme in this recruitment year"
-    And I should see "Please enter details of undergraduate degree"
-    And I should see "Please enter details of postgraduate degree"
-    And I should see "Please enter Fast Track apprentice scheme"
-    And I should see "Please enter Fast Track apprentice year of completion"
+#    Then count of "2" instances of "This value should not be blank" exists on page
+    And count of "10" instances of "This value should not be blank" exists on page
+#    And I should see "Please enter details of undergraduate degree"
+#    And I should see "Please enter details of postgraduate degree"
+#    And I should see "Please enter Fast Track apprentice scheme"
+#    And I should see "Please enter Fast Track apprentice year of completion"
     Then I fill form with:
       | csr_dm_form_education_yearOfCompletion              | 2015                       |
       | csr_dm_form_education_schemeName                    | Scheme 2                   |
@@ -74,6 +75,10 @@ Feature: As registrant, I want to be able to add education details, to fully ind
       | csr_dm_form_education_undergradDegrees_0_grade      | First-class honours        |
       | csr_dm_form_education_postgradDegrees_0_university  | Postgraduate University 1  |
       | csr_dm_form_education_postgradDegrees_0_degree      | Ordinary degree            |
+      | csr_dm_form_education_summerInternCompleted         | 2015-01                         |
+      | csr_dm_form_education_summerInternDept              | Summer Intern Gov Dept                                |
+      | csr_dm_form_education_earlyInternCompleted         | 2015-01                          |
+      | csr_dm_form_education_earlyInternDept              | Early Intern Gov Dept                                |
     And I press "Save and continue"
     Then I should see "Diversity"
 #    And I follow "go back to the previous section"
@@ -90,12 +95,13 @@ Feature: As registrant, I want to be able to add education details, to fully ind
     Given I am logged in as "six@test.com" with password "P@ssword1"
     And I am on "/en/applicant/education"
     Then I should see "Education"
+    Then I fill form with:
       | csr_dm_form_education_existingCivilServant_0 | 1 |
       | csr_dm_form_education_inServiceRoute         | 1 |
       | csr_dm_form_education_earlyIntern_1          | 1 |
       | csr_dm_form_education_summerIntern_1         | 1 |
     And I press "Save and continue"
-    Then count of "8" instances of "This value should not be blank" exists on page
+    Then count of "4" instances of "This value should not be blank" exists on page
 
 #  @CSR-26
 #  Scenario: Add education details (mandatory field check)
