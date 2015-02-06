@@ -23,9 +23,9 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_profile_address_address_group_postcode" with "post code"
     # Date of Birth
 #    And I fill in "csr_dm_user_profile_date_of_birth_group_dateOfBirth" with "1968-08-02"
-    And I fill in "csr_dm_user_profile_dateOfBirth_day" with "02"
-    And I fill in "csr_dm_user_profile_dateOfBirth_month" with "08"
-    And I fill in "csr_dm_user_profile_dateOfBirth_year" with "1968"
+    And I fill in "csr_dm_user_profile_date_of_birth_group_dateOfBirth_day" with "02"
+    And I fill in "csr_dm_user_profile_date_of_birth_group_dateOfBirth_month" with "08"
+    And I fill in "csr_dm_user_profile_date_of_birth_group_dateOfBirth_year" with "1968"
     # Phone details
     And I fill in "csr_dm_user_profile_phone_number_group_phoneNumber_number" with "07951234567"
     And I select "United Kingdom" from "csr_dm_user_profile_address_address_group_country"
@@ -66,17 +66,17 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I fill in "csr_dm_user_profile_address_address_group_line1" with "address line one"
     And I fill in "csr_dm_user_profile_address_address_group_town" with "London"
     And I fill in "csr_dm_user_profile_address_address_group_postcode" with "SW9 999"
-    And I fill in "csr_dm_user_profile_credentials_group_plainPassword_first" with "a"
-    And I fill in "csr_dm_user_profile_credentials_group_plainPassword_second" with "a"
+#    And I fill in "csr_dm_user_profile_credentials_group_plainPassword_first" with "a"
+#    And I fill in "csr_dm_user_profile_credentials_group_plainPassword_second" with "a"
     And I fill in "csr_dm_user_profile_credentials_group_email" with "bill.carr@test"
 #    And I fill in "csr_dm_user_profile_phone_number_group_phoneNumber_number" with "abc"
     When I press "Save and continue"
     # Checking that field validation is working
     Then I should see "Please enter only letters for your first name"
     And I should see "Please enter only letters for your last name"
-    And I should see "Please make sure your password is at least 8 characters long"
-    And I should see "Please make sure your password contains at least 1 number"
-    And I should see "Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-)"
+#    And I should see "Please make sure your password is at least 8 characters long"
+#    And I should see "Please make sure your password contains at least 1 number"
+#    And I should see "Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-)"
     And I should see "Please make sure your e-mail address is valid"
 #    And I should see "Date of birth in wrong format"
 #    And I should see "Phone input in wrong format"
@@ -98,7 +98,7 @@ Feature: As an user, I want to be able to add details about myself on my account
 #    And I should see "Please enter your daytime telephone number"
 #    And I should see "Please enter mobile number for sms alerts"
 
-  @CSR-135
+  @CSR-135 @omit
   Scenario: Password reset in About You Section
     Given I am logged in as "one@test.com" with password "P@ssword1"
     And I follow "Profile"
