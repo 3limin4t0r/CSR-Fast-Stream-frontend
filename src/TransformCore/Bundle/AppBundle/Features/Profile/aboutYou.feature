@@ -5,7 +5,7 @@ Feature: As an user, I want to be able to add details about myself on my account
       | one@test.com |
       | two@test.com |
 
-  @CSR-135
+  @CSR-135 @javascript
   Scenario: Complete About You Section (Happy path)
     Given I am logged in as "one@test.com" with password "P@ssword1"
     And I follow "Profile"
