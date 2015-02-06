@@ -63,7 +63,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I should see "Please make sure your password contains at least 1 number"
     And I should see "Please make sure your password contains at least 1 symbol (e.g. !@#$%^*_-)"
     And I should see "Please make sure your e-mail address is valid"
-    And I should see "Date of birth in wrong format"
+    And I should see "Please enter your date of birth"
 #    And I should see "Phone input in wrong format"
 #    And I should see "Please accept terms and conditions before continuing"
 #    And I should see "Please tell us how you found faststream"
