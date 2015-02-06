@@ -5,7 +5,7 @@ Feature: As an user, I want to be able to add details about myself on my account
       | one@test.com |
       | two@test.com |
 
-  @CSR-135 @javascript
+  @CSR-135
   Scenario: Complete About You Section (Happy path)
     Given I am logged in as "one@test.com" with password "P@ssword1"
     And I follow "Profile"
@@ -44,18 +44,17 @@ Feature: As an user, I want to be able to add details about myself on my account
   Scenario: Complete About You Section (Field validation)
     Given I am logged in as "two@test.com" with password "P@ssword1"
     And I follow "Profile"
-      | csr_dm_user_profile_name_group_firstname                   | Bill1"
-      | csr_dm_user_profile_name_group_lastname                    | C4@rr"
-  #    | csr_dm_user_profile_date_of_birth_group_dateOfBirth | c/b/d"
-      | csr_dm_user_profile_address_address_group_postcode         | CFT 888"
-  #    And I follow "Enter address manually"
-      | csr_dm_user_profile_address_address_group_line1            | address line one"
-      | csr_dm_user_profile_address_address_group_town             | London"
-      | csr_dm_user_profile_address_address_group_postcode         | SW9 999"
-      | csr_dm_user_profile_credentials_group_plainPassword_first  | a"
-      | csr_dm_user_profile_credentials_group_plainPassword_second | a"
-      | csr_dm_user_profile_credentials_group_email                | bill.carr@test"
-#    | csr_dm_user_profile_phone_number_group_phoneNumber_number | abc"
+    Then I fill form with:
+      | csr_dm_user_profile_name_group_firstname                   | Bill1            |
+      | csr_dm_user_profile_name_group_lastname                    | C4@rr            |
+      | csr_dm_user_profile_address_address_group_postcode         | CFT 888          |
+      | csr_dm_user_profile_address_address_group_line1            | address line one
+      | csr_dm_user_profile_address_address_group_town             | London           |
+      | csr_dm_user_profile_address_address_group_postcode         | SW9 999          |
+      | csr_dm_user_profile_credentials_group_plainPassword_first  | a                |
+      | csr_dm_user_profile_credentials_group_plainPassword_second | a                |
+      | csr_dm_user_profile_credentials_group_email                | bill.carr@test   |
+      | csr_dm_user_profile_phone_number_group_phoneNumber_number  | abc              |
     When I press "Save and continue"
     # Checking that field validation is working
     Then I should see "Please enter only letters for your first name"
@@ -80,20 +79,22 @@ Feature: As an user, I want to be able to add details about myself on my account
 
   @CSR-135
   Scenario: Password reset in About You Section
-    Given I am logged in as "one@test.com" with password "P@ssword1"
+    Given I am logged in as "three@test.com" with password "P@ssword1"
     And I follow "Profile"
-      | csr_dm_user_profile_credentials_group_plainPassword_first  | P@ssword2"
-      | csr_dm_user_profile_credentials_group_plainPassword_second | P@ssword2"
+    And I fill form with:
+      | csr_dm_user_profile_credentials_group_plainPassword_first  | P@ssword2 |
+      | csr_dm_user_profile_credentials_group_plainPassword_second | P@ssword2 |
     Then I press "Save and continue"
     And I am on "/en/logout"
-    When I am logged in as "one@test.com" with password "P@ssword2"
+    When I am logged in as "three@test.com" with password "P@ssword2"
     Then I should see "Logout"
     And I should not see "Login"
     And I follow "Profile"
-      | csr_dm_user_profile_credentials_group_plainPassword_first  | P@ssword1"
-      | csr_dm_user_profile_credentials_group_plainPassword_second | P@ssword1"
+    And I fill form with:
+      | csr_dm_user_profile_credentials_group_plainPassword_first  | P@ssword1 |
+      | csr_dm_user_profile_credentials_group_plainPassword_second | P@ssword1 |
     Then I press "Save and continue"
     And I am on "/en/logout"
-    When I am logged in as "one@test.com" with password "P@ssword1"
+    When I am logged in as "three@test.com" with password "P@ssword1"
     Then I should see "Logout"
     And I should not see "Login"
