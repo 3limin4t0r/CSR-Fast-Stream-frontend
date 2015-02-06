@@ -4,11 +4,13 @@ namespace TransformCore\Bundle\AppBundle\Features\Context;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
+use Behat\Behat\Hook\Scope\AfterStepScope;
 use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Mink\Exception\Exception;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use Colors\Color;
 
 /**
  * Class FeatureContext
@@ -304,5 +306,113 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     public function hasCompletedTheSections($applicant,$sections)
     {
 
+    }
+
+    /** @AfterStep */
+    public function after(AfterStepScope $scope) {
+        
+        if ($scope->getTestResult()->isPassed()) {
+            return;    
+        }
+
+        $session = $this->getSession();
+        $page = $session->getPage();
+
+        $currentUrl = $session->getCurrentUrl();
+        $statusCode = $session->getStatusCode();
+        $responseHeaders = $session->getResponseHeaders();
+        $content = $page->getContent();
+
+        $c = new Color();
+
+        echo("$currentUrl ($statusCode)\n");
+        echo("\n");
+        foreach ($responseHeaders as $name => $values) {
+            $name = implode('-', array_map('ucfirst', explode('-', $name)));
+            echo("$name=$values[0]\n");
+        }
+        echo("\n");
+
+        $highlightedSource = $content;
+
+        $highlightedSource = preg_replace_callback("/(&#[0-9]+;)/", function($match) { return mb_convert_encoding($match[1], "UTF-8", "HTML-ENTITIES"); }, $highlightedSource);
+
+        $highlightedSource = str_replace('&nbsp;', ' ', $highlightedSource);
+        $highlightedSource = str_replace('&quot;', '"', $highlightedSource);
+
+        $highlightedSource = preg_replace_callback(
+            '|(<)([a-z0-9]+)([^<>]*?)(/?)(>)|s',
+            function ($matches) use ($c)
+            {
+                $attributes = preg_replace_callback(
+                    '|(\s+)([a-z0-9-_]+)(=)(["\'])(.*?)(["\'])|s',
+                    function ($matches) use ($c)
+                    {
+                        $output = (
+                            $matches[1]
+                           .(string) $c($matches[2])->light_cyan
+                           .(string) $c($matches[3])->light_blue
+                           .(string) $c($matches[4])->light_cyan
+                           .(string) $c($matches[5])->light_yellow
+                           .(string) $c($matches[6])->light_cyan
+                        );
+
+                        return $output;
+                    },
+                    $matches[3]
+                );
+
+                $output = (
+                    (string) $c($matches[1])->light_magenta
+                   .(string) $c($matches[2])->light_red
+                   .$attributes
+                   .(string) $c($matches[4])->light_red
+                   .(string) $c($matches[5])->light_magenta
+                );
+
+                return $output;
+            },
+            $highlightedSource
+        );
+
+        $highlightedSource = preg_replace_callback(
+            '|(<)([/])([^<>]*?)(>)|',
+            function ($matches) use ($c)
+            {
+                $output = (
+                    (string) $c($matches[1])->light_magenta
+                   .(string) $c($matches[2])->light_magenta
+                   .(string) $c($matches[3])->light_red
+                   .(string) $c($matches[4])->light_magenta
+                );
+
+                return $output;
+            },
+            $highlightedSource
+        );
+
+        $highlightedSource = preg_replace_callback(
+            '|(<!)(.*?)(>)|s',
+            function ($matches) use ($c)
+            {
+                $output = (
+                    (string) $c($matches[1])->green
+                   .(string) $c($matches[2])->light_green
+                   .(string) $c($matches[3])->green
+                );
+
+                return $output;
+            },
+            $highlightedSource
+        );
+        
+        $highlightedSource = str_replace(
+            '-->',
+            (string) $c('--')->light_green
+           .(string) $c('>')->green,
+            $highlightedSource
+        );
+
+        echo($highlightedSource);
     }
 }
