@@ -12,7 +12,7 @@ TransformCore\Bundle\CsrFastStreamBundle\Entity\Applicant:
             type: string
         dateOfBirth:
             expose: true
-            type: DateTime<'Y-m-d'>
+            type: DateTime
         address:
             expose: true
             type: TransformCore\Bundle\CsrFastStreamBundle\Entity\Address
