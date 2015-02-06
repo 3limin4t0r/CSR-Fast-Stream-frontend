@@ -39,8 +39,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     And the "csr_dm_user_profile_name_group_lastname" field should contain "Personachange"
     # Date of birth
 #    And the "csr_dm_user_profile_date_of_birth_group_dateOfBirth" field should contain "1968-08-02"
-    And the "csr_dm_user_profile_date_of_birth_group_dateOfBirth_day" field should contain "02"
-    And the "csr_dm_user_profile_date_of_birth_group_dateOfBirth_month" field should contain "08"
+    And the "csr_dm_user_profile_date_of_birth_group_dateOfBirth_day" field should contain "2"
+    And the "csr_dm_user_profile_date_of_birth_group_dateOfBirth_month" field should contain "8"
     And the "csr_dm_user_profile_date_of_birth_group_dateOfBirth_year" field should contain "1968"
     # Address details
     And the "csr_dm_user_profile_address_address_group_postcode" field should contain "post code"
