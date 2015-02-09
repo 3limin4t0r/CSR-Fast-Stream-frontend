@@ -55,8 +55,6 @@ Feature: As an user, I want to be able to add details about myself on my account
       | csr_dm_user_profile_address_address_group_line1            | address line one
       | csr_dm_user_profile_address_address_group_town             | London           |
       | csr_dm_user_profile_address_address_group_postcode         | SW9 999          |
-      | csr_dm_user_profile_credentials_group_plainPassword_first  | a                |
-      | csr_dm_user_profile_credentials_group_plainPassword_second | a                |
       | csr_dm_user_profile_credentials_group_email                | bill.carr@test   |
       | csr_dm_user_profile_phone_number_group_phoneNumber_number  | abc              |
     When I press "Save and continue"
