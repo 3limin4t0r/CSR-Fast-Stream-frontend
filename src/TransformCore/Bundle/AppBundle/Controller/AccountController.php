@@ -23,15 +23,31 @@ use TransformCore\Bundle\CsrFastStreamBundle\Form\ProfileFormType;
  */
 class AccountController extends Controller
 {
-
+    
     /**
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction()
     {
-        return $this->render('TransformCoreAppBundle:Account:index.html.twig');
-    }
+        $applicant = $this->getApplicant();
+        $eligibility = $this->getEligibility();
 
+        $hasApplicantCompletedProfile = !empty(
+            $eligibility->hasPermissionToCheckBackground()
+        );
+
+        $hasApplicantStartedProfile = !empty(
+            $applicant->getAddress()->getLine1()
+        );
+
+        return $this->render(
+            'TransformCoreAppBundle:Account:index.html.twig',
+            [ 'applicant' => $applicant,
+              'hasApplicantStartedProfile' => $hasApplicantStartedProfile, 
+              'hasApplicantCompletedProfile' => $hasApplicantCompletedProfile ]
+        );
+    }
+    
     /**
      * @param Request $request
      *
