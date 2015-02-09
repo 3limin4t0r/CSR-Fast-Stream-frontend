@@ -1,0 +1,124 @@
+{% extends 'form_div_layout.html.twig' %}
+
+{%- block form_row -%}
+{% spaceless %}
+
+    <div class="form-group">
+        {{- form_label(form) -}}
+        {{- form_errors(form) -}}
+        {{- form_widget(form) -}}
+    </div>
+
+{% endspaceless %}
+{%- endblock form_row -%}
+
+{% block form_errors -%}
+{% spaceless %}
+
+    {% if errors|length > 0 -%}
+    <ul>
+        {%- for error in errors -%}
+            <li class="validation-message">{{ error.message }}</li>
+        {%- endfor -%}
+    </ul>
+    {%- endif %}
+
+{% endspaceless %}
+{%- endblock form_errors %}
+
+{%- block form_label -%}
+{% spaceless %}
+
+    {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' form-label text')|trim}) %}
+
+    {% if label is not sameas(false) -%}
+
+        {% if not compound -%}
+            {% set label_attr = label_attr|merge({'for': id}) %}
+        {%- endif %}
+
+        {% if required -%}
+            {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' required')|trim}) %}
+        {%- endif %}
+
+        {% if label is empty -%}
+            {%- if label_format is not empty -%}
+                {% set label = label_format|replace({
+                    '%name%': name,
+                    '%id%': id,
+                }) %}
+            {%- else -%}
+                {% set label = name|humanize %}
+            {%- endif -%}
+        {%- endif -%}
+
+        <label{% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>
+            {{ label|trans({}, translation_domain) }}
+            {% if help is defined %}
+                <span class="form-hint">{{ help }}</span>
+            {% endif %}
+        </label>
+
+    {%- endif -%}
+
+{% endspaceless %}
+{%- endblock form_label -%}
+
+{% block checkbox_label -%}{%- endblock checkbox_label %}
+
+{% block checkbox_widget -%}
+{% spaceless %}
+
+    {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' block-label')|trim}) %}
+    {% set skip_form_control_class = true %}
+
+    <label {% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>
+        <input type="checkbox" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />{{ label|trans({}, translation_domain) }}
+    </label>
+
+{% endspaceless %}
+{%- endblock checkbox_widget %}
+
+{% block radio_label -%}{%- endblock radio_label %}
+
+{% block radio_widget -%}
+{% spaceless %}
+
+    {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' block-label')|trim}) %}
+    {% set skip_form_control_class = true %}
+
+    <label {% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>
+        <input type="radio" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />{{ label|trans({}, translation_domain) }}
+    </label>
+
+{% endspaceless %}
+{%- endblock radio_widget %}
+
+{% block textarea_widget -%}
+{% spaceless %}
+
+    <textarea {{ block('widget_attributes') }} rows="10">{{ value }}</textarea>
+
+{% endspaceless %}
+{%- endblock textarea_widget %}
+
+{%- block button_attributes -%}
+{% spaceless %}
+
+    {% set attr = attr|merge({'class': (attr.class|default('') ~ ' button')|trim}) %}
+    {{ parent() }}
+
+{% endspaceless %}
+{%- endblock button_attributes -%}
+
+{%- block widget_attributes -%}
+{% spaceless %}
+
+    {% if skip_form_control_class is not defined %}
+        {% set attr = attr|merge({'class': (attr.class|default('') ~ ' form-control')|trim}) %}
+    {% endif %}
+
+    {{ parent() }}
+
+{% endspaceless %}
+{%- endblock widget_attributes -%}

@@ -1,77 +1,103 @@
 {% extends "::base.html.twig" %}
 
 {% block title %}
+
     {% trans %}eligibility.title{% endtrans %}
+
 {% endblock %}
 
 {% block breadcrumb %}
-    <div class="row ">
-        <ol class="breadcrumb">
-            <li><a href="{{ path('transform_core_app_account') }}">{% trans %}account.title{% endtrans %}</a></li>
-            <li><a href="{{ path('transform_core_app_profile_edit') }}">{% trans %}profile.title{% endtrans %}</a></li>
-            <li class="active">{% trans %}eligibility.title{% endtrans %}</li>
-        </ol>
-    </div>
+
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
+
+{% endblock %}
+
+{% block heading %}
+
+    <p class="step">{% trans %}eligibility.step{% endtrans %}</p>
+
+    <h1 class="form-title heading-large">{% trans %}eligibility.title{% endtrans %}</h1>
+
 {% endblock %}
 
 {% block body %}
 
-    <div class="row">
+    <p>The Civil Service Fast Stream is open to applicants who are:</p>
 
-        <div class="col-md-12">
-            <h3>Nationality, Immigration and Employment Restrictions</h3>
-            <p>The Civil Service Fast Stream is open to applicants who are:</p>
-            <ul>
-                <li>European Economic Area (EEA) nationals, including British citizens</li>
-                <li>Commonwealth citizens</li>
-                <li>Swiss nationals</li>
-                <li>in some circumstances, Turkish nationals.</li>
-            </ul>
+    <ul class="list-bullet">
+        <li>European Economic Area (EEA) nationals, including British citizens</li>
+        <li>Commonwealth citizens</li>
+        <li>Swiss nationals</li>
+        <li>in some circumstances, Turkish nationals.</li>
+    </ul>
 
-            <p>Note that nationality requirements migth vary from scheme to scheme.</p>
-            <p>If you are uncertain about the nationality requirements for the options you want to apply for, please refer to the Nationality restrictions page on the Fast Stream website.</p>
-
-            <p>What countries are members of the EEA?</p>
-            <p>What countries are members of the Commonwealth?</p>
-        </div>
-
+    <div class="panel-indent">
+        <p>Note that nationality requirements might vary from scheme to scheme.</p>
+        <p>If you are uncertain about the nationality requirements for the options you want to apply for, please refer to the Nationality restrictions page on the Fast Stream website.</p>
     </div>
 
-    <div class="row">
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
 
-        <div class="col-md-12">
-            {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_row(form.nationality_group) }}
 
-                <h3>Your Nationality:</h3>
-                {{ form_row(form.presentNationality) }}
+        {{ form_row(form.immigration_group) }}
 
-                <h3>Immigration and Employment Restrictions:</h3>
-                <p>Are you subject to immigration controls?</p>
-                {{ form_row(form.subjectToImmigrationControls) }}
-                {{ form_row(form.subjectToImmigrationControlsDetails) }}
+        <h3 class="heading-medium">Permission to Undertake Checks</h3>
 
-                <p>Are there restrictions on your continued residence or employment in the UK?</p>
-                {{ form_row(form.residencyOrEmploymentRestrictions) }}
-                {{ form_row(form.residencyOrEmploymentRestrictionsDetails) }}
+        <p>To be accepted in to the Civil Service, applicants need to undergo a number of checks. Some of the checks below are not applicable to all schemes but we still need your permission if they should be required.</p>
 
-                <h4>Permission to Undertake Checks</h4>
+        <ol class="list-number">
+            <li>A check on your credit status</li>
+            <li>Character enquiry checks</li>
+            <li>Contact your academic referee(s) when provided</li>
+            <li>Contact your employer referee(s) when provided</li>
+            <li>Criminal record check</li>
+            <li>Security and identity checks</li>
+            <li>Significant periods abroad</li>
+        </ol>
 
-                <p>To be accepted in to the Civil Service, applicants need to undergo a number of checks. Some of the checks below are not applicable to all schemes but we still need your permission if they should be required.</p>
+        {{ form_row(form.permissionToCheckBackground) }}
 
-                <ol>
-                    <li>1. A check on your credit status</li>
-                    <li>2. Character enquiry checks</li>
-                    <li>3. Contact your academic referee(s) when provided</li>
-                    <li>4. Contact your employer referee(s) when provided</li>
-                    <li>5. Criminal record check</li>
-                    <li>6. Security and identity checks</li>
-                    <li>7. Significant periods abroad</li>
-                </ol>
-                {{ form_row(form.permissionToCheckBackground) }}
+    {{ form_end(form) }}
 
-            {{ form_end(form) }}
-        </div>
+    <script>
 
-    </div>
+        (function ()
+        {
+            var subjectToImmigrationControlsTrigger = 
+                $("#csr_dm_user_eligibility_immigration_group_subjectToImmigrationControls");
+
+            var subjectToImmigrationControlsChangeObserver = function()
+            {
+                if (subjectToImmigrationControlsTrigger.prop('checked')) {
+                    $("#csr_dm_user_eligibility_immigration_group_subjectToImmigrationControlsDetails").parent().show();
+                } else {
+                    $("#csr_dm_user_eligibility_immigration_group_subjectToImmigrationControlsDetails").parent().hide();
+                }
+            }
+
+            subjectToImmigrationControlsChangeObserver();
+            subjectToImmigrationControlsTrigger.click(subjectToImmigrationControlsChangeObserver);
+        })();
+
+        (function ()
+        {
+            var residencyOrEmploymentRestrictionsTrigger = 
+                $("#csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictions");
+
+            var residencyOrEmploymentRestrictionsChangeObserver = function()
+            {
+                if (residencyOrEmploymentRestrictionsTrigger.prop('checked')) {
+                    $("#csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictionsDetails").parent().show();
+                } else {
+                    $("#csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictionsDetails").parent().hide();
+                }
+            }
+
+            residencyOrEmploymentRestrictionsChangeObserver();
+            residencyOrEmploymentRestrictionsTrigger.click(residencyOrEmploymentRestrictionsChangeObserver);
+        })();
+
+    </script>
 
 {% endblock %}

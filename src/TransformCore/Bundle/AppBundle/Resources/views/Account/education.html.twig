@@ -1,0 +1,200 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+
+    {% trans %}education.title{% endtrans %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
+
+{% endblock %}
+
+{% block heading %}
+
+    <p class="step">{% trans %}education.step{% endtrans %}</p>
+
+    <h1 class="form-title heading-large">{% trans %}education.title{% endtrans %}</h1>
+
+{% endblock %}
+
+{% block body %}
+
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+        <h3 class="heading-medium">Existing Civil Servant</h3>
+
+        <p>Please indicate whether you are an existing Civil Servant</p>
+
+        {{ form_row(form.existingCivilServant) }}
+                
+        <div id="existing-civil-servant-container">
+
+            <p>If you are an existing Civil Servant you can apply via the In Service Application route. You will not need to have a degree to be eligible to apply but your options are limited to the following schemes:</p>
+
+            <p>Option 1:<br />Central Departments (within the Generalist Fast Stream) and/or the Digital and Technology Fast Stream.</p>
+            <p>Option 2:<br />Finance and Commercial (within the Commercial and Finance Fast Stream).</p>
+
+            <p>You may select the In Service route if:</p>
+            <ul>
+                <li>You are currently a permanent Civil Servant and have passed your probationary period,</li>
+                <li>You are currently grade HEO (equivalent) or below,</li>
+                <li>You are not currently undergoing any absence or poor performance action.</li>
+            </ul>
+
+            <p>You may also select the In Service route if you will have completed a Fast Track apprentice scheme in this recuitment year. If you have, please indicate scheme and year of completion below:</p>
+
+            {{ form_row(form.fastTrackScheme) }}
+
+            <div id="fast-track-scheme-container">
+
+                {{ form_row(form.schemeName) }}
+                {{ form_row(form.yearOfCompletion) }}
+
+            </div>
+
+            <p>Note that if you have a degree you might want to apply via the external competition alongside non-Civil Servants as you will then have more schemes and options available.</p>
+
+            {{ form_row(form.inServiceRoute) }}
+
+        </div>
+
+        <p>Selecting this option will allow you to proceed without a degree.</p>
+
+        <h3 class="heading-medium">Degree Details</h3>
+
+        {{ form_row(form.undergraduateDegree) }}
+
+        <div id="undergraduate-degree-container">
+
+            <h4 class="heading-small">Undergraduate degree</h4>
+
+            <p>Please select all that apply</p>
+
+            {% for undergrad in form.undergradDegrees %}
+
+                {{ form_row(undergrad.uk.children[0]) }}
+
+                <div id="undergraduate-degree-uk-container">
+
+                    {{ form_row(undergrad.university) }}
+                    {{ form_row(undergrad.grade) }}
+
+                </div>
+
+                {{ form_row(undergrad.uk.children[1]) }}
+
+                <div id="undergraduate-degree-abroad-container">
+
+                    {{ form_row(undergrad.institution) }}
+                
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+        {{ form_row(form.postgraduateDegree) }}
+                
+        <div id="postgraduate-degree-container">
+
+            <h4 class="heading-small">Postgraduate degree</h4>
+
+            <p>Please select all that apply</p>
+
+            {% for postgrad in form.postgradDegrees %}
+
+                {{ form_row(postgrad.uk.children[0]) }}
+
+                <div id="postgraduate-degree-uk-container">
+
+                    {{ form_row(postgrad.university) }}
+                    {{ form_row(postgrad.degree) }}
+                
+                </div>
+
+                {{ form_row(postgrad.uk.children[1]) }}
+                
+                <div id="postgraduate-degree-abroad-container">
+
+                    {{ form_row(postgrad.institution) }}
+                
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+        <h3 class="heading-medium">Internship Programmes</h3>
+
+        <p>Please indicate whether you have completed the Early Diversity Internship Programme</p>
+
+        {{ form_row(form.earlyIntern) }}
+                
+        <div id="early-intern-container">
+
+            {{ form_row(form.earlyInternCompleted) }}
+            {{ form_row(form.earlyInternDept) }}
+
+        </div>
+
+        <p>Please indicate whether you have completed the Civil Service Summer Diversity Internship Programme</p>
+
+        {{ form_row(form.summerIntern) }}
+                
+        <div id="summer-intern-container">
+
+            {{ form_row(form.summerInternCompleted) }}
+            {{ form_row(form.summerInternDept) }}
+                
+        </div>
+
+    {{ form_end(form) }}
+
+    <script>
+
+        (function ()
+        {
+            function registerProgressiveDisclosure(controlName, containerId, triggerValue)
+            {
+                if (triggerValue === undefined) {
+                    triggerValue = 1;
+                }
+
+                var container = $("#" + containerId);
+                var controlSet = $("input[name='" + controlName + "']");
+                var controlState = $("input[name='" + controlName + "'][value='" + triggerValue + "']");
+
+                var changeObserver = function()
+                {
+                    if (controlState.prop('checked')) {
+                        container.show();
+                    } else {
+                        container.hide();
+                    }
+                }
+
+                changeObserver();
+                controlSet.click(changeObserver);
+            }
+
+            registerProgressiveDisclosure('csr_dm_form_education[existingCivilServant]', 'existing-civil-servant-container');
+            registerProgressiveDisclosure('csr_dm_form_education[fastTrackScheme]', 'fast-track-scheme-container');
+            
+            registerProgressiveDisclosure('csr_dm_form_education[undergraduateDegree]', 'undergraduate-degree-container');
+            registerProgressiveDisclosure('csr_dm_form_education[undergradDegrees][0][uk]', 'undergraduate-degree-uk-container', 0);
+            registerProgressiveDisclosure('csr_dm_form_education[undergradDegrees][0][uk]', 'undergraduate-degree-abroad-container', 1);
+
+            registerProgressiveDisclosure('csr_dm_form_education[postgraduateDegree]', 'postgraduate-degree-container');
+            registerProgressiveDisclosure('csr_dm_form_education[postgradDegrees][0][uk]', 'postgraduate-degree-uk-container', 0);
+            registerProgressiveDisclosure('csr_dm_form_education[postgradDegrees][0][uk]', 'postgraduate-degree-abroad-container', 1);
+
+            registerProgressiveDisclosure('csr_dm_form_education[earlyIntern]', 'early-intern-container');
+            registerProgressiveDisclosure('csr_dm_form_education[summerIntern]', 'summer-intern-container');
+        })();
+
+    </script>
+
+{% endblock %}

@@ -16,7 +16,7 @@ form:
 
 login:
   title: Login
-  subtitle: Register Your Details
+  subtitle: Login
   form:
     username:
       label: Email address
@@ -27,14 +27,17 @@ login:
 
 register:
   title: Register
-  subtitle: Register Your Details
+  subtitle: Register your details
   form:
     firstname:
       label: First Name
+      title: First Name
     lastname:
       label: Last Name
+      title: Last Name
     email:
       label: Email
+      title: Email
     password:
       label: Password
     password-confirm:
@@ -87,6 +90,7 @@ guaranteedInterviewScheme:
   title: Guaranteed Interview Scheme
 
 account:
+  breadcrumb: My Account
   title: My Account
   overview: Overview
 
@@ -94,47 +98,233 @@ address:
   form:
     line1:
       label: Line 1
+      title: Line 1
     line2:
       label: Line 2
+      title: Line 2
     line3:
       label: Line 3
+      title: Line 3
     town:
       label: Town
+      title: Town
     county:
       label: County
+      title: County
     postcode:
       label: Postcode
+      title: Postcode
     country:
       label: Country
+      title: Country
+
+education:
+  breadcrumb: Education
+  title: Education
+  step: Step 3 of 5
+  group:
+    legend: Socio economic details
+  existingCivilServant:
+    label: "Please let us know if you are currently working as a Civil Servant"
+    "false": "No, I am not an existing Civil Servant"
+    "true": "Yes, I am an existing Civil Servant"
+  fastTrackScheme:
+    label: "Yes, I will have completed a Fast Track apprentice scheme in this recruitment year"
+  schemeName:
+    label: ""
+    placeholder: "Select Fast Track scheme"
+  yearOfCompletion:
+    label: ""
+    placeholder: "Year of completion"
+  inServiceRoute:
+    label: "I would like to apply via the In Service route"
+  undergraduateDegree:
+    label: ""
+    "false": "I will not have completed an undergraduate degree in this recruitment year (In service applicants only)"
+    "true": "I have, or will have, completed an undergraduate degree in this recruitment year"
+  undergradUKDegree:
+    label: ""
+    "false": "I have, or will have completed, an undergraduate degree in this recruitment year from outside the United Kingdom"
+    "true": "I have, or will have completed, an undergraduate degree in this recruitment year from a university in the United Kingdom"
+  undergradUniversity:
+    label: "Name of university"
+  undergradGrade:
+    label: "Grade achieved or predicted"
+    placeholder: "Select grade"
+  undergradInstitution:
+    label: "Name of institution"
+  postgraduateDegree:
+    label: ""
+    "false": "I will not have completed a postgraduate degree in this recruitment year"
+    "true": "I have, or will have, completed a postgraduate degree in this recruitment year"
+  postgradUKDegree:
+    label: ""
+    "false": "I have, or will have completed, a postgraduate degree in this recruitment year from outside the United Kingdom"
+    "true": "I have, or will have completed, a postgraduate degree in this recruitment year from a university in the United Kingdom"
+  postgradUniversity:
+    label: "Name of university"
+  postgradDegree:
+    label: "Degree achieved"
+  postgradInstitution:
+    label: "Name of institution"
+  earlyIntern:
+    label: "Have you completed the Early Diversity Internship Programme?"
+    "false": "No, I have not completed the Early Diversity Internship Programme"
+    "true": "Yes, I have completed the Early Diversity Internship Programme"
+  earlyInternCompleted:
+    label: "Please indicate when you completed this programme"
+    placeholder: "Select date"
+  earlyInternDept:
+    label: "Please also indicate in which Government department you were placed"
+  summerIntern:
+    label: "Have you completed the Civil Service Summer Diversity Internship Programme?"
+    "false": "No, I have not completed the Civil Service Summer Diversity Internship Programme"
+    "true": "Yes, I have completed the Civil Service Summer Diversity Internship Programme"
+  summerInternCompleted:
+    label: "Please indicate when you completed this programme"
+    placeholder: "Select date"
+  summerInternDept:
+    label: "Please also indicate in which Government department you were placed"
+  saveAndContinue:
+    label: "Save and continue"
 
 eligibility:
-  title: Eligibility
+  breadcrumb: Eligibility
+  title: Nationality, Immigration and Employment Restrictions
+  step: Step 2 of 5
   subject-to-immigration-controls:
     label: Please check whether or not you are subject to immigration controls
+    title: Subject to immigration controls
   subject-to-immigration-controls-details:
     label: Please fill in immigration controls details
+    title: Immigration controls details
   residency-or-employment-restrictions:
     label: Please select whether or not you have employment restrictions
+    title: Employment restrictions
   residency-or-employment-restrictions-details:
     label: Please fill in employment restrictions details
+    title: Employment restrictions details
   permission-to-check-background:
     label: Please check box to indicate you give permission for us to undertake checks
+    title: Give permission for us to undertake checks
   form:
     updateButton:
       label: Save and continue
 
 nationality:
   name:
-    label: Nationality
+    label: Present nationality
+    title: Present nationality
 
 profile:
-  title: Profile
+  breadcrumb: About you
+  title: About you
+  step: Step 1 of 5
+  introduction: Please let us know your contact details. Note that you can change these at any time during the application process.
+  name-group:
+    legend: Your name
   form:
     dateOfBirth:
       label: Date of Birth
+      title: Date of Birth
     updateButton:
-      label: Save and Continue
+      label: Save and continue
 
 phone-number:
   number:
-    label: Number
+    label: Daytime contact number
+    title: Daytime contact number
+
+diversity:
+  breadcrumb: Diversity
+  title: Diversity
+  step: Step 4 of 5
+  paragraph:
+    - The Civil Service is committed to promoting diversity, irrespective of ethnicity or nationality, gender, transgender, sexuality, disability, age, religion, marital status, working patterns and socio-economic status.
+    - We collect diversity and socio economic information for monitoring purposes only and this data is treated separately from the application process. Your response in this section will not in any way affect your results and will be treated in strict confidence.
+  form:
+    gender:
+      label: Please select your gender.
+      title: Gender
+    ethnicOrigin:
+      label: What is your ethnic origin?
+      title: Ethnic origin
+    religionOrBelief:
+      label: Please select your religion or belief.
+      title: Religion or belief
+    sexualOrientation:
+      label: Please select your sexual orientation.
+      title: Sexual orientation
+    maritalStatus:
+      label: Please select your marital status.
+      title: Marital status
+    updateButton:
+      label: Save and continue
+  group:
+    legend: Diversity details
+
+socioEconomic:
+  title: Socio Economic Details - About your parents/guardians
+  breadcrumb: Socio Economic
+  step: Step 5 of 5
+  introduction: We are interested in understanding the backgrounds of respondents and their home lives when they were growing up, and would like to ask you a few questions about your parents’ (or guardians’) employment and educational histories. As all other diversity data we collect, it will be treated in confidence and will not in any way affect your results.
+  form:
+    typeOfSchoolAttendanceAtFourteen:
+      label: Please indicate the type of school you were attending on your 14th birthday.
+      title: Type of school you were attending on your 14th birthday
+    firstPersonInImmediateFamilyToAttendUniversity:
+      label: Please indicate whether you were the first person in your immediate family to attend University.
+      title: The first person in your immediate family to attend University
+    eligibleForFreeSchoolMeals:
+      label: Please indicate whether you were eligible for free school meals
+      title: Were Eligible for free school meals
+    everSpentMoreThanThreeMonthsInCare:
+      label: Have you ever personally spent longer than three months in care?
+      title: Spent longer than three months in care
+    everPersonallyHadRefugeeOrAsylumStatus:
+      label: Have you ever personally had refugee status or asylum status?
+      title: Personally had refugee status or asylum status
+    group:
+      legend: Socio economic details
+
+parents:
+  socioEconomic:
+    form:
+      updateButton:
+        label: Save and continue
+    education:
+      form:
+        highestEducationLevelThatYourFatherAchievedAtNormalEducationAge:
+          label: What was the highest education level that your father achieved (at normal education age, rather than as a mature student)?
+        highestEducationLevelThatYourMotherAchievedAtNormalEducationAge:
+          label: What was the highest education level that your mother achieved (at normal education age, rather than as a mature student)?
+    employment:
+      form:
+        whenYouWereFourteenYourFathersEmploymentStatus:
+          label: Thinking back to when you were aged about 14, did your father work as an employee or were they self employed?
+        whenYouWereFourteenYourMothersEmploymentStatus:
+          label: Thinking back to when you were aged about 14, did your mother work as an employee or were they self employed?
+    employer:
+      form:
+        whenYouWereFourteenNumberOfEmployeesByFather:
+          label: If your father was employed when you were aged 14, how many people worked for your father’s employer, or, if your father was self-employed and employed other people, how many people did your father employ?
+        whenYouWereFourteenNumberOfEmployeesByMother:
+          label: If your father was employed when you were aged 14, how many people worked for your mother’s employer, or, if your father was self-employed and employed other people, how many people did your mother employ?
+    role:
+      form:
+        whenYouWereFourteenFatherSuperviseAnyEmployees:
+          label: If your father was employed when you were aged 14, did they supervise any other employees? A supervisor is responsible for overseeing the work of other employees on a day-to-day basis
+        whenYouWereFourteenMotherSuperviseAnyEmployees:
+          label: If your mother was employed when you were aged 14, did they supervise any other employees? A supervisor is responsible for overseeing the work of other employees on a day-to-day basis
+        whenYouWereFourteenTypeOfWorkYourFatherDid:
+          label: Thinking back to when you were aged about 14, please select the sort of work your father did in their main job
+        whenYouWereFourteenTypeOfWorkYourMotherDid:
+          label: Thinking back to when you were aged about 14, please select the sort of work your mother did in their main job
+
+review:
+  title: Review
+  breadcrumb: Review
+
+button:
+  edit: Edit
+  submit: Submit

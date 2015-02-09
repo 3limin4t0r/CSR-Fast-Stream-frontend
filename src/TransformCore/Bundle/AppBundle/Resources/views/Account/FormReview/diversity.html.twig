@@ -1,0 +1,67 @@
+
+<div class="heading">
+    <h3 class="heading-medium">{% trans %}diversity.title{% endtrans %}</h3>
+    <a class="button" href="{{ path('transform_core_app_diversity') }}">{% trans %}button.edit{% endtrans %}</a>
+</div>
+
+<table>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}diversity.form.gender.title{% endtrans %}</th>
+            <td>{{ applicant.diversity.gender }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}diversity.form.ethnicOrigin.title{% endtrans %}</th>
+            <td>{{ applicant.diversity.ethnicOrigin }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}diversity.form.religionOrBelief.title{% endtrans %}</th>
+            <td>{{ applicant.diversity.religionOrBelief }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}diversity.form.sexualOrientation.title{% endtrans %}</th>
+            <td>{{ applicant.diversity.sexualOrientation }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}diversity.form.maritalStatus.title{% endtrans %}</th>
+            <td>{{ applicant.diversity.maritalStatus }}</td>
+        </tr>
+
+    </tbody>
+
+    <tbody>
+
+        <tr>
+            <th>{% trans %}socioEconomic.form.typeOfSchoolAttendanceAtFourteen.title{% endtrans %}</th>
+            <td>{{ applicant.socioEconomic.typeOfSchoolAttendanceAtFourteen }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}socioEconomic.form.firstPersonInImmediateFamilyToAttendUniversity.title{% endtrans %}</th>
+            <td>{{ applicant.socioEconomic.firstPersonInImmediateFamilyToAttendUniversity }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}socioEconomic.form.eligibleForFreeSchoolMeals.title{% endtrans %}</th>
+            <td>{{ applicant.socioEconomic.eligibleForFreeSchoolMeals }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}socioEconomic.form.everSpentMoreThanThreeMonthsInCare.title{% endtrans %}</th>
+            <td>{{ applicant.socioEconomic.everSpentMoreThanThreeMonthsInCare }}</td>
+        </tr>
+
+        <tr>
+            <th>{% trans %}socioEconomic.form.everPersonallyHadRefugeeOrAsylumStatus.title{% endtrans %}</th>
+            <td>{{ applicant.socioEconomic.everPersonallyHadRefugeeOrAsylumStatus }}</td>
+        </tr>
+
+    </tbody>
+
+</table>

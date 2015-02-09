@@ -22,6 +22,22 @@ transform_core_app_profile_edit:
     path:     /account/edit
     defaults: { _controller: TransformCoreAppBundle:Account:profile }
 
+transform_core_app_education:
+    path:     /applicant/education
+    defaults: { _controller: TransformCoreAppBundle:Account:education }
+
 transform_core_app_eligibility:
     path:     /applicant/eligibility
     defaults: { _controller: TransformCoreAppBundle:Account:eligibility }
+
+transform_core_app_diversity:
+    path:     /applicant/diversity
+    defaults: { _controller: TransformCoreAppBundle:Account:diversity }
+
+transform_core_app_socio_economic:
+    path:     /applicant/socioeconomic
+    defaults: { _controller: TransformCoreAppBundle:Account:socioeconomic }
+
+transform_core_app_review:
+    path:     /applicant/review
+    defaults: { _controller: TransformCoreAppBundle:Account:review }

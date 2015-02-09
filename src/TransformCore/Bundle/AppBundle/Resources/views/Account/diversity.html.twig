@@ -1,0 +1,37 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+
+    {% trans %}diversity.title{% endtrans %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+
+    {% include 'TransformCoreAppBundle:Account:breadcrumb.html.twig' %}
+
+{% endblock %}
+
+{% block heading %}
+
+    <p class="step">{% trans %}diversity.step{% endtrans %}</p>
+
+    <h1 class="form-title heading-large">{% trans %}diversity.title{% endtrans %}</h1>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="text">
+
+        {% for i in range(0,'diversity.paragraph'|translationLength) -%}
+            <p>{{('diversity.paragraph.'~i)|trans}}</p>
+        {%- endfor %}
+
+    </div>
+
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+{% endblock %}
