@@ -9,7 +9,7 @@ Feature: As a user, I want to be able to select a first scheme preference, in or
     Then I should see "First preference programme: <scheme>"  
   Examples: 
     | scheme                  | schemeId | 
-    | Diplomatic Service      |          | 
-    | Houses of Parliament    |          | 
-    | Science and Engineering |          | 
-    | Central Departments     |          |
+    | Diplomatic Service      | diplomatic_service | 
+    | Houses of Parliament    | houses_of_parliament | 
+    | Science and Engineering | science_and_engineering | 
+    | Central Departments     | central_departments |
