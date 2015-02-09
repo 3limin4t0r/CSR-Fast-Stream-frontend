@@ -35,21 +35,21 @@
         (function ()
         {
             var dateControlTemplate =
-                "<div class='form-date'>"
-              + "    <p class='form-hint'>For example, 31 3 1980</p>"
-              + "    <div class='form-group form-group-day'>"
-              + "        <label for='%input%-enhanced-day'>Day</label>"
-              + "        <input class='form-control' id='%input%-enhanced-day'   type='number' pattern='[0-9]*' min='0' max='31'>"
-              + "    </div>"
-              + "    <div class='form-group form-group-month'>"
-              + "        <label for='%input%-enhanced-month'>Month</label>"
-              + "        <input class='form-control' id='%input%-enhanced-month' type='number' pattern='[0-9]*' min='0' max='12'>"
-              + "    </div>"
-              + "    <div class='form-group form-group-year'>"
-              + "        <label for='%input%-enhanced-year'>Year</label>"
-              + "        <input class='form-control' id='%input%-enhanced-year'  type='number' pattern='[0-9]*' min='0' max='2050'>"
-              + "    </div>"
-              + "</div>";
+                '<div class="form-date">'
+              + '    <p class="form-hint">For example, 31 3 1980</p>'
+              + '    <div class="form-group form-group-day">'
+              + '        <label for="__input__-enhanced-day">Day</label>'
+              + '        <input class="form-control" id="__input__-enhanced-day"   type="number" pattern="[0-9]*" min="0" max="31">'
+              + '    </div>'
+              + '    <div class="form-group form-group-month">'
+              + '        <label for="__input__-enhanced-month">Month</label>'
+              + '        <input class="form-control" id="__input__-enhanced-month" type="number" pattern="[0-9]*" min="0" max="12">'
+              + '    </div>'
+              + '    <div class="form-group form-group-year">'
+              + '        <label for="__input__-enhanced-year">Year</label>'
+              + '        <input class="form-control" id="__input__-enhanced-year"  type="number" pattern="[0-9]*" min="0" max="2050">'
+              + '    </div>'
+              + '</div>';
 
             var dateControls = 
                 $("input.date-enhancement");
@@ -60,7 +60,7 @@
                     var container = $(this).parent();
                     var dateControl = $(this);
 
-                    var template = dateControlTemplate.replace("%input%", dateControl.attr("id"));
+                    var template = dateControlTemplate.replace(/__input__/g, dateControl.attr("id"));
 
                     dateControl.attr("type", "hidden");
                     container.append(template);
