@@ -76,7 +76,7 @@
 
         <tr>
             <th>{% trans %}profile.form.dateOfBirth.title{% endtrans %}</th>
-            <td>{{ applicant.dateOfBirth }}</td>
+            <td>{{ applicant.dateOfBirth|date("d/m/Y") }}</td>
         </tr>
 
     </tbody>

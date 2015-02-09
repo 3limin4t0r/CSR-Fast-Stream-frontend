@@ -75,9 +75,8 @@ class ApplicantsSpec extends ObjectBehavior
             ->put(
                 '/applicants/' . $applicant->getId(),
                 array(
-                    'body' => array(
-                        'csr_dm_user_profile' => json_decode($jsonData, true)
-                    )
+                    'body'    => $jsonData,
+                    'headers' => array('Content-Type' => 'application/json')
                 )
             )
             ->shouldBeCalled()
