@@ -4,11 +4,11 @@ namespace TransformCore\Bundle\AppBundle\Features\Context;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
-use Behat\Behat\Tester\Exception\PendingException;
-use Behat\Mink\Exception\Exception;
+use Behat\Behat\Hook\Scope\AfterStepScope;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use Colors\Color;
 
 /**
  * Class FeatureContext
@@ -38,27 +38,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             $parameters = $this->_parameters;
             return (isset($parameters[$name])) ? $parameters[$name] : null;
         }
-    }
-
-    public function spin($lambda, $wait = 60)
-    {
-        for ($i = 0; $i < $wait; $i++) {
-            try {
-                if ($lambda($this)) {
-                    return true;
-                }
-            } catch (\Exception $e) {
-                // do nothing
-            }
-            sleep(1);
-        }
-
-        $backtrace = debug_backtrace();
-
-        throw new \Exception(
-            "Timeout thrown by " . $backtrace[1]['class'] . "::" . $backtrace[1]['function'] . "()\n" .
-            $backtrace[1]['file'] . ", line " . $backtrace[1]['line']
-        );
     }
 
     /**
@@ -103,8 +82,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                     } else {
                         $page->uncheckField($fieldSelector);
                     }
-//                } elseif ($type == 'radio') {
-//                    // TODO: handle radio
                 } else {
                     $page->fillField($fieldSelector, $value);
                 }
@@ -235,14 +212,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iCheckTheRadioButton($radioLabel)
     {
-       $this->getSession()->getPage()->fillField($radioLabel, '1');
-    //   $radioButton = $this->getSession()->getPage()->findField($radioLabel);
-    //     if (null === $radioButton) {
-    //         throw new \Exception("Cannot find radio button " . $radioLabel);
-    //     }
-    //     $value = $radioButton->getAttribute('value');
-    //     $this->getSession()->getDriver()->click($radioButton->getXPath());
-    //     sleep(1);
+        $this->getSession()->getPage()->fillField($radioLabel, '1');
     }
 
     /**
@@ -280,7 +250,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $this->getSession()->getPage()->clickLink('Login');
         $this->getSession()->getPage()->fillField('username', $email);
         $this->getSession()->getPage()->fillField('password', $password);
-        $this->getSession()->getPage()->pressButton('_submit');
+        $this->getSession()->getPage()->pressButton('Login');
         $this->assertResponseContains($email);
     }
 
@@ -289,6 +259,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function followingUsersForEachPersonaExistOnSystem(TableNode $table)
     {
+        return true;
     }
 
     /**
@@ -296,13 +267,122 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function hasCompletedTheSection($arg1, $arg2)
     {
+        return true;
     }
 
     /**
      * @Given :arg1 has completed the :arg2 sections
      */
-    public function hasCompletedTheSections($applicant,$sections)
+    public function hasCompletedTheSections($applicant, $sections)
     {
+        return true;
+    }
 
+    /** @AfterStep */
+    public function after(AfterStepScope $scope) {
+        
+        if ($scope->getTestResult()->isPassed()) {
+            return;    
+        }
+
+        $session = $this->getSession();
+        $page = $session->getPage();
+
+        $currentUrl = $session->getCurrentUrl();
+        $statusCode = $session->getStatusCode();
+        $responseHeaders = $session->getResponseHeaders();
+        $content = $page->getContent();
+
+        $c = new Color();
+
+        echo("$currentUrl ($statusCode)\n");
+        echo("\n");
+        foreach ($responseHeaders as $name => $values) {
+            $name = implode('-', array_map('ucfirst', explode('-', $name)));
+            echo("$name=$values[0]\n");
+        }
+        echo("\n");
+
+        $highlightedSource = $content;
+
+        $highlightedSource = preg_replace_callback("/(&#[0-9]+;)/", function($match) { return mb_convert_encoding($match[1], "UTF-8", "HTML-ENTITIES"); }, $highlightedSource);
+
+        $highlightedSource = str_replace('&nbsp;', ' ', $highlightedSource);
+        $highlightedSource = str_replace('&quot;', '"', $highlightedSource);
+
+        $highlightedSource = preg_replace_callback(
+            '|(<)([a-z0-9]+)([^<>]*?)(/?)(>)|s',
+            function ($matches) use ($c)
+            {
+                $attributes = preg_replace_callback(
+                    '|(\s+)([a-z0-9-_]+)(=)(["\'])(.*?)(["\'])|s',
+                    function ($matches) use ($c)
+                    {
+                        $output = (
+                            $matches[1]
+                           .(string) $c($matches[2])->light_cyan
+                           .(string) $c($matches[3])->light_blue
+                           .(string) $c($matches[4])->light_cyan
+                           .(string) $c($matches[5])->light_yellow
+                           .(string) $c($matches[6])->light_cyan
+                        );
+
+                        return $output;
+                    },
+                    $matches[3]
+                );
+
+                $output = (
+                    (string) $c($matches[1])->light_magenta
+                   .(string) $c($matches[2])->light_red
+                   .$attributes
+                   .(string) $c($matches[4])->light_red
+                   .(string) $c($matches[5])->light_magenta
+                );
+
+                return $output;
+            },
+            $highlightedSource
+        );
+
+        $highlightedSource = preg_replace_callback(
+            '|(<)([/])([^<>]*?)(>)|',
+            function ($matches) use ($c)
+            {
+                $output = (
+                    (string) $c($matches[1])->light_magenta
+                   .(string) $c($matches[2])->light_magenta
+                   .(string) $c($matches[3])->light_red
+                   .(string) $c($matches[4])->light_magenta
+                );
+
+                return $output;
+            },
+            $highlightedSource
+        );
+
+        $highlightedSource = preg_replace_callback(
+            '|(<!)(.*?)(>)|s',
+            function ($matches) use ($c)
+            {
+                $output = (
+                    (string) $c($matches[1])->green
+                   .(string) $c($matches[2])->light_green
+                   .(string) $c($matches[3])->green
+                );
+
+                return $output;
+            },
+            $highlightedSource
+        );
+        
+        $highlightedSource = str_replace(
+            '-->',
+            (string) $c('--')->light_green
+           .(string) $c('>')->green,
+            $highlightedSource
+        );
+
+        echo($highlightedSource);
     }
 }
