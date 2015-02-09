@@ -2,7 +2,8 @@ Feature: As a user, I want to be able to select a first scheme preference, in or
 
   @CSR-319 @omit 
   Scenario Outline: Select first scheme preference 
-    Given I am on "/en/applicant/programmeselection" 
+    Given I am logged in as "eleven@test.com" with password "P@ssword1"
+    And I am on "/en/applicant/programmeselection" 
     And I fill form with:
       | <schemeId> | 1 | 
     And I press "Save and continue" 
