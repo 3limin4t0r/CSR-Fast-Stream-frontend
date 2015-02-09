@@ -31,8 +31,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I should see form with:
       | csr_dm_user_profile_name_group_firstname                  | Onechange          |
       | csr_dm_user_profile_name_group_lastname                   | Personachange      |
-      | csr_dm_user_profile_date_of_birth_group_dateOfBirth_day   | 02                 |
-      | csr_dm_user_profile_date_of_birth_group_dateOfBirth_month | 08                 |
+      | csr_dm_user_profile_date_of_birth_group_dateOfBirth_day   | 2                  |
+      | csr_dm_user_profile_date_of_birth_group_dateOfBirth_month | 8                  |
       | csr_dm_user_profile_date_of_birth_group_dateOfBirth_year  | 1968               |
       | csr_dm_user_profile_address_address_group_postcode        | post code          |
       | csr_dm_user_profile_address_address_group_line1           | address line one   |
