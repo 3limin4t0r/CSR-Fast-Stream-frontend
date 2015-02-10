@@ -192,12 +192,13 @@
         .sections .section .status span.incomplete { background-color: #F47738; }
         .sections .section .status span.not-started { background-color: #6F777B; }
         .test-trigger { cursor: pointer;}
+        .hidden-trigger {color: #FFF;}
         .completed td { color: #CCC;}
         .current td { color: #005ea5;}
         .counter td { color: #000; }
         .online-assessment .index {width: 4%; margin: auto 0 auto;}
-        .online-assessment .fixed {width: 12%}
-        .online-assessment .fixed-wide {width: 30%}
+        .online-assessment .fixed {width: 14%}
+        .online-assessment .fixed-wide {width: 27%}
         .section p {display: inline-block;}
 
     </style>
@@ -220,7 +221,7 @@
                 },
                 {
                     index       : 2,
-                    name        : 'Practice for the online selection tests',
+                    name        : 'Practice for the Online Selection Tests',
                     optional    : 'Optional',
                     class       : 'optional',
                     steps    : [
@@ -233,7 +234,7 @@
                 },
                 {
                     index       : 3,
-                    name        : 'Situational judgment questionnaire',
+                    name        : 'Situational Judgment Questionnaire',
                     optional    : 'Optional',
                     class       : 'optional',
                     steps    : [
@@ -247,10 +248,19 @@
                     name        : 'Online selection tests',
                     optional    : 'Compulsory',
                     class       : 'required',
-                    steps    : [
-                        'Begin Test',
+                    steps       : [
+                        'Begin Verbal Reasoning Test',
+                        'In Progress',
+                        'Begin Numerical Reasoning Test',
+                        'In Progress',
+                        'Begin Competency Questionnaire ',
                         'In Progress',
                         'Complete'
+                    ],
+                    outcomes  : [
+                        'Successful',
+                        'Unsuccessful',
+                        'Awaiting results'
                     ]
                 }
             ];
@@ -262,7 +272,7 @@
 
                     $.each(assessmentData, function(index, item) {
                         var currentStyle = '';
-                        var triggerStyle = '';
+                        var triggerStyle = 'hidden-trigger';
 
                         if (false === isCurrent) {
                             currentStyle = " current";
@@ -270,11 +280,13 @@
                             isCurrent = true;
                         }
 
+                        var moreInfoHref = ('Optional' === item.optional) ? 'optional-step':'required-step';
+
                         var element =
                             "<tr class='" + item.class + currentStyle +"'>" +
                                 "<td class='index'>" + item.index + "</td>" +
                                 "<td>" + item.name + "</td>" +
-                                "<td>" + item.optional + "</td>" +
+                                "<td>" + item.optional + " <a href='#" + moreInfoHref +"' title='More information'>(?)</a></td>" +
                                 "<td />" +
                                 "<td class='" + triggerStyle + "' data-element='" + index + "' data-step='0' id='steps'>" + item.steps[0] + "</td>" +
                                 "<td />" +
@@ -288,40 +300,75 @@
                 bindTriggers : function() {
                     var _this = this;
                     $('.test-trigger').on('click', function() {
-                          if (undefined !== assessmentData[$(this).data('element')].steps[$(this).data('step')+1]) {
-                              var stepText = assessmentData[$(this).data('element')].steps[$(this).data('step')+1];
+                        if (undefined !== assessmentData[$(this).data('element')].steps[$(this).data('step')+1]) {
+                            var stepText = assessmentData[$(this).data('element')].steps[$(this).data('step')+1];
 
-                              $(this).html(stepText);
-                              $(this).data('step', $(this).data('step')+1);
+                            $(this).html(stepText);
+                            $(this).data('step', $(this).data('step')+1);
 
-                              switch (stepText) {
-                                  case 'In Progress':
-                                      $(this).prev().html(_this.getFuturedDate(7));
-                                      $(this).next().html('');
-                                      break;
-                                  case 'Complete':
-                                      $(this).prev().html('');
-                                      $(this).next().html(_this.getFuturedDate(0));
-                                      $(this).removeClass('test-trigger');
-                                      $(this).parent().removeClass('current');
-                                      $(this).parent('tr').next().addClass('current');
-                                      $(this).parent('tr').next().find('#steps').addClass('test-trigger');
+                            switch (stepText) {
+                                case 'In Progress':
+                                    $(this).prev().html(_this.getFuturedDate(7));
+                                    $(this).next().html('');
 
-                                      if (assessmentData.length <= ($(this).parent('tr').find('.index').html())) {
-                                          $(this).closest('div')
-                                                  .find('.not-started')
-                                                  .removeClass('not-started')
-                                                  .addClass('complete')
-                                                  .html('Complete');
-                                      }
+                                    assessments.$currentObject = $(this);
+                                    setTimeout(function() {
+                                            assessments.$currentObject.trigger('click');
+                                        },
+                                        2000
+                                    );
+                                    break;
+                                case 'Complete':
+                                    $(this).prev().html('');
+                                    $(this).next().html(_this.getFuturedDate(0));
+                                    $(this).removeClass('test-trigger');
+                                    $(this).parent().removeClass('current');
+                                    $(this).parent('tr').next().addClass('current');
+                                    $(this).parent('tr')
+                                            .next()
+                                            .find('#steps')
+                                            .removeClass('hidden-trigger')
+                                            .addClass('test-trigger');
 
-                                      _this.bindTriggers();
-                                      break;
-                                  default:
-                                      $(this).prev().html('');
-                                      $(this).next().html('');
-                                      break;
+                                    if (assessmentData.length <= ($(this).parent('tr').find('.index').html())) {
 
+                                        if (undefined !== assessmentData[$(this).data('element')].outcomes) {
+                                            var key =
+                                                Math.floor(Math.random() * assessmentData[$(this).data('element')].outcomes.length);
+
+
+                                            var tmpText = assessmentData[$(this).data('element')].outcomes[key];
+                                            if ('Successful' !== tmpText) {
+                                                outputText =
+                                                        tmpText +
+                                                        "<a href='#" +
+                                                        tmpText.toLowerCase() +
+                                                        "' title='More Information'>(?)</a>";
+                                            } else {
+                                                outputText = tmpText;
+                                            }
+                                            console.log(outputText);
+                                        } else {
+                                            var outputText = 'Complete';
+                                        }
+
+                                        $(this).parent('tr')
+                                                .find('#steps')
+                                                .html(outputText);
+
+                                         $(this).closest('div')
+                                              .find('.not-started')
+                                              .removeClass('not-started')
+                                              .addClass('complete')
+                                              .html('Complete');
+                                    }
+
+                                    _this.bindTriggers();
+                                    break;
+                                default:
+                                    $(this).prev().html('');
+                                    $(this).next().html('');
+                                    break;
                               }
                           }
                       })
