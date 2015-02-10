@@ -328,3 +328,15 @@ review:
 button:
   edit: Edit
   submit: Submit
+
+programme:
+  selection:
+    title: Programme Selection
+    breadcrumb: Select Programme
+    introduction:
+      - We will now ask you to select what programmes and schemes you want to apply for. We recommend that you first take some time to research the schemes, options and processes detailed in the Fast Stream website, if you have not done so already. Please also review the eligibility criteria for your preferred option(s) as they may vary depending on scheme.
+      - Note that you will have 7 days to complete the online tests after you have submitted your programme and scheme selection
+      - Please select your first preference Fast Stream Programme below
+    form:
+      updateButton:
+        label: Save and Continue
