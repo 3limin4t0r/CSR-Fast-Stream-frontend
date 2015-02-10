@@ -3,7 +3,7 @@ Feature: As a user, I want to be able to select a first programme preference, in
   @CSR-318 @omit
   Scenario Outline: Select first programme preference
     Given I am logged in as "eleven@test.com" with password "P@ssword1"
-    And I am on "/en/applicant/programmeselection"
+    And I am on "/en/program/selection"
     And I fill form with:
       | <programmeId> | 1 |
     And I press "Save and continue"
@@ -27,6 +27,6 @@ Feature: As a user, I want to be able to select a first programme preference, in
   @CSR-318 @omit
   Scenario: Attempt to progress without selection
     Given I am logged in as "eleven@test.com" with password "P@ssword1"
-    And I am on "/en/applicant/programmeselection"
+    And I am on "/en/programme/selection"
     And I press "Save and continue"
     Then I should see "You must first select a programme, before continuing"
