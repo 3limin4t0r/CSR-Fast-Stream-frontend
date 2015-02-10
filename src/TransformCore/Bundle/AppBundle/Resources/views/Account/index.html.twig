@@ -14,6 +14,168 @@
 
 {% block body %}
 
-    <a href="{{ path('transform_core_app_profile_edit') }}" class="button">Continue application</a>
+    <h2 class="heading-large">Fast Stream 2016</h2>
+
+    {% if not hasApplicantCompletedProfile %}
+
+        <h3 class="heading-medium">Registration: COMPLETE</h3>
+
+        <p>Welcome to the Fast Stream {{ applicant.firstname }}.</p>
+
+        <p>You must complete your details and application by 11:59 on 19th January 2016</p>
+
+        <p>Your next task is to complete <a href="{{ path('transform_core_app_profile_edit') }}">My Details</a>.</p>
+
+    {% else %}
+
+        <h3 class="heading-medium">My Details: COMPLETE</h3>
+
+        <p>Thank you. You have now completed the My Details section.</p>
+
+        <p>If any of these details change, you can <a href="{{ path('transform_core_app_profile_edit') }}">update them</a>.</p>
+ 
+        <p>Your next task is to select a scheme in the <a href="#">My Application section</a>.</p>
+
+    {% endif %}
+
+    <h2 class="heading-large">Your progress</h2>
+
+    <div class="sections">
+
+        <div class="section">
+
+            <h3 class="heading-medium">1.&nbsp;&nbsp;<a href="{{ path('transform_core_app_profile_edit') }}">My Details</a></h3>
+
+            <div class="action">
+
+                {% if hasApplicantCompletedProfile %}
+
+                    <a class="button" href="{{ path('transform_core_app_profile_edit') }}">Edit</a>
+
+                {% else %}
+                
+                    {% if hasApplicantStartedProfile %}
+
+                        <a class="button" href="{{ path('transform_core_app_profile_edit') }}">Continue</a>
+
+                    {% else %}
+
+                        <a class="button" href="{{ path('transform_core_app_profile_edit') }}">Start</a>
+
+                    {% endif %}
+
+                {% endif %}
+
+            </div>
+
+            <div class="status">
+
+                {% if hasApplicantCompletedProfile %}
+
+                    <span class="complete">Complete</span>
+
+                {% else %}
+                
+                    {% if hasApplicantStartedProfile %}
+
+                        <span class="incomplete">Incomplete</span>
+
+                    {% else %}
+
+                        <span class="not-started">Not started</span>
+
+                    {% endif %}
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+        <div class="section">
+        
+            {% if hasApplicantCompletedProfile %}
+
+                <h3 class="heading-medium">2.&nbsp;&nbsp;<a href="{{ path('transform_core_app_profile_edit') }}">My Application</a></h3>
+
+            {% else %}
+
+                <h3 class="heading-medium">2.&nbsp;&nbsp;My Application</h3>
+
+            {% endif %}
+
+            <div class="action">
+
+                {% if hasApplicantCompletedProfile %}
+
+                    <a class="button" href="{{ path('transform_core_app_profile_edit') }}">Start</a>
+
+                {% else %}
+
+                    <a class="button disabled" href="{{ path('transform_core_app_profile_edit') }}">Start</a>
+
+                {% endif %}
+
+            </div>
+
+            <div class="status">
+
+                <span class="not-started">Not started</span>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h3 class="heading-medium">3.&nbsp;&nbsp;Online Assessment</h3>
+
+            <div class="action">
+
+                <a class="button disabled" href="{{ path('transform_core_app_profile_edit') }}">Start</a>
+
+            </div>
+
+            <div class="status">
+
+                <span class="not-started">Not started</span>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h3 class="heading-medium">4.&nbsp;&nbsp;E-Tray</h3>
+
+            <div class="action">
+
+                <a class="button disabled" href="{{ path('transform_core_app_profile_edit') }}">Start</a>
+
+            </div>
+
+            <div class="status">
+
+                <span class="not-started">Not started</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <style>
+
+        .sections .section { border-top: 1px solid #bfc1c3; height: 100%; overflow: hidden; }
+        .sections .section h3 { float: left; }
+        .sections .section .action { float: right; margin-top: 2em; min-width: 8em; text-align: right; }
+        .sections .section .action a { min-width: 4em; text-align: center; }
+        .sections .section .status { float: right; font-size: 80%; margin-right: 2em; margin-top: 3em; text-align: center; }
+        .sections .section .status span { background-color: #DEE0E2; color: white; display: block; margin-top: -5px; padding-bottom: 5px; padding-top: 5px; width: 6em; }
+        .sections .section .status span.complete { background-color: #85994B; }
+        .sections .section .status span.incomplete { background-color: #F47738; }
+        .sections .section .status span.not-started { background-color: #6F777B; }
+
+    </style>
 
 {% endblock %}
