@@ -291,7 +291,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $currentUrl = $session->getCurrentUrl();
         $statusCode = $session->getStatusCode();
         $responseHeaders = $session->getResponseHeaders();
-        $content = $page->getContent();
+        $content = ''; // $page->getContent();
 
         $c = new Color();
 
