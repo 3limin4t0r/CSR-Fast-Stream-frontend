@@ -290,6 +290,7 @@ class AccountController extends Controller
     private function getApplicant()
     {
         $applicantId = $this->getApplicantId();
+        return (new Applicant())->setId($applicantId);
         return $this->get('transform_core_app_main.service.applicants')
                     ->getById($applicantId);
     }
