@@ -33,7 +33,7 @@
         <p>Thank you. You have now completed the My Details section.</p>
 
         <p>If any of these details change, you can <a href="{{ path('transform_core_app_profile_edit') }}">update them</a>.</p>
- 
+
         <p>Your next task is to select a scheme in the <a href="#">My Application section</a>.</p>
 
     {% endif %}
@@ -53,7 +53,7 @@
                     <a class="button" href="{{ path('transform_core_app_profile_edit') }}">Edit</a>
 
                 {% else %}
-                
+
                     {% if hasApplicantStartedProfile %}
 
                         <a class="button" href="{{ path('transform_core_app_profile_edit') }}">Continue</a>
@@ -75,7 +75,7 @@
                     <span class="complete">Complete</span>
 
                 {% else %}
-                
+
                     {% if hasApplicantStartedProfile %}
 
                         <span class="incomplete">Incomplete</span>
@@ -93,7 +93,7 @@
         </div>
 
         <div class="section">
-        
+
             {% if hasApplicantCompletedProfile %}
 
                 <h3 class="heading-medium">2.&nbsp;&nbsp;<a href="{{ path('transform_core_app_profile_edit') }}">My Application</a></h3>
@@ -126,23 +126,39 @@
 
         </div>
 
-        <div class="section">
+        {% block onlineAssessment %}
+            <div class="section">
 
-            <h3 class="heading-medium">3.&nbsp;&nbsp;Online Assessment</h3>
+                <h3 class="heading-medium">3.&nbsp;&nbsp;Online Assessment</h3>
 
-            <div class="action">
+                <div class="action">
+                    <a class="button disabled">Start</a>
+                </div>
 
-                <a class="button disabled" href="{{ path('transform_core_app_profile_edit') }}">Start</a>
+                <div class="status">
+                    <span class="not-started">Not started</span>
+                </div>
 
+                <p class="sections">
+                    The Online Assessment section starts with practice modules where you can test your own skills.
+                    These modules are optional. You will then move on to the real online selection tests which will be submitted
+                    to the Fast Stream for marking and assessment.
+                </p>
+
+                <table class="online-assessment">
+                    <thead>
+                        <th class="index"/>
+                        <th class="fixed-wide">Assessment</th>
+                        <th class="fixed">Required</th>
+                        <th class="fixed">Due Date</th>
+                        <th class="fixed-wide">Progress</th>
+                        <th class="fixed">Completed</th>
+                    </thead>
+
+                    <tbody />
+                </table>
             </div>
-
-            <div class="status">
-
-                <span class="not-started">Not started</span>
-
-            </div>
-
-        </div>
+        {% endblock onlineAssessment %}
 
         <div class="section">
 
@@ -175,7 +191,163 @@
         .sections .section .status span.complete { background-color: #85994B; }
         .sections .section .status span.incomplete { background-color: #F47738; }
         .sections .section .status span.not-started { background-color: #6F777B; }
+        .test-trigger { cursor: pointer;}
+        .completed td { color: #CCC;}
+        .current td { color: #005ea5;}
+        .counter td { color: #000; }
+        .online-assessment .index {width: 4%; margin: auto 0 auto;}
+        .online-assessment .fixed {width: 12%}
+        .online-assessment .fixed-wide {width: 30%}
+        .section p {display: inline-block;}
 
     </style>
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            assessmentData = [
+                {
+                    index       : 1,
+                    name        : 'Self-assessed reasoning tests',
+                    optional    : 'Optional',
+                    class       : 'optional',
+                    steps    : [
+                        'Begin Verbal Reasoning Test',
+                        'In Progress',
+                        'Begin Numerical Reasoning Test',
+                        'In Progress',
+                        'Complete'
+                    ]
+                },
+                {
+                    index       : 2,
+                    name        : 'Practice for the online selection tests',
+                    optional    : 'Optional',
+                    class       : 'optional',
+                    steps    : [
+                        'Begin Verbal Reasoning Test',
+                        'In Progress',
+                        'Begin Numerical Reasoning Test',
+                        'In Progress',
+                        'Complete'
+                    ]
+                },
+                {
+                    index       : 3,
+                    name        : 'Situational judgment questionnaire',
+                    optional    : 'Optional',
+                    class       : 'optional',
+                    steps    : [
+                        'Begin Test',
+                        'In Progress',
+                        'Complete'
+                    ]
+                },
+                {
+                    index       : 4,
+                    name        : 'Online selection tests',
+                    optional    : 'Compulsory',
+                    class       : 'required',
+                    steps    : [
+                        'Begin Test',
+                        'In Progress',
+                        'Complete'
+                    ]
+                }
+            ];
+
+            assessments = {
+                populateAssessments: function()
+                {
+                    var isCurrent =  false;
+
+                    $.each(assessmentData, function(index, item) {
+                        var currentStyle = '';
+                        var triggerStyle = '';
+
+                        if (false === isCurrent) {
+                            currentStyle = " current";
+                            triggerStyle = " test-trigger";
+                            isCurrent = true;
+                        }
+
+                        var element =
+                            "<tr class='" + item.class + currentStyle +"'>" +
+                                "<td class='index'>" + item.index + "</td>" +
+                                "<td>" + item.name + "</td>" +
+                                "<td>" + item.optional + "</td>" +
+                                "<td />" +
+                                "<td class='" + triggerStyle + "' data-element='" + index + "' data-step='0' id='steps'>" + item.steps[0] + "</td>" +
+                                "<td />" +
+                            "</tr>";
+
+                        $('.online-assessment tbody').append(element);
+
+                    })
+                },
+
+                bindTriggers : function() {
+                    var _this = this;
+                    $('.test-trigger').on('click', function() {
+                          if (undefined !== assessmentData[$(this).data('element')].steps[$(this).data('step')+1]) {
+                              var stepText = assessmentData[$(this).data('element')].steps[$(this).data('step')+1];
+
+                              $(this).html(stepText);
+                              $(this).data('step', $(this).data('step')+1);
+
+                              switch (stepText) {
+                                  case 'In Progress':
+                                      $(this).prev().html(_this.getFuturedDate(7));
+                                      $(this).next().html('');
+                                      break;
+                                  case 'Complete':
+                                      $(this).prev().html('');
+                                      $(this).next().html(_this.getFuturedDate(0));
+                                      $(this).removeClass('test-trigger');
+                                      $(this).parent().removeClass('current');
+                                      $(this).parent('tr').next().addClass('current');
+                                      $(this).parent('tr').next().find('#steps').addClass('test-trigger');
+
+                                      if (assessmentData.length <= ($(this).parent('tr').find('.index').html())) {
+                                          $(this).closest('div')
+                                                  .find('.not-started')
+                                                  .removeClass('not-started')
+                                                  .addClass('complete')
+                                                  .html('Complete');
+                                      }
+
+                                      _this.bindTriggers();
+                                      break;
+                                  default:
+                                      $(this).prev().html('');
+                                      $(this).next().html('');
+                                      break;
+
+                              }
+                          }
+                      })
+                },
+
+
+                getFuturedDate: function(offset) {
+                    var today = new Date();
+                    today.setDate(today.getDate() + offset);
+
+                    return today.getDate() +'/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+                },
+
+                init : function() {
+                    this.populateAssessments();
+                    this.bindTriggers();
+                    window.assessmentData = assessmentData;
+                }
+            };
+
+            assessments.init();
+
+        });
+
+    </script>
+
 {% endblock %}
+
+
