@@ -1,8 +1,8 @@
 Feature: As a user, I want to be able to select a first programme preference, in order to progress my application
 
-  @CSR-318 @omit
+  @CSR-318
   Scenario Outline: Select first programme preference
-    Given I am logged in as "eleven@test.com" with password "P@ssword1"
+    Given I am logged in as "nine@test.com" with password "P@ssword1"
     And I am on "/en/program/selection"
     And I fill form with:
       | <programmeId> | 1 |
@@ -22,11 +22,9 @@ Feature: As a user, I want to be able to select a first programme preference, in
     | Summer Diversity Internship Programme | x           |
     | Early Diversity Internship Programme  | x           |
 
-
-
-  @CSR-318 @omit
+  @CSR-318
   Scenario: Attempt to progress without selection
-    Given I am logged in as "eleven@test.com" with password "P@ssword1"
+    Given I am logged in as "nine@test.com" with password "P@ssword1"
     And I am on "/en/programme/selection"
     And I press "Save and continue"
     Then I should see "You must first select a programme, before continuing"
