@@ -42,6 +42,6 @@ transform_core_app_review:
     path:     /applicant/review
     defaults: { _controller: TransformCoreAppBundle:Account:review }
 
-transform_core_app_program_selection:
-    path:     /program/selection
-    defaults: { _controller: TransformCoreAppBundle:Program:selection }
+transform_core_app_programme_selection:
+    path:     /programme/selection
+    defaults: { _controller: TransformCoreAppBundle:Programme:selection }

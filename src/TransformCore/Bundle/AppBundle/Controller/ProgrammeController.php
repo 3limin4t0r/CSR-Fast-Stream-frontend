@@ -4,14 +4,14 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use TransformCore\Bundle\CsrFastStreamBundle\Entity\Program;
-use TransformCore\Bundle\CsrFastStreamBundle\Form\ProgramSelectionFormType;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\Programme;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\ProgrammeSelectionFormType;
 
 /**
- * Class ProgramController
+ * Class ProgrammeController
  * @package TransformCore\Bundle\AppBundle\Controller
  */
-class ProgramController extends Controller
+class ProgrammeController extends Controller
 {
 
     /**
@@ -19,9 +19,9 @@ class ProgramController extends Controller
      */
     public function selectionAction(Request $request)
     {
-        $program = new Program();
+        $program = new Programme();
 
-        $form = $this->createForm(new ProgramSelectionFormType(), $program);
+        $form = $this->createForm(new ProgrammeSelectionFormType(), $program);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
@@ -40,7 +40,7 @@ class ProgramController extends Controller
         }
 
         return $this->render(
-            'TransformCoreAppBundle:Program:selection.html.twig',
+            'TransformCoreAppBundle:Programme:selection.html.twig',
             array(
                 'form' => $form->createView(),
             )
