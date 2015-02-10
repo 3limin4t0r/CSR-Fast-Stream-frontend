@@ -100,7 +100,6 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Logout"
     And I should not see "Login"
 
-
   @about-you-bugfix
   Scenario Outline: Create Account with valid details
     Given I am on the homepage
@@ -122,7 +121,9 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I press "Register"
     Then I should not see "This value is already used"
     Then I should see "The user has been created successfully"
-    And I follow "<email-input>"
+    And I am on "/en/logout"
+    When I am logged in as "<email-input>" with password "P@ssword1"
+    And I follow "Start"
     Then I fill form with:
       | csr_dm_user_profile_address_address_group_line1           | address line one   |
       | csr_dm_user_profile_address_address_group_line2           | address line two   |
@@ -135,8 +136,11 @@ Feature: As an user, I want to be able to add details about myself on my account
       | csr_dm_user_profile_address_address_group_country         | United Kingdom     |
     When I press "Save and continue"
     Then I should see "Nationality, Immigration and Employment Restrictions"
-    And I follow "<email-input>"
-    Then I should see "Complete" in the "status" element
+    And I am on "/en/logout"
+    When I am logged in as "<email-input>" with password "P@ssword1"
+    And I should see 1 "span.complete" elements
+    Then I should see "Complete" in the "span.status" element
 
-  Examples:   | first-name | last-name | email-input     | phoneNumber | password  | referrer-input |
-  | One        | Persona   | twelve@test.com | 07739898078 | P@ssword1 | Search Engine  |
+  Examples:
+    | first-name | last-name | email-input     | phoneNumber | password  | referrer-input |
+    | One        | Persona   | twelve@test.com | 07739898078 | P@ssword1 | Search Engine  |
