@@ -35,7 +35,7 @@ class ProgrammeController extends Controller
                     );
 
             return $this->redirect(
-                $this->generateUrl('transform_core_app_account')
+                $this->generateUrl('transform_core_app_programme_selected')
             );
         }
 
@@ -45,5 +45,13 @@ class ProgrammeController extends Controller
                 'form' => $form->createView(),
             )
         );
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function selectedAction()
+    {
+        return $this->render('TransformCoreAppBundle:Programme:selected.html.twig');
     }
 }

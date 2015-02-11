@@ -45,3 +45,7 @@ transform_core_app_review:
 transform_core_app_programme_selection:
     path:     /programme/selection
     defaults: { _controller: TransformCoreAppBundle:Programme:selection }
+
+transform_core_app_programme_selected:
+    path:     /programme/selected
+    defaults: { _controller: TransformCoreAppBundle:Programme:selected }
