@@ -2638,12 +2638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "fd3fb7579b926062f8364f9018afc0646f4a70bb"
+                "reference": "09efd094f8db59503bbdda26942468fc43def140"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/fd3fb7579b926062f8364f9018afc0646f4a70bb",
-                "reference": "fd3fb7579b926062f8364f9018afc0646f4a70bb",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/09efd094f8db59503bbdda26942468fc43def140",
+                "reference": "09efd094f8db59503bbdda26942468fc43def140",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2669,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-10 13:57:56"
+            "time": "2015-02-11 10:43:16"
         },
         {
             "name": "twig/extensions",
@@ -3805,16 +3805,16 @@
         },
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v62",
+            "version": "v63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "e4f5473184a955b3c91de1dac040ed58d9bc5347"
+                "reference": "62bddfebfd8c3e79b9710d11d558e07727356484"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/e4f5473184a955b3c91de1dac040ed58d9bc5347",
-                "reference": "e4f5473184a955b3c91de1dac040ed58d9bc5347",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/62bddfebfd8c3e79b9710d11d558e07727356484",
+                "reference": "62bddfebfd8c3e79b9710d11d558e07727356484",
                 "shasum": ""
             },
             "bin": [
@@ -3845,7 +3845,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-02-04 15:47:32"
+            "time": "2015-02-10 23:24:07"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -4918,17 +4918,17 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "9e23fc3de265ae013690d84aab98e7a84f46edcd"
+                "reference": "4b09746520a826a7bf34a466ba31c7d8740fef7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/9e23fc3de265ae013690d84aab98e7a84f46edcd",
-                "reference": "9e23fc3de265ae013690d84aab98e7a84f46edcd",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4b09746520a826a7bf34a466ba31c7d8740fef7e",
+                "reference": "4b09746520a826a7bf34a466ba31c7d8740fef7e",
                 "shasum": ""
             },
             "require": {
@@ -4962,7 +4962,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2015-01-13 07:33:46"
+            "time": "2015-02-11 07:21:23"
         }
     ],
     "aliases": [],
