@@ -40,7 +40,7 @@ Feature: As an user, I want to be able to add details about myself on my account
       | csr_dm_user_profile_address_address_group_country         | United Kingdom     |
       | csr_dm_user_profile_phone_number_group_phoneNumber_number | 07951234567        |
 
-  @CSR-135
+  @CSR-135 @CSR-345
   Scenario: Complete About You Section (Field validation)
     Given I am logged in as "two@test.com" with password "P@ssword1"
     And I follow "Profile"
