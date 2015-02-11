@@ -30,7 +30,7 @@ after_success:
   - make build.package
 
 after_failure:
-  - make symfony.logs
+  - make symfony.logs | grep -v 'DEBUG\|INFO\|WARNING'
 
 branches:
   except:
