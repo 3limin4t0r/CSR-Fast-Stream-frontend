@@ -1,5 +1,13 @@
 Feature: As a user, I want to be able to select a first scheme preference, in order to progress my application
 
+  @CSR-319 @omit
+  Scenario: Attempt to progress without selection
+    Given I am logged in as "four@test.com" with password "P@ssword1"
+    And I am on "/en/scheme/selection"
+    And I press "Select scheme (second preference)"
+    Then I should see "This value should not be blank"
+
+
   @CSR-319
   Scenario Outline: Select first scheme preference
     Given I am logged in as "four@test.com" with password "P@ssword1"
