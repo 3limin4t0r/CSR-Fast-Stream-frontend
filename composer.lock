@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "973b955bbb5f25f9aed350a186f439a1",
+    "hash": "911a1b89145666de02e0d61878e73aa6",
     "packages": [
         {
             "name": "adamquaile/symfony-fieldset-bundle",
@@ -4981,7 +4981,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~5.5",
+        "php": "5.5.*",
         "ext-mbstring": "*",
         "ext-intl": "*"
     },

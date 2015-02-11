@@ -131,8 +131,6 @@
 
         {% block breadcrumb %}{% endblock breadcrumb %}
 
-        {% block heading %}{% endblock heading %}
-
         {% for type, messages in app.session.flashbag.all() %}
             {% for message in messages %}
                 <div class="alert alert-{{ type }}">
@@ -140,6 +138,8 @@
                 </div>
             {% endfor %}
         {% endfor %}
+
+        {% block heading %}{% endblock heading %}
 
         {% block body %}{% endblock body %}
 
@@ -188,7 +188,14 @@
     <script> $('legend').addClass('form-label-bold'); </script>
 
     {# TECH DEBT - move to custom own css file #}
-    <style> legend { margin-bottom: 15px !important; } </style>
+    <style>
+        legend { margin-bottom: 15px !important; }
+        div.alert {
+            background: #c7ddef;
+            border: 1px solid #005ea5;
+            padding: 8px;
+        }
+    </style>
 
     {# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #}
 
