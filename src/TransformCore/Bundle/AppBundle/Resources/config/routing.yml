@@ -49,3 +49,7 @@ transform_core_app_programme_selection:
 transform_core_app_programme_selected:
     path:     /programme/selected
     defaults: { _controller: TransformCoreAppBundle:Programme:selected }
+
+transform_core_app_scheme_selection:
+    path:   /scheme/selection
+    defaults: { _controller: TransformCoreAppBundle:Scheme:selection }

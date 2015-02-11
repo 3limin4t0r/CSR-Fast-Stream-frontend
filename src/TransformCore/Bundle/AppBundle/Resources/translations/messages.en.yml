@@ -355,3 +355,17 @@ programme:
       - "- Houses of Parliament"
       - "- Science and Engineering"
       - "- Central Departments"
+
+scheme:
+  selection:
+    title: Scheme Selection
+    breadcrumb: Select Scheme - First Preference
+    introduction:
+      - Please select your first preference Generalist scheme, and confirm your eligibility
+    form:
+      updateButton:
+        label: Select scheme (second preference)
+    DiplomaticService: If you choose to apply for Diplomatic Service, it must be your first preference
+    HousesofParliament: If you choose to apply for Houses of Parliament, it must be your first preference
+    ScienceandEngineering: If you choose to apply for Science and Engineering, it must be your first preference
+    CentralDepartments: If you choose to apply for Central Departments as first preference, you will not be able to add a second preference within the Generalist programme.
