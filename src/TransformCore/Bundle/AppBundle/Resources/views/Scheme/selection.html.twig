@@ -35,4 +35,23 @@
     </div>
 
 
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+    {{ form_errors(form) }}
+
+        {% for child in form.children.name.children %}
+
+            {%  set key =  ('scheme.selection.'~(child.vars.value|replace({' ':''}))) %}
+            <div class="text">
+                {{ key | trans}}
+            </div>
+
+            {{ (form_row(child))}}
+
+        {% endfor %}
+    </div>
+
+    {{ form_row(form.update) }}
+
+    {{ form_end(form) }}
 {% endblock %}
