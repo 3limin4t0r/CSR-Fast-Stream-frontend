@@ -101,7 +101,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I should not see "Login"
 
   @about-you-bugfix
-  Scenario Outline: Create Account with valid details
+  Scenario Outline: Create Account with valid details and only complete the first about you step
     Given I am on the homepage
     And I follow "Register"
     Then I should see "Register Your Details"
@@ -138,7 +138,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I am on "/en/logout"
     When I am logged in as "<email-input>" with password "P@ssword1"
-    And I should see 1 "span.complete" elements
+    And I should see 1 "span.incomplete" elements
     Then I should see "Complete" in the "span.status" element
 
   Examples:
