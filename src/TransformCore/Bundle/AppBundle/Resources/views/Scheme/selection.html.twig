@@ -1,0 +1,38 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+
+    {% trans %}scheme.selection.title{% endtrans %}
+
+{% endblock %}
+
+{% block breadcrumb %}
+
+    <div id="global-breadcrumb" class="header-context">
+
+        <nav role="navigation">
+            <ol class="group">
+                <li><a href="{{ path('transform_core_app_scheme_selection') }}">{% trans %}scheme.selection.breadcrumb{% endtrans %}</a></li>
+            </ol>
+        </nav>
+
+    </div>
+
+{% endblock %}
+
+{% block heading %}
+
+    <h1 class="form-title heading-large">{% trans %}scheme.selection.title{% endtrans %}</h1>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="text">
+        {% for i in range(0,'scheme.selection.introduction'|translationLength) -%}
+            <p>{{('scheme.selection.introduction.'~i)|trans}}</p>
+        {%- endfor %}
+    </div>
+
+
+{% endblock %}
