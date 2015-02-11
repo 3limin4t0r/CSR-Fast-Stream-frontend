@@ -341,6 +341,20 @@ programme:
       updateButton:
         label: Save and Continue
 
+  selected:
+    title: Programme Selected
+    breadcrumb: Selected Programme
+    introduction:
+      - You have selected the Generalist Programme.
+      - First, we will ask you to select your scheme preferences.
+      - As an applicant for the Generalist Programme you also have the opportunity to add further programmes to your application. You will be able to add these after you have completed the scheme selection.
+    detail: "First preference programme: Generalist programme"
+    progress:
+      - "As an applicant for the Generalist programme you can add the following schemes to your application"
+      - "- Diplomatic Service"
+      - "- Houses of Parliament"
+      - "- Science and Engineering"
+      - "- Central Departments"
 
 scheme:
   selection:
