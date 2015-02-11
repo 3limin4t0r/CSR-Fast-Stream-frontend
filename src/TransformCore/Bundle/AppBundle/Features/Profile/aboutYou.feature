@@ -139,7 +139,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I am on "/en/logout"
     When I am logged in as "<email-input>" with password "P@ssword1"
     And I should see 1 "span.incomplete" elements
-    Then I should see "Complete" in the "span.status" element
+    Then I should see "Incomplete" in the "span.incomplete" element
 
   Examples:
     | first-name | last-name | email-input     | phoneNumber | password  | referrer-input |
