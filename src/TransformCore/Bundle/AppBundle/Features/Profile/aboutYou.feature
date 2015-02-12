@@ -120,7 +120,7 @@ Feature: As an user, I want to be able to add details about myself on my account
       | fos_user_registration_form_registered_disability_group_registration_termsAndConditions         | Yes                              |
     And I press "Register"
     Then I should not see "This value is already used"
-    Then I should see "The user has been created successfully"
+    Then I should see "Registration: COMPLETE"
     And I am on "/en/logout"
     When I am logged in as "<email-input>" with password "P@ssword1"
     And I follow "Start"

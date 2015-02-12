@@ -20,7 +20,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
       | fos_user_registration_form_registered_disability_group_registration_termsAndConditions         | Yes                              |
     And I press "Register"
     Then I should not see "This value is already used"
-    Then I should see "The user has been created successfully"
+    Then I should see "Registration: COMPLETE"
     And I should see "<email-input>"
 
   Examples:

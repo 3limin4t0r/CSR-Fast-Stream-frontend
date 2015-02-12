@@ -37,4 +37,16 @@
     {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
     {{ form_widget(form) }}
     {{ form_end(form) }}
+
+    <script>
+        (function ()
+        {
+            $('input').each(
+                function() {
+                    $(this).attr('disabled', 'disabled');
+                }
+            );
+            $('input[value=Generalist]').removeAttr('disabled');
+        })();
+    </script>
 {% endblock %}
