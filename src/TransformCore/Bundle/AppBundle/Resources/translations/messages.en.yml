@@ -382,3 +382,40 @@ diplomatic-service:
     form:
           updateButton:
             label: Save and Continue
+
+houses-of-parliament:
+  selection:
+    title: Houses of Parliament Eligibility
+    breadcrumb: Houses of Parliament Eligibility
+    introduction:
+      - Please Confirm Your Eligibility
+    degree: I have or expect to achieve at least a 2.2 degree in any subject
+    form:
+      updateButton:
+        label: Save and Continue
+
+science-and-engineering:
+  selection:
+    title: Science and Engineering Eligibility
+    breadcrumb: Science and Engineering Eligibility
+    introduction:
+      - Please Confirm Your Eligibility
+    mastersDegree: I have a doctorate or masters degree in a biological, physical, computational or mathematical science or an engineering subject.
+    charteredEngineer: I am a chartered engineer registered by one of the 36 professional engineering institutions licensed by the Engineering Council.
+    degree: My first degree was a first or a 2:1, including at least one mathematics module or course.
+    citizen: I am a British citizen
+    residence: I have resided in the United Kingdom for at least two of the previous ten years immediately prior to this application, at least one year of which must have been a consecutive twelve-month period
+    form:
+      updateButton:
+        label: Save and Continue
+
+central-departments:
+  selection:
+    title: Central Departments Eligibility
+    breadcrumb: Central Departments Eligibility
+    introduction:
+      - Please Confirm Your Eligibility
+    degree: I have or expect to achieve at least a 2.2 degree in any subject
+    form:
+      updateButton:
+        label: Save and Continue
