@@ -382,3 +382,14 @@ diplomatic-service:
     form:
           updateButton:
             label: Save and Continue
+
+houses-of-parliament:
+  selection:
+    title: Houses of Parliament Eligibility
+    breadcrumb: Houses of Parliament Eligibility
+    introduction:
+      - Please Confirm Your Eligibility
+    degree: I have or expect to achieve at least a 2.2 degree in any subject
+    form:
+      updateButton:
+        label: Save and Continue

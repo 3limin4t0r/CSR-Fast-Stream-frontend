@@ -57,3 +57,7 @@ transform_core_app_scheme_selection:
 transform_core_app_scheme_selection_eligibility_diplomatic_service:
     path:   /scheme/selection/diplomatic_service
     defaults: { _controller: TransformCoreAppBundle:Scheme:diplomaticServiceEligibility }
+
+transform_core_app_scheme_selection_eligibility_houses_of_parliament:
+    path:   /scheme/selection/houses_of_parliament
+    defaults: { _controller: TransformCoreAppBundle:Scheme:housesOfParliamentEligibility }
