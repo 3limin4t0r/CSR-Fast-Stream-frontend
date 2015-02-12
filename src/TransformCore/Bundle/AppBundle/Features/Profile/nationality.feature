@@ -46,7 +46,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     And I check "csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictions"
     And I check "csr_dm_user_eligibility_permissionToCheckBackground"
     Then I press "Save and continue"
-    Then I should see "Your changes were saved"
+    Then I should see "Education"
+    And I should see "Existing Civil Servant"
 
   @CSR-24
   Scenario: Complete Nationality and immigration section (Dependant fields validation)
@@ -71,7 +72,8 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Please check box to indicate you give permission for us to undertake checks"
     And I check "csr_dm_user_eligibility_permissionToCheckBackground"
     And I press "Save and continue"
-    Then I should see "Your changes were saved"
+    Then I should see "Education"
+    And I should see "Existing Civil Servant"
 #    And I follow "go back to the previous section"
 #    Then the "csr_dm_user_eligibility_immigration_group_subjectToImmigrationControlsDetails" field should contain "Some immigration controls detail"
 #    And the "csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictionsDetails" field should contain "Some employment restrictions detail"
@@ -83,4 +85,5 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill in "csr_dm_user_eligibility_nationality_group_presentNationality_name" with "British"
     And I press "Save and continue"
-    Then I should see "Your changes were saved"
+    Then I should see "Education"
+    And I should see "Existing Civil Servant"
