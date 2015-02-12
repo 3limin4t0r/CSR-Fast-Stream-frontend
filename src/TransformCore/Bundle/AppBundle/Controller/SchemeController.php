@@ -5,6 +5,8 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Scheme;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\SchemeEligibility\DiplomaticServiceEligibility;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\SchemeEligibility\DiplomaticServiceEligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\SchemeSelectionFormType;
 
 /**
@@ -21,7 +23,30 @@ class SchemeController extends Controller
         $form->handleRequest($request);
 
         if ($form->isValid()) {
-            $program = $form->getData();
+            $scheme = $form->getData();
+
+            return $this->redirect(
+                $this->getRouteForEligibility(str_replace(' ', '', $scheme->getName()))
+            );
+        }
+
+        return
+            $this->render(
+                'TransformCoreAppBundle:Scheme:selection.html.twig',
+                array(
+                    'form' => $form->createView(),
+                )
+            );
+    }
+
+    public function diplomaticServiceEligibilityAction(Request $request)
+    {
+        $eligibility = new DiplomaticServiceEligibility();
+
+        $form = $this->createForm(new DiplomaticServiceEligibilityFormType(), $eligibility);
+
+        if ('POST' === $request->getMethod()) {
+            $eligibility = $form->getData();
 
             $request->getSession()
                 ->getFlashBag()
@@ -35,12 +60,20 @@ class SchemeController extends Controller
             );
         }
 
-        return
-            $this->render(
-                'TransformCoreAppBundle:Scheme:selection.html.twig',
-                array(
-                    'form' => $form->createView(),
-                )
-            );
+        return $this->render(
+            'TransformCoreAppBundle:Scheme:diplomatic-service-eligibility.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
+        );
+    }
+
+    /**
+     * @param string $whichScheme
+     * @return string
+     */
+    protected function getRouteForEligibility($whichScheme)
+    {
+        return $this->generateUrl('transform_core_app_scheme_selection_eligibility_diplomatic_service');
     }
 }

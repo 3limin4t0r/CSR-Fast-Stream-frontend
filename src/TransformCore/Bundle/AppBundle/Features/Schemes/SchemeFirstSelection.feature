@@ -14,8 +14,8 @@ Feature: As a user, I want to be able to select a first scheme preference, in or
     And I am on "/en/scheme/selection"
     And I fill form with:
       | <schemeId> | <scheme> |
-    And I press "Select scheme (second preference)"
-    Then I should see "Your changes were saved"
+    And I press "Select scheme"
+    Then I should see "Diplomatic Service Eligibility"
   Examples:
     | scheme                  | schemeId                |
     | Diplomatic Service      | csr_dm_scheme_selection_name_0 |
