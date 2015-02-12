@@ -131,14 +131,6 @@
 
         {% block breadcrumb %}{% endblock breadcrumb %}
 
-        {% for type, messages in app.session.flashbag.all() %}
-            {% for message in messages %}
-                <div class="alert alert-{{ type }}">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endfor %}
-
         {% block heading %}{% endblock heading %}
 
         {% block body %}{% endblock body %}
