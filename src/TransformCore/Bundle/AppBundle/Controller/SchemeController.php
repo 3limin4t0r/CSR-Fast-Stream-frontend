@@ -6,7 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Scheme;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\SchemeEligibility\DiplomaticServiceEligibility;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\SchemeEligibility\HousesOfParliamentEligibility;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\SchemeEligibility\DiplomaticServiceEligibilityFormType;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\SchemeEligibility\HousesOfParliamentEligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\SchemeSelectionFormType;
 
 /**
@@ -26,7 +28,7 @@ class SchemeController extends Controller
             $scheme = $form->getData();
 
             return $this->redirect(
-                $this->getRouteForEligibility(str_replace(' ', '', $scheme->getName()))
+                $this->getRouteForEligibility($scheme->getName())
             );
         }
 
@@ -68,12 +70,55 @@ class SchemeController extends Controller
         );
     }
 
+    public function housesOfParliamentEligibilityAction(Request $request)
+    {
+        $eligibility = new HousesOfParliamentEligibility();
+
+        $form = $this->createForm(new HousesOfParliamentEligibilityFormType(), $eligibility);
+
+        if ('POST' === $request->getMethod()) {
+            $eligibility = $form->getData();
+
+            $request->getSession()
+                ->getFlashBag()
+                ->add(
+                    'success',
+                    'Your changes were saved!'
+                );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_account')
+            );
+        }
+
+        return $this->render(
+            'TransformCoreAppBundle:Scheme:houses-of-parliament-eligibility.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
+        );
+    }
+
     /**
      * @param string $whichScheme
      * @return string
      */
     protected function getRouteForEligibility($whichScheme)
     {
-        return $this->generateUrl('transform_core_app_scheme_selection_eligibility_diplomatic_service');
+        $route = '';
+
+        switch (str_replace(' ', '', $whichScheme)) {
+            case 'DiplomaticService' :
+                $route = 'transform_core_app_scheme_selection_eligibility_diplomatic_service';
+                break;
+            case 'HousesofParliament' :
+                $route = 'transform_core_app_scheme_selection_eligibility_houses_of_parliament';
+                break;
+            default:
+                $route = 'transform_core_app_account';
+                break;
+        }
+
+        return $this->generateUrl($route);
     }
 }
