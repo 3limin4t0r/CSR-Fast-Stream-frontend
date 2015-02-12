@@ -408,3 +408,14 @@ science-and-engineering:
     form:
       updateButton:
         label: Save and Continue
+
+central-departments:
+  selection:
+    title: Central Departments Eligibility
+    breadcrumb: Central Departments Eligibility
+    introduction:
+      - Please Confirm Your Eligibility
+    degree: I have or expect to achieve at least a 2.2 degree in any subject
+    form:
+      updateButton:
+        label: Save and Continue
