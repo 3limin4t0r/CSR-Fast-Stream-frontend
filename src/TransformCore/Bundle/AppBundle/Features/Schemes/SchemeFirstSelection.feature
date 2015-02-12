@@ -14,7 +14,7 @@ Feature: As a user, I want to be able to select a first scheme preference, in or
     And I am on "/en/scheme/selection"
     And I fill form with:
       | <schemeId> | <scheme> |
-    And I press "Select scheme (second preference)"
+    And I press "Select scheme"
     Then I should see "Your changes were saved"
   Examples:
     | scheme                  | schemeId                |
