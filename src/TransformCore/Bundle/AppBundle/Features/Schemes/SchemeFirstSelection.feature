@@ -20,4 +20,4 @@ Feature: As a user, I want to be able to select a first scheme preference, in or
     | Diplomatic Service      | csr_dm_scheme_selection_name_0 | Diplomatic Service Eligibility |
     | Houses of Parliament    | csr_dm_scheme_selection_name_1 | Houses of Parliament           |
     | Science and Engineering | csr_dm_scheme_selection_name_2 | Science and Engineering        |
-#    | Central Departments     | csr_dm_scheme_selection_name_3 | Central Departments            |
+    | Central Departments     | csr_dm_scheme_selection_name_3 | Central Departments            |
