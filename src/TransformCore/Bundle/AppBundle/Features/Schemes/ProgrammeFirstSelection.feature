@@ -7,7 +7,8 @@ Feature: As a user, I want to be able to select a first programme preference, in
     And I fill form with:
       | <programmeId> | <programme> |
     And I press "Save and Continue"
-    Then I should see "Your changes were saved"
+    Then I should see "Programme Selected"
+    And I should see "First preference programme:"
 
   Examples:
     | programme                             | programmeId |
