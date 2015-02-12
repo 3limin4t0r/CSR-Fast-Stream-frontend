@@ -34,9 +34,11 @@
 
     <div class="text">
         {% for i in range(0,'diplomatic-service.selection.introduction'|translationLength) -%}
-    <p>{{('diplomatic-service.selection.introduction.'~i)|trans}}</p>
-{%- endfor %}
+            <p>{{('diplomatic-service.selection.introduction.'~i)|trans}}</p>
+        {%- endfor %}
     </div>
 
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_end(form) }}
 
 {% endblock %}

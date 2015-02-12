@@ -5,6 +5,8 @@ namespace TransformCore\Bundle\AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use TransformCore\Bundle\CsrFastStreamBundle\Entity\Scheme;
+use TransformCore\Bundle\CsrFastStreamBundle\Entity\SchemeEligibility\DiplomaticServiceEligibility;
+use TransformCore\Bundle\CsrFastStreamBundle\Form\SchemeEligibility\DiplomaticServiceEligibilityFormType;
 use TransformCore\Bundle\CsrFastStreamBundle\Form\SchemeSelectionFormType;
 
 /**
@@ -39,9 +41,30 @@ class SchemeController extends Controller
 
     public function diplomaticServiceEligibilityAction(Request $request)
     {
+        $eligibility = new DiplomaticServiceEligibility();
+
+        $form = $this->createForm(new DiplomaticServiceEligibilityFormType(), $eligibility);
+
+        if ('POST' === $request->getMethod()) {
+            $eligibility = $form->getData();
+
+            $request->getSession()
+                ->getFlashBag()
+                ->add(
+                    'success',
+                    'Your changes were saved!'
+                );
+
+            return $this->redirect(
+                $this->generateUrl('transform_core_app_account')
+            );
+        }
 
         return $this->render(
-            'TransformCoreAppBundle:Scheme:diplomatic-service-eligibility.html.twig'
+            'TransformCoreAppBundle:Scheme:diplomatic-service-eligibility.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
         );
     }
 
