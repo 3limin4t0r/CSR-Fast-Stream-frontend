@@ -19,9 +19,6 @@
 
         <div class="text">
             <p>{% trans %}register.form.disabled-subtitle1{% endtrans %}</p>
-            <div class="panel-indent">
-                <p>{% trans %}register.form.disabled-subtitle2{% endtrans %}</p>
-            </div>
         </div>
 
         <div class="form-group form-group-compound">
@@ -29,15 +26,29 @@
             {{ form_row(form.registered_disability_group.registration.disabledAdjustmentRequired) }}
 
             <div id="disabled-adjustment-required-container">
+
                 {{ form_row(form.registered_disability_group.registration.disabledDetails) }}
-                {{ form_row(form.registered_disability_group.phoneNumber.number) }}
+
+                <legend class="form-label-bold">{% trans %}register.form.disabled-adjustment-title{% endtrans %}</legend>
+
+                <div class="text">
+                    <p>{% trans %}register.form.disabled-adjustment-subtitle{% endtrans %}</p>
+                    <p>{% trans %}register.form.disabled-adjustment-subtitle2{% endtrans %}</p>
+                </div>
+
                 {{ form_row(form.registered_disability_group.registration.disabledAdjustmentDetails) }}
-            </div>
 
-            {{ form_row(form.registered_disability_group.registration.guaranteedInterviewScheme) }}
+                <div class="text">
+                    <p>{% trans %}register.form.phone-number.label{% endtrans %}</p>
+                </div>
 
-            <div class="text">
-                <p><a href="{{ path('transform_core_app_guaranteed_interview_scheme') }}">{% trans %}register.form.guaranteed-interview-scheme.link{% endtrans %}</a></p>
+                {{ form_row(form.registered_disability_group.phoneNumber.number) }}
+
+                {{ form_row(form.registered_disability_group.registration.guaranteedInterviewScheme) }}
+
+                <div class="text">
+                    <p><a href="{{ path('transform_core_app_guaranteed_interview_scheme') }}">{% trans %}register.form.guaranteed-interview-scheme.link{% endtrans %}</a></p>
+                </div>
             </div>
 
             <div class="text">
