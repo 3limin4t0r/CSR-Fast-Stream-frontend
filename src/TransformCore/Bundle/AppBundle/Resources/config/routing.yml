@@ -65,3 +65,7 @@ transform_core_app_scheme_selection_eligibility_houses_of_parliament:
 transform_core_app_scheme_selection_eligibility_science_and_engineering:
     path:   /scheme/selection/science_and_engineering
     defaults: { _controller: TransformCoreAppBundle:Scheme:scienceAndEngineeringEligibility }
+
+transform_core_app_scheme_selection_eligibility_central_departments:
+    path:   /scheme/selection/central_departments
+    defaults: { _controller: TransformCoreAppBundle:Scheme:centralDepartmentsEligibility }
