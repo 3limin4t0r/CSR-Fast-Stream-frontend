@@ -45,14 +45,16 @@ register:
     heard-about-us:
       label: Please tell us where you first heard about Fast Stream
     disabled-title: Registered Disability
-    disabled-subtitle1: If you have a registered disability and are intending to request reasonable adjustments, we would request that you indicate this below.  We will contact you to discuss your needs in more detail.
-    disabled-subtitle2: Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
+    disabled-subtitle1: If you have a registered disability, please tick the box below.
+    disabled-adjustment-title: Adjustments
+    disabled-adjustment-subtitle: If you have a registered disability and would like to request adjustments, please tick the box below.
+    disabled-adjustment-subtitle2: Some typical adjustments requested are extra time, screen magnification software or printed copies on plain or coloured paper.
     disabled-adjustment-required:
-      label: I require adjustments based on my disability
+      label: I have a registered disability
     disabled-details:
       label: Please describe your disability
     phone-number:
-      label: Please provide your telephone number
+      label: When you have registered, a member of the Fast Stream team will contact you to discuss your adjustment needs. Please give us a daytime phone number where we can reach you.
     disabled-adjustment-details:
       label: Please tell us what adjustments you require based on your disability
     guaranteed-interview-scheme:
@@ -61,7 +63,7 @@ register:
     terms-and-conditions-title: Acknowledge Terms & Conditions
     terms-and-conditions-subtitle: Please review our terms and conditions detailing how we use your personal data, and indicate your consent below
     terms-and-conditions:
-      label: Please confirm your consent to the use of your personal data in the ways described above
+      label: I accept your terms and conditions
     register-button:
       label: Register
 
