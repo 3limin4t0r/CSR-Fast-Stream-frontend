@@ -1750,7 +1750,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -2638,12 +2638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TransformCore/CSR-Fast-Stream-Domain-Model.git",
-                "reference": "a5bb11e5c9a9e56ab67989011dadc6471a6e63cf"
+                "reference": "cb8e4c446f814082663a20f3c5d4cea8292bd8d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/a5bb11e5c9a9e56ab67989011dadc6471a6e63cf",
-                "reference": "a5bb11e5c9a9e56ab67989011dadc6471a6e63cf",
+                "url": "https://api.github.com/repos/TransformCore/CSR-Fast-Stream-Domain-Model/zipball/cb8e4c446f814082663a20f3c5d4cea8292bd8d6",
+                "reference": "cb8e4c446f814082663a20f3c5d4cea8292bd8d6",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2669,7 @@
                 "MIT"
             ],
             "description": "Domain Model for CSR Fast Stream Project",
-            "time": "2015-02-12 18:23:03"
+            "time": "2015-02-13 10:56:36"
         },
         {
             "name": "twig/extensions",

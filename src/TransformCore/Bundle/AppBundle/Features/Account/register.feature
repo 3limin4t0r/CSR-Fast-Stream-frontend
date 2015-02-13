@@ -51,7 +51,7 @@ Feature: As an user, I want to be able to register a new account, in order to ap
       | fos_user_registration_form_email                | bill.carr@test |
       | fos_user_registration_form_plainPassword_first  | P@ssword1      |
       | fos_user_registration_form_plainPassword_second | P@ssword11     |
-      | I require adjustments based on my disability    | Yes            |
+      | fos_user_registration_form_registered_disability_group_registration_disabledAdjustmentRequired | Yes            |
     And I press "Register"
     And I should see "Please enter only letters for your first name"
     And I should see "Please enter only letters for your first name"
