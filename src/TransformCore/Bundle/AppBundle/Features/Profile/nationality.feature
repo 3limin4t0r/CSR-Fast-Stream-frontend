@@ -57,7 +57,7 @@ Feature: As an user, I want to be able to add details about myself on my account
     Then I should see "Nationality, Immigration and Employment Restrictions"
     And I fill in "csr_dm_user_eligibility_nationality_group_presentNationality_name" with "British"
     When I press "Save and continue"
-    Then I should see "Please check whether or not you are subject to immigration controls"
+    Then I should see "Yes, I am subject to immigration controls"
     And I check "csr_dm_user_eligibility_immigration_group_subjectToImmigrationControls"
     When I press "Save and continue"
     Then I should see "Please fill in immigration controls details"

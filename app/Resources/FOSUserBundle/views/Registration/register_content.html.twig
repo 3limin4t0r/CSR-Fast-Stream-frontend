@@ -8,7 +8,7 @@
     {{ form_row(form.email) }}
 
     {{ form_row(form.plainPassword.first) }}
-    <p>Password must be 8 characters long & contain at least 1 number & 1 symbol</p>
+    <p>{% trans %}register.form.password-description{% endtrans %}</p>
     {{ form_row(form.plainPassword.second) }}
 
     {{ form_row(form.registered_disability_group.registration.heardAboutUs) }}
