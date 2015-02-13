@@ -38,6 +38,7 @@ register:
     email:
       label: Email
       title: Email
+    password-description: Password must be 8 characters long and contain at least one number and one symbol
     password:
       label: Password
     password-confirm:
@@ -142,7 +143,7 @@ education:
     label: "I would like to apply via the In Service route"
   undergraduateDegree:
     label: ""
-    "false": "I will not have completed an undergraduate degree in this recruitment year (In service applicants only)"
+    "false": "I will not have completed a degree in this recruitment year"
     "true": "I have, or will have, completed an undergraduate degree in this recruitment year"
   undergradUKDegree:
     label: ""
@@ -195,13 +196,13 @@ eligibility:
   title: Nationality, Immigration and Employment Restrictions
   step: Step 2 of 5
   subject-to-immigration-controls:
-    label: Please check whether or not you are subject to immigration controls
+    label: Yes, I am subject to immigration controls
     title: Subject to immigration controls
   subject-to-immigration-controls-details:
     label: Please fill in immigration controls details
     title: Immigration controls details
   residency-or-employment-restrictions:
-    label: Please select whether or not you have employment restrictions
+    label: Yes, I am subject to employment restrictions
     title: Employment restrictions
   residency-or-employment-restrictions-details:
     label: Please fill in employment restrictions details
@@ -311,7 +312,7 @@ parents:
         whenYouWereFourteenNumberOfEmployeesByFather:
           label: If your father was employed when you were aged 14, how many people worked for your father’s employer, or, if your father was self-employed and employed other people, how many people did your father employ?
         whenYouWereFourteenNumberOfEmployeesByMother:
-          label: If your father was employed when you were aged 14, how many people worked for your mother’s employer, or, if your father was self-employed and employed other people, how many people did your mother employ?
+          label: If your Mother was employed when you were aged 14, how many people worked for your mother’s employer, or, if your father was self-employed and employed other people, how many people did your mother employ?
     role:
       form:
         whenYouWereFourteenFatherSuperviseAnyEmployees:
