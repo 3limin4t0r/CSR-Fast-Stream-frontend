@@ -62,8 +62,6 @@ Feature: As an user, I want to be able to add details about myself on my account
     When I press "Save and continue"
     Then I should see "Please fill in immigration controls details"
     And I fill in "csr_dm_user_eligibility_immigration_group_subjectToImmigrationControlsDetails" with "Some immigration controls detail"
-    When I press "Save and continue"
-    Then I should see "Please select whether or not you have employment restrictions"
     And I check "csr_dm_user_eligibility_immigration_group_residencyOrEmploymentRestrictions"
     When I press "Save and continue"
     Then I should see "Please fill in employment restrictions details"
